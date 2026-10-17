@@ -1,0 +1,12 @@
+﻿DLC / additional-content candidates (heuristic: chunk numbering + "optional" flag)
+Mapping chunks to specific DLC names is NOT confirmed here (needs pak content inspection, Phase 5).
+
+pakchunk0optional-WindowsNoEditor.pak               51647465 bytes
+pakchunk10-WindowsNoEditor.pak                     176141929 bytes
+pakchunk11-WindowsNoEditor.pak                    1693638369 bytes
+pakchunk12-WindowsNoEditor.pak                   18883098113 bytes
+pakchunk13-WindowsNoEditor.pak                   20714445497 bytes
+pakchunk14-WindowsNoEditor.pak                    2786707503 bytes
+pakchunk15optional-WindowsNoEditor.pak              33554976 bytes
+pakchunk15-WindowsNoEditor.pak                   21774890614 bytes
+pakchunk16-WindowsNoEditor.pak                   33234925624 bytes

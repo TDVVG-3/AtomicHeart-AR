@@ -1,0 +1,242 @@
+﻿{
+    "game":  "Atomic Heart",
+    "platform":  "Steam",
+    "scanned_utc":  "2026-10-17T20:13:57.1936021Z",
+    "game_path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Atomic Heart",
+    "paks_path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Atomic Heart\\AtomicHeart\\Content\\Paks",
+    "mods_path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Atomic Heart\\AtomicHeart\\Content\\Paks\\~mods",
+    "mods_folder_exists":  false,
+    "steam":  {
+                  "app_id":  668580,
+                  "build_id":  "24534183",
+                  "depot_ids":  [
+                                    "668581"
+                                ],
+                  "shared_depots":  {
+                                        "228989":  228980,
+                                        "228990":  228980
+                                    },
+                  "language":  "english",
+                  "acf_path":  "C:\\Program Files (x86)\\Steam\\steamapps\\appmanifest_668580.acf"
+              },
+    "exe":  {
+                "path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Atomic Heart\\AtomicHeart.exe",
+                "file_version":  "",
+                "product_version":  "",
+                "product_name":  "",
+                "sha256":  "3d6a26424fbe4c56d34bcfd6a5f5992cad4196a3d68bc0948b5d1b0caf41ad3c"
+            },
+    "container_type":  "UE4 legacy PAK (no .utoc/.ucas/.sig present)",
+    "pak_files":  [
+                      {
+                          "name":  "pakchunk0optional-WindowsNoEditor.pak",
+                          "size":  51647465,
+                          "size_mb":  49.3,
+                          "modified":  "2026-10-16T13:38:27.5203003Z",
+                          "sha256":  "5ab14617e6979a1e450c18064f04dcfbc8adfb2ae989fb85cb99249caa869766",
+                          "pak":  {
+                                      "Valid":  false,
+                                      "Reason":  "unexpected magic 0x00000000"
+                                  }
+                      },
+                      {
+                          "name":  "pakchunk0-WindowsNoEditor.pak",
+                          "size":  33161284124,
+                          "size_mb":  31625.1,
+                          "modified":  "2026-10-16T13:38:27.5203003Z",
+                          "sha256":  "2a1575009030f72c7323beca679d7641b250ea70289faedb18f6069ca3ba153a",
+                          "pak":  {
+                                      "Valid":  false,
+                                      "Reason":  "unexpected magic 0x00000000"
+                                  }
+                      },
+                      {
+                          "name":  "pakchunk1-WindowsNoEditor.pak",
+                          "size":  6680608890,
+                          "size_mb":  6371.1,
+                          "modified":  "2026-10-16T13:38:27.5203003Z",
+                          "sha256":  "aeddea0143eb70873c9ae15bf1406aebf054bff4d2a5cb6b23e7e54bbda4ec84",
+                          "pak":  {
+                                      "Valid":  false,
+                                      "Reason":  "unexpected magic 0x00000000"
+                                  }
+                      },
+                      {
+                          "name":  "pakchunk2-WindowsNoEditor.pak",
+                          "size":  487997778,
+                          "size_mb":  465.4,
+                          "modified":  "2026-10-16T13:38:27.5238103Z",
+                          "sha256":  "ac94fd0af3fe8fac1ba9590526a656c86be6acc81858f60f24706368660b7b5c",
+                          "pak":  {
+                                      "Valid":  false,
+                                      "Reason":  "unexpected magic 0x00000000"
+                                  }
+                      },
+                      {
+                          "name":  "pakchunk3-WindowsNoEditor.pak",
+                          "size":  2900349197,
+                          "size_mb":  2766,
+                          "modified":  "2026-10-16T13:38:27.5248115Z",
+                          "sha256":  "d07933916c556db3ad1cb82d3aa4b6081523c85f8b168a4b86f4a7029c24c9c5",
+                          "pak":  {
+                                      "Valid":  false,
+                                      "Reason":  "unexpected magic 0x00000000"
+                                  }
+                      },
+                      {
+                          "name":  "pakchunk4-WindowsNoEditor.pak",
+                          "size":  517357311,
+                          "size_mb":  493.4,
+                          "modified":  "2026-10-16T13:38:27.5248115Z",
+                          "sha256":  "bc9b44e466a53745042eb6cd30d9faeb0628e2f6963baf4fd2ece2e3f06fc6da",
+                          "pak":  {
+                                      "Valid":  false,
+                                      "Reason":  "unexpected magic 0x00000000"
+                                  }
+                      },
+                      {
+                          "name":  "pakchunk5-WindowsNoEditor.pak",
+                          "size":  5525516858,
+                          "size_mb":  5269.5,
+                          "modified":  "2026-10-16T13:38:27.5248115Z",
+                          "sha256":  "d0e5db0548a46bdda84ee60054a4438ca48744095077270c24858ad78516ba77",
+                          "pak":  {
+                                      "Valid":  false,
+                                      "Reason":  "unexpected magic 0x00000000"
+                                  }
+                      },
+                      {
+                          "name":  "pakchunk6-WindowsNoEditor.pak",
+                          "size":  1286356301,
+                          "size_mb":  1226.8,
+                          "modified":  "2026-10-16T13:38:27.5248115Z",
+                          "sha256":  "bed298e194d7f65df4a24924c76b11e255c4d335c59e6bb5524aa4361b2cbddd",
+                          "pak":  {
+                                      "Valid":  false,
+                                      "Reason":  "unexpected magic 0x00000000"
+                                  }
+                      },
+                      {
+                          "name":  "pakchunk7-WindowsNoEditor.pak",
+                          "size":  6021896385,
+                          "size_mb":  5742.9,
+                          "modified":  "2026-10-16T13:38:27.5248115Z",
+                          "sha256":  "fb96e09b63314e39cdde8bfeaf406f9b939d6de7111dffb5f6429cd81a4c70a0",
+                          "pak":  {
+                                      "Valid":  false,
+                                      "Reason":  "unexpected magic 0x00000000"
+                                  }
+                      },
+                      {
+                          "name":  "pakchunk8-WindowsNoEditor.pak",
+                          "size":  4801837441,
+                          "size_mb":  4579.4,
+                          "modified":  "2026-10-16T13:38:27.5248115Z",
+                          "sha256":  "4924550cf6f24a026d440283be775d6e277205a1e013fddeca84a72b4fe74e34",
+                          "pak":  {
+                                      "Valid":  false,
+                                      "Reason":  "unexpected magic 0x00000000"
+                                  }
+                      },
+                      {
+                          "name":  "pakchunk9-WindowsNoEditor.pak",
+                          "size":  2114788307,
+                          "size_mb":  2016.8,
+                          "modified":  "2026-10-16T13:38:27.5263153Z",
+                          "sha256":  "d855ba45f5798ac80a4da71e2775f4e1fd9c494db5bc782d77ad8ddba0d58800",
+                          "pak":  {
+                                      "Valid":  false,
+                                      "Reason":  "unexpected magic 0x00000000"
+                                  }
+                      },
+                      {
+                          "name":  "pakchunk10-WindowsNoEditor.pak",
+                          "size":  176141929,
+                          "size_mb":  168,
+                          "modified":  "2026-10-16T13:38:27.5203003Z",
+                          "sha256":  "523648c7dc14cf9dac0712fd4f23fa8d2baa4e6501977fecc5b1ceb408e55d57",
+                          "pak":  {
+                                      "Valid":  false,
+                                      "Reason":  "unexpected magic 0x00000000"
+                                  }
+                      },
+                      {
+                          "name":  "pakchunk11-WindowsNoEditor.pak",
+                          "size":  1693638369,
+                          "size_mb":  1615.2,
+                          "modified":  "2026-10-16T13:38:27.5203003Z",
+                          "sha256":  "8a8994fedfaac205a9381c16ff3858cbf4f3d5128a9c2cbbce2f3f258dd2ca7a",
+                          "pak":  {
+                                      "Valid":  false,
+                                      "Reason":  "unexpected magic 0x00000000"
+                                  }
+                      },
+                      {
+                          "name":  "pakchunk12-WindowsNoEditor.pak",
+                          "size":  18883098113,
+                          "size_mb":  18008.3,
+                          "modified":  "2026-10-16T13:38:27.5203003Z",
+                          "sha256":  "de70e9695d300bac966cf23bbf22ad83c88dcbef352236cd956d4ffe45668a92",
+                          "pak":  {
+                                      "Valid":  false,
+                                      "Reason":  "unexpected magic 0x00000000"
+                                  }
+                      },
+                      {
+                          "name":  "pakchunk13-WindowsNoEditor.pak",
+                          "size":  20714445497,
+                          "size_mb":  19754.8,
+                          "modified":  "2026-10-16T13:38:27.5218042Z",
+                          "sha256":  "002a0353f8c9710ccb7a583ec989c293ca436c53f3a8ab35f8d3e9eb66ed37f5",
+                          "pak":  {
+                                      "Valid":  false,
+                                      "Reason":  "unexpected magic 0x00000000"
+                                  }
+                      },
+                      {
+                          "name":  "pakchunk14-WindowsNoEditor.pak",
+                          "size":  2786707503,
+                          "size_mb":  2657.6,
+                          "modified":  "2026-10-16T13:38:27.5218042Z",
+                          "sha256":  "e6877db2e58ef33f1d6467e73c1c619b763e9325b41fd5c1b65fd22694ce632f",
+                          "pak":  {
+                                      "Valid":  false,
+                                      "Reason":  "unexpected magic 0x00000000"
+                                  }
+                      },
+                      {
+                          "name":  "pakchunk15optional-WindowsNoEditor.pak",
+                          "size":  33554976,
+                          "size_mb":  32,
+                          "modified":  "2026-10-16T13:38:27.5228106Z",
+                          "sha256":  "0e66971613f19416bbececc719f86d7f73ac5f09e3285ddabeb9c2f63ad2bbb7",
+                          "pak":  {
+                                      "Valid":  false,
+                                      "Reason":  "unexpected magic 0x00000000"
+                                  }
+                      },
+                      {
+                          "name":  "pakchunk15-WindowsNoEditor.pak",
+                          "size":  21774890614,
+                          "size_mb":  20766.2,
+                          "modified":  "2026-10-16T13:38:27.5228106Z",
+                          "sha256":  "2f972b7469480e20137da0ce70447e69a1a6750e881932b14914a9a57b955270",
+                          "pak":  {
+                                      "Valid":  false,
+                                      "Reason":  "unexpected magic 0x00000000"
+                                  }
+                      },
+                      {
+                          "name":  "pakchunk16-WindowsNoEditor.pak",
+                          "size":  33234925624,
+                          "size_mb":  31695.3,
+                          "modified":  "2026-10-16T13:38:27.5238103Z",
+                          "sha256":  "86715c83c99e08c8e0f936710da3e1a8dfdb94a17bbd3f0600f92f7b26552811",
+                          "pak":  {
+                                      "Valid":  false,
+                                      "Reason":  "unexpected magic 0x00000000"
+                                  }
+                      }
+                  ],
+    "total_bytes":  162847042682
+}
