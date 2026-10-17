@@ -1,0 +1,639 @@
+﻿[
+    {
+        "relative_path":  "AtomicHeart/Content/Core/UI/Fonts/DT_Game_Text_Style.uasset",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  2413,
+        "sha256":  "1e9f3eb9458999cbbf467ad9158867fd0117c165ec713aefde557dc40062e5d8",
+        "extracted_utc":  "2026-10-17T21:26:57.4078597Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/NTD/Fonts/Gotham-Black.uasset",
+        "container":  "pakchunk5-WindowsNoEditor.pak",
+        "size":  647,
+        "sha256":  "d611021a0ea051fe26fca1558ab7a3dc9d193bf1fbae2f5db5742314aae857d0",
+        "extracted_utc":  "2026-10-17T21:27:09.2701943Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/NTD/Fonts/Gotham-Black.ufont",
+        "container":  "pakchunk5-WindowsNoEditor.pak",
+        "size":  113620,
+        "sha256":  "3cde40c9038496e69d5516a1a925437b44004a6a655487eb408a703ef7c2da87",
+        "extracted_utc":  "2026-10-17T21:27:09.3031162Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/NTD/Fonts/Gotham-Black_Font.uasset",
+        "container":  "pakchunk5-WindowsNoEditor.pak",
+        "size":  1062,
+        "sha256":  "35af3a8e9c39ae54464fbba5e386adbf64c665e0fe0cc080f7797024e16d5ab1",
+        "extracted_utc":  "2026-10-17T21:27:09.3332834Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/NTD/Fonts/Gotham-BookItalic.uasset",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  657,
+        "sha256":  "69273a47d5b8405a87080f9163a425d287fdd445c0cd7f451f4379e5272d2e4b",
+        "extracted_utc":  "2026-10-17T21:26:57.5475359Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/NTD/Fonts/Gotham-BookItalic.ufont",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  112852,
+        "sha256":  "8e83a2cb42a424dc3b1dd3206583e608d1a58a3aa5229c4ba61d5d372c170abb",
+        "extracted_utc":  "2026-10-17T21:26:57.6775222Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/NTD/Fonts/Gotham-BookItalic_Font.uasset",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  1082,
+        "sha256":  "606abce06ecde1ee074159d128c6593dfd97fdd6686b3a30b721c057bfb939ed",
+        "extracted_utc":  "2026-10-17T21:26:57.8301775Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/AH_Pixel_digits.uasset",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  652,
+        "sha256":  "e5839345b80817f4510c49a4d325c854bbafe975290846785ebd9c7d7e9dba63",
+        "extracted_utc":  "2026-10-17T21:26:57.9764364Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/AH_Pixel_digits.ufont",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  13324,
+        "sha256":  "36f6a2f5bc33fef235bd3412bae61089661118d655f22d964f52fd582bdc845a",
+        "extracted_utc":  "2026-10-17T21:26:58.1126435Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/AH_Pixel_digits_DistanceField.uasset",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  2230,
+        "sha256":  "a5b23d384d669196b7f9d811e3216a2c3eef2ca481a9b7146a5d73e5a172d936",
+        "extracted_utc":  "2026-10-17T21:26:58.2494559Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/AH_Pixel_digits_Font.uasset",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  1072,
+        "sha256":  "89ff87b2aed0f15576f7408c6a75d8fbbd9c89a546aef1a8086a7371e088a9e2",
+        "extracted_utc":  "2026-10-17T21:26:58.3885194Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/Blender_Pro_Bold_Italic.uasset",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  668,
+        "sha256":  "55777d4ae1fe37775f986e9ab6981c88ef7470868550cb5a3d5b8a1d73527b83",
+        "extracted_utc":  "2026-10-17T21:26:58.5252891Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/Blender_Pro_Bold_Italic.ufont",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  68204,
+        "sha256":  "3c47fcd4dc150b81d10bddc4d5c5f8bd6789cd49568b857bc8cd1098b8a4be4e",
+        "extracted_utc":  "2026-10-17T21:26:58.6617177Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/Blender_Pro_Bold_Italic_Font.uasset",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  1104,
+        "sha256":  "0d27ec62c1d582d66deed64fe265b488a5e1d42b578cbb8e4b163f939e898ad6",
+        "extracted_utc":  "2026-10-17T21:26:58.7929053Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/Blender_Pro_Heavy.uasset",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  656,
+        "sha256":  "54122aac83a42d6326bc313e9986c17c3b1a7855c955411f7683ef8a577a513d",
+        "extracted_utc":  "2026-10-17T21:26:58.9241273Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/Blender_Pro_Heavy.ufont",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  53376,
+        "sha256":  "1f60416d06fd8cd845e751056aa84bbb4f13c2ed904a84c34b6d7dd860ea4ef5",
+        "extracted_utc":  "2026-10-17T21:26:59.0629016Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/Blender_Pro_Heavy_Font.uasset",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  1914,
+        "sha256":  "1aec0c6cc1812add3623619cbac206ff554356d3d2ed08a924920a90c2baa18b",
+        "extracted_utc":  "2026-10-17T21:26:59.1902618Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/BlenderPro-Bold.uasset",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  652,
+        "sha256":  "54d0315bcbe441aad9fa79f51ace0fecb5f1dfd4f6776f91d8e6b32c191076f8",
+        "extracted_utc":  "2026-10-17T21:26:59.3204398Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/BlenderPro-Bold.ufont",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  67352,
+        "sha256":  "e17b8ab3c2fa4987a6792cadcd775491705f9fed06f778106d6f9deb82f6e34f",
+        "extracted_utc":  "2026-10-17T21:26:59.4562592Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/BlenderPro-Bold_Font.uasset",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  1900,
+        "sha256":  "4d2d263bd5b7410a58a90c30835bb257236f01c07de494688b44bbed62a3b405",
+        "extracted_utc":  "2026-10-17T21:26:59.5903295Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/BlenderPro-Book.uasset",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  652,
+        "sha256":  "1c17647a7542b44845939c7756571af6f5d518696aaa2197b45d1b51eaf31b1e",
+        "extracted_utc":  "2026-10-17T21:26:59.7205811Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/BlenderPro-Book.ufont",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  71004,
+        "sha256":  "192fd45a0cfb402a6438247dfc4f0888e00a1833d16a0b6859826b0fd6fa02c0",
+        "extracted_utc":  "2026-10-17T21:26:59.8553674Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/BlenderPro-Book_Font.uasset",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  1918,
+        "sha256":  "3232d669eb7f16064d0f938d2e4b6350ad82f867435c4f042414b2bf11638e6d",
+        "extracted_utc":  "2026-10-17T21:26:59.9830656Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/BlenderPro-Medium.uasset",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  656,
+        "sha256":  "cf148d905423651fb62ab840e5d9dd1b78c5f9691e60113cf274aac113fdd806",
+        "extracted_utc":  "2026-10-17T21:27:00.1121075Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/BlenderPro-Medium.ufont",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  64864,
+        "sha256":  "f74bdfcba41eec186fea1c4f6867d009c6f89490292e29d303c9c2874c718bc7",
+        "extracted_utc":  "2026-10-17T21:27:00.2408324Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/BlenderPro-Medium_Font.uasset",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  1897,
+        "sha256":  "e45e889a79f2905686e6a1f907e03a95274bedb1521e606b6ae28816874873de",
+        "extracted_utc":  "2026-10-17T21:27:00.3781501Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/BrutalType.uasset",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  642,
+        "sha256":  "64e63cf7e5314768e737d4166f333c323c2da460f7922a2948398dcb6a6cbc0b",
+        "extracted_utc":  "2026-10-17T21:27:00.5242755Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/BrutalType.ufont",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  107956,
+        "sha256":  "93e12e983e6fa01cb2236d465cdfb6c4c9acc3f86b84ffd7df22a6fd7865b98c",
+        "extracted_utc":  "2026-10-17T21:27:00.6519612Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/MultiLanguage/AnekBangla-Bold.uasset",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  666,
+        "sha256":  "fc9e9c1a98d841b5f1210174b3c8f7f1d305181ac61e29ac84f5e4c3d49cc5c4",
+        "extracted_utc":  "2026-10-17T21:27:00.7844315Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/MultiLanguage/AnekBangla-Bold.ufont",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  249724,
+        "sha256":  "9d73f04a01dc7da16221a9b68b2f46668fbcdb400fe200b74bdf5af43d878ba7",
+        "extracted_utc":  "2026-10-17T21:27:00.9191335Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/MultiLanguage/Sarpanch-Bold.uasset",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  662,
+        "sha256":  "3aea318a5c045cee3d3d261f00eaa40d3ab227b8ef46393dadc7ec2c4518d812",
+        "extracted_utc":  "2026-10-17T21:27:01.0503459Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/MultiLanguage/Sarpanch-Bold.ufont",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  278336,
+        "sha256":  "3207651e25d9d9660f76f810a2b9c352cb62619b79731974a7d4077a9d65464a",
+        "extracted_utc":  "2026-10-17T21:27:01.1938818Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/MultiLanguage/Srisakdi-Bold.uasset",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  662,
+        "sha256":  "4b20719f6078a2e025dd6eb66cd47d7ded54ed12a9dd4b28742b85bfc6d43bc9",
+        "extracted_utc":  "2026-10-17T21:27:01.3262166Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/MultiLanguage/Srisakdi-Bold.ufont",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  97388,
+        "sha256":  "a5fac754d77a9faf0b66d865119ff0e948730087f230ba2536c2db40b75213b9",
+        "extracted_utc":  "2026-10-17T21:27:01.4674836Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/MultiLanguage_Font.uasset",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  2459,
+        "sha256":  "d6e74eae26372a7b55fbb4e92ce1fe5c44a9193a8426ef47e97211e5d8b187ad",
+        "extracted_utc":  "2026-10-17T21:27:01.5974448Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/Noto_Sans_JP/NotoSansJP-Black.uasset",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  667,
+        "sha256":  "f618ea0a6cc7017e57ba024349c37c78ba9bb6af571e9e3f661e2da4f8bca45b",
+        "extracted_utc":  "2026-10-17T21:27:01.7341992Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/Noto_Sans_JP/NotoSansJP-Black.ufont",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  4896876,
+        "sha256":  "b856205c5e57aff22111dbff1a7208670a359d8a055be373bf8dd7fd14f679f3",
+        "extracted_utc":  "2026-10-17T21:27:01.8755064Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/Noto_Sans_JP/NotoSansJP-Bold.uasset",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  665,
+        "sha256":  "52d8702c3cfea2433537bb352aed6b3fa77983317357133b9e4c7fb44e247222",
+        "extracted_utc":  "2026-10-17T21:27:02.0053360Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/Noto_Sans_JP/NotoSansJP-Bold.ufont",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  4691408,
+        "sha256":  "57a3c947fcf6264e71b82ce9ac6b011083260d6152261612b2529bc3758e95b9",
+        "extracted_utc":  "2026-10-17T21:27:02.1442786Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/Noto_Sans_JP/NotoSansJP-Medium.uasset",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  669,
+        "sha256":  "5678934b54046dd2a582b630f28ed1d1fd70710cbb2d96a431d65726cf056bf2",
+        "extracted_utc":  "2026-10-17T21:27:02.2794546Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/Noto_Sans_JP/NotoSansJP-Medium.ufont",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  4564460,
+        "sha256":  "60e284e97da331e6aca7f4a82bc64f0dcedd7215baf6d80f3e42e368d544f89d",
+        "extracted_utc":  "2026-10-17T21:27:02.4316700Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/Noto_Sans_JP/NotoSansJP-Regular.uasset",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  671,
+        "sha256":  "114fb6c08e3737856711339a2d21dd2ef76855f4a7b6a86fa4ced99223170386",
+        "extracted_utc":  "2026-10-17T21:27:02.5628379Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/Noto_Sans_JP/NotoSansJP-Regular.ufont",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  4548208,
+        "sha256":  "34b41de3f65166440ea2ce40121eb1c9b9c2bb92d188bd32a8e6091cd92316db",
+        "extracted_utc":  "2026-10-17T21:27:02.7001905Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/Noto_Sans_KR/NotoSansKR-Black.uasset",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  667,
+        "sha256":  "7ff240de231584c8c198bdad04fb069abc96edff2946d503099f90227cbd4697",
+        "extracted_utc":  "2026-10-17T21:27:02.8364372Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/Noto_Sans_KR/NotoSansKR-Black.ufont",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  5068164,
+        "sha256":  "c8b8177658067ef2a8e809bb40b50e2c206b868552d5ca213af2e379271ad4da",
+        "extracted_utc":  "2026-10-17T21:27:02.9792003Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/Noto_Sans_KR/NotoSansKR-Bold.uasset",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  665,
+        "sha256":  "a822e1df4ea1a523a43fcb087a0e7b5d34b9a7622242dc357cc1c76dc8c65e77",
+        "extracted_utc":  "2026-10-17T21:27:03.1094222Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/Noto_Sans_KR/NotoSansKR-Bold.ufont",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  4909668,
+        "sha256":  "e7be1cdb169344a75bdf09f8563dcf5e662194be3064873b6b4ca57e0ba0774f",
+        "extracted_utc":  "2026-10-17T21:27:03.2546275Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/Noto_Sans_KR/NotoSansKR-Medium.uasset",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  669,
+        "sha256":  "6ca65351d3736906719e6d4d8133417e6e26a5e2f73b8d3fa7b482ba80489d72",
+        "extracted_utc":  "2026-10-17T21:27:03.3973832Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/Noto_Sans_KR/NotoSansKR-Medium.ufont",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  4768768,
+        "sha256":  "256bb06b91d974ddbc0e3c063c85522cda6187cc638f0c6ae5d752efa63fe093",
+        "extracted_utc":  "2026-10-17T21:27:03.5419565Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/Noto_Sans_KR/NotoSansKR-Regular.uasset",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  671,
+        "sha256":  "d04f2454d26a38aa4478ab73a13675bad490dd49596b5363cbdc34508637ac46",
+        "extracted_utc":  "2026-10-17T21:27:03.6796463Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/Noto_Sans_KR/NotoSansKR-Regular.ufont",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  4744692,
+        "sha256":  "29445948e432137e0de104dec389e956d72633aa0e4cb04ca572bb8e378e3d35",
+        "extracted_utc":  "2026-10-17T21:27:03.8231254Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/Noto_Sans_SC/NotoSansSC-Black.uasset",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  667,
+        "sha256":  "d51e4a1144e79c770b102462311cb0975bbd4bcece716341a3d0ff542fe19193",
+        "extracted_utc":  "2026-10-17T21:27:03.9595970Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/Noto_Sans_SC/NotoSansSC-Black.ufont",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  8950680,
+        "sha256":  "03c110f302d458a9731f55deef9202ae35c19f6d8cc45ff17328ffb5fa33cdf8",
+        "extracted_utc":  "2026-10-17T21:27:04.1073750Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/Noto_Sans_SC/NotoSansSC-Bold.uasset",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  665,
+        "sha256":  "931100f16c250a493c3116bd80655a9dc3962d9d80484c1e61a9cc70c423f2a7",
+        "extracted_utc":  "2026-10-17T21:27:04.2397247Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/Noto_Sans_SC/NotoSansSC-Bold.ufont",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  8716392,
+        "sha256":  "d1961be1161ea1be08496c920862d06ea5c23a757628f4fd69368de1d9f51bed",
+        "extracted_utc":  "2026-10-17T21:27:04.3846602Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/Noto_Sans_SC/NotoSansSC-Medium.uasset",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  669,
+        "sha256":  "501f27f7aecc587cc257ba7b1887a6471a436c176a2b3f27f8619100b0f527d7",
+        "extracted_utc":  "2026-10-17T21:27:04.5592262Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/Noto_Sans_SC/NotoSansSC-Medium.ufont",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  8508580,
+        "sha256":  "9c62ceb174d7529ae4a7f2071f6531991cfadbc2f1897910b48ba951a580ac57",
+        "extracted_utc":  "2026-10-17T21:27:04.6996712Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/Noto_Sans_SC/NotoSansSC-Regular.uasset",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  671,
+        "sha256":  "f5cb163eaee6be651843330e51a4d8d60fdccf7042df2794fd50cd4c320fb6af",
+        "extracted_utc":  "2026-10-17T21:27:04.8283478Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/Noto_Sans_SC/NotoSansSC-Regular.ufont",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  8482020,
+        "sha256":  "a2b93e6c2db05d6bbbf6f27d413ec73269735b7b679019c8a5aa9670ff0ffbf2",
+        "extracted_utc":  "2026-10-17T21:27:04.9698273Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/RobotoMono.uasset",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  1534,
+        "sha256":  "45f8ce5fca9337405be4b81be290e5e45699596bb8f40dc9b1fcc45080f02988",
+        "extracted_utc":  "2026-10-17T21:27:05.1068763Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/RobotoMono-Bold.uasset",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  652,
+        "sha256":  "880b32dcd0bd439620dcb078bc6dff1ded4fdcd6be2a106725ae5b23004cad12",
+        "extracted_utc":  "2026-10-17T21:27:05.2370563Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/RobotoMono-Bold.ufont",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  109500,
+        "sha256":  "d580ebfd08b9b1bb637021ac9a34d30abdf3a1a731865886ec01e0c5859f29c8",
+        "extracted_utc":  "2026-10-17T21:27:05.3724561Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/RobotoMono-Regular.uasset",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  658,
+        "sha256":  "22a0dd963c9e75da8343b6dde520650daef02ffad44842f7a964b5d66cf03c96",
+        "extracted_utc":  "2026-10-17T21:27:05.5144363Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/RobotoMono-Regular.ufont",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  109212,
+        "sha256":  "c59ecb6c18e38d4194249b6e1c555eb55c8e809258cf6d9b624d19d9268253bf",
+        "extracted_utc":  "2026-10-17T21:27:05.6461320Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/RobotoMono-Thin.uasset",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  652,
+        "sha256":  "ecfce17c587d6b924d002efb5eb60e8e3bf461056a324bcd06f81fd80b38a93a",
+        "extracted_utc":  "2026-10-17T21:27:05.7804898Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/UI/Fonts/RobotoMono-Thin.ufont",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  112480,
+        "sha256":  "3d41efb1035b717af6fa01eca387db278bff418c1d8d44f472b00ed7a0130645",
+        "extracted_utc":  "2026-10-17T21:27:05.9103247Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/Development/WorldMap/Fonts/BelnderProMediumDistanceField.uasset",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  1768,
+        "sha256":  "ffc46ec9165982a49b4a3e67824ab74d1a7b6c5060f261544081e4ec5001aba9",
+        "extracted_utc":  "2026-10-17T21:27:06.0421504Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/GooseRunner/CommonAssets/Fonts/TitanOne-Regular.uasset",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  664,
+        "sha256":  "98a87983be7a444656b111fed1d613a0ffc006596bbcc4678d254b2a44f4d2cf",
+        "extracted_utc":  "2026-10-17T21:27:06.1733775Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/GooseRunner/CommonAssets/Fonts/TitanOne-Regular.ufont",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  55712,
+        "sha256":  "563ff6de179bbd44bcd7d2a6c448d6dc3bf935834237cf1250e506e65cd86ff1",
+        "extracted_utc":  "2026-10-17T21:27:06.3075779Z"
+    },
+    {
+        "relative_path":  "AtomicHeart/Content/GooseRunner/CommonAssets/Fonts/TitanOne-Regular_Font.uasset",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  1096,
+        "sha256":  "8d11e318fc6939964093134f8d4c5124a74cf45cae104e3d20576ffbf95e2d64",
+        "extracted_utc":  "2026-10-17T21:27:06.4380603Z"
+    },
+    {
+        "relative_path":  "Engine/Content/EngineFonts/Faces/DroidSansFallback.ufont",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  3939852,
+        "sha256":  "05d71b179ef97b82cf1bb91cef290c600a510f77f39b4964359e3ef88378c79d",
+        "extracted_utc":  "2026-10-17T21:27:06.5803607Z"
+    },
+    {
+        "relative_path":  "Engine/Content/EngineFonts/Faces/DroidSansMono.ufont",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  78296,
+        "sha256":  "793a63429da92cb9be35ca3fca080a66b3c74915fc24b778dcc35d78f465e403",
+        "extracted_utc":  "2026-10-17T21:27:06.7131328Z"
+    },
+    {
+        "relative_path":  "Engine/Content/EngineFonts/Faces/RobotoBold.ufont",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  163448,
+        "sha256":  "24571503140760240924dcd1238f77e7cd0454c0d8b0793990cefa2fad71471f",
+        "extracted_utc":  "2026-10-17T21:27:06.8455985Z"
+    },
+    {
+        "relative_path":  "Engine/Content/EngineFonts/Faces/RobotoBoldItalic.ufont",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  165864,
+        "sha256":  "165a6d02fd8973703787feeef5319b7fd8cb3f665a3c1e702ef0ca49701547c9",
+        "extracted_utc":  "2026-10-17T21:27:06.9802900Z"
+    },
+    {
+        "relative_path":  "Engine/Content/EngineFonts/Faces/RobotoItalic.ufont",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  160736,
+        "sha256":  "470123c6fb5d6c0005431c0f5390742497c55087361a7636b7e82eb35635ded7",
+        "extracted_utc":  "2026-10-17T21:27:07.1104740Z"
+    },
+    {
+        "relative_path":  "Engine/Content/EngineFonts/Faces/RobotoLight.ufont",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  170420,
+        "sha256":  "a6d343d425bc38db90152fa06058b1c7391eca9264f334ef65c1ce175085c6f6",
+        "extracted_utc":  "2026-10-17T21:27:07.2382462Z"
+    },
+    {
+        "relative_path":  "Engine/Content/EngineFonts/Faces/RobotoRegular.ufont",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  158604,
+        "sha256":  "16466ef65064e6f3885a6d2806b8949ac1ac38b524dd0cf8fc96565eb4cc28e8",
+        "extracted_utc":  "2026-10-17T21:27:07.3676602Z"
+    },
+    {
+        "relative_path":  "Engine/Content/Slate/Fonts/DroidSansFallback.ttf",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  3939852,
+        "sha256":  "05d71b179ef97b82cf1bb91cef290c600a510f77f39b4964359e3ef88378c79d",
+        "extracted_utc":  "2026-10-17T21:27:07.5118742Z"
+    },
+    {
+        "relative_path":  "Engine/Content/Slate/Fonts/DroidSansMono.ttf",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  78296,
+        "sha256":  "793a63429da92cb9be35ca3fca080a66b3c74915fc24b778dcc35d78f465e403",
+        "extracted_utc":  "2026-10-17T21:27:07.6500680Z"
+    },
+    {
+        "relative_path":  "Engine/Content/Slate/Fonts/NotoNaskhArabicUI-Regular.ttf",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  146548,
+        "sha256":  "f3878be872cc1d4ad9bd63535db480e3c5752c6313842656208872275cb32226",
+        "extracted_utc":  "2026-10-17T21:27:07.7896733Z"
+    },
+    {
+        "relative_path":  "Engine/Content/Slate/Fonts/NotoSansThai-Regular.ttf",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  39128,
+        "sha256":  "f8997f85ec7aea91a6b077019f76b80145568e22d3056942a28f298510a8434d",
+        "extracted_utc":  "2026-10-17T21:27:07.9196397Z"
+    },
+    {
+        "relative_path":  "Engine/Content/Slate/Fonts/Roboto-Black.ttf",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  164936,
+        "sha256":  "c78ce438e9d91ea8c16341aaf2c6cf07f9c347eb1130bd922796ad4fb78fe885",
+        "extracted_utc":  "2026-10-17T21:27:08.0500790Z"
+    },
+    {
+        "relative_path":  "Engine/Content/Slate/Fonts/Roboto-BlackItalic.ttf",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  166320,
+        "sha256":  "5e7928c14bbddea37ec9ba2453f00bd8f4d73c42c20528e42abc5b89d2732db1",
+        "extracted_utc":  "2026-10-17T21:27:08.1787120Z"
+    },
+    {
+        "relative_path":  "Engine/Content/Slate/Fonts/Roboto-Bold.ttf",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  163448,
+        "sha256":  "24571503140760240924dcd1238f77e7cd0454c0d8b0793990cefa2fad71471f",
+        "extracted_utc":  "2026-10-17T21:27:08.3095738Z"
+    },
+    {
+        "relative_path":  "Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  161308,
+        "sha256":  "2c9245c0246a9c745793c7eaa9cc1fc964a12570009031ea0223115bec6e9426",
+        "extracted_utc":  "2026-10-17T21:27:08.4401334Z"
+    },
+    {
+        "relative_path":  "Engine/Content/Slate/Fonts/Roboto-BoldCondensedItalic.ttf",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  163584,
+        "sha256":  "1117eab9f490123cf8a656fa936a4c9a7e4918b88ae576d64d3d79507096f7b9",
+        "extracted_utc":  "2026-10-17T21:27:08.5816882Z"
+    },
+    {
+        "relative_path":  "Engine/Content/Slate/Fonts/Roboto-BoldItalic.ttf",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  165864,
+        "sha256":  "165a6d02fd8973703787feeef5319b7fd8cb3f665a3c1e702ef0ca49701547c9",
+        "extracted_utc":  "2026-10-17T21:27:08.7129543Z"
+    },
+    {
+        "relative_path":  "Engine/Content/Slate/Fonts/Roboto-Italic.ttf",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  160736,
+        "sha256":  "470123c6fb5d6c0005431c0f5390742497c55087361a7636b7e82eb35635ded7",
+        "extracted_utc":  "2026-10-17T21:27:08.8443666Z"
+    },
+    {
+        "relative_path":  "Engine/Content/Slate/Fonts/Roboto-Light.ttf",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  170420,
+        "sha256":  "a6d343d425bc38db90152fa06058b1c7391eca9264f334ef65c1ce175085c6f6",
+        "extracted_utc":  "2026-10-17T21:27:08.9755358Z"
+    },
+    {
+        "relative_path":  "Engine/Content/Slate/Fonts/Roboto-Regular.ttf",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  158604,
+        "sha256":  "16466ef65064e6f3885a6d2806b8949ac1ac38b524dd0cf8fc96565eb4cc28e8",
+        "extracted_utc":  "2026-10-17T21:27:09.1073747Z"
+    },
+    {
+        "relative_path":  "Engine/Content/Slate/Old/Tiles/Roboto-Bold.ttf",
+        "container":  "pakchunk0-WindowsNoEditor.pak",
+        "size":  163448,
+        "sha256":  "24571503140760240924dcd1238f77e7cd0454c0d8b0793990cefa2fad71471f",
+        "extracted_utc":  "2026-10-17T21:27:09.2391554Z"
+    }
+]
