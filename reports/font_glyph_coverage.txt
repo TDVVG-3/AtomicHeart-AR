@@ -1,0 +1,299 @@
+﻿# Font glyph coverage report (Phase 6)
+# Generated (UTC): 2026-10-17T21:28:08.5121211Z
+# Method: pure-PowerShell sfnt cmap parser (formats 4 and 12).
+# Arabic verdict: FULL = all 42 core letter codepoints U+0621..U+064A mapped in scope; PARTIAL = some; NONE = none.
+
+### pakchunk0-WindowsNoEditor.pak\AtomicHeart\Content\Development\NTD\Fonts\Gotham-BookItalic.ufont  (112852 bytes)
+    codepointsMapped: 650
+    coverage: Latin-Basic=95, Latin-Ext=209, Cyrillic=170, Greek=72, Thai=1
+    arabicCoreLetters: 0/28   arabicTotal: 0
+    VERDICT: NONE   (cmap formats present: 4)
+
+### pakchunk0-WindowsNoEditor.pak\AtomicHeart\Content\Development\UI\Fonts\AH_Pixel_digits.ufont  (13324 bytes)
+    codepointsMapped: 14
+    coverage: Latin-Basic=12
+    arabicCoreLetters: 0/28   arabicTotal: 0
+    VERDICT: NONE   (cmap formats present: 4)
+
+### pakchunk0-WindowsNoEditor.pak\AtomicHeart\Content\Development\UI\Fonts\BlenderPro-Bold.ufont  (67352 bytes)
+    codepointsMapped: 461
+    coverage: Latin-Basic=95, Latin-Ext=226, Cyrillic=94, Greek=1
+    arabicCoreLetters: 0/28   arabicTotal: 0
+    VERDICT: NONE   (cmap formats present: 4)
+
+### pakchunk0-WindowsNoEditor.pak\AtomicHeart\Content\Development\UI\Fonts\BlenderPro-Book.ufont  (71004 bytes)
+    codepointsMapped: 461
+    coverage: Latin-Basic=95, Latin-Ext=226, Cyrillic=94, Greek=1
+    arabicCoreLetters: 0/28   arabicTotal: 0
+    VERDICT: NONE   (cmap formats present: 4)
+
+### pakchunk0-WindowsNoEditor.pak\AtomicHeart\Content\Development\UI\Fonts\BlenderPro-Medium.ufont  (64864 bytes)
+    codepointsMapped: 461
+    coverage: Latin-Basic=95, Latin-Ext=226, Cyrillic=94, Greek=1
+    arabicCoreLetters: 0/28   arabicTotal: 0
+    VERDICT: NONE   (cmap formats present: 4)
+
+### pakchunk0-WindowsNoEditor.pak\AtomicHeart\Content\Development\UI\Fonts\Blender_Pro_Bold_Italic.ufont  (68204 bytes)
+    codepointsMapped: 461
+    coverage: Latin-Basic=95, Latin-Ext=226, Cyrillic=94, Greek=1
+    arabicCoreLetters: 0/28   arabicTotal: 0
+    VERDICT: NONE   (cmap formats present: 4)
+
+### pakchunk0-WindowsNoEditor.pak\AtomicHeart\Content\Development\UI\Fonts\Blender_Pro_Heavy.ufont  (53376 bytes)
+    codepointsMapped: 460
+    coverage: Latin-Basic=95, Latin-Ext=226, Cyrillic=94, Greek=1
+    arabicCoreLetters: 0/28   arabicTotal: 0
+    VERDICT: NONE   (cmap formats present: 4)
+
+### pakchunk0-WindowsNoEditor.pak\AtomicHeart\Content\Development\UI\Fonts\BrutalType.ufont  (107956 bytes)
+    codepointsMapped: 419
+    coverage: Latin-Basic=95, Latin-Ext=173, Cyrillic=94, Greek=2
+    arabicCoreLetters: 0/28   arabicTotal: 0
+    VERDICT: NONE   (cmap formats present: 4)
+
+### pakchunk0-WindowsNoEditor.pak\AtomicHeart\Content\Development\UI\Fonts\RobotoMono-Bold.ufont  (109500 bytes)
+    codepointsMapped: 878
+    coverage: Arabic-PresentationB=1, Latin-Basic=95, Latin-Ext=241, Cyrillic=255, Greek=75
+    arabicCoreLetters: 0/28   arabicTotal: 1
+    VERDICT: NONE   (cmap formats present: 4)
+
+### pakchunk0-WindowsNoEditor.pak\AtomicHeart\Content\Development\UI\Fonts\RobotoMono-Regular.ufont  (109212 bytes)
+    codepointsMapped: 878
+    coverage: Arabic-PresentationB=1, Latin-Basic=95, Latin-Ext=241, Cyrillic=255, Greek=75
+    arabicCoreLetters: 0/28   arabicTotal: 1
+    VERDICT: NONE   (cmap formats present: 4)
+
+### pakchunk0-WindowsNoEditor.pak\AtomicHeart\Content\Development\UI\Fonts\RobotoMono-Thin.ufont  (112480 bytes)
+    codepointsMapped: 878
+    coverage: Arabic-PresentationB=1, Latin-Basic=95, Latin-Ext=241, Cyrillic=255, Greek=75
+    arabicCoreLetters: 0/28   arabicTotal: 1
+    VERDICT: NONE   (cmap formats present: 4)
+
+### pakchunk0-WindowsNoEditor.pak\AtomicHeart\Content\Development\UI\Fonts\MultiLanguage\AnekBangla-Bold.ufont  (249724 bytes)
+    codepointsMapped: 345
+    coverage: Latin-Basic=95, Latin-Ext=99, Devanagari=2, Bengali=90
+    arabicCoreLetters: 0/28   arabicTotal: 0
+    VERDICT: NONE   (cmap formats present: 4)
+
+### pakchunk0-WindowsNoEditor.pak\AtomicHeart\Content\Development\UI\Fonts\MultiLanguage\Sarpanch-Bold.ufont  (278336 bytes)
+    codepointsMapped: 430
+    coverage: Latin-Basic=95, Latin-Ext=182, Greek=1, Devanagari=104
+    arabicCoreLetters: 0/28   arabicTotal: 0
+    VERDICT: NONE   (cmap formats present: 4)
+
+### pakchunk0-WindowsNoEditor.pak\AtomicHeart\Content\Development\UI\Fonts\MultiLanguage\Srisakdi-Bold.ufont  (97388 bytes)
+    codepointsMapped: 727
+    coverage: Latin-Basic=95, Latin-Ext=258, Greek=4, Thai=87
+    arabicCoreLetters: 0/28   arabicTotal: 0
+    VERDICT: NONE   (cmap formats present: 4)
+
+### pakchunk0-WindowsNoEditor.pak\AtomicHeart\Content\Development\UI\Fonts\Noto_Sans_JP\NotoSansJP-Black.ufont  (4896876 bytes)
+    codepointsMapped: 16734
+    coverage: Latin-Basic=95, Latin-Ext=149, Cyrillic=66, Greek=49, CJK-Common=12747, Kana=189
+    arabicCoreLetters: 0/28   arabicTotal: 68
+    VERDICT: NONE   (cmap formats present: 4,12)
+
+### pakchunk0-WindowsNoEditor.pak\AtomicHeart\Content\Development\UI\Fonts\Noto_Sans_JP\NotoSansJP-Bold.ufont  (4691408 bytes)
+    codepointsMapped: 16734
+    coverage: Latin-Basic=95, Latin-Ext=149, Cyrillic=66, Greek=49, CJK-Common=12747, Kana=189
+    arabicCoreLetters: 0/28   arabicTotal: 68
+    VERDICT: NONE   (cmap formats present: 4,12)
+
+### pakchunk0-WindowsNoEditor.pak\AtomicHeart\Content\Development\UI\Fonts\Noto_Sans_JP\NotoSansJP-Medium.ufont  (4564460 bytes)
+    codepointsMapped: 16734
+    coverage: Latin-Basic=95, Latin-Ext=149, Cyrillic=66, Greek=49, CJK-Common=12747, Kana=189
+    arabicCoreLetters: 0/28   arabicTotal: 68
+    VERDICT: NONE   (cmap formats present: 4,12)
+
+### pakchunk0-WindowsNoEditor.pak\AtomicHeart\Content\Development\UI\Fonts\Noto_Sans_JP\NotoSansJP-Regular.ufont  (4548208 bytes)
+    codepointsMapped: 16734
+    coverage: Latin-Basic=95, Latin-Ext=149, Cyrillic=66, Greek=49, CJK-Common=12747, Kana=189
+    arabicCoreLetters: 0/28   arabicTotal: 68
+    VERDICT: NONE   (cmap formats present: 4,12)
+
+### pakchunk0-WindowsNoEditor.pak\AtomicHeart\Content\Development\UI\Fonts\Noto_Sans_KR\NotoSansKR-Black.ufont  (5068164 bytes)
+    codepointsMapped: 23176
+    coverage: Latin-Basic=95, Latin-Ext=149, Cyrillic=66, Greek=49, CJK-Common=8138, Kana=189, Hangul-Syllables=11172
+    arabicCoreLetters: 0/28   arabicTotal: 68
+    VERDICT: NONE   (cmap formats present: 4,12)
+
+### pakchunk0-WindowsNoEditor.pak\AtomicHeart\Content\Development\UI\Fonts\Noto_Sans_KR\NotoSansKR-Bold.ufont  (4909668 bytes)
+    codepointsMapped: 23176
+    coverage: Latin-Basic=95, Latin-Ext=149, Cyrillic=66, Greek=49, CJK-Common=8138, Kana=189, Hangul-Syllables=11172
+    arabicCoreLetters: 0/28   arabicTotal: 68
+    VERDICT: NONE   (cmap formats present: 4,12)
+
+### pakchunk0-WindowsNoEditor.pak\AtomicHeart\Content\Development\UI\Fonts\Noto_Sans_KR\NotoSansKR-Medium.ufont  (4768768 bytes)
+    codepointsMapped: 23176
+    coverage: Latin-Basic=95, Latin-Ext=149, Cyrillic=66, Greek=49, CJK-Common=8138, Kana=189, Hangul-Syllables=11172
+    arabicCoreLetters: 0/28   arabicTotal: 68
+    VERDICT: NONE   (cmap formats present: 4,12)
+
+### pakchunk0-WindowsNoEditor.pak\AtomicHeart\Content\Development\UI\Fonts\Noto_Sans_KR\NotoSansKR-Regular.ufont  (4744692 bytes)
+    codepointsMapped: 23176
+    coverage: Latin-Basic=95, Latin-Ext=149, Cyrillic=66, Greek=49, CJK-Common=8138, Kana=189, Hangul-Syllables=11172
+    arabicCoreLetters: 0/28   arabicTotal: 68
+    VERDICT: NONE   (cmap formats present: 4,12)
+
+### pakchunk0-WindowsNoEditor.pak\AtomicHeart\Content\Development\UI\Fonts\Noto_Sans_SC\NotoSansSC-Black.ufont  (8950680 bytes)
+    codepointsMapped: 30892
+    coverage: Latin-Basic=95, Latin-Ext=149, Cyrillic=66, Greek=49, CJK-Common=20976, Kana=189
+    arabicCoreLetters: 0/28   arabicTotal: 68
+    VERDICT: NONE   (cmap formats present: 4,12)
+
+### pakchunk0-WindowsNoEditor.pak\AtomicHeart\Content\Development\UI\Fonts\Noto_Sans_SC\NotoSansSC-Bold.ufont  (8716392 bytes)
+    codepointsMapped: 30892
+    coverage: Latin-Basic=95, Latin-Ext=149, Cyrillic=66, Greek=49, CJK-Common=20976, Kana=189
+    arabicCoreLetters: 0/28   arabicTotal: 68
+    VERDICT: NONE   (cmap formats present: 4,12)
+
+### pakchunk0-WindowsNoEditor.pak\AtomicHeart\Content\Development\UI\Fonts\Noto_Sans_SC\NotoSansSC-Medium.ufont  (8508580 bytes)
+    codepointsMapped: 30892
+    coverage: Latin-Basic=95, Latin-Ext=149, Cyrillic=66, Greek=49, CJK-Common=20976, Kana=189
+    arabicCoreLetters: 0/28   arabicTotal: 68
+    VERDICT: NONE   (cmap formats present: 4,12)
+
+### pakchunk0-WindowsNoEditor.pak\AtomicHeart\Content\Development\UI\Fonts\Noto_Sans_SC\NotoSansSC-Regular.ufont  (8482020 bytes)
+    codepointsMapped: 30892
+    coverage: Latin-Basic=95, Latin-Ext=149, Cyrillic=66, Greek=49, CJK-Common=20976, Kana=189
+    arabicCoreLetters: 0/28   arabicTotal: 68
+    VERDICT: NONE   (cmap formats present: 4,12)
+
+### pakchunk0-WindowsNoEditor.pak\AtomicHeart\Content\GooseRunner\CommonAssets\Fonts\TitanOne-Regular.ufont  (55712 bytes)
+    codepointsMapped: 413
+    coverage: Latin-Basic=95, Latin-Ext=206, Greek=1
+    arabicCoreLetters: 0/28   arabicTotal: 0
+    VERDICT: NONE   (cmap formats present: 4)
+
+### pakchunk0-WindowsNoEditor.pak\Engine\Content\EngineFonts\Faces\DroidSansFallback.ufont  (3939852 bytes)
+    codepointsMapped: 34492
+    coverage: Latin-Basic=95, Latin-Ext=86, Cyrillic=66, Greek=48, Thai=1, CJK-Common=20902, Kana=181, Hangul-Syllables=11172
+    arabicCoreLetters: 0/28   arabicTotal: 64
+    VERDICT: NONE   (cmap formats present: 4,12)
+
+### pakchunk0-WindowsNoEditor.pak\Engine\Content\EngineFonts\Faces\DroidSansMono.ufont  (78296 bytes)
+    codepointsMapped: 591
+    coverage: Arabic-PresentationB=1, Latin-Basic=95, Latin-Ext=234, Cyrillic=94, Greek=75
+    arabicCoreLetters: 0/28   arabicTotal: 1
+    VERDICT: NONE   (cmap formats present: 4)
+
+### pakchunk0-WindowsNoEditor.pak\Engine\Content\EngineFonts\Faces\RobotoBold.ufont  (163448 bytes)
+    codepointsMapped: 878
+    coverage: Arabic-PresentationB=1, Latin-Basic=95, Latin-Ext=239, Cyrillic=255, Greek=75
+    arabicCoreLetters: 0/28   arabicTotal: 1
+    VERDICT: NONE   (cmap formats present: 4)
+
+### pakchunk0-WindowsNoEditor.pak\Engine\Content\EngineFonts\Faces\RobotoBoldItalic.ufont  (165864 bytes)
+    codepointsMapped: 878
+    coverage: Arabic-PresentationB=1, Latin-Basic=95, Latin-Ext=239, Cyrillic=255, Greek=75
+    arabicCoreLetters: 0/28   arabicTotal: 1
+    VERDICT: NONE   (cmap formats present: 4)
+
+### pakchunk0-WindowsNoEditor.pak\Engine\Content\EngineFonts\Faces\RobotoItalic.ufont  (160736 bytes)
+    codepointsMapped: 878
+    coverage: Arabic-PresentationB=1, Latin-Basic=95, Latin-Ext=239, Cyrillic=255, Greek=75
+    arabicCoreLetters: 0/28   arabicTotal: 1
+    VERDICT: NONE   (cmap formats present: 4)
+
+### pakchunk0-WindowsNoEditor.pak\Engine\Content\EngineFonts\Faces\RobotoLight.ufont  (170420 bytes)
+    codepointsMapped: 896
+    coverage: Arabic-PresentationB=1, Latin-Basic=95, Latin-Ext=242, Cyrillic=255, Greek=75
+    arabicCoreLetters: 0/28   arabicTotal: 1
+    VERDICT: NONE   (cmap formats present: 4,12)
+
+### pakchunk0-WindowsNoEditor.pak\Engine\Content\EngineFonts\Faces\RobotoRegular.ufont  (158604 bytes)
+    codepointsMapped: 878
+    coverage: Arabic-PresentationB=1, Latin-Basic=95, Latin-Ext=239, Cyrillic=255, Greek=75
+    arabicCoreLetters: 0/28   arabicTotal: 1
+    VERDICT: NONE   (cmap formats present: 4)
+
+### pakchunk0-WindowsNoEditor.pak\Engine\Content\Slate\Fonts\DroidSansFallback.ttf  (3939852 bytes)
+    codepointsMapped: 34492
+    coverage: Latin-Basic=95, Latin-Ext=86, Cyrillic=66, Greek=48, Thai=1, CJK-Common=20902, Kana=181, Hangul-Syllables=11172
+    arabicCoreLetters: 0/28   arabicTotal: 64
+    VERDICT: NONE   (cmap formats present: 4,12)
+
+### pakchunk0-WindowsNoEditor.pak\Engine\Content\Slate\Fonts\DroidSansMono.ttf  (78296 bytes)
+    codepointsMapped: 591
+    coverage: Arabic-PresentationB=1, Latin-Basic=95, Latin-Ext=234, Cyrillic=94, Greek=75
+    arabicCoreLetters: 0/28   arabicTotal: 1
+    VERDICT: NONE   (cmap formats present: 4)
+
+### pakchunk0-WindowsNoEditor.pak\Engine\Content\Slate\Fonts\NotoNaskhArabicUI-Regular.ttf  (146548 bytes)
+    codepointsMapped: 1122
+    coverage: Arabic=253, Arabic-Supplement=48, Arabic-ExtA=39, Arabic-PresentationA=611, Arabic-PresentationB=141, Latin-Basic=15, Latin-Ext=3
+    arabicCoreLetters: 42/28   arabicTotal: 1092
+    VERDICT: FULL   (cmap formats present: 4)
+
+### pakchunk0-WindowsNoEditor.pak\Engine\Content\Slate\Fonts\NotoSansThai-Regular.ttf  (39128 bytes)
+    codepointsMapped: 101
+    coverage: Latin-Basic=2, Latin-Ext=1, Thai=87
+    arabicCoreLetters: 0/28   arabicTotal: 0
+    VERDICT: NONE   (cmap formats present: 4)
+
+### pakchunk0-WindowsNoEditor.pak\Engine\Content\Slate\Fonts\Roboto-Black.ttf  (164936 bytes)
+    codepointsMapped: 878
+    coverage: Arabic-PresentationB=1, Latin-Basic=95, Latin-Ext=239, Cyrillic=255, Greek=75
+    arabicCoreLetters: 0/28   arabicTotal: 1
+    VERDICT: NONE   (cmap formats present: 4)
+
+### pakchunk0-WindowsNoEditor.pak\Engine\Content\Slate\Fonts\Roboto-BlackItalic.ttf  (166320 bytes)
+    codepointsMapped: 878
+    coverage: Arabic-PresentationB=1, Latin-Basic=95, Latin-Ext=239, Cyrillic=255, Greek=75
+    arabicCoreLetters: 0/28   arabicTotal: 1
+    VERDICT: NONE   (cmap formats present: 4)
+
+### pakchunk0-WindowsNoEditor.pak\Engine\Content\Slate\Fonts\Roboto-Bold.ttf  (163448 bytes)
+    codepointsMapped: 878
+    coverage: Arabic-PresentationB=1, Latin-Basic=95, Latin-Ext=239, Cyrillic=255, Greek=75
+    arabicCoreLetters: 0/28   arabicTotal: 1
+    VERDICT: NONE   (cmap formats present: 4)
+
+### pakchunk0-WindowsNoEditor.pak\Engine\Content\Slate\Fonts\Roboto-BoldCondensed.ttf  (161308 bytes)
+    codepointsMapped: 878
+    coverage: Arabic-PresentationB=1, Latin-Basic=95, Latin-Ext=239, Cyrillic=255, Greek=75
+    arabicCoreLetters: 0/28   arabicTotal: 1
+    VERDICT: NONE   (cmap formats present: 4)
+
+### pakchunk0-WindowsNoEditor.pak\Engine\Content\Slate\Fonts\Roboto-BoldCondensedItalic.ttf  (163584 bytes)
+    codepointsMapped: 878
+    coverage: Arabic-PresentationB=1, Latin-Basic=95, Latin-Ext=239, Cyrillic=255, Greek=75
+    arabicCoreLetters: 0/28   arabicTotal: 1
+    VERDICT: NONE   (cmap formats present: 4)
+
+### pakchunk0-WindowsNoEditor.pak\Engine\Content\Slate\Fonts\Roboto-BoldItalic.ttf  (165864 bytes)
+    codepointsMapped: 878
+    coverage: Arabic-PresentationB=1, Latin-Basic=95, Latin-Ext=239, Cyrillic=255, Greek=75
+    arabicCoreLetters: 0/28   arabicTotal: 1
+    VERDICT: NONE   (cmap formats present: 4)
+
+### pakchunk0-WindowsNoEditor.pak\Engine\Content\Slate\Fonts\Roboto-Italic.ttf  (160736 bytes)
+    codepointsMapped: 878
+    coverage: Arabic-PresentationB=1, Latin-Basic=95, Latin-Ext=239, Cyrillic=255, Greek=75
+    arabicCoreLetters: 0/28   arabicTotal: 1
+    VERDICT: NONE   (cmap formats present: 4)
+
+### pakchunk0-WindowsNoEditor.pak\Engine\Content\Slate\Fonts\Roboto-Light.ttf  (170420 bytes)
+    codepointsMapped: 896
+    coverage: Arabic-PresentationB=1, Latin-Basic=95, Latin-Ext=242, Cyrillic=255, Greek=75
+    arabicCoreLetters: 0/28   arabicTotal: 1
+    VERDICT: NONE   (cmap formats present: 4,12)
+
+### pakchunk0-WindowsNoEditor.pak\Engine\Content\Slate\Fonts\Roboto-Regular.ttf  (158604 bytes)
+    codepointsMapped: 878
+    coverage: Arabic-PresentationB=1, Latin-Basic=95, Latin-Ext=239, Cyrillic=255, Greek=75
+    arabicCoreLetters: 0/28   arabicTotal: 1
+    VERDICT: NONE   (cmap formats present: 4)
+
+### pakchunk0-WindowsNoEditor.pak\Engine\Content\Slate\Old\Tiles\Roboto-Bold.ttf  (163448 bytes)
+    codepointsMapped: 878
+    coverage: Arabic-PresentationB=1, Latin-Basic=95, Latin-Ext=239, Cyrillic=255, Greek=75
+    arabicCoreLetters: 0/28   arabicTotal: 1
+    VERDICT: NONE   (cmap formats present: 4)
+
+### pakchunk5-WindowsNoEditor.pak\AtomicHeart\Content\Development\NTD\Fonts\Gotham-Black.ufont  (113620 bytes)
+    codepointsMapped: 650
+    coverage: Latin-Basic=95, Latin-Ext=209, Cyrillic=170, Greek=72, Thai=1
+    arabicCoreLetters: 0/28   arabicTotal: 0
+    VERDICT: NONE   (cmap formats present: 4)
+
