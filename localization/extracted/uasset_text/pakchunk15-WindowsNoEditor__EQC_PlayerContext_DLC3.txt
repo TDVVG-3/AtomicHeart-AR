@@ -1,0 +1,12 @@
+﻿# AtomicHeart/Content/DLC3/Core/AI/Characters/BabaRobot/EQC_PlayerContext_DLC3.uexp  (from pakchunk15-WindowsNoEditor.pak)
+# utf16_strings=6 ascii_strings=0 scripts=
+
+## UTF-16 strings
+￩￿I
+￨￿Y
+ￋ￿I
+￳￿I
+￫￿Y
+￩￿0
+
+## ASCII strings (may include class/property names)

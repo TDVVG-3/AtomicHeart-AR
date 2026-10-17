@@ -1,0 +1,53 @@
+﻿# AtomicHeart/Content/Development/MaterialLibrary/Decals/Text/Theatre/T_Theatre_text02.uexp  (from pakchunk6-WindowsNoEditor.pak)
+# utf16_strings=27 ascii_strings=19 scripts=Cyrillic,CJK
+# SCRIPTS DETECTED: Cyrillic,CJK
+
+## UTF-16 strings
+胫繦鑀겝鸼঒
+䙐䑟员1
+煛啕钒
+嵕禽嫫
+ꉉಢc
+ત嫋
+䕕ઈࠡ篯
+ᚦ篯ࡁ敕곊嫋
+ꂄꩢ₡
+ꩪ嫋ࠡ荕钒
+睕ﬦ挬
+ᑕ涔k
+啕䭗萰
+啕奕剪
+嗕楕J
+嘧啕劊
+莨喵括
+誰喊媫
+嗿篯ႂ볪ꔯ嫫
+ꢨ浖k
+낪啺嫋 ꃢ喥
+歍蘨¦
+ռ喕歍
+꫿햯歍ࡡ諽鮪嫫ႂ能㾀努ᢣ⡁溂嫋ࡁ⣛䈨
+ꁕ啜䇨
+붽誽ࡒ終㔵椵䕊꠩﫺쟺9
+꘹Ｑ￿ӿ
+
+## ASCII strings (may include class/property names)
+f~@
+PF_DXT1
+[qUU
+Uw&
+UUWK0
+UUUYjR
+UURC
+UUiJ
+'VUU
+Vmk
+Mk(
+UMk
+Mka
+UU 
+B}555iJE)
+VVV
+(B!
+xxxx
+CCCC

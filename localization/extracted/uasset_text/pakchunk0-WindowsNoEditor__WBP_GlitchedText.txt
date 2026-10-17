@@ -1,0 +1,33 @@
+﻿# AtomicHeart/Content/Core/UI/Scanner/WBP_GlitchedText.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=23 ascii_strings=5 scripts=Cyrillic,CJK
+# SCRIPTS DETECTED: Cyrillic,CJK
+
+## UTF-16 strings
+敎瑸祓扭汯
+灕慤整汇瑩档祓扭汯
+￈￿Y
+￈￿
+敎瑸祓扭汯
+灕慤整汇瑩档祓扭汯
+￿㓿1234567890йцукенгшщзфывапролджэячсмитьбюqwertyuiopasdfghjklzxcvbnm#@$%&^*=+~
+턠￿᏿
+턠￿◿
+￉￿p
+￲￿p
+￲￿p
+￴￿¡
+ￆ￿J
+ￇ￿Y
+¤￾￿B
+￮￿L
+㾀㺐哸㳎
+￴￿VOV-U6ラボテック
+￮￿¥
+쳍㽌
+￮￿¥
+쳍㽌
+
+## ASCII strings (may include class/property names)
+NextSymbol
+UpdateGlitchSymbol
+#<n

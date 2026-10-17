@@ -1,0 +1,8 @@
+﻿# AtomicHeart/Content/DLC4/Development/MaterialLibrary/Layered/MaterialFunctions/MLF_UniversalTextureLayer_DLC4.uexp  (from pakchunk16-WindowsNoEditor.pak)
+# utf16_strings=1 ascii_strings=0 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+븗㫟ⲛꭄ泣쌿艡૦
+
+## ASCII strings (may include class/property names)

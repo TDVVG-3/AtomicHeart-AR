@@ -1,0 +1,10 @@
+﻿# AtomicHeart/Content/DLC3/Development/MaterialLibrary/VolumetricGlass/Utils/MF_SubsurfaceScattering.uexp  (from pakchunk15-WindowsNoEditor.pak)
+# utf16_strings=2 ascii_strings=1 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+摁慶据摥猠扵畳晲捡⁥捳瑡整楲杮
+濾釹㇜둀迭擢抿୅
+
+## ASCII strings (may include class/property names)
+Advanced subsurface scattering

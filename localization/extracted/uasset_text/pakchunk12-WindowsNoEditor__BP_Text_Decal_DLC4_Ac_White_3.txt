@@ -1,0 +1,21 @@
+﻿# AtomicHeart/Content/Development/MaterialLibrary/Plakat/Crystal_castle/Text_Decal_DLC4_A/BP_Text_Decal_DLC4_Ac_White_3.uexp  (from pakchunk12-WindowsNoEditor.pak)
+# utf16_strings=12 ascii_strings=2 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+￷￿F
+￲￿F
+￺￿8
+潐浥㍟
+쳍㷌䞮㷡
+￵￿"
+쩭ਤ齁ꀠ᣻閩㵬
+￲￿"
+轅笯ს鳳㷒
+￷￿"
+翌씤덬䙞Ⲕ᩽㕫=
+￥￿H
+
+## ASCII strings (may include class/property names)
+Poem_3
+k5=

@@ -1,0 +1,36 @@
+﻿# AtomicHeart/Content/Development/MaterialLibrary/Decals/Text/Warning/SM_Nuke_Text_tablets_18_SM_Text_Pane_Aiir03.uexp  (from pakchunk13-WindowsNoEditor.pak)
+# utf16_strings=22 ascii_strings=7 scripts=Cyrillic,CJK
+# SCRIPTS DETECTED: Cyrillic,CJK
+
+## UTF-16 strings
+쳥띂ᓥ䊩㇑Ƃ
+￻￿.
+῵䏈+
+䋿+
+䋿)
+蒶ᾢ?
+㚿褬䉸A
+ૈ䊲5
+ᗴ띀䫺앤ቯ5
+�ᾢⰿ碉硂
+Ⓜᾢⰿ碉盂
+⑂ᾢⰿ碉盂
+ᾢⰿ碉ł
+罿
+罿
+罿
+ѿ
+昢™℠訠⬢ℵ䴻⬵䴻昵℻Ġ
+멦壂뽀赂嗺멦ł
+蒶ᾢ?
+￻￿I
+῵䏈䋿
+
+## ASCII strings (may include class/property names)
+xBA
+xBx
+"f"! ! 
+"+5! 
+;M5+5
+;M5f"
+;! 

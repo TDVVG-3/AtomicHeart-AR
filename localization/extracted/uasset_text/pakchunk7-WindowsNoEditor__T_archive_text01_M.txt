@@ -1,0 +1,52 @@
+﻿# AtomicHeart/Content/Development/MaterialLibrary/Decals/Text/Archive/T_archive_text01_M.uexp  (from pakchunk7-WindowsNoEditor.pak)
+# utf16_strings=33 ascii_strings=26 scripts=Cyrillic,CJK
+# SCRIPTS DETECTED: Cyrillic,CJK
+
+## UTF-16 strings
+굆䋆痺疪দ
+䙐䑟员1
+啕ᒪ¥
+횺ࠡ喪ꨪ鳳
+⁕펀ₜ
+⡕㐨₥
+聕ﮀÞ
+喪ꪪ鳓
+ࡕ吠¥
+ࡕ늨
+恕ᑠ¥
+ॕ굕ࡁ
+굕ࡁꨨ੕鳓
+W鳳ࡁꨨU
+ꪨ꩕鳓ࠡ
+扠䁕努
+唠啕篯
+喪啕篯
+喪啕篯
+喪啕媫
+啕蹕s
+啪啕@
+ﶫ퍕ₜ
+篏啕ª
+篏啕ª
+ﾪ㑕₥
+ꪈ嗿钒ࠡ嗿
+굕⥥꩕喪篯ࠡÿ
+ჿ斄唩肀ၕ
+쭫꩚�䷟楫ꁊ࣪
+쩚쫊ӊ
+ୣ꩛ꪪҪ
+ୣ꩛ꪪҪ
+
+## ASCII strings (may include class/property names)
+PF_DXT1
+UUU
+U((4
+@U``
+ (U
+`bU@
+ UUU
+IJU
+jUUU@
+{UU
+e)U
+MkiJ

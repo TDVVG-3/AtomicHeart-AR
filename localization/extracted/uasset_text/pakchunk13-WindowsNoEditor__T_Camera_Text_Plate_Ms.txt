@@ -1,0 +1,102 @@
+﻿# AtomicHeart/Content/DLC/Sahalin_SeaBase/Assets_Conctructions/Shaders/T_Camera_Text_Plate_Ms.uexp  (from pakchunk13-WindowsNoEditor.pak)
+# utf16_strings=52 ascii_strings=54 scripts=Cyrillic,CJK
+# SCRIPTS DETECTED: Cyrillic,CJK
+
+## UTF-16 strings
+뱻ᓡ鑅⻘䟦ৱ
+䙐䑟员1
+꩕ᓿ¥
+ࡕ綊ï
+啕ﾪ
+啕ﾪ
+啕ﾪ
+啕ﾪ
+啕ﾪ
+啕ﾪ
+ׅ䖅ꔴ ⣣禂ꕔ
+䡊䉂鳳ࡁ膽喁굵 ú喪钒 肮
+»唢ꔴ ú喨鳳
+옸ࠡꣾ喪鳳 «唠钲
+￿ 喪啕뷗
+喕酕
+￿ ꖭ閵ꕔ
+햕뙕₵
+ꔴ塘塘
+ꔴ┥┥
+啕ᗕꕔ
+ᔵ疕­
+떖 ᖕԵ궕
+떶 扰
+锵啕豑 幖앱
+㗕峅歭
+啕蹕s
+썜唥挬
+啕ɘ媫
+啕誵豑
+肅啚篯
+ꪪꪪ@
+䁀၀
+喕啕뷷
+喪啕篏
+啕{
+啕ၕ
+굕 헅嗕
+啕궕굵 坓啗
+ᖉ啕劊
+■ࡕB
+ࡕ啸歍
+唥啕뷷
+啞啕떖
+坕ၞ₄
+兓婑挬
+嗕A
+呕閃䩉
+㕕囋挬
+閭䵙k
+嚪Z
+꘹Ｑ￿ӿ
+
+## ASCII strings (may include class/property names)
+PF_DXT1
+JHBB
+"U4
+GDFE
+UUU
+jUUU
+@F'UA
+\VUU
+UVT\
+TVWU
+XXPP
+XXXX
+%%%%
+UUWT
+ppPP
+VTXP
+X\TV
+pb]
+UUQ
+V^q
+\mk
+%U,c
+UUX
+\UUU
+VUUU
+@@@
+UU=
+UU|
+U[sA
+aQSS
+SqaI
+MIa
+SWWU
+xUMk
+`VUU
+%UUU
+^UUU
+UUW^
+SQQZ,c
+V,c
+TWUU
+YMk
+QQy

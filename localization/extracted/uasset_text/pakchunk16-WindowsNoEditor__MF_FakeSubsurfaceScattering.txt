@@ -1,0 +1,10 @@
+﻿# AtomicHeart/Content/DLC4/Development/MaterialLibrary/MaterialFunctions/MF_FakeSubsurfaceScattering.uexp  (from pakchunk16-WindowsNoEditor.pak)
+# utf16_strings=2 ascii_strings=1 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+ഀ捻譴᭐饂㹄탧ቊࢦ
+섀⪃�
+
+## ASCII strings (may include class/property names)
+{ct

@@ -1,0 +1,30 @@
+﻿# AtomicHeart/Content/Core/Data/InputTips/ST_GameTips_Texts.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=15 ascii_strings=8 scripts=Cyrillic,CJK
+# SCRIPTS DETECTED: Cyrillic,CJK
+
+## UTF-16 strings
+呓䝟浡呥灩彳敔瑸彳
+彩慲敮楮
+ы ранены. Чтобы подлечиться, зажмите <tag id="InputAction.Gameplay.StartCasseteSelection"/>
+穡浨瑩彥彩摵牥桺癩祡整
+олесо выбора предметов..
+档潴楢畟汫湯慹獴慹
+ﾀ￿Чтобы уклоняться от ударов, летящих предметов и снарядов, используйте <tag id="InputAction.Gameplay.Dodge"/> во время движения.
+潲楴湶歩彩潭畧彴獩潰穬癯瑡
+ри активации красной подсветки<h> во время движения используйте уворот </>(<tag id="InputAction.Gameplay.Dodge"/>)для избежания урона.
+汳彩牰瑯癩楮彫瑳楯彴灳湩祯
+ротивник может прервать скрытое убийства  если вы будете не расторопны.
+慮桺業整獟慬楢役摵牡
+ажмите <tag id="InputAction.Gameplay.EquippedItemPrimaryAction"/> для нанесения слабого удара. Такой удар производится быстро, но наносит мало урона.
+潢彲敲畳獲癯㉟
+ажмите и удерживайте <tag id="InputAction.Gameplay.Use"/> для сбора ресурсов на локациях и с поверженных противников.
+
+## ASCII strings (may include class/property names)
+ST_GameTips_Texts_
+vi_raneni
+zazhmite_i_uderzhivayte
+chtobi_uklonyatsya
+protivniki_mogut_ispolzovat
+esli_protivnik_stoit_spinoy
+nazhmite_slabiy_udar
+sbor_resursov_2

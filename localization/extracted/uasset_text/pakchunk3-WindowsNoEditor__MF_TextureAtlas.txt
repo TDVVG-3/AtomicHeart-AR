@@ -1,0 +1,8 @@
+﻿# AtomicHeart/Content/Development/MaterialLibrary/Decals/MeshDecals/MF_TextureAtlas.uexp  (from pakchunk3-WindowsNoEditor.pak)
+# utf16_strings=1 ascii_strings=0 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+梫㯥ŭ륃퉗㯽ཱྀࢉ
+
+## ASCII strings (may include class/property names)

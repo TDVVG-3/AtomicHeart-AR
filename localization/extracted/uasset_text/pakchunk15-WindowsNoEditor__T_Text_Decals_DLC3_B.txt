@@ -1,0 +1,129 @@
+﻿# AtomicHeart/Content/DLC3/Narrative/Triton/T_Text_Decals_DLC3_B.uexp  (from pakchunk15-WindowsNoEditor.pak)
+# utf16_strings=75 ascii_strings=58 scripts=Cyrillic,CJK
+# SCRIPTS DETECTED: Cyrillic,CJK
+
+## UTF-16 strings
+䙐䑟员1
+啕ê칹
+啕違ᣃ
+啕籕⥥
+啕⥅
+껖魳ꍝᐸ₥
+剔屘豑
+啕⋪뷗
+啕芩钲
+啕떶
+啕⎩鳳
+啕䁢玮
+붃끽豱ᣃ罪蒯劊
+ࡁꆁԥ�ႂ邢쎀
+槆⍊ꁵힻ涽౭뚨ꮵ繚ₗᎨ₝
+ࢯ薇鳓ࢁ聣
+啕ၕ斄혩
+裿玎ㆆ聯唪篏 䢫繈
+慡ࡳB
+ᖵ馕ӎꨡ晬㠠Æ
+舠�ㆆ⢺ࡈ豱
+칹䂀 뷷
+噔핕옸
+喕畕­
+엉啕
+啙ᡕÆ
+ួ쮾륚ꂱ₽
+ၢ䮥籰�ࡡ薵諎캙ࠡ剛䁠豱
+共ᆑ횚
+呖呔굵
+�㣖圠
+뷷ᣃ⮅° 婟恘떶
+Ĺ唩鳳
+ꪲ駶Î
+촥陽µ
+ힰ�⃞
+ᔥ�Þ
+ঙ咶옸
+屖塐굵
+鳳兑�ၢ녱喙뷷ࠡ쑄嗷
+긠ၕ
+鳳ࡁ»唨鳓 呖啖
+옸 幕恪豱
+啕ಂc
+࡫⁂꾎Z
+灘塐굵
+ᔥ䔥떖
+偨硘�
+ꖥ閕뷷玎ꉝ詮뷷ࡁꦪ偰
+奁啕굕
+喃啕굵
+啕噔挬
+ᕕ隕µ
+ቕ똬µ
+啕칙ࠡ啕⚦뷷ࠡ啕⺄�
+啕졫ꔴ
+ꬢ啕떖
+喪鉕
+㨠啕鳓
+嗽₽
+啕떶
+嗔ᑕ¥
+ﴮ啕豱
+ɕ躪s
+霵ₜ
+Ჸ펔
+啕銭ₔ
+啕ₜ
+啕{
+唠啕떶
+喪啕歭
+㣕豑ᣃࣾ꫷玎
+喢啪媫
+╚ȩ块ї
+ࡂꩂꪪҪ
+
+## ASCII strings (may include class/property names)
+PF_DXT1
+UUU
+T(B
+UUU|e)
+UUUJ
+TRX\Q
+UUb@
+{IJRYm
+UUVU
+iJ#u
+HH~
+Aaas
+UUTU
+lf 8
+TUUW
+TVU
+rrp|
+UUu
+aYUU
+ zUU
+XPP_
+Kp|
+[R`@q
+VTTTu
+_ZX`
+V\PXu
+VTVU
+U^j`q
+XpPXu
+hPXx
+AYUUU
+\\WU
+UUUu
+hUUU
+UUTV,c
+UUd
+UUk
+ :UU
+UUq
+UU`z
+UU(
+ UUU
+UUUmk
+,c 
+UjU
+Z%)
+WWW

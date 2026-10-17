@@ -1,0 +1,8 @@
+﻿# AtomicHeart/Content/Developers/evgeniynasheulov/Water/Materials/WaterTextureSurface.uexp  (from pakchunk13-WindowsNoEditor.pak)
+# utf16_strings=1 ascii_strings=0 scripts=CJK,Greek
+# SCRIPTS DETECTED: CJK,Greek
+
+## UTF-16 strings
+颃ꬭμ饆軕�ῼ߷
+
+## ASCII strings (may include class/property names)

@@ -1,0 +1,10 @@
+﻿# Engine/Content/EngineMaterials/WeightMapPlaceholderTexture.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=2 ascii_strings=1 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+ℚꞽ࡞䴆䪇瀚匇
+䙐䉟䜸券䄸8
+
+## ASCII strings (may include class/property names)
+PF_B8G8R8A8

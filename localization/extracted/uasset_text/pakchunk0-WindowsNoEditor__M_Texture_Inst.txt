@@ -1,0 +1,18 @@
+﻿# AtomicHeart/Content/GooseRunner/CommonAssets/Materials/M_Texture_Inst.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=7 ascii_strings=4 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+꼀䕊଱䑊띏繜찟⿞⁁
+刀ԩ劓各鹊ꦆ猾灑⃥
+㰀썮峎
+赃滐餳奰₪
+彟䔍闎衇㮧
+䴀鸕邚일ꉌỠ﮻ﮉ⁽
+섀⪃�
+
+## ASCII strings (may include class/property names)
+JE1
+JDO
+/A 
+>sQp

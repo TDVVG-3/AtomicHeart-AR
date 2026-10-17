@@ -1,0 +1,85 @@
+﻿# Engine/Plugins/Compositing/Composure/Content/Materials/ReplaceTonemapper/ComposureReplaceTonemapperByTexture.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=64 ascii_strings=15 scripts=Cyrillic,CJK,Arabic,Greek
+# SCRIPTS DETECTED: Cyrillic,CJK,Arabic,Greek
+
+## UTF-16 strings
+賞괨踢䇶⾨۬睃姳
+�⇣劽ᬶ*
+娀㮙ᯀ
+뉊ꩄ퍁ᄅ❣
+湉異t詼蒈
+敓敬瑣潩䍮汯牯뼀⦍Ǘ
+저艞甩跷ᢒ⊯偠喧쨾Ⴟ࢈
+＀＀ÿ
+尀�ሜ핈ⶱ웷
+꿪脑酺ｺ
+∆슐쐒㊋
+�妏ﾲÿ䄀
+⍚ᥤ*
+�妏ﾲÿ愀
+倀䀂ࠀ
+栀堂ࠀĀ
+倀ࠂ栀ࠂᄀ
+�뭒൨䇑ﾟ
+ǿ�⻜ﱠ―忻
+跓됗뿴ᖢ娘☛鱥㨙߰硅஡ꏘ⟄㙯
+䐈鸭é
+＀ÿ턀
+ကЀ᐀Ѐ᠀ЀᰀЀ Ѐ
+ᕒೕꋱஏ䁁洒łȀ
+＀ÿ焀
+＀ÿ焀
+ᕒೕñ
+＀ÿ㄀�
+＀ÿ儀�
+̣Ā＂　Ԁ㠀ࠀ䀀ࠀ䠀ࠀ䴀愀琀攀爀椀愀氀
+∆슐쐒㊋
+墊Ɖ�⻜ﱠ―忻
+跓됗뿴ᖢ娘☛鱥㨙߰硅஡ꏘ⟄㙯
+䐈鸭�뭒൨䇑᎟
+㠀⧋쯶ꌃ岷䌕⁏
+ꇧ肗Ƴ�⻜ﱠ
+ꭈ峖粄⺎饚�鍰⁙忻
+଀쑱珱乚茺‰㜰Ҭᮏ濩
+ᾤ睯躡栗
+䐀뚱᭥昱刃Ᏽ切惱嵄跬됹뿴ᖢ娘
+꬀⛯鶴ி醐ඃn乘䬙៮늽耖玷馭ᨮ
+뼀훳ԕ钍�⋌
+㻚⺮ɩ☛鱥㨙߰E
+︀䂙跣ᆛ蕚釘띮�蜋ᓦꎌ鎃跓쿨ె
+및첿᝟﯃측
+伲䙥锢�겚谍ࡒ
+嫽郷喷毥ऄ䏼╠މ刹蒻㦶�ޮѥ
+꬀턴傘䒃ଔ㙖咶펙攣蔇砓஡ꏘ⟄o
+똀ﺷ篜ṵ⾌ʃ槟
+缮또笕苩
+봀⧳媲뼄㇙愳䟍ᛅᠲ厸ꭺ여
+퐀퓧ꎺ偡拶༛们�忡䟸쐙㊋
+�ᦍ⎊
+鐌飾鰬☍㳜ﮩੇ덩텫뙜έ
+怀鈖⩍੕⟩ϡ勼�腵蜔ꪹⰇףּ鍔ࣀ
+믂铱쀱褧秉닡
+쟗䭲࿬ᣆ
+좢墇앍鉄⓹얗蝶䐫꟠䃬ⱫⓎ
+夀於໚죘眓窨
+䴅훋기㛽
+䐈鸭é
+切ֶ䒟贠凐땃氾琓ᾰՈǓ
+屎⛁ኹ㪳뺂
+ɱƑ셝⪃�
+
+## ASCII strings (may include class/property names)
+Input
+SelectionColor
+"`P
+Z#d
+'o6
+CO 
+sZN:
+0 07
+`D]
+2OeF"
+C`%
+13a
+M*U
+@k,

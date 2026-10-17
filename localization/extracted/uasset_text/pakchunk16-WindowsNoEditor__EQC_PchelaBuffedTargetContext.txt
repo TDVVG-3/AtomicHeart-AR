@@ -1,0 +1,20 @@
+﻿# AtomicHeart/Content/DLC4/Core/AI/ElectroPchela/EQC_PchelaBuffedTargetContext.uexp  (from pakchunk16-WindowsNoEditor.pak)
+# utf16_strings=10 ascii_strings=4 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+￯￿<
+￮￿G
+￙￿G
+￙￿<
+￙￿ȥ
+￿᧿
+慃瑳䘠楡敬d✧�￿ჿ
+潎嘠污摩䈠晵⁦慴杲瑥
+✧�￿ჿ
+￯￿(
+
+## ASCII strings (may include class/property names)
+Cast Failed
+''/
+No Valid Buff target

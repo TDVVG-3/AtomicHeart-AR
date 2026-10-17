@@ -1,0 +1,53 @@
+﻿# AtomicHeart/Content/GooseRunner/CommonAssets/Blueprints/UI/WBP_ButtonText.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=33 ascii_strings=17 scripts=Cyrillic,CJK
+# SCRIPTS DETECTED: Cyrillic,CJK
+
+## UTF-16 strings
+଄Sሀ
+ĀĀǿ缁
+ḗ쳍㹌퀯
+搝ꈿⅦZ
+〗䴖䉟
+଄œ肀
+ᘀ଄S
+！ā$
+Ж匋ࠈࠂ
+Ж匋ࠈࠂ
+⠀⨨턯
+耀〿༰
+ᘀ଄S舀
+Ā Ā
+ఀࠀȀ
+Ā Ā
+Ā Ā
+Ā Ā
+᠐¤￶
+㠵䍃䙄㈶䄴〳䈰䑁㤸㡆㑄ㅁ㉁䘷㘳䐱Ԁ
+吀塅T*
+耀D耀畃
+耀D耀畃
+㾀们㽣
+耀D耀畃
+㾀곫㼪꫁㸊
+숀礳䀿떦䈼鰧>耀笿
+耀D耀畃
+㾀们㽣
+⪬섿પ>耀笿
+䕆㜲䈴㙄㤴㌸㈴䑄䈱㠸㔶䅁䉁㉆䔳䔵Ȁ
+喂㶕喂㶕喂㶕
+섀⪃�
+
+## ASCII strings (may include class/property names)
+M_B
+;E#
+'(/
+L>/
+f!Z
+((*/
+?00
+58CCDF624A300BAD89F8D4A1A27F361D
+TEXT
+Nc?
+3y?@
+<B'
+FE274BD6498342DD1B8865AAABF23E5E

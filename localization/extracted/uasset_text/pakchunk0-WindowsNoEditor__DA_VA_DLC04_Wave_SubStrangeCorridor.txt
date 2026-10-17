@@ -1,0 +1,7 @@
+﻿# AtomicHeart/Content/DLC4/Sound/Data/VoiceAssistant/DA_VA_DLC04_Wave_SubStrangeCorridor.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=1 ascii_strings=0 scripts=
+
+## UTF-16 strings
+섀⪃�
+
+## ASCII strings (may include class/property names)

@@ -66,7 +66,18 @@ foreach ($f in ($existing | Sort-Object FullName)) {
     $n = $rows.Count
     $perTarget.Add(('{0}`t{1}' -f $target, $n))
     foreach ($r in $rows) {
+        # UnrealLocres csv 'key' column = "<namespace>/<key>" (namespace may be empty).
+        # Key column of the DB keeps the FULL exported string verbatim (rebuild fidelity).
+        # Namespace column gets the parsed namespace for human matching.
+        $fullKey = $r.key
         $ns = ''
+        if ($fullKey -match '^([^/]/?.*)') { }
+        if ($fullKey.StartsWith('/')) {
+            $ns = ''
+        } else {
+            $slash = $fullKey.IndexOf('/')
+            if ($slash -gt 0) { $ns = $fullKey.Substring(0, $slash) }
+        }
         $key = $r.key
         $src = $r.source
         if ([string]::IsNullOrWhiteSpace($src)) { continue }
@@ -78,14 +89,17 @@ foreach ($f in ($existing | Sort-Object FullName)) {
         $shbytes = $sha1.ComputeHash([System.Text.Encoding]::UTF8.GetBytes($src))
         $srchash = ($shbytes | ForEach-Object { $_.ToString('x2') }) -join ''
         $category = switch -Wildcard ($target) {
-            '*Cutscenes*' { 'Subtitles' }
-            '*Dialogues*' { 'Dialogue' }
-            '*Subs*'      { 'Subtitles' }
-            'Mails*'      { 'Lore' }
-            'NTD'         { 'Lore' }
+            'NewP5'       { 'UI' }
+            'SettingAppliers' { 'UI' }
             'Misc'        { 'UI' }
             '*Terminal*'  { 'UI' }
-            'SettingAppliers' { 'UI' }
+            'CUTSCENES'   { 'Subtitles' }
+            'Cutscenes*'  { 'Subtitles' }
+            'Locations*'  { 'Dialogue' }
+            '*Dialogues*' { 'Dialogue' }
+            '*DIALOGUES*' { 'Dialogue' }
+            'Mails*'      { 'Lore' }
+            'NTD*'        { 'Lore' }
             default       { 'Unknown' }
         }
         # escape tabs in English (should not exist; defense) and keep 1 line

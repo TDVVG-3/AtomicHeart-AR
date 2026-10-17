@@ -1,0 +1,11 @@
+﻿# Engine/Content/ArtTools/RenderToTexture/Blueprints/RenderToTexture_Game.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=4 ascii_strings=0 scripts=Cyrillic,CJK
+# SCRIPTS DETECTED: Cyrillic,CJK
+
+## UTF-16 strings
+Ā Ā
+ЀࠀЀ
+ਜ￼
+쒔䊕㈝댖絞
+
+## ASCII strings (may include class/property names)

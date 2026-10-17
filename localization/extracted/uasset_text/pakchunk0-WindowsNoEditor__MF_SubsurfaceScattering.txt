@@ -1,0 +1,12 @@
+﻿# AtomicHeart/Content/ThirdParty/IceCool/Materials/Utils/MF_SubsurfaceScattering.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=4 ascii_strings=1 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+䄀癤湡散⁤畳獢牵慦散猠慣瑴牥湩g
+䴀荛諷炷聄
+婍소ଜ
+섀⪃�
+
+## ASCII strings (may include class/property names)
+Advanced subsurface scattering

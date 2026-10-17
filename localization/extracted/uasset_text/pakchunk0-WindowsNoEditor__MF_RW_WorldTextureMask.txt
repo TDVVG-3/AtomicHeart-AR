@@ -1,0 +1,8 @@
+﻿# AtomicHeart/Content/ThirdParty/RedwoodCollection/Materials/MASTER/Func/MF_RW_WorldTextureMask.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=2 ascii_strings=0 scripts=
+
+## UTF-16 strings
+㼀핝ቨ⻄멂⡺
+섀⪃�
+
+## ASCII strings (may include class/property names)

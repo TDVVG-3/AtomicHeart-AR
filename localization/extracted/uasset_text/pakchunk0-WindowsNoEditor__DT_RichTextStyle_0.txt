@@ -1,0 +1,34 @@
+﻿# AtomicHeart/Content/Core/UI/Widgets/DT_RichTextStyle_0.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=25 ascii_strings=2 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+￹￿@
+�￿0
+�￿0
+�￿0
+�￿0
+�￿0
+�￿0
+�￿0
+쳍㷌쳍㷌쳍㷌
+�￿0
+�￿0
+�￿0
+㾀㭤㺟姑㳦
+�￿0
+�￿0
+�￿0
+�￿0
+�￿0
+�￿0
+�￿0
+쳍㷌쳍㷌쳍㷌
+�￿0
+�￿0
+�￿0
+㾀롒㺞恂㳥
+
+## ASCII strings (may include class/property names)
+?d;
+>B`

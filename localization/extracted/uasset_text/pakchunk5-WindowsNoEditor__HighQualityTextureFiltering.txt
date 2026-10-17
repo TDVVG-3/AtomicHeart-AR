@@ -1,0 +1,10 @@
+﻿# Engine/Plugins/Experimental/Water/Content/Materials/Functions/HighQualityTextureFiltering.uexp  (from pakchunk5-WindowsNoEditor.pak)
+# utf16_strings=2 ascii_strings=1 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+䈀⁹敤慦汵ⱴ愠䜠啐眠汩⁬数晲牯⁭整瑸牵⁥楦瑬牥湩⁧楷桴琠敨猠浡⁥牰捥獩潩⁮獡琠敨猠潴敲⁤整瑸牵⹥吠楨⁳慣獵獥焠慵楬祴椠獳敵⁳潦⁲慗整⁲桷牥⁥⁡㘱戠瑩琠硥畴敲椠⁳獵摥琠⁯瑳牯⁥慗整⁲湡⁤敔牲楡⁮汥癥瑡潩⹮吠楨⁳畦据楴湯瀠牥潦浲⁳整瑸牵⁥楦瑬牥湩⁧慭畮污祬‬潳琠慨⁴畦汬㌠′楢⁴湩整灲汯瑡潩⁮慣⁮敢甠敳⹤吠楨⁳牧慥汴⁹敲畤散⁳慢摮湩⹧̀
+퀏䊚벣즫㓚육
+
+## ASCII strings (may include class/property names)
+By default, a GPU will perform texture filtering with the same precision as the stored texture. This causes quality issues for Water where a 16 bit texture is used to store Water and Terrain elevation. This function performs texture filtering manually, so that full 32 bit interpolation can be used. This greatly reduces banding.

@@ -1,0 +1,7 @@
+﻿# AtomicHeart/Content/Core/Subsystems/BP_AchievementSubsystem.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=0 ascii_strings=1 scripts=
+
+## UTF-16 strings
+
+## ASCII strings (may include class/property names)
+ oE

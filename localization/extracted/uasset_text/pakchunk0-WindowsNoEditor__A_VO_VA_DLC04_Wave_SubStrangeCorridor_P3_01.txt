@@ -1,0 +1,27 @@
+﻿# AtomicHeart/Content/DLC4/Sound/Events/VO/P3/A_VO_VA_DLC04_Wave_SubStrangeCorridor_P3_01.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=14 ascii_strings=6 scripts=Cyrillic,CJK
+# SCRIPTS DETECTED: Cyrillic,CJK
+
+## UTF-16 strings
+倀㑓̀
+倀㕓Ѐ
+圀湩潤獷Ԁ
+堀潢佸敮䑇K
+托硯敓楲獥X
+睓瑩档2
+缀ケ።
+ﰀ䦩ፀ
+ﰀ䦩ፀ
+က㷊ፀ
+ﰀ䦩ፀ
+ﰀ䦩ፀ
+ﰀ䦩ፀ
+섀⪃�
+
+## ASCII strings (may include class/property names)
+PS4
+PS5
+Windows
+XboxOneGDK
+XboxSeriesX
+Switch2

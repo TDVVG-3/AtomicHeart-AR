@@ -1,0 +1,12 @@
+﻿# Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/TextureCropping.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=2 ascii_strings=3 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+䌀潲獰愠琠硥畴敲‬獵晥汵映牯䔠業獳癩獥‮匠灵汰⁹桴⁥潴⁰敬瑦愠摮戠瑯潴⁭楲桧⁴潣湲牥⁳景琠敨挠潲⁰椠⁮ⴰ‱慲杮⹥̀
+ᛕ꧌剃䬷쾆㛳繕㻲
+
+## ASCII strings (may include class/property names)
+Crops a texture, useful for Emissives.  Supply the top left and bottom right corners of the crop  in 0-1 range.
+CR7K
+6U~

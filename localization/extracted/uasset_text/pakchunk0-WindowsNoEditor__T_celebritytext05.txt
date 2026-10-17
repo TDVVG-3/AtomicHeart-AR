@@ -1,0 +1,117 @@
+﻿# AtomicHeart/Content/Development/MaterialLibrary/Decals/Text/Lab_Decals/T_celebritytext05.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=59 ascii_strings=53 scripts=Cyrillic,CJK,Arabic,Greek
+# SCRIPTS DETECTED: Cyrillic,CJK,Arabic,Greek
+
+## UTF-16 strings
+슇�쮐魃塨欩䚑۪
+䙐䑟员1
+ꪪꪪ钒
+㕕壁钲
+얥㥅⃆
+兛ᑹ¥
+啕압ꔵ 兩⁓궖
+൅喠­
+烕蹱⁳
+噕萰
+啕戵豑 呛啕
+ᔵ콺{
+嗠荗떶
+啕쉕떶
+啙뎥钒
+땕情豑
+ࠡ啕衕
+啕䕥굵 嵕兹캺
+൩ᡅ⃆
+唯륿ꕕࡁ喼ꐵࡁ喗浪궖
+啜跥鳓
+ൕ鋍
+啝䝷玎
+啕቟굵
+ᕕ喧¥
+ꔵ ꕥ䗅굶
+佡ᑈ¥
+✤┥횻
+ࡁ蕥敥豲
+죇웈칹
+鮛茻
+럧鞗칹
+ᆑ嗕钲
+업啕떶
+촱ᑕ¥
+㔵嵕ꔴࠡ䵍镵鳓
+旧䵕k
+핕喕뷷
+ị嗕옸 랕啀떶 䕰唵굕
+哓啕₭
+ᑗ嗃鳓
+ᛨ啕篏
+䎅啞ꔵ
+⏜啭鳓 ᖤ啕떶
+痫奕Î
+㗏啕떷
+颃啗뷷ࠡ좵啝钳
+噗啗@
+慝玎
+엕她劊
+豑ႢⳖｗ挬
+ퟬಂc
+突⤪鳓ࡁ靕늾횺
+歭ࡁ崣鲡ࠡ歍联ꊦ努
+ࣝ{
+Ϟ蹕s
+֥蛡‱
+ȵ잂‹
+СꨡꪪҪ
+
+## ASCII strings (may include class/property names)
+hX)k
+PF_DXT1
+UUVT
+^[Qy
+V_YY
+UUU
+iQS 
+UV\
+UU5bQ
+[TUU
+UUeEu
+U]yQ
+UUMm
+Ujm
+]UwG
+UU_
+UUPS
+QPSQ
+iaOH
+SSSS!
+$'%%
+mmmm
+eer
+[XXZ
+55U]4
+MMu
+UkU
+UzY
+eUMk
+P_UU
+pE5UU
+TUU
+C^U5
+#mU
+RWU
+uUY
+5UU
+WVWU@
+]aA
+\QeE
+eZU
+UmIi
+UVVV,c!
+]mkA
+MkT
+ uQ
+U-cA
+VUrW 
+cE)U<
+,c!
+h^k

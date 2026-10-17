@@ -1,0 +1,17 @@
+﻿# AtomicHeart/Content/DLC4/Sound/Banks/VO/AB_VO_DLC04_Wave_SubStrangeCorridor.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=5 ascii_strings=5 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+倀㑓Ā
+倀㕓Ȁ
+圀湩潤獷̀
+堀潢佸敮䑇K
+托硯敓楲獥X
+
+## ASCII strings (may include class/property names)
+PS4
+PS5
+Windows
+XboxOneGDK
+XboxSeriesX

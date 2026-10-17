@@ -1,0 +1,13 @@
+﻿# AtomicHeart/Content/Development/WorldMap/Textures/Infographic/T_TextCornerElement.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=5 ascii_strings=1 scripts=Cyrillic,CJK
+# SCRIPTS DETECTED: Cyrillic,CJK
+
+## UTF-16 strings
+薃둅駲ᗇ㼢ৠ
+䙐䑟员1
+￿꫿ꪪҪ
+￿꫿ꪪҪ
+￿꫿ꪪҪ
+
+## ASCII strings (may include class/property names)
+PF_DXT1

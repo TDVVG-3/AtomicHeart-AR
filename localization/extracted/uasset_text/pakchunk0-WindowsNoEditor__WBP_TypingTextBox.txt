@@ -1,0 +1,66 @@
+﻿# AtomicHeart/Content/Core/UI/Dialogue/WBP_TypingTextBox.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=48 ascii_strings=13 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+똯￿⃿
+流︠笡
+慐獵摥
+✧뤯￿ჿ
+똯￿⃿
+蟓咦笡
+�￿⧿
+慐獵湩g✧뤯￿ჿ
+￨￿(
+￨￿(
+￨￿(
+￨￿(
+ﾴ￿ł
+뤯￿ჿ
+ﾴ￿ł
+ﾴ￿ł
+뤯￿ჿ
+ﾴ￿ł
+ﾵ￿Ù
+￬￿Ù
+￿￿Ù
+￿￿Ù
+￲￿
+ﾷ￿
+ﾳ￿(
+￩￿~
+¤￼￿e
+￿￿į
+￿￿®
+￿￿!
+￧￿
+ቯ㪃
+壕�䘦䳣늛쇹ਿÍ
+癏牥慬役0ñ
+￲￿è
+癏牥慬役0ĥ
+숱鉈瀢ᴢǷ틏
+￿￿￿￿
+￿￿f
+壕�䘦䳣늛쇹ਿÒ
+좻䯾륎䵮⎍쑊蔹櫤>
+䮘歽걊爯仏➞௘
+鵷罔เ陇▄ഴ稫퉲
+䋽袭읮ᘳw
+䋽袭읮ᘳÒ
+￧￿ħ
+￧￿ħ
+좻䯾륎䵮⎍쑊蔹櫤Ò
+
+## ASCII strings (may include class/property names)
+Paused
+''/
+T!{
+Pausing
+(ME1
+ME(
+Overlay_0
+"p"
+K}kJ
++zr
+Hide

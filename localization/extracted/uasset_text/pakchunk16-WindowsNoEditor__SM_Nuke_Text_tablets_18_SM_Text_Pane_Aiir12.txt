@@ -1,0 +1,31 @@
+﻿# AtomicHeart/Content/Development/MaterialLibrary/Plakat/Crystal_castle/SM_Nuke_Text_tablets_18_SM_Text_Pane_Aiir12.uexp  (from pakchunk16-WindowsNoEditor.pak)
+# utf16_strings=18 ascii_strings=6 scripts=Cyrillic,CJK
+# SCRIPTS DETECTED: Cyrillic,CJK
+
+## UTF-16 strings
+￻￿.
+⪷䏈+
+꫞䈨+
+꫞䈨)
+㘢᧪䆥A
+ꉂ䇪5
+䭥貈∴䇻ྟ
+誣ݘ]
+罿
+罿
+罿
+ѿ
+ራ℻℠舠℻㘻ሱ℻㘠Ļ
+סּ饓Ł늮뺴
+㚀래䆦
+䉁Ł
+￻￿I
+⪷䏈꫞䈨
+
+## ASCII strings (may include class/property names)
+(B+
+(B)
+;! ! 
+;! 
+;61
+;! 61

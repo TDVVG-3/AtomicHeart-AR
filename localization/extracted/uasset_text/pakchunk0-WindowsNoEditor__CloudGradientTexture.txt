@@ -1,0 +1,35 @@
+﻿# Engine/Content/EngineSky/VolumetricClouds/CloudGradientTexture.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=24 ascii_strings=7 scripts=Cyrillic,CJK
+# SCRIPTS DETECTED: Cyrillic,CJK
+
+## UTF-16 strings
+屉퐀읹䇾憳
+ĀĀĀ
+倀彆塄ㅔ
+＀ÿ聀ﾀ拿唐ꀀ⃰紀ïꕕ
+븀÷驕Ｈ拿唐⼀­＀ÿ啕U
+＀׿ԥ
+ᜀ¾─┥Ｉ
+꫿ꪪª
+½唀꧕ᜪ¾唀⪪＀⣿꽂ਫ＀
+꫿ꪪª＀ÿ樀
+＀ÿ喠＀ꏿﴘ«ｕ拿꬐
+ｕ⇿ꨈ
+U＀嗿啕
+＀嗿啕
+＀嗿啕
+＀ÿ꤀춍흥½
+喬ｕ⓿ꨡऋ
+销­耀ᡖ⃆唀˵�ꏷ
+«ﾪ돿জ
+�⇖㔈햕㰫⇧⨈ଥࠀ
+ᬀꏟ㤘⬫Ы
+⦽͊̃Ѓ
+펜ꪜꪪҪ
+섀⪃�
+
+## ASCII strings (may include class/property names)
+PF_DXT1
+UUU
+%%%)
+9+++

@@ -1,0 +1,47 @@
+﻿# AtomicHeart/Content/Development/MaterialLibrary/Decals/Text/HandWriting/SM_Writing_text_Decal_Mesh05_Object151.uexp  (from pakchunk12-WindowsNoEditor.pak)
+# utf16_strings=29 ascii_strings=12 scripts=Cyrillic,CJK,Arabic
+# SCRIPTS DETECTED: Cyrillic,CJK,Arabic
+
+## UTF-16 strings
+䂠첁䁏I
+ᱤ䊔U
+쓥菘鱂쒃䏹ⒶƓ
+誧婂ඊB
+誧湂᪮Â
+策嫂ඊB
+策滂᪮Â
+쭁誧婂ඊB
+쭁誧湂᪮Â
+ف策嫂ඊB
+ف策Ⓜ
+￻￿6
+䏇2
+❭䋉2
+❭䋉0
+耾俌เ
+㛚⥧䊄M
+绣䊗>
+饊彽䷁辶樮⌽穇
+쬾誧ł
+罿
+罿
+罿
+ѿ
+넻帹眹̻䰪℻�椻䌸儹ℭĠ
+撼ᛂ佹뛁뾿賂垘�坱繁첼ł
+朶萩靾ł
+￻￿3
+䏇❭䋉
+
+## ASCII strings (may include class/property names)
+O@I
+ AV
+6g)
+.j=#Gz
+9^9w;
+*L8
+;! 
+;i8C9Q-! 
+qWA~
+O@d
+Cm'

@@ -1,0 +1,17 @@
+﻿# AtomicHeart/Content/DLC/Development/Sound/Events/VO/Goose/A_VO_DLC1_Goose_Context_09.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=4 ascii_strings=6 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+湩潤獷
+托硯湏䝥䭄
+潢卸牥敩塳
+楷捴㉨
+
+## ASCII strings (may include class/property names)
+Windows
+PS4
+PS5
+XboxOneGDK
+XboxSeriesX
+Switch2

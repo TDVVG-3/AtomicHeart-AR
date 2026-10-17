@@ -1,0 +1,16 @@
+﻿# Engine/Content/ArtTools/RenderToTexture/Enums/RenderToTexture_Imposter_Enum.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=5 ascii_strings=4 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+䈀㘳䅄䍂㐹䍃䄳㐵㄰䌲〳㤷䐵〰䙄ぁA
+畆汬㌠⁄浉潰瑳牥ऀ
+䘀ㅅ㡁䌱㑂㌰㠴䐷䔵䐸㈴䄱䐷ㅁ㐶㙄B
+楓杮敬删瑯瑡潩⁮硁獩਀
+Ā菁鸪
+
+## ASCII strings (may include class/property names)
+B36DABC94CC3A54012C30795D00DFA0A
+Full 3D Imposter
+FE1A81CB403487D5E8D421A7DA164D6B
+Single Rotation Axis

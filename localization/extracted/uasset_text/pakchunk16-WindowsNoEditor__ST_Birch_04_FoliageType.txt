@@ -1,0 +1,15 @@
+﻿# AtomicHeart/Content/DLC4/Development/OptAssets/ST_Birch_04_FoliageType.uexp  (from pakchunk16-WindowsNoEditor.pak)
+# utf16_strings=7 ascii_strings=1 scripts=Cyrillic,CJK
+# SCRIPTS DETECTED: Cyrillic,CJK
+
+## UTF-16 strings
+趵祜낛䌒
+㌀댳㈿
+᐀ᨗ곃鸻㽂餭੄
+䏨丟䏟ꭌ䒚>
+Ā鵟㉄
+塐䆩Ѣ솺㔷䋽
+耀ĸ㈀
+
+## ASCII strings (may include class/property names)
+B?-

@@ -1,0 +1,36 @@
+﻿# AtomicHeart/Content/DLC4/Narrative/ST_PickableBoy.uexp  (from pakchunk16-WindowsNoEditor.pak)
+# utf16_strings=19 ascii_strings=10 scripts=Cyrillic,CJK
+# SCRIPTS DETECTED: Cyrillic,CJK
+
+## UTF-16 strings
+呓偟捩慫汢䉥祯ऀ
+䈀彐楐正扡敬潂役潃汬捥慴汢彥1￠
+Повышает макс. уровень здоровья
+偂偟捩慫汢䉥祯䍟汯敬瑣扡敬㉟준
+⏿㈄㔄㬄㠄䜄㠄㈄〄㔄䈄 㸀㄄䨄億㰄 㜀㐄㸄䀄㸄㈄䰄伄Ⰴ ㈀㸄䄄䄄䈄〄㴄〄㈄㬄㠄㈄〄㔄㰄㸄㌄㸄 ㈀㴄㔄 ㄀㸄伄
+䈀彐楐正扡敬潂役潃汬捥慴汢彥3ￎ
+Повышает скорость восстановления здоровья вне боя
+偂偟捩慫汢䉥祯䍟汯敬瑣扡敬㑟퐀
+⏿㈄㔄㬄㠄䜄㠄㈄〄㔄䈄 㸀㄄䨄億㰄 ㈀㸄䄄䄄䈄〄㴄〄㈄㬄㠄㈄〄㔄㰄㸄㤄 䴀㴄㔄䀄㌄㠄㠄
+䈀彐楐正扡敬潂役潃汬捥慴汢彥5ￗ
+Повышает скорость восстановления энергии
+偂偟捩慫汢䉥祯䍟汯敬瑣扡敬㙟
+⏿㈄㔄㬄㠄䜄㠄㈄〄㔄䈄 䌀䀄㸄㴄
+䈀彐楐正扡敬潂役潃汬捥慴汢彥7ￓ
+Получение смертельного урона замедляет время
+偂偟捩慫汢䉥祯䍟汯敬瑣扡敬㡟툀
+⇿㼄㸄䄄㸄㄄㴄㸄䄄䈄䰄 ꬀ 䬄㈄㸄㨄묄 ㈀㸄䄄䄄䈄〄㴄〄㈄㬄㠄㈄〄㔄䈄䄄伄 ㄀䬄䄄䈄䀄㔄㔄
+䈀彐楐正扡敬潂役潃汬捥慴汢彥9ￔ
+Способность «ШОК» восстанавливается быстрее
+
+## ASCII strings (may include class/property names)
+ST_PickableBoy
+BP_PickableBoy_Collectable_1
+BP_PickableBoy_Collectable_2
+BP_PickableBoy_Collectable_3
+BP_PickableBoy_Collectable_4
+BP_PickableBoy_Collectable_5
+BP_PickableBoy_Collectable_6
+BP_PickableBoy_Collectable_7
+BP_PickableBoy_Collectable_8
+BP_PickableBoy_Collectable_9

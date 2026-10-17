@@ -1,0 +1,31 @@
+﻿# AtomicHeart/Content/DLC2/Development/MaterialLibrary/AdvanceProgressBar/Textures/T_ProgressTexture_00000.uexp  (from pakchunk14-WindowsNoEditor.pak)
+# utf16_strings=22 ascii_strings=3 scripts=Cyrillic,CJK
+# SCRIPTS DETECTED: Cyrillic,CJK
+
+## UTF-16 strings
+ബ裨ኗ葍秛֚⁣೫
+䙐䑟员1
+뚩嵻
+陕흻
+陕畻
+뙕嵻
+陕흻
+陕畻
+뙕嵻
+陕흻
+陕畻
+뙕嵻
+陕흻
+陕畻
+뙕嵻
+陕흻
+떖ࡁ聪檀@
+굵篏ꦩꦩ鳳鳓
+￿펜￿펜￿펜￿펜￿펜￿쮽⃪
+障隖Җ
+펜ﾜ￿ӿ
+펜ﾜ￿ӿ
+
+## ASCII strings (may include class/property names)
+PF_DXT1
+TTTT

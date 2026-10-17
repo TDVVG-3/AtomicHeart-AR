@@ -1,0 +1,6 @@
+﻿# AtomicHeart/Content/Core/Subsystems/BP_TrackingSubsystem.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=0 ascii_strings=0 scripts=
+
+## UTF-16 strings
+
+## ASCII strings (may include class/property names)

@@ -1,0 +1,21 @@
+﻿# AtomicHeart/Content/DLC4/Development/Characters/Burlak/EQC_BoxesContext.uexp  (from pakchunk16-WindowsNoEditor.pak)
+# utf16_strings=15 ascii_strings=0 scripts=
+
+## UTF-16 strings
+￵￿I
+￴￿V
+ￔ￿>
+￷￿>
+$Ĥㄲ
+￿៿
+�￿᏿
+�￿◿
+￿᧿
+￷￿팯￿೿
+￿᧿
+￷￿팯￿೿
+�￿◿
+�￿᳿
+￵￿/
+
+## ASCII strings (may include class/property names)

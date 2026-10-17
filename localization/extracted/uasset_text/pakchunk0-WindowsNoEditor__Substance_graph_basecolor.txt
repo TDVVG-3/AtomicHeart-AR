@@ -1,0 +1,47 @@
+﻿# AtomicHeart/Content/Developers/evgeniynasheulov/Textures/Substance_graph_basecolor.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=28 ascii_strings=12 scripts=Cyrillic,CJK
+# SCRIPTS DETECTED: Cyrillic,CJK
+
+## UTF-16 strings
+≸짋㖝豁䤸⨯奉ࣔ
+䙐䉟㑃
+涶뛛삝
+ﰿ㿃쟼
+㚆�ǎ鉉瀤ひ
+ඩ뛛�
+橆똣�児ᶶ뛛�
+Ɵ鉉紤⒂
+涶뛛⍭
+䶶觙킜
+掶뚻魩浟ᶶ
+뙼㭣憶忛ｭ￿
+扦똥�﴿蓃�
+ᶱ냛�
+⛓죭춊�
+錡褣璜
+戶뛛�
+涶㚣
+涶⃛歪᭪涶糛
+ɉ섧⒓
+涶ⓛ퟼
+嶳뇛�㰸渶똻�䀿ඇ뛛�紨榶뚻荣
+꒒쑏祇
+蛘�
+涁뛛�
+න뛛�
+㶓ᇄส此憶࿛挥�涰ࣛ
+⒒鉉Ф
+
+## ASCII strings (may include class/property names)
+8I/*IY
+PF_BC4
+$pr0
+Fj#
+fb%
+"6b
+ jkj
+a#8<
+8<6n;
+-;\
+%cL
+0vk

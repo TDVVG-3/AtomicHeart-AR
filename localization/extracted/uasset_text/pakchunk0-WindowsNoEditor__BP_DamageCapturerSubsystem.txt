@@ -1,0 +1,9 @@
+﻿# AtomicHeart/Content/Core/Subsystems/BP_DamageCapturerSubsystem.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=3 ascii_strings=0 scripts=
+
+## UTF-16 strings
+￪￿3
+￾￿4
+￴￿7
+
+## ASCII strings (may include class/property names)

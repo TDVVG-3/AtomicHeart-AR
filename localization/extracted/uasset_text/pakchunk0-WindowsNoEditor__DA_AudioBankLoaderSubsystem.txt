@@ -1,0 +1,10 @@
+﻿# AtomicHeart/Content/Core/Data/Subsystems/DA_AudioBankLoaderSubsystem.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=4 ascii_strings=0 scripts=
+
+## UTF-16 strings
+￿￿￿￿￿￿￿￿￿￿￿￿￿༭
+￿￿￾￿�￿￼￿￺￿￹￿￸￿￷￿ﾯ￿ﾕ￿ﾊ￿ﲃ￿ﱦ￿༼
+￿༲
+￿༶
+
+## ASCII strings (may include class/property names)

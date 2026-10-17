@@ -1,0 +1,190 @@
+﻿# Non-locres asset text catalog (UTF-16LE + ASCII string dumps)
+# Generated (UTC): 2026-10-17T21:25:32.0614251Z
+# Asset selection heuristics: ST_*, *StringTable*, *Tips/Texts/Subs/Sentences*
+
+pakchunk16-WindowsNoEditor.pak           :: AtomicHeart/Content/DLC4/Development/Characters/Hraz/BlobDeath/Materials/vertex_animation_textures_blob_blood_pos.uexp
+    utf16=4 ascii=20280 scripts=CJK dump=pakchunk16-WindowsNoEditor__vertex_animation_textures_blob_blood_pos.txt
+pakchunk16-WindowsNoEditor.pak           :: AtomicHeart/Content/DLC4/Development/Characters/Hraz/BlobDeath/Materials/vertex_animation_textures_blob_blood_rot.uexp
+    utf16=177 ascii=21726 scripts=Cyrillic,CJK,Arabic,Greek dump=pakchunk16-WindowsNoEditor__vertex_animation_textures_blob_blood_rot.txt
+pakchunk16-WindowsNoEditor.pak           :: AtomicHeart/Content/DLC4/Development/Characters/Hraz/BlobDeath/Materials/vertex_animation_textures1_col.uexp
+    utf16=43932 ascii=2 scripts=CJK dump=pakchunk16-WindowsNoEditor__vertex_animation_textures1_col.txt
+pakchunk16-WindowsNoEditor.pak           :: AtomicHeart/Content/DLC4/Development/Characters/Hraz/BlobDeath/Materials/vertex_animation_textures1_mesh.uexp
+    utf16=25492 ascii=44518 scripts=Cyrillic,CJK,Arabic,Greek dump=pakchunk16-WindowsNoEditor__vertex_animation_textures1_mesh.txt
+pakchunk16-WindowsNoEditor.pak           :: AtomicHeart/Content/DLC4/Development/Characters/Hraz/BlobDeath/Materials/vertex_animation_textures1_pos.uexp
+    utf16=35 ascii=33687 scripts=Cyrillic,CJK,Arabic,Greek dump=pakchunk16-WindowsNoEditor__vertex_animation_textures1_pos.txt
+pakchunk16-WindowsNoEditor.pak           :: AtomicHeart/Content/DLC4/Development/Characters/Hraz/BlobDeath/Materials/vertex_animation_textures1_rot.uexp
+    utf16=260 ascii=53510 scripts=Cyrillic,CJK,Arabic,Greek dump=pakchunk16-WindowsNoEditor__vertex_animation_textures1_rot.txt
+pakchunk16-WindowsNoEditor.pak           :: AtomicHeart/Content/DLC4/Development/Crystal_Castle/Village/High_House/SM_Village_High_House_Text.uexp
+    utf16=2714 ascii=4503 scripts=Cyrillic,CJK,Arabic,Greek dump=pakchunk16-WindowsNoEditor__SM_Village_High_House_Text.txt
+pakchunk16-WindowsNoEditor.pak           :: AtomicHeart/Content/DLC4/Development/FX/VATs/Geo/vertex_animation_textures4_mesh.uexp
+    utf16=1325 ascii=5015 scripts=Cyrillic,CJK,Arabic,Greek dump=pakchunk16-WindowsNoEditor__vertex_animation_textures4_mesh.txt
+pakchunk16-WindowsNoEditor.pak           :: AtomicHeart/Content/DLC4/Development/FX/VATs/Geo/vertex_animation_textures5_mesh.uexp
+    utf16=1461 ascii=4955 scripts=Cyrillic,CJK,Arabic,Greek dump=pakchunk16-WindowsNoEditor__vertex_animation_textures5_mesh.txt
+pakchunk16-WindowsNoEditor.pak           :: AtomicHeart/Content/DLC4/Development/FX/VATs/Geo/vertex_animation_textures6_mesh.uexp
+    utf16=1671 ascii=5336 scripts=Cyrillic,CJK,Arabic,Greek dump=pakchunk16-WindowsNoEditor__vertex_animation_textures6_mesh.txt
+pakchunk16-WindowsNoEditor.pak           :: AtomicHeart/Content/DLC4/Development/FX/VATs/Geo/vertex_animation_textures7_mesh.uexp
+    utf16=3496 ascii=4996 scripts=Cyrillic,CJK,Arabic,Greek dump=pakchunk16-WindowsNoEditor__vertex_animation_textures7_mesh.txt
+pakchunk16-WindowsNoEditor.pak           :: AtomicHeart/Content/DLC4/Development/FX/VATs/Geo/vertex_animation_textures8_mesh.uexp
+    utf16=1564 ascii=4869 scripts=Cyrillic,CJK,Arabic,Greek dump=pakchunk16-WindowsNoEditor__vertex_animation_textures8_mesh.txt
+pakchunk16-WindowsNoEditor.pak           :: AtomicHeart/Content/DLC4/Development/FX/VATs/Geo/vertex_animation_textures9_mesh.uexp
+    utf16=1575 ascii=5208 scripts=Cyrillic,CJK,Arabic,Greek dump=pakchunk16-WindowsNoEditor__vertex_animation_textures9_mesh.txt
+pakchunk16-WindowsNoEditor.pak           :: AtomicHeart/Content/DLC4/Development/MaterialLibrary/Layered/MaterialFunctions/MLF_UniversalTextureLayer_DLC4.uexp
+    utf16=1 ascii=0 scripts=CJK dump=pakchunk16-WindowsNoEditor__MLF_UniversalTextureLayer_DLC4.txt
+pakchunk16-WindowsNoEditor.pak           :: AtomicHeart/Content/DLC4/Development/MaterialLibrary/MaterialFunctions/MF_FakeSubsurfaceScattering.uexp
+    utf16=2 ascii=1 scripts=CJK dump=pakchunk16-WindowsNoEditor__MF_FakeSubsurfaceScattering.txt
+pakchunk0-WindowsNoEditor.pak            :: AtomicHeart/Content/DLC4/Development/MaterialLibrary/MaterialFunctions/VAT/MF_BoneIndexWeightByTexture.uexp
+    utf16=2 ascii=0 scripts=CJK dump=pakchunk0-WindowsNoEditor__MF_BoneIndexWeightByTexture.txt
+pakchunk16-WindowsNoEditor.pak           :: AtomicHeart/Content/DLC4/Development/MaterialLibrary/MaterialInstances/Glass/NewTextureRenderTargetCube.uexp
+    utf16=1 ascii=0 scripts=CJK dump=pakchunk16-WindowsNoEditor__NewTextureRenderTargetCube.txt
+pakchunk16-WindowsNoEditor.pak           :: AtomicHeart/Content/DLC4/Development/OptAssets/ST_Birch_04.uexp
+    utf16=2423 ascii=2877 scripts=Cyrillic,CJK,Arabic,Greek dump=pakchunk16-WindowsNoEditor__ST_Birch_04.txt
+pakchunk16-WindowsNoEditor.pak           :: AtomicHeart/Content/DLC4/Development/OptAssets/ST_Birch_04_FoliageType.uexp
+    utf16=7 ascii=1 scripts=Cyrillic,CJK dump=pakchunk16-WindowsNoEditor__ST_Birch_04_FoliageType.txt
+pakchunk16-WindowsNoEditor.pak           :: AtomicHeart/Content/DLC4/Narrative/NarrSubs/ST_NTD_DLC4.uexp
+    utf16=1112 ascii=486 scripts=Cyrillic,CJK dump=pakchunk16-WindowsNoEditor__ST_NTD_DLC4.txt
+pakchunk16-WindowsNoEditor.pak           :: AtomicHeart/Content/DLC4/Narrative/ST_PickableBoy.uexp
+    utf16=19 ascii=10 scripts=Cyrillic,CJK dump=pakchunk16-WindowsNoEditor__ST_PickableBoy.txt
+pakchunk16-WindowsNoEditor.pak           :: AtomicHeart/Content/DLC4/Narrative/ST_Weapons_dlc4.uexp
+    utf16=639 ascii=320 scripts=Cyrillic,CJK dump=pakchunk16-WindowsNoEditor__ST_Weapons_dlc4.txt
+pakchunk0-WindowsNoEditor.pak            :: AtomicHeart/Content/DLC4/Sound/Banks/VO/AB_VO_DLC04_Wave_SubStrangeCorridor.uexp
+    utf16=5 ascii=5 scripts=CJK dump=pakchunk0-WindowsNoEditor__AB_VO_DLC04_Wave_SubStrangeCorridor.txt
+pakchunk0-WindowsNoEditor.pak            :: AtomicHeart/Content/DLC4/Sound/Data/VoiceAssistant/DA_VA_DLC04_Wave_SubStrangeCorridor.uexp
+    utf16=1 ascii=0 scripts= dump=pakchunk0-WindowsNoEditor__DA_VA_DLC04_Wave_SubStrangeCorridor.txt
+pakchunk0-WindowsNoEditor.pak            :: AtomicHeart/Content/DLC4/Sound/Events/VO/P3/A_VO_VA_DLC04_Wave_SubStrangeCorridor_P3_01.uexp
+    utf16=14 ascii=6 scripts=Cyrillic,CJK dump=pakchunk0-WindowsNoEditor__A_VO_VA_DLC04_Wave_SubStrangeCorridor_P3_01.txt
+pakchunk16-WindowsNoEditor.pak           :: AtomicHeart/Content/DLC4/Waterline/1_Waterline_Content/Resources/Blueprints/Functions/WS_Texture_4WayChaos.uexp
+    utf16=2 ascii=0 scripts=CJK dump=pakchunk16-WindowsNoEditor__WS_Texture_4WayChaos.txt
+pakchunk16-WindowsNoEditor.pak           :: AtomicHeart/Content/DLC4/Waterline/3_Ocean_Sim_Content/2_Ocean_Materials/4_Ocean_Textures/Foam_Texture.uexp
+    utf16=82 ascii=99 scripts=CJK,Greek dump=pakchunk16-WindowsNoEditor__Foam_Texture.txt
+pakchunk16-WindowsNoEditor.pak           :: AtomicHeart/Content/DLC4/Waterline/3_Ocean_Sim_Content/2_Ocean_Materials/4_Ocean_Textures/Foam_Texture_Normal.uexp
+    utf16=171 ascii=179 scripts=Cyrillic,CJK,Arabic,Greek dump=pakchunk16-WindowsNoEditor__Foam_Texture_Normal.txt
+pakchunk0-WindowsNoEditor.pak            :: AtomicHeart/Content/GooseRunner/CommonAssets/Blueprints/UI/WBP_ButtonText.uexp
+    utf16=33 ascii=17 scripts=Cyrillic,CJK dump=pakchunk0-WindowsNoEditor__WBP_ButtonText.txt
+pakchunk0-WindowsNoEditor.pak            :: AtomicHeart/Content/GooseRunner/CommonAssets/Materials/M_Texture_Inst.uexp
+    utf16=7 ascii=4 scripts=CJK dump=pakchunk0-WindowsNoEditor__M_Texture_Inst.txt
+pakchunk0-WindowsNoEditor.pak            :: AtomicHeart/Content/GooseRunner/CommonAssets/Materials/M_TextureBase.uexp
+    utf16=209 ascii=73 scripts=Cyrillic,CJK,Arabic,Greek dump=pakchunk0-WindowsNoEditor__M_TextureBase.txt
+pakchunk0-WindowsNoEditor.pak            :: AtomicHeart/Content/GooseRunner/GooseRunner/Assets/Materials/M_TextMaterial_Emissive.uexp
+    utf16=119 ascii=64 scripts=Cyrillic,CJK,Greek dump=pakchunk0-WindowsNoEditor__M_TextMaterial_Emissive.txt
+pakchunk14-WindowsNoEditor.pak           :: AtomicHeart/Content/GooseRunner/GooseRunner/Assets/Materials/TextMaterial_Emissive.uexp
+    utf16=120 ascii=66 scripts=Cyrillic,CJK,Greek dump=pakchunk14-WindowsNoEditor__TextMaterial_Emissive.txt
+pakchunk0-WindowsNoEditor.pak            :: AtomicHeart/Content/GooseRunner/GooseRunner/Blueprints/BP_FlockSubsystem.uexp
+    utf16=5 ascii=2 scripts=CJK dump=pakchunk0-WindowsNoEditor__BP_FlockSubsystem.txt
+pakchunk0-WindowsNoEditor.pak            :: AtomicHeart/Content/GooseRunner/GooseRunner/Blueprints/UI/Hints/ST_GooseRunner_Hints.uexp
+    utf16=38 ascii=16 scripts=Cyrillic,CJK dump=pakchunk0-WindowsNoEditor__ST_GooseRunner_Hints.txt
+pakchunk1-WindowsNoEditor.pak            :: AtomicHeart/Content/L10N/ja-JP/DLC3/Development/Characters/Crab/Material/Vein_Or_MuscluleTexture.uexp
+    utf16=98 ascii=264 scripts=Cyrillic,CJK dump=pakchunk1-WindowsNoEditor__Vein_Or_MuscluleTexture.txt
+pakchunk13-WindowsNoEditor.pak           :: AtomicHeart/Content/Maps/Worlds/Atomic_World_01/t1/Vavilov_Main_Rocks_2LOD/TexturesCom_Rock_Quarry4_2_5x2_5_1K_albedo.uexp
+    utf16=104 ascii=40 scripts=CJK dump=pakchunk13-WindowsNoEditor__TexturesCom_Rock_Quarry4_2_5x2_5_1K_albedo.txt
+pakchunk13-WindowsNoEditor.pak           :: AtomicHeart/Content/Maps/Worlds/Atomic_World_01/t1/Vavilov_Main_Rocks_2LOD/TexturesCom_Rock_Quarry4_2_5x2_5_1K_normal.uexp
+    utf16=158 ascii=158 scripts=Cyrillic,CJK,Arabic,Greek dump=pakchunk13-WindowsNoEditor__TexturesCom_Rock_Quarry4_2_5x2_5_1K_normal.txt
+pakchunk7-WindowsNoEditor.pak            :: AtomicHeart/Content/MetaHumans/Common/Face/LookDev/Shared/MaterialFunctions/MF_BakedGroomTextures.uexp
+    utf16=2 ascii=0 scripts=CJK dump=pakchunk7-WindowsNoEditor__MF_BakedGroomTextures.txt
+pakchunk7-WindowsNoEditor.pak            :: AtomicHeart/Content/MetaHumans/Common/Face/LookDev/Textures/1x1_BakedGroomTextureBase.uexp
+    utf16=3 ascii=2 scripts=CJK dump=pakchunk7-WindowsNoEditor__1x1_BakedGroomTextureBase.txt
+pakchunk0-WindowsNoEditor.pak            :: AtomicHeart/Content/MetaHumans/Common/Materials/DefaultTexture_LinearColor.uexp
+    utf16=25 ascii=19 scripts=CJK dump=pakchunk0-WindowsNoEditor__DefaultTexture_LinearColor.txt
+pakchunk15-WindowsNoEditor.pak           :: AtomicHeart/Content/MetaHumans/Common/Textures/DefaultTexture_VT.uexp
+    utf16=91 ascii=78 scripts=CJK dump=pakchunk15-WindowsNoEditor__DefaultTexture_VT.txt
+pakchunk13-WindowsNoEditor.pak           :: AtomicHeart/Content/ThirdParty/BallisticsVFX/DemoMap/Materials/DefaultTextMaterialTranslucentUnlit.uexp
+    utf16=113 ascii=58 scripts=Cyrillic,CJK,Greek dump=pakchunk13-WindowsNoEditor__DefaultTextMaterialTranslucentUnlit.txt
+pakchunk12-WindowsNoEditor.pak           :: AtomicHeart/Content/ThirdParty/FX/Alembic/TEXTURES/PYRO/SWAP/rop_texture_sheets1_color.uexp
+    utf16=264 ascii=195 scripts=Cyrillic,CJK,Arabic,Greek dump=pakchunk12-WindowsNoEditor__rop_texture_sheets1_color.txt
+pakchunk12-WindowsNoEditor.pak           :: AtomicHeart/Content/ThirdParty/FX/Alembic/TEXTURES/PYRO/SWAP/rop_texture_sheets1_packed.uexp
+    utf16=102 ascii=90 scripts=CJK,Greek dump=pakchunk12-WindowsNoEditor__rop_texture_sheets1_packed.txt
+pakchunk0-WindowsNoEditor.pak            :: AtomicHeart/Content/ThirdParty/FX/Alembic/TEXTURES/PYRO/SWAP/rop_texture_sheets2_packed_mv.uexp
+    utf16=81 ascii=146 scripts=CJK dump=pakchunk0-WindowsNoEditor__rop_texture_sheets2_packed_mv.txt
+pakchunk0-WindowsNoEditor.pak            :: AtomicHeart/Content/ThirdParty/FX/Alembic/TEXTURES/PYRO/V2/rop_texture_sheets_pyro_v2_color.uexp
+    utf16=300 ascii=287 scripts=Cyrillic,CJK,Arabic,Greek dump=pakchunk0-WindowsNoEditor__rop_texture_sheets_pyro_v2_color.txt
+pakchunk12-WindowsNoEditor.pak           :: AtomicHeart/Content/ThirdParty/FX/Alembic/TEXTURES/PYRO/V2/rop_texture_sheets_pyro_v2_packed.uexp
+    utf16=124 ascii=24 scripts=CJK dump=pakchunk12-WindowsNoEditor__rop_texture_sheets_pyro_v2_packed.txt
+pakchunk0-WindowsNoEditor.pak            :: AtomicHeart/Content/ThirdParty/FX/Materials/MF_WorldAlignedTexture_Normal.uexp
+    utf16=2 ascii=1 scripts=CJK dump=pakchunk0-WindowsNoEditor__MF_WorldAlignedTexture_Normal.txt
+pakchunk16-WindowsNoEditor.pak           :: AtomicHeart/Content/ThirdParty/FX/Materials/T_TexturesCom_CliffRock2_1K_N.uexp
+    utf16=308 ascii=70 scripts=Cyrillic,CJK,Arabic,Greek dump=pakchunk16-WindowsNoEditor__T_TexturesCom_CliffRock2_1K_N.txt
+pakchunk3-WindowsNoEditor.pak            :: AtomicHeart/Content/ThirdParty/FX/VFXSparkPack/MapAssets/Assets/Textures/T_WaterTextures_M.uexp
+    utf16=61 ascii=188 scripts=Cyrillic,CJK,Arabic,Greek dump=pakchunk3-WindowsNoEditor__T_WaterTextures_M.txt
+pakchunk0-WindowsNoEditor.pak            :: AtomicHeart/Content/ThirdParty/IceCool/Materials/Utils/MF_SubsurfaceScattering.uexp
+    utf16=4 ascii=1 scripts=CJK dump=pakchunk0-WindowsNoEditor__MF_SubsurfaceScattering.txt
+pakchunk5-WindowsNoEditor.pak            :: AtomicHeart/Content/ThirdParty/Projector/Functions/CustomText.uexp
+    utf16=5 ascii=3 scripts=CJK dump=pakchunk5-WindowsNoEditor__CustomText.txt
+pakchunk0-WindowsNoEditor.pak            :: AtomicHeart/Content/ThirdParty/RedwoodCollection/Materials/MASTER/Func/MF_RW_WorldTextureMask.uexp
+    utf16=2 ascii=0 scripts= dump=pakchunk0-WindowsNoEditor__MF_RW_WorldTextureMask.txt
+pakchunk12-WindowsNoEditor.pak           :: AtomicHeart/Content/ThirdParty/UltraDynamicSky/Materials/Material_Functions/Map_Cloud_Textures.uexp
+    utf16=2 ascii=0 scripts=CJK dump=pakchunk12-WindowsNoEditor__Map_Cloud_Textures.txt
+pakchunk0-WindowsNoEditor.pak            :: AtomicHeart/Content/ThirdParty/UWC_Bullet_Holes/Materials/M_Master_Normal_Texture.uexp
+    utf16=141 ascii=79 scripts=Cyrillic,CJK,Greek dump=pakchunk0-WindowsNoEditor__M_Master_Normal_Texture.txt
+pakchunk0-WindowsNoEditor.pak            :: AtomicHeart/Plugins/ImpostorBaker-master/Content/ImpostorBaker/MaterialFunctions/FrameBlendWeights_TextureObject.uexp
+    utf16=2 ascii=0 scripts=CJK dump=pakchunk0-WindowsNoEditor__FrameBlendWeights_TextureObject.txt
+pakchunk0-WindowsNoEditor.pak            :: AtomicHeart/Plugins/Wwise/Content/DefaultForegroundTextMaterial.uexp
+    utf16=148 ascii=57 scripts=Cyrillic,CJK,Arabic,Greek dump=pakchunk0-WindowsNoEditor__DefaultForegroundTextMaterial.txt
+pakchunk0-WindowsNoEditor.pak            :: AtomicHeart/Plugins/Wwise/Content/WwiseTypes/AkAcousticTexture.uexp
+    utf16=237 ascii=136 scripts=Cyrillic,CJK,Arabic dump=pakchunk0-WindowsNoEditor__AkAcousticTexture.txt
+pakchunk0-WindowsNoEditor.pak            :: Engine/Content/ArtTools/RenderToTexture/Blueprints/RenderToTexture_Game.uexp
+    utf16=4 ascii=0 scripts=Cyrillic,CJK dump=pakchunk0-WindowsNoEditor__RenderToTexture_Game.txt
+pakchunk0-WindowsNoEditor.pak            :: Engine/Content/ArtTools/RenderToTexture/Blueprints/RenderToTexture_LevelBP.uexp
+    utf16=756 ascii=91 scripts=Cyrillic,CJK,Arabic dump=pakchunk0-WindowsNoEditor__RenderToTexture_LevelBP.txt
+pakchunk0-WindowsNoEditor.pak            :: Engine/Content/ArtTools/RenderToTexture/Blueprints/RenderToTexture_Pawn.uexp
+    utf16=74 ascii=14 scripts=Cyrillic,CJK,Arabic dump=pakchunk0-WindowsNoEditor__RenderToTexture_Pawn.txt
+pakchunk0-WindowsNoEditor.pak            :: Engine/Content/ArtTools/RenderToTexture/Enums/RenderToTexture_Enum.uexp
+    utf16=19 ascii=18 scripts=CJK dump=pakchunk0-WindowsNoEditor__RenderToTexture_Enum.txt
+pakchunk0-WindowsNoEditor.pak            :: Engine/Content/ArtTools/RenderToTexture/Enums/RenderToTexture_Imposter_Enum.uexp
+    utf16=5 ascii=4 scripts=CJK dump=pakchunk0-WindowsNoEditor__RenderToTexture_Imposter_Enum.txt
+pakchunk0-WindowsNoEditor.pak            :: Engine/Content/ArtTools/RenderToTexture/Macros/RenderToTextureFunctionLibrary.uexp
+    utf16=56 ascii=17 scripts=Cyrillic,CJK dump=pakchunk0-WindowsNoEditor__RenderToTextureFunctionLibrary.txt
+pakchunk0-WindowsNoEditor.pak            :: Engine/Content/ArtTools/RenderToTexture/Macros/RenderToTextureMacros.uexp
+    utf16=1 ascii=0 scripts= dump=pakchunk0-WindowsNoEditor__RenderToTextureMacros.txt
+pakchunk0-WindowsNoEditor.pak            :: Engine/Content/ArtTools/RenderToTexture/Materials/M_UnlitText_01.uexp
+    utf16=113 ascii=41 scripts=Cyrillic,CJK,Arabic,Greek dump=pakchunk0-WindowsNoEditor__M_UnlitText_01.txt
+pakchunk0-WindowsNoEditor.pak            :: Engine/Content/ArtTools/RenderToTexture/Textures/TilingTexturePreview.uexp
+    utf16=2 ascii=0 scripts=CJK dump=pakchunk0-WindowsNoEditor__TilingTexturePreview.txt
+pakchunk0-WindowsNoEditor.pak            :: Engine/Content/EditorLandscapeResources/DefaultAlphaTexture.uexp
+    utf16=4 ascii=1 scripts=CJK dump=pakchunk0-WindowsNoEditor__DefaultAlphaTexture.txt
+pakchunk0-WindowsNoEditor.pak            :: Engine/Content/EditorLandscapeResources/WhiteSquareTexture.uexp
+    utf16=2 ascii=2 scripts=CJK dump=pakchunk0-WindowsNoEditor__WhiteSquareTexture.txt
+pakchunk0-WindowsNoEditor.pak            :: Engine/Content/EngineMaterials/DefaultTextMaterialOpaque.uexp
+    utf16=146 ascii=63 scripts=Cyrillic,CJK,Arabic,Greek dump=pakchunk0-WindowsNoEditor__DefaultTextMaterialOpaque.txt
+pakchunk0-WindowsNoEditor.pak            :: Engine/Content/EngineMaterials/EmissiveTexturedMaterial.uexp
+    utf16=56 ascii=20 scripts=Cyrillic,CJK,Arabic dump=pakchunk0-WindowsNoEditor__EmissiveTexturedMaterial.txt
+pakchunk0-WindowsNoEditor.pak            :: Engine/Content/EngineMaterials/WeightMapPlaceholderTexture.uexp
+    utf16=2 ascii=1 scripts=CJK dump=pakchunk0-WindowsNoEditor__WeightMapPlaceholderTexture.txt
+pakchunk0-WindowsNoEditor.pak            :: Engine/Content/EngineResources/DefaultTexture.uexp
+    utf16=137 ascii=77 scripts=Cyrillic,CJK dump=pakchunk0-WindowsNoEditor__DefaultTexture.txt
+pakchunk0-WindowsNoEditor.pak            :: Engine/Content/EngineResources/DefaultTextureCube.uexp
+    utf16=2273 ascii=1939 scripts=CJK,Arabic,Greek dump=pakchunk0-WindowsNoEditor__DefaultTextureCube.txt
+pakchunk0-WindowsNoEditor.pak            :: Engine/Content/EngineResources/DefaultVolumeTexture.uexp
+    utf16=5 ascii=1 scripts=CJK dump=pakchunk0-WindowsNoEditor__DefaultVolumeTexture.txt
+pakchunk0-WindowsNoEditor.pak            :: Engine/Content/EngineResources/DefaultVolumeTexture2D.uexp
+    utf16=10 ascii=2 scripts=Cyrillic,CJK dump=pakchunk0-WindowsNoEditor__DefaultVolumeTexture2D.txt
+pakchunk0-WindowsNoEditor.pak            :: Engine/Content/EngineResources/GradientTexture0.uexp
+    utf16=12 ascii=2 scripts=CJK dump=pakchunk0-WindowsNoEditor__GradientTexture0.txt
+pakchunk0-WindowsNoEditor.pak            :: Engine/Content/EngineResources/GrayLightTextureCube.uexp
+    utf16=10 ascii=1 scripts=Cyrillic,CJK dump=pakchunk0-WindowsNoEditor__GrayLightTextureCube.txt
+pakchunk0-WindowsNoEditor.pak            :: Engine/Content/EngineSky/VolumetricClouds/CloudGradientTexture.uexp
+    utf16=24 ascii=7 scripts=Cyrillic,CJK dump=pakchunk0-WindowsNoEditor__CloudGradientTexture.txt
+pakchunk0-WindowsNoEditor.pak            :: Engine/Content/EngineSky/VolumetricClouds/CloudWeatherTexture.uexp
+    utf16=4987 ascii=5103 scripts=Cyrillic,CJK,Greek dump=pakchunk0-WindowsNoEditor__CloudWeatherTexture.txt
+pakchunk0-WindowsNoEditor.pak            :: Engine/Content/Functions/Engine_MaterialFunctions01/ImageAdjustment/SceneTextureAverage.uexp
+    utf16=2 ascii=2 scripts=CJK dump=pakchunk0-WindowsNoEditor__SceneTextureAverage.txt
+pakchunk0-WindowsNoEditor.pak            :: Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/TextureCropping.uexp
+    utf16=2 ascii=3 scripts=CJK dump=pakchunk0-WindowsNoEditor__TextureCropping.txt
+pakchunk0-WindowsNoEditor.pak            :: Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/WorldAlignedTexture.uexp
+    utf16=2 ascii=1 scripts=CJK dump=pakchunk0-WindowsNoEditor__WorldAlignedTexture.txt
+pakchunk0-WindowsNoEditor.pak            :: Engine/Content/Functions/Engine_MaterialFunctions02/PivotPainter2/Black_1x1_EXR_Texture.uexp
+    utf16=3 ascii=1 scripts=CJK dump=pakchunk0-WindowsNoEditor__Black_1x1_EXR_Texture.txt
+pakchunk0-WindowsNoEditor.pak            :: Engine/Content/Functions/Engine_MaterialFunctions03/Texturing/TwoSidedTexturing.uexp
+    utf16=3 ascii=3 scripts=CJK dump=pakchunk0-WindowsNoEditor__TwoSidedTexturing.txt
+pakchunk0-WindowsNoEditor.pak            :: Engine/Content/MobileResources/T_MobileControls_texture.uexp
+    utf16=2987 ascii=212 scripts=Cyrillic,CJK,Arabic,Greek dump=pakchunk0-WindowsNoEditor__T_MobileControls_texture.txt
+pakchunk0-WindowsNoEditor.pak            :: Engine/Plugins/2D/Paper2D/Content/PlaceholderTextures/DummySpriteTexture.uexp
+    utf16=184 ascii=61 scripts=Cyrillic,CJK,Arabic,Greek dump=pakchunk0-WindowsNoEditor__DummySpriteTexture.txt
+pakchunk0-WindowsNoEditor.pak            :: Engine/Plugins/Compositing/Composure/Content/Materials/Media/T_EmptyMediaTexture.uexp
+    utf16=0 ascii=0 scripts= dump=pakchunk0-WindowsNoEditor__T_EmptyMediaTexture.txt
+pakchunk0-WindowsNoEditor.pak            :: Engine/Plugins/Compositing/Composure/Content/Materials/ReplaceTonemapper/ComposureReplaceTonemapperByTexture.uexp
+    utf16=64 ascii=15 scripts=Cyrillic,CJK,Arabic,Greek dump=pakchunk0-WindowsNoEditor__ComposureReplaceTonemapperByTexture.txt
+pakchunk5-WindowsNoEditor.pak            :: Engine/Plugins/Experimental/Water/Content/Materials/Functions/HighQualityTextureFiltering.uexp
+    utf16=2 ascii=1 scripts=CJK dump=pakchunk5-WindowsNoEditor__HighQualityTextureFiltering.txt
+pakchunk5-WindowsNoEditor.pak            :: Engine/Plugins/Experimental/Water/Content/Materials/Functions/WaterTextureSurface.uexp
+    utf16=2 ascii=0 scripts=CJK dump=pakchunk5-WindowsNoEditor__WaterTextureSurface.txt
+pakchunk5-WindowsNoEditor.pak            :: Engine/Plugins/Experimental/Water/Content/Materials/Functions/WaterTextureWaves.uexp
+    utf16=2 ascii=1 scripts=CJK dump=pakchunk5-WindowsNoEditor__WaterTextureWaves.txt

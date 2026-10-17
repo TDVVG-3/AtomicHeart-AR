@@ -1,0 +1,9 @@
+﻿# AtomicHeart/Content/DLC4/Development/MaterialLibrary/MaterialFunctions/VAT/MF_BoneIndexWeightByTexture.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=2 ascii_strings=0 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+꼀츑膣ퟫ顆妘
+섀⪃�
+
+## ASCII strings (may include class/property names)

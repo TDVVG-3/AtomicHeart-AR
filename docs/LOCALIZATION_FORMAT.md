@@ -6,9 +6,12 @@ Evidence: 2026-10-17, via `repak list`, `repak get`, and direct byte inspection.
 ## Summary
 
 Atomic Heart uses the standard Unreal Engine **`.locres` / `.locmeta`** localization
-system for **dialogue, cutscenes, mail, notes, terminals, and lore** — but the **main
-game UI text is NOT in `.locres`**. It lives in `StringTable` / `DataTable` `.uasset`
-assets. This split is the single most important finding for the project plan.
+system for **dialogue, cutscenes, mail, notes, terminals, and lore** — and, as proven in
+Phase 5 (2026-10-18), for the main UI as well. The earlier hypothesis that main UI text
+was locres-free was REFINED: the "missing" UI targets (GameTips, weapons, upgrades...)
+deliver their English through the **NewP5** and similar locres targets, while their
+StringTable/DataAsset uassets only carry Russian-native fallback text. See
+`reports/non_locres_text.md` (Phase 5 RESULTS section) for the evidence trail.
 
 ## 1. LocRes files (CONFIRMED)
 

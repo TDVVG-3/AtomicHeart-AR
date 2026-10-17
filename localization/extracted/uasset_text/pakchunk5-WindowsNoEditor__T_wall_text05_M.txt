@@ -1,0 +1,144 @@
+﻿# AtomicHeart/Content/Development/MaterialLibrary/Decals/Text/Lab_Decals/T_wall_text05_M.uexp  (from pakchunk5-WindowsNoEditor.pak)
+# utf16_strings=67 ascii_strings=75 scripts=Cyrillic,CJK,Greek
+# SCRIPTS DETECTED: Cyrillic,CJK,Greek
+
+## UTF-16 strings
+䙐䑟员1
+啕෕옸 ╕⻠횺⥅ꃵ칹
+ꪪ単 艟嗕ࠡ坕◢
+칹ࡁᕕ�
+Ⳣ屣옸
+ӷ蒄善₭
+赲喕￿ 啕幖
+ꪪꪪ� 镕씵�
+ࡡ冑兑뗖 喈橕뷷
+啕ѕ!
+⥥ᇭ䒻뷷
+払嗿₭
+喪ﵕꕕ
+ꪪꪪ떶
+꺄ѳ怡疮ѻﴡ嗺
+껾そ歭⃤ꏯϕ篏ℤꫝW嫋
+胪嗿䩉
+ꪪꪪࡁ䁀䁀칙
+ࢪB
+ꪪꪪ
+啕剛ၢ凑冑獮 뮪
+ﾪ綀玮ࠡﾮ﷠歭Ⴂ緫
+ꪪꪪ獮
+嗕�Þ
+啕◵�
+賷њ넡๕Ⴊ䖄ȩｕ껛s
+ࠡ㗅칙
+ᬥß
+剛剛ࡁ퇑兑歭ࠡ¿啽挬ࡁÿ啝剪 ë啵歍ࡁë啕挬ࡁ䃿啕
+ꪪꪪ鳳
+啕횺ᣃ㡎藡횚ࡁ坕捜ℤ
+ࡁ兑兑
+啕镕￿
+啕奕Î
+෢᳕⃧
+칹
+啕꿠ࠡ兑婓嫫
+啕㕕횺
+啕횚 犍啖ࡁ
+唥啕
+ﶠ啕篏
+垊啕嫫
+￿￿@
+ඕჃ
+풀ࢬ豑
+牗혧玮
+ᗕԥ鳓 呐啗
+啖"䩩
+啕坖豑 䦍䅁
+䩩⥥ꂨ�䩩ㅦ㰠翫䩉ࠡ傀
+҄䧴虊뼱ၮ誠虒׺ࣂB
+啁ཕ|
+呔ࡔ⁂
+啕躕⁳
+喕奕Î
+꩞喭ꔴ
+푖喪歭
+啕◕歍
+啕ހ歍
+鳳悠ꂠ䩉ࠡ聕
+塺ၞ₄
+맑滅⁳
+啂꩕유9
+떖 ﵾ啕
+Ἡ9
+穖䥠⁊
+趣ࡕB
+
+## ASCII strings (may include class/property names)
+PF_DXT1
+,c\8
+VUU
+UUV^
+QQQ
+UUj
+TUUU
+UUUq
+UUUV
+TWUU
+LjsS
+]0mk
+{$!
+UIJ
+\UUU
+@@@@Y
+SSSS
+mkb
+mkA
+UUjB
+SSSs
+UU[R}
+Qns 
+[R[R}
+Mk%
+WTXs
+QQmk!
+}U,cA
+]UjR 
+uUMkA
+UU,cA
+@UU
+UUU
+UW\c$!
+%UUU
+QQQQ
+UU^V
+UUUY
+QQSZ
+UUU5
+UU%
+rVUA
+VUUU
+%UUU\
+WUU
+\U0
+Wr'
+UUUT
+PTWU
+VU"
+UUVWQ
+IAA
+iJe)
+iJf1 <
+IJ!
+@AUU
+TTT
+UUT
+UUY
+Umk
+pWU
+%Mk
+UUV{
+MQSZ
+UzX^
+ns 
+BUU
+\\UU
+UVz`IJ 
+`_WU

@@ -1,0 +1,7 @@
+﻿# Engine/Content/ArtTools/RenderToTexture/Macros/RenderToTextureMacros.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=1 ascii_strings=0 scripts=
+
+## UTF-16 strings
+ਕ�
+
+## ASCII strings (may include class/property names)

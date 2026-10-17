@@ -1,0 +1,16 @@
+﻿# AtomicHeart/Content/Development/MaterialLibrary/Plakat/Sahalin/Text/DCI_Triton_Text_01.uexp  (from pakchunk15-WindowsNoEditor.pak)
+# utf16_strings=9 ascii_strings=0 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+￾￿2
+￿￿'
+￿￿'
+ᄦᄦᄦ?
+뵗虎掟叭ẓ⟍
+￿￿'
+ܻ鏎镚䧾몉鮺ᛅｽ'
+Ꙍ㺪'
+￲￿￴￿￵￿￳￿;
+
+## ASCII strings (may include class/property names)

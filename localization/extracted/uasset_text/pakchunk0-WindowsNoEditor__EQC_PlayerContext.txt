@@ -1,0 +1,8 @@
+﻿# AtomicHeart/Content/Core/AI/EQS/Flying/Shmel/EQC_PlayerContext.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=2 ascii_strings=0 scripts=
+
+## UTF-16 strings
+￹￿#
+￬￿Ó
+
+## ASCII strings (may include class/property names)

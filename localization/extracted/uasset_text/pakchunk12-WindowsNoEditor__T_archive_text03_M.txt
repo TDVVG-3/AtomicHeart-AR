@@ -1,0 +1,178 @@
+﻿# AtomicHeart/Content/Development/MaterialLibrary/Decals/Text/Archive/T_archive_text03_M.uexp  (from pakchunk12-WindowsNoEditor.pak)
+# utf16_strings=98 ascii_strings=88 scripts=Cyrillic,CJK,Greek
+# SCRIPTS DETECTED: Cyrillic,CJK,Greek
+
+## UTF-16 strings
+ᛑ숡錭덄옷�뺱ॴ
+䙐䑟员1
+萰䂀聀钒
+员ᡖÆ
+▕锥鳳
+停屐뷗
+㖵떶
+塖啜칹
+呖噔ࡁꧽﶉ玮
+呖噔캙ࡁ⦭ﶉ
+ᗕ啕￟
+喪ᢥ⃆
+ÿ幕뷷ࠡÿꕕꔴࠡÿ꩕칹 ˿靕
+왘ࡁÿ橕
+궕ࠡÿꕔ
+횚偐偐옸
+ᖕᰥç
+僟剐Q
+幐镕
+䂀屰 䁀恀玮䎃΃�ࡁ
+唥啕￿
+啞啕떖
+啕畕­
+啕㒪¥
+啔幕￟
+喕啕ꔴ
+啰啕떖
+啕펵
+啖U
+啪幕뗖
+啕陕µ
+啕▵ ⵕ
+㰠⣧ⵂ
+�䃀
+啕㕕떶 ক
+�떶狡￿횺ꞯ꾭뷷`
+˧锥U
+횺䁠聀⃄ꂠ庨
+尥ᣧ듆⪠᰷⃧
+떖穻䃠뷗
+岀展ç
+啕ࡡ
+횺誮ꦃ�ࠡ塜灐
+┥㰥㣧ᛆ᪗㰮⃧
+锭啕
+閕閕칙ʁ
+┥┥궕⢨㐬 屜屜
+��
+┥┥칹뼶ﲾ 屜屜
+悀鵘ï
+┥┥칹ꔴ
+슜拢�⃞
+炀㑞¥
+┥┥�ꔴ灸ꂠ
+횺豱ꢠ梨떶
+┥┥칹髻僒
+칹鳳嫨p�ᣃꩺ
+칹 ꩕
+� ꩕
+萰䁀@
+唠뷷 †
+떶啕U
+횚啕U
+啕閕萰
+ᑕ熔
+啕ᐴ钒
+♕ᰦ⃧
+啕랷䩉
+芊횺ℤﾪ
+啖噖굵
+ᗕ喕�
+霨ﭕÞ
+筢㱿⃧
+账啭횺 〼햻�ࡡ蒈翧횚
+噖啕굵
+㲕ⴹ
+ࡁ恠恠￿
+ࡁ恠恠
+喕啕� 啜啕 헕㖕
+뷗䁀䁀칙 䁀恠
+떶䁀䁀� 恨恠 뷷
+喕�Þ
+穠啕칹
+喭祕Î
+喪ᡕÆ
+喪�Þ
+떖 뵕֥굵ࠡ빕ª떖
+멕ª옸 孕灺옸
+ࡁ彰塖
+豱䁀䁀칹
+壘塘옸ࠡ闖थ횚
+￿肀뷷
+㣘唼굵
+칙ࡡꧽ쎫ꔴࡁ쁿䃀ꔴ
+襉₽
+࢜ꦂӉ
+Ⲅɣꦩҩ
+칻ꩳꪪҪ
+
+## ASCII strings (may include class/property names)
+PF_DXT1
+XXTV
+\PP\
+VX\Uy
+VTTV}
+VTTV
+_XUU
+XP`@
+PPPP8
+p``}
+`P<
+@@@`]
+PPRQ
+P^U
+@p\\
+@@@`
+T\\T
+%UUU
+^UUU
+UUUu
+TUU^
+UUU4
+pUUU
+UUU
+VUU
+jUU^
+(B-
+UUU5
+`@@
+*%\
+\\\\
+\U\
+UU]
+\XPp
+%%%%<
+`XWU
+````
+%%%%]
+(,4\
+`pP\
+VUUU
+%%%%y
+p^4
+TUUU
+%%%%
+`\U
+Uj`@
+%%%U
+\\\U
+@@@
+UU4
+UU&&
+UUVV
+VUVVu
+VVUUu
+Vp`
+@@@@
+````}
+\UUU
+@@@@Y
+@@``
+h``` 
+`Xy
+`zUUy
+UUy
+U[zp8
+p_VX
+@@@@y
+XXX8
+PX\W
+8<Uu
+UXPU
+Ochj

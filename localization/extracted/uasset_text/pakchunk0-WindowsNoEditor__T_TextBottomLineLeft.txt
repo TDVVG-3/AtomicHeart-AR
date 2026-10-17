@@ -1,0 +1,12 @@
+﻿# AtomicHeart/Content/Development/UI/Textures/Dialogue/T_TextBottomLineLeft.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=3 ascii_strings=2 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+眰禎굉銛弄੪
+䙐䉟䜸券䄸8
+￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿
+
+## ASCII strings (may include class/property names)
+0wS
+PF_B8G8R8A8

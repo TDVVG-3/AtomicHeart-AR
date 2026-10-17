@@ -1,0 +1,25 @@
+﻿# AtomicHeart/Content/Core/UI/Debug/DT_DebugTextStyle.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=19 ascii_strings=0 scripts=
+
+## UTF-16 strings
+￹￿>
+�￿.
+�￿.
+�￿.
+�￿.
+�￿.
+�￿.
+�￿.
+쳍㷌쳍㷌쳍㷌
+�￿.
+�￿.
+�￿.
+�￿.
+�￿.
+�￿.
+�￿.
+�￿.
+쳍㷌쳍㷌쳍㷌
+�￿.
+
+## ASCII strings (may include class/property names)

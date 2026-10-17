@@ -1,0 +1,43 @@
+﻿# AtomicHeart/Content/Core/UI/Widgets/MainMenu/ST_MenuText.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=22 ascii_strings=14 scripts=Cyrillic,CJK
+# SCRIPTS DETECTED: Cyrillic,CJK
+
+## UTF-16 strings
+彔敍畮敔瑸
+敭畮潟瑰潩獮
+пции
+敭畮獟慴瑲
+ачать новую игру
+湥彵潣瑮湩敵
+родолжить игру
+湥彵潬摡慧敭
+агрузить игру
+敭畮瑟瑩敬s￺￿Титры
+湥彵硥瑩
+ыход
+湥敟楸灴灯灵
+ыйти из игры
+敭畮潟数睮牯摬
+ернуться на предприятие 3826
+湥彵杮汰獵
+овая игра +
+湥彵汤ㅣ
+湥彵汤㉣
+湥彵汤㍣
+湥彵汤㑣
+
+## ASCII strings (may include class/property names)
+ST_MenuText
+menu_options
+menu_start
+menu_continue
+menu_loadgame
+menu_titles
+menu_exit
+Men_exitpopup
+menu_openworld
+menu_ngplus
+menu_dlc1
+menu_dlc2
+menu_dlc3
+menu_dlc4

@@ -1,0 +1,8 @@
+﻿# AtomicHeart/Content/DLC3/Development/FX/Weapons/Kuzmich/ElectroBall/MF/MF_TextureUV.uexp  (from pakchunk15-WindowsNoEditor.pak)
+# utf16_strings=1 ascii_strings=0 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+콀춫疃뽋困糗ীࡽ
+
+## ASCII strings (may include class/property names)

@@ -1,0 +1,26 @@
+﻿# AtomicHeart/Content/DLC2/Development/FX/WeaponFX/T_Candy_Texture_mask.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=18 ascii_strings=1 scripts=Cyrillic,CJK
+# SCRIPTS DETECTED: Cyrillic,CJK
+
+## UTF-16 strings
+툳䧆떤轈ⓔ횴৶
+䙐䑟员1
+￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ
+￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ
+￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ
+￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ
+￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ
+￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ
+￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ
+￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ
+￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ
+￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ
+￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ
+￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ￿￿ꪪꪪ
+￿￿ꪪꪪ￿￿ꪪꪪ
+￿￿ꪪꪪ￿￿ꪪꪪ
+￿￿ꪪꪪ
+傌ꪄꪪҪ
+
+## ASCII strings (may include class/property names)
+PF_DXT1

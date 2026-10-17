@@ -1,0 +1,9 @@
+﻿# Engine/Plugins/Experimental/Water/Content/Materials/Functions/WaterTextureSurface.uexp  (from pakchunk5-WindowsNoEditor.pak)
+# utf16_strings=2 ascii_strings=0 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+娀ₛ썮窕뭂挠웛
+섀⪃�
+
+## ASCII strings (may include class/property names)

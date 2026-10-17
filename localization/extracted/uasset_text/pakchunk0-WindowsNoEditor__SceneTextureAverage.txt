@@ -1,0 +1,11 @@
+﻿# Engine/Content/Functions/Engine_MaterialFunctions01/ImageAdjustment/SceneTextureAverage.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=2 ascii_strings=2 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+匀浡汰獥愠摮愠敶慲敧⁳桴⁥捳湥⁥整瑸牵⁥‸楴敭⁳湩愠挠物畣慬⁲慰瑴牥⹮̀
+鈾秫䰟䶭浩擷쥂
+
+## ASCII strings (may include class/property names)
+Samples and averages the scene texture 8 times in a circular pattern.
+Mim

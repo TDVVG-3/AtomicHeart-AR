@@ -138,3 +138,93 @@ Prototype must test native `ar` first (least invasive). If it fails, fall back t
 C and clearly tell the user which language slot Arabic replaces.
 
 ---
+
+## DEC-008 — Spec integrity guard (backup + hash + auto-restore)
+
+Date: 2026-10-18
+Status: ACTIVE (permanent, per user decision)
+
+Decision:
+`MASTER_PROMPT.md` is the authoritative spec. A byte-identical read-only backup lives at
+`docs/spec/MASTER_PROMPT.backup.md`; its SHA256 is recorded in `docs/spec/MASTER_PROMPT.sha256`
+and `docs/spec/SPEC_INTEGRITY.md`. At the start of every work cycle the hash is re-verified;
+on mismatch the file is restored from the backup automatically and the incident is noted in
+that cycle's `lastreport.md` (no cycle stop).
+
+Reason:
+The spec file was found empty twice during Phase 1-4; the user (2026-10-17/18) mandated
+protection. Reference hash: 579f581e5bb8caae2aff6ef60326f1f461688f1b1392391a56a97a6148a61c35
+(34,293 bytes).
+
+Consequence:
+Spec tampering/corruption can no longer silently affect the work.
+
+---
+
+## DEC-009 — Git for Windows installed via winget; repo-local identity
+
+Date: 2026-10-18
+Status: ACTIVE
+
+Decision:
+Following user approval, Git.Git 2.55.0.5 was installed system-wide with winget (official
+package, verified installer hash). The repository was initialized with `git init` and a
+repo-local identity (`AtomicHeart-AR <atomicheart-ar@localhost>`), no global config changes.
+History follows conventional commits per MASTER_PROMPT section 45.
+
+Reason:
+Version control is mandatory (section 45) and the user explicitly approved the install.
+
+Consequence:
+All Phase 1-4 outputs were committed retroactively as logically grouped history.
+
+---
+
+## DEC-010 — Master DB seeded from en-US locres; non-locres strings catalogued only
+
+Date: 2026-10-18
+Status: ACTIVE
+
+Decision:
+`localization/master/atomic-heart-ar.tsv` is generated from all en-US locres (27,618 rows,
+columns exactly per section 10, Status=UNTRANSLATED, Arabic empty). Non-locres
+StringTable/DataTable text is NOT yet merged: Phase 5 only produces scripted string dumps
+per asset (`localization/extracted/uasset_text/`) plus a catalog
+(`reports/uasset_strings_catalog.txt`), because a stable keying scheme (StringTable key vs
+DataTable row/property) must be decided during the Phase 7 prototype before those strings
+enter the master DB.
+
+Reason:
+The master DB must only carry rows with verifiable identity (namespace/key or an
+asset-anchored key to be defined). Inventing keys before the prototype would corrupt
+round-trip fidelity.
+
+Consequence:
+Non-locres text is first-class within Phase 7 scope, with a keying decision to be recorded
+(DEC pending) after an actual uasset rebuild is proven.
+
+---
+
+## DEC-011 — UnrealLocres adopted as the working locres exporter
+
+Date: 2026-10-18
+Status: ACTIVE (open question deferred to user)
+
+Decision:
+The locres -> CSV pipeline uses UnrealLocres 1.1.0 (`tools/bin/unreallocres`), which runs
+on the built-in .NET Framework. LocResUtility CLI v2.1.1 could not run: it requires the
+.NET 8 runtime (not installed). Installing .NET 8 is system-wide and requires user
+approval, so it is deferred.
+
+Reason:
+UnrealLocres is functionally sufficient (export/import/merge on LocRes v3). Only if we
+adopt LocResUtility for advanced features would .NET 8 be needed.
+
+Consequence:
+UnrealLocres has no license file (all-rights-reserved) - used locally only, never
+redistributed (recorded in THIRD_PARTY_LICENSES.md). User to decide whether .NET 8 should
+be installed to enable LocResUtility/GUI workflows (FModel also needs .NET 8 when its
+GUI is used).
+
+
+---

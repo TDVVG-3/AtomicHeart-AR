@@ -1,0 +1,65 @@
+﻿# AtomicHeart/Content/Development/MaterialLibrary/Decals/Text/Lab_Decals/T_wall_text0_lab_M.uexp  (from pakchunk12-WindowsNoEditor.pak)
+# utf16_strings=31 ascii_strings=28 scripts=Cyrillic,CJK,Arabic
+# SCRIPTS DETECTED: Cyrillic,CJK,Arabic
+
+## UTF-16 strings
+䙐䑟员1
+핕햕ႂ罕湀
+�ᣣꢦ蹸횚ࡡኙ
+骃⃖
+⇫絪ꫯ坒೾ﯞ⃞
+㢢⃆
+䁌㱊ӧ両俎Ძç
+ၢ劒卒옸
+೗祸Î
+緝낂옸ࡁ�뀲캙
+Ⱶᠠ⃆
+偟౓c
+啤啕䩉
+ࢺ㑻₥
+鑘啕뷷
+긬啕칹ࠡ㦰啕￟ ꛪ啕� �啕�ࠡ啕떶
+ޫ啕횺 姢啕칙 Ꚉ啕뷷
+떶 啕چ钲
+啕삨鳳
+啕ʠ굕
+啕ª铒
+啕钒
+蒬售豱
+뷷ႂ衕單钲
+ÿ嗃鳓
+䁻啀⃤
+喈啕ᣃ
+ꪀ凿₌
+⑚校桨Ѩ
+䕒ﰩﳼӼ
+ࡂｂ￿ӿ
+
+## ASCII strings (may include class/property names)
+QpH
+PF_DXT1
+V\[
+<4(
+$!n
+TBY
+!j}
+kL@J<
+RRS8
+4>8
+u, 
+_PS
+dUUUIJ
+UUU
+IJI
+5UY
+UUy
+9UU
+YUUY
+P[UU
+.Uq
+{@@U
+UUU 
+Lc!
+ZZZ
+Z$!hhhh
+RE)

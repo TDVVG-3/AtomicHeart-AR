@@ -1,0 +1,11 @@
+﻿# AtomicHeart/Content/Developers/AndreyBulatow/Mesh/DC_MemorialText_03_02.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=3 ascii_strings=1 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+￾￿(
+�顃ꩬ䓊穃὘
+￵￿￷￿￶￿
+
+## ASCII strings (may include class/property names)
+DCzX

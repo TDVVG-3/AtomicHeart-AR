@@ -1,0 +1,19 @@
+﻿# Engine/Content/EngineResources/DefaultVolumeTexture2D.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=10 ascii_strings=2 scripts=Cyrillic,CJK
+# SCRIPTS DETECTED: Cyrillic,CJK
+
+## UTF-16 strings
+⛎谦╡
+ĀĀĀ
+倀彆塄ㅔ
+磸ýԀ
+᠀ÆԀ％
+꫿ꪪᾪ�Ԁࠅ
+缀ӿ张
+鰀磿︉ﳼӼ
+ᨀ៕ﾽ
+섀⪃�
+
+## ASCII strings (may include class/property names)
+PF_DXT1
+ _n

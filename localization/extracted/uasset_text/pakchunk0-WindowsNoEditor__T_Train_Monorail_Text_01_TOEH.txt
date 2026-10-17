@@ -1,0 +1,267 @@
+﻿# AtomicHeart/Content/Development/Environment/Architecture/Exhibition/Train_Station/T_Train_Monorail_Text_01_TOEH.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=130 ascii_strings=144 scripts=Cyrillic,CJK,Arabic,Greek
+# SCRIPTS DETECTED: Cyrillic,CJK,Arabic,Greek
+
+## UTF-16 strings
+䙐䑟员1
+啕압׀ 啕䅕Ӏ 啕灕 ՠ
+啕ր 啕셕
+啕払Р
+떵떵֠@쥅ᄱҠ 橪楁
+兑孓֠
+ؠ
+ꆱ䗍ր
+牑䱌Ӡ
+楍浹Ӡ ᫜ો׀
+᪘嫚Հ`Ᶎ䖈Ӡ
+업업@
+唥啕 ؠ
+ր 啑啕΀
+啘录 ؠ`
+Ѡ 嗆啕
+啂啕 р肐
+啔啕΀
+嵒啕ˠ
+啕נ
+坔啕̀
+뗵㔥ڀ@畕鷭ր`䩁䥋р
+兰卑р
+䖥䕅Հ Ӏ
+㇁춡ր 好乳Р
+奱Ӏ@陗伷Ӏ
+�幞Ҡ
+ՠ`䝲䫥
+†ـ@��Π
+噖呔Ƞ
+▥啕Ѡ
+好啕Π
+屚啕נ
+㗥啕Ӡ
+捎啕Р
+咬啕Р 幘啕Ϡ 屖啕Ҁ
+牅啗Ϡ
+╥嗵Ӡ
+ހ@럪랷ـ
+跕共ڠ
+졜ᐴր 卑٠@婞Ӏ 捘楍ˠ
+݀ 噗ꡖ
+呖呔ـ
+啕闕Ѡ
+ᗕӀ
+器ր@兓镹р
+�✴ՠ@呓繗ހ
+헺헕Р
+呗卞͠@失ｖ
+啕呗ՠ
+坖㕕ؠ 啕展à
+啕噕Ӏ 嗽ᕕ۠
+嗿Ơ
+嗘呕ɀ
+喯ᕕѠ
+閕ᖕΠ 㘷✷׀ 凭兑Հ`홌풔ɠ
+她卛ǀ
+嫴剒Ǡ
+畽퍽Ԡ
+헕𥉉Ӏ
+ഥﵽݠ
+芀ｕՠ
+凍ɠ 婛蕄
+ՠ ꖕ䗅
+⬵ᔪҠ 蕡块Ҡ
+陋嗵͠
+㓞喵Ϡ 穔啪ǀ
+׀啥נ
+坕啔 ٠
+啕牟ؠ
+啕⩽Ҁ
+啕׵ـ
+啕⇵ ڀ
+啕牗ـ 啕⍵׀
+啕蟕֠
+啖鑕ڠ@孑噔
+ۀĠ䛤䑆
+䕍䗅ڠ
+풜퓔ـ
+煱呓ڠ
+坕噜׀ ᖥ啕ؠ
+牍啗Հ
+Հ Œ啵 ؠ䊑
+牍啗ـ
+⎜啵٠`Զ啕Ԡ
+穕앏Ԡ 襕閝΀
+╕囖Ӡ
+Օ叹ـ@坕ﺔπ
+牕ր 굕库Ϡ 㕕围̀
+坕ᛔѠ
+剓ԠÀ竺鑞΀
+䷥Ӏ 块퍞ՠ 块뛔ʠ
+孽罔͠
+啰啕Ϡ
+喋啕ˀ
+啲啕Р
+π �⤹ˀ
+΀@筕腀̀
+祕ྋр 睕擤̀
+睕䑤ˀ 唽㇝̀@啷所ʠ 喱ड`
+啡㛣ˠ
+啦蛌ˠ
+啸繾π
+@啷ꛉ͠
+喡䒣͠
+喯�΀
+嗫䡆̠
+啤꧅Ƞ
+敕͠ 㽄啕̀ 횤坕Ϡ 杆畕РÀ癭Օ
+ퟷȠ
+幒噟ˠ
+㤽ㄱˠ
+Ƞ ꟕ廔ˠ
+Ϡ ɀ
+孖桺΀ 䥕ᆑ͠
+ቕ͠
+展呔Π
+Π ⑕쇁͠ 䅕䓆ڠ
+啕ꭕڀ
+啕扙̀ 喁ㅥ̀@唲秛ɀ
+啕塞π@唨蝝`΀YᢂӀ@啣坽
+啙兕Π 醙啵ɠ
+΀@웆啙ɠ
+ˠ 쵕ˀ ͕荕
+ꍕ뽕ʀ@̠ ㅕ唣
+삻喢ɀ@᣿㖫Ơ
+槎罊Ƞ 䩭̠
+翟⛷ΠÀ㔯ﭝπ
+罿쭕ƀ 슂綠ɠ
+뚥甧Ǡ 珂啯ɠ
+
+## ASCII strings (may include class/property names)
+PF_DXT1
+UUU
+UUUA
+UUUp 
+UUUb 
+jjAi
+QQS[
+EEE
+QrLL
+Miym
+[[p
+%UUU 
+QUUU
+XUU_ 
+BUUU 
+TUUU
+R]UU
+P_UU
+TWUU@
+AJKI@
+pQQS@
+EEE@
+}YsN 
+iqY
+  @
+VVTT 
+%UU`
+UU`
+}YUU
+Z\UU
+5UU
+NcUU 
+TUU 
+X^UU
+V\UU
+ErWU
+QS`
+XcMi
+WVV
+VTTT@
+ShN
+T_Yo
+SQy
+4'`
+STW~
+TTV 
+WT^S`
+1YV
+UUWT`
+EuU
+VWU5 
+UUU\
+UUUV
+UUT@
+UUT
+767'
+QQQ@
+yY[S
+ZRR
+}u}
+\XYS
+[ZD
+5+*
+xVU
+TzjU
+TVWU
+UWTU 
+UU_r 
+UU}*
+UU_b
+UUWr@
+UUu#
+UUWP
+VUU
+Q[TV
+FFD
+VTT
+qqST
+UW\V
+UU 
+MrWU@
+}U@
+uU 
+#uU`
+Wp_U
+UzO
+UjIq
+UrO
+U\y}
+UUu
+S^TW
+SRS
+WW^
+}[T
+)UU 
+UU@
+\VUU
+pUUU
+5UUU
+UUU@
+rUUU 
+UJHJ
+U{@
+UwdD
+wU@b
+xU~~
+UFH 
+xUV_
+Ue`
+D?UU@
+FgUu 
+mvU
+R^_V
+=911
+G@Gu`
+V[zh
+U\TT
+UUYb@
+Ue1@
+UU^X
+(U]
+cU}W
+YUUQ
+uU`
+YU`
+r]UU 
+U1#U
+mJ 
+/5]
+soU`

@@ -1,0 +1,10 @@
+﻿# AtomicHeart/Content/Core/Subsystems/BP_AISignificanceSubsystem.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=3 ascii_strings=1 scripts=
+
+## UTF-16 strings
+￷￿
+￬￿-
+￿﻿￿刺￿﻿￿᏿
+
+## ASCII strings (may include class/property names)
+ A'

@@ -1,0 +1,41 @@
+﻿# AtomicHeart/Content/Development/MaterialLibrary/ScreenAnimation/LoadSystem/Textures/T_PCTextAtlas_A_Screen_UI_B.uexp  (from pakchunk16-WindowsNoEditor.pak)
+# utf16_strings=8 ascii_strings=209 scripts=CJK,Arabic
+# SCRIPTS DETECTED: CJK,Arabic
+
+## UTF-16 strings
+ꃅ⇘鷛腆䣆亂챀ظ
+䙐䙟潬瑡䝒䅂
+㕀⶝㉃
+㕀⶝㈾
+㏾⾳⴪
+㏾⾮⭰
+焱뤨戰వ焱뤨戰ȵ
+焯㬤̷ĸ
+
+## ASCII strings (may include class/property names)
+PF_FloatRGBA
+.f*
+<f*
+a<f*
+f**,
+f**8
+f*U1
+U<f*
+(<f*
+6U-
+.<f*
+8f*
+3U)
+3(4
+9f*
+P0*1
+1*1
+3*1
+2*1
+-C2
+->2
+/p+
+/*-
+1q(
+0b5
+/q$;7

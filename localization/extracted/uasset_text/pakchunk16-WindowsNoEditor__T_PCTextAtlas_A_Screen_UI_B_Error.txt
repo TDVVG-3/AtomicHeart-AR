@@ -1,0 +1,74 @@
+﻿# AtomicHeart/Content/Development/MaterialLibrary/ScreenAnimation/LoadSystem/Textures/T_PCTextAtlas_A_Screen_UI_B_Error.uexp  (from pakchunk16-WindowsNoEditor.pak)
+# utf16_strings=44 ascii_strings=31 scripts=Cyrillic,CJK
+# SCRIPTS DETECTED: Cyrillic,CJK
+
+## UTF-16 strings
+둡鐱冗
+멋㎇粁﷓ෘ
+䙐䑟员1
+�р꩕ﲨ஁迱
+꩕஁迱
+꩕஁迱
+꩕஁迱
+꩕஁迱
+꩕஁迱
+꩕஁迱
+꩕஁迱
+⪪п'
+Ｗ￿Ｗ￿Ｗ￿Ｗ￿Ｗ￿Ｗ￿Ｗ￿Ｗ￿︷䃷䁀ꁀ
+럶㟦﹕
+啇舵﮻啇䩖唷탞滛唿衿啇ꍮ論唿ꡭﻤ啇ⱝ︿䃷䁀ꁀ
+￿Ｗ￿︷䃷䁀ꁀ
+U㟦
+U㟦
+U㟦
+U㟦
+U㟦
+U㟦
+U㟦
+U㟦
+︷䃷啀
+ﾪ啕נ
+ﾪ啕נ
+ﾪ啕נ
+ﾪ啕נ
+ﾪ啕נ
+ﾪ啕נ
+ﾪ啕נ
+ﾪ啕נ
+啕ත濭
+啕ª濭
+啕ª濭
+啕ª濭
+啕ª矮 啕恺
+꿵㿧啕×ꟴ㟦啕졷ꟴ㟦啕ꃿ鿳㟦啕ÿ快Ġ恠恠
+迱࿡￿ÿ迱࿡￿ÿ迱࿡￿ÿ迱࿡￿ÿ柬Ġ恠恠
+啕展枬
+㔵㔵翯㟦聕꩕翯㟦ࡕ꩕柬`屜屜
+啕굕Ⱕ
+啕䁗
+
+## ASCII strings (may include class/property names)
+PF_DXT1
+WT\x
+e.@@@@
+@@@@
+GU5
+GUVJ
+GUn
+?Um
+GU],
+%.@@@@
+@@U
+UUz`
+?UU
+7UUw
+7UU
+````
+%UUU
+UUU
+UUU\
+5555
+\\\\
+UUU`
+@@UU

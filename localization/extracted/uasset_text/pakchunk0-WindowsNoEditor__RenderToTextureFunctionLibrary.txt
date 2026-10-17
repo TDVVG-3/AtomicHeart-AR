@@ -1,0 +1,73 @@
+﻿# Engine/Content/ArtTools/RenderToTexture/Macros/RenderToTextureFunctionLibrary.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=56 ascii_strings=17 scripts=Cyrillic,CJK
+# SCRIPTS DETECTED: Cyrillic,CJK
+
+## UTF-16 strings
+ĀĀǿ䌁
+ĀĀǿ䌁
+ĀĀǿ䌁
+！āC
+ĀĀǿ㴁
+ĀĀǿ㴁
+！ā\
+ĀĀǿ持
+！ā\
+ĀĀǿ封
+！ā\
+！ā\
+␀ᘀ�
+Ĥܖш
+␀ᘂ㜇
+̤ܖ຿
+崟ᘀď
+῿湩⁴䠀
+ἀ㴠笠ᘀď
+紟;༖
+Ⱏ ༖
+῿ἀ[Ā
+ἀ]༖
+椟瑮′䠀
+ἀ㴠笠ᘀď
+␀⠄ᴧ
+Ф✨ĝ
+椟瑮⠲ᘀď
+Ⱏᘀď
+⤟㭽ᘀď
+⤟‬ᘀď
+崟ᘀď
+῿湩㍴ ň
+‟‽{༖
+ᘀ’￟
+ἀ湩㍴(栖￮
+␀⠄ᴧ
+Ф✨ĝ
+␀⠄ᴧ
+ἀ,༖
+ἀ紩;༖
+ἀⰩ ᐖĀ
+崟ᘀď
+῿湩㑴 ň
+‟‽{༖
+椟瑮⠴ᘀ’￟
+Ф✨ĝ
+␀⠄ᴧ
+Ф✨ĝ
+␀⠄ᴧ
+Ⱏᘀď
+Ⱏᘀď
+⤟㭽ᘀď
+⤟‬ᘀ
+Ѐ匋 ೂ
+Ѐ匋 ᱂
+
+## ASCII strings (may include class/property names)
+int 
+ = {
+int2 
+int2(
+)};
+), 
+int3 
+int3(
+int4 
+int4(

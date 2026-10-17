@@ -1,0 +1,21 @@
+﻿# AtomicHeart/Content/DLC3/Narrative/Triton/BP_Text_Decals_DLC3_A2.uexp  (from pakchunk15-WindowsNoEditor.pak)
+# utf16_strings=10 ascii_strings=4 scripts=CJK,Arabic
+# SCRIPTS DETECTED: CJK,Arabic
+
+## UTF-16 strings
+￹￿/
+￯￿?
+곑镕跀︭ᔾ
+�￿D
+걺䡷8
+￼￿D
+澂ẞ䱦ت翜櫨8
+眸玊䋱ꁂ簩꘦㓼
+￟￿;
+￮￿@
+
+## ASCII strings (may include class/property names)
+8KR
+L_A
+wH8
+)|&

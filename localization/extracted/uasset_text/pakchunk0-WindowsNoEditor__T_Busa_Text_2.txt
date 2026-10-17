@@ -1,0 +1,95 @@
+﻿# AtomicHeart/Content/DLC/Mendeleev_Chelomey/Characters/Busa/T_Busa_Text_2.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=50 ascii_strings=52 scripts=Cyrillic,CJK
+# SCRIPTS DETECTED: Cyrillic,CJK
+
+## UTF-16 strings
+彆塄ㅔ
+嗿থᢣ啕ª횚ᢣ嗕偖
+喪￿ 啕塗
+햍멕Ö
+垜鱗￿ႂ
+峟￟ㅦ@
+￿ࠡ啕퓖￿ࠡ啕ÿ￿ࡁ啕㳷옸
+啕ᓗ￿
+啕ⳟࠡ￿
+啕ᗕ ￿
+䃷䁀�⣿၂ ＠ÿ
+塘塘
+￿覉覉ၢꃸ
+셁ࠡ
+Ɓ뻍⃷
+Ե঍￿ 牐쉣
+䩉肀肀豱
+埗�旿䀩
+嗖빖÷
+￿ࡁ¸嗿᳘ࠡ嗕￟ࠡ灃啟￿
+啟ࠡր嗵⤥
+ࠡ聐
+頸啕￟ࡡ
+啕￿ 幠啕
+䩉肀肀ၢ啕थ 啕塖ႂ
+啕ႂ
+啕ႂ
+횚貑ၢ
+豑ႂ啠Ｊ
+啕ﾤ歭
+啕ﾈ歍
+횺ᣃ峒啖嫫ࡁ潎ｕ䩉
+캌꩕㧇
+喕躪s
+ꮣｕ䩉
+嗪ჿ
+喆೿⁣
+ᕊ%ª
+䩩肀檀@
+埾᝗뷷ࡁ啕뷗ࡁ啕恕
+๕貌옸
+評劰횺
+칹ࡁ噕塔￿ࠡ▍喕ࡁ热嗠￿ႂਸ਼啠횚
+嗵祕⃎
+啵ᑕ¥
+啕횺ࠡ嵒啕뗖ࠡ捕筊䨩
+劊ᣃੀ喪䩉
+�ࡁ㯡뷷ႂ坕⫐떶ࡁ啕쏷篯ࡡ짍䁵칹Ⴂ彗칙 庲헕玮
+ъ뀡空Ѻ
+윹꨹ꪪҪ
+
+## ASCII strings (may include class/property names)
+PF_DXT1
+E)U
+UVP
+UUU5
+UUW0
+UUWX
+WWW
+f1@
+@``` 
+@@@@
+XXXX
+Prc
+e)@
+Cp_U
+c_U
+U%)
+`^UU
+UU%
+UUVX
+UUU
+UUUV
+`U*
+\VU
+NoU
+TTU
+UUU`
+5Uy
+U`@U
+UVTX
+UUy
+uUUy
+uUU
+R]UU
+UcJ{)J
+UIJ
+u@y
+W_Y
+zzz

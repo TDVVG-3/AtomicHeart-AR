@@ -1,0 +1,15 @@
+﻿# AtomicHeart/Content/ThirdParty/Projector/Functions/CustomText.uexp  (from pakchunk5-WindowsNoEditor.pak)
+# utf16_strings=5 ascii_strings=3 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+夀䜸լ䱼鑂咤ꑙ츐ि
+Ā⠰Ā
+Ā⠰Ā
+ĀĀǿ
+畃瑳浯吠硥t
+
+## ASCII strings (may include class/property names)
+Y8Gl
+|LB
+Custom Text

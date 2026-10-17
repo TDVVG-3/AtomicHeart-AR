@@ -1,0 +1,10 @@
+﻿# Engine/Plugins/Experimental/Water/Content/Materials/Functions/WaterTextureWaves.uexp  (from pakchunk5-WindowsNoEditor.pak)
+# utf16_strings=2 ascii_strings=1 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+㐀眭祡搠慩潧慮⁬潭楴湯਀
+䷁뢦﨏㗝茬
+
+## ASCII strings (may include class/property names)
+4-way diagonal motion

@@ -1,0 +1,9 @@
+﻿# AtomicHeart/Content/Development/MaterialLibrary/Decals/Text/DC_Text_024_Op.uexp  (from pakchunk3-WindowsNoEditor.pak)
+# utf16_strings=2 ascii_strings=0 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+￾￿)
+穁鿓곮䟬㾗䏈擗즋
+
+## ASCII strings (may include class/property names)

@@ -1,0 +1,17 @@
+﻿# AtomicHeart/Content/Development/NTD/LongTextWidgets/walls/WBP_DC_wall_text03.uexp  (from pakchunk5-WindowsNoEditor.pak)
+# utf16_strings=8 ascii_strings=2 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+￠￿?
+￷￿?
+¤￺￿)
+ￛ￿<
+㾎U
+獩潰穬癯湡敩牟扯瑯穩物癯湡祮h.
+￭￿^
+﹤䐫T
+
+## ASCII strings (may include class/property names)
+ispolzovanie_robotizirovannyh
++DT

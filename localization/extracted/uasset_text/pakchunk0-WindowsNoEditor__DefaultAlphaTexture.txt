@@ -1,0 +1,12 @@
+﻿# Engine/Content/EditorLandscapeResources/DefaultAlphaTexture.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=4 ascii_strings=1 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+ĀĀĀ
+倀彆㡂㡇㡒㡁
+밀벼ǿ
+섀⪃�
+
+## ASCII strings (may include class/property names)
+PF_B8G8R8A8

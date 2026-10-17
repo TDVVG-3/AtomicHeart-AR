@@ -1,0 +1,15 @@
+﻿# AtomicHeart/Content/Development/UI/Textures/Terminal/MI_MessageTextBack.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=8 ascii_strings=0 scripts=CJK,Greek
+# SCRIPTS DETECTED: CJK,Greek
+
+## UTF-16 strings
+￾￿,
+￿￿#
+￿￿#
+忉Ⴛ릓䧕ʮ鄻႖ཞ#
+￿￿#
+ṥ꼢旷血箄᩵Ϡ⍣
+Ꙍ㺪#
+￶￿￵￿#
+
+## ASCII strings (may include class/property names)

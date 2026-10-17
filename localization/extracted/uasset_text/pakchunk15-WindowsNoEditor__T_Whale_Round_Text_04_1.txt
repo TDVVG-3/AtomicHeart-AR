@@ -1,0 +1,168 @@
+﻿# AtomicHeart/Content/Development/MaterialLibrary/Decals/Text/Numbers/Round_Numbers/T_Whale_Round_Text_04_1.uexp  (from pakchunk15-WindowsNoEditor.pak)
+# utf16_strings=83 ascii_strings=88 scripts=Cyrillic,CJK,Greek
+# SCRIPTS DETECTED: Cyrillic,CJK,Greek
+
+## UTF-16 strings
+䙐䑟员1
+啕੕钲
+┥픵ꔴႂ
+宀鳳ࠡ
+떖噖Vㆆꪪꦪꕔ
+啕വ豱
+떶豱肂
+ꔴ 噖恰
+굵 屜屜
+￿ 镕떵뷷玎ꢩꂠ钲ᣃ﹐
+啕畕­
+喪啕ꔴ
+啕ᑕ¥
+喵½
+喪퍕
+ꔴ 镕थ￿
+镕ᖕ￟
+꩕ꪪ钲
+￟ 幕婺
+鳓 핕Ե횺㦧ꪫ�￿
+�肀肀ꔴ
+鳓ࡁ⪞
+굵努聀
+喕ᕕ钒
+坹鋠
+閕嗕뷷豑슊艀ꔴ
+ᔵ唧­
+锪喕굵
+떵啕ꕔ
+啕귵￿
+啕঵ꔴ
+啕ꔴ
+ꪪ闕굵括
+ᔵ鳓Ⴂ
+惢煀
+节뗖ࠡ
+閕ࡁ橺
+굵 灠屘
+炀钒ࡁ
+隵榵㙊
+隞쀠샀@
+옸ࠡ┥喕떖 聰
+ꂢ늀
+떖啠啕굵
+喥啕挬
+唭啕玮
+唵啕歍
+굵ࠡ筕扠
+঵ₜ
+ꕔ ｕ
+떶 屗屘
+啕蹕s
+啕ᗕꔴᢣϭ誀
+굵ࡁඥඍ
+ᔩ┪劊
+啕镕떖ᣣέò钒
+屖屖굵
+ᑕ₥
+৭熥
+恂ࡘB
+ʐ㒭¥
+屘ၗ
+啕╕鳳
+唵啕ࠡ궪毩䩉
+啔啕鳓
+ඉ熁
+떶ࠡ塜塘玎
+옸 ʫ嗽굕
+觵薅鳳
+㗕◕칹
+幗幞钲
+䁿䁣钒 嗵ഥ钒
+喵㔵玎
+啞�鳓
+啺恢钲
+唽涭k
+✶᝕萰
+啜ᑖ₥
+扈筕鳳
+ꔩ緍豱
+┥ვ
+읫㼹隗о
+詒꩒ꪪҪ
+
+## ASCII strings (may include class/property names)
+PF_DXT1
+UUU
+UUU\
+UUUj
+%%5
+\\\\
+VTXX
+VVV
+```X
+UU5
+^VWU
+VVp`
+UUUu
+\UUU
+UUU4
+XUUU
+XWUU
+UVVV
+U^zZ
+UVTT
+XPPX
+`@@@
+UUT
+\VUU
+%Uu
+`XVU
+UUWV
+UUh
+UUWX
+`@q
+T\\T
+zjj
+`pX\
+5%U
+iJ6
+TWUU
+PX\W
+`UUUu
+@`XV
+UUU,c
+`UUU
+-UUU
+xUUU
+5UUUMk
+U{`b
+U^`b
+U_X\
+BBBB
+@p|@
+W\X\
+BUUU
+HUUU
+V\V\u
+@B`X
+XX\W
+UUU5
+UUU%
+UUUX
+5UUU}
+kIJ
+TUUU
+`bpB
+\XXX
+pX_U
+kzWU
+XVUU 
+W^^^
+@c@
+U55
+^UX
+zUb`
+6'U
+\UV
+HbU{
+'%%
+XXXW
+H@`]
+ZIJ

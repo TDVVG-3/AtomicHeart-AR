@@ -1,0 +1,41 @@
+﻿# AtomicHeart/Content/Development/Tools/Misc/WBP_TextAndValue.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=22 ascii_strings=12 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+ￅ￿Q
+ￇ￿Q
+ￇ￿
+㥃ㅃ㤹㌵㠴䉅㐸㔷㔹䕁䙂㘸㌲㉆㌴㥃
+䈳㠳䘱㍆䐴㜲䈳ㄸ䐰㔵䅃ㅂ㜷䌴㤰䐶
+ￅ￿Q
+ￆ￿}
+￸￿}
+￵￿}
+￮￿}
+￮￿
+￀￿Q
+ￇ￿Q
+¤�￿@
+쳍㽌$
+ᱶ㺷ꟴ㮍
+쳍㽌\
+￁￿y
+㔴㐷㈸㘴〴㉅䘴㠷䐵䌲ㄲ㙂㍅㉅䅅䄱
+慎敭漠⁦慶楲扡敬›
+㄰㍁㘸㉁䘴䘲䑆〵〳ㄷ䘵䍁㠲䍆㐶㤱
+慖畬eS
+
+## ASCII strings (may include class/property names)
+TRUE
+C9C1995348EB847595AEBF8623F243C9
+FALSE
+3B381FF34D273B810D55CAB1774C096D
+Name
+L?$
+L?\
+ @y
+4574824640E24F785D2C21B6E3E2EA1A
+Name of variable: 
+01A386A24F2FFD5030715FAC28FC6419
+Value

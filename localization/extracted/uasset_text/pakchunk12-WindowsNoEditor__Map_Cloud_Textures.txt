@@ -1,0 +1,9 @@
+﻿# AtomicHeart/Content/ThirdParty/UltraDynamicSky/Materials/Material_Functions/Map_Cloud_Textures.uexp  (from pakchunk12-WindowsNoEditor.pak)
+# utf16_strings=2 ascii_strings=0 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+ᨪ蝞驌䫝
+섀⪃�
+
+## ASCII strings (may include class/property names)

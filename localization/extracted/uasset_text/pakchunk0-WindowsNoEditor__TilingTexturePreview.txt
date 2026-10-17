@@ -1,0 +1,9 @@
+﻿# Engine/Content/ArtTools/RenderToTexture/Textures/TilingTexturePreview.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=2 ascii_strings=0 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+鐑룏嶝二嶂鶐
+Ā섀⪃�
+
+## ASCII strings (may include class/property names)

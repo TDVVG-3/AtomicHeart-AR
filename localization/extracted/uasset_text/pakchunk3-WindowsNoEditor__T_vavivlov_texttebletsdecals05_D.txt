@@ -1,0 +1,190 @@
+﻿# AtomicHeart/Content/Development/MaterialLibrary/Decals/Text/Greenhouse/Navigation/T_vavivlov_texttebletsdecals05_D.uexp  (from pakchunk3-WindowsNoEditor.pak)
+# utf16_strings=126 ascii_strings=66 scripts=Cyrillic,CJK,Greek
+# SCRIPTS DETECTED: Cyrillic,CJK,Greek
+
+## UTF-16 strings
+䙐䑟员1
+ﾪ塜
+嗿᭕ß
+ﾪ啕�
+ﾪ啕횺
+劊嶭ⴽ칹䈨垪鳳ႂﺀ婰
+ﾪ啕豱
+蒅蒄�⃤⿏ꯟ 낫꫞굵⃤ß옸㧇 ꫗떖ㆦ聵굕
+偐^
+啕꩕钲
+薅肅钒
+ʢ剒豑
+ª啕豑
+ª啕豑
+ª啕玮
+ª啕豑
+ª啕钒
+ꂪ啕鑲
+誊薅豑
+薅ႅ
+Ⓗ䨡罀អ¾
+Ⴂnﾮ뷗 扪ｺ
+還邐咚䦥ⵊᴭ䦽詊ꊂ흝₽
+∢ﾚ떶ၢ鄳ﾙ뷗
+塒ｗ䈨
+䈨喪䂪钲ᣃ
+떀豱ࡁ
+ÿﭖÞ
+ﾪ喪钲ࡁﾨ
+ﾪ喪뷷 翪ꕔ㧇喩ἣ� ﾪ�钲ၢ
+豑꩕U
+钲꩕U钲ࡁﾨ
+ᶭ�ℤ
+ፖᠢÆ
+啕ʃ떶
+薅蒄�嫋攥锥뷷
+₊ᒘ¥
+꩕ꪀ굕
+衕訠ꔴ
+薅薅鳳
+ࠡ往喪￿
+喩喪￿
+喪喪뷷
+꩕빕÷
+喪喪횚 喀喪豱
+肅㒅₥
+喪啕
+喪啕钲
+薀薅萰
+ચ눪
+ｕꮪ옸
+薅薅萰
+⨢굵
+鳓ࡁ罕
+ႂ㋛躠굵ၢ剚剐
+薅薅豱
+W啕
+U
+U鳓
+⡕啕�ࠡ꩕ॕ鳓 샥展萰
+ɚ͕굵 U꩕钲
+UﭕÞ
+꩕꩕萰 肅샕
+व壢떖ࠡ
+ꂨ칹ࡡ
+뚊µ
+ೆ荣牶㒁¥
+卐塐훚
+�鯛ꔴ
+㒪ᠦ豑 풾훜钒
+ԥ禅Î
+¨啕횺
+ª啕횺
+ꂪ啕�
+*啕옸
+�횚ࡁ飘ᐤ铒
+歍偐偐
+ࡁ춍薍
+鳓 ªౕ鳳
+ª⁕钲
+¨ɕ鳳
+ªࡕ钒
+ªU鳓ࠡ胪ҕꔴࡁ肊꒧
+�恐聀ࠡ칙
+镕വ￿
+蚔䚆흆䦽졊੽
+횚歍핀ʪ뷷
+ꬠ剒궕
+칹ꊡꂠ䩉
+ূﾵ횚 展
+ᳪӧ쌡噰U
+豱ࠡ嗪
+ɕ늪
+ꖥꪀ@
+ၢ䊪ʂ뷷 喪₪궕ࠡ閪ꂺ뗖挬쇽ﾁ떖ࡡ嚪
+肪ꪀ
+啳䁀덀ₜ
+ɖ
+閕閕굵劊瞫追萰䈨翀ꪪ歭ࠡｕ
+쮥Ś﷭㓋ꪥｗ
+￧鳳ᢣɂꨣ떶
+⁕ꪪꔴ
+ꂕꪨ굵
+䁪喪뷗
+閕閪ꔴ
+肀肀鳓ㆦ≖Ίꔴ㦧聕胪鳓 啕䁈
+篏䁀䁀玎
+莵ᒌ₥
+庪⃂鳓
+䩉ﶪ຦歍
+ꔴᣣຂ뚪萰
+啕ꪪ豑
+࢕唢­
+垗雿µ
+ࡡᗕ炉굕
+噔ｕꔴႂ઎꫶떶
+䂈ꩿꔴ
+啕喪­
+뷗ࡡꊢ埾ࡁ헿钒
+ࡁ扖֪钲
+閕肮钒劊芯寿豱
+楅ᑐ博臿콕⁻
+襫啖⥻灊ࢠ
+誄湒淬ӯ
+詳ꡒꮫҫ
+䱫ꩣꪪҪ
+
+## ASCII strings (may include class/property names)
+PF_DXT1
+]=-y
+UUq
+U3"
+PP^
+UUU
+RRQ
+UUQ
+UUr
+RRRR
+F1;
+$!J@
+UUUX
+jbz
+UUU(
+IJ--
+RXW
+UU(
+Z%e%
+UXPX
+ZZZ
+Uo@j
+"*u
+Z]=5
+IJW
+ZRPR
+UU<
+U(UU
+U\0
+PSPX
+TTT
+ UUU
+UU8
+XPP
+MkPPPP
+RRRP
+P`@
+X\VW
+Mk@
+VVV
+pVU
+sU@@@
+mk!
+mk@jUUY
+UU_P
+1V"
+UUH@
+{@@@@
+b@@
+UMk
+UUU 
+WTb
+TVU
+sU]
+BEiP
+{)Jp
+MkLc

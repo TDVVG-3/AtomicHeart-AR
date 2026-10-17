@@ -1,0 +1,9 @@
+﻿# AtomicHeart/Content/DLC4/Waterline/1_Waterline_Content/Resources/Blueprints/Functions/WS_Texture_4WayChaos.uexp  (from pakchunk16-WindowsNoEditor.pak)
+# utf16_strings=2 ascii_strings=0 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+鍊杊쿚＝܊
+섀⪃�
+
+## ASCII strings (may include class/property names)

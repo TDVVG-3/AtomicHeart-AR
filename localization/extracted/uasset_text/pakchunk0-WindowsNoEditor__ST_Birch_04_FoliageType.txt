@@ -1,0 +1,15 @@
+﻿# AtomicHeart/Content/Development/Environment/LandscapeProps/Trees/ST_Birch_04_FoliageType.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=7 ascii_strings=1 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+￻￿E
+ꕷ㎭뵃␹䙨្
+㌳㾳2
+ᔮ䓃ꤪ깂鹨੄
+廇䏫র䏢�䒡>
+鋉䒣2
+ᐿ롁냼᥀ᢄᕃ
+
+## ASCII strings (may include class/property names)
+9$hF

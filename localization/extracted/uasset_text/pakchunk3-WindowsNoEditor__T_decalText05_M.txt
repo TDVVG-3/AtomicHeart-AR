@@ -1,0 +1,87 @@
+﻿# AtomicHeart/Content/Development/MaterialLibrary/Decals/Text/Greenhouse/T_decalText05_M.uexp  (from pakchunk3-WindowsNoEditor.pak)
+# utf16_strings=55 ascii_strings=25 scripts=Cyrillic,CJK,Arabic,Greek
+# SCRIPTS DETECTED: Cyrillic,CJK,Arabic,Greek
+
+## UTF-16 strings
+槄꾆ᵞ陎ᏹ꣮�ټ
+䙐䉟㑃
+鉉こ
+涶뛛삝
+孡昶ᐫ
+䍡暶ذ뚽�ʶ뿯뛀�
+뿿뛀�
+뿿뛀�
+᣿뛂᭡藿
+稧➂
+뛷滶ꣷ
+撒郛鳀
+ҰÒ魿뾠妽B뉰簧⟒
+䥉⒒Ͻ
+᪑❏牻ᄡ᥶㚒፩㸶⃳瘽㍧핲癴獦㠵ᮋ
+䉺鶿త঵⿃暘
+퍩ሮ䍦2뉼爧⚂榶똻᭩
+￿￿峿烥
+邩㦋�ÿ簷⿃쉼鹉䦤ҖＲ鶉ꇚ�
+䀶ﾒ⒟ꀪ붶ｭ뛟衙බ
+⒟衙බ
+掶뛛�⛿
+殶㘻˽艰䠧⒢ή魹릻Ვç긧ɤ녂涶藛샌
+(醉쥼쒛Ĭ뉰紧⓲
+﷯濆೷㸳瞻羏ﺿ￣
+ඁ뛛�
+ﶏ臙�揆�兩
+㊳⛖
+퉎䬤⒂
+✢ㄧ
+翐咔Ӑ၉
+艈䨤Ⓜ
+蒑鹉ᬤ
+䏠縧⓲
+뢐鿉ܤ
+涶뛛ݭ
+뚭롭၀뛚⒑
+踴â≏
+쿾ზ뛟⒝
+놊赸㫹߬걈䭤ꓜǩⷾ佉쐭
+⒐涶⫛Ã㒐涶샛
+鿃⸱垫
+䤿⒒ǣ
+䶱냛�
+涶뛛쑭
+ƫ幹⃠㢚襤ᨻ黠ຜ7㈢
+㫞炅苠鼩
+❄≢ࣆ楿ͤ涶Ί
+㲞鉉⌤똤�涶蟛
+�涶მ
+뚘�쓘㲐뚁�킛虄
+鉹椤
+➋鉤ࠤ
+⒀艈Ф
+䤪⒒鉉Ф
+
+## ASCII strings (may include class/property names)
+PF_BC4
+a[6f+
+6f+
+i#.
+'c#
+O'{r!
+ =vg3r
+tvfs58
+a;=
+8`n
+fC2
+k;6n
+rB'h
+Fr%GR<
+p"'u
+C'~
+0 kr.
+&cb&
+I@a'
+B"$
+s?(
+-IOR
+D'b"
+$#$
++*I

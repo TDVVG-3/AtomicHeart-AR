@@ -1,0 +1,20 @@
+﻿# AtomicHeart/Content/DLC3/Narrative/Triton/DCI_Text_Decal_DLC3_B.uexp  (from pakchunk15-WindowsNoEditor.pak)
+# utf16_strings=12 ascii_strings=1 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+￾￿7
+￿￿*
+抉뽧⫗
+￿￿*
+忨칯䲹齍੔恄⩒
+￿￿*
+￿￿*
+Ꞵᮑ线豊魫ġ멁⨳
+￿￿*
+ܻ鏎镚䧾몉鮺ᛅｽ*
+Ꙍ㺪*
+￲￿￴￿￵￿￳￿@
+
+## ASCII strings (may include class/property names)
+D`&

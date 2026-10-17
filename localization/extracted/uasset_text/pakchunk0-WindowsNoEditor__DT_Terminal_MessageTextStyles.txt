@@ -1,0 +1,9 @@
+﻿# AtomicHeart/Content/Core/UI/Terminal/DT_Terminal_MessageTextStyles.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=3 ascii_strings=0 scripts=
+
+## UTF-16 strings
+￷￿3
+￼￿%
+�￿%
+
+## ASCII strings (may include class/property names)

@@ -1,0 +1,15 @@
+﻿# AtomicHeart/Content/Development/UI/Textures/HUD/Frames/T_Buttons_Overlay_Text_TGA.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=4 ascii_strings=4 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+邦꿅례Ỡ钻Ź
+敉홄犹ी
+剽썂ੁ
+￼￿-
+
+## ASCII strings (may include class/property names)
+PB:
+ A;
+)IeD
+}RB

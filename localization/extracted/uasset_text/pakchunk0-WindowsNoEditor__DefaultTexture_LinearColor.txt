@@ -1,0 +1,51 @@
+﻿# AtomicHeart/Content/MetaHumans/Common/Materials/DefaultTexture_LinearColor.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=25 ascii_strings=19 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+㴿쓹䅳䕉히탵
+䙐䑟员1
+ꕒ班�
+铱葯ઊउ铱貰뻽拪賑葯ꂠ着鴑籏흷５鵒珍溉궷鴑掌툳ꃚ鴲殌湌땡铱殌তࠂ锑貰ꊁ
+铱貰噚彗貰葯
+葯班䀀铐捬芢뷢铱珍럸
+鴑殌䌍ᗿ鴱班✶벍铱貰ꫨ
+賐豯肀
+铐琎몪�貰殌塊
+钰殬硛뿺똔簎ꕕ埇ꕲ捋꬗
+铐捋☴ꣴ锑簎ꦠﺩ铱葯幺婟铰班猦ﯓ貰珌�ꂘ锑珌�幖ꖓ殌잵
+铱挫⤒⸃鴱班率寱葯珌⠘븪궳嬊
+ꭹ貰珍硰鑺貐殬릢膗뗴殌絥뚜锑殌렺◶ꖓ殌쟵睯貰嬪⬺̍貰捋�ﻖ蒐班䢂賋貰殌벴淎賐殌뵣ⴭ铱簮૩钏铱殬뮭層鴲班⬯�铐嬫➨
+ꕲ殭Ⓔ
+葯嬊ʀ芉葯殌诉
+ⴭ鵒珍䮧ꕿ铰嬫낂Ⲙ锑簎灑
+鴒簮뿕
+锑簎쮋趧賑葯⯛ꀂ貰珮ꡠ檸貰琎
+ᥗ鴱簎龽�鵒歫꫈먘
+铱簮✅
+﫺貰簎鎮�铐珍铏崾铱簎ଉ뜅貰簍
+첸葯珌깤䂌锑珍㮓ᶽ貰班绰ᾛ蒏殌낀蜄貰殌뻼ᾮ貰班�ꈒ铱簎皓⣴貰簎�̀蒐珍Ἱ뢨铰簎筮
+祢葯班
+㲧貰簮巧੦貰簎엵⾭
+貰簮声뫕
+
+## ASCII strings (may include class/property names)
+sAIE
+PF_DXT1
+O|w
+kLna
+ZVW_
+s6'
+kJX
+k[x
+Kc4&
+z^_Z
+s&s
+spxz
+ke}
+*[:+
+s/+
+--R
+|QpJ
+|n{
+byo

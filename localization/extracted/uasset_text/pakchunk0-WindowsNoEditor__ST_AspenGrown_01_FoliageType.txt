@@ -1,0 +1,18 @@
+﻿# AtomicHeart/Content/Development/Environment/LandscapeProps/Trees/ST_AspenGrown_01_FoliageType.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=8 ascii_strings=3 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+￻￿F
+᫫䉕ꥀ榘号퉣ᠸ
+晦㽦,
+쳍㾬3
+�ᳱ੄
+元Ề䁄
+맜䐠3
+﮹澫쳀沥ᙂ
+
+## ASCII strings (may include class/property names)
+UB@
+fff?,
+ D3

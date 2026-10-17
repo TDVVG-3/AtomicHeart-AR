@@ -1,0 +1,10 @@
+﻿# AtomicHeart/Content/Development/MaterialLibrary/ScreenAnimation/Common/Textures/T_PCTextAtlas_A_Vertical_32_SEED.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=2 ascii_strings=1 scripts=CJK,Arabic
+# SCRIPTS DETECTED: CJK,Arabic
+
+## UTF-16 strings
+䢂豽뽏噖㋚귩ڣ
+䙐䉟䜸券䄸8
+
+## ASCII strings (may include class/property names)
+PF_B8G8R8A8

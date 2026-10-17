@@ -1,0 +1,8 @@
+﻿# AtomicHeart/Content/DLC4/Development/MaterialLibrary/MaterialInstances/Glass/NewTextureRenderTargetCube.uexp  (from pakchunk16-WindowsNoEditor.pak)
+# utf16_strings=1 ascii_strings=0 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+ὡ둨춞侱惘ৠ᯿�
+
+## ASCII strings (may include class/property names)

@@ -1,0 +1,8 @@
+﻿# AtomicHeart/Content/Core/Weapons/Bombs/Curves/EmTextPowCurve.uexp  (from pakchunk2-WindowsNoEditor.pak)
+# utf16_strings=1 ascii_strings=1 scripts=
+
+## UTF-16 strings
+㾀껯㽧
+
+## ASCII strings (may include class/property names)
+333?

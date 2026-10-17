@@ -1,0 +1,9 @@
+﻿# AtomicHeart/Content/Development/MaterialLibrary/Landscape_Virtual_B/Functions/MF_WorldAlignedTexture_Landscape_Custom.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=1 ascii_strings=1 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+汩獥愠琠硥畴敲椠⁮潷汲獤慰散
+
+## ASCII strings (may include class/property names)
+Tiles a texture in worldspace

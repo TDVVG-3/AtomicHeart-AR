@@ -1,0 +1,91 @@
+﻿# AtomicHeart/Content/Development/MaterialLibrary/Decals/Text/Lab_Decals/T_pavlov_logo_text2_M.uexp  (from pakchunk5-WindowsNoEditor.pak)
+# utf16_strings=50 ascii_strings=43 scripts=Cyrillic,CJK,Arabic
+# SCRIPTS DETECTED: Cyrillic,CJK,Arabic
+
+## UTF-16 strings
+䙐䑟员1
+ᖕ鸵÷
+ª嗿ࠡ塖祓
+옸ࠡ䖥㇩
+趍躏횺ࠡ앍ኩ
+�䙻
+ 塐
+呔呔嫋
+啕浕䈨
+啕⩕㧇
+啕譕挬
+啕歕䨩
+啕᭕㧇
+啕譕䩉
+啕ཕ䩉
+啕㵕嫋
+啕Ӿ!
+啕 䩉啥(嫫
+픭䵕⁫
+홞￿�쁀ࡁ샀屔
+ᅕ톟歭ࠡࡕ篏
+એ䷮k
+ٕ㜶玮
+꨺쮿⁚
+ⱕﺬ玮
+꩕篏
+롕着ႂẖᄻ努
+워ႂ灐ኰ떶
+噔ᡗ⃆
+뗖ࠡ䶩㗅ࠡ趏疍츹 씻楍
+喕絕ï
+繴䵸⁫
+詔⁒
+˟읕9
+૕꩕R
+ႂ癸屴挬
+呔嫋
+⪺啕䩉
+セ啕㧧
+肪啕䩉
+啕努
+裯啕떶ࡁ餻ꖭ钲
+孓坔挬
+ᣣ筽扣ㆆ
+噕⣴⥥
+啕૿ㆦ
+啕䉝ᣃ捣絿劊
+嚮啖㧇
+喈啕㧇
+␩Ａ￿ӿ
+
+## ASCII strings (may include class/property names)
+PF_DXT1
+VXSy
+WTTT
+TTTT
+UUUm(B
+UUU*
+UUU
+UUUk)J
+UUU=
+cCUU
+;UU
+UU!
+mk!
+UU 
+IJeU(
+UMk 
+Umk!
+TTVW
+UU}
+QX\U
+VUUU
+T\QP
+|t~xMk 
+xvt\,c
+*UUIJ
+0UU
+UUIJ
+S[TW,c
+TTWU
+}{cb
+(e)
+UU]B<
+VVU
+%)$!

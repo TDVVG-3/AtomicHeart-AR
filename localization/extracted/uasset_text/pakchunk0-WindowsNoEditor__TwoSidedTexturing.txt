@@ -1,0 +1,13 @@
+﻿# Engine/Content/Functions/Engine_MaterialFunctions03/Texturing/TwoSidedTexturing.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=3 ascii_strings=3 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+䜀癩獥椠摮灥湥敤瑮琠硥畴楲杮挠湯牴汯映牯戠瑯⁨楳敤⁳景愠琠潷猭摩摥洠瑡牥慩⹬†楗汬栠癡⁥潮攠晦捥⁴湯渠湯琭潷猠摩摥洠瑡牥慩獬.
+䈀蜫纖雽빀㔶멤佺ਡ
+섀⪃�
+
+## ASCII strings (may include class/property names)
+Gives independent texturing control for both sides of a two-sided material.  Will have no effect on non-two sided materials.
+65d
+zO!

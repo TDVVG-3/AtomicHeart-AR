@@ -1,0 +1,8 @@
+﻿# AtomicHeart/Content/Development/MaterialLibrary/Layered/UnrealLayered/Layers/MLF_SimpleTextureLayer.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=1 ascii_strings=0 scripts=CJK,Greek
+# SCRIPTS DETECTED: CJK,Greek
+
+## UTF-16 strings
+원Μ챁轃쿫땉�ఫ
+
+## ASCII strings (may include class/property names)

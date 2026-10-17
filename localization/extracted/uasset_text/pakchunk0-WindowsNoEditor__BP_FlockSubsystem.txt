@@ -1,0 +1,14 @@
+﻿# AtomicHeart/Content/GooseRunner/GooseRunner/Blueprints/BP_FlockSubsystem.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=5 ascii_strings=2 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+ĀĀǿ܁
+ĀĀǿ܁
+䰟浩潢潗汲彤䱄㉃⠀ᘨ
+䜟潯敳畒湮牥⠀ᘨ
+匀ࠀ䱈
+
+## ASCII strings (may include class/property names)
+LimboWorld_DLC2
+GooseRunner

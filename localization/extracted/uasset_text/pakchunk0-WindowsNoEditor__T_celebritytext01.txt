@@ -1,0 +1,193 @@
+﻿# AtomicHeart/Content/Development/MaterialLibrary/Decals/Text/Lab_Decals/T_celebritytext01.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=99 ascii_strings=113 scripts=Cyrillic,CJK,Arabic
+# SCRIPTS DETECTED: Cyrillic,CJK,Arabic
+
+## UTF-16 strings
+�顑鯁齂询⡎샗غ
+䙐䑟员1
+횚 䵡啵
+啕ࢠB
+趵啽豑
+嵘啕劊
+啕镕
+噸絕ï
+喵᱕⃧
+낀㖉칙ࡁ呕䭒
+啕ࡁ嵕啘
+┵븥÷
+塰塜횺
+啕뭕䗖䐩ꢬÀ
+칺ࠡ啕䉕
+嗕᱕ß
+ী㳕ç
+啖啕�
+ࡁ灀噘
+啕͕떶
+惀虘1
+啕喕떶
+嗸啕ᣃ
+ 啕▕ၢ⮵
+嶠旯ȩ₀`
+칹 腕嗵萱
+胀祰⃎
+怨啗鳳
+啕ᑕ¥
+喿㱕ß
+啕୕钒
+ࠡ⬡⨪
+㕕嗕칙 坕क़
+�ࡁ塔₀횻
+啕W
+啕õ� 啕+
+啕▕�
+啕ၕ
+뷷 喨啕嫫
+啕驕Î
+啕蕕캚
+啕镕옸ࠡ絕呓
+ꪪꪪ㧇
+땕ᓉ¥
+啕煘钒
+啕牕
+촥危떖
+呗卜�
+떵ᖵ굕
+啕_굕
+業恩⥅
+ᗕ雕­
+呞ꡔ횻 祹灹
+ࠡ噜種ࠠ浹떊
+굵ࡁ䵩䕅
+뷷ࡁ씭山떖 浫䕍
+啕੕�ࠡ햵U옹 坕肿￟ᢣ疥੗ 
+啗U횺
+畍U횺
+嗕U떖ࡁ啗u굕
+啕耪횻ࡁ镕埂
+ᖕᑕ¥
+ࡁ啕
+˟啕뷷
+售ᡕ₾
+ਗ਼嗕칙 U啵ࠡ횺ꖠ
+啕ᗕ篯
+䕕향豲 ᕕ劊
+䁀칙!傃ꑔࡁ閊啕칺
+幗塚挬
+떕╕劊
+噜啕玎
+֕몁Ö
+碀ᑕ¥
+칹ၢ牲Ţ
+啕੕� 啕䁕㧇
+嗕隕µ
+婕坕篯
+ࠡ噟䕕㧧
+啕ꪕR
+唠핕嫋
+啕ၕ
+啕躵s
+헕ࡔB
+畵ᓻ¥
+隗挬ࡁ삵ᖵ鲳 攵钒 屟奟
+╕햵环 y
+굵ࡁ꫕喪ࡁ훛
+ᕕ铓
+�铓ࠡ흕䕳
+煡煝캚ࡁ향猥鳓 偭啖㧇
+兟煕⥥
+她ᵉ钲
+嗽篏 쉕햟㇇
+絍繵㧇
+镕ೕ⁣
+誹ꪊ努ࠡᦚꪢ㧧
+玎ၢᕕ▕嫋
+ġ啕ѕ
+
+## ASCII strings (may include class/property names)
+PF_DXT1
+UUZS
+UUVU
+aMuU
+@mk
+UUU
+EUUX
+}UQ
+VUUU
+UUUs
+X]UU
+xVU}
+UTRK
+UU%
+U]XU
+5%%
+pX\X
+E)D
+UUUB
+U^`U
+@pXV
+UUU\
+UUTU
+\UUU
+UXWU
+(`WU
+UU<
+^WUU
+!+**
+UWX
+UUW
+UU+
+UUZp
+{\U
+*UUU
+sUUU
+U}ST
+UUU5
+UUUM
+UUXq
+UUUr
+VTUU
+WT\S
+UU_
+mii`E)
+^TT
+yyyp
+\V.z
+iMEE
+kmME
+WUU
+MuU
+WUu
+UU*
+.UU
+uU!
+\WUU
+x,c 
+UWbU
+@@Y
+UUz
+W^ZX,c
+uCU
+W\UV
+\VUU
+yUU
+uU%
+pWUU
+UU%U
+rrb
+UUU@
+UZUW
+_VUE
+ UU
+\UTU
+mUUU\
+,cA
+_\_Y
+}XVU 
+aq]q
+mPVU
+_QUqe)
+yYI
+M}u~
+TT@p
+Wz|Wv
+yai

@@ -1,0 +1,11 @@
+﻿# Engine/Content/Functions/Engine_MaterialFunctions02/PivotPainter2/Black_1x1_EXR_Texture.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=3 ascii_strings=1 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+脕싶죔䍃ꖹ쳪㋼ꋪ
+䙐䙟潬瑡䝒䅂
+섀⪃�
+
+## ASCII strings (may include class/property names)
+PF_FloatRGBA

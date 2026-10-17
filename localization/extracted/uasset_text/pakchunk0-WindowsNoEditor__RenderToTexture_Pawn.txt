@@ -1,0 +1,92 @@
+﻿# Engine/Content/ArtTools/RenderToTexture/Blueprints/RenderToTexture_Pawn.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=74 ascii_strings=14 scripts=Cyrillic,CJK,Arabic
+# SCRIPTS DETECTED: Cyrillic,CJK,Arabic
+
+## UTF-16 strings
+！ā^
+ĀĀǿခ
+ĀĀǿᤁ
+！ā^
+！ā¾
+ĀĀǿ儁
+！ā^
+ĀĀǿ币
+！ā
+ĀĀǿ送
+ĀĀǿᤁ
+ĀĀǿ送
+ᘀ’￉
+耀ᘿ桍￑
+៿촞䳌⼾ﾴ
+ᴀ罠竮両
+ᜀᘰཌྷ
+ᘀ’￉
+㾀䴖ď
+$ᤖĀ
+ᘀᤙĀ
+៿爟䈮晵敦噲獩慵楬慺楴湯癏牥楶睥慔杲瑥⁳慂敳潃潬rᘪ텨
+៿瘟敩海摯⁥湵楬tᘪ텨
+⫿䴖ď
+$ᤖĀ
+ᘀ’￉
+ᘨ’￉
+⠀栖￑
+἗⹲畂晦牥楖畳污穩瑡潩䑮浵䙰慲敭⁳1ᘪ텨
+⫿ᤖ줠
+៿爟䈮晵敦噲獩慵楬慺楴湯畄灭牆浡獥獁䑈⁒1ᘪ桍￑
+἗⹲畂晦牥楖畳污穩瑡潩䑮浵䙰慲敭䅳䡳剄〠⨀䴖ď
+ᘀ’￉
+⫿栖￑
+៿촞䳌⼾ﾴ
+ᴀ鴋靀両
+ᜀᘰཌྷ
+⫿栖￑
+Ĥܖᶺ
+⓿ᘇ茇
+ࠤܖᵌ
+耀⼿ﾴ
+ᴀ鳵砫両
+ᜀᘰ桍ￒ
+ℝꄤℑN
+〗䴖퉨
+耀⼿ﾴ
+ᴀ㔃䬨両
+ᜀᘰ桍ￒ
+ḗ쳍㹌됯
+ም宰⅛N
+〗䴖句
+៿瘟敩海摯⁥湵楬tᘪٍᰬ
+Ѐ匋老
+Ж匋ࠀࠈ
+Ā Ā
+ЀࠀЀ
+Ā Ā
+ĀĀǿᤁ
+Ā Ā
+ĀĀǿᤁ
+Ā Ā
+ĀĀǿᤁ
+Ā Ā
+！ā^
+Ā Ā
+Ā Ā
+Ā Ā
+Ā Ā
+ࠔ￳
+铦闄ᵂᘲ庳嵽
+֠윏뾳꿖텖]
+봥䂊㋑
+섀⪃�
+
+## ASCII strings (may include class/property names)
+L>/
+z!N
+r.BufferVisualizationOverviewTargets BaseColor
+viewmode unlit
+r.BufferVisualizationDumpFrames 1
+r.BufferVisualizationDumpFramesAsHDR 1
+r.BufferVisualizationDumpFramesAsHDR 0
++x!N
+5(K!N
+[[!N
+^}]

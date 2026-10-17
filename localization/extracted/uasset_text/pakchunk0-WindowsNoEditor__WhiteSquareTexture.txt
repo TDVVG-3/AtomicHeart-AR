@@ -1,0 +1,11 @@
+﻿# Engine/Content/EditorLandscapeResources/WhiteSquareTexture.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=2 ascii_strings=2 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+㝱糫䡯䉴궎ࠦ짿䪹
+䙐䑟员1
+
+## ASCII strings (may include class/property names)
+|oHtB
+PF_DXT1

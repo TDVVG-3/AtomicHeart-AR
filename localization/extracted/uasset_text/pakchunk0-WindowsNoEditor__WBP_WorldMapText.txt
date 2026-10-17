@@ -1,0 +1,16 @@
+﻿# AtomicHeart/Content/Core/Subsystems/WBP_WorldMapText.uexp  (from pakchunk0-WindowsNoEditor.pak)
+# utf16_strings=7 ascii_strings=2 scripts=CJK
+# SCRIPTS DETECTED: CJK
+
+## UTF-16 strings
+￻￿6
+￻￿6
+￻￿6
+¤�￿!
+㥁䅁䌵㜸㔴㤹㠰䍁䌵〱ㄶ䘸㠹〴㕅㠳
+敔瑸䈠潬正慤摳獡慤摳獡慤摳摳
+￵￿I
+
+## ASCII strings (may include class/property names)
+A9AA5C87459908AC5C10618F9840E538
+Text Blockdasdasdasdasdasdsd

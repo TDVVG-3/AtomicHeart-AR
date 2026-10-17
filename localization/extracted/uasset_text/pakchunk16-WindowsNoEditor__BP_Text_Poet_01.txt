@@ -1,0 +1,36 @@
+﻿# AtomicHeart/Content/Development/MaterialLibrary/Plakat/Crystal_castle/Text_Decal_DLC4_A/BP_Text_Poet_01.uexp  (from pakchunk16-WindowsNoEditor.pak)
+# utf16_strings=22 ascii_strings=8 scripts=CJK,Arabic
+# SCRIPTS DETECTED: CJK,Arabic
+
+## UTF-16 strings
+￵￿S
+￵￿S
+￸￿G
+潐浥ㅟ
+潐浥ㅟ
+�￿$
+ঙꐿﵰ긾ꅇ᜾
+￾￿$
+￳￿,
+Ἳꚥ佌ꮮ峐᧘J
+￰￿,
+Წ뜪䵘ꪍ瞨ថ깦J
+￵￿,
+୸␫櫮䜯꿅鶩J
+￵￿,
+↍⋬ぴ䵌㎍뽔❏ᄺJ
+￡￿U
+￮￿K
+湖웩ㅟ䛥
+鳸벸�ੂ
+甿إ䴿
+捁潴⹲瑓瑡捩敍桳潃灭湯湥ぴ
+
+## ASCII strings (may include class/property names)
+Poem_1
+j/G
+"t0LM
+O':
+hEX
+N?u%
+Actor.StaticMeshComponent0
