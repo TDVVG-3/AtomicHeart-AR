@@ -1,0 +1,29 @@
+# Binaries and raw game data — never commit
+tools/bin/
+source/original/
+build/staging/
+build/package/
+dist/*.pak
+*.bak
+*.tmp
+*.log
+__pycache__/
+.venv/
+
+# Extracted localization: raw locres/locmeta binaries are game data (never committed).
+# Extracted TEXT needed for translation IS committed (user decision, 2026-10-18).
+localization/extracted/**
+!localization/extracted/uasset_text/
+!localization/extracted/uasset_text/**
+localization/generated/
+
+# Run logs under reports/ are evidence — keep them
+!reports/**/*.log
+
+# repak list caches (regenerable by scripts)
+reports/paklists/
+
+# OS noise
+Thumbs.db
+Desktop.ini
+.DS_Store

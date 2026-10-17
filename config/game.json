@@ -1,0 +1,28 @@
+{
+  "game": "Atomic Heart",
+  "platform": "Steam",
+  "app_id": 668580,
+  "depot_id": 668581,
+  "steam_build_id": "24534183",
+  "engine_profile": "UE4 (pak version 11, repak major Fnv64BugFix). Exact UE4.x minor UNKNOWN pending asset-serialized-version check.",
+  "container_type": "UE4 legacy PAK (no .utoc/.ucas/.sig -> NOT IO Store)",
+  "pak_layout": {
+    "header": "Custom Mundfish JSON pre-header (an embedded .uproject descriptor) prepended to each .pak before the standard UE4 payload.",
+    "footer": "Standard UE4 pak footer: magic 0x5A6F12E1 at end of file. Index is at the tail, not the head.",
+    "mount_point_chunk0": "../../../",
+    "mount_point_dlc_chunks": "../../../AtomicHeart/Content/",
+    "encrypted_index": false,
+    "compression": "None",
+    "note": "repak v0.2.3 parses all 19 paks successfully despite the JSON pre-header (it locates the footer magic)."
+  },
+  "encrypted": false,
+  "compression": "None",
+  "game_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Atomic Heart",
+  "paks_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Atomic Heart\\AtomicHeart\\Content\\Paks",
+  "mods_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Atomic Heart\\AtomicHeart\\Content\\Paks\\~mods",
+  "mods_folder_exists": false,
+  "pak_count": 19,
+  "total_pak_bytes": 162875355136,
+  "detected_on": "2026-10-17",
+  "notes": "Values verified by direct header/index inspection (reports/game_scan.json, reports/pak_index_summary.txt). Localization format and culture details are documented in docs/LOCALIZATION_FORMAT.md and docs/ARCHIVE_LAYOUT.md."
+}

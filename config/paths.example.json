@@ -1,0 +1,11 @@
+{
+  "steam_libraries": [
+    "C:\\Program Files (x86)\\Steam",
+    "D:\\SteamLibrary",
+    "E:\\SteamLibrary"
+  ],
+  "candidate_game_paths": [
+    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Atomic Heart"
+  ],
+  "notes": "Copy to paths.json and adjust if auto-detection fails. libraryfolders.vdf confirmed App 668580 is installed in library 0 (C:) only. D: and E: libraries have no apps installed."
+}

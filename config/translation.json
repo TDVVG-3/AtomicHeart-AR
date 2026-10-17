@@ -1,0 +1,8 @@
+{
+  "target_culture": "ar",
+  "carrier_culture": "unknown",
+  "translation_direction": "en_to_ar",
+  "numbers_policy": "western_digits",
+  "rtl_fallback": "not_decided",
+  "notes": "carrier_culture stays unknown until Phase 5/7 proves which strategy works (MASTER_PROMPT section 23: native culture, L10N path, or existing slot)."
+}
