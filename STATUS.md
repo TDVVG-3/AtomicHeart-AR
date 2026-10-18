@@ -82,7 +82,9 @@ Step D  Prose filter (DEC-019):              PASS (over-extraction 5,005,978 -> 
 Step E  Inventory + TOTAL (DEC-020):        PASS (TOTAL = 10,505; reports/dialogue_inventory.md)
 Step F  RU-only separation (KI-010 class):  PASS (246 assets / 5,903 strings -> reports/dialogue_ru_only.md, excluded from TOTAL)
 Step G  Batch 1 apply (25%):                PASS (covered 2,626 of 10,505 (25%); added 0 new rows since batch 1 lies entirely in locre scope; already present 2,626; retag 3,286 Category values)
-Step H  Validator:                          PASS (0 problems; UTF-8 no U+FFFD; no NEW duplicate ids; 27,618 rows)
+Step H  Validator (batch 1):                PASS (0 problems; UTF-8 no U+FFFD; no NEW duplicate ids; 27,618 rows)
+Step I  Batch 2 apply (50%):                PASS (covered 5,253 of 10,505 (50%); added 0; already present 5,253; retag 2,152; DIALOGUES FOR LQA now complete; Schebetar_Subs 361 retagged from "Unknown" to Subtitles)
+Step J  Validator (batch 2, idempotent re-run): PASS (0 problems; retag 0; master untouched; 27,618 rows)
 ```
 
 Facts:
