@@ -1,8 +1,8 @@
 # Carrier pak build report
 
-Generated: 2026-10-18 20:46:41
-Variant: **p3**  |  pak: `C:\AtomicHeart-AR\build\package\zzz_atomicheart-ar_carrier_koKR_p3_P.pak`
-sha256: `b58029662e5acf775087426ed85721905a5846127d6af5c209a482514f7b41df`  |  size: 3612753 bytes
+Generated: 2026-10-18 22:23:07
+Variant: **p4**  |  pak: `C:\AtomicHeart-AR\build\package\zzz_atomicheart-ar_carrier_koKR_p4_P.pak`
+sha256: `aa894b4468888ac22a3fd3e58619d4cdb70ae24a895c35f286b002b2f4132f22`  |  size: 3614845 bytes
 
 Fill policy: Arabic (master non-empty) > English (en-US same key) > keep Korean.
 
@@ -10,8 +10,8 @@ Fill policy: Arabic (master non-empty) > English (en-US same key) > keep Korean.
 |---|---|
 | scopes covered | 35 |
 | total ko-KR keys | 27618 |
-| Arabic rows | 85 |
-| english-filled keys | 27533 |
+| Arabic rows | 125 |
+| english-filled keys | 27493 |
 | kept Korean (no en-US text) | 0 |
 | round-trip exact | 26128 |
 | round-trip newline-normalized only | 1490 |
@@ -23,7 +23,7 @@ Fill policy: Arabic (master non-empty) > English (en-US same key) > keep Korean.
 | scope | ko keys | Arabic | English | kept Korean | exact | newline-only | fail |
 |---|---|---|---|---|---|---|---|
 | Academy_Dialogues | 282 | 1 | 281 | 0 | 282 | 0 | 0 |
-| Chelomey_Dialogues | 1204 | 6 | 1198 | 0 | 1198 | 6 | 0 |
+| Chelomey_Dialogues | 1204 | 46 | 1158 | 0 | 1198 | 6 | 0 |
 | Chelomey_dlc3 | 776 | 0 | 776 | 0 | 774 | 2 | 0 |
 | ChelomeyFinal_Dialogues | 214 | 0 | 214 | 0 | 211 | 3 | 0 |
 | CrystalComplex_dlc4 | 1219 | 0 | 1219 | 0 | 1219 | 0 | 0 |

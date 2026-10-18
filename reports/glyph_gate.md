@@ -1,8 +1,8 @@
 # Glyph gate report (pilot)
 
-Generated: 2026-10-18 20:50:47
+Generated: 2026-10-18 22:22:19
 Font pak under test: build/package/zzz_atomicheart-ar_font_p2_plex_P.pak -> build/staging/font_p2/modpakfont
-Master: C:\AtomicHeart-AR\localization\master\atomic-heart-ar.tsv (85 rows with Arabic)
+Master: C:\AtomicHeart-AR\localization\master\atomic-heart-ar.tsv (125 rows with Arabic)
 
 VERDICT: **PASS**
 

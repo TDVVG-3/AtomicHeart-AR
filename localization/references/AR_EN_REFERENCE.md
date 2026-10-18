@@ -1,6 +1,6 @@
 # AR <-> EN reference (rows that already carry Arabic)
 
-Generated: 2026-10-18 21:33:21
+Generated: 2026-10-18 22:22:19
 Cycles: translation program, DRAFT rows only.
 
 Rule: this file lists ONLY master rows whose Arabic column is non-empty.
@@ -8,12 +8,12 @@ Arabic is shown FIRST, the English source BELOW it, followed by the locres key.
 
 | rows with Arabic | unique English strings | scopes |
 |---|---|---|
-| 85 | 82 | 12 |
+| 125 | 102 | 12 |
 
 | scope | rows |
 |---|---|
 | Academy_Dialogues | 1 |
-| Chelomey_Dialogues | 6 |
+| Chelomey_Dialogues | 46 |
 | DIALOGUES FOR LQA | 7 |
 | NewP5 | 41 |
 | OpenWorldVDNKh_Dialogues | 3 |
@@ -31,11 +31,131 @@ Arabic is shown FIRST, the English source BELOW it, followed by the locres key.
   - AR: *0.10*كنت أفكّر كذلك أيضاً. لكن الأمر ليس هكذا في الحقيقة. كوليكتيف ليس مجرد التحكّم بالروبوتات. سيتمكّن سيتشينوف *0.05*من التحكّم بكل من هو جزء من كوليكتيف. كوليكتيف شرير يا نيتشاييف! إنه أسوأ من العبودية!
   - EN: *0.10*I used to think that way too. But that's not how things really are. Kollektiv isn't just about controlling robots. Sechenov will be able *0.05*to control everyone who's a part of Kollektiv. Kollektiv is diabolical, Nyichaev! It's even worse than slavery!
 
-## Chelomey_Dialogues (6 rows)
+## Chelomey_Dialogues (46 rows)
 
+- `/390799324C98ED38868918AC228ADC4C`  [Dialogue] scene:bridge-opening
+  - AR: أيها المواطنون! اجمعوا أفكاركم واربطوا جهاز THOUGHT!
+  - EN: Citizens! Collect your thoughts and connect your THOUGHT!
 - `/4C81F68D466B7E53EDEB3BADA39F3810`  [Dialogue] pilot:LONG
   - AR: *0.10*بالنيابة عن المنشأة 3826 كلها، أقدّم لكم جهاز المستقبل: الوصلة العصبية THOUGHT. *0.09*ستتيح للبشر أن يكونوا في قلب كوليكتيف 2.0، شبكة للبشرية جمعاء، *0.08*توحّد عقول كل الأفراد في عقل واحد قوي لا تحدّه حدود!
   - EN: *0.10*On behalf of all of Facility 3826, I present to you the device of the future: the neural connector THOUGHT. *0.09*It will allow human beings to be at the center of Kollektiv 2.0, a network for all mankind together, *0.08*uniting the intellects of all individuals into a powerful mind free of all boundaries!
+- `/10E57B554D1CB6E33B614B829975AE99`  [Dialogue] scene:bridge-opening
+  - AR: *0.09*أيها الرفيق! بوصفك مواطناً من الاتحاد السوفييتي العظيم، انضمّ إلى رفاقك وخُض البلمرة اليوم! قف مع كوليكتيف 2.0! *0.07*تعلّم كيف تتحكّم بالروبوتات بعقلك! استكشف الفضاء! ابلغ ذروة التطوّر! *0.10*سيكون الإطلاق العالمي لكوليكتيف 2.0، شبكتنا الرائعة، في اليوم الثالث عشر من شهر يونيو عام 1955، أي بعد يومين فقط! *0.10*احصل على جهاز THOUGHT اليوم، وكن من أوائل الإنسان المستقبلي! المستقبل صار لك بالفعل!
+  - EN: *0.09*Comrade! As a citizen of the mighty Soviet Union, join your compatriots and undergo polymerization today! Stand with Kollektiv 2.0! *0.07*Learn how to control robots with your own mind! Explore space! Reach the pinnacle of evolution! *0.10*The global launch of Kollektiv 2.0, our marvelous network, will be on the 13th day of the month of June, 1955, only two days away! *0.10*Get your THOUGHT device today, and become Homo Futurum among the first! The future is already yours!
+- `/714401B1409AD14630429692B0DFAFF5`  [Dialogue] scene:bridge-opening
+  - AR: *0.11*خُض البلمرة! البس جهاز THOUGHT! كن جزءاً من كوليكتيف 2.0! أتقن قدرات لم يعرفها أحد قبلك وثوّر كل ما يقدر عليه عقلك! *0.07*حقبة جديدة في تاريخ البشرية على الأبواب. كن واحداً من أوائل المنضمّين إلى المستقبل الجديد!
+  - EN: *0.11*Undergo polymerization! Wear your THOUGHT device! Become part of Kollektiv 2.0! Master unprecedented abilities and revolutionize what your mind is capable of! *0.07*A new era in the history of mankind is coming. Be one of the first to join the new future!
+- `/C6CA53CF4667BE6A271CFB8BFCF56BFB`  [Dialogue] scene:bridge-opening
+  - AR: *0.05*بفضل اختراعي للبوليمرات العصبية وعملية التكيّف المحاكي، *0.08*أصبح من الممكن الآن إطلاق نسخة عالمية شاملة من شبكة كوليكتيف 2.0. *0.04*أخيراً: شبكة تجمع البشر والروبوتات معاً! *0.04*وسيتمكّن البشر من التحكّم بالآلات بأفكارهم وحدها. *0.08*وأخيراً، سنكون أحراراً في نسيان الكدح الشاق والممل في الأعمال غير الماهرة، ونتفرّغ للعلم!
+  - EN: *0.05*Thanks to my invention of Neuropolymers and the process of mimetic adaptation, *0.08*it has now become possible to launch a world-wide, all-encompassing version of the Kollektiv 2.0 network. *0.04*At last: a network of humans and robots! *0.04*Humans will be able to control machines with their thoughts alone. *0.08*And, finally, we will be free to forget the difficult, tedious drudgery of unskilled labor and dedicate ourselves to science!
+- `/DC11CB9A4BFFB0AA5E099DAA4057EEE9`  [Dialogue] scene:bridge-opening
+  - AR: *0.10*تحياتي أيها الرفاق. أنا دميتري سيتشينوف، وهذه المنشأة 3826. أهلاً بكم في مستقبلكم! نقف اليوم على أعتاب أعظم حدث في تاريخ البشرية. *0.10*لم يبقَ بيننا وبين انتصار تطوّري مذهل سيغيّر جذرياً العالم الذي نعرفه سوى خطوة واحدة. لا، أنا لا أبالغ! *0.07*انظروا فقط كيف تغيّر الاتحاد السوفييتي الحبيب في العقود القليلة الماضية!
+  - EN: *0.10*Greetings, comrades. I am Dmitry Sechenov, and this is Facility 3826. A warm welcome to your future! Today we stand on the brink of the greatest event in the history of mankind. *0.10*We find ourselves just a step away from amazing evolutionary victory that will profoundly change the world as we know it. No, I'm not exaggerating! *0.07*Just look at how our beloved Soviet Union has been transformed in the last few decades!
+- `/1002A45848240DE4F7234C932386D3BF`  [Dialogue] scene:bridge-opening
+  - AR: *0.10*ستكون قدراتك بلا حدود! أتريد أن تتعلّم لغة أجنبية في دقيقة؟ أن تتقن فيزياء الكم في يوم؟ أن تحفظ روائع الأدب من كل أنحاء العالم؟ *0.06*سيصبح كل ذلك ممكناً بمجرد تثبيت وصلة THOUGHT العصبية هنا على صدغك. *0.10*كل تواصل بين دماغك وجهاز THOUGHT الشخصي يصبح ممكناً عبر حقنة صغيرة من البوليمر العصبي في مركز البلمرة المحلي، *0.09*حيث ستحصل أيضاً على جهاز THOUGHT. في خمس دقائق، في خمس دقائق فقط! ستصبح المستقبل.
+  - EN: *0.10*Your potential will be unlimited! Want to learn a foreign language in a minute? Master quantum physics in a day? Memorize literary masterpieces from around the world? *0.06*This all will be possible once your THOUGHT neural connector is installed right here on your temple. *0.10*All communication between your brain and your personal THOUGHT device is made possible via a tiny injection of Neuropolymer at a local center for Polymerization, *0.09*where you will also receive your THOUGHT device. In five minutes—in just five minutes!—you'll become the future.
+- `/80D5E60948E59FE7EFD518B5253BFA92`  [Dialogue] scene:bridge-opening
+  - AR: *0.08*كل مواطن في الاتحاد السوفييتي يستطيع الحصول على جهاز THOUGHT مجاناً! لكن هناك ما هو أفضل: هنا، في مجمّع تشيلومي الحبيب، يمكنك البدء باستخدام جهاز THOUGHT فوراً، *0.08*قبل يومين كاملين من الإطلاق الرسمي لشبكة كوليكتيف 2.0 العالمية!
+  - EN: *0.08*Any citizen of the USSR can obtain a THOUGHT device for free! But it gets even better: here, in our beloved Chelomey Complex, you can start using your THOUGHT device right now, *0.08*two full days ahead of the official launch of the Kollektiv 2.0 global network!
+- `/993C32CD4606AD8982BE078429495AB0`  [Dialogue] scene:bridge-opening
+  - AR: *0.05*بفضل وصلة THOUGHT العصبية، ستتحكّم بالروبوتات بعقلك، *0.09*متقناً المواد الدراسية بسرعة مذهلة، وواصلاً إلى كل المعرفة البشرية، وتدمجها بطبيعة الحال مع اكتشافاتك الخاصة! *0.08*لن تحتاج بعد الآن إلى لوحات التحكّم، ولا أجهزة الاتصال الضخمة ومكبّرات الصوت، ولا المستندات ولا الدفاتر الإلكترونية، إلى آخره. *0.04*سيحلّ THOUGHT محلّ كل واحد منها، وأكثر من ذلك بكثير!
+  - EN: *0.05*Thanks to the THOUGHT neural connector, you will control robots with your mind, *0.09*mastering academic subjects with breathtaking speed, accessing all human knowledge, and, of course, combining it with your own individual discoveries! *0.08*You will no longer need control panels, cumbersome communications equipment and loudspeakers, documents, electronic notebooks, etc. *0.04*THOUGHT will replace every single one of all, and so much more!
+- `/33EA844F4B8F028BC8002BB818499148`  [Dialogue] scene:bridge-opening
+  - AR: *0.10*مسلّحاً بوصلة THOUGHT العصبية الأنيقة اللافتة للنظر، لن تضطر بعد الآن إلى حمل أجهزة اللاسلكي الضخمة، ولا الكاميرات الثقيلة، ولا مقاييس الضغط والحرارة، ولا البوصلة. *0.10*بل سيعمل هذا الجهاز المحمول أيضاً كمصباح للرأس بالغ الفائدة. سيتّجه ضوؤه دائماً إلى ما تنظر إليه فعلاً. والأجمل من ذلك *0.10*أن تغيير اتجاهه لا يحتاج إلى أي إدخال آخر سوى أمر ذهني واحد. هذا صحيح! يعمل جهاز THOUGHT كواجهة عصبية تربط مستخدمه *0.08*بشبكة كوليكتيف 2.0 العالمية، حيث يتحكّم كل شيء بقوة الفكر.
+  - EN: *0.10*Armed with a stylish, eye-catching THOUGHT Neural Connector, you will no longer have to lug around unwieldy radiotelephones, bulky cameras, barometers, thermometers, or compasses. *0.10*This portable device will even double as an incredibly useful headlight. Its light will always be directed at what you are actually looking at. And the best part is that *0.10*changing its direction requires no other input, save for a single mental command. That's right! The THOUGHT device works as a neural interface, connecting its user *0.08*to the global Kollektiv 2.0 network, where everything is controlled by the power of thought.
+- `/45DCA8FD43DFD45159ED7D82418730E5`  [Dialogue] scene:bridge-opening
+  - AR: *0.09*وصلة THOUGHT العصبية هي أحدث منتج بحثي وتطويري في المنشأة 3826، وثمرة نخبة من العلماء والمهندسين السوفييت الذين يعملون في طليعة *0.09*العلوم والتقنيات المتعدّدة التخصّصات. هذا الجهاز سيقلب العالم رأساً على عقب. فبفضل جهاز THOUGHT، وخلال يومين فقط، سيتمكّن أي مواطن سوفييتي مبلمَر *0.11*من تعلّم التحكّم بالروبوتات بقوة عقله. لن يعود العالم كما كان أبداً!
+  - EN: *0.09*The THOUGHT Neural Connector is Facility 3826's newest R&D product, the brainchild of an elite cadre of Soviet scientists and engineers working at the forefront *0.09*of multidisciplinary science and technology. This device is set to completely revolutionize the world. Armed with a THOUGHT device, in just two days, any polymerized Soviet citizen *0.11*will be able to learn to control robots with the power of their mind. The world will never be the same again!
+- `/07DA2375411F20CAD0FE25B87105AE07`  [Dialogue] scene:bridge-opening
+  - AR: *0.09*جهاز THOUGHT ليس مجرّد قطعة عتاد لا غنى عنها، بل هو أيضاً أداة أنيقة مخصّصة لك. يجمع بين حلول رقمية عالية التقنية سهلة الاستخدام ومظهر راقٍ *0.09*يسرّ العين في تشكيلة واسعة من الألوان. يمكنك أن تجد جهاز THOUGHT يلائم لون عينيك، أو فستانك المفضّل، أو أي شيء تحبّه! *0.05*مع جهاز THOUGHT، لن يكون العالم حولك باهتاً بعد الآن!
+  - EN: *0.09*Not just an indispensable piece of hardware, the THOUGHT device is also a stylish personalized gadget. It combines high-tech, user-friendly digital solutions with an elegant, *0.09*eye-pleasing look in a wide range of colors. You can find a THOUGHT device that matches your eye color, your favorite dress, or anything you like! *0.05*With a THOUGHT device, the world around you will never be dull again!
+- `/D3D602A643521E275F630597CCEC0479`  [Dialogue] scene:bridge-opening
+  - AR: طبعاً!
+  - EN: Naturally!
+- `/0274464A44F83E078C1ED59E0F7E2D71`  [Dialogue] scene:bridge-opening
+  - AR: صوت واثق
+  - EN: Confident voice
+- `/3967587E4762B5CA64F2E99AF30B349D`  [Dialogue] scene:bridge-opening
+  - AR: صوت واثق
+  - EN: Confident voice
+- `/AA64EBA041545F207BDF07BCB9C2166D`  [Dialogue] scene:bridge-opening
+  - AR: صوت واثق
+  - EN: Confident voice
+- `/02EA6FCF4A4F49A39C2B63AE6B5C2EAD`  [Dialogue] scene:bridge-opening
+  - AR: أندريه
+  - EN: Andrey
+- `/27A03C6345B688B2287FDC8863BAD936`  [Dialogue] scene:bridge-opening
+  - AR: أندريه
+  - EN: Andrey
+- `/903F3E3C488AA5CE07649BB021CE387E`  [Dialogue] scene:bridge-opening
+  - AR: أندريه
+  - EN: Andrey
+- `/32792B6D45AA530D09C717868CE8D20A`  [Dialogue] scene:bridge-opening
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/66A277D249FED981B919DD8BF1E6606F`  [Dialogue] scene:bridge-opening
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/E965BA4A4E0EA808D68E6E8586FA059B`  [Dialogue] scene:bridge-opening
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/9C2E66204F7C33527E6FF7BDC232DFE4`  [Dialogue] scene:bridge-opening
+  - AR: رجل على المقعد
+  - EN: Man on bench
+- `/B5DF2BF34F5A0577ACE63A95BDCCC6CC`  [Dialogue] scene:bridge-opening
+  - AR: رجل على المقعد
+  - EN: Man on bench
+- `/D4A8DE674D2D2E145A937598145C9CB6`  [Dialogue] scene:bridge-opening
+  - AR: رجل على المقعد
+  - EN: Man on bench
+- `/33A5A2A24725CAC1D2B7329AF5C9D08C`  [Dialogue] scene:bridge-opening
+  - AR: امرأة عند المقعد
+  - EN: Woman at the bench
+- `/5BA2987E47C8ECDC3C3384ABAC85DDFA`  [Dialogue] scene:bridge-opening
+  - AR: امرأة عند المقعد
+  - EN: Woman at the bench
+- `/E9DD18574149BBC78B9821BB9530AF3C`  [Dialogue] scene:bridge-opening
+  - AR: امرأة عند المقعد
+  - EN: Woman at the bench
+- `/F54988CD42604653074E159324C63800`  [Dialogue] scene:bridge-opening
+  - AR: امرأة عند المقعد
+  - EN: Woman at the bench
+- `/8AC58B824C94BEB5143D69B8D2E7FCD0`  [Dialogue] scene:bridge-opening
+  - AR: رجل في المقهى
+  - EN: Man in the cafe
+- `/B89A7AA9411666348F58008BBB0B9B54`  [Dialogue] scene:bridge-opening
+  - AR: رجل في المقهى
+  - EN: Man in the cafe
+- `/FE0184E84905C95E5C9CE0A1A23BC825`  [Dialogue] scene:bridge-opening
+  - AR: رجل في المقهى
+  - EN: Man in the cafe
+- `/0682F63B4DC26E7FF9FD5F8D67824013`  [Dialogue] scene:bridge-opening
+  - AR: رجل في المقهى
+  - EN: Man in the cafe
+- `/0B006707440EEF0FBAF09BBB711816AB`  [Dialogue] scene:bridge-opening
+  - AR: رجل في المقهى
+  - EN: Man in the cafe
+- `/F49668E14FB08E074B222B82E46D6417`  [Dialogue] scene:bridge-opening
+  - AR: رجل في المقهى
+  - EN: Man in the cafe
+- `/0F6F1F774E4DB259B32A4D854EFCCAF2`  [Dialogue] scene:bridge-opening
+  - AR: رجل في المقهى
+  - EN: Man in the cafe
+- `/7244B1214D7C40BFBC41459FC720B00A`  [Dialogue] scene:bridge-opening
+  - AR: امرأة في المقهى
+  - EN: Woman in cafe
+- `/C9FA9D244A8BA0F2DB8284B158F54198`  [Dialogue] scene:bridge-opening
+  - AR: امرأة في المقهى
+  - EN: Woman in cafe
+- `/0E2E2B0747E53E0E324138A5433423AD`  [Dialogue] scene:bridge-opening
+  - AR: مواطن
+  - EN: Citizen
+- `/6225E148438BDED794929BA39E2FD5C8`  [Dialogue] scene:bridge-opening
+  - AR: مواطن
+  - EN: Citizen
+- `/6BF2EB7B419D2E60DDD20891D30DE088`  [Dialogue] scene:bridge-opening
+  - AR: مواطن
+  - EN: Citizen
 - `/0FD21C264834484B9415D2806FB83634`  [Dialogue] pilot:SHORT
   - AR: رجل يتصوّر
   - EN: Man posing for a picture

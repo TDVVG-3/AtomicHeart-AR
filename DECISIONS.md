@@ -709,3 +709,42 @@ Conditional rule (terminology.md section 10) activates ONLY if the user's in-gam
 names are displayed: characters transliterated, roles translated, non-verbal cues translated,
 unit names from the glossary - delimiters always stay Latin '&'. Check sheet:
 reports/speaker_marker_check.md. Answer pending (expected with the pilot report).
+
+## DEC-026 - Pilot result recorded, opening-scene Arabic proof (p4), subtitle-display rule
+
+Date: 2026-10-18. Status: ACTIVE.
+
+Part 1 - Pilot result (user, 2026-10-18). On the bridge, quest "NO REST FOR THE WICKED",
+objective "Cross the bridge", the subtitle showed the carrier's ENGLISH text where Korean had
+been before. CONFIRMED: the carrier ko-KR locres is read at runtime for dialogue/subtitle scopes,
+not only for menu/settings text (KI-009 updated). The screenshot shows no `*x.xx*` marker on
+screen, so the engine interprets the markers rather than printing them.
+
+Part 2 - Opening scene chosen for the Arabic proof. Scope `Chelomey_Dialogues`, asset
+`AtomicHeart/Content/Localization/Chelomey_Dialogues/en-US/Chelomey_Dialogues.locres`, master
+lines 284-324 (consecutive): 12 loudspeaker/PA speech rows of the street+bridge (including the
+exact row seen on screen, `/DC11CB9A4BFFB0AA5E099DAA4057EEE9`) and 29 crowd speaker-label rows of
+the same asset (benches / cafe / citizens). 41 rows; 40 are new in this cycle, 1 already carried
+pilot Arabic. Row list: localization/working/scene_opening_rows.tsv.
+
+Part 3 - Translation conventions for this scene: `THOUGHT` stays Latin (as in every earlier row);
+`Homo Futurum` is rendered as the Arabic phrase for "future human"; `mimetic adaptation` gets a
+literal Arabic term (proposed glossary addition); `Chelomey Complex` follows the glossary pattern
+for complexes; crowd labels are translated once and reused, so identical English always shows
+identical Arabic. Markers, tags and placeholders stay byte-exact (validator-enforced).
+Arabic lives only in UTF-8 data files (KI-021); `scripts/scene_apply.ps1` is ASCII-only and
+verifies the English of every row before writing.
+
+Part 4 - Build and install. Carrier p4 = p3 + the three cycle-008 reviewer fixes + the 40 scene
+rows. Built by the unchanged carrier builder: 35/35 scopes, 27,618 keys, 125 Arabic, 27,493
+English-filled, 0 kept Korean, 0 round-trip failures, 35/35 unpack byte-identical,
+sha256 aa894b4468888ac22a3fd3e58619d4cdb70ae24a895c35f286b002b2f4132f22. Installed with the
+reconciling installer (user APPROVED): carrier p3 removed hash-verified, font v2 untouched,
+manifest rewritten; before/after snapshot PASS (nothing else in the game folder changed).
+
+Part 5 - Subtitle display rule (KI-022). A subtitle row is played in marker-defined parts, and
+the parts are what must fit the panel. Standing rules for translation: (a) never change the
+marker multiset; (b) keep each segment at or below the English segment's character count where
+possible (every Arabic segment in this scene is shorter than its English counterpart). Evidence
+and the one remaining NOT TESTED point (clip vs scroll) are in reports/subtitle_display_finding.md;
+the check is item 4 of reports/scene_bridge_ingame_check.md.

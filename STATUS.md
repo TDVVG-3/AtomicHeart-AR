@@ -217,3 +217,52 @@ Facts:
 
 Next: the user runs the pilot check (reports/pilot_in_game_checklist.md + the speaker-marker
 question in reports/speaker_marker_check.md), reports back, and batch 1 starts on "next".
+
+## Cycle 009 - Pilot result recorded + opening-scene Arabic proof build (p4) (2026-10-18)
+
+```
+Cycle open      spec hash guard:             PASS  579f581e5bb8caae2aff6ef60326f1f461688f1b
+                                                  1392391a56a97a6148a61c35 (unchanged)
+User task 0     pilot result recorded:       CONFIRMED  bridge subtitle showed the carrier's
+                                                  English where Korean was before -> the ko-KR
+                                                  dialogue scopes are read from ~mods at runtime
+                                                  (KI-009 updated)
+User task 1     scene located:               PASS  scope Chelomey_Dialogues; on-screen row =
+                                                  key /DC11CB9A4BFFB0AA5E099DAA4057EEE9
+                                                  (master line 289); scene taken as master
+                                                  lines 284-324 of the same asset
+User task 2     scene translated:            PASS  40 new rows DRAFT + 1 pre-existing pilot row =
+                                                  41-row scene; markers byte-exact (validator
+                                                  multiset check)
+User task 3a    Arabic kept in UTF-8 data:   PASS  localization/working/scene_opening_ar.tsv +
+                                                  scene_opening_rows.tsv; scene_apply.ps1 is ASCII
+                                                  (KI-021)
+User task 3b    master + TM updated:         PASS  master 125 rows with Arabic; TM 82 -> 102
+                                                  entries; scene_apply idempotent (2nd run: 40/40
+                                                  already identical, 0 appended)
+User task 3c    validator:                   PASS  125 of 27,618 rows translated; 0 hard errors;
+                                                  2 warnings (1 new number-as-word, 1 pre-existing
+                                                  UI length)
+User task 3d    glyph gate:                  PASS  113 distinct codepoints; 0 missing in the
+                                                  subtitle face and in the union of the 6 faces
+User task 3e    AR/EN reference:             PASS  regenerated: 125 rows / 102 unique / 12 scopes
+User task 4a    carrier p4 built:            PASS  35/35 scopes; 27,618 keys; 125 Arabic;
+                                                  27,493 English-filled; 0 kept Korean; 0
+                                                  round-trip failures; 35/35 unpack byte-identical
+                                                  sha256 aa894b4468888ac22a3fd3e58619d4cdb70ae24
+                                                  a895c35f286b002b2f4132f22
+User task 4b    p4 installed (APPROVED):     PASS  reconciling install: p3 removed hash-verified,
+                                                  font v2 untouched, manifest rewritten; before/
+                                                  after snapshot PASS (nothing else changed)
+User task 5     in-game checklist:           PASS  reports/scene_bridge_ingame_check.md
+User task 6     HANDOFF rewrite + stop:      PASS  reports/history/handoff_013.md
+```
+
+Facts:
+- Coverage now: **125 of 27,618 (0.45%)** - 85 pilot rows + 40 new opening-scene rows.
+- p4 = p3 + the three cycle-008 reviewer fixes + the 40 new scene rows (all three fixes are now
+  in the installed build, so the stealth-kill tip and the surgery line show the corrected wording).
+- Subtitle display question: data side CONFIRMED complete; display is marker-driven (the visible
+  text began exactly at the 2nd marker boundary); clipping-vs-scroll stays NOT TESTED and is
+  checklist item 4. Evidence: reports/subtitle_display_finding.md (KI-022).
+- Batches 1-4 still not started; they start on the user's "next".

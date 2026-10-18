@@ -1,6 +1,6 @@
 # Translation validation report
 
-Generated: 2026-10-18 21:33:20
+Generated: 2026-10-18 22:22:12
 Validator: scripts/validate_translation.ps1 (PowerShell twin of scripts/validate_translation.py)
 
 RESULT: **PASS**
@@ -8,10 +8,10 @@ RESULT: **PASS**
 | metric | value |
 |---|---|
 | master rows | 27618 |
-| rows with Arabic | 85 |
+| rows with Arabic | 125 |
 | hard errors | 0 |
-| warnings (number/length/glossary) | 1 |
-| - number-multiset warnings | 0 |
+| warnings (number/length/glossary) | 2 |
+| - number-multiset warnings | 1 |
 | - UI length warnings | 1 |
 | - glossary warnings | 0 |
 
@@ -19,18 +19,18 @@ RESULT: **PASS**
 
 | Status | rows |
 |---|---|
-| DRAFT | 85 |
-| UNTRANSLATED | 27533 |
+| DRAFT | 125 |
+| UNTRANSLATED | 27493 |
 
 ## Translated rows per scope
 
 | scope | rows with Arabic |
 |---|---|
+| Chelomey_Dialogues | 46 |
 | NewP5 | 41 |
 | DIALOGUES FOR LQA | 7 |
-| Vavilov_Dialogues | 6 |
-| Chelomey_Dialogues | 6 |
 | VDNKh_Dialogues | 6 |
+| Vavilov_Dialogues | 6 |
 | Theatre_Dialogues | 4 |
 | PearTerminals | 4 |
 | Pavlov_Dialogues | 3 |
@@ -43,8 +43,8 @@ RESULT: **PASS**
 
 | category | rows with Arabic |
 |---|---|
+| Dialogue | 77 |
 | UI | 45 |
-| Dialogue | 37 |
 | Subtitles | 3 |
 
 ## Hard errors
@@ -53,5 +53,6 @@ None.
 
 ## Warnings
 
+- line 286: number multiset differs (en=[0|0|0|0|0|0|07|09|10|10|13|1955|2|2] ar=[0|0|0|0|0|0|07|09|10|10|1955|2|2])
 - line 11678: UI length 21 > 1.2 x 15
 
