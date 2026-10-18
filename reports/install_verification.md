@@ -1,8 +1,8 @@
 # Install verification (pilot: carrier p3 + font v2)
 
-Generated: 2026-10-18 22:23:24
+Generated: 2026-10-19 00:49:04
 Game root: `C:\Program Files (x86)\Steam\steamapps\common\Atomic Heart`
-Before snapshot: `C:\AtomicHeart-AR\reports\install_verify\before_p4.json`
+Before snapshot: `C:\Users\abona\AppData\Local\Temp\ah_before_p6.json`
 
 VERDICT: **PASS**
 
@@ -10,8 +10,8 @@ VERDICT: **PASS**
 
 | file | size | sha256 |
 |---|---|---|
-| atomic-heart-ar-install-manifest.json | 1824 | `0f2584c91891d07eca83bb56237a861000d43f634a5c72c9928c7e6b0e9e9da9` |
-| zzz_atomicheart-ar_carrier_koKR_p4_P.pak | 3614845 | `aa894b4468888ac22a3fd3e58619d4cdb70ae24a895c35f286b002b2f4132f22` |
+| atomic-heart-ar-install-manifest.json | 1824 | `ad7164ebe3836bac9e54ea603b96a6517c21309d14327f451e1ebdd4fe9597be` |
+| zzz_atomicheart-ar_carrier_koKR_p6_P.pak | 3775256 | `b7dbb14e80a926c06d0255919a454747488778de98a1778645d117ef1dc4c321` |
 | zzz_atomicheart-ar_font_p2_plex_P.pak | 1461408 | `02b17f31e61a46ddba20bea8c4da5be44164173df608d52697f68d27d8269747` |
 
 ## Outside ~mods
@@ -23,9 +23,9 @@ VERDICT: **PASS**
 
 ## Manifest
 
-- installed_utc: 2026-10-18T19:23:18.4874454Z
-- variant: carrier=zzz_atomicheart-ar_carrier_koKR_p4_P.pak ; font=zzz_atomicheart-ar_font_p2_plex_P.pak
-- superseded (removed, hash-verified): zzz_atomicheart-ar_carrier_koKR_p3_P.pak (b58029662e5acf775087426ed85721905a5846127d6af5c209a482514f7b41df)
+- installed_utc: 2026-10-18T21:49:03.3261289Z
+- variant: carrier=zzz_atomicheart-ar_carrier_koKR_p6_P.pak ; font=zzz_atomicheart-ar_font_p2_plex_P.pak
+- superseded (removed, hash-verified): zzz_atomicheart-ar_carrier_koKR_p4_P.pak (aa894b4468888ac22a3fd3e58619d4cdb70ae24a895c35f286b002b2f4132f22)
 
 ## Problems
 

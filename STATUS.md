@@ -302,3 +302,36 @@ Facts:
   dictionary first (KI-023).
 - Open after this cycle: user's in-game p4 bridge report, the speaker-marker question, KI-026 (UI
   length, NOT TESTED in game).
+
+## Cycle 011 - Chelomey canal boat scene (D_0072_Sipuha_BringSoda): translated, gated, carrier p6 built AND installed (2026-10-19)
+
+The scene in the user's screenshot is the dialogue asset `D_0072_Sipuha_BringSoda` (Chelomey intro set):
+5 text rows plus the speaker labels the asset uses. Installing was explicitly approved this cycle, so
+unlike p5 the new carrier is live in the game.
+
+```
+Step              Item                          Result
+Identification    scene + label source          PASS  D_0072_Sipuha_BringSoda; 8 keys; exactly 1 corpus hit per key
+Authoring         scene + labels (data files)   PASS  5 lines + 2 labels, Arabic in UTF-8 data files only
+Apply             apply_scene_labels.ps1        PASS  5 scene rows + 818 label rows; 0 mismatch, 0 conflict
+Validator         validate_translation.ps1      PASS  0 errors / 197 warnings (unchanged)
+Glyph gate        glyph_gate.ps1                PASS  0 codepoints introduced by the Arabic
+Reference         AR_EN_REFERENCE.md            PASS  7,387 rows / 4,431 unique / 19 scopes
+Review sample     review_sample.ps1             PASS  40 rows
+Carrier build     p6                            PASS  3,775,256 B, sha256 b7dbb14e...c321, 35/35, 0 failures
+Install           install_mod.ps1 (APPROVED)    PASS  p4 removed hash-verified; font v2 kept; manifest rewritten
+Verify            verify_install.ps1            PASS  0 changes outside ~mods; exe unchanged; stock paks 19/19
+```
+
+Facts:
+- Coverage now: **7,387 of 27,618 (26.75%)** rows; **4,431 of 19,996 (22.16%)** unique strings.
+- Speaker labels: CONFIRMED displayed to the player in this scene (in brackets) and they are ordinary locres
+  rows referenced by the dialogue asset - not `&Speaker&` markers (which stay DLC2-only, DEC-025). `Computer`
+  -> `الحاسوب` (138 rows) and `Char-les` -> `تشارلز` (745 rows) now carry ONE Arabic each in every scope;
+  `P-3` (1,140 rows) stays Latin by the copy-class rule. Glossary + TM updated (TM now 4,432).
+- Installed: carrier p6 (`b7dbb14e...`), font v2 (`02b17f31...`), manifest (`ad7164eb...`). Rollback:
+  `install_mod.ps1 -Carrier p4 -Font p2_plex` (or `-Carrier p5` for the batch-1 build).
+- In-game checklist: `reports/scene_soda_ingame_check.md`.
+- Batch 2 NOT started (waits for the user's word); batch 1 stays DRAFT.
+- Open: user's in-game report for the boat scene, KI-022 clip-vs-scroll, KI-026 UI fit, KI-027 label
+  coverage for the remaining speaker names.

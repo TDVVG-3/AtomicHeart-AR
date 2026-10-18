@@ -1,163 +1,200 @@
-# Cycle 010 report - Batch 1 delivered (25% tranche): 15 chunks, Arabic applied, gates green, carrier p5 built (not installed)
+# Cycle 011 - Chelomey canal boat scene (`D_0072_Sipuha_BringSoda`): translated, gated, carrier p6 built AND installed
 
-Generated: 2026-10-18 23:38 (local). Repo: C:\AtomicHeart-AR. Nothing uploaded; git remote list empty.
+Cycle: **011** | Step: **boat-scene dialogue + speaker labels** | State: **WAITING FOR YOUR IN-GAME REPORT** |
+Date/time: **2026-10-19 00:52 (local)** | Repo: `C:\AtomicHeart-AR` | Commits: local only, `git remote -v` empty
+Spec hash (MASTER_PROMPT.md): `579f581e5bb8caae2aff6ef60326f1f461688f1b1392391a56a97a6148a61c35` - **PASS**, unchanged.
 
-## What this cycle did
+Coverage now: **7,387 of 27,618 rows (26.75%)** with Arabic - **4,431 of 19,996 unique strings (22.16%)**.
+Carrier **p6** (p5 + this scene) is built **and installed** (install was approved in the task).
 
-1. Browser-planned batch 1 exactly as `reports/translation_plan.md` orders it: scope set =
-   NewP5 (5,597) + Misc (21) + PearTerminals (545) + Academy_Dialogues (282) + the first 460 rows
-   of Chelomey_Dialogues = **6,905 rows** of the 27,618-row total (25% row cutoff confirmed).
-   Unique English in that set: **4,562**; already translated before this cycle: 68; to author: **4,494**.
-2. Split the 4,494 strings into **15 chunks** of 300 (last chunk 294) with stable ids `u0001..u4562`
-   (`scripts/batch_plan.ps1` writes `localization/working/batch1/{rows.tsv,unique.tsv,chunk_NN_en.tsv}`).
-   IDs exist so Arabic can never be mis-matched to an English row by retyping.
-3. Authored the Arabic with 15 translator sub-sessions, one per chunk, against a written contract
-   (`localization/working/batch1/BRIEF.md`) plus the authoritative glossary and the union TM.
-   Each chunk produced `chunk_NN_ar.tsv` (id -> Arabic, UTF-8) and `chunk_NN_notes.md`.
-4. Checked every chunk with `scripts/batch_check.ps1` before it reached the master: id set and order,
-   non-empty Arabic, U+FFFD, and byte-exact preservation of `<tag>`s, `{placeholders}`, `&Speaker&`
-   labels, `*0.10*` timing markers, `%` and `||` counts. 15/15 chunks PASS.
-5. Applied chunk by chunk to the master with `scripts/batch_apply.ps1` (Status=DRAFT, note `batch1`),
-   reusing the union TM for strings already translated elsewhere, and never touching a row outside
-   the batch-1 scope set or a row that already carried Arabic.
-6. Ran `scripts/validate_translation.ps1` after every application; every error was fixed before the
-   next chunk. Final state: **0 errors**.
-7. Quality pass: 15 rows whose Arabic ends in a trailing space were trimmed (the locres round-trip
-   strips trailing whitespace, so they broke the byte-identical check); 4 rows using a transliterated
-   "Neuropolymer" were aligned to the glossary form; 86 UI rows whose Arabic was more than 1.4x the
-   English length were shortened by a dedicated copy pass (guard: tags, placeholders, digits,
-   `%`, `||` must survive; glossary terms and proper names left alone).
-8. Rebuilt the carrier as **p5** with the unchanged builder: all 35 ko-KR scopes, 0 round-trip
-   failures, 35/35 unpack byte-identical. **NOT installed.**
+## 0. The task (as received)
 
-## Numbers (measured, not estimated)
+1. Find the boat scene with `Would you care for some more soda, comrade?` / `Sure, thanks.` in the master
+   and find where the bracketed speaker labels come from, with evidence.
+2. Translate the whole scene (all rows of the same dialogue asset, up to ~60) plus the speaker labels it
+   uses; speaker names: `Computer` -> Arabic, `P-3` stays `P-3`; one Arabic per speaker name everywhere.
+3. Arabic only in UTF-8 data files; apply as DRAFT; validate; glyph gate; regenerate the AR/EN reference.
+4. Build carrier p6 = p5 + this scene and **install** it (reconciling, font v2 kept) with before/after
+   snapshot proof; report the SHA256 of the three `~mods` files and the rollback command.
+5. In-game checklist for a non-developer.
+6. Rewrite HANDOFF.md and stop. Batch 2 NOT started.
 
-| metric | value |
-|---|---|
-| Master rows | 27,618 |
-| Rows with Arabic (batch 1 end) | **6,564 of 27,618 (23.77%)** |
-| Unique English with Arabic | **4,426 of 19,996 (22.13%)** |
-| Status DRAFT / UNTRANSLATED | 6,564 / 21,054 |
-| Batch-1 scope set | 6,905 rows |
-| Batch-1 rows translated | 6,527 |
-| Batch-1 rows intentionally left as-is (copy class) | 378 |
-| Distinct English authored in batch 1 | 4,426 |
-| Chunks / chunk size | 15 / 300 (last 294) |
-| English characters authored | 340,101 (before translation) |
+## 1. Scene identification (evidence)
 
-Coverage per category (rows with Arabic): UI 5,890 | Dialogue 671 | Subtitles 3.
-Coverage per scope: NewP5 5,332 | PearTerminals 539 | Chelomey_Dialogues 382 | Academy_Dialogues 259 |
-Misc 19 | DIALOGUES FOR LQA 7 | Vavilov_Dialogues 6 | VDNKh_Dialogues 6 | Theatre_Dialogues 4 |
-Schebetar_Subs 3 | OpenWorldVDNKh_Dialogues 3 | Pavlov_Dialogues 3 | Polygon_Dialogues 1.
-
-## Defects found and handled
-
-| # | defect | evidence | fix |
-|---|---|---|---|
-| 1 | `scripts/batch_plan.ps1` crashed: `-f` inside a method-argument list is parsed as extra arguments | line 84 error, batch_plan ran 2x | build the row line with `-join` |
-| 2 | `scripts/batch_apply.ps1 -All` read 0 chunk files (the switch never enumerated them) | `[map] distinct English -> Arabic: 0` | `-All` now enumerates `chunk_*_ar.tsv` |
-| 3 | PowerShell `@{}` keys are case-insensitive: `CONSUMABLES` and `Consumables` collided and aborted the apply | `conflicting Arabic for the same English string: Consumables` | map is now `Dictionary[string,string]` (ordinal) |
-| 4 | The same case-insensitivity in `batch_plan.ps1` set the "already translated" flag on the wrong entry, so `Off` (mixed case) was never sent to a chunk | `missing_english.tsv` contained `Off` | `On/Off` row supplied via `localization/working/batch1/extra_ar.tsv` (new override input for the applier) |
-| 5 | Pure-format strings whose only Arabic character was the comma `{Class},  {Message}` were applied, then failed the validator (`Arabic contains no Arabic letter`, 17 rows) | validator lines 11021-11037 | checker and applier now use the validator's Arabic-letter class; stale values are reset to UNTRANSLATED and such rows are recorded as copy-class |
-| 6 | 15 Arabic rows ended in a space; the locres round-trip strips trailing whitespace, so the p5 build failed with 15 mismatches | first p5 build: `round-trip validation failed: 15 mismatches` | `scripts/trim_trailing_ws.ps1`; second build: 0 failures |
-| 7 | 4 rows used transliterated `Neuropolymer` instead of the glossary form | validator glossary warnings | data fixup appended to `localization/working/tm_fixups.tsv` (KI-021 compliant) |
-
-## Gate results
-
-| gate | result | evidence |
+| what | value | evidence |
 |---|---|---|
-| Spec hash | PASS (CONFIRMED) | `579f581e5bb8caae2aff6ef60326f1f461688f1b1392391a56a97a6148a61c35` unchanged |
-| Validator `validate_translation.ps1` | **PASS, 0 errors**, 197 warnings (number 15 / length 112 / glossary 70) | `reports/translation_validation.md` |
-| Chunk gate `batch_check.ps1` | PASS 15/15 chunks | console + `chunk_NN_copy.tsv` |
-| Glyph gate `glyph_gate.ps1 -AllowSourceInheritedNonLatin` | **PASS**: 148 distinct codepoints, 0 introduced by the Arabic, 5 source-inherited exemptions | `reports/glyph_gate.md` |
-| Round-trip (carrier builder) | **PASS**: 35/35 scopes, 0 failures, 35/35 unpack byte-identical | `reports/carrier_build.md` |
-| Reference regeneration | PASS: 6,564 rows / 4,426 unique / 13 scopes | `localization/references/AR_EN_REFERENCE.md` (1,499,581 B) |
-| 40-row review sample | PASS: 20 spread + 15 tagged + 5 longest rows (37 UI / 3 Dialogue) | `reports/review_sample.md`, embedded in `HANDOFF.md` |
+| Scope / file | `Chelomey_Dialogues` - `AtomicHeart/Content/Localization/Chelomey_Dialogues/en-US/Chelomey_Dialogues.locres` | master row |
+| Soda line | key `/E88AEA6244C8D2FDC686A38E266BE551`, EN `Would you care for some more soda, comrade?`, Category Dialogue, was UNTRANSLATED | master row |
+| Reply line | key `/528883FC4A40D637D9D14D908CA990FD`, EN `Sure, thanks.`, Category Dialogue, was UNTRANSLATED | master row |
+| Owning asset | `AtomicHeart/Content/Maps/Development/Dialogue_Test/Chelomey_Intro/D_0072_Sipuha_BringSoda.uasset` (pakchunk0-WindowsNoEditor) | cooked dump `localization/extracted/dialogue/pakchunk0-WindowsNoEditor__D_0072_Sipuha_BringSoda.txt` |
+| Whole corpus check | a regex search for either key across **every** extracted asset dump returns **exactly one hit each** - this asset | `localization/extracted/dialogue/` + `localization/extracted/uasset_text/` |
 
-The 5 source-inherited codepoints are U+0410, U+041A, U+0445 (Cyrillic letters that the English
-source itself uses in designations like `workshop 308-А`, `КS-23`, `12х70`) and U+202F, U+2060
-(invisible format characters in one obfuscated BEA-D string). They are inherited from the source,
-the engine renders them through its fallback face today, and the Arabic introduced none of them
-(DEC-027).
+The asset dump lists the 8 locres keys the dialogue asset uses (5 text lines + 3 label/state keys). It also
+carries the Russian source of three of the lines (`Дорогой товарищ, газировки не желаете?`,
+`Он исправно исполняет свою функцию.`, `С удовольствием.`) - stored cooked, i.e. the RU-only class (KI-018),
+not the English source column; the other two lines exist only in the locres.
 
-Warning classes left open on purpose: 112 UI length warnings above 1.2x (only 9 above 1.4x, and 8 of
-those are proper names or glossary terms), 70 glossary warnings (mostly plural forms such as
-`الخراطيش` for `Cartridge`, or `Shotgun` inside `4 shotgun shells`), 15 number warnings (numbers
-that legitimately became Arabic words, e.g. `13th day` -> `اليوم الثالث عشر`).
+Scene size: **5 dialogue lines + 3 keys** = 8 rows, well inside the ~60-row allowance. The scene is not
+split over several assets (only `D_0072` references these keys).
 
-## Copy-class rows (intentional, not translated)
+## 2. Where the bracketed speaker labels come from (answers the open question)
 
-170 distinct English strings (378 rows) are byte-identical in English and Arabic by design: bare
-numbers and resolutions (`0.2`, `1920x1080`), symbols (`-`, `°`, `º`, `/`), lone tags (`<title>`,
-`<value>`), key names (`E`, `Q`, `SHIFT`), model/tech codes (`BP_WayPoint50`, `DLAA`, `FHD (1080p)`,
-`Nvidia Reflex`, `BEA-D`), language endonyms (`deutsch`, `italiano`, `español`, `français`,
-`português (Brazil)`, `日本語`, `漢語`, `한국어`), gibberish (`d????dsss  ghhg`), pure-format strings
-(`{Class},  {Message}`, `{Left} / {Max}`, `x{0}`) and obfuscated Russian words. The validator forbids
-Arabic == English, so these rows stay UNTRANSLATED (Status UNTRANSLATED, Arabic empty) and the
-carrier fills them from the en-US locres, which is exactly what the English column shows in game.
-Evidence: `localization/working/batch1/copy_keep.tsv`.
+**They are ordinary locres rows, not `&Speaker&` markers and not a separate name table.**
 
-## Carrier p5
+- The dialogue asset references the speaker's display name as its own FText. Proof: the `D_0072` dump lists
+  the key `6EE193DF4F471FAB99A8779B0531AEFA` next to the ASCII string `Computer`, and the master row for that
+  key is **EN `Computer`** (Category Dialogue). Likewise `B5B336694BC2A0036C3B6E9EAD7F8B31` -> **EN `Char-les`**.
+- The five dialogue lines themselves contain **no** speaker markup (no `&...&`), so the label cannot come from
+  the text row. `&Speaker&` markers stay a DLC2-only mechanism (DEC-025, unchanged).
+- The `[ ]` brackets are drawn by the subtitle widget (`WBP_TypingTextBox` -> `WBP_OneSubtitle` /
+  `WBP_NPCSubtitle`); the data cell is `Computer`, never `[ Computer ]`.
+- The asset's other ASCII strings (`Khraz`, `Start`, `DBk3D`) are speaker ids / state names: `Khraz` has no
+  player-visible label row in the master, and `Start` (`/2119820E49AFDC57EBF87698DC1427AB`) is a normal
+  string that batch 1 already translated (`ابدأ`).
 
-| field | value |
-|---|---|
-| file | `build/package/zzz_atomicheart-ar_carrier_koKR_p5_P.pak` |
-| size | 3,775,007 bytes |
-| sha256 | `087f6b640a0f649d605148316a80cb3f51baf94994b4c317c5bd0e910f025a9f` |
-| scopes / keys | 35 / 27,618 |
-| Arabic / English-filled / kept Korean | 6,564 / 21,054 / 0 |
-| round-trip | 26,421 exact + 1,197 newline-only (KI-015 benign class), 0 failures |
-| unpack re-check | 35/35 byte-identical |
+**In-game answer for this scene: the labels ARE shown to the player** (user screenshot, 2026-10-19), so they
+are player-visible strings and must be translated through the glossary. Recorded in STATUS.md, KNOWN_ISSUES.md
+(extends KI-022) and DECISIONS.md (DEC-028).
 
-Installed set right now: carrier p4 + font v2 (unchanged this cycle).
+## 3. Translations applied (5 lines)
 
-### Exact install command for p5 (reconciling installer; removes p4 hash-verified, keeps font v2)
+All in `Chelomey_Dialogues`, Status `DRAFT`, note `scene:chelomey-soda`.
+
+| # | key | English (source) | Arabic (what the player sees) |
+|---|-----|------------------|-------------------------------|
+| 1 | `/E88AEA6244C8D2FDC686A38E266BE551` | Would you care for some more soda, comrade? | هل ترغب بمزيد من الغازية، أيها الرفيق؟ |
+| 2 | `/528883FC4A40D637D9D14D908CA990FD` | Sure, thanks. | بالتأكيد، شكراً. |
+| 3 | `/5E327C8A4F443D66D60FBFB59385AE4B` | It's just performing its function, Major. | إنه يؤدّي وظيفته فحسب، أيها الرائد. |
+| 4 | `/BB484B6B4E2B8844D5ED278C7EDEC145` | I'm sick to death of bots. Always up in my grill! | سئمت من الروبوتات حتى الموت. دائماً تتدخّل في شؤوني! |
+| 5 | `/661F874B415EB4AEE6F32294A50FF506` | Now get the hell outta here. | والآن، اغرب عن وجهي! |
+
+Notes on the choices (MSA, tone kept, nothing sanitised):
+
+- `Comrade` follows the glossary (`الرفيق`) in its vocative form `أيها الرفيق`; `Major` follows the glossary
+  (`الرائد`) as `أيها الرائد`, the same pattern batch 1 used for `Comrade Major` -> `الرفيق الرائد`.
+- Line 4 keeps the exasperation and the casual aggression of `up in my grill`; line 5 keeps the rudeness of
+  `get the hell outta here` (`اغرب عن وجهي!`), per the no-sanitising rule.
+- Lengths vs English: 38/41, 19/12, 37/38, 53/51, 22/28 characters. Nothing here is a UI label.
+- No tags, placeholders, `%`, `||`, markers or line breaks exist in these five rows, so byte-exactness is
+  trivially satisfied (the applier refuses any English-cell mismatch anyway).
+
+## 4. Speaker-name policy, glossary and TM
+
+Rule used: **one Arabic per speaker name, everywhere.** The two label texts the scene uses were already
+chosen in batch 1 (13 `Computer` and 52 `Char-les` rows); this cycle reuses exactly those strings and fills
+every remaining row of the same English text in the whole master.
+
+| English | Arabic (one form) | rows filled now | already identical | rows total in master | scope |
+|---|---|---|---|---|---|
+| `Computer` | الحاسوب | 125 | 13 | 138 | 14 scopes (Chelomey_Dialogues, ChelomeyFinal_Dialogues, VDNKh, Vavilov, Pavlov, Polygon, CUTSCENES, DLC3/DLC4, ...) |
+| `Char-les` | تشارلز | 693 | 52 | 745 | same family of dialogue/cutscene scopes |
+| `P-3` | stays `P-3` (Latin) | 0 | 0 | 1,140 left as English by rule | all dialogue scopes |
+
+- `P-3` is a copy-class string: the correct display IS `P-3`, and Arabic == English hard-fails the validator,
+  so those 1,140 rows deliberately stay UNTRANSLATED and the carrier fills them from the en-US locres - which
+  is exactly `[ P-3 ]` on screen. This is the same policy as batch 1's copy-class rows.
+- Glossary: added **`Computer` -> `الحاسوب`** (character, translated; note records that the widget draws the
+  brackets and that one Arabic is used in every scope). `CHAR-les`/`CHARLES` -> `تشارلز` already existed and
+  matches the batch-1 Arabic.
+- TM (`localization/working/tm.tsv`): **4,427 -> 4,432** entries (5 appended for the scene lines, 2 label
+  entries already identical, 0 conflicts).
+- Tooling: `scripts/apply_scene_labels.ps1` (ASCII-only) reads two UTF-8 data files -
+  `localization/working/scene_chelomey_soda_rows.tsv` (scope/key/english/arabic) and
+  `localization/working/speaker_labels.tsv` (english/arabic/note). It hard-fails on a missing scene row, an
+  English-cell mismatch, an empty Arabic, or a label row whose existing Arabic differs (consistency guard);
+  it then refreshes the union TM. A dry run showed 0 mismatches and 0 conflicts before anything was written.
+
+## 5. Gates (all PASS)
 
 ```
-cd C:\AtomicHeart-AR
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts\install_mod.ps1 -Carrier p5 -Font p2_plex
+Step               Item                          Result
+Identification     scene + label source          PASS  D_0072_Sipuha_BringSoda; 8 keys; 1-hit corpus search
+Authoring          scene Arabic                  PASS  5 rows - localization/working/scene_chelomey_soda_rows.tsv
+Authoring          speaker labels                PASS  2 labels - localization/working/speaker_labels.tsv
+Apply              apply_scene_labels.ps1        PASS  5 scene rows + 818 label rows (65 already identical);
+                                                     0 mismatch, 0 conflict -> master + TM written
+Validator          validate_translation.ps1      PASS  rows=27618 translated=7387 errors=0 warnings=197
+                                                     (number 15 / length 112 / glossary 70) - unchanged
+Glyph gate         glyph_gate.ps1                PASS  7,387 rows with Arabic; 148 distinct codepoints;
+                                                     0 codepoints introduced by the Arabic (5 source-inherited, KI-025)
+Reference          AR_EN_REFERENCE.md            PASS  7,387 rows / 4,431 unique / 19 scopes
+Review sample      review_sample.ps1             PASS  40 rows regenerated (embedded in HANDOFF.md)
+Carrier build      p6                            PASS  3,775,256 B, sha256 b7dbb14e...1dc4c321; 35/35 scopes;
+                                                     27,618 keys; 7,387 Arabic; 20,231 English; 0 kept Korean;
+                                                     26,421 exact + 1,197 newline-only (KI-015 benign); 0 failures;
+                                                     35/35 unpack byte-identical
+Install            install_mod.ps1 (APPROVED)    PASS  reconciling: p4 removed hash-verified; font v2 kept;
+                                                     manifest rewritten
+Verify             verify_install.ps1            PASS  outside ~mods: 0 added / 0 removed / 0 changed;
+                                                     stock paks 19/19; AtomicHeart.exe unchanged
 ```
 
-Then prove it (snapshot before/after): take the before snapshot first, install, then verify:
+No format repair was needed this cycle: the build had **0 round-trip failures**, so no trailing-whitespace
+(KI-024) or newline repair pass was triggered by the new strings.
+
+## 6. Carrier p6 - build and install
+
+Build (unchanged builder, `scripts/build_carrier_locres_pak.ps1 -PakOut ... -VariantLabel p6`):
+
+- `build\package\zzz_atomicheart-ar_carrier_koKR_p6_P.pak`, **3,775,256 bytes**,
+  sha256 `b7dbb14e80a926c06d0255919a454747488778de98a1778645d117ef1dc4c321` (= p5 + this scene).
+- Report: `reports/carrier_build.md`.
+
+Install (approved) - `scripts\install_mod.ps1 -Carrier p6 -Font p2_plex`, run 2026-10-19 00:49.
+`~mods` now contains exactly these three files:
+
+| file | size | sha256 |
+|---|---|---|
+| `atomic-heart-ar-install-manifest.json` | 1,824 | `ad7164ebe3836bac9e54ea603b96a6517c21309d14327f451e1ebdd4fe9597be` |
+| `zzz_atomicheart-ar_carrier_koKR_p6_P.pak` | 3,775,256 | `b7dbb14e80a926c06d0255919a454747488778de98a1778645d117ef1dc4c321` |
+| `zzz_atomicheart-ar_font_p2_plex_P.pak` | 1,461,408 | `02b17f31e61a46ddba20bea8c4da5be44164173df608d52697f68d27d8269747` |
+
+- Removed as superseded (only after its hash matched the manifest): `zzz_atomicheart-ar_carrier_koKR_p4_P.pak`.
+- Font v2 was **not** touched (hash unchanged since the pilot).
+- Nothing in the game folder was modified outside `~mods` (before/after snapshot diff): game root 0/0/0,
+  Paks 0/0/0 (19 stock paks before and after), `AtomicHeart.exe` unchanged. Report:
+  `reports/install_verification.md`.
+- Game language must stay **Korean** during tests (the Arabic rides in the Korean locres slot).
+
+Rollback commands (both pak variants are still in `build\package\`):
 
 ```
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts\snapshot_game_folder.ps1 -Out "$env:TEMP\before_p5.json"
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts\install_mod.ps1 -Carrier p5 -Font p2_plex
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts\verify_install.ps1 -Before "$env:TEMP\before_p5.json"
+# back to the build that was installed before this cycle
+powershell -NoProfile -ExecutionPolicy Bypass -File C:\AtomicHeart-AR\scripts\install_mod.ps1 -Carrier p4 -Font p2_plex
+
+# alternative: the batch-1 build (p5), if you want the 25% tranche without this scene
+powershell -NoProfile -ExecutionPolicy Bypass -File C:\AtomicHeart-AR\scripts\install_mod.ps1 -Carrier p5 -Font p2_plex
 ```
 
-### Rollback command (back to p4)
+## 7. In-game checklist
 
-```
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts\install_mod.ps1 -Carrier p4 -Font p2_plex
-```
+See `reports/scene_soda_ingame_check.md` (short, non-developer). Summary: load the save you took the
+screenshot from, replay the boat ride in Chelomey City, and check **(a)** Arabic shape and right-to-left
+order, **(b)** the bracketed labels `[ الحاسوب ]` and `[ P-3 ]`, **(c)** wrapping on the soda line, and
+**(d)** that all five lines are Arabic, not English.
 
-Both commands remove the superseded carrier only after its on-disk sha256 matches the install
-manifest, and never touch the EXE, DLLs, Denuvo files or any stock pak.
+## 8. Coverage
 
-## Review focus for you
+- Rows: **7,387 of 27,618 (26.75%)** carry Arabic (was 6,564 / 23.77%).
+- Unique strings: **4,431 of 19,996 (22.16%)** (was 4,426 / 22.13%).
+- This cycle added: 5 scene lines + 818 speaker-label rows (both label texts now complete game-wide;
+  1,140 `P-3` rows stay Latin by the copy-class rule).
+- Everything new is Status `DRAFT`; nothing is marked final.
+- Batch 1 (25% tranche) is untouched and still DRAFT.
 
-1. The 40-row sample in `HANDOFF.md` (Arabic first, English below) - spread + tagged + longest rows.
-2. `glossary/glossary_questions.md` (new batch-1 section) plus the raw per-chunk notes in
-   `reports/batch1_translator_notes.md` (427 lines): weapon nicknames translated vs transliterated,
-   `Chai` toast, SHOK derivatives, `Thrift`, animal-named weapon parts, `Fox`, RTX/BIOS/Nvidia kept
-   Latin, and the 86 shortened UI labels.
-3. Nothing is installed yet: p4 still runs in game, so the game keeps showing English for batch-1
-   text until you approve p5.
+## 9. Problems found this cycle
 
-## Files changed this cycle (all local)
+1. `KNOWN_ISSUES.md` had a **duplicated header block** (its first 5 lines appeared twice, breaking the table).
+   Cosmetic, pre-existing; removed in this cycle.
+2. My first corpus search used `Select-String -SimpleMatch` with a `|` in the pattern, so it matched the two
+   hex keys literally and reported "no hits" while the keys were in fact present. Re-run without
+   `-SimpleMatch` (plain hex regex) it returned exactly one hit per key. Recorded here because a silent
+   "no hits" would have wrongly ruled out the asset.
+3. No defect in the translation or build pipeline: validator 0 errors, glyph gate 0 introduced, build 0
+   round-trip failures, install verified, nothing changed outside `~mods`.
 
-Scripts: `scripts/batch_plan.ps1` (new), `scripts/batch_check.ps1` (new), `scripts/batch_apply.ps1`
-(new), `scripts/batch_shorten.ps1` (new), `scripts/apply_shorten_keys.ps1` (new),
-`scripts/trim_trailing_ws.ps1` (new), `scripts/glyph_gate.ps1` (added the documented
-`-AllowSourceInheritedNonLatin` exemption).
-Data: `localization/working/batch1/**` (planner outputs, 15 EN/AR chunk pairs, 15 notes files,
-`copy_keep.tsv`, `missing_english.tsv`, `extra_ar.tsv`, `shorten_in/out.tsv`, `BRIEF.md`),
-`localization/master/atomic-heart-ar.tsv`, `localization/working/tm.tsv` (102 -> 4,427 entries),
-`localization/working/tm_fixups.tsv` (+46 rules).
-Reports: `reports/translation_validation.md`, `reports/glyph_gate.md`, `reports/carrier_build.md`,
-`reports/text_fixups_log.md`, `reports/review_sample.md`, `reports/batch1_translator_notes.md`,
-`reports/cycle010_results.md`, `localization/references/AR_EN_REFERENCE.md`.
-Build (not committed): `build/package/zzz_atomicheart-ar_carrier_koKR_p5_P.pak`.
-Docs: `HANDOFF.md`, `STATUS.md`, `KNOWN_ISSUES.md`, `DECISIONS.md`, `glossary/glossary_questions.md`,
-`lastreport.md`, `reports/history/report_014.md`, `reports/history/handoff_014.md`.
+## 10. What I need back from you
+
+- The in-game result of the boat scene (a screenshot of the soda line with its label is enough).
+- Anything that looks wrong: a label still in Latin, boxes/tofu instead of letters, wrong order, clipped text.
+- Then, on your word, batch 2 (base dialogue; cumulative 13,809 rows / 8,648 unique at the 50% cutoff).

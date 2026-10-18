@@ -1,7 +1,7 @@
 # AR/EN review sample (pilot)
 
-Generated: 2026-10-18 23:33:53
-Rows with Arabic available: 6564 | sample size: 40
+Generated: 2026-10-19 00:42:17
+Rows with Arabic available: 7387 | sample size: 40
 
 Read each block as: Arabic (what the player sees) then the English source it came from.
 
@@ -68,82 +68,82 @@ AR: رغم بساطته، يتيح التصويب على مسافة تزيد ع�
 
 EN: Despite its simplicity, allows to aim at a distance of more than 100 meters.
 
-### 10. [NewP5] UI
+### 10. [DIALOGUES FOR LQA] Dialogue
+reason: spread | key: /A08B1FE845D63766B1918C9E5BE267CC | notes: speaker:char-les
+
+AR: تشارلز
+
+EN: Char-les
+
+### 11. [NewP5] UI
 reason: spread | key: /D2A470934B22D0E426C041AFB3EE7E34 | notes: batch1
 
 AR: إصدار DirectX
 
 EN: DirectX Version
 
-### 11. [NewP5] UI
+### 12. [NewP5] UI
 reason: spread | key: /4777E7B64EF77FF9CC20F9A203855584 | notes: batch1
 
 AR: تثبيت
 
 EN: INSTALL
 
-### 12. [NewP5] UI
+### 13. [NewP5] UI
 reason: spread | key: /E3CD4A1B47D41D465DD381A7E539B0F4 | notes: batch1
 
 AR: تصحيح سطوع الصورة
 
 EN: Image brightness correction
 
-### 13. [NewP5] UI
+### 14. [NewP5] UI
 reason: spread | key: /DA129D4643D49F7AD9A82AAAED51F4AA | notes: batch1
 
 AR: فضلات مشابهة. هذا ليس ما سألت عنه.
 
 EN: Similar feces. That's not what I asked.
 
-### 14. [NewP5] UI
+### 15. [NewP5] UI
 reason: spread | key: /6F7E6506432BD49AF4CC93A94A781AF1 | notes: batch1
 
 AR: تنشأ أشدّ الكراهية تجاه من استطاعوا لمس القلوب ثم بصقوا في الروح.
 
 EN: The biggest hatred occurs to those who managed to touch the hearts, and then spit into the soul.
 
-### 15. [NewP5] UI
+### 16. [NewP5] UI
 reason: spread | key: /56D01DBB43C3B5827E2B5BA81D542975 | notes: batch1
 
 AR: سطح عاكس
 
 EN: Reflective Surface
 
-### 16. [Chelomey_Dialogues] Dialogue
+### 17. [Chelomey_Dialogues] Dialogue
 reason: spread | key: /0274464A44F83E078C1ED59E0F7E2D71 | notes: scene:bridge-opening
 
 AR: صوت واثق
 
 EN: Confident voice
 
-### 17. [Chelomey_Dialogues] Dialogue
+### 18. [Chelomey_Dialogues] Dialogue
 reason: spread | key: /864474DD440B3A2551D0F9897E01C037 | notes: batch1
 
 AR: شاب
 
 EN: Guy
 
-### 18. [NewP5] UI
+### 19. [NewP5] UI
 reason: spread | key: /D4EF509F45FE2A26CF8DEFAB4CBBC4DC | notes: batch1
 
 AR: تبريد المرجل #1
 
 EN: Cool off Boiler #1
 
-### 19. [NewP5] UI
+### 20. [NewP5] UI
 reason: spread | key: /569CDAE9408CE23A7F1D2E84EDE73DF3 | notes: batch1
 
 AR: خراطيش الرش
 
 EN: SHOTGUN SHELLS
-
-### 20. [NewP5] UI
-reason: spread | key: /40EF37E64730E4A368EA709B9D62FE92 | notes: pilot:UI
-
-AR: تكنوستاسيس
-
-EN: Technostasis
 
 ### 21. [PearTerminals] UI
 reason: longest | key: /9A3AD94643642C7E9B30C09C32D4615B | notes: batch1

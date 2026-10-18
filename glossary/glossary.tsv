@@ -2,6 +2,7 @@ term	arabic	category	reason	status	notes
 NORA	نورا	character	transliterated	DRAFT	vending-machine AI; kept as a name
 CHAR-les	تشارلز	character	transliterated	DRAFT	the talking glove AI; Latin forms CHAR-les/CHARLES/Charles all map here
 CHARLES	تشارلز	character	transliterated	DRAFT	same as CHAR-les
+Computer	الحاسوب	character	translated	DRAFT	service-drone speaker label (rendered inside [] by the subtitle widget); one Arabic in every scope, overrides the device noun reading
 Sechenov	سيتشينوف	character	transliterated	DRAFT	Dmitry Sechenov, Facility director
 Dmitry Sechenov	دميتري سيتشينوف	character	transliterated	DRAFT	
 Nechaev	نيتشاييف	character	transliterated	DRAFT	Sergey Nechaev = P-3, the player

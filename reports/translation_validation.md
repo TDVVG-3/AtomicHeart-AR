@@ -1,6 +1,6 @@
 # Translation validation report
 
-Generated: 2026-10-18 23:32:41
+Generated: 2026-10-19 00:38:51
 Validator: scripts/validate_translation.ps1 (PowerShell twin of scripts/validate_translation.py)
 
 RESULT: **PASS**
@@ -8,7 +8,7 @@ RESULT: **PASS**
 | metric | value |
 |---|---|
 | master rows | 27618 |
-| rows with Arabic | 6564 |
+| rows with Arabic | 7387 |
 | hard errors | 0 |
 | warnings (number/length/glossary) | 197 |
 | - number-multiset warnings | 15 |
@@ -19,8 +19,8 @@ RESULT: **PASS**
 
 | Status | rows |
 |---|---|
-| DRAFT | 6564 |
-| UNTRANSLATED | 21054 |
+| DRAFT | 7387 |
+| UNTRANSLATED | 20231 |
 
 ## Translated rows per scope
 
@@ -28,25 +28,33 @@ RESULT: **PASS**
 |---|---|
 | NewP5 | 5332 |
 | PearTerminals | 539 |
-| Chelomey_Dialogues | 382 |
+| Chelomey_Dialogues | 389 |
+| Vavilov_Dialogues | 379 |
 | Academy_Dialogues | 259 |
+| VDNKh_Dialogues | 168 |
+| Pavlov_Dialogues | 82 |
+| ChelomeyFinal_Dialogues | 46 |
+| OpenWorldVDNKh_Dialogues | 42 |
+| Polygon_Dialogues | 42 |
+| Theatre_Dialogues | 36 |
+| CUTSCENES | 26 |
+| DIALOGUES FOR LQA | 21 |
 | Misc | 19 |
-| DIALOGUES FOR LQA | 7 |
-| Vavilov_Dialogues | 6 |
-| VDNKh_Dialogues | 6 |
-| Theatre_Dialogues | 4 |
 | Schebetar_Subs | 3 |
-| OpenWorldVDNKh_Dialogues | 3 |
-| Pavlov_Dialogues | 3 |
-| Polygon_Dialogues | 1 |
+| Locations_dlc2 | 1 |
+| Cutscenes_dlc1 | 1 |
+| Tech_dlc4 | 1 |
+| Chelomey_dlc3 | 1 |
 
 ## Translated rows per category
 
 | category | rows with Arabic |
 |---|---|
 | UI | 5890 |
-| Dialogue | 671 |
+| Dialogue | 1465 |
+| Cutscene | 27 |
 | Subtitles | 3 |
+| Unknown | 2 |
 
 ## Hard errors
 

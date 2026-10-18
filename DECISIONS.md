@@ -805,3 +805,37 @@ Part 7 - Batch-2 preparation. `scripts/batch_plan.ps1` still uses a case-insensi
 for its occurrence counter, which produced the `Off`/`OFF` mis-attribution (KI-023). It never
 changes the stable ids, but it must be switched to a `Dictionary[string,int]` before batch 2 is
 planned, and the batch-2 planner must run with a fresh state file rather than reusing batch-1 ids.
+
+## DEC-028 - Speaker-name labels are locres rows and ARE player-visible (2026-10-19, cycle 011)
+
+Finding. The bracketed speaker names in subtitles are NOT `&Speaker&` markers and NOT a separate name
+table: each dialogue asset references the speaker's display name as an FText of its own, i.e. an ordinary
+locres row in the same scope whose English text is exactly the speaker name. Evidence: the cooked dump of
+`D_0072_Sipuha_BringSoda` lists the key `6EE193DF4F471FAB99A8779B0531AEFA` together with the ASCII string
+`Computer`, and the master row for that key has English `Computer`; the five dialogue lines of that scene
+contain no speaker markup. The `[ ]` brackets are drawn by the subtitle widget (`WBP_TypingTextBox` ->
+`WBP_OneSubtitle` / `WBP_NPCSubtitle`). In game the labels are DISPLAYED to the player (user screenshot of
+the Chelomey canal boat scene, 2026-10-19). This answers the open speaker-marker question for this scene:
+shown. `&Speaker&` stays a DLC2-only mechanism (DEC-025, unchanged).
+
+Policy adopted. Speaker-name rows are player-visible text and are translated through the glossary, with ONE
+Arabic per speaker name used in every scope (never a per-scene variant). `Computer` -> `الحاسوب` (added to
+`glossary/glossary.tsv`), `Char-les`/`CHARLES` -> `تشارلز` (already present). Names whose correct display
+IS the Latin form are copy-class: `P-3` stays `P-3` (Arabic == English would hard-fail the validator), so
+those 1,140 rows stay UNTRANSLATED with an empty Arabic cell and the carrier fills them from the en-US
+locres. Applied this cycle: 818 label rows filled (125 `Computer` + 693 `Char-les`), 65 already identical,
+0 conflicts. `scripts/apply_scene_labels.ps1` hard-fails when an existing non-empty Arabic differs from the
+sanctioned form, so a future run can never fork one speaker name into two spellings.
+
+Scene decision. The boat scene is translated as the whole row set of its owning asset: the 5 text rows of
+`D_0072_Sipuha_BringSoda` (Status DRAFT, note `scene:chelomey-soda`) plus the two labels the asset uses.
+Arabic authored in UTF-8 data files only (`localization/working/scene_chelomey_soda_rows.tsv`,
+`localization/working/speaker_labels.tsv`); no Arabic literal in any script (KI-021).
+
+Build decision. Carrier p6 = p5 + this scene: 3,775,256 bytes, sha256
+b7dbb14e80a926c06d0255919a454747488778de98a1778645d117ef1dc4c321, 35/35 scopes, 7,387 Arabic + 20,231
+English-filled + 0 kept Korean, 0 round-trip failures, 35/35 unpack byte-identical. INSTALLED with explicit
+user approval through the reconciling installer (`p4` removed only after its hash matched the manifest,
+font v2 untouched); before/after snapshot PASS with 0 changes outside `~mods`. Rollback:
+`install_mod.ps1 -Carrier p4 -Font p2_plex` (the previously installed build) or `-Carrier p5` (the batch-1
+build).
