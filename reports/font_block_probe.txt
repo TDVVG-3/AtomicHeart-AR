@@ -1,0 +1,23 @@
+﻿# Font block probe (cycle 005)
+# Generated (UTC): 2026-10-18T12:42:18.4784962Z
+### IBMPlexSansArabic-Regular.ttf  (236708 bytes)
+    Latin-Basic: 95   [FULL]
+    Cyrillic: 0   [ABSENT]
+    Hangul-Syllables: 0   [ABSENT]
+    Hangul-Jamo: 0   [ABSENT]
+    Arabic-core: 42   [FULL]
+
+### IBMPlexSansArabic-Medium.ttf  (243028 bytes)
+    Latin-Basic: 95   [FULL]
+    Cyrillic: 0   [ABSENT]
+    Hangul-Syllables: 0   [ABSENT]
+    Hangul-Jamo: 0   [ABSENT]
+    Arabic-core: 42   [FULL]
+
+### IBMPlexSansArabic-Bold.ttf  (247896 bytes)
+    Latin-Basic: 95   [FULL]
+    Cyrillic: 0   [ABSENT]
+    Hangul-Syllables: 0   [ABSENT]
+    Hangul-Jamo: 0   [ABSENT]
+    Arabic-core: 42   [FULL]
+

@@ -26,7 +26,8 @@
 [CmdletBinding()]
 param(
     [string]$RepoRoot = 'C:\AtomicHeart-AR',
-    [string]$PakOut
+    [string]$PakOut,
+    [switch]$AllowMissingCyrillicHangul
 )
 $ErrorActionPreference = 'Stop'
 if (-not $PakOut) { $PakOut = Join-Path $RepoRoot 'build\package\zzz_atomicheart-ar_font_p2_plex_P.pak' }
@@ -42,14 +43,39 @@ $map = @(
     @{ face = 'AtomicHeart/Content/Development/NTD/Fonts/Gotham-Black.ufont';      ttf = 'IBMPlexSansArabic-Bold.ttf' }
 )
 
-# coverage gate: every mapped font must have FULL verdict in the pre-scan
-$dec = Join-Path $RepoRoot 'reports\font_glyph_coverage_plex.txt'
+# coverage gate (cycle 005): every mapped font must be FULL for Latin-Basic AND
+# Arabic-core in the probe scan. Additionally, Cyrillic and Hangul coverage are
+# reported and enforced: a payload with zero Cyrillic makes unlocalized Russian
+# inline strings blank when they resolve through that face, and zero Hangul makes
+# untranslated ko-KR locres text blank (cycle 005 Test-2 finding). Rebuilding with
+# a Cyrillic/Hangul-absent font therefore requires the explicit exemption flag.
+# v2 (IBM Plex Sans Arabic) is built with -AllowMissingCyrillicHangul for now:
+# the visible Russian labels are known to render via faces NOT in this pak
+# (BlenderPro/Gotham/Roboto family, evidence: reports/font_glyph_coverage.txt).
+$probe = Join-Path $RepoRoot 'reports\font_block_probe.txt'
+if (-not (Test-Path $probe)) { throw "probe report missing: $probe (run scripts/probe_font_blocks.ps1 first)" }
+function Get-BlockCount($names, [string]$block) {
+    $rx = '^\s*' + [regex]::Escape($block) + ':\s*(\d+)'
+    foreach ($l in $names) { if ($l -match $rx) { return [int]$Matches[1] } }
+    throw "block $block count not found in probe output"
+}
 foreach ($m in $map) {
-    $block = (Get-Content $dec) -join ' ' -match ([regex]::Escape('###')) # touch file
-    $found = (Select-String -Path $dec -Pattern ('^### ' + [regex]::Escape($m.ttf) + ' '))[0]
-    if (-not $found) { throw "font not covered by pre-scan: $($m.ttf)" }
-    $verdict = (Select-String -Path $dec -Pattern 'VERDICT: (\w+)')
-    if ($verdict.Matches[0].Groups[1].Value -ne 'FULL') { throw "font not FULL: $($m.ttf)" }
+    $fontLines = @()
+    $hit = $false
+    foreach ($l in (Get-Content $probe)) {
+        if ($l -like ('### ' + $m.ttf + '*')) { $hit = $true; $fontLines = @(); continue }
+        if ($hit) { if ($l -match '^\s{4}\S') { $fontLines += $l } elseif ($l -match '^###') { break } }
+    }
+    if (-not $hit) { throw "font not probed: $($m.ttf) (add it to scripts/probe_font_blocks.ps1 -Fonts and rerun)" }
+    $latin = Get-BlockCount $fontLines 'Latin-Basic'
+    $arabic = Get-BlockCount $fontLines 'Arabic-core'
+    $cyr = Get-BlockCount $fontLines 'Cyrillic'
+    $hSyll = Get-BlockCount $fontLines 'Hangul-Syllables'
+    if ($latin -lt 95) { throw "Latin-Basic below 95 for $($m.ttf): $latin" }
+    if ($arabic -lt 42) { throw "Arabic-core below 42 for $($m.ttf): $arabic" }
+    if ($cyr -eq 0 -and -not $AllowMissingCyrillicHangul) { throw "Cyrillic ABSENT for $($m.ttf) - pass -AllowMissingCyrillicHangul after human review" }
+    if ($hSyll -eq 0 -and -not $AllowMissingCyrillicHangul) { throw "Hangul-Syllables ABSENT for $($m.ttf) - pass -AllowMissingCyrillicHangul after human review" }
+    Write-Host ("[OK] $($m.ttf): Latin {0}/95, Arabic {1}/42, Cyrillic {2}, Hangul {3}" -f $latin, $arabic, $cyr, $hSyll)
 }
 Write-Host "[OK] coverage gate: all mapped Plex weights FULL (Latin-Basic 95/95, Arabic 42/42)"
 

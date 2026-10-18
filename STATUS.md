@@ -48,9 +48,18 @@ RTL rendering test:                         NOT TESTED
 
 ## Next
 
-STOP. The ko-KR carrier pak is built and validated but NOT installed. Test 2 will be:
-carrier pak + font pak v2 installed together; select Korean (ko-KR) in Options >
-Language; NewP5-scope strings display Arabic (font v2), rest of game text stays
-Korean, English voice untouched. Awaiting user's go for install instruction and
-then their manual test report. Native-`ar` via DA_Audio stays a Phase 8 tooling
-item (schema reconstruction; see docs/LANGUAGE_SELECTION.md).
+Cycle 005 complete except Test 3. Test 2 (carrier koKR p1 + font v2) gave outcome D
+(partial): user hypothesis CONFIRMED - untranslated ko-KR strings are Korean and the
+replacement Plex faces have zero Hangul -> blank labels; Russian labels survive via
+faces we never swapped (Cyrillic-capable: BlenderPro 94, Gotham 170, BrutalType 94,
+RobotoMono/Roboto 255; evidence reports/font_glyph_coverage.txt + font_block_probe.txt).
+
+Built this cycle (NOT installed): carrier p2
+(zzz_atomicheart-ar_carrier_koKR_p2_P.pak, 503,841 bytes, SHA256 3d4b0ea6...) with the
+English-fill policy (DEC-016): 25 Arabic seed keys + 5,572 en-US-filled keys + 0 kept
+Korean of 5,597 total; round-trip 0 failures (5,541 byte-exact, 56 newline-normalized
+only - KI-015). Glyph gate upgraded with Cyrillic/Hangul enforcement (DEC-016).
+
+Test 3 = carrier p2 + font v2, select ko-KR, verify Arabic in GameTips popups and
+settings captions (Balanced/On/Off/Fullscreen), untranslated text now English instead
+of blank. Awaiting user's go: `scripts/uninstall_mod.ps1` then install Test-3 set.

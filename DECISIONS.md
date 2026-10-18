@@ -343,3 +343,34 @@ Amendment (same cycle, evidence-based):
   (sha256 146f9c5f50744eed0b3ed614cf9e84f177efb35049c46d59c8948ea4857596ab),
   NOT INSTALLED. The user's own voice stays English by design; the replaced TEXT is
   Korean (a language the user is not reading).
+---
+
+## DEC-016 - Carrier fill policy: English for untranslated ko-KR keys
+
+Date: 2026-10-18
+Status: ACTIVE (built p2 carrier; install needs user go)
+
+In cycle 005 the user reported Test-2 outcome D (partial): 258 FPS normal, no hang,
+font problem resolved; most labels blank - Korean locres text rendered through the
+replacement font faces, which lack Hangul. The visible Russian labels prove the game
+renders some strings through faces this project does NOT replace (BlenderPro family
+Cyrillic 94, Gotham 170, BrutalType 94, Roboto 255, DroidSansFallback; evidence:
+reports/font_glyph_coverage.txt). Plex Sans Arabic itself covers Latin 95/95 and
+Arabic 42/42 but ZERO Cyrillic and ZERO Hangul (reports/font_block_probe.txt).
+
+Decision (user order, cycle 005 step 3):
+- The ko-KR carrier now fills EVERY untranslated key with the en-US English text of
+  the SAME namespace/key; the 25 seed keys keep their Arabic; keys with neither
+  (none in NewP5) would stay Korean. Result: of 5,597 ko-KR keys - 25 Arabic,
+  5,572 English-filled, 0 skipped.
+- Validation: 5,541 values byte-exact; 56 multiline values differ ONLY by \r\n vs
+  \n (UnrealLocres v1.1.0 import normalizes embedded LF to CRLF). Newline-equivalent
+  comparison accepted with the delta counted and recorded; real mismatches hard-fail.
+  The engine demonstrably tolerates \r\n: the game's own ko locres ships one.
+- Glyph gate upgraded (cycle 005 step 5): scripts/build_fontpak_p2_plex.ps1 now
+  parses explicit block counts from scripts/probe_font_blocks.ps1 output
+  (reports/font_block_probe.txt) - Latin-Basic >= 95 and Arabic-core >= 42 required,
+  and Cyrillic == 0 or Hangul == 0 fails the build unless -AllowMissingCyrillicHangul
+  is passed after human review (v2 currently built under that flag because the
+  Russian labels are proven to use faces outside this pak).
+- Nothing installed without the user's explicit go (Test 3 = carrier p2 + font v2).

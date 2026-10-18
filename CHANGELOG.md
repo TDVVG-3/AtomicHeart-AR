@@ -5,6 +5,35 @@ Format loosely follows Keep a Changelog.
 
 ## [Unreleased]
 
+### Fixed (Cycle 005 - 2026-10-18)
+- Carrier p2 with English-fill policy (DEC-016, user order): untranslated ko-KR keys
+  now carry the en-US English text of the same namespace/key. Of 5,597 NewP5 ko-KR
+  keys: 25 Arabic seed, 5,572 English-filled, 0 skipped. pak
+  zzz_atomicheart-ar_carrier_koKR_p2_P.pak (503,841 B,
+  SHA256 3d4b0ea65c5dc789be98b46aa18c7c27959445b7d36454616b91be2ae55fa9e1), NOT installed.
+- RFC4180 CSV reader added to the carrier builder: UnrealLocres exports contain
+  embedded newlines inside quoted values; the previous single-line parser produced
+  bogus fragment keys (5742 vs 5597 real keys). Now TextFieldParser-based, ko/en
+  row counts agree (5597 = 5597).
+- Round-trip validation upgraded: three classes (Arabic/English/kept-Korean), value =
+  re-export column 1; 0 failures. 5,541 byte-exact + 56 newline-normalized-only
+  (UnrealLocres import converts embedded LF to CRLF; engine ships one native CRLF in
+  ko locres, KI-015).
+- Glyph gate (build_fontpak_p2_plex.ps1) now enforces Cyrillic and Hangul block
+  coverage from scripts/probe_font_blocks.ps1 evidence (DEC-016): Latin-Basic >= 95,
+  Arabic-core >= 42 required; Cyrillic/Hangul == 0 hard-fails unless
+  -AllowMissingCyrillicHangul (v2 rebuilt under that flag; payloads byte-identical
+  to the installed font pak, verified by unpack-compare; container bytes differ only
+  by repak timestamps).
+
+### Evidence (Cycle 005)
+- Test 2 outcome D (partial) explained: blank ko-KR labels = replaced Plex faces have
+  ZERO Hangul (CONFIRMED by probe); Russian labels survive because their faces were
+  never replaced (Cyrillic-capable stock faces: BlenderPro family 94, Gotham-Black/
+  BookItalic 170, BrutalType 94, RobotoMono 255). Probe evidence in
+  reports/font_block_probe.txt (block counts for all three Plex weights,
+  Latin 95 FULL / Arabic 42 FULL / Cyrillic 0 / Hangul-Syllables 0 / Hangul-Jamo 0).
+
 ### Added (Cycle 004 - 2026-10-18)
 - Test 1 result: outcome B - game boots with the locres-only pak, language list has NO
   Arabic option (not a pak failure; locmeta staging alone provably can never add a menu
