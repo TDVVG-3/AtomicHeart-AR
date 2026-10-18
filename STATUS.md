@@ -1,6 +1,6 @@
 # Current State
 
-Status snapshot after Cycle 004 (2026-10-18). Rule: PASS/FAIL/PARTIAL/BLOCKED/NOT TESTED
+Status snapshot after Cycle 006 (2026-10-18). Rule: PASS/FAIL/PARTIAL/BLOCKED/NOT TESTED
 labels only; never claim success without evidence.
 
 ```
@@ -60,6 +60,36 @@ English-fill policy (DEC-016): 25 Arabic seed keys + 5,572 en-US-filled keys + 0
 Korean of 5,597 total; round-trip 0 failures (5,541 byte-exact, 56 newline-normalized
 only - KI-015). Glyph gate upgraded with Cyrillic/Hangul enforcement (DEC-016).
 
+## Test 3 result (in progress - user reports arrive in parts)
+
+**Main menu: outcome A (2026-10-18, user screenshot). CONFIRMED:** the five menu buttons
+(Continue / New game / Load game / Options / Exit) render as correct Arabic - letters
+connected, right-to-left order correct, Latin text readable. This is the first positive
+proof of Arabic rendering in-game (font v2 + carrier p2 stack working). Settings pages
+and GameTips popups are NOT yet checked; Test 3 stays open until the user reports them.
+
 Test 3 = carrier p2 + font v2, select ko-KR, verify Arabic in GameTips popups and
 settings captions (Balanced/On/Off/Fullscreen), untranslated text now English instead
 of blank. Awaiting user's go: `scripts/uninstall_mod.ps1` then install Test-3 set.
+
+## Cycle 006 - dialogue/cutscene text program (batch 1 of 4)
+
+```
+Step A  Spec hash check:                    PASS (579f581e5bb8caae2aff6ef60326f1f461688f1b1392391a56a97a6148a61c35)
+Step B  Cooked-asset count pass (4,325):    PASS (4 workers, 23 min, 4,325 rows, 0 fetch failures, 0 stderr)
+Step C  Decoder verification (Cyrillic):     PASS ("Все на перевыборы советов" decoded, no mojibake)
+Step D  Prose filter (DEC-019):              PASS (over-extraction 5,005,978 -> 111 EN / 5,903 RU prose strings)
+Step E  Inventory + TOTAL (DEC-020):        PASS (TOTAL = 10,505; reports/dialogue_inventory.md)
+Step F  RU-only separation (KI-010 class):  PASS (246 assets / 5,903 strings -> reports/dialogue_ru_only.md, excluded from TOTAL)
+Step G  Batch 1 apply (25%):                PASS (covered 2,626 of 10,505 (25%); added 0 new rows since batch 1 lies entirely in locre scope; already present 2,626; retag 3,286 Category values)
+Step H  Validator:                          PASS (0 problems; UTF-8 no U+FFFD; no NEW duplicate ids; 27,618 rows)
+```
+
+Facts:
+- English-source dialogue universe = the en-US locres (10,394 strings, 14 scopes) +
+  4 cooked assets (111 strings). Cooked dialogue assets are otherwise Russian-only.
+- Master TSV: 27,618 rows before and after batch 1 (only Category values changed).
+- Pre-existing master duplicate IDs = 728 (KI-016), unchanged by this program.
+- No install/uninstall action this cycle; `~mods` still holds the Test-3 paks (untouched).
+- Nothing uploaded; `git remote -v` empty.
+

@@ -1,0 +1,15 @@
+order	kind	source	container	dlc	scopeClass	count
+1	LOCRE	Academy_Dialogues	pakchunk0	base	Dialogue	282
+2	LOCRE	Chelomey_Dialogues	pakchunk0	base	Dialogue	1204
+3	LOCRE	ChelomeyFinal_Dialogues	pakchunk0	base	Dialogue	214
+4	LOCRE	CUTSCENES	pakchunk0	base	Cutscene	840
+5	LOCRE	DIALOGUES FOR LQA	pakchunk0	base	Dialogue	746
+6	LOCRE	OpenWorldVDNKh_Dialogues	pakchunk0	base	Dialogue	443
+7	LOCRE	Pavlov_Dialogues	pakchunk0	base	Dialogue	520
+8	LOCRE	Polygon_Dialogues	pakchunk0	base	Dialogue	199
+9	LOCRE	Schebetar_Subs	pakchunk0	base	Subtitles	361
+10	LOCRE	Theatre_Dialogues	pakchunk0	base	Dialogue	629
+11	LOCRE	Vavilov_Dialogues	pakchunk0	base	Dialogue	2427
+12	LOCRE	VDNKh_Dialogues	pakchunk0	base	Dialogue	1292
+13	LOCRE	Cutscenes_dlc1	pakchunk0	DLC1	Cutscene	421
+14	LOCRE	Locations_dlc2	pakchunk0	DLC2	Dialogue	816

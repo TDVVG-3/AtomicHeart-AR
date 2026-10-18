@@ -1,112 +1,118 @@
-# Cycle 005 Report - 2026-10-18
+# Cycle 006 report - dialogue/cutscene text program, batch 1 of 4 (25%)
 
-## Objective
-Fix the Test-2 blank-label problem (game side of the ko-KR carrier + font v2 stack),
-report font glyph coverage for Cyrillic/Latin, upgrade the glyph gate with a Cyrillic
-check, build the English-fill carrier, and prepare Test 3 for the user. Nothing was
-installed or uninstalled this cycle (per the standing rule; awaiting user go).
+Date: 2026-10-18. Spec hash at cycle start: PASS
+(579f581e5bb8caae2aff6ef60326f1f461688f1b1392391a56a97a6148a61c35).
+Local git only; `git remote -v` empty; nothing uploaded; no game-folder install.
 
-## Standing verifications
-- MASTER_PROMPT.md integrity: SHA256 verified OK at cycle start
-  (579f581e... guard hash; auto-restore not needed).
-- git remote -v: EMPTY (local-only commits; no-upload rule respected).
-- Game folder untouched except Paks/~mods; no EXE/DLL/Steam files touched.
+## 1. What was asked
 
-## Test 2 diagnosis (outcome D = partial) - Hypothesis CONFIRMED
-1. User hypothesis CONFIRMED: the blank labels are untranslated Korean locres strings.
-   IBM Plex Sans Arabic has ZERO Hangul glyphs, so those strings render blank:
-   `reports/font_block_probe.txt` shows for all three Plex weights:
-   - Latin-Basic: 95 FULL (digits/Latin visible in-game, matches Test-2 report)
-   - Arabic-core: 42 FULL
-   - Cyrillic: 0 ABSENT
-   - Hangul-Syllables: 0 ABSENT
-   - Hangul-Jamo: 0 ABSENT
-2. The two visible Russian labels are NOT locres text; they render through stock faces
-   this project never replaces. Cyrillic-capable stock faces (evidence:
-   `reports/font_glyph_coverage.txt`): BlenderPro family (Cyrillic 94),
-   Gotham-BookItalic (170), Gotham-Black, BrutalType (94), RobotoMono Regular/Bold/Thin
-   (255), Roboto, DroidSansFallback, Noto Sans KR (66 + Hangul). Our font pak replaced
-   only 6 faces (BlenderPro Book/Medium/Bold, BrutalType, Gotham-BookItalic,
-   Gotham-Black) - all other faces keep their original payloads, hence Cyrillic
-   survival. The red color is text styling, not a font artifact.
-3. Font coverage answer (requested): replacement font = IBM Plex Sans Arabic
-   Regular/Medium/Bold - Latin FULL 95/95, Arabic FULL 42/42, Cyrillic ABSENT (0),
-   Hangul ABSENT (0). Latin was the v1 lesson (Naskh had only 15 Latin codepoints);
-   v2 keeps Latin intact. Cyrillic and Hangul are absent by design of this font.
+Extract ALL dialogue and cutscene text (subtitles, dialogue lines, radio, NORA/Char-les,
+cutscene captions, text-stored voice transcripts) in FOUR cumulative batches
+(25/50/75/100%) into `localization/master/atomic-heart-ar.tsv`, English source column
+only (no translation yet), with a full inventory manifest and an exact 100% total.
 
-## Work done (evidence)
-- Fixed the file-size display bug in `scripts/probe_font_blocks.ps1` and reran it;
-  `reports/font_block_probe.txt` regenerated with correct byte sizes (PASS evidence).
-- Glyph gate upgraded in `scripts/build_fontpak_p2_plex.ps1` (PASS with flags, see
-  DEC-016): gate now parses explicit block counts per mapped font and requires
-  Latin-Basic >= 95 AND Arabic-core >= 42; Cyrillic == 0 or Hangul == 0 hard-fails the
-  build unless `-AllowMissingCyrillicHangul` is explicitly passed after human review.
-  v2 was rebuilt under that flag: PASS for all 6 face mappings; the rebuilt font pak's
-  6 payload files are byte-identical to the installed font pak (unpack-compare; only
-  repak container timestamps differ), so the installed font pak stays valid.
-- Carrier builder reworked (`scripts/build_carrier_locres_pak.ps1`):
-  a) Added RFC4180 CSV reading (TextFieldParser). Finding: UnrealLocres exports embed
-     real newlines inside quoted values; the old single-line parser produced 5742
-     pseudo-keys from 5751 lines, with garbage fragment keys. Correct parse: 5597 real
-     keys in BOTH ko-KR and en-US exports (counts agree exactly).
-  b) English-fill policy per user order (DEC-016): seed keys keep Arabic; every other
-     ko-KR key gets the en-US text of the same namespace/key; keys missing in en-US
-     would stay Korean (none in NewP5).
-  c) Full three-class round-trip validation (value = re-export column 1).
+## 2. Work completed this cycle
 
-## Carrier p2 build result
-- Pak: `build/package/zzz_atomicheart-ar_carrier_koKR_p2_P.pak`
-  (zzz_atomicheart-ar_carrier_koKR_p2_P.pak, V11, mount ../../../; new name avoids
-  stale confusion with installed p1)
-- Size: 503,841 bytes; SHA256
-  3d4b0ea65c5dc789be98b46aa18c7c27959445b7d36454616b91be2ae55fa9e1
-- Coverage counts (of 5,597 NewP5 ko-KR keys):
-  - Arabic seed rows: 25
-  - English-filled rows: 5,572
-  - kept Korean (no en-US text): 0
-- Validation: 0 failures across 5,597 keys. 5,541 byte-exact; 56 multiline values
-  differ ONLY in newline encoding (LF vs CRLF) - PASS with recorded delta:
-  UnrealLocres v1.1.0 import normalizes embedded LF to CRLF inside multiline values
-  (KI-015). The engine demonstrably tolerates CRLF: the game's own ko locres ships
-  one native CRLF value. Packing + unpack round-trip: byte-identical (PASS).
-- NOT INSTALLED. Build record: `build/staging/carrier_koKR/carrier_record.txt`.
+| Step | Result | Evidence |
+|---|---|---|
+| Spec hash check | PASS | SHA256 matches the guarded hash |
+| Count pass over 4,325 candidate cooked assets | PASS | 4 workers, 23 min, 4,325 rows, 0 FETCH-FAIL, 0 stderr bytes (reports/dialogue_st_counts.tsv) |
+| Decoder verification (Cyrillic) | PASS | ST_DLC01_Goose_Sentences dump decoded "Все получат по ебалу! И Сережа тоже!" and "Все на перевыборы советов" - no mojibake, no '?' substitution |
+| String selection rule | PASS | DEC-019 prose filter shared by inventory + batch tool (scripts/dialogue_strings_lib.ps1) |
+| Inventory + 100% TOTAL | PASS | reports/dialogue_inventory.md: TOTAL = 10,505 |
+| RU-only separation | PASS | reports/dialogue_ru_only.md: 246 assets / 5,903 strings, excluded from TOTAL |
+| Batch 1 apply (25%) | PASS | covered 2,626 of 10,505 (25%); added 0; already present 2,626; dup 0; retag 3,286 |
+| Validator | PASS | 0 problems, 27,618 rows, UTF-8 round-trip OK, no NEW duplicate ids |
 
-## Documents updated
-- DECISIONS.md: DEC-016 (English-fill carrier policy + CRLF acceptance + glyph gate
-  upgrade, with the human-review exemption flag).
-- KNOWN_ISSUES.md: KI-009 updated (Test-2 partial pass + trade-off), new KI-014
-  (Hangul-blank mechanism CONFIRMED, English-fill mitigation), new KI-015
-  (UnrealLocres LF->CRLF normalization).
-- STATUS.md, CHANGELOG.md: cycle 005 state.
+## 3. Exact inventory (the 100% definition)
 
-## Next steps (Test 3 prepared - needs user GO)
-1. On user's GO: uninstall the Test-2 paks, then install exactly:
-   - zzz_atomicheart-ar_carrier_koKR_p2_P.pak (English-fill carrier)
-   - zzz_atomicheart-ar_font_p2_plex_P.pak (installed copy reused)
-   Manifest-based scripts: uninstall_mod.ps1, then installer set for Test 3.
-2. User in-game test (ko-KR already selected; English voice stays by design).
-   Where to look, and what to screenshot:
-   a) MAIN MENU: menu buttons (seed strings should show Arabic).
-   b) SETTINGS pages: captions such as Balanced / On / Off / Fullscreen
-      (seed strings; untranslated settings text now English instead of blank).
-   c) GO POPUPS: skip a GameTips popup during a mission (Arabic seed text).
-   d) Anything still blank, Russian-only, or rendered right-to-left incorrectly.
-   Screenshot: one of each of a)+b)+c) minimum, plus anything unexpected.
-3. Outcomes: A = Arabic visible in popups/captions AND no more blanks elsewhere
-   (prototype PASS; then plan scale-up: full corpus, composite font Phase 8, KI-013
-   schema tooling); B = Arabic visible but shaped/backwards artifacts (font wiring
-   iteration); C = untranslated text English but Arabic missing where expected
-   (carrier/locres wiring check); D = still blank (needs deeper diagnosis).
-   - If any signature-enforcement error appears: STOP and report (standing rule).
+TOTAL = 10,505 dialogue/cutscene strings that HAVE an English source:
 
-## Artifacts
-- scripts/probe_font_blocks.ps1 (fixed), reports/font_block_probe.txt (regenerated)
-- scripts/build_fontpak_p2_plex.ps1 (gate), rebuild + payload-identity check
-- scripts/build_carrier_locres_pak.ps1 (RFC4180 + fill policy + 3-class validation)
-- build/package/zzz_atomicheart-ar_carrier_koKR_p2_P.pak + carrier_record.txt
-- DECISIONS.md / KNOWN_ISSUES.md / STATUS.md / CHANGELOG.md / this report
+- en-US locres, 14 scopes = 10,394 strings (already in the master TSV before this cycle):
+  Academy_Dialogues 282, Chelomey_Dialogues 1,204, ChelomeyFinal_Dialogues 214,
+  CUTSCENES 840, DIALOGUES FOR LQA 746, OpenWorldVDNKh_Dialogues 443, Pavlov_Dialogues 520,
+  Polygon_Dialogues 199, Schebetar_Subs 361, Theatre_Dialogues 629, Vavilov_Dialogues 2,427,
+  VDNKh_Dialogues 1,292, Cutscenes_dlc1 421 (DLC1), Locations_dlc2 816 (DLC2).
+- cooked assets with English prose = 111 strings in 4 assets:
+  DT_Subtitles_Schebetars 41, DT_Subtitles_DLC02_Schebetars 49 (DLC2),
+  D_DLC04_10 20 (DLC4), NotLifted_17 1 (base cutscene).
 
-## Standing rules at close
-- No installs/uninstalls performed this cycle (Test-2 paks remain in ~mods).
-- No uploads: git remote check EMPTY before commit; commit local-only.
-- KI-010 (ST_GooseRunner_Hints) remains deferred until after the prototype.
+RU-only (no English anywhere, KI-010 class): 246 assets / 5,903 prose strings
+(reports/dialogue_ru_only.md). Excluded from TOTAL and from all batches.
+
+Batch cutoffs (cumulative): batch 1 = 2,626; batch 2 = 5,253; batch 3 = 7,879;
+batch 4 = 10,505.
+
+## 4. Batch 1 result
+
+    [batch 1] TOTAL 10505 strings; cumulative cutoff 2626
+      locres Academy_Dialogues              present 282/282 full retag 282
+      locres Chelomey_Dialogues             present 1204/1204 full retag 1486
+      locres ChelomeyFinal_Dialogues        present 214/214 full retag 1700
+      locres CUTSCENES                      present 840/840 full retag 2540
+      locres DIALOGUES FOR LQA              present 86/746 partial retag 3286
+    [batch 1] covered 2626 of 10505 (25%); added 0; already 2626; dup 0; retag 3286
+    [validation] duplicate ids total 728; pre-existing 728; new 0
+    [validation] PASS (0 problems, 27618 rows)
+    [write] master rows 27618 -> 27618
+
+Coverage by category (cumulative):
+
+| Category | Covered |
+|---|---|
+| Cutscene | 840 of 1,262 (66.6%) |
+| Dialogue | 1,786 of 8,792 (20.3%) |
+| Subtitles | 0 of 451 (0%) |
+
+Coverage by DLC (cumulative):
+
+| DLC | Covered |
+|---|---|
+| base | 2,626 of 9,199 (28.5%) |
+| DLC1 | 0 of 421 (0%) |
+| DLC2 | 0 of 865 (0%) |
+| DLC4 | 0 of 20 (0%) |
+
+Note on "added 0": the batch order (DEC-017) puts the 14 locre sources first and the
+4 cooked English-prose assets last. Batch 1 therefore lies entirely inside the locre
+scope, where every row already existed in the master - so there are 0 new rows and the
+batch's real effect is (a) canonical Category retagging and (b) coverage marking.
+New rows from cooked assets appear in batch 4 (they are the last 111 strings of TOTAL).
+
+## 5. Problems found and fixed this cycle
+
+1. Over-extraction: raw UTF-16 runs gave 5,005,978 "strings" (asset/engine names and
+   binary fragments). Fixed by the DEC-019 prose filter applied identically in the
+   inventory and the batch tool. TOTAL went from a meaningless 5,016,372 to 10,505.
+2. Locres source matching: the batch tool matched `/en-US/<scope>/` but files end
+   `<scope>.locres`, so 0 rows matched on the first run. Fixed to `/en-US/<scope>\.locres$`.
+3. Validator false FAIL: the master already had 728 duplicate IDs (KI-016). The
+   validator now baselines that count and fails only on NEW duplicates.
+4. Retag-only batches were not being persisted (write gate only triggered on row-count
+   change). Fixed: the master is written when rows changed OR any retag occurred.
+5. Stale count-pass generations / alignment-bugged decoder output (DEC-018): all stale
+   dumps and part TSVs were purged and the pass rerun from a clean slate with the
+   verified decoder.
+
+## 6. Artifacts written
+
+- `reports/dialogue_inventory.md` - exact TOTAL, per-source tables, split rule, cutoffs.
+- `reports/dialogue_ru_only.md` - RU-only assets and samples (KI-010 class).
+- `reports/dialogue_st_counts.tsv` - per-asset scan registry (4,325 rows).
+- `reports/dialogue_inventory_raw/sources_lockres.tsv` (14 ordered locre sources),
+  `sources_st.tsv` (4 ordered cooked sources), `chunk_1..4.txt`, `worker_1..4.log/.err`,
+  `counts_part_1..4.tsv`.
+- Scripts: `dialogue_st_counts.ps1`, `dialogue_count_worker.ps1`, `dialogue_strings_lib.ps1`,
+  `dialogue_finalize.ps1`, `dialogue_batch_apply.ps1`.
+- `localization/references/AR_EN_REFERENCE.md` (0 rows with Arabic, by design).
+- Docs: DECISIONS.md (DEC-019, DEC-020), KNOWN_ISSUES.md (KI-016), STATUS.md, HANDOFF.md.
+
+## 7. State and next action
+
+- Text only: no audio/video/media touched; no raw game asset committed (the 4,319
+  string dumps live under `localization/extracted/dialogue/`, which is gitignored).
+- Game folder read-only; nothing installed or removed this cycle; Test-3 paks in `~mods`
+  were not disturbed.
+- Arabic column remains empty (translation deliberately not started).
+- Next action: wait for the user's "next", then run batch 2 (50%, cutoff 5,253), which
+  completes DIALOGUES FOR LQA, OpenWorldVDNKh_Dialogues and Pavlov_Dialogues.

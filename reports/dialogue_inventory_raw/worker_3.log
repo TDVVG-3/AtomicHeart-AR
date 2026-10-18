@@ -1,0 +1,8 @@
+[worker 3] known dumps: 0
+[worker 3] to do: 1081
+[worker 3] 200 done, 3 min
+[worker 3] 400 done, 8 min
+[worker 3] 600 done, 13 min
+[worker 3] 800 done, 17 min
+[worker 3] 1000 done, 21 min
+[worker 3 DONE] 1081 rows in 23 min

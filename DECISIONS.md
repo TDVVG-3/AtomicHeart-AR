@@ -374,3 +374,123 @@ Decision (user order, cycle 005 step 3):
   is passed after human review (v2 currently built under that flag because the
   Russian labels are proven to use faces outside this pak).
 - Nothing installed without the user's explicit go (Test 3 = carrier p2 + font v2).
+---
+
+## DEC
+
+### DEC-018 (new): Count-pass generations and dump-folder validity
+
+Three earlier count-pass generations (v1a --output failure, v1-broken-cmd quoting, v2 pre-fix)
+left a mixed dump folder: localization/extracted/dialogue/ contained 393 stale dumps from
+superseded runs while reports/dialogue_st_counts.tsv had 235-792 rows depending on the
+generation (per-run ring-rewrite would truncate or append TSV rows; dump folder accumulates).
+Cause: each run writes dumps without cleaning, while rewriting the TSV; runs were killed
+mid-flight. Resolution: all stale dumps + part TSVs PURGED (validity of old-generation dumps
+unproven: at least one earlier generation ran with a decoder that had a 2-byte alignment bug).
+The 4-worker parallel pass (scripts/dialogue_count_worker.ps1, chunked, resumable by
+dump-file existence) reruns 2026-10-18 from a clean slate; only dumps from the verified
+decoder are trusted (decoder verified byte-exact against ST_GameTips_Texts.uexp: char
+0x0427 0x0442 ... = "Чтобы", no mojibake).
+
+### DEC-017 - Prototype menu milestone + dialogue/cutscene batch program
+
+Date: 2026-10-18
+Status: ACTIVE
+
+**Part 1 - Test 3 main menu (CONFIRMED by user screenshot):** outcome A. Arabic renders
+correctly (connected letters, correct RTL order, Latin readable). Prototype text+wiring
+is proven for locres-scope strings rendered through face-mapped UI. Test 3 fully closes
+only after the user checks settings pages and GameTips popups (this file/STATUS/io will
+be updated then).
+
+**Part 2 - Dialogue and cutscene text program (user order, 4 cumulative batches).**
+Rules (all evidence-based, no guessing):
+1. Scope (locres): the game has EXACTLY 35 en-US locres scopes (all in pakchunk0; full
+   list in reports/dialogue_inventory.md). Dialogue/cutscene-scope by FILE NAME +
+   evidence-backed master categories:
+   - *_Dialogues + DIALOGUES FOR LQA (Category 'Dialogue Dialogue' in master):
+     10 scopes = 7,956 strings.
+   - Locations_dlc2 (Category 'Dialogue' in master): 816 strings.
+   - CUTSCENES (Category 'Subtitles Subtitles'): 840; Cutscenes_dlc1 (Category
+     'Subtitles'): 421; Schebetar_Subs (scope name *_Subs): 361.
+   - locres dialogue-scope subtotal: 10,394 strings (NOTE: Schebetar_Subs category is
+     'Unknown' in master and will be classed as Subtitles at extraction).
+2. Scope (non-locres): dialogue-bearing cooked assets under
+   Maps/Development/Dialogue_Test/ (Narrative_LS, Localisation_LS, OpenWorldCorpses,
+   Schebetars_Subs/DT_Subtitles_Schebetars), the DLC Narrative folders, and other
+   StringTable/dialogue assets that the string scan proves carry dialogue text.
+   Per-culture duplicate trees (Localisation_LS/<language>/) collapse to ONE logical
+   source per base name; English text is used when an En/US variant exists, otherwise
+   the asset is RU-only and goes to reports/dialogue_ru_only.md (never into the English
+   column). RU text of non-RU-only tables is NOT extracted (translation sources only).
+3. The 100% TOTAL = every dialogue/cutscene STRING with an English source (locres rows
+   already in the master TSV + English-string counts of in-scope cooked assets).
+   RU-only strings are tracked and reported separately and do NOT count into TOTAL.
+4. Batch split: cumulative 25/50/75/100% of TOTAL. Order rule (documented since game
+   progression order is NOT determinable from asset names alone): base-game sources
+   alphabetically, then DLC1, DLC2, DLC3, DLC4, then non-locres cooked assets in
+   container order. Each batch covers everything before it (cumulative).
+5. Master rows: Namespace/Key kept exactly as extracted; Category = Dialogue,
+   Subtitles or Cutscene; Speaker/Context only with evidence, else empty; placeholders
+   and rich-text tags preserved exactly; no duplicates; existing rows are never
+   content-overwritten (a same-key existing row counts as 'already present').
+   LQA/UI rows already in the master keep their categories (anchor rows re-labelled
+   by this program only for master rows in the dialogue scope).
+6. Validator must PASS per batch (duplicates, empty sources, placeholders/UTF-8).
+   Every percentage is quoted against TOTAL as 'N of TOTAL (X%)'.
+
+## DEC-019: String selection rule for cooked assets (prose filter) - 2026-10-18
+
+Context: the first count pass extracted every printable UTF-16 run from each `.uexp`.
+That over-extracted massively (5,005,978 "strings" - asset names, property names,
+binary fragments, duplicates), which is not dialogue text. An inventory TOTAL built on
+raw runs would be meaningless, and the batch rows would be noise.
+
+Decision: a dumped string counts as DIALOGUE/CUTSCENE TEXT only if it passes the prose
+filter, implemented once in `scripts/dialogue_strings_lib.ps1` (`Get-DialogueStrings`)
+and used IDENTICALLY by the inventory finalizer and the batch tool, so coverage
+arithmetic is consistent:
+  - taken from the UTF-16 section only (the ASCII section is cooked names/keys);
+  - trimmed length 8..1000;
+  - contains at least one space;
+  - at least 2 alphabetic words (runs of 3+ letters: Latin / Cyrillic / Arabic / Hebrew);
+  - does not look like a path/name/engine token (no '/', '\', ':', '::', '.uasset',
+    '.uexp', '.locres', '.png', '.wav', '.ogg', '.umap', no leading DC_/BP_/ST_/LS_/SK_/
+    M_/T_/SM_, no Property/Function/Blueprint/Struct/Enum/Class/Asset/Package/Level/
+    Component/Actor);
+  - duplicates within one asset collapse to one string (raw scans repeat).
+Rich-text tags (`<tag .../>`, `<h>...</>`) are preserved EXACTLY inside the string.
+
+Consequence (evidence, reports/dialogue_inventory.md): the cooked non-locres dialogue
+assets are almost entirely RUSSIAN-only (KI-010 class). Out of 4,033 in-scope assets,
+only 4 carry English prose (111 strings); 246 are RU-only (5,903 prose strings). So the
+English-source dialogue universe is effectively the en-US locres.
+
+## DEC-020: Dialogue 100% TOTAL, RU-only split and batch coverage arithmetic - 2026-10-18
+
+Definition of the exact 100% total (written to `reports/dialogue_inventory.md`):
+
+  TOTAL = 10,505 dialogue/cutscene strings that HAVE an English source
+        = 10,394 en-US locres strings (14 scopes, already present in the master TSV)
+        +    111 cooked-asset English-prose strings (4 assets, DEC-019 filter).
+
+  RU-only strings (246 assets, 5,903 prose strings) are listed in
+  `reports/dialogue_ru_only.md` (same class as KI-010), are NEVER written into the
+  English source column and do NOT count into TOTAL.
+
+Batch split: cumulative 25/50/75/100% of TOTAL, cutoffs 2,626 / 5,253 / 7,879 / 10,505.
+Order = DEC-017 (locres base alphabetical, then DLC, then cooked assets by DLC; kind; path).
+Because the cooked English-prose assets are the last 4 sources in that order, batches
+1-3 are locre coverage and batch 4 adds the 4 cooked assets.
+
+Boundary rule (explicit): Category retagging is applied per SOURCE, so a source that
+straddles a batch boundary is fully retagged by the batch that first touches it, while
+its CONTRIBUTION TO COVERAGE is capped at the exact string cutoff. Content columns
+(source English, Arabic, keys, namespace) are never touched by a retag. Evidence: batch 1
+covered 2,626 strings but retagged 3,286 rows (the straddling DIALOGUES FOR LQA source).
+
+Duplicate rule: the master TSV already contained 728 duplicate IDs before this program
+(recorded as KI-016). The validator therefore compares duplicates against that baseline
+and FAILS only if this program introduces NEW duplicates.
+
+Reporting rule: every percentage is quoted as 'N of TOTAL (X%)', per category and per DLC.
