@@ -85,6 +85,8 @@ Step G  Batch 1 apply (25%):                PASS (covered 2,626 of 10,505 (25%);
 Step H  Validator (batch 1):                PASS (0 problems; UTF-8 no U+FFFD; no NEW duplicate ids; 27,618 rows)
 Step I  Batch 2 apply (50%):                PASS (covered 5,253 of 10,505 (50%); added 0; already present 5,253; retag 2,152; DIALOGUES FOR LQA now complete; Schebetar_Subs 361 retagged from "Unknown" to Subtitles)
 Step J  Validator (batch 2, idempotent re-run): PASS (0 problems; retag 0; master untouched; 27,618 rows)
+Step K  Batch 3 apply (75%):                PASS (covered 7,879 of 10,505 (75%); added 0; already present 7,879; retag 3,719 = Vavilov 2,427 + VDNKh 1,292; Theatre_Dialogues complete)
+Step L  Validator (batch 3, idempotent re-run): PASS (0 problems; retag 0; master untouched; 27,618 rows)
 ```
 
 Facts:
