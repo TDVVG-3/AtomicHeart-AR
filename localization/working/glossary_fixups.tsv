@@ -1,0 +1,2 @@
+pattern	replacement	note
+(?i)\bCHAR-?LES\b	تشارلز	glossary alignment: CHARLES / Char-les render as the glossary Arabic

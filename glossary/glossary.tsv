@@ -1,0 +1,137 @@
+term	arabic	category	reason	status	notes
+NORA	نورا	character	transliterated	DRAFT	vending-machine AI; kept as a name
+CHAR-les	تشارلز	character	transliterated	DRAFT	the talking glove AI; Latin forms CHAR-les/CHARLES/Charles all map here
+CHARLES	تشارلز	character	transliterated	DRAFT	same as CHAR-les
+Sechenov	سيتشينوف	character	transliterated	DRAFT	Dmitry Sechenov, Facility director
+Dmitry Sechenov	دميتري سيتشينوف	character	transliterated	DRAFT	
+Nechaev	نيتشاييف	character	transliterated	DRAFT	Sergey Nechaev = P-3, the player
+Sergey Nechaev	سيرغي نيتشاييف	character	transliterated	DRAFT	
+Major Nechaev	الرائد نيتشاييف	character	transliterated	DRAFT	military rank kept as a separate term
+Nechaeva	نيتشايفا	character	transliterated	DRAFT	family name, feminine
+Katya Nechaeva	كاتيا نيتشايفا	character	transliterated	DRAFT	
+Ekaterina Nechaeva	إيكاترينا نيتشايفا	character	transliterated	DRAFT	
+P-3	P-3	character	preserved	DRAFT	experiment code shown as P-3 in the UI; kept in Latin
+Petrov	بيتروف	character	transliterated	DRAFT	Viktor Petrov
+Viktor Petrov	فيكتور بيتروف	character	transliterated	DRAFT	
+Zakharov	زاخاروف	character	transliterated	DRAFT	Chariton Zakharov, the scientist behind Kollektiv
+Chariton Zakharov	خاريتون زاخاروف	character	transliterated	DRAFT	
+Chariton Radeonovich	خاريتون راديونوفيتش	character	transliterated	DRAFT	patronymic, transliterated
+Vavilov	فافيلوف	character	transliterated	DRAFT	also the name of the complex
+Filatova	فيلاتوفا	character	transliterated	DRAFT	
+Stockhausen	شتوكهاوزن	character	transliterated	DRAFT	
+Pavlov	بافلوف	character	transliterated	DRAFT	also the name of the complex
+Lebedev	ليبيديف	character	transliterated	DRAFT	Alexey Lebedev
+Tereshkova	تيريشكوفا	character	transliterated	DRAFT	
+Molotov	مولوتوف	character	transliterated	DRAFT	
+Lastochkin	لاستوتشكين	character	transliterated	DRAFT	theater director
+Blesna	بليسنا	character	transliterated	DRAFT	agent Blesna
+Terentiy	تيرينتي	character	transliterated	DRAFT	
+Samodelkin	ساموديلكين	character	transliterated	DRAFT	
+Kuropatkin	كوروباتكين	character	transliterated	DRAFT	
+Korolyov	كوروليف	character	transliterated	DRAFT	
+Nazarova	نازاروفا	character	transliterated	DRAFT	
+Uvarov	أوفاروف	character	transliterated	DRAFT	
+Orlikov	أورليكوف	character	transliterated	DRAFT	
+Yelizarova	يليزاروفا	character	transliterated	DRAFT	
+Plutonium	بلوتونيوم	character	transliterated	DRAFT	agent codename
+Granny Zina	الجدة زينا	character	translated	DRAFT	"Granny" translated, name transliterated
+Kolya	كوليا	character	transliterated	DRAFT	familiar form of Nikolai
+VOV-A6	VOV-A6	robot	preserved	DRAFT	model number; kept in Latin exactly as shown
+Vova	فوفا	robot	transliterated	DRAFT	nickname for the VOV bots
+Plyusch	بليوش	robot	transliterated	DRAFT	question: Russian for "ivy"; transliteration chosen for the robot name
+Belyash	بيلياش	robot	transliterated	DRAFT	robot nicknamed after a fried-dough snack
+Burav	بوراف	robot	transliterated	DRAFT	question: Russian for "drill"
+Kondor	كوندور	robot	transliterated	DRAFT	Russian for "condor"
+Secateur	المقصّ	robot	translated	DRAFT	question: a pruning-shears robot; translated
+Ballerina	الباليرينا	robot	transliterated	DRAFT	question: could be "راقصة الباليه"
+Prima Ballerina	الباليرينا الأولى	robot	translated	DRAFT	
+Dewdrop	قطرة الندى	robot	translated	DRAFT	
+Mutant	متحوّل	creature	translated	DRAFT	
+Polymorph	بوليمورف	creature	transliterated	DRAFT	
+Brown Plague	الطاعون البني	creature	translated	DRAFT	
+Puppet	دمية	creature	translated	DRAFT	
+Hedgie	هيدجي	robot	transliterated	DRAFT	question: nickname of surveyor robot HOG-7
+HOG-7	HOG-7	robot	preserved	DRAFT	model number
+Icarus	إيكاروس	location	transliterated	DRAFT	floating platform
+Icarus Platform	منصة إيكاروس	location	translated	DRAFT	
+Facility 3826	المنشأة 3826	location	translated	DRAFT	the game's main complex; number kept in Western digits
+Vavilov Complex	مجمّع فافيلوف	location	translated	DRAFT	
+Pavlov Complex	مجمّع بافلوف	location	translated	DRAFT	
+Mendeleev Complex	مجمّع مندليف	location	translated	DRAFT	
+Chelomey	تشيلومي	location	transliterated	DRAFT	
+Chelomey City	مدينة تشيلومي	location	translated	DRAFT	
+VDNH	فيدنخا	location	transliterated	DRAFT	question: museum-park district; transliteration "فيدنخا"
+Theater	المسرح	location	translated	DRAFT	
+Maya Plisetskaya Theater	مسرح مايا بليستسكايا	location	translated	DRAFT	
+Kollektiv	كوليكتيف	location	transliterated	DRAFT	the neural network / hivemind
+Kollektiv 2.0	كوليكتيف 2.0	location	transliterated	DRAFT	
+Kollektiv Neural Network	الشبكة العصبية كوليكتيف	location	translated	DRAFT	
+Limbo	ليمبو	location	transliterated	DRAFT	
+Sakhalin	ساخالين	location	transliterated	DRAFT	
+Triton	ترايتون	location	transliterated	DRAFT	
+Phasotron	فازاترون	location	transliterated	DRAFT	
+Crystal Complex	المجمّع البلوري	location	translated	DRAFT	
+Wave Platform	منصة الموج	location	translated	DRAFT	
+Swamps	المستنقعات	location	translated	DRAFT	DLC1 location; the English text uses "Swamps"
+Dolphin City	مدينة الدلافين	location	translated	DRAFT	
+Hot Workshop	الورشة الساخنة	location	translated	DRAFT	
+Algae Workshop	ورشة الطحالب	location	translated	DRAFT	
+Moscow	موسكو	location	translated	DRAFT	real place name
+USSR	الاتحاد السوفييتي	term	translated	DRAFT	
+Soviet Union	الاتحاد السوفييتي	term	translated	DRAFT	
+Soviet	سوفييتي	term	translated	DRAFT	
+Motherland	الوطن الأم	term	translated	DRAFT	
+Polymer	بوليمر	material	transliterated	DRAFT	
+Polymers	البوليمرات	material	transliterated	DRAFT	plural
+Polymeric	بوليمري	material	transliterated	DRAFT	adjective
+Neuropolymer	البوليمر العصبي	material	translated	DRAFT	
+Neuropolymer Accelerator	مسرّع البوليمر العصبي	material	translated	DRAFT	
+Neuromed	نيوروميد	item	transliterated	DRAFT	medkit brand
+Voskhod	فوسخود	material	transliterated	DRAFT	question: Russian for "sunrise"
+Argentum	أرجنتوم	material	transliterated	DRAFT	question: Latin for "silver"
+Lumino-Polymer	لومينو-بوليمر	material	transliterated	DRAFT	
+Combat Polymer	البوليمر القتالي	material	translated	DRAFT	
+Cryopolymer	كرايو-بوليمر	material	transliterated	DRAFT	question: "cryo" + polymer
+Chirper	تشيربر	item	transliterated	DRAFT	portable recorder device
+PEAR	PEAR	item	preserved	DRAFT	terminal network name; kept in Latin
+Terminal	محطة طرفية	item	translated	DRAFT	
+Canister	حاوية	item	translated	DRAFT	
+Blueprint	مخطط	item	translated	DRAFT	
+Recipe	وصفة	item	translated	DRAFT	
+Cartridge	خرطوشة	item	translated	DRAFT	
+Module	وحدة	item	translated	DRAFT	
+Workshop	ورشة	item	translated	DRAFT	
+Upgrade	ترقية	ui	translated	DRAFT	
+Crafting	التصنيع	ui	translated	DRAFT	
+Magnetic Beacon	منارة مغناطيسية	item	translated	DRAFT	
+Gadfly	جادفلاي	item	transliterated	DRAFT	question: Russian for "gadfly"
+Monorail	مونوريل	ui	transliterated	DRAFT	question: could be "أحادي السكة"
+Comrade	الرفيق	title	translated	DRAFT	Soviet address form
+Comrade Major	الرفيق الرائد	title	translated	DRAFT	
+Major	الرائد	title	translated	DRAFT	
+Professor	البروفيسور	title	translated	DRAFT	
+Doctor	دكتور	title	translated	DRAFT	
+Dr	د.	title	translated	DRAFT	abbreviation of Doctor
+SHOK	شوك	ability	transliterated	DRAFT	question: Russian for "shock"; displayed as SHOK
+Frostbite	الصقيع	ability	translated	DRAFT	
+Telekinesis	تليكينيسيس	ability	transliterated	DRAFT	question: could be "تحريك الأشياء عن بُعد"
+Mass Telekinesis	تليكينيسيس جماعي	ability	transliterated	DRAFT	
+Polymeric Jet	النفّاثة البوليمرية	ability	translated	DRAFT	
+Polymeric Shield	الدرع البوليمري	ability	translated	DRAFT	
+Cryo Jet	النفّاثة المتجمّدة	ability	translated	DRAFT	
+Electro	إلكترو	weapon	transliterated	DRAFT	
+Dominator	دومينيتور	weapon	transliterated	DRAFT	
+Railgun	المدفع القضباني	weapon	translated	DRAFT	question: could be transliterated "ريلغن"
+Shotgun	بندقية رش	weapon	translated	DRAFT	
+Kalash	كلاش	weapon	transliterated	DRAFT	slang for the Kalashnikov
+Zvezdochka	زفيزدوتشكا	weapon	transliterated	DRAFT	question: Russian for "little star"
+Fat Boy	الفتى السمين	weapon	translated	DRAFT	heavy weapon nickname
+Swede	السويدي	weapon	translated	DRAFT	weapon nickname
+Snowball	كرة الثلج	weapon	translated	DRAFT	
+Needle	الإبرة	weapon	translated	DRAFT	
+Whip	السوط	weapon	translated	DRAFT	
+Glove	القفّاز	term	translated	DRAFT	the Polymer glove
+PASHTET	باشتيت	weapon	transliterated	DRAFT	Russian nickname (pate); shown as PASHTET
+BEA-D	BEA-D	robot	preserved	DRAFT	model designation; plural BEA-Ds; kept in Latin
+Archive	الأرشيف	location	translated	DRAFT	the Academy Archive
+Electro Capsule	كبسولة إلكترو	item	translated	DRAFT	energy capsule consumable

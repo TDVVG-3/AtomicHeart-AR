@@ -106,3 +106,74 @@ Facts:
 - No install/uninstall action this cycle; `~mods` still holds the Test-3 paks (untouched).
 - Nothing uploaded; `git remote -v` empty.
 
+## Cycle 006 - Test 3 user results (2026-10-18, user screenshots)
+
+```
+Step R  Test 3 Settings page:   PASS  A  ("Window mode" = correct Arabic "ملء الشاشة",
+                                          connected letters, RTL correct, Latin readable)
+Step S  Test 3 Dialogue:        PASS  A (rendering)  Subtitles visible and readable,
+                                          showing KOREAN (dialogue not translated yet).
+                                          Quest title + objective show English fill,
+                                          no blanks anywhere on screen.
+Step T  Test 3 GameTips popup:  NOT TESTED (user could not reach one in this pass)
+Step U  Subtitle font check:    PARTIAL/UNKNOWN - see KI-009 and DEC-022
+```
+
+Facts from the user's Test 3:
+- Settings Arabic = outcome A; no blank labels; Latin readable (English-fill carrier works).
+- HUD/quest text = English fill, no blanks (carrier p2 works outside the seeded labels).
+- Dialogue subtitles render and are legible, but in Korean (expected: dialogue is not
+  translated yet). The user observed Hangul rendering, which means the subtitle glyphs
+  did NOT come from an Arabic-only (Latin+Arabic) face.
+- User conclusion recorded verbatim as an observation: the subtitle font is NOT one of
+  the 6 faces the v2 font pak replaces; Arabic support for the subtitle font = UNKNOWN.
+- Project finding (evidence, DEC-022): the subtitle text widget resolves its FontObject
+  to `/Game/Development/UI/Fonts/BlenderPro-Medium_Font` (WBP_TypingTextBox, the parent of
+  WBP_OneSubtitle / WBP_NPCSubtitle; DT_Game_Text_Style also points at
+  BlenderPro-Medium_Font). BlenderPro-Medium.ufont IS in the v2 replace map, so the
+  subtitle face already carries Plex Arabic (42/42). The Hangul the user saw is the
+  engine GLYPH FALLBACK (DroidSansFallback / NotoSansKR cover Hangul), not the subtitle
+  face itself. Net: Arabic subtitles are expected to render; the pilot is the test.
+- GameTips: still NOT TESTED; stays open.
+
+
+## Cycle 007 - Arabic translation program: Phase 0 + pilot build (2026-10-18)
+
+```
+Phase 0 step 1  TOTAL definition:            PASS  TOTAL = 27,618 rows / 19,996 unique
+                                                   English strings (TECHNICAL 0, BLOCKED 0)
+Phase 0 step 2  work order + cutoffs:        PASS  scripts/translation_plan.ps1 -> reports/
+                                                   translation_plan.md (deterministic)
+Phase 0 step 3  glossary (before translating): PASS 136 entries, all DRAFT, all verified
+                                                   present in the corpus; 26 open questions
+                                                   for the user (glossary_questions.md)
+Phase 0 step 4  style guide:                 PASS  glossary/terminology.md (MSA, tone map,
+                                                   digits, punctuation, tags, length, TM,
+                                                   Status workflow, validation gates)
+Pilot step 5    pilot translation (60 rows): PASS  20 UI + 20 short + 20 long (57 unique
+                                                   strings) + 25 phase-7 seeds = 85 rows
+                                                   with Arabic, all Status DRAFT
+Pilot step 5b   validator:                   PASS  0 errors; 1 accepted length warning
+                                                   (proper name H. P. Lovecraft)
+Pilot step 6    subtitle font + glyph gate:  PASS  reports/glyph_gate.md - all 113 distinct
+                                                   codepoints of the pilot Arabic present in
+                                                   BlenderPro-Medium (subtitle face); no font
+                                                   pak extension required
+Pilot step 7    carrier builder extended:    PASS  scripts/build_carrier_locres_pak.ps1 now
+                                                   builds ALL 35 ko-KR scopes (was NewP5 only)
+Pilot step 7b   pilot pak p3 built:          PASS  35 scopes / 27,618 keys / 85 Arabic /
+                                                   27,533 English-filled / 0 kept Korean;
+                                                   round-trip 0 failures; unpack verify
+                                                   35/35 byte-identical. NOT INSTALLED.
+Pilot step 8    pilot checklist + handoff:   PASS  reports/pilot_in_game_checklist.md,
+                                                   HANDOFF.md rewritten, committed locally
+Pilot gate      user in-game report:         NOT TESTED  waiting for the user
+```
+
+Facts:
+- Master rows with Arabic: 85 (60 pilot + 25 seeds). Coverage: 85 of 27,618 (0.3%).
+- Translation memory: 82 unique English strings (57 pilot + 25 seed), localization/working/tm.tsv.
+- DEFECT FOUND AND FIXED before shipping: the installed carrier p2 carried malformed
+  rich-text tags in the 7 seeded game tips (KI-019). p3 carries the corrected tags.
+- Translation unit = unique English string (DEC-023); 27,618 rows reduce to 19,996 units,
+  so reuse across identical strings is accounted for from the start.

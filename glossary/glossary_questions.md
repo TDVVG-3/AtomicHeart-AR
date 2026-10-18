@@ -1,0 +1,145 @@
+# Glossary questions for review (DRAFT - needs your decision)
+
+Date: 2026-10-18
+Scope: entries in `glossary/glossary.tsv` where the choice between
+TRANSLITERATION (Arabic letters, sound kept), TRANSLATION (meaning rendered) and
+PRESERVATION (kept in Latin script) is a judgement call, not a fact.
+
+How to answer: reply with the item number and the option letter, e.g. "1B, 2A, 3C".
+Anything you do not answer keeps my RECOMMENDED option (marked with `*`).
+
+Rule I applied everywhere else: real people = transliterated; places = translated;
+model codes = preserved; ordinary nouns (weapon/ability/UI) = translated unless the
+English itself is a proper series name.
+
+Arabic script for each option is in `glossary/glossary.tsv` (the Arabic column); this
+file is ASCII-only on purpose (report/handling rule).
+
+---
+
+## A. Model codes and acronyms
+
+1. **VOV-A6**, **HOG-7**, **BEA-D(s)**, **P-3**
+   - A* preserve exactly in Latin (recommended: model codes stay readable)
+   - B transliterate into Arabic letters
+
+2. **PEAR** (terminal network), **HAWK** (uplink platform)
+   - A* preserve in Latin (they are shown as brand-like names in the UI)
+   - B transliterate
+
+3. **VDNH** (the Moscow exhibition district)
+   - A preserve "VDNH" in Latin
+   - B transliterate as "FIDNKHA"
+   - C* transliterate as "FY DY IN ITH" (letter-by-letter, common in Arabic press)
+   - Note: the English source itself shows "VDNH", so A is the safest for UI width.
+
+## B. Robot and weapon nicknames with a Russian meaning
+
+4. **Plyusch** (Russian for ivy), **Burav** (drill), **Kondor** (condor),
+   **Belyash** (fried-dough snack), **Secateur** (pruning shears),
+   **PASHTET** (pate), **Gadfly**
+   - A* transliterate as names (recommended: they behave like names in dialogue)
+   - B translate the meaning in dialogue and keep the transliteration in the UI
+
+5. **Ballerina / Prima Ballerina** (boss robot)
+   - A* transliterate "Balerina" / "al-Balerina al-oola"
+   - B translate "raqisat al-balih" / "raqisat al-balih al-oola"
+
+6. **Dewdrop** (DLC3 robot)
+   - A* translate "qatrat al-nada"
+   - B transliterate "Dyu-drup"
+
+7. **Fat Boy**, **Snowball**, **Swede**, **Needle**, **Whip**
+   - Already translated (they are English nicknames, not transliterations).
+   - Confirm: A* keep translated. B keep Latin.
+
+## C. Science and soviet terms
+
+8. **SHOK** (Russian for shock; shown as SHOK)
+   - A* transliterate "SHUK"
+   - B translate "al-sa'q" (the shock)
+
+9. **Voskhod** (polymeric brain extension; Russian for sunrise)
+   - A* transliterate "FOSKHOD"
+   - B translate "al-shurooq"
+
+10. **Argentum** (special-forces unit; Latin for silver)
+    - A* transliterate "ARGENTUM"
+    - B translate "al-fidda"
+
+11. **Kollektiv / Kollektiv 2.0** (the neural network)
+    - A* transliterate "KOLIKTIF"
+    - B translate "al-jama'a" / "al-jama'iya"
+
+12. **Limbo** (the neural-interface space)
+    - A* transliterate "LIMBO"
+    - B translate "al-ghayb" (the unseen)
+
+13. **Neuropolymer** (chosen: translated "al-bulimer al-asabi") and
+    **Cryopolymer** (chosen: transliterated "krayo-bulimer")
+    - Inconsistent? A* keep both as chosen
+    - B make both translated
+    - C make both transliterated
+
+14. **Neuromed** (medkit brand)
+    - A* transliterate "NYUROMID"
+    - B translate "al-dawa al-asabi"
+
+15. **Telekinesis / Mass Telekinesis** (ability)
+    - A* translate "tahrik al-ashya' an bu'd" (clear to players)
+    - B transliterate "tilikinisis"
+
+16. **Railgun**
+    - A* translate "al-midfa' al-qadb-ani"
+    - B transliterate "ra-ylghun"
+
+17. **Monorail**
+    - A* transliterate "MONORAIL"
+    - B translate "uhadi al-sikka"
+
+18. **Zvezdochka** (weapon series)
+    - A* transliterate "ZVEZDOCHKA"
+    - B translate "al-nujayma" (the little star)
+
+19. **Frostbite** (ability)
+    - A* translate "al-saqi'" (the frost)
+    - B transliterate
+
+## D. Tone and content
+
+20. **Comrade**
+    - A* "al-rafiq" (classic Soviet tone, recommended)
+    - B "al-zamil" (neutral)
+
+21. **Comrade Major**
+    - A* "al-rafiq al-raid"
+    - B "hadrat al-raid" (formal address)
+
+22. **Profanity and insults** - your standing rule is "do not sanitize".
+    - A* translate faithfully, keep the character's register (recommended)
+    - B soften the strongest terms
+
+23. **Fragment/timing markers** in dialogue, e.g. `*0.10*`, `*0.05*`, `\n`
+    - A* preserve byte-exactly (recommended: they are engine markers, not prose)
+    - B strip them from the Arabic (would change timing/behaviour - not recommended)
+
+## E. Formatting
+
+24. **Digits**: Western 0-9 everywhere (your rule).
+    - A* as agreed. Numbers inside names (Facility 3826, Kollektiv 2.0) stay Western.
+
+25. **Punctuation**: Arabic question mark and Arabic comma where natural.
+    - A* as agreed (characters U+061F and U+060C).
+
+26. **Ellipsis**: keep the source's "..." (three dots) rather than a single glyph.
+    - A* three ASCII dots (matches the source, avoids font surprises)
+    - B Arabic ellipsis character
+
+---
+
+## Mechanical items (no answer needed, listed for transparency)
+
+- Rich-text tags `<h>...</>`, `<c>...</>`, `<img id="..."/>`, `<tag id="..."/>`,
+  placeholders `{0}`, `%s`, escapes `\n` are copied byte-exactly into Arabic.
+- Latin key names ("E", "Q", "ESC") stay Latin.
+- These are enforced automatically by the validator, not by judgement.

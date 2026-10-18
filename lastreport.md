@@ -1,44 +1,53 @@
-# Cycle 006 report (addendum) - Test 3 checklist issued
+# Cycle 007 report - Arabic translation program: Phase 0 + pilot build
 
-Date: 2026-10-18 19:5x. Spec hash: unchanged/PASS
-(579f581e5bb8caae2aff6ef60326f1f461688f1b1392391a56a97a6148a61c35).
-Local git only; `git remote -v` empty; nothing uploaded.
+Date: 2026-10-18 (local 20:49 +03:00 / UTC 17:49)  |  State: PILOT BUILT, NOT INSTALLED - gate reached
 
-## What was done
+## What this cycle did
 
-- Pulled the original Test-3 checklist and its A/B/C/D semantics back out of
-  reports/history/report_005.md, and the Arabic seed list from
-  localization/working/phase7_seed.csv, so the new checklist matches what is actually
-  seeded in the installed carrier.
-- Read-only verification of the installed set (nothing installed or removed):
-  - `~mods/zzz_atomicheart-ar_carrier_koKR_p2_P.pak` 503,841 B
-  - `~mods/zzz_atomicheart-ar_font_p2_plex_P.pak` 1,461,408 B
-  - manifest atomic-heart-ar-install-manifest.json matches both SHA256 values
-  - stock Paks root = 19 files, untouched
-- Wrote reports/test3_checklist.md: a non-developer checklist for
-  (1) the Settings page, (2) a Game Tips popup, (3) a dialogue/subtitle scene, with
-  exactly what to screenshot and the A/B/C/D letter definitions per screen, plus an
-  appendix containing the exact expected Arabic for the 9 settings labels, the 7 game
-  tips and the 9 menu strings.
+1. Phase 0 (no stopping between steps):
+   - TOTAL = 27,618 master rows with a non-empty English source (Status TECHNICAL 0, BLOCKED 0);
+     19,996 UNIQUE English strings = the size of the work, since each unique string is
+     translated once and reused where the context matches.
+   - Work order written to reports/translation_plan.md: tier 1 UI/menus/HUD/tutorials/items/
+     weapons/skills/objectives, tier 2 dialogue/subtitles/cutscenes, tier 3 lore/mail/DLC/credits.
+     Cumulative cutoffs: batch1 6,905 (25%), batch2 13,809 (50%), batch3 20,714 (75%),
+     batch4 27,618 (100%).
+   - Glossary built BEFORE translating: 136 entries (all DRAFT), every entry verified to occur
+     in the English corpus. 26 judgement calls left for the user in glossary_questions.md.
+   - Style guide glossary/terminology.md: MSA, register map per character, Western digits only,
+     Arabic question mark/comma, byte-exact tags/placeholders/engine markers, UI length rule,
+     translation-memory rule, Status workflow, validation gates.
 
-## Checklist content (summary)
+2. Pilot (steps 5-8):
+   - 60 rows translated (20 UI, 20 short dialogue, 20 long subtitle incl. tags/markers/numbers)
+     = 57 unique strings, plus the 25 phase-7 seed rows carried forward => 85 rows with Arabic,
+     all Status DRAFT. Coverage: 85 of 27,618 (0.3%).
+   - Validator PASS with 0 errors (1 accepted length warning on a proper name).
+   - Glyph gate PASS: all 113 distinct codepoints used by the pilot Arabic exist in the subtitle
+     face the v2 font pak installs (BlenderPro-Medium -> IBM Plex Sans Arabic Medium). No font
+     pak extension is needed for the pilot.
+   - Carrier builder extended from NewP5-only to ALL 35 ko-KR locres scopes (UI, dialogue,
+     subtitles, cutscenes, mail, DLC). Pilot pak p3: 27,618 keys, 85 Arabic, 27,533 English-fill,
+     0 kept Korean, round-trip 0 failures, unpack verify 35/35 byte-identical. NOT installed.
 
-- Do not install/uninstall; keep the language on Korean; English voice is normal.
-- Settings (Step 1): the nine seeded labels - Balanced, Performance, Quality, Boost,
-  On, Off, Fullscreen, Window, Borderless Window - should be Arabic; everything else on
-  the page should be readable English (previously blank).
-  Screenshot 1.
-- Game Tips (Step 2): seven tutorial tips are seeded Arabic; trigger one by playing an
-  early save. Screenshot 2 (or "not reached").
-- Dialogue/subtitle (Step 3): observation only - Arabic is NOT expected here yet; we
-  only want to know whether subtitles are visible, English, or blank. Screenshot 3.
-- Letter definitions per screen: A = correct/visible, B = present but broken glyphs,
-  C = readable but wrong language, D = blank/boxes/freeze.
-- Stop-and-report trigger: any crash, freeze or anti-tamper/signature error.
+## Defects found and handled
 
-## State
+- KI-019 (FIXED, in-game proof pending): the INSTALLED p2 carrier ships malformed rich-text tags
+  in the 7 seeded game-tip rows (CSV-escaped quotes never unescaped -> `id=""Button.ConsumeItem""`).
+  Found by the new validator, confirmed by unpacking the installed pak. p3 fixes it.
+- KI-020 (OPEN, needs approval): Python is not installed (Store alias only), so the requested
+  scripts/validate_translation.py cannot run; the same checks run via the PowerShell twin.
+- KI-021 (MITIGATED): PowerShell 5.1 reads .ps1 as ANSI without a BOM, mangling Arabic literals
+  inside scripts. Rule: Arabic only in UTF-8 data files. The validator now hard-fails mojibake.
 
-- Nothing was installed, removed or modified on the game side by this step.
-- The dialogue program (cycle 006) stays complete: 10,394 of 10,394 (100%) English-source
-  strings covered, master 27,618 rows, Arabic column empty (no translation performed).
-- Awaiting the user's Test-3 report (3 screenshots + A/B/C/D).
+## Numbers
+
+- master rows: 27,618 | unique English: 19,996 | rows with Arabic: 85 (DRAFT)
+- p3 pak: sha256 b58029662e5acf775087426ed85721905a5846127d6af5c209a482514f7b41df, 3,612,753 bytes
+- validator: 0 errors / 1 warning | glyph gate: 0 missing / 113 used | carrier: 0 round-trip failures
+
+## Gate
+
+STOPPED at the pilot gate. The user runs reports/pilot_in_game_checklist.md (install p3 on their
+approval), reports back, and batch 1 starts on their "next". Nothing was installed, uploaded, or
+changed outside the project folder; the game folder was only read.
