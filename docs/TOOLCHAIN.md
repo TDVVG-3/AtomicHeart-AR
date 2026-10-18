@@ -46,11 +46,18 @@ tools/bin/toolhashes.json              (computed hashes after download)
 | Component | Package (winget id) | Version | Source | License |
 |-----------|--------------------:|---------|--------|---------|
 | .NET Windows Desktop Runtime 8 | `Microsoft.DotNet.DesktopRuntime.8` | 8.0.32 | winget; installer hash verified against official Microsoft download (download.microsoft.com/windowsdesktop-runtime-8.0.32-win-x64.exe) | MIT (dotnet runtime) |
-| .NET Runtime 8 (base) | `Microsoft.DotNet.Runtime.8` | 8.0.32 (pending install completion) | winget (official Microsoft package) | MIT (dotnet runtime) |
+| .NET Runtime 8 (base) | `Microsoft.DotNet.Runtime.8` | 8.0.32 | winget; installer hash verified (download.microsoft.com/dotnet-runtime-8.0.32-win-x64.exe) | MIT (dotnet runtime) |
 | Git for Windows | `Git.Git` | 2.55.0.5 | winget; installer hash verified (git-for-windows GitHub release) | GPL-2.0 |
 
-Needed by: LocResUtility CLI (runtime 8) and FModel (desktop runtime 8, for GUI use).
+Needed by: LocResUtility CLI (runtime 8; verified running after install — KI-008
+resolved 2026-10-18) and FModel (desktop runtime 8, for GUI use).
 UnrealLocres needs no install (runs on built-in .NET Framework).
+
+`dotnet --list-runtimes` (2026-10-18):
+```
+Microsoft.NETCore.App 8.0.32        [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+Microsoft.WindowsDesktop.App 8.0.32 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+```
 
 ## Verification status
 

@@ -45,12 +45,12 @@
 
 ## 2. Problems
 
-- **P1: .NET 8 completion pending.** wriget reports "Starting package install..." then
-  stalls; most likely a UAC elevation prompt needs your approval on screen (winget
-  warned: "The installer will request to run as administrator"). Phase 7 testing does
-  NOT need .NET 8 (the mod paks are built); this only unlocks LocResUtility/FModel GUI
-  later. Next cycle I re-verify and record the installed version in docs/TOOLCHAIN.md
-  (already drafted with 8.0.32).
+- **P1 (RESOLVED same day): .NET 8 completion pending.** winget reported "Starting
+  package install..." then stalled on UAC; after the elevation was approved it completed
+  successfully: Microsoft.DotNet.DesktopRuntime.8 8.0.32 + Microsoft.DotNet.Runtime.8
+  8.0.32, both installer-hash verified from download.microsoft.com. Verified with
+  `dotnet --list-runtimes` (both runtimes listed) and LocResUtility CLI v2.1.1 now runs
+  (KI-008 → RESOLVED). Recorded in docs/TOOLCHAIN.md.
 - **P2: native-ar acceptance is UNKNOWN until boot.** The locmeta edit is the
   mechanism-gate for a new culture appearing in the game's language menu; the binary was
   decoded and rebuilt empirically (count/strings arithmetic verified), but there is no
