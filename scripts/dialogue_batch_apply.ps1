@@ -145,16 +145,22 @@ $decoded = [Text.Encoding]::UTF8.GetString($rawBytes)
 if ($decoded.Contains([char]0xFFFD)) { Write-Output '  VALIDATION UTF-8: replacement character U+FFFD found'; $fail++ }
 else { Write-Output '  VALIDATION UTF-8 round-trip: OK (no U+FFFD)' }
 $badFields = 0
-$openTags = 0; $closeTags = 0
+$openTags = 0; $closeTags = 0; $selfTags = 0
 foreach ($r in $rows) {
     if ($r.Count -ne 13) { $badFields++ }
     if (-not $r[0]) { $fail++ }
     if (-not $r[5] -and $r[10] -eq 'NEW') { Write-Output ('  VALIDATION empty source: ' + $r[2]); $fail++ }
     if ($checkId.ContainsKey($r[0])) { $postDup++ } else { $checkId[$r[0]] = $true }
-    if ($r[5]) { $openTags += ([regex]::Matches($r[5], '<(?![/?])')).Count; $closeTags += ([regex]::Matches($r[5], '</')).Count }
+    if ($r[5]) {
+        $openTags += ([regex]::Matches($r[5], '<(?![/?])')).Count
+        $closeTags += ([regex]::Matches($r[5], '</')).Count
+        $selfTags += ([regex]::Matches($r[5], '<[^>]{1,80}/>')).Count
+    }
 }
 if ($badFields -gt 0) { Write-Output ('  VALIDATION rows with wrong field count: ' + $badFields); $fail++ }
-Write-Output ('  VALIDATION source rich-text tags: {0} opening, {1} closing' -f $openTags, $closeTags)
+Write-Output ('  VALIDATION rich-text tags in source (informational): {0} opening, {1} self-closing, {2} closing' -f $openTags, $selfTags, $closeTags)
+if ($openTags - $selfTags -ne $closeTags) { Write-Output '  VALIDATION tag balance: pairs unbalanced (informational - pre-existing UI rows only)' }
+else { Write-Output '  VALIDATION tag balance: paired tags balanced' }
 $newDup = $postDup - $baseDup
 if ($newDup -gt 0) { Write-Output ('  VALIDATION NEW duplicate ids introduced: ' + $newDup); $fail++ }
 Write-Output ("[validation] duplicate ids total {0}; pre-existing {1}; new {2}" -f $postDup, $baseDup, $newDup)

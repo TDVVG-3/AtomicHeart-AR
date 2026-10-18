@@ -48,6 +48,8 @@ STATE: WAITING FOR USER
 - reports/dialogue_inventory_raw/ - ordered sources, chunks, worker logs, part TSVs.
 - Batch 1 console output (in report_006.md section 4) - coverage 2,626 of 10,505 (25%).
 - Validator output: PASS, 0 problems, 27,618 rows, UTF-8 round-trip OK, new duplicates 0.
+  Rich-text tags: dialogue rows carry none; the only 11 rows with unpaired tags are
+  pre-existing UI rows (NewP5/NTD/PearTerminals) outside the dialogue scope.
 
 ## Files Changed
 

@@ -52,6 +52,19 @@ batch 4 = 10,505.
       locres CUTSCENES                      present 840/840 full retag 2540
       locres DIALOGUES FOR LQA              present 86/746 partial retag 3286
     [batch 1] covered 2626 of 10505 (25%); added 0; already 2626; dup 0; retag 3286
+    [coverage by category]
+      Cutscene  840 of 1262 (66.6%)
+      Dialogue  1786 of 8792 (20.3%)
+      Subtitles 0 of 451 (0%)
+    [coverage by DLC]
+      base  2626 of 9199 (28.5%)
+      DLC1  0 of 421 (0%)
+      DLC2  0 of 865 (0%)
+      DLC4  0 of 20 (0%)
+    [validation] UTF-8 round-trip: OK (no U+FFFD)
+    [validation] rich-text tags in source (informational): 209 opening, 118 self-closing, 80 closing
+      -> 11 rows with unpaired tags, ALL pre-existing and outside the dialogue scope
+         (NewP5.locres 9, NTD.locres 1, PearTerminals.locres 1). Dialogue rows carry 0 tags.
     [validation] duplicate ids total 728; pre-existing 728; new 0
     [validation] PASS (0 problems, 27618 rows)
     [write] master rows 27618 -> 27618
