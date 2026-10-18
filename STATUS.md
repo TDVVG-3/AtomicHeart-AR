@@ -12,11 +12,14 @@ Phase 5  Extraction + master DB:            PASS (565 locres/locmeta; 27,618-row
 Phase 6  Font discovery:                    PASS (49 fonts scanned)
 Phase 7  Prototype attempt 1 (v1):          FAIL (Naskh font swap blanks Latin UI; uninstalled)
 Phase 7  Test 1: locres-only pak:           RESULT B: game boots normally, NO Arabic option
-                                            (no font pak; install reverted for now)
+                                            (not a pak failure - list is hardcoded; NORMAL FPS
+                                            confirmed by user in cycle 004 answers)
 Language-list mechanism:                    CONFIRMED (hardcoded 13 records in DA_Audio;
                                             locmeta staging alone can NEVER add a menu entry)
-Native-ar route (DEC-015 primary):          PLAN LOCKED (DA_Audio override; build pending)
-Carrier fallback (DEC-007, plan b):         PREPARED (ko-KR recommended; needs approval)
+Native-ar route (DEC-015 primary):          BLOCKED this cycle: DA_Audio is UNVERSIONED/tagless
+                                            -> needs schema tooling (Phase 8 work item)
+Carrier pak (DEC-007 ko-KR slot):           BUILT + validation PASS, NOT installed
+                                            (25/25 Arabic round-trip; controls unchanged Korean)
 Voice-culture evidence:                     CONFIRMED (retail VO only en-US + ru-RU; other
                                             slots fall back to en-US)
 Font v2 (IBM Plex Sans Arabic):             BUILT, verified, NOT installed
@@ -45,8 +48,9 @@ RTL rendering test:                         NOT TESTED
 
 ## Next
 
-STOP. Awaiting user's approval/decision on: (1) proceed to BUILD (not install) the
-DA_Audio override with a 14th Arabic record; (2) which carrier slot they want as
-prepared fallback (ko-KR recommended); (3) the three remaining Test-1 data points
-(FPS? exact list contents? voice language in use?). No pak installed meanwhile; game
-folder stock except the reverted test-1 state (nothing installed).
+STOP. The ko-KR carrier pak is built and validated but NOT installed. Test 2 will be:
+carrier pak + font pak v2 installed together; select Korean (ko-KR) in Options >
+Language; NewP5-scope strings display Arabic (font v2), rest of game text stays
+Korean, English voice untouched. Awaiting user's go for install instruction and
+then their manual test report. Native-`ar` via DA_Audio stays a Phase 8 tooling
+item (schema reconstruction; see docs/LANGUAGE_SELECTION.md).

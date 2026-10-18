@@ -8,14 +8,21 @@ Format loosely follows Keep a Changelog.
 ### Added (Cycle 004 - 2026-10-18)
 - Test 1 result: outcome B - game boots with the locres-only pak, language list has NO
   Arabic option (not a pak failure; locmeta staging alone provably can never add a menu
-  entry). Installation reverted to stock unless the user keeps testing with it.
+  entry). User confirmed NORMAL FPS during the test.
 - ROOT CAUSE found: Options > Language list is hardcoded (13 records) in the cooked
   DataAsset Core/Data/Settings/DA_Audio.uasset+.uexp (docs/LANGUAGE_SELECTION.md);
   consumer chain via cooked Config/DefaultGame.ini +ConfigurableSettings ->
   native AHGameSettingsSubsystem -> WBP_Options.
-- DEC-015: primary = add a 14th record (ar, display name "العربية", audio = en-US
-  fallback) via DA_Audio mod-pak override (binary surgery + self-validation);
-  fallback = DEC-007 carrier prepared (ko-KR recommended, zh-TW, uk-UA; approval needed).
+- Compiler verdict on the asset: cooked UNVERSIONED (tagless; FileVersionUE4=0) ->
+  direct record-append requires schema reconstruction -> Phase 8 tooling item;
+  partial decode recorded in scripts/inspect_da_audio.ps1.
+- DEC-015 (amended): primary route deferred to Phase 8 tooling; user-approved carrier
+  built now.
+- DEC-007 carrier (user-approved slot ko-KR): scripts/build_carrier_locres_pak.ps1 +
+  pak BUILT: build/package/zzz_atomicheart-ar_carrier_koKR_p1_P.pak (489,923 B,
+  sha256 146f9c5f50744eed0b3ed614cf9e84f177efb35049c46d59c8948ea4857596ab) -
+  25/25 Arabic round-trip, controls unchanged Korean, unpack byte-identical.
+  NOT INSTALLED (waiting for user go).
 - Voice-culture evidence from DA_Audio_VoiceBanks: retail VO only en-US + ru-RU; all
   other slots fall back to en-US - both routes keep the English voice untouched.
 - KI-012 closed as negative: `-log` produced no log file even when active.

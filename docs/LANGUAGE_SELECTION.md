@@ -53,6 +53,37 @@ and Wwise/audio culture alias).
   (append-driven: duplicate a record, patch display/culture, bump the array count,
   extend ExportMap SerialSize/SerialOffset in the .uasset). Feasibility: LIKELY;
   build offline + self-parse validation; install only after user approval.
+
+### Cycle 004 amendment (blocking discovery, evidence-based)
+
+The DA_Audio asset is cooked **UNVERSIONED (tagless)**: `FileVersionUE4 = 0`, the
+.uexp opens directly with schema-ordered values (`12 00 00 00 ... int64s`) and closes
+with the UE4 package magic at its tail. Property names/types are NOT serialized;
+they must be reconstructed from the class schema (DA_GameSettingsConfig + engine
+classes). A generic tagged-property walker therefore cannot edit this asset safely
+in the same cycle. Status of the DEC-015 primary route: REQUIRES schema tooling
+(Phase 8 work item; candidate approach: UAssetAPI-schema reconstruction or headless
+cook). The parser/inspector script from this cycle
+(scripts/inspect_da_audio.ps1) codifies what was decoded (summary, name table with
+entry stride calibrated at +4 bytes, single export @ 2765/13089, 13-record string
+evidence) for that future work.
+
+The user approved (cycle 004, digital answers):
+- "Yes, build only" for the DA_Audio route (and no install), and
+- ko-KR as the carrier slot for the fallback variant.
+
+Therefore the ACTUAL build of cycle 004 is the DEC-007 carrier pak:
+`build/package/zzz_atomicheart-ar_carrier_koKR_p1_P.pak`
+sha256 `146f9c5f50744eed0b3ed614cf9e84f177efb35049c46d59c8948ea4857596ab` (489,923 B) -
+NewP5 ko-KR locres with the 25 Arabic seed strings imported in place of the Korean
+text (UnrealLocres import; round-trip 25/25 exact-match validation; non-seed keys
+re-export verified unchanged Korean; pak unpack byte-identical). No LocMeta surgery,
+no fonts, keeps English voice unselected by design (ko-KR falls back to en-US audio).
+
+What to expect from the carrier test when installed with the font pak v2: select
+Korean in Options > Language; NewP5-scope strings (upgrade/Gametips etc. keys)
+display Arabic (with the v2 font), while ALL OTHER untranslated text in the game
+stays Korean locres text; English voice unchanged.
 - Fallback (DEC-007 carrier slot, Strategy C) remains prepared but becomes only the
   PLAN B: deliver Arabic as an existing slot's locres. Candidate slots (menu-listed,
   rare, VO-invariant): `ko-KR` (recommended), `zh-TW`, `uk-UA`.

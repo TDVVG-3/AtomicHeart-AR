@@ -330,4 +330,16 @@ select ru-RU. No separate text/voice selector exists in the assets (single Optio
 Constraints:
 - No install until the user approves the specific candidate (their order, cycle 004 step 5).
 - The DA_Audio patcher must round-trip validate (re-parse the output asset) before any
-  packaging, and the font pak v2 is a separate approval
+  packaging, and the font pak v2 is a separate approval.
+
+Amendment (same cycle, evidence-based):
+- The DA_Audio asset is cooked UNVERSIONED (tagless schema serialization). Safe editing
+  needs schema-reconstruction tooling -> the direct record-append becomes a Phase 8
+  work item (parser skeleton recorded in scripts/inspect_da_audio.ps1).
+- User-approved (cycle 004 questions): build-only approval given; ko-KR chosen as the
+  approved carrier slot. Therefore the interim build for the next in-game test is the
+  DEC-007 carrier pak using the ko-KR slot (Arabic text imported over the ko-KR
+  NewP5 locres): build/package/zzz_atomicheart-ar_carrier_koKR_p1_P.pak
+  (sha256 146f9c5f50744eed0b3ed614cf9e84f177efb35049c46d59c8948ea4857596ab),
+  NOT INSTALLED. The user's own voice stays English by design; the replaced TEXT is
+  Korean (a language the user is not reading).

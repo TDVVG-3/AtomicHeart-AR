@@ -130,12 +130,46 @@ remotes verified before commit); spec hash verified at cycle start.
 - STATUS.md + CHANGELOG.md cycle-004 sections; commits local-only.
 - This report: lastreport.md + reports/history/report_004.md.
 
-## Questions to you (approval gate; nothing installs before answers)
+## Cycle 004 addendum (same report file, after the user's digital answers)
 
-1. BUILD approval: proceed to build the DA_Audio override with the Arabic record
-   (build only, not installed)? Recommended: YES.
-2. Fallback slot pick (for prepared DEC-007 variant): ko-KR / zh-TW / uk-UA?
-   Recommended: ko-KR.
-3. Missing Test-1 data (helps the next checklist, not blocking): was FPS normal
-   during your test? What languages exactly did you see in the list (count/names)?
-   What is your current voice language (English? Russian?)?
+User answered:
+1. BUILD approval = "Yes, build only" for the DA_Audio native-ar route.
+2. Fallback slot pick = **ko-KR approved**.
+3. Test 1 details: FPS = NORMAL. (List contents / voice language remain unknown.)
+
+Engineering outcome on (1): the DA_Audio route is a REAL but heavier work item -
+the asset is cooked UNVERSIONED (tagless property serialization; FileVersionUE4=0;
+the .uexp data has no property tags and must be re-derived from the class schema).
+Safe in-place extension therefore needs schema-reconstruction tooling. Logged as
+KI-013 + DEC-015 amendment: Phase 8 tooling work (parser skeleton in
+scripts/inspect_da_audio.ps1). Nothing unsafe was attempted in-place.
+
+Engineering outcome on (2): the ko-KR carrier pak was BUILT and validated this cycle:
+- builder: scripts/build_carrier_locres_pak.ps1
+- output: build/package/zzz_atomicheart-ar_carrier_koKR_p1_P.pak (489,923 bytes)
+- sha256: 146f9c5f50744eed0b3ed614cf9e84f177efb35049c46d59c8948ea4857596ab
+- contents: ONE entry - AtomicHeart/Content/Localization/NewP5/ko-KR/NewP5.locres,
+  the game's own ko-KR NewP5 locres with the 25 Arabic seed strings imported
+  (UnrealLocres import; no LocMeta change needed; no fonts inside).
+- validations: round-trip re-export 25/25 seed keys = Arabic byte-for-byte;
+  control keys (Korean) unchanged (e.g. 신경폴리머 unchanged); pak unpack
+  byte-identical to the staged locres.
+- NOT INSTALLED (your step-5 order kept). The locres-only test-1 pak remains
+  uninstalled as well.
+
+## Next - your action (manual); I stop here
+
+Nothing is installed; the game folder is stock. Test 2 (recommended, pending your go):
+1. Say "install test 2" - I will install TWO paks ONLY:
+   - zzz_atomicheart-ar_carrier_koKR_p1_P.pak (Arabic text over the ko-KR slot)
+   - zzz_atomicheart-ar_font_p2_plex_P.pak (font v2 for Latin+Arabic rendering)
+2. Launch normally; expect NORMAL FPS (no Naskh incidents; Latin is Word-readable).
+3. Options > Language: select KOREAN.
+4. Verify and screenshot: menus (remaining Korean visual difference expected);
+   NewP5-scope strings (GameTips popups in game, upgrade text, AHGameSettings
+   option captions) should display Arabic; report shaping/RTL quality.
+5. Do NOT select ru-RU (it would switch the voice to Russian).
+6. Report outcome classes: A = Arabic renders correctly (plus shaping quality);
+   B = Arabic renders but broken (boxes/disconnected letters); C = Korean shows
+   everywhere incl. our 25 strings; D = anything else (hang/crash/missing paks).
+   If D: run scripts/uninstall_mod.ps1 immediately (proven working).
