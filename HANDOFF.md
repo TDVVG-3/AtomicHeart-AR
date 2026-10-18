@@ -1,110 +1,90 @@
 # HANDOFF - Atomic Heart Arabic localization
 
-DATE-TIME: 2026-10-18 19:41 (local)
+DATE-TIME: 2026-10-18 19:52 (local)
 CYCLE: 006
-CURRENT STEP: dialogue batch 4 of 4 (100%) - DONE (program complete)
+CURRENT STEP: Test 3 checklist issued to the user - awaiting in-game results
 STATE: WAITING FOR USER
 
 ## Summary (5 lines)
 
-1. The dialogue/cutscene program is COMPLETE: 10,394 of 10,394 (100%) English-source strings covered.
-2. Batch 4's first attempt FAILED, and fixing it corrected the whole inventory (important - see Problems).
-3. Corrected finding: the ONLY English dialogue source is the 14 en-US locre scopes (10,394 strings).
-4. All non-locres dialogue assets are Russian-only (248 assets / 6,012 strings, KI-018) or obfuscated (1, KI-017, BLOCKED).
-5. Master TSV 27,618 rows, all 14 scopes canonical; Arabic still empty (no translation); validator PASS.
+1. Dialogue/cutscene program is COMPLETE: 10,394 of 10,394 (100%) English-source strings covered.
+2. Test 3 checklist is written and handed over: reports/test3_checklist.md (non-developer, A/B/C/D).
+3. The installed set is confirmed read-only: carrier p2 (503,841 B) + font v2 (1,461,408 B); 19 stock paks untouched.
+4. Test 3 covers Settings labels (9 Arabic seeds), a Game Tips popup (7 seeds) and a dialogue/subtitle look.
+5. Arabic is NOT expected in dialogue yet; that screen only checks visible-vs-blank. Nothing installed/removed.
 
 ## Completed
 
-- Batch 4 (100%) applied after correction: covered 10,394 of 10,394 (100%), validator PASS.
-- Two defects found and fixed (see Problems): a PowerShell row-builder bug and a wrong
-  EN-source classifier.
-- The 111 wrongly added rows were removed from the master (27,729 -> 27,618); verified.
-- EN-source classifier corrected (DEC-021) and the finalizer re-run.
-- New report: reports/dialogue_obfuscated.md (BLOCKED asset, KI-017).
-- Rewritten report: reports/dialogue_ru_only.md (248 assets / 6,012 strings).
-- Final on-disk verification of all 14 dialogue scopes: 10,394 rows, all canonical.
-- Spec hash re-checked at step start: PASS.
+- Wrote reports/test3_checklist.md: step-by-step checklist with what to screenshot and the
+  per-screen A/B/C/D letter meanings, plus an appendix listing the exact expected Arabic.
+- Recovered the original Test-3 semantics and letter definitions from report_005.md so the
+  new checklist stays consistent with what the user already confirmed (main menu = A).
+- Verified the installed mod set read-only (manifest SHA256 match; 19 stock paks untouched).
+- Spec hash re-checked: PASS.
 
 ## Problems
 
-1. PowerShell comma-binds-tighter-than-'+': the new-row builder's
-   'cooked asset scan; ... batch ' + $Batch was split into two array elements,
-   producing 111 rows with 14 fields. The validator caught it (batch aborted, master
-   NOT written on that run). Fixed by parenthesising; documented in the script.
-2. WRONG SCOPE (the important one): those 111 strings were not English at all - they were
-   Cyrillic subtitles with timecodes (plus a Latin phrase inside Russian lines) and one
-   encoded payload. The old test "contains 3+ Latin letters" was too weak. Corrected:
-   EN = Latin-dominant, ZERO Cyrillic, vowel ratio >= 0.15 (DEC-021).
-3. Consequence: TOTAL corrected from 10,505 to 10,394; earlier batches had delivered
-   2,626 / 5,253 / 7,879 which are at or above the corrected 25/50/75% marks
-   (2,599 / 5,197 / 7,796), so nothing had to be re-delivered.
-4. Obfuscated asset reported BLOCKED, not guessed (KI-017).
+- None this step. No game-side change was made.
+- Standing: KI-016 (728 pre-existing duplicate IDs) unchanged; KI-017 (obfuscated asset)
+  and KI-018 (Russian-only assets) are documented and blocked/noted, not acted on.
 
 ## Evidence
 
-- Batch 4 (final) console output in reports/history/report_009.md section 4.
-- On-disk scope verification table in report_009 section 5 (all 14 scopes, all canonical).
-- reports/dialogue_inventory.md: TOTAL = 10,394, sole source = 14 en-US locre scopes.
-- reports/dialogue_ru_only.md: 248 assets / 6,012 strings (complete DT_Subtitles_* family).
-- reports/dialogue_obfuscated.md: NotLifted_17 sample `LKKELLMKLM"!...` (no vowels).
-- Validator: PASS, 0 problems, 27,618 rows, UTF-8 round-trip OK, 0 new duplicate ids.
+- reports/test3_checklist.md (8,002 bytes) - the checklist + expected-Arabic appendix.
+- Read-only install check: ~mods has exactly the two paks + manifest; manifest SHA256
+  values match the files; Paks root file count = 19.
+- Seed source: localization/working/phase7_seed.csv (25 keys: 9 menu, 9 settings, 7 tips).
+- Dialogue program evidence stays in reports/dialogue_inventory.md and report_009.md.
 
 ## Files Changed
 
-- localization/master/atomic-heart-ar.tsv (Category canonicalization; 111 bogus rows
-  removed; 27,618 rows).
-- scripts/dialogue_finalize.ps1 (DEC-021 classifier + obfuscated report),
-  scripts/dialogue_batch_apply.ps1 (row-builder fix, dump-path fix, hard error on
-  missing dump).
-- DECISIONS.md (DEC-021), KNOWN_ISSUES.md (KI-017, KI-018), STATUS.md, HANDOFF.md.
-- reports/dialogue_inventory.md, reports/dialogue_ru_only.md,
-  reports/dialogue_obfuscated.md, reports/dialogue_inventory_raw/sources_st.tsv,
-  localization/references/AR_EN_REFERENCE.md, reports/history/report_009.md.
+- New: reports/test3_checklist.md, reports/history/report_010.md,
+  reports/history/handoff_010.md.
+- HANDOFF.md, lastreport.md refreshed. No game files touched.
 
 ## Current Status
 
-- Dialogue/cutscene coverage: 10,394 of 10,394 (100%) - COMPLETE.
+- Dialogue/cutscene coverage: 10,394 of 10,394 (100%) - COMPLETE (cycle 006).
 - Arabic translation: NOT STARTED (column empty, by design).
-- Test 3: main menu Arabic CONFIRMED earlier; settings pages/GameTips still open.
-- Nothing installed or removed; game folder read-only; nothing uploaded.
-- All four batches committed locally (see git log); working tree clean after this commit.
+- Test 3: checklist delivered; awaiting the user's 3 screenshots and A/B/C/D letters.
+- Test 3 result so far: Settings / GameTips / Dialogue = NOT REPORTED YET.
+  (Earlier: main menu = outcome A CONFIRMED.)
+- Nothing installed or removed this step; game folder read-only; nothing uploaded.
 
 ## Next Action
 
-Wait for the user. Options once the user is ready:
-- start translation of the 10,394 dialogue rows (English -> Arabic), then rebuild the
-  carrier pak and re-test in game; or
-- decide how to handle RU-only content (KI-018) and the obfuscated asset (KI-017); or
-- finish Test 3 (settings captions + GameTips popups).
+Wait for the user's Test-3 report. When it arrives:
+- record the result in STATUS.md, KNOWN_ISSUES.md (KI-009) and DECISIONS.md;
+- if outcome A, propose the scale-up plan (full corpus translation, composite font
+  Phase 8, KI-013 language-list tooling);
+- if B/C/D, diagnose from the screenshots before changing any file.
 
 ## What I need you to do
 
-- Tell me which of these you want next: "translate dialogue", "test 3", or "next phase".
-- No permissions are pending; nothing is running in the background right now.
+- Run the three checks in reports/test3_checklist.md and send:
+  three screenshots (Settings, Game Tips, Dialogue) plus the block
+  "Settings: A/B/C/D - GameTips: A/B/C/D - Dialogue: A/B/C/D".
+- Do not install or uninstall anything; keep the language on Korean.
+- If the game crashes or shows an anti-tamper/signature error, stop and tell me.
 
 ## Decisions made (relevant)
 
 | ID | Decision |
 |---|---|
-| DEC-017 | Dialogue program rules: scope, TOTAL = English-only, cumulative batches, order rule, no duplicate rows |
-| DEC-018 | Count-pass dump generations: purged stale dumps/TSVs, rerun with verified decoder |
-| DEC-019 | Prose filter: what counts as dialogue text in cooked assets |
-| DEC-020 | Batch coverage arithmetic; retag-per-source boundary rule; duplicate baseline |
-| DEC-021 | Classifier corrected (EN/RU-only/obfuscated/mixed/skip); TOTAL = 10,394; cutoffs 2,599/5,197/7,796/10,394 |
+| DEC-016 | Carrier English-fill policy (25 Arabic seeds + 5,572 English-filled of 5,597 keys) |
+| DEC-017 | Dialogue program rules; Test-3 main menu = outcome A confirmed (Part 1) |
+| DEC-021 | Classifier corrected; dialogue TOTAL = 10,394 (100% covered) |
 
 ## Known issues (relevant)
 
 | ID | State | Note |
 |---|---|---|
-| KI-010 | OPEN | RU-native-only text with no English (e.g. GooseRunner hints); now covered by the KI-018 asset list |
+| KI-009 | MENU-CONFIRMED | Arabic renders in the main menu; settings pages + Game Tips still unverified (this test) |
 | KI-013 | OPEN | Native "ar" needs DA_Audio schema tooling (Phase 8); carrier ko-KR is the interim route |
 | KI-014 | CONFIRMED | Replacement font faces have zero Hangul; mitigated by English-fill carrier p2 |
-| KI-015 | NOTED | UnrealLocres normalizes LF to CRLF inside multiline values (5 values / 56 keys) |
-| KI-016 | NOTED | 728 duplicate IDs already existed in the master before this program; baseline, not ours |
-| KI-017 | BLOCKED | Obfuscated dialogue asset NotLifted_17 (encoded payload, not text) - evidence in reports/dialogue_obfuscated.md |
-| KI-018 | NOTED | All non-locres cooked dialogue assets are Russian-only: 248 assets / 6,012 strings (complete DT_Subtitles_* family) |
+| KI-017 | BLOCKED | Obfuscated dialogue asset NotLifted_17 (not text) - reports/dialogue_obfuscated.md |
+| KI-018 | NOTED | All non-locres cooked dialogue assets are Russian-only: 248 assets / 6,012 strings |
 
 ## What I should send back
 
-- One instruction: "translate dialogue" (start EN -> AR for the 10,394 rows),
-  "test 3" (finish the in-game checklist), or "next phase".
+- The three screenshots and the one-line A/B/C/D block. That is all I need.
