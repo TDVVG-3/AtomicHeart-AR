@@ -1,14 +1,14 @@
 # AR <-> EN reference (rows that already carry Arabic)
 
-Regenerated: 2026-10-18 (cycle 006, after dialogue batch 1 of 4).
+Regenerated: 2026-10-18 (cycle 006, after dialogue batch 4 of 4).
 
 Rule: this file lists ONLY master rows whose Arabic column is non-empty. During the
 dialogue program the Arabic column stays EMPTY by design (translation comes later), so
 the list below is intentionally empty right now.
 
-| Rows with Arabic | Dialogue rows so far |
+| Rows with Arabic | Dialogue coverage so far |
 |---|---|
-| 0 | 0 of 10,505 (0%) |
+| 0 | 10,394 of 10,394 (100%) |
 
 When translation starts, regenerate this file with the same rule (Arabic column
 non-empty only) so it can be used as a translation memory seed.

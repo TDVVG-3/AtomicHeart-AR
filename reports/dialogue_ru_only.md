@@ -15,6 +15,7 @@ column of the master TSV, and they do not count into the localizable TOTAL.
 | AtomicHeart/Content/DLC/DLC01_Narrative/DLC01_Goose/ST_DLC01_Goose_Sentences.uasset | 35 | Все получат по ебалу! И Сережа тоже! |
 | AtomicHeart/Content/DLC2/Narrative/Climber/DT_Subtitles_DLC02_Climber.uasset | 42 | Альфа! Удалось! Ха-ха! |
 | AtomicHeart/Content/DLC2/Narrative/GooseRunner/DT_Subtitles_DLC02_GooseRunner.uasset | 125 | Ч-что происходит? Гусь?! Серьёзно? Я чего-то о тебе не знаю? |
+| AtomicHeart/Content/DLC2/Narrative/Schebetars/DT_Subtitles_DLC02_Schebetars.uasset | 49 | Это мой способ общения с тобой. Долго говорить и одновременно находиться в трёх местах я н... |
 | AtomicHeart/Content/DLC2/Narrative/Slider/DT_Subtitle_DLC02_Chariton.uasset | 16 | Откуда ты тут взялся?! |
 | AtomicHeart/Content/DLC2/Narrative/Slider/DT_Subtitles_DLC02_Slider.uasset | 190 | Ебучие пироги! |
 | AtomicHeart/Content/DLC2/Narrative/Terminals/DA_Terminal_DLC2_Climbing_01.uasset | 3 | Правильнее говорить - ХРАЗ |
@@ -106,7 +107,6 @@ column of the master TSV, and they do not count into the localizable TOTAL.
 | AtomicHeart/Content/DLC4/Narrative/04_Terminals/DA_Terminal_DLC04_Crystal_28.uasset | 2 | Доступным языком |
 | AtomicHeart/Content/DLC4/Narrative/04_Terminals/DA_Terminal_DLC04_Crystal_29.uasset | 1 | Лифт как мобильная станция |
 | AtomicHeart/Content/DLC4/Narrative/04_Terminals/DA_Terminal_DLC04_Crystal_30.uasset | 2 | Роскошь или необходимость? |
-| AtomicHeart/Content/DLC4/Narrative/04_Terminals/DA_Terminal_DLC04_LebedevLab_01.uasset | 1 | Копия души |
 | AtomicHeart/Content/DLC4/Narrative/04_Terminals/DA_Terminal_DLC04_LebedevLab_02.uasset | 3 | Инстинкт истребления |
 | AtomicHeart/Content/DLC4/Narrative/04_Terminals/DA_Terminal_DLC04_Profiles.uasset | 52 | Заместитель начальника комплекса |
 | AtomicHeart/Content/DLC4/Narrative/04_Terminals/DA_Terminal_DLC04_Wave_01.uasset | 2 | Почему бездействует армия |
@@ -118,6 +118,7 @@ column of the master TSV, and they do not count into the localizable TOTAL.
 | AtomicHeart/Content/DLC4/Narrative/04_Terminals/DA_Terminal_DLC04_Wave_07.uasset | 1 | Добро пожаловать! |
 | AtomicHeart/Content/DLC4/Narrative/All_Const_DLC4.uasset | 43 | Берег озера Лазурь |
 | AtomicHeart/Content/DLC4/Narrative/CrystalComplex/D_DLC04_09.uasset | 11 | Офигеть! Это что за фантастика такая? |
+| AtomicHeart/Content/DLC4/Narrative/CrystalComplex/D_DLC04_10.uasset | 20 | Ой, извини. Видимо, ты новенький, хе-хе... Точнее, новенькие-то как раз тут мы. «Былыми» м... |
 | AtomicHeart/Content/DLC4/Narrative/CrystalComplex/D_DLC04_11.uasset | 16 | Да. И вы совершенно зря тут запчасти едите, товарищ гурман. |
 | AtomicHeart/Content/DLC4/Narrative/CrystalComplex/D_DLC04_12.uasset | 12 | О, [ебать], человек! Живой! Ура! Я думал, вы уже вымерли все... |
 | AtomicHeart/Content/DLC4/Narrative/CrystalComplex/D_DLC04_13.uasset | 14 | А? Да-да. Эх... Пустота. Тишина. Тоска. Кто же знал, что оно так устроено? Ужас... Вот ска... |
@@ -252,5 +253,6 @@ column of the master TSV, and they do not count into the localizable TOTAL.
 | AtomicHeart/Content/Maps/Development/Dialogue_Test/OpenWorldCorpses/D_0216_OpenDeadCow.uasset | 6 | Му-удрость семнадцатая. Первое слово съела корова! |
 | AtomicHeart/Content/Maps/Development/Dialogue_Test/OpenWorldCorpses/D_0666_OWVDNH_DeadLiner.uasset | 4 | Не могу больше так!  Хватит, прошу! |
 | AtomicHeart/Content/Maps/Development/Dialogue_Test/OpenWorldCorpses/D_0667_OWVDNH_AfterDeadLiner.uasset | 4 | ХРАЗ? Я всё думаю, а что у них с голосом? |
+| AtomicHeart/Content/Maps/Development/Dialogue_Test/Schebetars_Subs/DT_Subtitles_Schebetars.uasset | 41 | *0.00-0.06* &Женский голос& Запись при экстренных случаях. Я программист, Вишневская Екате... |
 
-**RU-only assets: 246, strings: 5903**
+**RU-only assets: 248, strings: 6012**

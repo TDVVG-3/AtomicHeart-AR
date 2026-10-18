@@ -9,10 +9,13 @@
    - LOCRE: rows already mastered from the en-US build. Whole source counts 'already
      present'; Category retagged to the canonical class when it differs (cosmetic,
      source/Arabic/keys untouched). Row coverage capped at the batch cutoff.
-   - ASSET: new rows from the UTF-8 string dumps (localization/extracted/dialogue/).
-     Namespace = asset path, Key = empty (no source keys exist in cooked strings),
+   - ASSET: new rows from the UTF-8 string dumps (localization/extracted/dialogue/,
+     file name <pakName>__<baseName>.txt as written by dialogue_count_worker.ps1).
+     File = asset path, Namespace = empty (cooked strings have no namespace),
+     Key = empty (no source keys exist in cooked strings),
      Context = 'raw string <n>', Category = scope class, Speaker = empty, Notes =
      'cooked asset scan; no source keys'. Placement/tags preserved byte-exact.
+     A missing dump is a hard error (never a silent skip, which would understate coverage).
      RU-only assets (Cyrillic, no Latin) are never added here - they are reported in
      reports/dialogue_ru_only.md (they have no English source to keep in this column).
   Idempotent: duplicate IDs are skipped and counted. Validation prints PASS/FAIL.
@@ -91,11 +94,13 @@ foreach ($src in $sources) {
         if ($seen.Count -ne $src.count) { Write-Output ("    NOTE master rows {0} != manifest {1}" -f $seen.Count, $src.count) }
     }
     elseif ($src.kind -eq 'ASSET') {
-        $pakStub = $src.pak -replace '-WindowsNoEditor\.pak$', ''
-        $dumpPath = Join-Path $RepoRoot ('localization\extracted\dialogue\' + $pakStub + '__' + [IO.Path]::GetFileNameWithoutExtension($src.source) + '.txt')
+        # dump naming written by dialogue_count_worker.ps1: <pakName>__<baseName>.txt
+        $dumpName = $src.pak + '__' + [IO.Path]::GetFileNameWithoutExtension($src.source) + '.txt'
+        $dumpPath = Join-Path $RepoRoot ('localization\extracted\dialogue\' + $dumpName)
+        if (-not (Test-Path $dumpPath)) { throw ("missing dump for {0}: {1}" -f $src.source, $dumpName) }
         $txt = [IO.File]::ReadAllText($dumpPath, [Text.Encoding]::UTF8)
         $strings = @(Get-DialogueStrings $txt)
-        if ($strings.Count -eq 0) { Write-Output ("  asset no prose strings: {0}" -f $src.source); continue }
+        if ($strings.Count -eq 0) { throw ("no prose strings for {0} (dump {1})" -f $src.source, $dumpName) }
         $take2 = [Math]::Min($take, $strings.Count)
         for ($n = 0; $n -lt $take2; $n++) {
             $s = $strings[$n]
@@ -104,7 +109,11 @@ foreach ($src in $sources) {
                 if ($knownId[$id][11] -match 'batch') { $already++ } else { $dups++ }
                 continue
             }
-            $newRow = @($id, 'AtomicHeart', $src.source, '', '', $s, '', ('raw string ' + ($n + 1)), '', $src.cls, 'NEW', 'cooked asset scan; no source keys; batch ' + $Batch, '')
+            # NOTE: the concatenation MUST be parenthesised - in PowerShell the comma
+            # operator binds tighter than '+', so an unparenthesised
+            # '...batch ' + $Batch inside @( ... ) splits into TWO array elements
+            # (a string and the int), producing 14-field rows.
+            $newRow = @($id, 'AtomicHeart', $src.source, '', '', $s, '', ('raw string ' + ($n + 1)), '', $src.cls, 'NEW', ('cooked asset scan; no source keys; batch ' + $Batch), '')
             $rows.Add($newRow)
             $knownId[$id] = $newRow
             $added++

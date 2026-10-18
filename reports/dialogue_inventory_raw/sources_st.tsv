@@ -1,5 +1,1 @@
 order	kind	source	container	dlc	scopeClass	count	pak	basekind
-15	ASSET	AtomicHeart/Content/Development/Sequencer/Cinematics/Production_CutScenes/01-29/CorpsForBake/NotLifted_17.uasset	pakchunk7-WindowsNoEditor	base	Cutscene	1	pakchunk7-WindowsNoEditor	OTHER
-16	ASSET	AtomicHeart/Content/Maps/Development/Dialogue_Test/Schebetars_Subs/DT_Subtitles_Schebetars.uasset	pakchunk0-WindowsNoEditor	base	Subtitles	41	pakchunk0-WindowsNoEditor	OTHER
-17	ASSET	AtomicHeart/Content/DLC2/Narrative/Schebetars/DT_Subtitles_DLC02_Schebetars.uasset	pakchunk14-WindowsNoEditor	DLC2	Subtitles	49	pakchunk14-WindowsNoEditor	OTHER
-18	ASSET	AtomicHeart/Content/DLC4/Narrative/CrystalComplex/D_DLC04_10.uasset	pakchunk16-WindowsNoEditor	DLC4	Dialogue	20	pakchunk16-WindowsNoEditor	OTHER

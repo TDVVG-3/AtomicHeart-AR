@@ -1,14 +1,19 @@
 # Dialogue and cutscene text inventory (exact)
 
-Generated: 2026-10-18 18:18; count pass: reports/dialogue_st_counts.tsv (4325 candidate assets scanned, DEC-018 parallel pass).
+Generated: 2026-10-18 19:39; count pass: reports/dialogue_st_counts.tsv (4325 candidate assets scanned, DEC-018 parallel pass).
 
 ## 100% TOTAL
 
-**TOTAL = 10505 dialogue/cutscene strings with an English source.**
+**TOTAL = 10394 dialogue/cutscene strings with an English source.**
 
 - locres sources (en-US locres, already in the master TSV): 10394
-- non-locres cooked sources (unique EN-source assets after collapse, DEC-019 prose filter): 111
-- RU-only strings (reported separately in reports/dialogue_ru_only.md, NOT in TOTAL): 5903
+- non-locres cooked sources (unique EN-source assets after collapse, DEC-019 prose filter): 0
+- RU-only strings (reported separately in reports/dialogue_ru_only.md, NOT in TOTAL): 6012
+- obfuscated/non-text assets (reported separately in reports/dialogue_obfuscated.md, BLOCKED, NOT in TOTAL): 1 assets
+
+Classification rule (DEC-021): an asset counts as an English source only if its prose
+is Latin-dominant with ZERO Cyrillic letters and a vowel ratio >= 0.15; Cyrillic-dominant
+assets are RU-only; Latin text with no vowels is treated as obfuscated/binary.
 
 Every percentage in the batch reports is quoted as "N of TOTAL (X%)".
 
@@ -35,9 +40,8 @@ Every percentage in the batch reports is quoted as "N of TOTAL (X%)".
 
 | kind | base | DLC1 | DLC2 | DLC3 | DLC4 | strings |
 |---|---|---|---|---|---|---|
-| OTHER | 42 | 0 | 49 | 0 | 20 | 111 |
 
-Non-locres EN-source assets: 4; RU-only assets: 246 (reports/dialogue_ru_only.md).
+Non-locres EN-source assets: 0; RU-only assets: 248 (reports/dialogue_ru_only.md).
 String rule: DEC-019 prose filter (scripts/dialogue_strings_lib.ps1), identical in the inventory and the batch tool.
 
 ## Batch split rule (DEC-017)
@@ -46,4 +50,4 @@ Cumulative batches 25/50/75/100% of TOTAL. Order: locres scopes (base alphabetic
 then DLC1, DLC2), then cooked ASSET sources (DLC then kind then path). Batches cut at
 cumulative string counts; batch N includes everything before it.
 
-Batch cutoffs: batch 1 = 2626; batch 2 = 5253; batch 3 = 7879; batch 4 = 10505.
+Batch cutoffs: batch 1 = 2599; batch 2 = 5197; batch 3 = 7796; batch 4 = 10394.

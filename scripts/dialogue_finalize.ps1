@@ -101,23 +101,58 @@ function Get-ScopeClass([string]$path) {
     if ($path -match '_Sub|Subs|Subtitles|NarrSubs') { return 'Subtitles' }
     return 'Dialogue'
 }
-function Test-HasLatinProse($strings) { foreach ($s in $strings) { if ($s -match '[A-Za-z]{3,}') { return $true } }; return $false }
-function Test-HasCyrProse($strings) { foreach ($s in $strings) { if ($s -cmatch '[\u0410-\u044F]{3,}') { return $true } }; return $false }
+function Get-ScriptStats($strings) {
+    $latin = 0; $cyr = 0; $vowels = 0; $digits = 0; $total = 0
+    foreach ($s in $strings) {
+        $latin += ([regex]::Matches($s, '[A-Za-z]')).Count
+        $vowels += ([regex]::Matches($s, '[AEIOUaeiou]')).Count
+        $cyr += ([regex]::Matches($s, '[\u0400-\u04FF]')).Count
+        $digits += ([regex]::Matches($s, '[0-9]')).Count
+        $total += $s.Length
+    }
+    return [pscustomobject]@{ latin = $latin; cyr = $cyr; vowels = $vowels; digits = $digits; total = $total }
+}
+# Classification of an asset's prose strings (DEC-021, evidence-based):
+#   english     - Latin-dominant, no Cyrillic, vowel ratio >= 0.15 (looks like real English)
+#   ru-only     - Cyrillic-dominant (Cyrillic letters >= Latin letters, >= 10 Cyrillic)
+#   obfuscated  - Latin letters present but NO vowels (encoded/binary noise, not text)
+#   (otherwise) - not usable text, skipped
+function Get-AssetClass($strings) {
+    $st = Get-ScriptStats $strings
+    if ($st.cyr -ge 10 -and $st.cyr -ge $st.latin) { return 'ru-only' }
+    if ($st.latin -ge 10) {
+        if ($st.cyr -eq 0) {
+            $vr = $st.vowels / $st.latin
+            if ($vr -lt 0.15) { return 'obfuscated' }
+            return 'english'
+        }
+        return 'mixed'
+    }
+    return 'skip'
+}
 
 $chosen = New-Object System.Collections.Generic.List[object]
 $ruOnly = New-Object System.Collections.Generic.List[object]
+$obfuscated = New-Object System.Collections.Generic.List[object]
+$mixed = New-Object System.Collections.Generic.List[object]
+$skipped = 0
 foreach ($b in $groups.Keys) {
     $pick = $null
-    foreach ($a in $groups[$b]) { $pr = Get-Prose $a; if ($pr.Count -gt 0 -and (Test-HasLatinProse $pr)) { $pick = $a; break } }
+    foreach ($a in $groups[$b]) { $pr = Get-Prose $a; if ($pr.Count -gt 0 -and (Get-AssetClass $pr) -eq 'english') { $pick = $a; break } }
     if (-not $pick) {
         foreach ($a in $groups[$b]) { $pr = Get-Prose $a; if ($pr.Count -gt 0) { $pick = $a; break } }
     }
-    if (-not $pick) { continue }
+    if (-not $pick) { $skipped++; continue }
     $pp = Get-Prose $pick
-    $rec = [pscustomobject]@{ a = $pick; strings = $pp; latin = (Test-HasLatinProse $pp); cyr = (Test-HasCyrProse $pp) }
-    if (-not $rec.latin -and $rec.cyr) { $ruOnly.Add($rec) } elseif ($rec.latin) { $chosen.Add($rec) }
+    $cls = Get-AssetClass $pp
+    $rec = [pscustomobject]@{ a = $pick; strings = $pp; cls = $cls }
+    if ($cls -eq 'english') { $chosen.Add($rec) }
+    elseif ($cls -eq 'ru-only') { $ruOnly.Add($rec) }
+    elseif ($cls -eq 'obfuscated') { $obfuscated.Add($rec) }
+    elseif ($cls -eq 'mixed') { $mixed.Add($rec) }
+    else { $skipped++ }
 }
-Write-Output ("[collapse] EN-source sources: " + $chosen.Count + " | RU-only sources: " + $ruOnly.Count)
+Write-Output ("[collapse] EN-source sources: " + $chosen.Count + " | RU-only sources: " + $ruOnly.Count + " | obfuscated: " + $obfuscated.Count + " | mixed (Latin+Cyrillic, not clean English): " + $mixed.Count + " | skipped (no usable text): " + $skipped)
 
 # --- order: base/DLC then kind then path; ord continues after 14
 $ord = 14
@@ -160,6 +195,31 @@ $ruLines.Add(('**RU-only assets: {0}, strings: {1}**' -f $ruOnly.Count, $ruStrin
 [IO.File]::WriteAllLines($ruOut, $ruLines, (New-Object Text.UTF8Encoding($false)))
 Write-Output ("[ru-only] assets " + $ruOnly.Count + ", strings " + $ruStrings)
 
+# --- obfuscated/unknown-binary report (evidence; these are NEVER extracted)
+$obfOut = Join-Path $RepoRoot 'reports\dialogue_obfuscated.md'
+$obLines = New-Object System.Collections.Generic.List[string]
+$obLines.Add('# Obfuscated / non-text dialogue assets (BLOCKED - evidence)')
+$obLines.Add('')
+$obLines.Add('The DEC-021 classifier found cooked assets inside the dialogue scope whose strings')
+$obLines.Add('carry Latin letters but NO vowels at all (e.g. "LKKELLMKLM..."), i.e. they are not')
+$obLines.Add('readable text: most likely encoded/binary payloads or an unknown container format.')
+$obLines.Add('Per the standing rules these assets are NOT extracted into the English source')
+$obLines.Add('column and NOT translated; they are reported here as BLOCKED with evidence.')
+$obLines.Add('')
+$obLines.Add('| asset | strings | sample |')
+$obLines.Add('|---|---|---|')
+$obStrings = 0
+foreach ($r in ($obfuscated | Sort-Object { $_.a.path })) {
+    $obStrings += $r.strings.Count
+    $sample = (($r.strings | Select-Object -First 1) -replace '\|', '/')
+    if ($sample -and $sample.Length -gt 90) { $sample = $sample.Substring(0, 90) + '...' }
+    $obLines.Add('| ' + $r.a.path + ' | ' + $r.strings.Count + ' | ' + $sample + ' |')
+}
+$obLines.Add('')
+$obLines.Add(('**Obfuscated assets: {0}, strings: {1}**' -f $obfuscated.Count, $obStrings))
+[IO.File]::WriteAllLines($obfOut, $obLines, (New-Object Text.UTF8Encoding($false)))
+Write-Output ("[obfuscated] assets " + $obfuscated.Count + ", strings " + $obStrings)
+
 # --- inventory report
 $locresTotal = 10394
 $total = $locresTotal + $enTotal
@@ -175,6 +235,11 @@ $inv.Add('')
 $inv.Add(('- locres sources (en-US locres, already in the master TSV): {0}' -f $locresTotal))
 $inv.Add(('- non-locres cooked sources (unique EN-source assets after collapse, DEC-019 prose filter): {0}' -f $enTotal))
 $inv.Add(('- RU-only strings (reported separately in reports/dialogue_ru_only.md, NOT in TOTAL): {0}' -f $ruStrings))
+$inv.Add(('- obfuscated/non-text assets (reported separately in reports/dialogue_obfuscated.md, BLOCKED, NOT in TOTAL): {0} assets' -f $obfuscated.Count))
+$inv.Add('')
+$inv.Add('Classification rule (DEC-021): an asset counts as an English source only if its prose')
+$inv.Add('is Latin-dominant with ZERO Cyrillic letters and a vowel ratio >= 0.15; Cyrillic-dominant')
+$inv.Add('assets are RU-only; Latin text with no vowels is treated as obfuscated/binary.')
 $inv.Add('')
 $inv.Add('Every percentage in the batch reports is quoted as "N of TOTAL (X%)".')
 $inv.Add('')

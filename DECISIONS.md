@@ -494,3 +494,36 @@ Duplicate rule: the master TSV already contained 728 duplicate IDs before this p
 and FAILS only if this program introduces NEW duplicates.
 
 Reporting rule: every percentage is quoted as 'N of TOTAL (X%)', per category and per DLC.
+
+## DEC-021: Cooked-asset language classification corrected; TOTAL = 10,394 - 2026-10-18
+
+Context: DEC-020 set TOTAL = 10,505 = 10,394 locre + 111 'English-prose' cooked strings
+(4 assets). Applied as batch 4, those 111 rows turned out NOT to be English: they are
+Russian subtitle tracks with timecode markers (DT_Subtitles_Schebetars 41,
+DT_Subtitles_DLC02_Schebetars 49, D_DLC04_10 20 - Cyrillic text that merely CONTAINS a
+Latin phrase, e.g. "non penis canis est!") plus one encoded payload (NotLifted_17).
+
+Root cause: the DEC-019 EN test was 'contains any 3+ Latin letters', which passes as soon
+as a Russian line embeds a Latin word.
+
+Fix (implemented in scripts/dialogue_finalize.ps1, `Get-AssetClass`):
+  - ru-only    : Cyrillic letters >= 10 AND Cyrillic >= Latin (checked FIRST)
+  - english    : Latin >= 10, Cyrillic == 0, vowel ratio (AEIOUaeiou / Latin) >= 0.15
+  - obfuscated : Latin >= 10, Cyrillic == 0, vowel ratio < 0.15 (encoded/binary noise)
+  - mixed      : Latin and Cyrillic both substantial, Latin dominant (not clean English)
+  - skip       : no usable text
+Corrected result: EN-source cooked assets 0; RU-only 248 assets / 6,012 strings;
+obfuscated 1 asset (diag evidence: "LKKELLMKLM\"!..."); mixed 0; skipped 3,082.
+
+Therefore the exact 100% TOTAL is 10,394 (the 14 en-US locre scopes only). The 111
+misclassified rows were removed from the master (rows 27,729 -> 27,618) by deleting
+exactly the rows with Status NEW + Notes 'cooked asset scan' (all other changes kept).
+
+Effect on the batch plan: cutoffs recomputed as 2,599 / 5,197 / 7,796 / 10,394. Batches
+1-3 had already been cut against the old 10,505 and delivered 2,626 / 5,253 / 7,879
+strings - each at or above the corrected mark - so no re-delivery was needed; batch 4
+completed coverage at 10,394 of 10,394 (100%).
+
+Consequence for the program: there is no cooked English dialogue text to add. Every
+non-locres dialogue asset is either Russian-only (reports/dialogue_ru_only.md, KI-010
+class) or obfuscated (reports/dialogue_obfuscated.md, BLOCKED, KI-017).

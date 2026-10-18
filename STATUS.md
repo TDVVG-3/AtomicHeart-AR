@@ -87,12 +87,21 @@ Step I  Batch 2 apply (50%):                PASS (covered 5,253 of 10,505 (50%);
 Step J  Validator (batch 2, idempotent re-run): PASS (0 problems; retag 0; master untouched; 27,618 rows)
 Step K  Batch 3 apply (75%):                PASS (covered 7,879 of 10,505 (75%); added 0; already present 7,879; retag 3,719 = Vavilov 2,427 + VDNKh 1,292; Theatre_Dialogues complete)
 Step L  Validator (batch 3, idempotent re-run): PASS (0 problems; retag 0; master untouched; 27,618 rows)
+Step M  Batch 4 apply (100%), first attempt: FAIL (added 111 rows; validator caught 111 rows with 14 fields - PowerShell comma-binds-tighter-than-'+' bug in the row builder; also those 111 strings were Cyrillic, not English)
+Step N  EN-source classifier corrected (DEC-021): PASS (EN cooked assets 0; RU-only 248 assets / 6,012 strings; obfuscated 1; TOTAL corrected to 10,394)
+Step O  Bogus rows removed from master: PASS (exactly 111 rows with Status NEW + 'cooked asset scan' deleted; rows 27,729 -> 27,618)
+Step P  Batch 4 re-run on corrected TOTAL: PASS (covered 10,394 of 10,394 (100%); added 0; already 10,394; retag 0)
+Step Q  Final coverage + validator: PASS (all 14 scopes canonical on disk; Cutscene 1,261/1,261, Dialogue 8,772/8,772, Subtitles 361/361; base 9,157 + DLC1 421 + DLC2 816 = 100%; 0 problems, 27,618 rows)
 ```
 
 Facts:
-- English-source dialogue universe = the en-US locres (10,394 strings, 14 scopes) +
-  4 cooked assets (111 strings). Cooked dialogue assets are otherwise Russian-only.
-- Master TSV: 27,618 rows before and after batch 1 (only Category values changed).
+- Dialogue/cutscene coverage is COMPLETE: 10,394 of 10,394 (100%) of the English-source
+  inventory (14 en-US locre scopes). All are already-present master rows (Category
+  canonicalized); no translation performed.
+- Corrected scope picture (DEC-021): the en-US locres are the ONLY English dialogue
+  source. Non-locres cooked dialogue assets are Russian-only (248 assets / 6,012 strings,
+  KI-018) or obfuscated (1 asset, KI-017, BLOCKED) - none is English.
+- Master TSV: 27,618 rows; all 14 dialogue scopes verified canonical on disk.
 - Pre-existing master duplicate IDs = 728 (KI-016), unchanged by this program.
 - No install/uninstall action this cycle; `~mods` still holds the Test-3 paks (untouched).
 - Nothing uploaded; `git remote -v` empty.
