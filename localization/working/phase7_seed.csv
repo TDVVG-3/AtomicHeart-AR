@@ -1,0 +1,26 @@
+key,arabic
+ST_GameTips_Texts_/vi_raneni,لقد جُرحت! اضغط مع الاستمرار على <img id=""Button.ConsumeItem""/> للعلاج
+ST_GameTips_Texts_/esli_protivnik_stoit_spinoy,إذا فاجأت عدوًا، يمكنك التسلل إليه وطرحه أرضًا دون إطلاق إنذار. <h>لتنفيذ قتلة خادعة، اقترب من الخلف واضغط</> <tag id=""InputAction.Gameplay.StealthKill""/>. أسرع، وإلا فقد تفقد عنصر المفاجأة.
+ST_GameTips_Texts_/zazhmite_i_uderzhivayte,لفتح عجلة الجرد، اضغط مع الاستمرار على <tag id=""InputAction.Gameplay.RadialMenu""/>.
+ST_GameTips_Texts_/sbor_resursov_2,لجمع الموارد وسلب الأعداء، اضغط مع الاستمرار على <tag id=""InputAction.Gameplay.Use""/>.
+ST_GameTips_Texts_/nazhmite_slabiy_udar,لإحداث ضرر خفيف، اضغط <tag id=""InputAction.Gameplay.EquippedItemPrimaryAction""/>. هذه الضربات سريعة لكنها ليست قوية للغاية.
+ST_GameTips_Texts_/protivniki_mogut_ispolzovat,يمكن للأعداء تنفيذ ضربات قوية تُسقط P-3 إذا أصابته. عندما يستعد عدو لضربة قوية، سيشير CHARLES إلى أفضل لحظة للمراوغتها. عند رؤية التمييز الأحمر، <h>اضغط</> <tag id=""InputAction.Gameplay.Dodge""/> للمراوغة.
+ST_GameTips_Texts_/chtobi_uklonyatsya,للمراوغة بين الهجمات والأجسام الطائرة والمقذوفات، اضغط <tag id=""InputAction.Gameplay.Dodge""/> أثناء التحرك.
+ST_MenuText/menu_openworld,العودة إلى المنشأة 3826
+ST_MenuText/Men_exitpopup,إنهاء اللعبة
+ST_MenuText/menu_exit,خروج
+ST_MenuText/menu_loadgame,تحميل لعبة
+ST_MenuText/menu_start,لعبة جديدة
+ST_MenuText/menu_ngplus,لعبة جديدة+
+ST_MenuText/menu_options,الخيارات
+ST_MenuText/menu_continue,متابعة
+ST_MenuText/menu_titles,فريق العمل
+AHGameSettings/BALANCED,متوازن
+AHGameSettings/BOOST,تعزيز
+AHGameSettings/Fullscreen,ملء الشاشة
+AHGameSettings/OFF,إيقاف
+AHGameSettings/ON,تشغيل
+AHGameSettings/PERFORMANCE,الأداء
+AHGameSettings/QUALITY,الجودة
+AHGameSettings/Window,نافذة
+AHGameSettings/Borderless Window,ملء الشاشة بإطار نافذة

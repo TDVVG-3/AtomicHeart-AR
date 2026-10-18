@@ -226,5 +226,30 @@ redistributed (recorded in THIRD_PARTY_LICENSES.md). User to decide whether .NET
 be installed to enable LocResUtility/GUI workflows (FModel also needs .NET 8 when its
 GUI is used).
 
+---
+
+## DEC-012 — No online publishing, permanent
+
+Date: 2026-10-18
+Status: ACTIVE (permanent, per user decision)
+
+Decision:
+Downloading from GitHub is allowed (official project pages and official release assets
+only, with SHA256 verification). Uploading to GitHub or any remote is FORBIDDEN,
+permanently:
+- never run `git push`; never add a git remote;
+- never create a GitHub repository, issue, pull request, gist or release;
+- never log in to GitHub, and never use any token or credentials;
+- never upload any project file anywhere online.
+If a future task seems to require publishing anything online: STOP and ask the user first.
+Local Git stays active for version control.
+
+Reason:
+User directive (2026-10-18, standing rule 9). The project stays entirely local.
+
+Consequence:
+Verification duty: `git remote -v` must print nothing (verified 2026-10-18: zero remotes,
+exit 0, output empty). Recorded in the cycle report.
+
 
 ---

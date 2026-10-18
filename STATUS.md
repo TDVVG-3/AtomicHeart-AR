@@ -36,12 +36,29 @@ Build (mod pak):                             NOT STARTED
 
 ## Problems / open items
 
-- LocResUtility CLI: needs .NET 8 runtime (user approval required to install, or keep
-  UnrealLocres as the working exporter - a DECISION pending for the user).
+- LocResUtility CLI: needs .NET 8 runtime. .NET 8 installation was APPROVED and started
+  (winget, 8.0.32); completion verification pending in this cycle (installer may be
+  waiting on a UAC elevation prompt on the user's screen).
 - Non-locres StringTable parsing is heuristic string-dump only; structured key->text
   mapping needs the Phase 7 prototype (UAssetGUI or FModel-assisted).
+- KI-010 (ST_GooseRunner_Hints gap) deferred by user decision until after the prototype.
+
+## Phase 7 prototype (2026-10-18, Cycle 002)
+
+- Native-`ar` locres pak built and verified: NewP5-ar.locres (25 Arabic strings from
+  phase7_seed.csv) + modified NewP5.locmeta (culture count 14->15, "ar" inserted).
+  Pak: build/package/zzz_atomicheart-ar_locres_p1_P.pak (V11, round-trip byte-identical).
+- Font override pak built and verified: NotoNaskhArabicUI payload swapped into 6 UI
+  FontFace sidecars (.ufont are raw sfnt data - proven). Pak:
+  build/package/zzz_atomicheart-ar_font_p1_P.pak; payload re-scanned FULL Arabic.
+- Paks INSTALLED into ~mods via install_mod.ps1 (manifest-based). Uninstall script
+  tested THEN reinstalled: both PASS. Game folder untouched otherwise (verified by
+  recursive LastWriteTime audit).
+- Signature enforcement: no .sig files anywhere; no signing/encryption directives in
+  shipped INIs. Verdict LIKELY not enforced (definitive only via the boot test).
+- In-game test: NOT RUN (user will test manually; checklist delivered).
 
 ## Next
 
-STOP. Awaiting user review of Phase 5 + Phase 6 report before PHASE 7 (extraction
-prototype, 10-30 strings; native `ar` culture injection tested first, reuse-slot fallback).
+STOP. Awaiting the user's in-game test report for the Phase 7 prototype (language menu,
+mmenu strings, options strings, GameTips popups, font shaping/RTL). Then fix or advance.

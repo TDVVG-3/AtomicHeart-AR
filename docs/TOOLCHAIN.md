@@ -41,11 +41,22 @@ tools/bin/toolhashes.json              (computed hashes after download)
 - **UnrealPak** is Epic proprietary (UE EULA) and must never be committed. It has not
   been obtained; repak is the preferred candidate and is expected to suffice.
 
+## Runtime installs (user-approved, 2026-10-18)
+
+| Component | Package (winget id) | Version | Source | License |
+|-----------|--------------------:|---------|--------|---------|
+| .NET Windows Desktop Runtime 8 | `Microsoft.DotNet.DesktopRuntime.8` | 8.0.32 | winget; installer hash verified against official Microsoft download (download.microsoft.com/windowsdesktop-runtime-8.0.32-win-x64.exe) | MIT (dotnet runtime) |
+| .NET Runtime 8 (base) | `Microsoft.DotNet.Runtime.8` | 8.0.32 (pending install completion) | winget (official Microsoft package) | MIT (dotnet runtime) |
+| Git for Windows | `Git.Git` | 2.55.0.5 | winget; installer hash verified (git-for-windows GitHub release) | GPL-2.0 |
+
+Needed by: LocResUtility CLI (runtime 8) and FModel (desktop runtime 8, for GUI use).
+UnrealLocres needs no install (runs on built-in .NET Framework).
+
 ## Verification status
 
 - All five downloadable tools were fetched and their SHA256 matched the upstream GitHub
   release digest (where one is published). Status: **PASS**.
 - UnrealLocres has no upstream digest, so its integrity is local-record-only (weaker
   guarantee). Flagged in tools.lock.json.
-- No tool has been exercised end-to-end on a build yet; that is Phase 7. Tool
-  *availability* and *integrity* are PASS; tool *function* on this game is NOT TESTED.
+- repak pack/list/unpack/informat exercised on a V11 round-trip (Phase 7): **PASS**.
+- UnrealLocres export/import exercised on LocRes v3 (Phase 5/7): **PASS**.

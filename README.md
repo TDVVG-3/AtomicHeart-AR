@@ -13,6 +13,13 @@ A reproducible, script-driven Arabic localization pipeline for the PC (Steam) ve
 - Rebuild modified localization resources and package them as a data-only game mod.
 - Install/uninstall the mod safely without touching other mods or game files.
 
+## Privacy (standing rule, permanent)
+
+This project is **local-only**. Nothing is ever uploaded online: no pushes to any remote,
+no GitHub repositories/issues/PRs/releases, no tokens or credentials. Only *downloads*
+from official GitHub release pages are used, with SHA256 verification. See DECISIONS.md
+(DEC-012).
+
 ## Supported game version
 
 | Item            | Value                              |

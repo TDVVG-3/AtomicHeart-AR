@@ -5,6 +5,18 @@ Format loosely follows Keep a Changelog.
 
 ## [Unreleased]
 
+### Added (Cycle 002 — 2026-10-18)
+- .NET 8 runtime install started (user-approved winget package, 8.0.32).
+- PHASE 7 prototype: native-`ar` NewP5 locres pak built (25 seed strings, locmeta
+  surgery decode + script) and font-override pak built (Noto Naskh sidecar swap).
+- scripts/build_locres_pak.ps1, scripts/build_fontpak_p1.ps1, scripts/install_mod.ps1,
+  scripts/uninstall_mod.ps1, scripts/get_pak_file.ps1.
+- MOD INSTALLED into ~mods with hash-verified install manifest; uninstall tested then
+  reinstalled. Signature enforcement assessed LIKELY-absent (no .sig files, no signed
+  config directives).
+- DEC-012: permanent no-upload rule recorded; README Privacy note added; git remote -v
+  verified empty.
+
 ### Added (Cycle 001 — 2026-10-18)
 - Git repository initialized (Git for Windows 2.55.0.5 via winget, user-approved).
 - Spec integrity guard: read-only backup + SHA256 records under docs/spec/ (DEC-008).
