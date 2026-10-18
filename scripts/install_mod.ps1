@@ -22,15 +22,15 @@ $game = Get-Content (Join-Path $RepoRoot 'config\game.json') -Raw | ConvertFrom-
 $modsPath = $game.mods_path
 $paksDir = $game.paks_path
 
-foreach ($p in (Join-Path $RepoRoot 'build\package\zzz_atomicheart-ar_carrier_koKR_p1_P.pak'),
+foreach ($p in (Join-Path $RepoRoot 'build\package\zzz_atomicheart-ar_carrier_koKR_p2_P.pak'),
                (Join-Path $RepoRoot 'build\package\zzz_atomicheart-ar_font_p2_plex_P.pak')) {
     if (-not (Test-Path $p)) { throw "build output missing, run the build scripts first: $p" }
 }
-# EXPLICIT TEST-2 SET ONLY. The rejected v1 Naskh font pak and the test-1 locres pak
+# EXPLICIT TEST-3 SET ONLY. The rejected v1 Naskh font pak and the test-1 locres pak
 # are NOT installed by design (DEC-014 v1 rejected; DEC-015/KI-013 native-ar deferred;
-# test 2 = carrier ko-KR + font v2, user order 2026-10-18 "install test 2").
+# test 3 = carrier ko-KR p2 (English-fill, DEC-016) + font v2, user order 2026-10-18 "go").
 $installSet = @(
-    'zzz_atomicheart-ar_carrier_koKR_p1_P.pak',
+    'zzz_atomicheart-ar_carrier_koKR_p2_P.pak',
     'zzz_atomicheart-ar_font_p2_plex_P.pak'
 )
 if (-not (Test-Path $paksDir)) { throw "game paks directory not found: $paksDir" }
@@ -67,7 +67,7 @@ $manifest = [pscustomobject]@{
     installed_utc = (Get-Date).ToUniversalTime().ToString('o')
     game_build_id = $game.steam_build_id
     files = $installed
-    notes = 'Remove with scripts/uninstall_mod.ps1 only. These paks are the ONLY files this project installs. Test-2 set: DEC-007 carrier (ko-KR slot, Arabic text) + font v2 (IBM Plex Sans Arabic dual-script).'
+    notes = 'Remove with scripts/uninstall_mod.ps1 only. These paks are the ONLY files this project installs. Test-3 set: DEC-007 carrier (ko-KR slot) p2 with English fill (DEC-016) + font v2 (IBM Plex Sans Arabic dual-script).'
 }
 $manifestPath = Join-Path $modsPath 'atomic-heart-ar-install-manifest.json'
 $manifest | ConvertTo-Json -Depth 5 | Set-Content -Path $manifestPath -Encoding UTF8
