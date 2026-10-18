@@ -149,3 +149,35 @@ file is ASCII-only on purpose (report/handling rule).
   placeholders `{0}`, `%s`, escapes `\n` are copied byte-exactly into Arabic.
 - Latin key names ("E", "Q", "ESC") stay Latin.
 - These are enforced automatically by the validator, not by judgement.
+
+---
+
+## F. Batch 1 (2026-10-18) - items worth a reviewer decision
+
+Full raw evidence: `reports/batch1_translator_notes.md` (427 lines, one bullet per uncertain choice,
+grouped by chunk). Summary of the classes that need your judgement:
+
+1. **Weapon and module nicknames**: translated (e.g. animal nicknames for weapon parts) rather than
+   transliterated, so a weapon list stays readable. A few (SDC-2 Volan, BEA-D, PASHTET) stay Latin
+   because the glossary says so. Decide whether you prefer translation or transliteration for the
+   remaining Russian-meaning nicknames.
+2. **`Chai! And chaps!`** - an untranslatable toast; rendered as an Arabic vocative cheer keeping
+   both exclamation marks. No glossary entry for `Chai` as an exclamation.
+3. **SHOK derivatives** (`SHOKer`, `SHOK therapy`): SHOK itself is glossary-fixed; the derivatives
+   are transliterated/descriptive. Confirm or change.
+4. **`Thrift`**, **`Carousel`**, **`Lumberjack`**, **`Greaser`**, **`Fox`**, **`Turbine`**: single
+   ambiguous words read as the abstract quality / the descriptive meaning rather than as shop or
+   brand names.
+5. **Technical Latin kept**: `RTX`, `DLAA`, `Nvidia Reflex`, `FHD/HD/QHD/UHD`, `BIOS`, `SSD`, `HDD`,
+   `BC`, `ORB`, `SHIFT`, `Space`, `BP_WayPoint50` are byte-identical to the English. Confirm you
+   want these untranslated in the UI.
+6. **86 shortened UI labels**: a second pass shortened Arabic that was more than 1.4x the English
+   length (tags, placeholders, digits and glossary terms preserved). If any shortened label reads
+   worse than the longer form, say which and it can be restored.
+7. **Copy-class rows**: 170 distinct strings (378 rows) are intentionally identical to the English
+   (numbers, symbols, lone tags, key letters, model codes, language endonyms, gibberish and
+   pure-format strings like `{Class},  {Message}`). They stay UNTRANSLATED so the English shows
+   through; the list is in `localization/working/batch1/copy_keep.tsv`.
+8. **Glossary-pressure warnings (70)**: mostly plural forms the glossary matcher cannot see
+   (`الخراطيش` for `Cartridge`) and `Shotgun` inside `4 shotgun shells`. These are wording choices,
+   not errors; flag any you dislike.

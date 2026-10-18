@@ -1,0 +1,32 @@
+# chunk_14 notes — uncertain choices
+
+- "Atomic Heart" (project name) -> `مشروع القلب الذري` — no glossary/TM entry; the literal title rendering was chosen and is used consistently in u4206.
+- "Energy for All" -> `الطاقة للجميع` — propaganda programme name; descriptive Arabic rendering.
+- `Илья` (u4087) -> `إيليا` and `Поспелов` (u4165) -> `بوسبيلوف` — the source is Cyrillic (terminal user names); the glossary transliterates Russian personal names, so these were transliterated rather than copied.
+- `Workshop 308-А` (u4096) -> `ورشة 308-А` — the trailing letter is Cyrillic А (U+0410); copied byte-exact.
+- `Dandelion` the flower/seeds -> `الهندباء` (u3970), but `Dandelion cameras` / `dandelions and hives` -> `DANDELION` kept in Latin (u3993) — follows the approved TM rows `Dandelion` = الهندباء and `Dandelion CCTV cameras` = كاميرات المراقبة DANDELION.
+- `Lithops` (u3970 seed list) -> `نبات Lithops` — botanical genus name kept in Latin.
+- `Dionaea muscipula` (u3994) -> kept in Latin — scientific name quoted inside a confession, no Arabic equivalent in use.
+- `Pioneer` / `Young Pioneers` -> `الرائد` / `الرواد الشباب` — Soviet-era organisational names; the cartoon character "the Pioneer" uses the same word.
+- `crispy critters` (u4053) -> `الكائنات المشويّة` — slang for people burned beyond recognition; the insulting/crude register is kept in Arabic.
+- `the fence` (u4037) -> `تاجر المسروقات` — English slang for a receiver of stolen goods; no established Arabic slang here, so a neutral readable term was used.
+- `Ole!` (u4069) -> `أوليه!` — a subject-line interjection; transliterated rather than translated.
+- `tank` (u4231, "drop off this tank") -> `الخزّان` — the English is ambiguous between a vehicle and a container, so the neutral "container/tank" reading was chosen.
+- Robot/device names with no glossary entry: `Rafik` -> `رافيك`, `Anfisa` -> `أنفيسا`, `Pelican` -> `بيليكان`, `Raven-1` -> `رافن-1`, `Manka` -> `مانكا`, `Working Woman` -> `المرأة العاملة` (sculpture title translated), `Cherevikov`-style surnames transliterated.
+- `Poly hairstyles` / `Poly nail polish` (u4233) -> `تسريحات البوليمر` / `طلاء أظافر بوليمري` — "Poly" is short for Polymer; the glossary form بوليمر/بوليمري was used.
+- `Billie Eilish` (u4038) -> `بيلي آيليش` — modern pop reference kept as a transliterated name.
+- `Moskviches` (u4246) -> `سيارات موسكفيتش` — Soviet car brand transliterated.
+- `20th Century Fox` and `Popular Mechanics` (u3953) -> kept in Latin — both are named inside instructions about how the name should/shouldn't be handled.
+- `homo sovieticus` / `homo futurum` (u3982) -> kept in Latin — the passage discusses the foreign Latin term itself.
+- `Wehrmacht` -> `الفيرماخت`, `Reich` -> `الرايخ`, `Third Reich` -> `الرايخ الثالث`, `Übermensch` -> `الإنسان الأعلى`, `V-2`, `NKVD`, `ENIAC`, `MORP`, `5P`, `PA-400`, `A-2`, prisoner codes (`S-230385`, `F-451`, `N-554`...) kept as-is.
+- `Hemlock` (project + plant) -> `الشوكران` — one rendering used for both; no glossary entry.
+- `wheatgrass, saltbush, sow-thistle` (u4011) -> `نجيل القمح والرغل والشوك الجبلي` and `ragweed, sump weed, wormwood` (u4025) -> `الرجيد وعشب المستنقعات والشيح` — botany terms with no glossary entry; standard Arabic plant names chosen.
+- `litmus test` (u3998) -> `اختبار عبّاد الشمس` — established Arabic idiom.
+- `hut on chicken legs` (u3948) -> `كوخ على أرجل دجاج` — folklore allusion kept literally.
+- `their servos are malfunctioning` (u4062) -> `محرّكاتهنّ المؤازرة تتعطّل` — "servo" translated instead of left in Latin.
+- `somethingswrong//////*+` (u3945) -> `هناك خطب ما//////*+` — the readable panic phrase is translated; the punctuation run is preserved byte-exact.
+- `nervous tic` -> `حركة عصبية عرضية`; `flight risk` -> `خطر فرار` — standard institutional Arabic in HR/security records.
+- Sign-offs and channels: `XOXO` -> `قبلات وأحضان`, `#villagers`/`#techstaff`/`#review_book` etc. kept as `#` + translated Arabic channel names (e.g. `#القرويون`, `#الطاقم_التقني`, `#سجل_المراجعات`).
+- `HAP` / `SAD` (u3981) -> kept in Latin — the letter proposes them as telegraph-style Latin abbreviations.
+- Provisional transliterations of surnames with no glossary entry (single bullet): Malakhova `مالاخوفا`, Yshtelbyev `إشتيلبييف`, Orlikova `أورليكوفا`, Debaltovskaya `ديبالتوفسكايا`, Abdurakhimov `عبد الرحيموف`, Baray-Ogla `باراي-أوغلا`, Henes `هينيس`, Svobodin `سفوبودين`, Semushev `سيموشيف`, Ilyushin `إيليوشين`, Sagdyev `ساغدييف`, Yevstigneyeva `يفستيغنييفا`, Azarova `أزاروفا`, Raguzin `راغوزين`, Vishnevskaya `فيشنيفسكايا`, Zakharchenko `زاخارتشينكو`, Kozhevin `كوجيفين`, Tormachev `تورماتشيف`, Naushkin `ناوشكين`, Zakirina `زاكيرينا`, Iosipova `يوسيبوفا`, Neyelova/Neyelov `نييلوفا`/`نييلوف`, Zommer `زومر`, Yudina `يودينا`, Yshtelbyeva `إشتيلبييفا`, Rastoropkin `راستوروبكين`, Styzhev `ستيزهيف`, Kurzin `كوزين`, Veritayev `فيريتاييف`, Sherman `شيرمان`, Grabov `غرابوف`, Lobazov `لوبازوف`, Papkin `بابكين`, Surkov `سوركوف`, Rykspert `ريكسبيرت`, Mitin `ميتين`, Savelyeva `سافيلييفا`, Chubakova `تشوباكوفا`, Notov `نوتوف`, Muravyova `مورافيوفا`, Krestovozdvizhensky `كريستوفوزدفيجينسكي`, Cherevikov `تشيريفيكوف`, Sysoyev `سيسويف`, Vorobyova `فوروبيوفا`, Gorshenev `غورشينيف`, Vladimirov `فلاديميروف`, Savin `سافين`, Kheimov `خيموف`, Kurtz `كورتز`, Ismailov `إسماعيلوف`, Haus `هاوس`, Lyubin `ليوبين`, Lepeshinova `ليبشينوفا`, Pavlovskaya `بافلوفسكايا`, Balko `بالكو`, Romashkov `روماشكوف`, Vyshegorodsky `فيشيغورودسكي`, Somin `سومين`, Lavrov `لافروف`, Kopylova `كوبيلوفا`, Budulak `بودولاك`, Gulshat `غولشات`, Koktebel `كوكتيبل`, Gagra `غاغرا`, Aldebaran `الدبران`, Yamala `يامالا`, Lake Lazur `بحيرة لازور`.
+- Glossary/TM forms reused for consistency: `Sechenov` سيتشينوف, `Stockhausen` شتوكهاوزن, `Lastochkin` لاستوتشكين, `Vavilov` فافيلوف, `Pavlov` بافلوف, `Zolotukhin` زولوتوخين, `Nyukhov` نيوخوف, `Privalov` بريفالوف, `Smirnov` سميرنوف, `Yelizarova` يليزاروفا, `Mukhtarev` موختاريف, `Furman` فورمان, `Lizova` ليزوفا, `Lebedin` ليبيدين, `Klimov/Klimovs` كليموف/آل كليموف, `Chirper` تشيربر, `Academy of Consequences` أكاديمية العواقب, `Radio of the Future` راديو المستقبل, `Lighthouse` المنارة, `Natasha` ناتاشا, `Hedgie` هيدجي, `Belyash` بيلياش, `THOUGHT` and `PEAR` kept in Latin, `VOV-A6` kept in Latin.

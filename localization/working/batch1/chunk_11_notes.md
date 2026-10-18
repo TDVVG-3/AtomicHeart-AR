@@ -1,0 +1,23 @@
+# chunk_11 notes - uncertain choices
+
+- Тест -> `اختبار` — because the English is the Russian word for "test", not gibberish/symbol-only, so it was translated rather than copied; if the string is a raw dev label the copy-class rule may apply instead (only row in this chunk where "copy English as-is" was considered).
+- Sergeeviches -> `آل سيرغييفيتش` — because the plural of the patronymic nickname has no glossary entry; an Arabic collective (`آل` = "the ... family") was chosen over a bare repeated singular so it stays distinct from `Sergeevich` -> `سيرغييفيتش`.
+- Barrel / Barrels / Barrel case -> `الماسورة` / `الماسورات` / `علبة الماسورة` — because the approved TM renders firearm "barrel" as `الماسورة` (`Barrel module` -> `وحدة الماسورة`); the same three strings could also be oil drums (`برميل`), which is the alternative if the UI shows world objects rather than weapon parts.
+- STORAGE -> `التخزين` (and STORAGE/DISASSEMBLY -> `التخزين/التفكيك`) — deliberately different from `Warehouse` -> `المخزن` so the two adjacent labels do not collapse into the same Arabic word.
+- CAPTURE -> `احتجاز` — because the TM uses `احتجاز` for the same enforcement verb (`Detain Petrov in the Theater` -> `احتجاز بيتروف في المسرح`); `استيلاء` would be the reading if the string is about seizing a location.
+- FORTITUDE -> `الصمود` (Fortitude 2/3 -> `الصمود 2`/`الصمود 3`) — because `الجَلَد` (the literal "fortitude") would be misread as "leather" next to an all-caps HUD label.
+- Armageddon -> `هرمجدون` — difficulty-tier name with no glossary entry; the established Arabic transliteration of Armageddon was used.
+- Triode energy absorber -> `ماصّ الطاقة الثلاثي` — because `Triode` has no glossary entry; `الصمّام الثلاثي` is the longer electronics reading if the part is the vacuum tube and not the "triple" module.
+- Hive -> `الخلية` (in `Additional Hive settings terminal`) — because the glossary/TM preserve only HAWK/VOLAN/DANDELION/PEAR in Latin; keeping `HIVE` in Latin is the alternative if the in-game check shows it is an untranslated system code name.
+- Academy of Consequences -> `أكاديمية العواقب` — because the TM row for Petrov keeps the abbreviation `AoC` in Latin; the full Arabic name was used here because the dossier reads as prose.
+- profile polymer -> `البوليمر الخاص` — because the approved TM renders the consumable resource as `البوليمر الخاص` (`special polymer`); a distinct reading (`بوليمر الملف`) is possible if "profile" is a separate resource name.
+- collimator scope -> `منظار تصويب قياسي` — because `كوليماتور` is rarely understood in Arabic UI; the descriptive rendering was preferred for a 62-character tooltip.
+- The Turbine -> `التوربين` (in `Get in the Turbine`) — the vehicle/hall name has no glossary entry; `Turbine` also appears as a standalone string in chunk_13, so this may need to be aligned with that chunk later.
+- 2 fire modes (u3073) -> `2 من أوضاع الرمي` — the digit `2` was kept explicitly (instead of the natural Arabic dual `وضعا رمي`) so the number survives byte-exact.
+- Provisional transliterations with no glossary/TM entry: Smirnov -> `سميرنوف`, Alexander Kuznetsov -> `ألكسندر كوزنيتسوف`, Sergey Dovlatov -> `سيرغي دوفلاتوف`, Semyonovna -> `سيميونوفنا`, Timofeyevich -> `تيموفيفيتش`, Tove Jansson -> `توفي يانسون`, Terry Pratchett -> `تيري براتشيت`, Steve Jobs -> `ستيف جوبز`, Stepan -> `ستيبان`, Tamara -> `تمارا`, Claire -> `كلير`, Komar -> `كومار`, Lukomorye -> `لوكوموري`, Titan -> `تيتان`.
+- Roboboy -> `فتى روبوت` — follows the TM/notes rendering of Robogirl -> `الفتاة الروبوت` inside the u3188 dossier.
+- Battering blow -> `الضربة الطاحنة` while Crushing blow -> `الضربة الساحقة` — two separate upgrade names needed distinct short forms, so the near-synonyms were split between `طاحنة` and `ساحقة`.
+- Weak/Strong hit -> `إصابة ضعيفة`/`إصابة قوية` (and Power attack -> `الضربة القوية` per the TM `Power attack hints`) — to keep "power attack" and "strong hit" from becoming the same Arabic label.
+- Jet Module -> `وحدة النفّاثة` — follows the glossary `Polymeric Jet` -> `النفّاثة البوليمرية`; `وحدة الدفع النفّاثي` if the module is a thruster rather than an ability upgrade.
+- Textures -> `الأنسجة`; Subtitles -> `الترجمة` — standard Arabic UI terms for graphics/subtitle settings.
+- u3156 and u3289 keep their trailing spaces in the Arabic cell (fragments consumed by the UI).

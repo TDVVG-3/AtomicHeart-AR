@@ -1,0 +1,22 @@
+# chunk_12 notes (EN -> AR)
+
+- Spooling speed -> سرعة التدوير — because "spooling" refers to spinning up the accelerator; kept terse as a stat label.
+- Impact -> ارتطام / وحدات الصدم — "Increased Impact" and "Impact units" rendered with the impact/"صدم" root; no glossary entry exists.
+- rifle pitch -> خطوة البندقية — kept parallel with "barrel bore pitch" = خطوة تجويف الماسورة; "pitch" here means twist/step of the barrel.
+- weak point damage -> ضرر نقاط الضعف — matches existing TM "ضرر لنقاط الضعف" wording.
+- weakened points -> النقاط المُنهَكة — distinct from "weak points" (نقاط الضعف); "weakened" treated as already-worn points.
+- grazed enemy -> عدو تصيبه إصابة سطحية — "graze" read as a glancing/skim hit.
+- Mph! Gr! -> همف! غر! — an untranslatable grunt/onomatopoeia; rendered as an Arabic phonetic equivalent in the same interjection register.
+- spigots -> موصلات — "spigots" transmit energy, so rendered as connectors rather than the literal "صنابير".
+- muzzle brake compensator -> معوّض كابح الفوهة المحسّن — uses existing TM "كابح الفوهة".
+- marching engine -> محرّك سير — "marching engine" read as a locomotion/drive engine in the exoskeleton upgrade context.
+- GREASER -> المشحّم — robot type; translated like SECATEUR (المقصّ) rather than transliterated.
+- SURGEON -> الجرّاح — robot type; translated like SECATEUR.
+- Auger (SNOWBALL—AUGER) -> المثقب — attachment name; kept the em dash in place.
+- Photon Sink -> مصرف الفوتونات — "sink" as a drain/absorber device.
+- Extended Topology -> طوبولوجيا موسّعة — kept the technical term "طوبولوجيا".
+- roundhouse attack -> ضربة الدوران — a spinning/roundhouse strike.
+- Reflex (accelerator / frame generation) -> الرفلكس — transliterated as an in-game feature name rather than kept Latin.
+- Brave New World -> عالم جديد شجاع — standard Arabic rendering of the Huxley title.
+- Pelican (loader) -> بيليكان — in-world machine name transliterated like other robots (Burlak -> بورلاك).
+- Perlin/Pelican/Vortex context: "Maglev high-speed Vortex trains" -> قطارات فورتكس فائقة السرعة المعلّقة مغناطيسياً — "Maglev" expressed descriptively as magnetically levitated.

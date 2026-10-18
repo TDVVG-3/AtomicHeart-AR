@@ -1,0 +1,25 @@
+# chunk_08 — uncertainties and choices
+
+- Neyelova -> نييلوفا — transliteration of Неелова/«Neyelova»; not in glossary, kept close to the Russian spelling.
+- Michael / Michael Stockhausen -> ميخائيل — treated as the Russian form Михаил (same character as the Vavilov biography first names); a German «ميخائيل» reading was preferred over «مايكل» for consistency across u2127/u2196.
+- «Trap mine» -> لغم فخّي — «trap mine / mina-lovushka»; «لغم شركي» was the alternative, «فخّي» reads better as an equipment name.
+- «Finial» -> زخرفة قمّية — short item name for an ornamental top piece; «قمة زخرفية» was the alternative.
+- «NAJTITE BALLON» (u2182, source is Russian «НАЙДИТЕ БАЛЛОН») -> اعثر على الأسطوانة — the row is Russian, not English; translated by meaning so it matches the neighbouring «FIND ACTIVATION CARD» objective.
+- «Trap mine»/«Pressure builder» -> مولّد الضغط — «بانِي الضغط» was rejected as unidiomatic.
+- «Neurokinetic centrifuge» -> نابذة عصبية حركية — «جهاز طرد مركزي عصبي حركي» is clearer but too long for a 23-char UI label.
+- «Neuropolymeric» -> عصبي بوليمري — adjective order follows the approved TM row «Neuropolymeric supercharger = شاحن عصبي بوليمري فائق».
+- SHOK -> شوك — glossary form used everywhere, including inside <h> tags (u2298) and the SHOK charging upgrade (u2356), matching TM row for SHOK/Frostbite.
+- «Frostbite» rendered الصقيع in u2383 per glossary; «regular frostbite» -> الصقيع العادي.
+- u2157 «Rooster hammer» -> مطرقة الديك القوية — «Rooster» is a nickname; kept literal because no glossary entry exists.
+- u2156 «Med Reflector» -> عاكس طبي قوي — «Med» read as «medical»; «Med» transliterated was the alternative.
+- u2205 «Finial», u2226 infomercial style — register kept as advertising patter.
+- u2224 «snitch» -> المُبلّغ — kept blunt (not softened to «المخبر») to preserve the original tone.
+- u2396/u2397 «No lockpick» / «No stock» -> لا كسّارة أقفال / لا أخمص — «stock» read as the weapon's stock (same sense as u2409 «stock»); the alternative «لا مخزون» (out of stock) was rejected because these rows look like equipment-slot strings.
+- u2388 «AoC» -> أكاديمية العواقب — expansion «Academy of Consequences»; not in glossary.
+- u2386/u2406 em dashes (—) preserved with the same occurrence count as the English (4 and 1 respectively).
+- u2399 «Lower Yablochkovo» -> يابلوتشكوفو السفلى — toponym, not in glossary.
+- u2337 «Deimos OS» kept Latin; «Chelomey Design Bureau» -> مكتب تشيلومي للتصميم.
+- u2346/u2347 nearly identical English: wording differentiated slightly («والأعداء العضويون أكثر حساسية…») consistent with the source difference.
+- u2199/u2200 and u2262/u2264/u2265 near-duplicates: wording varied only where the English differs (strike/attack, into/to, lab/labs).
+- u2303 «Senior Archivist» -> أمين الأرشيف الأقدم — «كبير الأمناء» was the alternative.
+- u2308 «Polymerized Subjects» -> الأشخاص المبلمرين — «الخاضعين للبلمرة» longer; chosen form matches «مبلمَر» used in TM.

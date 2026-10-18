@@ -26,7 +26,13 @@
 [CmdletBinding()]
 param(
     [string]$RepoRoot = 'C:\AtomicHeart-AR',
-    [string]$MasterTsV = ''
+    [string]$MasterTsV = '',
+    # Exempt codepoints that the translation INHERITED from the English source of the same
+    # row (for example the Cyrillic A in "Workshop 308-A" or the Cyrillic x in "12x70
+    # rounds"): the engine serves those from its fallback face today, so they are not a
+    # new requirement introduced by the Arabic. Codepoints absent from the font AND absent
+    # from the source still fail. DEC-027.
+    [switch]$AllowSourceInheritedNonLatin
 )
 $ErrorActionPreference = 'Stop'
 try { [Console]::OutputEncoding = [Text.Encoding]::UTF8 } catch {}
@@ -122,6 +128,7 @@ function Get-CmapSet([string]$path) {
 # --- codepoints used by the translated master rows
 $lines = [IO.File]::ReadAllLines($MasterTsV, [Text.Encoding]::UTF8)
 $usedAr = New-Object 'System.Collections.Generic.HashSet[int]'
+$usedSource = New-Object 'System.Collections.Generic.HashSet[int]'
 $rowsWithArabic = 0
 $distinctCodepoints = @{}
 for ($i = 1; $i -lt $lines.Count; $i++) {
@@ -138,6 +145,7 @@ for ($i = 1; $i -lt $lines.Count; $i++) {
             $distinctCodepoints[$cp] = [pscustomobject]@{ scope = $scope; key = $f[4]; sample = $f[6] }
         }
     }
+    foreach ($ch in $f[5].ToCharArray()) { [void]$usedSource.Add([int][char]$ch) }
 }
 
 $results = New-Object System.Collections.Generic.List[object]
@@ -164,8 +172,19 @@ foreach ($face in $faces) {
 $unionMissing = New-Object System.Collections.Generic.List[int]
 foreach ($cp in $usedAr) { if (-not $union.Contains($cp)) { $unionMissing.Add($cp) } }
 
+# Split the missing codepoints: those that the English source of the same row already needs
+# (the engine fallback serves them today) vs codepoints the Arabic introduced on its own.
+$allMissing = New-Object 'System.Collections.Generic.HashSet[int]'
+foreach ($cp in $unionMissing) { [void]$allMissing.Add($cp) }
+foreach ($cp in $subtitleMissing) { [void]$allMissing.Add($cp) }
+$sourceInherited = New-Object System.Collections.Generic.List[int]
+$realMissing = New-Object System.Collections.Generic.List[int]
+foreach ($cp in $allMissing) { if ($usedSource.Contains($cp)) { $sourceInherited.Add($cp) } else { $realMissing.Add($cp) } }
+$sourceInherited.Sort(); $realMissing.Sort()
+
 $verdict = 'PASS'
-if ($subtitleMissing.Count -gt 0 -or $unionMissing.Count -gt 0) { $verdict = 'FAIL' }
+if ($realMissing.Count -gt 0) { $verdict = 'FAIL' }
+elseif ($sourceInherited.Count -gt 0 -and -not $AllowSourceInheritedNonLatin) { $verdict = 'FAIL' }
 
 $r = New-Object System.Collections.Generic.List[string]
 $r.Add('# Glyph gate report (pilot)' )
@@ -179,6 +198,9 @@ $r.Add('')
 $r.Add(('Distinct codepoints used by the translated rows: {0}' -f $usedAr.Count))
 $r.Add(('Codepoints missing from the subtitle face: {0}' -f $subtitleMissing.Count))
 $r.Add(('Codepoints missing from the union of all six installed faces: {0}' -f $unionMissing.Count))
+$r.Add(('Of those, source-inherited (also present in the English source of the same row): {0}' -f $sourceInherited.Count))
+$r.Add(('Codepoints newly required by the Arabic and missing from the font: {0}' -f $realMissing.Count))
+$r.Add(('Source-inherited exemption switch: {0}' -f $(if ($AllowSourceInheritedNonLatin) { 'ON (-AllowSourceInheritedNonLatin)' } else { 'off' })))
 $r.Add('')
 $r.Add('| face | mapped codepoints | missing (pilot chars) | Latin-Basic missing | Cyrillic | Hangul sample |')
 $r.Add('|---|---|---|---|---|---|')
@@ -191,7 +213,8 @@ if ($unionMissing.Count -gt 0) {
     $r.Add('')
     foreach ($cp in $unionMissing) {
         $d = $distinctCodepoints[$cp]
-        $r.Add(('- U+{0:X4} first seen in {1} key {2}' -f $cp, $d.scope, $d.key))
+        $kind = if ($usedSource.Contains($cp)) { 'source-inherited' } else { 'INTRODUCED BY THE ARABIC' }
+        $r.Add(('- U+{0:X4} ({1}) first seen in {2} key {3}' -f $cp, $kind, $d.scope, $d.key))
     }
     $r.Add('')
 }
@@ -205,7 +228,7 @@ $r.Add('  covers completely.')
 $r.Add('')
 [IO.File]::WriteAllLines($reportPath, $r, (New-Object Text.UTF8Encoding($false)))
 
-Write-Output ('GLYPH GATE {0}: rows with Arabic {1} | distinct codepoints {2} | subtitle-face missing {3} | union missing {4}' -f $verdict, $rowsWithArabic, $usedAr.Count, $subtitleMissing.Count, $unionMissing.Count)
+Write-Output ('GLYPH GATE {0}: rows with Arabic {1} | distinct codepoints {2} | subtitle-face missing {3} | union missing {4} | source-inherited {5} | introduced-by-Arabic {6}' -f $verdict, $rowsWithArabic, $usedAr.Count, $subtitleMissing.Count, $unionMissing.Count, $sourceInherited.Count, $realMissing.Count)
 foreach ($x in $results) {
     Write-Output ('  {0,-40} mapped={1,-6} missing={2,-3} latinMissing={3,-3} cyrillic={4,-4} hangulSample={5}' -f $x.face, $x.mapped, $x.missing, $x.latinMissing, $x.cyrillic, $x.hangulSample)
 }

@@ -1,0 +1,21 @@
+# chunk_05 notes — uncertain choices
+
+- HAWK 01 … HAWK 08, SM-1 -> kept byte-identical (unit/model codes). The TM already keeps `HAWK` Latin in `UNIDENTIFIED HAWK -> HAWK غير معرّف`, so identical output for these rows is intentional, not a missing translation.
+- HAWK—FORESTER -> `HAWK—الحرّاج` — because `Forester` is a callsign/role here, not a person's name; `الحرّاج` (forest warden) reads naturally beside the preserved `HAWK`; alternative transliteration `فورستر` rejected as it would hide the meaning.
+- CONTROLLER DISCONNECTED -> `ذراع التحكّم غير متصل` — because in caps as a system message this is the gamepad-disconnect banner; the game's "Controller" enemy would have been `المتحكّم`.
+- Controller Camera 1/2 -> `كاميرا المتحكّم 1/2` — because these are surveillance cameras tied to the `Controller` (not the gamepad); kept consistent with the enemy reading rather than the peripheral reading.
+- Art subtitles -> `ترجمات فنية` — because the setting category is ambiguous (art/artistic subtitle track); chose a neutral adjective form.
+- High-discrete oscillating circuit -> `دارة تذبذبية عالية التفرّد` — because "high-discrete" has no established Arabic term; `التفرّد` (discreteness) keeps the technical register and matches the component naming style.
+- Hold time -> `زمن الإمساك` — because the string sits with the maintenance settings and has no context; `الإمساك` covers both "hold input" and "grip/hold" readings.
+- Pchela -> `بشيلا` (transliterated, left for glossary) — because it is a Russian robot name (пчела "bee") not yet in the glossary; kept as a transliteration so the swarm unit keeps an identity.
+- profile damage -> `ضرر المقطع` — because "profile" here is a weapon stat (cross-profile damage), not a character profile; `المقطع` keeps it short for UI.
+- Дельфин с панамкой -> `دلفين بقبّعة بنما` — because the source string is Russian, not English; translated into Arabic and the trailing space preserved. Recorded here in case the reviewer prefers the raw Russian asset name kept verbatim.
+- Vsync -> `تزامن عمودي` — because the full form `المزامنة العمودية` would exceed the 5-char English label; short two-word form used for UI fit.
+- Repeater (Vibrating repeater) -> `المكرّر المهتزّ` — because "repeater" as a weapon part is best kept terse; a full `بندقية تكرار` would be too long.
+- Meddlesome Lady -> `السيدة المتطفّلة` — because `الفضولية` understates the pejorative sense of "meddlesome".
+- Bawler -> `الصيّاح` — because the robot nickname is mocking; `الصيّاح` keeps the insult register.
+- "battements and cabriolet" transliterated as `الباتمون والكابريول` — because the French ballet terms have no settled Arabic forms; transliteration avoided a false friend (`باتمان` = Batman).
+- ryzhova -> `ريجوفا` — provisional transliteration (Russian ж rendered as ج, matching Nechaev/Zakharov in the glossary); submitted for glossary addition.
+- Filimonenko -> `فيليمونينكو`, Petelka -> `بيتيلكا`, Lyogkaya -> `ليوهكايا`, Debaltovskaya -> `ديبالتسيفسكايا` — provisional transliterations, not yet in the glossary.
+- Khrushchev -> `خروتشوف`, Michurin -> `ميتشورين`, Koktebel -> `كوكتيبل` — provisional transliterations, not yet in the glossary.
+- Hive -> `الخليّة` — because the source capitalises "The Hive" as a unit name; `الخليّة` (hive) keeps both the meaning and the unit-name feel.

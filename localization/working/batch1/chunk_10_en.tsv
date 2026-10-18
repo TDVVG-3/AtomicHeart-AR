@@ -1,0 +1,301 @@
+id	english	scope	key	category	en_len
+u2721	Allows the user to swap magazines more quickly.	NewP5	/293E3282451C8C55FAA8F6ABC07D578F	UI	47
+u2722	Reduces energy consumption when firing.	NewP5	/ADF5ACAA4B78417C9ED92D82C8FD5E2E	UI	39
+u2723	Maintains the optimal shape and cutting edge, which can increase damage efficiency when attacking.	NewP5	/5A0B3FB84C795D58A5127BA6125CE8F3	UI	98
+u2724	Significantly reduces gun vibration when firing, decreasing recoil.	NewP5	/942CB03241C717BDAE0EFBA82C8167A9	UI	67
+u2725	Allows to significantly reduce gun vibration when firing, decreasing spread and recoil.	NewP5	/CDF11A7845575E796789FCAA1F975A8C	UI	87
+u2726	Reduces the energy cost of producing shots.	NewP5	/DC4D334F4D974B5546A1FE9EE2C446B9	UI	43
+u2727	A secret product of Facility 3826 designed specifically for the Argentum squad. Allows the user to stay in combat longer by converting recoil energy into suit power.	NewP5	/6093A41147A4E95AAE4CA688523F783D	UI	165
+u2728	Can be used to improve the agent's polymeric abilities.	NewP5	/8EBD6D244A5376D86E973B93B9CC85BB	UI	55
+u2729	Unlocks a cartridge slot	NewP5	/489916E14187FD3E069F24BEEE286EE8	UI	24
+u2730	Allows to control spreading with slightly more precision.	NewP5	/7133C8434E62922D238C4B977BD303B5	UI	57
+u2731	Allows the lossless transfer of energy, expending less of it to fire a shot.	NewP5	/13199212481424E6EB352292977888A7	UI	76
+u2732	I don't care if we're burned at the stake, we won't reject our convictions!	NewP5	/D15AA5C245B1634276D3AC9447173EEC	UI	75
+u2733	Exposing the hidden	NewP5	/64F7A13945F07F1952AE968AF71A6253	UI	19
+u2734	Display subtitles for texts, posters, etc.	NewP5	/6C0DC5874ACBDAC67D77CF825A18548B	UI	42
+u2735	Display subtitles for speech	NewP5	/52289D7F431090B55C065AB8E2B5BFDB	UI	28
+u2736	Leave the Academy	NewP5	/EA3B9F254655CD4C9D816CB60F1ACF52	UI	17
+u2737	Leave the Complex	NewP5	/29242B0648F6FDDC7352D99BD01A6FF5	UI	17
+u2738	Leave the lab	NewP5	/4CD8D50844A031207CBACDA845D93486	UI	13
+u2739	It may sound macabre, but for morgue supervisor Gireyev, dead people are the love of his life. Having begun his career as a gravedigger at a Moscow cemetery in imperial Russia before the revolution, Gireyev's career has involved exhuming bodies, destroying the corpses of people killed by the Brown Plague, and overseeing funerals for unknown soldiers after the war. He rarely makes jokes, but is "more comfortable with the dead, since no one's ever had his life ruined by a corpse."	NewP5	/EC15EDC7408EAF2EEA1251A1ACAA855C	UI	483
+u2740	A useful item that can be repurposed for crafting.	NewP5	/3570B4BE4D852F2C316D87B4EC8A2AEC	UI	50
+u2741	Testing Ground	NewP5	/7BDED5C44B3C8A693D7B15BE7031A385	UI	14
+u2742	Testing Ground 1	NewP5	/22ECDCB841B3197157490796E04EB8CC	UI	16
+u2743	Testing Ground 10	NewP5	/9F6C9AB24E3F3ADC122B108AD97840FD	UI	17
+u2744	Testing Ground 11	NewP5	/E3DE65C14E6BBF0C9800EC95CDC52CE2	UI	17
+u2745	Testing Ground 13	NewP5	/063B79354C3F57AE4109B8B7E74AF365	UI	17
+u2746	Testing Ground 14	NewP5	/EC4944AC4FFB3A2F9DD343BCFE81FF31	UI	17
+u2747	Testing Ground 15	NewP5	/7FB08537439F31652BAF24A09BEA83E0	UI	17
+u2748	Testing Ground 16	NewP5	/365474094D56BA68D1462FBA2A71567F	UI	17
+u2749	Testing Ground 2	NewP5	/E3F5142E43C5A7F7CD8E8D9A7983668E	UI	16
+u2750	Testing Ground 3	NewP5	/F8C27AE546747D23BDA2B587CEB1BFF2	UI	16
+u2751	Testing Ground 4	NewP5	/5323B0D94AC37E5CB8BB34879078A0F6	UI	16
+u2752	Testing Ground 5	NewP5	/285AF55F4B6F270E077C91BE6B015431	UI	16
+u2753	Testing Ground 6	NewP5	/E2AF92754836FACAAA861D88F0E09558	UI	16
+u2754	Testing Ground 7	NewP5	/4BE9918445ED6048EEDD6486CFFC6C63	UI	16
+u2755	Testing Ground 8	NewP5	/2E85B1384854CA107A4639B814B80CBA	UI	16
+u2756	Testing Ground 9	NewP5	/D335F2E94AC2D1853B1D4685D092C42A	UI	16
+u2757	Testing grounds	NewP5	/9DC9682E4CD1F5C9BFC4B8A028B75090	UI	15
+u2758	Polymeric Overload	NewP5	/5DCB698244F54FD64548F0ABC71B7651	UI	18
+u2759	Polymeric cutting edge	NewP5	/2BFACC4044D5EAD61DABFA8DAFAEF180	UI	22
+u2760	Polymeric Jet:	NewP5	/D64F80A94C07D7E7DABA8884D42F3871	UI	14
+u2761	The polymeric cutting edge increases damage dealt.	NewP5	/0515D4934CDFE2D097D0A281E59D18B4	UI	50
+u2762	First polymeric compound of heavy water and silicon is created. Dmitry Sechenov and Chariton Zakharov discover polymer technology.	NewP5	/BB910D7C40AC9A2A380ED9B2EE465614	UI	130
+u2763	Polymer Casings	NewP5	/09A50EA54BAFF889970E959F241AC9EE	UI	15
+u2764	Polymeric barrel channel guides	NewP5	/CE803FFD4AC997B86E81F5AE1226F2B0	UI	31
+u2765	Polymer Guides	NewP5	/15E8C3B246E33858FC6C04899B68B8B7	UI	14
+u2766	These polymer cooling guides allow for an increased firing speed.	NewP5	/4B00760E4117971F087536BE78527D0A	UI	65
+u2767	Polymeric muzzle brake compensator	NewP5	/ED821CA24DF5E3D514B06DA3E651CA35	UI	34
+u2768	Polymeric rotation module	NewP5	/AF266C1245F3BEE0890D2997AA0C54D9	UI	25
+u2769	Polymeric barrel return	NewP5	/4658C07E430799FD96A0919D06192CE9	UI	23
+u2770	Polymer Gas Vent	NewP5	/FB0538BA47E809C107FB30B9471F8BB7	UI	16
+u2771	Polymeric backplate	NewP5	/17F8A2BD451F78E04A55A89A512CAF79	UI	19
+u2772	Polymeric frame	NewP5	/1AEC324040873028AB50B889A79DA3B2	UI	15
+u2773	Polymeric kinetic reflector	NewP5	/20F25E14419F2063AD4831B983A5A725	UI	27
+u2774	Polymeric oscillating circuit	NewP5	/DA13D57A4176D47A1CCAF98C8D520AFE	UI	29
+u2775	Polymeric supercharger	NewP5	/70948ACF4320FE61EBC2F38372EC5A7D	UI	22
+u2776	Polymeric feeder	NewP5	/48EDAA104E0C1133A21C9AA2F878DBFC	UI	16
+u2777	Polymeric printer	NewP5	/BF9F8AE34325DB7E10D4E1B99B68659D	UI	17
+u2778	Polymer Rheostat	NewP5	/DCBF0A4E44B18FEFCA15AD9231A8AAF0	UI	16
+u2779	Polymeric centrifugal module	NewP5	/96B4FA0B4FC41AAC5926D18CCBC3AE1F	UI	28
+u2780	Polymeric Barrier	NewP5	/BA40BA0646660778C84FC5B49BC035B1	UI	17
+u2781	Polymeric energy stabilizer	NewP5	/4B9F47F440FB9E12CBC193B6A86E3C0F	UI	27
+u2782	A bicomponent polymer mix that gradually transfers the energy reserve to the suit's storage.	NewP5	/67A2135A4B32623100A3C1BC00F02833	UI	92
+u2783	Full Canister	NewP5	/1CB178924D8135F2524803BBD4CBCEAA	UI	13
+u2784	Viscous, fusible materials allow this weapon to shoot wave beams by adjusting the energy supply to the active charges.	NewP5	/A7F7C1A748A4BD98EA4090A07D080F96	UI	118
+u2785	Window mode	NewP5	/E339968D45E93F2780C23FA4EDB25381	UI	11
+u2786	Full Contact	NewP5	/D555D52D4ADB3CB9612D59900B621210	UI	12
+u2787	Lost Health is recycled into energy.	NewP5	/3B45D055421D6A4B04B2818D56319726	UI	36
+u2788	Get the Volan codes	NewP5	/4E8457A04BFDFA219C5812BFA4345B7C	UI	19
+u2789	Use the environment to your advantage. Hurling a crate is free. Wasting your ammo isn't.	NewP5	/1AAA0E1E4945E958F11A0699A1BAF364	UI	88
+u2790	Jamming activated	NewP5	/33A05C7048EA9DD5A3B263A5CCE46E21	UI	17
+u2791	Robot maintenance jamming	NewP5	/C7E6BA8F40148A4290D6BFBF45461B2C	UI	25
+u2792	A capsule with a mercury balancer placed inside the shock unit may double the damage from a blow.	NewP5	/9799B02247D9E73AB7DBBCBF0885403D	UI	97
+u2793	Remember, Comrade Major: you and I are a team! I help you, you help me. That's the plan.	NewP5	/5779F6514E911F1CC21409A26F65B098	UI	88
+u2794	Help the victim	NewP5	/257CDC164467A94C78E4D0965C50647B	UI	15
+u2795	Aim Assist	NewP5	/104BCA4D46DF1DA65D58F79B2A9A16A6	UI	10
+u2796	Enter the Beluga's hall	NewP5	/9875433D456C4245C408FFA79BEF4DF8	UI	23
+u2797	Enter the service rooms area	NewP5	/A793CFAC4C4DB8303F9A2192C5D88D65	UI	28
+u2798	Try not to place blame, Sergey. It's quite simple: judge not, that ye be not judged.	NewP5	/AD8B4E3B41D0C6027CAD73AEBFB81EC5	UI	84
+u2799	Try using a scanner	NewP5	/4D954ADC4249DBF1DDE3B3AD6456C410	UI	19
+u2800	Chandeliers can serve as a weapon. Try shooting a charged attack from the Secateur at them.	NewP5	/C42DBA4B43F5B7AA91373088668FFDA9	UI	91
+u2801	Stunning Head	NewP5	/C35A79924E0C8755B7C95ABD9E747F45	UI	13
+u2802	Wave Shot hits one enemy behind the target	NewP5	/92F8ED7045FA0FFF8ED04F8AA631FCFE	UI	42
+u2803	Upgraded spoke alloy withstands high supercharger energy loads, allowing for a wider Wave Shot	NewP5	/C774CE0F4713C408B84AB692155D3095	UI	94
+u2804	The Yarov-Abalakov backpack's capacity is virtually limitless. Scavenge away!	NewP5	/D56C3E9E443182BD57FC87AB3ECAA87E	UI	77
+u2805	Pistons make recoil compensation smoother.	NewP5	/BFF334C64A8F23FB29FE31BF2C231665	UI	42
+u2806	During normal attacks, fully accumulates energy for a powerful final blow	NewP5	/8DA0FB654366F124BC0BF4833231CE6D	UI	73
+u2807	A chemical reaction starts after a projectile is fired, increasing damage with each passing second.	NewP5	/579C5979458E3394CD35148C624941F2	UI	99
+u2808	Defrosted enemies remain covered in Polymer	NewP5	/29ED6ACB48CBD7B044F22CAC055F167F	UI	43
+u2809	Defrosted enemies remain covered in Polymer. You gain immunity to Fire while using the ability	NewP5	/35F38EB34933D557D1FB1AB0E6119CCF	UI	94
+u2810	Improves the durability of the cryopolymer, increasing the freeze duration.	NewP5	/A77ABF624E446312A425589F9C020940	UI	75
+u2811	Successive Neuropolymer Unit upgrades improve applied Combat Polymer's durability, increasing the effect's duration.	NewP5	/C1ADF7C3481135C48A0FBBA22BC3B2D7	UI	116
+u2812	Increases your maximum Health.	NewP5	/5F9C81AF47A10140626148AED2CFC4C3	UI	30
+u2813	If you find yourself in a heavily patrolled area, make as little noise as possible. Or it will be just like the last time.	NewP5	/9D7142D64D6D25C45002358634F82497	UI	122
+u2814	Postprocessing	NewP5	/1FDB1F5A4F8CF0C9526EF2A6E6A36B6B	UI	14
+u2815	A well-worn chessboard.	NewP5	/A1B396A74583EA8E4DFF3E8EBF375E8C	UI	23
+u2816	Torrent modulation	NewP5	/8E0F7AD34F79BDD4061C5AB5F41E10F9	UI	18
+u2817	NORA's Kiss	NewP5	/E2C412D6457A07203875A29FBCA8DDB6	UI	11
+u2818	Corn ear	NewP5	/B86F8F4548C82E822389D09CBD0E56A6	UI	8
+u2819	A corn ear.	NewP5	/7A514BFC44EC62858E64FC9133573996	UI	11
+u2820	Repair mirror mechanism	NewP5	/B6C2A173488E43CFCB3EA58A4F2C0B63	UI	23
+u2821	Increases your backpack's capacity through compression rate upgrades.	NewP5	/18BA2BE34F79D2C35862D985072B938C	UI	69
+u2822	The USSR government passes a resolution to start providing robots and connected devices around the world, free of charge, as humanitarian aid. 	NewP5	/8A115DEA4E00DB7CFEFDA59BE490B7C6	UI	143
+u2823	Prevents rapid wear of the finial, ensuring long-term shape retention and increasing damage efficiency.	NewP5	/FD892C7043B51FD69368DC8EB6D3FFAC	UI	103
+u2824	The Argentum unit prevents foreign agents from acting in Bulgaria. As a result of a bomb explosion, Agent Plutonium is in a coma, and Agent Blesna is dead.	NewP5	/DC5DC7A740CB48F11D8286BDDAD5BA71	UI	155
+u2825	Facility 3826	NewP5	/7FB57EC6478326B1786A7EB5E643A447	UI	13
+u2826	President of the Council of Ministers	NewP5	/B9F16D1C4E34142F9CD324820775AFE8	UI	37
+u2827	A device that improves buckshot distribution using a reticular structure that guides pellets.	NewP5	/F5F5730C48DE89D47401A0979E82C216	UI	93
+u2828	Forewarned is forearmed	NewP5	/52163F1145625D23660D24A3B862F4E0	UI	23
+u2829	Preloading	NewP5	/98208B484E6A4EF7FE1CE4A32E84B7DA	UI	10
+u2830	Previous weapon	NewP5	/4DE346DD40BC0D9F080413A1F640DAAA	UI	15
+u2831	Previous consumable	NewP5	/19D75D324775787381DC63A3105EDA6C	UI	19
+u2832	Beauty is impossible to comprehend. It ought to be felt.	NewP5	/31EB123940BCFFD8CA01FF89E7C2012F	UI	56
+u2833	Disregard that. Let's dance.	NewP5	/7C3AFA6A4040C9F3625349BC1BF49C0B	UI	28
+u2834	Turns buckshot spread into a horizontal line using a special rifling and baffles inside the barrel.	NewP5	/C53038D74DE02C4F5639B3BEBA7AFEC2	UI	99
+u2835	Turns buckshot spread into a circle, creating uniform dispersion through a round nozzle.	NewP5	/CDE3FF6E495D1F872E6389912D02D5A7	UI	88
+u2836	Converts the energy from each spinning hit into additional angular attack velocity.	NewP5	/06A4D9FB4BEE3BD10B27098FA99CD831	UI	83
+u2837	Overcoming vertical obstacles	NewP5	/CFD14A4B432F7B14D218529CE3DA9DA4	UI	29
+u2838	Jumping through the hoops	NewP5	/AC50D99648B0277AC6AA23BD28D225EA	UI	25
+u2839	Overcoming obstacles	NewP5	/1C57FFBB41950CEAF66FD88CD6C6F46B	UI	20
+u2840	Interrupt	NewP5	/3497EACA4286A8577761D4B600F40A3A	UI	9
+u2841	Interrupt all data transfer channels?	NewP5	/FFA4774D4B7094FEB5CD3FB5B6FE468A	UI	37
+u2842	Pushes enemies away from the source when technostasis is activated.	NewP5	/528EFC724E32AF9024AE5A99047858EE	UI	67
+u2843	When activated, creates a sharp jump in vibrations with a destructive amplitude increase within a small radius to cause serious internal damage to the target.	NewP5	/A179E51B475496C3A1C162A8A2C32E3D	UI	158
+u2844	Most of Volan's data is automatically synced to P-3's map upon interaction. However, an active Volan connection is required to <h>connect to regional DANDELION CAMERAS</> and see infrastructure interface points.	NewP5	/E4ABA2634455CD006AE292A6FA460602	UI	211
+u2845	When you select the <h>"Relay overload"</> function, the Windbender Power Generator's circuits become overloaded, causing it to <h>explode</>. Once a Hawk loses its energy supply, it falls to the ground, and <h>the entire ecosystem in its area is deactivated</>. <h>Pchela are quickly summoned </>to repair the Windbender, but the repairs take some time.	NewP5	/E632C35A4DB8C0452C7E7B98FCD643DB	UI	354
+u2846	After an enemy is killed, this begins transferring the unleashed energy into storage highly efficiently.	NewP5	/09E1978E4326EAF595CB9AB900C043FB	UI	104
+u2847	Upon killing an enemy, uses the unleashed energy to emit a spherical pulse that stuns nearby enemies.	NewP5	/310BCA0B492132E19F278AA4549C5ACA	UI	101
+u2848	The damage is greatly increased at maximum swing.	NewP5	/0B146BCA42AA398D0124029AB8D33402	UI	49
+u2849	When landing a hit, P-3 cannot be knocked down by an enemy attack	NewP5	/5293E9B946510F950AEDBBA3F3A8A36A	UI	65
+u2850	When the glove's reserves are depleted, the Telekinesis Unit consumes ATP from your bloodstream, enabling you to use the ability at the cost of your Health.	NewP5	/F201A4914179BB67F923D997FB881322	UI	156
+u2851	When the glove's reserves are depleted, it produces cryopolymer from your bloodstream instead, enabling you to use the Cryo Jet at the cost of your Health.	NewP5	/D2CEEE314989BA219A44B68D53FFB79D	UI	155
+u2852	When fully charged, engages resonance frequencies for dynamic weapon stabilization.	NewP5	/B8C1564D4A014B2C413E50B69BFD702A	UI	83
+u2853	When at full Health, the adapter uses a marker from an active biofield to accumulate twice as much energy.	NewP5	/7EAAE52D44EC3C1D9D3D0B86D4445A2A	UI	106
+u2854	When fully charged, decreases the preparation time for a crushing blow.	NewP5	/1117F9F14773BF326A80229AFB53DF8B	UI	71
+u2855	When fully charged, the reinforced polymer construction increases the amount of damage dealt.	NewP5	/9691451A4E29EED5774BE683D829453C	UI	93
+u2856	P-3 takes less damage when attacking an enemy	NewP5	/2779DEFA4522E74ED9D5D48CD5ED4D55	UI	45
+u2857	Hitting a non-organic target may cause the projectile to bounce and hit another non-organic target nearby. Bounced projectiles only deal half damage.	NewP5	/FD4569C34BC28670D68D12A415A2F95C	UI	149
+u2858	If a rocket misses, it bounces towards the nearest target	NewP5	/8C8A20A44E490A605EF10797AC086889	UI	57
+u2859	When at reduced Health, the adapter uses an adrenaline marker to accumulate twice as much energy.	NewP5	/BA09D7764756394F79C107BB00A3276F	UI	97
+u2860	Increases the amount of kinetic energy in an attack and converts it into pressure in the finial's pneumatic system.	NewP5	/9993F39D49481A2DB02A789D7B7EB4CC	UI	115
+u2861	The unburned explosive residue will form an additional trap mine on the bodies of defeated enemies.	NewP5	/AF8C0BE340BAB0BE11F4FEAEAC01AE0D	UI	99
+u2862	Privalov	NewP5	/7DE99E2D431C528688386D961ABDAF89	UI	8
+u2863	Improving the aerodynamic properties of the blade allows it to inflict additional damage to aerial targets.	NewP5	/2BF92B4A4B53E8ADC4CDD2BC8D73AD97	UI	107
+u2864	A time will come when science will outstrip fantasy.	NewP5	/250C969B4C5549F563217B83365BE8D4	UI	52
+u2865	Stock	NewP5	/3ECD908C4A10E839EA2C74BCDBD57EA9	UI	5
+u2866	The use of polymers in combat node construction increases attack speed with each consecutive strike.	NewP5	/010C21084D06ECE90CD9CE9EDD1865FD	UI	100
+u2867	The use of polymers in combat node construction increases damage dealt to shocked targets.	NewP5	/0EFA2BF94964DA09EA9A05BCB986772A	UI	90
+u2868	The high-intensity modulator unit increases the rate of fire with each consecutive shot.	NewP5	/722C4E4740FCCB622C9F6283C51D5881	UI	88
+u2869	The use of a polymer oscillating circuit in the design of the attack discharge generator significantly improves the weapon's rate of fire.	NewP5	/29F601FD4553EA54F79D618B0AC56841	UI	138
+u2870	High-power detectors allow you to hit targets at a greater distance.	NewP5	/FCDAC94448E760667C200C8E8D691B5C	UI	68
+u2871	Using medical supplies allows you to fully regenerate Health in a matter of seconds.	NewP5	/26AAE0AF427D96B44A478EAC149916C4	UI	84
+u2872	The use of superconducting materials in modulator construction reduces energy expenditure while achieving the maximum rate of fire.	NewP5	/4F669A564A8BA9A4EDCDBE815DE3E7F9	UI	131
+u2873	The use of superconductors reduces the loss of incoming kinetic impact velocity to maintain the rotation of the blade.	NewP5	/A0350AB14D70CEF673F4EAB6EBE7B09A	UI	118
+u2874	The use of superconductors reduces the loss of incoming kinetic impact velocity, increasing energy recovery.	NewP5	/CA06F1BA448C29914B44818E1AD46B3E	UI	108
+u2875	The use of superconductors reduces the loss of incoming kinetic impact velocity, increasing energy recovery per strike.	NewP5	/05F5563E4E001C408C5783BA095760C9	UI	119
+u2876	The use of superconductors reduces the loss of incoming kinetic impact velocity, increasing energy recovery rate.	NewP5	/632F775243D18AA5A95CC6BC73607522	UI	113
+u2877	Superconductors reduce the amount of lost incoming kinetic energy, increasing the recirculation chamber's energy recovery rate.	NewP5	/00FCEC0E4B4A5C3D3AEA9BA7070F2F32	UI	127
+u2878	The application of superconductors allows reducing energy consumption.	NewP5	/F1182D144260833741AB7AA2839E38DB	UI	70
+u2879	The application of modern materials improves weapon balance.	NewP5	/7A9BBF8C46F9E9F73AA0CD9B27EEF724	UI	60
+u2880	Apply these settings?	NewP5	/24CF77D14D767D4EC91433B8A8661F74	UI	21
+u2881	Connect an Algae workshop canister to PEC-4 Birchtree	NewP5	/585E53BC435A20D5384E0C800A5E7659	UI	53
+u2882	Get the canister from the Algae Workshop	NewP5	/CE6E86A44FB3C00215AA5D8589D0ED68	UI	40
+u2883	Get the canister from the Hot Workshop	NewP5	/57B92092402946E8349B608C1B604721	UI	38
+u2884	Get the Hot workshop canister	NewP5	/DE7297444368A39208F530B5EA50DFE0	UI	29
+u2885	Get the canister from the Pesticide Workshop	NewP5	/7216A8DB4979FF3DAE0AF788D987D6A5	UI	44
+u2886	Get the canister from the Cold Workshop	NewP5	/2DC549E449434E0DDB4B01AB2E44EF75	UI	39
+u2887	Bring a BEA-D to Professor Lebedev	NewP5	/84921B9C46170EE32437CD9AA29DC5A0	UI	34
+u2888	Deliver a BEA-D to the receiving chute	NewP5	/11677E0643150691C23C478693BCBDC9	UI	38
+u2889	Bring Larisa a different record	NewP5	/B1890B6A4C27C8A8756ADCBE7F138D72	UI	31
+u2890	Bring Larisa a record	NewP5	/3E3D13A144728890AAF84F81D4CB96ED	UI	21
+u2891	Forced Defrost	NewP5	/B1716629465D1115C11C01B5B7EF2FC0	UI	14
+u2892	A suspension of time within a magnetic bubble for technical maintenance on active machines. It's not slow motion or magic. It's science!	NewP5	/980B919D4E4552953D63B587A504D920	UI	136
+u2893	Nature is exceedingly simple; anything that contradicts this rule must be rejected.	NewP5	/06F16B2C41B3C376F8E48F93F6246E5E	UI	83
+u2894	Nature is not a temple, but a workshop, with man as the craftsman!	NewP5	/DAB872364A429C2F763757858649B944	UI	66
+u2895	Born Marksman	NewP5	/EAA246F94788A098498D1C8431495892	UI	13
+u2896	Aiming devices	NewP5	/4FF783BC45AD39A62B91C0BD2862BE0F	UI	14
+u2897	Grab and go.	NewP5	/0455AEC54F61192016FFC69EFB63F2CB	UI	12
+u2898	Get the container through the gate	NewP5	/F696D7F54EE955CEB27894A311ADF171	UI	34
+u2899	Programmer	NewP5	/11857031439FFF140780D6A38AFD0635	UI	10
+u2900	Survive the lockdown	NewP5	/158AFDC8471D8FB6083040A1B1D5D2F5	UI	20
+u2901	Survive the Pesticide workshop lockdown	NewP5	/A576390B4970DC4D413C858ED5384E5B	UI	39
+u2902	Continue searching for Viktor	NewP5	/B2905BEC45B09D1B89B508ABE5BE061D	UI	29
+u2903	Continue looking for the leg	NewP5	/8BBBCACC4F7FF31798B9A2B2B49377F6	UI	28
+u2904	Continue to the gate	NewP5	/8A6B69E947459F206325C29E7F69556B	UI	20
+u2905	Development of the first military robots under Sechenov and Chelomey's leadership.	NewP5	/B258C4B14FC3FB4A5461B796FACFADA4	UI	82
+u2906	Nicknamed "Koschevna" after Koschey, a character from Russian folklore whose soul is hidden within a series of nested items, Khodyukova matches her facetious moniker to a tee. Not even an entire team of Complex and project managers could vie with her when it comes to accounting skills. She is particularly concerned with her social rating, but always endeavors to work efficiently enough to top the chart. Accounts payable, expense reports, endless contracts—she mentally catalogs all this information with such perfection that Professor Zakharov once joked that Kollektiv's system should not be built on Neuropolymers, but planned by Nonna Khodyukova.	NewP5	/3A91C22B48D657D9389CC98A9EE38F50	UI	653
+u2908	Reach the park	NewP5	/DA2E12EF4E8D569C54B684B2D14081F7	UI	14
+u2909	Cross the Seed Bank	NewP5	/476EB28F4A5380360BE32D818F96C855	UI	19
+u2910	Cross the bridge	NewP5	/6145B7634D7A1BC4C5C84A8DF25634D5	UI	16
+u2911	Boost your weapons from the main campaign and try out the equipment you haven't had time to test. Keep experimenting!	NewP5	/09E324494F9B9A201932FAA4DCCE3877	UI	117
+u2912	There is no option to skip these tips. That being said, following them — or otherwise — is entirely up to you.	NewP5	/59259C8D411F0A2FB3CF0A9E9D7336AC	UI	110
+u2913	Rubberized grip	NewP5	/57C074884E1908AEA9B848A8A82F90A5	UI	15
+u2914	Cutting blade surface	NewP5	/4C04EF504A9BFB88B02C0BBCD2D7A0D8	UI	21
+u2915	Proceed to the lighthouse	NewP5	/E79730F8439321088070FABAA94C0A1F	UI	25
+u2916	Proceed to Sechenov's office	NewP5	/39B040BC4FE3E5D1860A75AF26A3BFE4	UI	28
+u2917	Proceed to the memorial	NewP5	/5C43433C4186BE3BD55CD981F39435D6	UI	23
+u2918	Regular attack	NewP5	/7CC1D689409DA2ADDC40ECABDA98C4AD	UI	14
+u2919	Peaceful Atom	NewP5	/11DF4AED4A3FA512C35591A1AFA98511	UI	13
+u2920	Just a hammer.	NewP5	/296A138144E6FF1B0D0A0285B2478FE0	UI	14
+u2921	Just drop out of... What exactly is this place?	NewP5	/1463CF0349CC8F31C2188D931F2651A0	UI	47
+u2922	Automatic firing mode is a simple but extremely important upgrade that quickly empties the magazine to riddle the enemy with bullets.	NewP5	/99F3D48F4EE7B154A09E6684586E2CC1	UI	133
+u2923	Premises of Facility 3826	NewP5	/60F694E1476E5A2EF683AFA705F9BD62	UI	25
+u2924	Dyagterev's anti-tank rifle. Despite its unsightliness, it can tear through anything it hits.	NewP5	/A6B0C1224B318C30FA74D6B25AE2D047	UI	93
+u2925	Interloper recognition system processor. A useful item that can be repurposed for crafting.	NewP5	/A996B91F4FD12292DC4BFFB280DDFC10	UI	91
+u2926	Nyukhov was a special operative and intelligence officer during the war. After WWII he served as a supply officer, actively fighting against "enemies of the people" and the Brown Plague. He personally arrested Comrade Vavilov on Stalin's order, but later became the botanist's close friend and comrade despite this. Nyukhov was assigned to his current position immediately after the complex was created.	NewP5	/8C95AF774D6D37A3CF65DCA801C6882C	UI	403
+u2927	Jump onto the ledge to get a foothold	NewP5	/B9B23D0C47686DA7C3E818AE569C3BD7	UI	37
+u2928	Consulting Psychiatrist	NewP5	/2C0ADEAB457C004C2EC9139E1B90E5C1	UI	23
+u2929	Bullets may ricochet in the direction of the nearest opponent	NewP5	/164AE7724152CB63899DC885C71BB724	UI	61
+u2930	Ionized-core bullets introduce electromagnetic interference to electronic systems, increasing damage to robots.	NewP5	/2A302D0F41719615EDE86E8F972E9D4D	UI	111
+u2931	Empty Canister	NewP5	/03969E9D4A001679D0AF46B2E65F58F0	UI	14
+u2932	Bare hands	NewP5	/0AB289EF407ED791128DB68BCA89F157	UI	10
+u2933	Tar and Feather	NewP5	/F6107EB44DA36D90FBCF1DB009C9D15B	UI	15
+u2934	RADIO	NewP5	/437A4F364FAC59B164A5D487BA8BCE49	UI	5
+u2935	DISASSEMBLY	NewP5	/D5EDBFD84D3DDC1B1B5B608F15751D28	UI	11
+u2936	FAT BOY ROCKETS	NewP5	/5EA2B1974636D7297304B6945CA5B861	UI	15
+u2937	RAF-9 ENGINEER	NewP5	/B9F034AC477DB579E9868AB8E45F56C3	UI	14
+u2938	RAILGUN	NewP5	/B0B3D8C24C1A73F8B474B190FE259907	UI	7
+u2939	TERESHKOVA'S HAND	NewP5	/1669740D497E16D17646578C8EA8A418	UI	17
+u2940	HANDS OFF!	NewP5	/857EA6B54C20072C40E223AC955FD056	UI	10
+u2941	Worker and Kolkhoz Woman	NewP5	/2BD405214FD74891E6D4F79335FD8BB2	UI	24
+u2942	Evenly distributes accumulated energy from the magnetic field to all of the glove's ability modules.	NewP5	/AA14492047C872F6A35C3487F174CCE5	UI	100
+u2943	Raguzin	NewP5	/E251BFA5405F4F190819BCBDA7E2142E	UI	7
+u2944	Radeonovich	NewP5	/0F4EF33B4BF30893835CD9B92856731A	UI	11
+u2945	Increases the trigger range of the laser detonator.	NewP5	/11344BF44C628252F5303494192104EE	UI	51
+u2946	We are pleased to welcome you on an easy sightseeing tour of Facility 3826, comrade! Spectacular and dynamic battles with robots won't take too much effort or distract you from the narrative. Of course, you'll still have to fight, but only the plot will keep you on your toes.	NewP5	/2AD4E6F1424DF1F08A5CA1991F9579C9	UI	276
+u2947	Unlock access	NewP5	/217FD8E641A1FB92D5FB489476F8953B	UI	13
+u2948	Unlock the passive security relay's functionality <h>by putting the magnetic fluxes in the correct order</>.	NewP5	/385812DE44EEB06F10778BBD634BD21C	UI	108
+u2949	Decreased spread when there is energy in the suit	NewP5	/C657F66A4574177988A9A48CA03595E6	UI	49
+u2950	Talking with dead people is a personal choice. Still, they're usually to the point. And the experience itself is said to be unforgettable.	NewP5	/356122584F4A6277DFA2AD950B948CB3	UI	138
+u2951	The pellet stream is split by dual channels in the barrel, creating two horizontal lines of buckshot when fired.	NewP5	/45F59B4F4A1ED41FF2BA308F7B8766AF	UI	112
+u2952	Subtitle Size	NewP5	/FA0C87D3489EE4188183528F93CD5F2F	UI	13
+u2953	Places a polymer casing at the muzzle exit that gives the bullet extra rotation and reduces aerodynamic resistance, which increases the damage of the shot.	NewP5	/C8042BF840E96EFE735A798AC83ED688	UI	155
+u2954	Software Component Developer	NewP5	/DD09B2F146EBD112D13779A6A45FC9CC	UI	28
+u2955	Explosive projectile	NewP5	/06952FB047C7D34771527482BB829133	UI	20
+u2956	Fat Boy rockets.	NewP5	/D6973DA442F386B32ACCB998592E3800	UI	16
+u2957	Injury	NewP5	/A0F8845D46BC07196D0C879500D7ABDD	UI	6
+u2958	The gates to the Incredible and the Possible have been opened. A New Day has begun where anything can happen, if you donʼt mind it.	NewP5	/0C99BE8349842A91ECBF71B0FE0CC814	UI	131
+u2959	Distributes kinetic energy from enemy attacks to the entire weapon, providing additional resistance to being knocked down during right click attacks.	NewP5	/4C0CA53044E5163F3DCF07897D5E76F1	UI	149
+u2960	Distributes load on the arm and decreases muscle tension when using weapons to increase attack speed.	NewP5	/3A87D9D14C46F9AB54A31B8C2D8BA12E	UI	101
+u2961	Distributes inverse energy through a special system of dampers and the synergy effect of elementary particles to reduce recoil.	NewP5	/E32AF9BF4751FFD4259EEAA3715B71F2	UI	127
+u2962	Distributes recoil across a large area, which allows for more precise aiming.	NewP5	/BE1C8D2F49740AA4D6008E8502DC7A18	UI	77
+u2963	The Cryo Jet's spray neutralizes incoming fire damage.	NewP5	/BFC430D8414BCB67C1958D8310591034	UI	54
+u2964	Splitting blow	NewP5	/8F0C012446D0157A299038AD8586C494	UI	14
+u2965	Ambient Occlusion	NewP5	/739908524741CA9F2DE400A304551AC5	UI	17
+u2966	Pushes away enemies	NewP5	/7FD2119547A03EF6A26165A2B99B2FBF	UI	19
+u2967	Consumable:	NewP5	/E341DBB644CDC1F9BE4DFEA7915019DF	UI	11
+u2968	Chain Lighting	NewP5	/45F36A724F4CCCE9BC70B191B69C2EF4	UI	14
+u2969	Expanded chamber	NewP5	/1BBAAC9F4321277F5C28C28DC7436E3A	UI	16
+u2970	An expanded chamber that can be loaded with 2 rounds at a time.	NewP5	/458984974FCFED5F59F033A4A75A6A5D	UI	63
+u2971	Try to expand your arsenal whenever possible. There should be plenty of opportunities all across Facility 3826.	NewP5	/6FAAF9C14BDCA5A3769D748376868BE1	UI	111
+u2972	Tesla discharge generator	NewP5	/C4B4F6E04ED783E2B68728AE2BAD91BC	UI	25
+u2973	Reality exists in the human mind, and nowhere else.	NewP5	/98BC93A74C75CDA72EA4E6AA709F50A1	UI	51
+u2974	SAW DANCE	NewP5	/5399F8E84D71BDE2775F5AA2EC452E7A	UI	9
+u2975	Reverse Inductor	NewP5	/FBA8396D4283038290D5548D6E23AC7D	UI	16
+u2976	Reverse bobbing balancer	NewP5	/F5FC09F64150261503C8A8894D52C8CC	UI	24
+u2977	Revolver loading module	NewP5	/34E31D2D41FB13AC7B292D8497B83091	UI	23
+u2978	Dispersion Regulator	NewP5	/24017E374ACA5B1493F53E9EBB0A9F6C	UI	20
+u2979	120 Hz mode	NewP5	/2B9E47414AA263AA0ED5ACA8830589E3	UI	11
+u2980	120 Hz mode increases the frame rate and improves responsiveness, but the resolution and the overall image quality is reduced.	NewP5	/3E6E18354C9F6840EB83428AEEB347B1	UI	126
+u2981	Graphics mode	NewP5	/CD40B031472330808F39B08985FF1710	UI	13
+u2982	Rubber pad	NewP5	/CD0D220943EA7E937C95F981744C6CA0	UI	10
+u2983	Resonance Amplifier	NewP5	/294B05BB45B18FE633FFDF9BA06A27F1	UI	19
+u2984	The ESRB rating has been updated to include this interactive element: In-Game Purchases.	NewP5	/B5722FCE45673CA49B0559A735D68E33	UI	88
+u2985	Time Relay	NewP5	/BED4AE5E44EEB9B13ABE0EB7EF7BC2B3	UI	10
+u2986	Passive security relay	NewP5	/9D804D6A43FCED147756CDABB94587BF	UI	22
+u2987	Receiver	NewP5	/45A49D1D4573D645D26806ADDD2017FE	UI	8
+u2988	A resource that can be used for crafting.	NewP5	/4A0EA94C4F94E0A69C63A6BB0479711E	UI	41
+u2989	Reticular Focuser	NewP5	/A0671D4E44D4317EC94D9987960748D4	UI	17
+u2990	Relay	NewP5	/035453AE4A25D61F7C75648C6D053F78	UI	5
+u2991	The Hawk relay and the Windcatcher WTG	NewP5	/3B05E16B4B3CFEFFDF07CFB0D3ADADC0	UI	38
+u2992	Discharge repeater	NewP5	/564A8F0A40AB0EDC3B7A919FDE1E85C2	UI	18
+u2993	Reflex blade	NewP5	/4D862663462884A378E3D488D4AF89B0	UI	12
+u2995	Adds another Power Cell to the recirculation chamber.	NewP5	/10704C234FE61E495855FFA1D6022961	UI	53
+u2996	Weapon upgrades add more Power Cells to their recirculation chambers.	NewP5	/4B0FC74E4ACAEEDD6ABDE7AFFBB4189D	UI	69
+u2997	Recirculation chamber	NewP5	/ECC0CAF145AD41297B9D4997408EDAC6	UI	21
+u2998	A rusty steel blade.	NewP5	/676F377A470BF8215469E48292EDB34E	UI	20
+u2999	Robertovich	NewP5	/EEAAF386453C5A73B13B6EA431AC119B	UI	11
+u3000	Robogirl	NewP5	/6AF9E9CA40A380F18F2E13A93FE533A4	UI	8
+u3001	Dmitry Sechenov is born.	NewP5	/1FDA01484DB9EC88F8AAD187E8E59A21	UI	24
+u3002	The Motherland	NewP5	/8F0114D344DBB72339242CA18CEEF242	UI	14
+u3003	Reufe	NewP5	/541701F546F01AFE11E04488AC4D5147	UI	5
+u3004	Mercurial core	NewP5	/6A7C15234E89E53669DFF9B98DFB3833	UI	14
+u3005	Printing Department Manager	NewP5	/0B029E5E469E6CBCB38CCBB3B7D0E36D	UI	27
+u3006	Accounting Department Manager	NewP5	/B8ADAED846017ED8AD35769C4F6B0867	UI	29
+u3007	Grip	NewP5	/610C7B304C2FF8D2356F939AB225A94B	UI	4
+u3008	Handle	NewP5	/0307E4314103D9ADF2B2E8B9CDFCEC64	UI	6
+u3009	Lightweight grip	NewP5	/163910D24268307D03CFB9B5400AB450	UI	16
+u3010	Manual Accelerator	NewP5	/A05DA1F34FE69744EFC06CBDB7E3ABF8	UI	18
+u3012	Ryzhova	NewP5	/30DB24224AEC2BF10C2EE4898438DB7A	UI	7
+u3013	Neurocompression Tactical Backpack	NewP5	/A0B40493404FE3D62387848B4A9FCBAC	UI	34
+u3014	The Yarov-Abalakov backpack	NewP5	/69FE960948AC9705177CE58833B55B00	UI	27
+u3015	A stock can be used to offset recoil.	NewP5	/9E288AC7466412B7016A83A69A0EECAF	UI	37
+u3016	You can use <h>Electro capsules</> to restore energy. Access them via <h>the radial menu or in your inventory</>.	NewP5	/6B35C53546915020025D07A97C4FBB1A	UI	113
+u3017	MINIMIZE	NewP5	/C45259E54718048529629D9729032D99	UI	8
+u3018	SUPERCONDUCTOR	NewP5	/B662F59343F934F4C19C449944E9BC0A	UI	14
+u3019	CONDENSED MILK	NewP5	/81D8754F491CF4EC8108B2AEF143F037	UI	14
+u3020	MADE IN THE USSR	NewP5	/6E93F3C1475C5B2E97FAA29213BD88E1	UI	16
+u3021	SDC-2 Volan	NewP5	/8A0E1F3D43CACD05913037937BEE26C3	UI	11
+u3022	SECATEUR	NewP5	/E95745DE46823D55F21447A861405726	UI	8
+u3023	SECATEUR—MAGAZINE	NewP5	/387D34C54FDDDBF2E14DC9978D313418	UI	17

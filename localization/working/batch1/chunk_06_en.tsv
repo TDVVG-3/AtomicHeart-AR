@@ -1,0 +1,301 @@
+id	english	scope	key	category	en_len
+u1512	Forester Village	NewP5	/E02895A2454A75B60DFF9AB544B212DA	UI	16
+u1513	Yablochkovo village: Car factory	NewP5	/B8B914B9406C75298BCB3B96B678BFA4	UI	32
+u1514	Destabilizer	NewP5	/104C0BE2413E14F5E0E38084D5D25586	UI	12
+u1515	High-power distance detectors	NewP5	/9DACC20A478B1E844AB51EA9F4086790	UI	29
+u1516	A hard-working specialist from the younger generation of doctors, Eduard Furman does everything in his power to try to attain his mentor Dr. Domov's level of skill. Patients and colleagues have often noticed Furman subconsciously copying not only his superior's work style, but also his ordinary mannerisms, gestures, and even speech. Comrade Furman does not yet fully realize that he has already earned a place at the hospital by dint of his hard work and has no need to imitate Comrade Domov.	NewP5	/013A2B344F69ED9CF0D89A852A49ECB7	UI	494
+u1517	Juggernaut	NewP5	/2428EF0F41E881BD8B39DFA1F85B40B5	UI	10
+u1518	George Orwell	NewP5	/3F44FEDE4F1FD43BA220C6894A5B6A23	UI	13
+u1519	Diagnostician	NewP5	/CBC827604B16843797AAE5A62BD2E883	UI	13
+u1520	DYNAMO	NewP5	/223BEE8348A6BF117DB29E80291E864C	UI	6
+u1521	Disk	NewP5	/0E8748BD4697DDF067AAFA90230D8CC2	UI	4
+u1522	Discrete neuropolymeric destructor	NewP5	/3CB374AE4CE256AC57F7C88A979F2D2E	UI	34
+u1523	Discrete microdoser	NewP5	/41B8D13A4FC024C67B814EA17AC939A6	UI	19
+u1524	Diffuse Spray Head	NewP5	/B83037C54658664C8ACF38A7E24DC0B3	UI	18
+u1525	To use a skill, select it, and press <tag id="InputAction.Gameplay.SwitchAbilityLeft"/> or <tag id="InputAction.Gameplay.SwitchAbilityRight"/> and hold <tag id="InputAction.Gameplay.ToggleSelectedAbility"/>	NewP5	/402BA2DA456CFA17928476A77696EFA7	UI	206
+u1526	To use a skill, hold <tag id="InputAction.Gameplay.ActivateSpecialAbility"/> To change skills, press <tag id="InputAction.Gameplay.SwapSpecialAbilitiesIndexes"/>	NewP5	/5B89FBEE4ADC29A00ECB58BAB82C87EE	UI	161
+u1527	Dmitry	NewP5	/D17EEA914A3C540A800BB981C292E823	UI	6
+u1528	Dmitry Sechenov	NewP5	/A2FAD22D4C9B03257F9DD6BCDE36C71A	UI	15
+u1529	Bottom of Lazur	NewP5	/828792E7401DB06CFB201E87D4D6820B	UI	15
+u1530	Extraordinary creatures you young people are, altogether. The past you hate, the present you despise, and the future is a matter of indifference. How do you suppose that can lead to any good end?	NewP5	/52E71D6341CDF3E927C3F1A32001972C	UI	195
+u1531	Unlocks automatic fire mode	NewP5	/39A210A94A15337151DD39942EC3AB05	UI	27
+u1532	The steel alloy adds weight to the finial, increasing the kinetic energy of blows.	NewP5	/2A39517B49FA4B979335DAB341758DA4	UI	82
+u1533	Adds a mine trap to dead enemies	NewP5	/E8F49BB84CFD64E49AF7E0A5A6E85DDA	UI	32
+u1534	Adds the ability to stun robots	NewP5	/9B3328C3430E0330A250DB95B5F2A7EE	UI	31
+u1535	Adds the ability for projectiles to rebound	NewP5	/5B54C12343948F90E91B6DA60630CBD3	UI	43
+u1536	Adds the ability for rockets to home in on their targets	NewP5	/4B574F904A3BE0561463C3AD321E5B7B	UI	56
+u1537	Adds a special attack	NewP5	/446DB9334309601236E8C58D6661D679	UI	21
+u1538	Reach the Archive	NewP5	/E9B4513A4A51AB0805A3C3A659612474	UI	17
+u1539	Reach Granny Zina's place	NewP5	/73567CCC4ACDB28098FD5190615BCAF1	UI	25
+u1540	Reach the Exhibition	NewP5	/2659ACD44DF3561F12321C8D0B8349D8	UI	20
+u1541	Reach the Theater	NewP5	/039C669C4BAB917E998388861BB3AD24	UI	17
+u1542	Reach the Lesnaya Station	NewP5	/5739A46743612F904AFBC18715DDB3FC	UI	25
+u1543	Reach the magnetic door and SHOK the magnet	NewP5	/E7AACC3F46B1D323CA70909589CBC7EC	UI	43
+u1544	Reach Sechenov's Computational Center	NewP5	/DF06F1B44FED7DF18E8A2E82BADF935E	UI	37
+u1545	Get to the hospital	NewP5	/4CC91E184744C82FF38548ACB8F1A823	UI	19
+u1546	Get to Professor Lebedev's lab	NewP5	/8C6CA4404D2069FE7AA654AF877BDC6F	UI	30
+u1547	Get to the bridge	NewP5	/C727CB364105E8F4E40A99BD6372292D	UI	17
+u1548	Reach the boiler room	NewP5	/62A9CB7345639EC4BB9B3E92D87622F8	UI	21
+u1549	Find a way into NORA's cradle	NewP5	/284CD8FE4E6294064387618D33D82A26	UI	29
+u1550	Get to Lesnaya Station	NewP5	/017839014CC23AABD1B1148767E6A284	UI	22
+u1551	Welcome to the polymer stabilization system. Please provide device data for further reference.	NewP5	/475CBD1544E5BE8E553E52B2DF0734C1	UI	94
+u1552	Good... Evil... The boundaries have long been erased by our actions and justifications for them. Who do you want to be? What is it you want?	NewP5	/1B95E6E140F639025D8F66B6FA768D5E	UI	140
+u1553	Therefore, the good of the greatest number is the immutable law of virtue ... what is useful to society will be good for every country.	NewP5	/B1923CDB472C9DD38592158F8815A179	UI	135
+u1554	Get the polymer canister from the Algae Workshop	NewP5	/05B1C6B448B07C055F3F1CB6DA672952	UI	48
+u1555	Loot from enemies killed by your grip is automatically added to your Inventory	NewP5	/D65BC42B49C73C7FC13AE4B380A315F0	UI	78
+u1556	Catch up with Petrov	NewP5	/3E924EFD478DF5616F5B0DBB1A277D1A	UI	20
+u1557	Wait for the canister to fill	NewP5	/9398E77048BCE523E37E20B7EAD473FE	UI	29
+u1558	After reaching the end, people laugh at the fears that tormented them in the beginning.	NewP5	/05E3CF1C4449AFFB5080C2BC4ABEBEA8	UI	87
+u1559	Doc and Marty	NewP5	/6B453B754CAF1B39F0804182C4F985CA	UI	13
+u1560	Dr. Lizova is an outstanding specialist in the field of endocrinology. She could have become an excellent practitioner, but she preferred management to medicine and is now the Pavlov Complex Hospital's head physician. Thanks to her leadership skills, she has managed to not only assemble a team of top-notch specialists, but also attract the attention of Comrade Pavlov himself. The hospital is now one of the most high-tech stationary medical facilities overseen personally by Pavlov.	NewP5	/B3833C9645D9B936D4FBBD9C24E16361	UI	485
+u1561	Granny Zina's Place	NewP5	/9B531456442C14E211A38E9B8D7C6BA0	UI	19
+u1562	Domov	NewP5	/E16910BE4CEE98882F4BC1B063EE56C2	UI	5
+u1563	Additional Content	NewP5	/83D57C184DCBEB24E8E31E98A90950F8	UI	18
+u1564	Additional ionization allows Polymeric Shield to reflect laser attacks back to the enemy.	NewP5	/99904BB843B1EDB9F3E73E8386BDEC11	UI	89
+u1565	Further reduces the time it takes to charge the special attack.	NewP5	/1289207C4780A995E51529AF371BF813	UI	63
+u1566	Narrowed gas vent mechanism	NewP5	/09052955458A9C5978F3659587431F1C	UI	27
+u1567	Additional gas vent	NewP5	/12BFD7484080BCD2B472A48D3A5C06FB	UI	19
+u1568	An additional module on the weapon's barrel. Reduces recoil and muzzle rise.	NewP5	/D31ABE9046EE8F0D006C568A5A09BD82	UI	76
+u1569	Additional modulator	NewP5	/370E75A245FC40F2B4F7C7870F843D57	UI	20
+u1570	An additional electromagnetic polarizer segment amplifies bullet ionization, increasing damage to robots by 10%.	NewP5	/58A39935486D105F421A7E94E5D8FDB3	UI	112
+u1571	An additional electromagnetic polarizer segment amplifies buckshot ionization. Further increases electromagnetic damage output.	NewP5	/9AEC3A0F45E256B1866FD9A6F0A0C6ED	UI	127
+u1572	Additional damage to the second and subsequent targets of one attack.	NewP5	/4A8997834B3C9547C09FD98E071A5FD6	UI	69
+u1573	Dear comrade, welcome to the New Game+ mode! All the resources and abilities you accumulated in the main campaign are still yours: get to the NORA repair vendor to install them. 	NewP5	/C33967C74AEFC8AD8D3CFB952507D4EF	UI	178
+u1574	Deliver the canister to the gates	NewP5	/5C5F52BF4EB76AC2BA88EF89340573F8	UI	33
+u1575	Find a way to isolate the BEA-D leader from the rest	NewP5	/E423F38D46E983B1E63BB0954DB6D714	UI	52
+u1576	Reaching maximum fire rate takes less time.	NewP5	/745AE1764437CB84933D83A9FA08A52D	UI	43
+u1577	Access denied. Quarantine in the hub. Unauthorized objects	NewP5	/50A4FCF9484C2CA630B06A9BD97BEE99	UI	58
+u1578	Access to Pavlov exhibition	NewP5	/A49B45F044EA8DEF9CE848A14744F96D	UI	27
+u1579	Access to the sarcophagus	NewP5	/69EEE5404978E2265B1AEFBE124F64C6	UI	25
+u1580	Access granted	NewP5	/923CDA0F448B56BFACD824A9C584FB7F	UI	14
+u1581	A shotgun will help you keep enemy crowds at bay thanks to its stopping power. Mind the recoil!	NewP5	/BBB8462246FF1A3CBCED3BB565E28D47	UI	95
+u1582	Dual Projector	NewP5	/5A35117A4A1639D4B1FBDCA84CB4A741	UI	14
+u1583	Muzzle cryorails	NewP5	/0653EBAC408D0563E962F78032CC5DC8	UI	16
+u1584	Muzzle corrector	NewP5	/3E4E73154D5379E6EBB441A76914213B	UI	16
+u1585	Barrel module	NewP5	/B2E6EEB84413E11B17F5AE8D9F753FF9	UI	13
+u1586	Muzzle brake	NewP5	/0AA842514046F61102C93085C3DA99AB	UI	12
+u1587	HOG-7 Hedgie	NewP5	/77DCC8164CF1108F04F0D59001CEEA27	UI	12
+u1588	Oh, crispy critters!	NewP5	/CBDEB02A462D7390BE848D88557D928A	UI	20
+u1589	Yevgeny	NewP5	/8876631C4865F477E3E9EE9F9066A94E	UI	7
+u1590	Yevgenia	NewP5	/1B5D89D1439B3C83D021D8A18D63DEDC	UI	8
+u1591	Yegor	NewP5	/5D70249B41C035F8DFFEA7AB0250EDCA	UI	5
+u1592	The only thing we have to fear on this planet is man.	NewP5	/0413058C42E29E8FFC2561AFC2B4D4B7	UI	53
+u1593	Ekaterina	NewP5	/95BB47BF4A106A2F5E6673ACDC74D1DB	UI	9
+u1594	Elena	NewP5	/5A795B934BBA587308FA6F862E4C78D3	UI	5
+u1595	Yelizarova	NewP5	/3C0943F74E107DFAC5A4909370F3FB9D	UI	10
+u1596	If a sick man is dead set on living, the doctors are altogether powerless.	NewP5	/2D640EBE48EC71511A8FDCA14EFA47C7	UI	74
+u1597	If your hate could be turned into electricity, it would light up the whole world.	NewP5	/8B5A49334A0CCDC71380B596AA9A0174	UI	81
+u1598	If you think some of the glove's abilities underwhelming, try to combine them in one attack. The result will surprise both you and your enemy.	NewP5	/049CA29F45754E81E428C98422F00F10	UI	142
+u1599	In case you haven't figured it out: glove abilities have their strengths and weaknesses. Experiment to find their full range of use!	NewP5	/38D5DFDC4F2E272D3736488EE01AD3BB	UI	132
+u1600	If you lose your way, return to the last location where you knew where you were going.	NewP5	/287AA6C9407D62162C67E892B73BCAAF	UI	86
+u1601	If you see something otherworldly, don't be afraid. It may well be yet another marvel produced by our scientists.	NewP5	/2F543C684A4D2051DF04CCA46BBEFD47	UI	113
+u1602	If your soul reaches out to someone, do not resist. She is the only one who knows exactly what we need.	NewP5	/9EDEAE3C40A636CE18686CB1BE8772BD	UI	103
+u1603	If you cut a puppetʼs strings, it wonʼt become liberated. It will merely stop moving.	NewP5	/5D96241B407910DA092A77B2ED0E264B	UI	85
+u1604	If a machine is expected to be flawless, don't count on it to be genuinely intelligent.	NewP5	/A5E707DF45FB9999F397A5BB92265BFB	UI	87
+u1605	If there are a lot of crates in front of you, <h>hold</> <tag id="InputAction.Gameplay.UseHold"/> in their direction, and <h>move from one to the other without releasing</> <tag id="InputAction.Gameplay.UseHold"/>. This will allow you to <h>collect all the resources from the crates in one go</>.	NewP5	/B7368A7944188F55500C63AED392E707	UI	296
+u1606	If you love me, youʼre by my side, taking my side, anytime, anywhere, in any circumstance.	NewP5	/80BFF4F74BE3C5B25C724283FCC29941	UI	90
+u1607	Want to shoot? Shoot away! Want to brawl? Brawl away! Just try not to overexcite the pets unnecessarily	NewP5	/023544384CEA698F752FE9AD78E884B7	UI	103
+u1608	Yefremov	NewP5	/2980763041AADB80D47AC4BBC4D98643	UI	8
+u1609	ONE MORE HURDLE	NewP5	/AF6EBD7943D969FD81E7CF82CECEFA78	UI	15
+u1610	YELLOW ACTIVATION CARD	NewP5	/B75D926D48D1CEF4136DE0A082DCD09A	UI	22
+u1611	Greedy Guts	NewP5	/AB291C70404C5C5259A0AF9790E231A5	UI	11
+u1612	Jacque Fresco	NewP5	/65BB5640405A22407B989488AC421BCE	UI	13
+u1613	It's a shame your arsenal does not include silenced weapons, Comrade Major. You could hide in the shadows and take down enemies without triggering an alarm... But time is a luxury we don't have. Besides, that is clearly not your style.	NewP5	/7CD0F8844D604EC2E964D5AFFA306A9A	UI	235
+u1614	Heat-resistant and durable synthetic material. Chelomey's latest design.	NewP5	/19B78C3B4B42349806F6BF8395086ECB	UI	72
+u1615	A yellow activation card. It can be used to open a matching door.	NewP5	/9261D1FD4448CF0444CD178EDEA0C359	UI	65
+u1616	Human life is not eternal, but science and knowledge transcend centuries.	NewP5	/7CB8FB16497226BB8E6E6EA09F532FE7	UI	73
+u1617	Life is a tragedy when seen in close-up, but comedy in long-shot.	NewP5	/1ED6AA25426EC7E4B7BC45A542C15494	UI	65
+u1618	One cannot live in society and be free from society.	NewP5	/C6E434784400F80B487A38B81F8A263E	UI	52
+u1619	Reaper	NewP5	/9A39B47145C9AA1CD775C298A1672270	UI	6
+u1620	Juggler	NewP5	/0E49A9C54888CA3C02DDE98AD79E1FA9	UI	7
+u1621	Jules Verne	NewP5	/7E622CCC468C57BE00A9BE85E7689D8F	UI	11
+u1622	Sealed with Seven Seals	NewP5	/579F70B44725EB18DF68A186F903F41B	UI	23
+u1623	COMPLETE	NewP5	/2EBCA04F4CBCD254E718BB8879AB09BB	UI	8
+u1624	HOLD LMB to perform a POWER attack	NewP5	/1149F9AD4DDC51CCC1A6CFB35EBC155C	UI	34
+u1625	ZVEZDOCHKA—EXTRA SAW	NewP5	/5EDF2FAA4DB44066CBD720B433B716A2	UI	20
+u1626	ZVEZDOCHKA—CARTRIDGE MODULE	NewP5	/745EAEC14FA11FB9359E6F9CEFCDD5DE	UI	27
+u1627	ZVEZDOCHKA—ERGONOMIC HANDLE	NewP5	/094B8A1F4E09F054D1CBF3B25F38F679	UI	27
+u1628	ZVEZDOCHKA—SAW DANCE	NewP5	/AD86EA01422D34732C626D8AD6A1F511	UI	20
+u1629	ZVEZDOCHKA	NewP5	/06F0C0334D5DA1A1A46A81B0F9079950	UI	10
+u1630	SINGER	NewP5	/26C4624447F7F7E22E6D2D8D32BDB5BF	UI	6
+u1631	There is a place beyond the notions of deeds right and wrong. I shall await you there.	NewP5	/E6E4F34E4DE82034FF4E38B46937007D	UI	86
+u1632	Weight reduction increases aiming speed	NewP5	/E7CD16A64A7038AA3D5F4BBA5767D6B0	UI	39
+u1633	Race of Conscience: endless	NewP5	/5903D982466A4FF916F847B39A1923A0	UI	27
+u1634	Race of Conscience: easy	NewP5	/0280D79C462D45F9C15E44ACE933D7D4	UI	24
+u1635	Race of Conscience: hard	NewP5	/0491C5AA483CFA99FF12EBAAFF477529	UI	24
+u1636	Race of Conscience: medium	NewP5	/F5F7163042A15AB0D8CD93ACFF73FFAC	UI	26
+u1637	Retrieve Claire's head from the Icarus hall	NewP5	/F565C9DA496626A7687071A56204FE19	UI	43
+u1638	Retrieve the heat-resistant Polymer canister	NewP5	/173C530540F0E23AE86E78950C8E24BA	UI	44
+u1639	Retrieve the Polymer canister	NewP5	/4F63529746CB2CCB87E9F199CFDF7DA9	UI	29
+u1640	Collect item	NewP5	/361ED7154BA152AD77CAB8A5471FC63E	UI	12
+u1641	Take the Secateur from Terentiy	NewP5	/B3EDB5084067877DFF869B8122EDD358	UI	31
+u1642	Throw the candle into the pipe	NewP5	/03C4927645608722F7DB4C934435B56E	UI	30
+u1643	Cafeteria Manager	NewP5	/5DC0087F433A2496C4782FAE507B0CAF	UI	17
+u1644	Office Manager	NewP5	/A8D2D98E48B3B36D963E179AD3E0B28F	UI	14
+u1645	A cornered Swede is worse than a razor.	NewP5	/6523645D4067518309B9368F9534BEE0	UI	39
+u1646	Header	NewP5	/AAE74BDF458E3322DCA6729163EED90C	UI	6
+u1647	Grazes nearby enemies.	NewP5	/34FF1E184E0951B8DADF988346E4066B	UI	22
+u1648	To see the wiring inside the walls, hold <tag id="InputAction.Gameplay.Scannner"/> while using the scanner.	NewP5	/9015D82140B44339C0439EBB35C28D4A	UI	107
+u1649	To see the wiring inside the walls, hold <tag id="InputAction.Gameplay.ScannnerDoublePress"/> + <tag id="InputAction.Gameplay.ScannnerDoublePress"/> while using the scanner.	NewP5	/40BF62894F2571ECB520D29604A0CE74	UI	173
+u1650	To hack turrets, hold Q	NewP5	/9C76BFF2488C34159DCB3297641CE69C	UI	23
+u1651	To pick up an item, hold and then release <tag id="InputAction.Gameplay.GrabbaleThrow"/>. To throw it, hold and then release <tag id="InputAction.Gameplay.GrabbaleThrow"/>.	NewP5	/8CAF57774FB0109192BD8B9CE6CC21A7	UI	172
+u1652	Go to the lab	NewP5	/A25B3D464C0EDF1427DA54818E86E124	UI	13
+u1653	Take your seat on the train	NewP5	/1616F908410ABC27C7BD68B6AAF58AE3	UI	27
+u1654	Material replacement	NewP5	/163FB1294383C8DE0271168BC97E516E	UI	20
+u1655	Replacing the spring with a thinner one increases magazine capacity.	NewP5	/0BBA17054127CE96EE3851893D82C359	UI	68
+u1656	Replacing the grip helps to manage recoil better.	NewP5	/CDDD9D7B455FD67A960A378B28049160	UI	49
+u1657	Replacing the materials lightens the capacitor and allows bringing the weapon to a firing position faster.	NewP5	/7D72EA4540624489C3454D8E3FDA3FC2	UI	106
+u1658	Replaces the rocket combat module with a mine trap	NewP5	/6B699D084FBC763DF28182A6487F0E56	UI	50
+u1659	Replaces rounds with buckshot	NewP5	/5EA2335D4F659A2B0EFC3DAE6B67E084	UI	29
+u1660	Deputy Director	NewP5	/62C5F14B4C68D15E03B6239196C466DB	UI	15
+u1661	Security Assistant Manager	NewP5	/2620133E48341674C724EDBC22E9396E	UI	26
+u1662	Assistant Manager	NewP5	/C6090F714A647A64050585BC6C9D2172	UI	17
+u1663	Freezes the target	NewP5	/16ED09C146889FA7E6BF429759857C6A	UI	18
+u1664	Freeze your enemies to slow them down for a while. Remember: a frozen enemy only takes a portion of the damage from your attacks and thaws out more quickly with each hit it takes.	NewP5	/760B665A445D15E5B0ACA0B3488A976B	UI	179
+u1665	Frozen targets receive additional damage when the freeze effect ends.	NewP5	/75DB5B0A4F9FE8E521D80BB2D5962F3F	UI	69
+u1666	Western Wing	NewP5	/C7AB2FF84037E2A6CA2CDCA5DC522A13	UI	12
+u1667	Locked inside with the hostiles	NewP5	/10819D684D6C8C0655FDB6B8AB85AB4B	UI	31
+u1668	A note—Cafe	NewP5	/57A427194649B9A7B0667A90BC84E52E	UI	11
+u1669	Power up the workshop	NewP5	/1006F042434AA9B980C50C923A7C49C8	UI	21
+u1670	A canister containing Polymer from the Hot Workshop.	NewP5	/B5D5339143746E832A601FB6E930643A	UI	52
+u1671	A canister containing Polymer from the Pesticide Workshop.	NewP5	/DE54E4794ABC76368BE9359B289A20FD	UI	58
+u1672	A canister containing Polymer from the Cold Workshop.	NewP5	/EFA8433940F3161494D228870F73A40F	UI	53
+u1673	A canister containing Polymer from the vats in the Algae Workshop.	NewP5	/51BFF1084322438100CAD9942183CB15	UI	66
+u1674	Sucker Punch	NewP5	/787BBFBB49A47F15973071B87FC7C6C4	UI	12
+u1675	Kollektiv 1.0 is launched.	NewP5	/5F72ED2544D88BB5A6745F9C9D831B3E	UI	26
+u1676	Fire up the Neural Network	NewP5	/96CCED1540BA1FA07AEEA1B5D36E921F	UI	26
+u1677	Fire up the workshop	NewP5	/67CF26C342C7EC06C32AEAAE515F0B7E	UI	20
+u1678	Jam robot maintenance for 5 minutes	NewP5	/2BB4C30E49CFD2F45B2CA2855FE4C3E0	UI	35
+u1679	Polymeric alloy bolt frame	NewP5	/099FC55B4058317EBEE2059D911C8952	UI	26
+u1680	Revolver-type bolt frame	NewP5	/488085BB4E139848032E6D9067E7B279	UI	24
+u1681	Zakharov	NewP5	/F6EB673143BE121087D1F78BF1155DE4	UI	8
+u1682	Drains energy from enemies gripped by Mass Telekinesis to restore the recirculation chamber's power. Requires one Power Cell to activate.	NewP5	/430D2E0A49CEC69C2DF2C6A073849FAB	UI	137
+u1683	Grab hold of the Hawk	NewP5	/FF6D05EC4210D00AA315C2805C7AB343	UI	21
+u1684	Clear the hallway	NewP5	/A9D652554F1B3D726285449CD259388B	UI	17
+u1685	Clear the area of enemies	NewP5	/9FB2BB284B9FCC1CC85B71B5C773A9BD	UI	25
+u1686	Defend against enemy attacks and instantly counterattack!	NewP5	/29C3DAD14D5707D956C8BFB5FD62C312	UI	57
+u1687	The Zvezdochka may be slow, but it only needs to hit you once.	NewP5	/BAFF28994E13DDF00B0E51AF58123851	UI	62
+u1688	Building	NewP5	/37626CE44B7859922A29EF96E4CD4F4D	UI	8
+u1689	Big Guy	NewP5	/7E530BF34A89E2E34319B1A7D8661534	UI	7
+u1690	Earth to Jupiter	NewP5	/7D91767E411ED956A9C0E19A2CBE387B	UI	16
+u1691	Mirrors	NewP5	/9A8DE90F472C0226851B05BDD554551B	UI	7
+u1692	Significantly reduces incoming damage	NewP5	/52D6218145627E6A3EDA57A512DD6FC0	UI	37
+u1693	Significantly improves recoil control when aiming.	NewP5	/069DC4124DE98648387E84819D46D8B0	UI	50
+u1694	Zolotukhin	NewP5	/439069D746D14B7C591C328C0B1AC835	UI	10
+u1695	Magnetic shock absorption zone	NewP5	/2DB021C44BEAC0320DEE378064A661F6	UI	30
+u1696	Magnetic shock absorption zone: entrance	NewP5	/C30EAE124DACCE2F67B08595DB2A751F	UI	40
+u1697	Magnetic shock absorption zone: exit	NewP5	/20D212CF4C07A2D4FF8F29A6407EF24A	UI	36
+u1698	Rest Area	NewP5	/03B7284B4BC943AD0E90B7BED512BC9E	UI	9
+u1699	Blowdown and Desalination Zone	NewP5	/0CB2FD1843089F5C588D8CB4098F62D4	UI	30
+u1700	Everything Illuminated	NewP5	/E7D9FFF64D81BC374D94C4AAA8FAC95F	UI	22
+u1701	ART IS SACRIFICE	NewP5	/42B33713490F0F67C1CDAC81353E38C8	UI	16
+u1702	SKILLS IN USE	NewP5	/D26A6FF94D2DA42DED135CA683B2C9EA	UI	13
+u1703	Ivan	NewP5	/8A8139564BD66A6504BEDA89AED9B397	UI	4
+u1704	Ivan Pavlov	NewP5	/3DBF341D49A6F32B944D1A8B066FC4A4	UI	11
+u1705	Ivan Turgenev	NewP5	/C641DC2545860BB5DE0A45A4BB592AE6	UI	13
+u1706	Ivanovich	NewP5	/9D3B66364050EEBAFAD9C6BE35F9C14C	UI	9
+u1707	Igorevich	NewP5	/B8F5E2DF41F8EBC2775233932B984C49	UI	9
+u1708	Game saved	NewP5	/63814ED24B2C370723E534B323ECB092	UI	10
+u1709	ANNIHILATION INSTINCT	NewP5	/5B4EB72642D7F3B71340C1A178DD3DEF	UI	21
+u1710	ENCHANTMENT UNDER THE SEA	NewP5	/99583FE64E676B749DF4C5BB47EACA96	UI	25
+u1711	BLOOD ON CRYSTAL	NewP5	/D6A7979141521384DE70F3B6E662E016	UI	16
+u1712	Hut	NewP5	/286F02E04D57A10296FD788C8DA9A4FF	UI	3
+u1713	Granny Zina's Hut	NewP5	/74ABD1314495A39671CAF89D18DF953E	UI	17
+u1714	Excess kinetic energy transmitted by the weapon to the enemy creates a shock wave that damages enemies behind the target.	NewP5	/D9CAFD454EB6B9849BA9CA8BBF234F7D	UI	121
+u1715	Extracts and stores kinetic energy from blows dealt to enemies.	NewP5	/C2A5089C4B0966F4D46A97BBDF784E68	UI	63
+u1716	Izmailovna	NewP5	/4C0D19584B54862B60A2D898CEE7C36C	UI	10
+u1717	Change music for streamer mode	NewP5	/E04BF3EA4E31A5F70F73BEA9ACBB8798	UI	30
+u1718	Changing the operating order of the modulation unit nodes from sequential to parallel increases the damage caused by plasma projectiles at the maximum fire rate.	NewP5	/603E82E84A37AB99DE2AAD8B57F37D0F	UI	161
+u1719	Changes the magnetic field resistance. Technostasis allows you to move faster within the temporal bubble.	NewP5	/9C97BDFA4E27354746B52CAA351CD0BA	UI	105
+u1720	Changing the rifling pattern decreases spread when firing the weapon.	NewP5	/0DEC5C9446329D5BE87D56B0DD6AD26E	UI	69
+u1721	Automatically engages the firing mechanism when the trigger is pressed, changing the shooting principle.	NewP5	/5917C769448FDB42A4195D95B6C22503	UI	104
+u1722	Invention of the Brown Plague vaccine by Sechenov and Zakharov.	NewP5	/DC2235644D17F978BDC2509531E58B0C	UI	63
+u1723	Invention and test trials of the first three-wheeled robot.	NewP5	/A6C1E2884A14CB0B255DADA3771441FF	UI	59
+u1724	Neuropolymer is invented.	NewP5	/3CE05F3F4ED22E4B34421B8F0C0EB058	UI	25
+u1725	Ildar	NewP5	/E4D102D84739EC470C637982DA9A968A	UI	5
+u1726	Ilyich	NewP5	/8CC06D8E488EBAEF05467C97651B77B9	UI	6
+u1727	A celebrated engineer and machine builder, Makhnyov did not leave Facility 3826 when he retired, but continued working there, becoming the well-known and well-liked cable car station master at Vavilov Complex. His pleasant, amiable demeanor always puts smiles on the faces of employees as they hurry to work.  "Without Ludwig, this place would grind to a halt!" is a common phrase among passengers.	NewP5	/E29EB3DE417CEB2A9BFB9DB9D35F19F1	UI	398
+u1728	Suit modifiers available. Are you sure you want to quit the polymer modification system?	NewP5	/678EBBD84A508EB278F2B782088A39E4	UI	88
+u1729	Impact Detonator	NewP5	/9C46B29A4097AAB57FFD1A85F749486A	UI	16
+u1730	Impulse supercharger	NewP5	/B1B0525C46BD9B146B1BB59F4DD740EB	UI	20
+u1731	Inventory/Map (Hold)	NewP5	/C648FA17470B5164FAC58CBD59EC0EA8	UI	20
+u1732	Controller inversion	NewP5	/5A5F859144AD997840C0FB9958AE2DD5	UI	20
+u1733	Inverted controller	NewP5	/A34EBCFD4A0D1CA0107796B21FCFA297	UI	19
+u1734	Inverted mouse	NewP5	/8B5246154EDF6F966436AFB6A753E393	UI	14
+u1735	Custom fit	NewP5	/41982EA347A8439FD9A0FD9A7DBCD6DC	UI	10
+u1736	Induction circuit	NewP5	/106A8FFD42D2180A178ABAB1F09A699B	UI	17
+u1737	Inertial mercury weigher	NewP5	/7780EA7549A999B060BB148E9E9393ED	UI	24
+u1738	Inertial swing amplifier	NewP5	/CDACDC2B4FAEF714079ECDA626F72B2E	UI	24
+u1739	Communication Engineer	NewP5	/A71444694AB48953CACECE8E3D9DAE86	UI	22
+u1740	An engineer, roboticist, and programmer, Petrov began his career at the roboticized Maya Plisetskaya Theater as it was in the midst of its most transformative upgrades. He has shown himself to be a talented and inventive specialist with a certain amount of creative vision. Comrade Petrov has an excellent grasp of art, which has helped him make friends with the director of the roboticized theater, as well as Facility 3826 Deputy Director Michael Stockhausen, a well-known aesthete and patron of the arts. Thanks to his friendship with Comrade Stockhausen, Petrov was able to demonstrate his skills and the fruits of his academic labor to Comrade Sechenov himself. The head of the Facility greatly appreciated the young programmer's hard work and pragmatism, which led to Petrov being assigned to a leading position in his scientific team dedicated to the development of the Kollektiv 2.0 neural network.  He has since been found guilty of treason and sentenced to community service at Vavilov Complex.  #.KEY: //Msg. start// Screw you and your military swagger, Major! You'll never take me alive! I'm a superior being. You're just a jackal!//Msg. end//#REG.ENTRY: #June111955	NewP5	/BDE292D041A217FD0129A58A37975AEC	UI	1178
+u1741	Engineering Section	NewP5	/8A0354DB4CAC85DC7CF9638E59C9150B	UI	19
+u1742	You can get away with acting more aggressively in combat, you know. I am positive it has never gotten you killed so far.	NewP5	/9EDB6207482A4981DBD5F9A520BDDAFC	UI	120
+u1743	Sometimes, the best way to ruin a man is to leave him to choose his own destiny.	NewP5	/CB931EBF430B8A9B4AE262A70E8E7F52	UI	80
+u1744	Inokenty	NewP5	/73B31CB44F756870C0F889B8A4B0C4D9	UI	8
+u1745	Integrates sensitive detonation mechanisms that increase explosive power and provide additional effects like temporary stunning or revealing an enemy's vulnerable areas.	NewP5	/0959FA9846125EDB585B3AA18F62173F	UI	169
+u1746	An intellect module may be required to craft more sophisticated items.	NewP5	/D11A1DCA4916BC564247EC8CE20D7F49	UI	70
+u1747	Intensive Spraying	NewP5	/7747CB80405AEAF790045A9517F7D39F	UI	18
+u1748	Intensive synthesis	NewP5	/41DD992F457EB0C0B5E7698C2607628D	UI	19
+u1749	Johann Goethe	NewP5	/460057DB4A955E7A91A5EF81698AF2A6	UI	13
+u1750	Ionized buckshot introduces electromagnetic interference to the target's electronic systems. Increases damage to robots.	NewP5	/423010CF45B8D991A24273841532521D	UI	120
+u1751	Joseph Brodsky	NewP5	/E2FF1C944DB8284047F8A6A67178529E	UI	14
+u1752	Joseph Stalin	NewP5	/EA386E9447CC53568332FDB077AB3260	UI	13
+u1753	Irina	NewP5	/48557CCB4CA7AF18A6214B80CF9E8880	UI	5
+u1754	Artificial myomeres	NewP5	/B77C567D40CD3F848E8C2E83C0C3B7FE	UI	19
+u1755	Ismailov	NewP5	/852F84C64CFD655A1A04BA9108C8F309	UI	8
+u1756	Use the neuropolymeric launch module in the most dangerous situations when loads of enemies are closing in. It'll clear the way for you.	NewP5	/052F40384A3311CFFE62DDA71A1D7FA8	UI	136
+u1757	Graphite inlays reduce the amount of power required to control the blade in flight.	NewP5	/B73105A445D484C61E746C803FB9CBCF	UI	83
+u1758	Using skills	NewP5	/03DA487243C87AA25F227A8C5FD8E215	UI	12
+u1759	Use controller speaker	NewP5	/DEB172A94294B82564E0D09B33260063	UI	22
+u1760	Use a first aid kit by holding H	NewP5	/E1F89A2D4D935B64219AD5A7F89DD0A6	UI	32
+u1761	Use PlayStation icons	NewP5	/4F6FE4364816E4A00E1B608E8CF664B9	UI	21
+u1762	Use the shader cache to boost gaming performance, though we only recommend it if you have a PC with at least 12GB of RAM.	NewP5	/05454ED8439ED7EFFAEEFCB6781DAD26	UI	121
+u1763	Use the Volan to open the gates	NewP5	/B88F23704F42E62AA3F26486C30FC89D	UI	31
+u1764	Use the scanner to locate each platform's tow car control panel.	NewP5	/F7D9310D4ADD8AFDC8282884390B749F	UI	64
+u1765	Use the SCANNER by holding X.	NewP5	/708560384003AC08A19F73812BA0E8A9	UI	29
+u1766	Use SHOK <tag id="InputAction.Gameplay.Shocker"/> on enemies to stop them in their tracks or even kill them.	NewP5	/FACF0C4941F7C16063D03EA7916AA696	UI	108
+u1767	Use Polymer to <h>enhance the effects</> of freezing, fire, and electricity. Apply Polymer to a surface or pour it directly onto your enemies.	NewP5	/4AB893A84FF111E2F98D798C44C85D66	UI	142
+u1768	Use the Hawk's cable to enter the park	NewP5	/8C9218F14B9FE3AEDE868FA46DE624A9	UI	38
+u1769	Use SHOK on flying enemies to quickly take them out.	NewP5	/68A5E12845CE59FD855392829FF17129	UI	52
+u1770	True courage is to see life for what it is, and still love it.	NewP5	/848679B342E1D1589A0965A64E49ADF3	UI	62
+u1771	A tried-and-tested targeting method.	NewP5	/D5EE3EEB472BA83D3BB4D28B9AF0EF52	UI	36
+u1772	June 1944	NewP5	/185CDE6545E6DCE6FE61CFBD80163744	UI	9
+u1773	June 1953	NewP5	/4C4C35784118E7D54C113CA75CA6552D	UI	9
+u1774	June 1955	NewP5	/9D594D3D4D81AE75B8630689D8E6D46F	UI	9
+u1775	Unfortunately, not all new employees are able to successfully integrate with the Facility 3826 team—especially if their position fails to meet their own expectations. The keeper of the legendary Aniva, a Japanese lighthouse from the distant eastern island of Sakhalin, Khozin has found himself unable to adapt to modern reality. Nostalgia for his old life, robot patrols, and the occasional tour groups from Almaty, Kazakhstan that pass his lighthouse have rendered this lonely, unsociable man even more introverted.	NewP5	/6F6660BF4FA1292C7DAF2AB8E3D48FF7	UI	516
+u1776	UNEASY LIES THE HEAD THAT WEARS A CROWN	NewP5	/C39D1C33497E03B2E300E986DCC46798	UI	39
+u1777	KALASH	NewP5	/06FD111E4ED83AD62360BC9FFE0A3EE3	UI	6
+u1778	KALASH—CARTRIDGE	NewP5	/82766FAF434CB11361CE3E82A222DE7F	UI	16
+u1779	KALASH—COLLIMATOR	NewP5	/5ADB139D47B4A78FFBC5439FDA379064	UI	17
+u1780	KALASH—THERMAL SCOPE	NewP5	/E1F4FE6046B7ADDDB8DB4191147493E2	UI	20
+u1781	KALASH—EXTENDED MAGAZINE	NewP5	/EFFC95734A0922EF74E7549C5AFEACAF	UI	24
+u1782	KALASH—EXPANSIVE CONVERTER	NewP5	/790C9DF14ED8EFA0E7DC9F96B703DBB5	UI	26
+u1783	KALASH—ELECTROKINETIC STOCK	NewP5	/7D138F18497401EAFE06E8BF6BF63F35	UI	27
+u1784	KALASH—ELECTROMAGNETIC POLARIZER	NewP5	/D40737D543FB2CBB5EF55281AEE2374D	UI	32
+u1785	ACTIVE CAMERAS	NewP5	/107416BC4204B91FCC00EF8A93BA580A	UI	14
+u1786	CAMERA #	NewP5	/F2C7008D4D38F9CD256AFDB12B136E67	UI	8
+u1787	CAMERA 01 (WEST ENTRANCE)	NewP5	/C84C06AA4E16CFE6243DF2A5B6A0306C	UI	25
+u1788	CAMERA 02 (EAST ENTRANCE)	NewP5	/1B7A32D4434376BF0BA1AA90A12BCB87	UI	25
+u1789	CAMERA 03 (NORTH ENTRANCE)	NewP5	/4BA361A34B1DC6A3AFA712B1B91CD6ED	UI	26
+u1790	CAMERA NOT FOUND IN DATABASE	NewP5	/D0500FBB4ED01B90C1D602893C55DCC6	UI	28
+u1791	CAMERA NOT RECOGNIZED	NewP5	/7D5E99604BC59E96C4480BB7FE2AF6C6	UI	21
+u1792	CARBINE	NewP5	/7F4F04E640050A8460151EB21FD7BE2C	UI	7
+u1793	CAROUSEL	NewP5	/C42D5AB2493CF281E894C6B1FBDE8219	UI	8
+u1794	FIREBIRD	NewP5	/D34ED745447FB362B0132E9482F8A195	UI	8
+u1795	ELECTRICITY COIL SUPERCHARGER	NewP5	/9208438845F2C3B6047CA485135DFD9D	UI	29
+u1796	ANCHOVY	NewP5	/087F0C6B4BC8BB4E735D2286E3E36708	UI	7
+u1797	ACID CARTRIDGE	NewP5	/005436BF4025899FFFDFFD96A55BEA3A	UI	14
+u1798	Klusha	NewP5	/FFE5D4754135B00C3277C68EEF25A7AA	UI	6
+u1799	KLUSHA—CARTRIDGE	NewP5	/1B295FF94EF44EA8DA09528C8D45FD22	UI	16
+u1800	KLUSHA—BLADE	NewP5	/2DB36C574F9146BEB701909225F9360E	UI	12
+u1801	KLUSHA—HANDLE	NewP5	/4DAAF2FE44FF4064714E5EBD4D9F7112	UI	13
+u1802	KEY	NewP5	/271C94B1498B269E245B2392463BE528	UI	3
+u1803	KEY DISK	NewP5	/F573704D47C4E76065771A9F248D9A7E	UI	8
+u1804	ALGAE WORKSHOP CANISTER	NewP5	/840294C64B4A5D5AF4EF199321D3DB98	UI	23
+u1805	HOT WORKSHOP CANISTER	NewP5	/6BF2B996431458216343429EC9C7A4E3	UI	21
+u1806	PESTICIDE WORKSHOP CANISTER	NewP5	/311A04EE4FFC9308221370A6E753215F	UI	27
+u1807	COLD WORKSHOP CANISTER	NewP5	/908352EF4D08CCDA17AE92892E4A6C27	UI	22
+u1808	SQUARE MOON CANISTER	NewP5	/E97355D34F45EC58DC2FB196913F317D	UI	20
+u1809	RING MOON CANISTER	NewP5	/B1C1DCDA45F3656AE52F92A220AD5147	UI	18
+u1810	X MOON CANISTER	NewP5	/B0E15FAC4747F069CD22B4B1DC282F0E	UI	15
+u1811	CIRCLE MOON CANISTER	NewP5	/D4A0B9D0485054B6B2E18D92D14D55D8	UI	20

@@ -1,0 +1,26 @@
+# chunk_03 notes — uncertain choices
+
+- Outline -> الحدود — ambiguous UI string (a photo-mode filter or a contrast-mode style); chose the terse "outline/borders" reading.
+- Pchela -> بتشيلا — no glossary entry; transliteration of the Russian robot nickname chosen (used in u0666, u0849).
+- Perling -> بيرلينغ — unknown robot/proper name, no glossary entry; transliterated.
+- RESHETO -> ريشيتو — no glossary entry; transliterated as a name.
+- Rotorobot -> روتوروبوت — model-style name; transliterated rather than described.
+- Sprout -> برعم / البراعم — creature/plant name absent from the glossary; translated literally and used consistently in u0681, u0815, u0848, u0854.
+- Laborer (MFU-68) -> العامل — descriptive robot nickname translated (also referenced in the MED-6 text u0859 as "هيكل العامل MFU-68").
+- Drofa (MUC-1) -> دروفا — bird nickname transliterated (u0851, u0860).
+- Bumblebee (MTU-7) -> الطنّانة — nickname translated (u0847).
+- Owl (LUC-1) -> البومة (plural بومات) — nickname translated (u0802, u0860).
+- Engineer (RAF-9) -> المهندس, Medic (MED-6) -> الطبيب, Lab Tech (VOV-A6) -> الفنّي المخبري — role nicknames translated consistently (u0850, u0853, u0859).
+- Plych (TM) -> بليتش (TM) — joke brand of Plyusch; transliterated, the (TM) marker kept Latin (u0680).
+- PETROV OF OPERA -> بيتروف الأوبرالي — ambiguous label (poster/performer); read as "Petrov the opera singer" (u0669).
+- NoStock -> بلا أخمص — "stock" read as the weapon stock (u0630).
+- No Localization -> بلا توطين — read as "no localization / no localized subtitles" (u0626).
+- SnakeMinigameInputDown/EndGame/Left/Right/Up -> إدخال لعبة الأفعى: ... — internal snake-minigame input names; meaning translated, direction words kept in Arabic (u0807-u0811).
+- Test placeholders u0845/u0846 -> repeated اختبار (mirrors "Test ... Value" / repeated "Test Test Test Testst") to avoid leaving untranslated English; the trailing space of u0846 and of u0678 is preserved.
+- NoRecoilOnFullEnergy -> بلا ارتداد عند الطاقة الكاملة — camel-case perk identifier rendered as a readable perk label (u0629).
+- RangeWeaponStatus / QuestNotify / SaveAsset / UpgradedHead / TwoHorizontalLines -> meaning translated as short UI labels (u0731, u0704, u0782, u0893, u0876).
+- Consumable -> المستهلك — used consistently for the Next/Previous/Use Consumable family (u0620, u0692, u0895).
+- Reskin (Activate Swede Reskin) -> المظهر البديل — game-jargon "reskin" rendered as "alternative look" (u0800).
+- TUTORIAL -> تعليمي — kept terse (6 chars vs 8) as a section label rather than the longer "الدرس التعليمي" (u0837).
+- NEXT TIP / Next tab / Previous tab -> التلميح التالي, التبويب التالي, التبويب السابق — kept the natural paired wording (menu-item length allowance) instead of an artificially truncated form (u0610, u0621, u0693).
+- Latin-only strings kept byte-exact: Nvidia Reflex, QHD (1440p), UHD (2160p), SSD, TDDSDASd, Q, R, SHIFT, Space (u0637, u0701, u0877, u0769, u0833, u0700, u0706, u0764, u0812).

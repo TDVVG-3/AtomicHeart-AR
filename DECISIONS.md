@@ -748,3 +748,60 @@ marker multiset; (b) keep each segment at or below the English segment's charact
 possible (every Arabic segment in this scene is shorter than its English counterpart). Evidence
 and the one remaining NOT TESTED point (clip vs scroll) are in reports/subtitle_display_finding.md;
 the check is item 4 of reports/scene_bridge_ingame_check.md.
+
+## DEC-027 - Batch 1 complete (15 chunks): authoring contract, copy-class policy, glyph exemption, whitespace normalisation, carrier p5 built and NOT installed
+
+Date: 2026-10-18. Status: ACTIVE.
+
+Part 1 - Batch 1 result. Scope set = NewP5 (5,597) + Misc (21) + PearTerminals (545) +
+Academy_Dialogues (282) + the first 460 rows of Chelomey_Dialogues = 6,905 rows (the 25% row
+cutoff of reports/translation_plan.md, confirmed). Of those, 6,527 rows carry Arabic and 378 rows
+are copy-class and intentionally left byte-identical to the English. Distinct English authored in
+this batch: 4,426. Master totals after the batch: 6,564 of 27,618 rows (23.77%) and 4,426 of
+19,996 unique strings (22.13%), every one Status=DRAFT. The batch was authored in 15 chunks of 300
+unique strings (last 294) following the plan's work order.
+
+Part 2 - Authoring contract (reusable for batches 2-4). `scripts/batch_plan.ps1` writes
+`localization/working/batch1/rows.tsv` (batch row set), `unique.tsv` and `chunk_NN_en.tsv` with
+STABLE ids `u0001..`; Arabic is authored per chunk into `chunk_NN_ar.tsv` as `id<TAB>arabic`, so an
+English string is never retyped and can never be mis-matched. The style contract is
+`localization/working/batch1/BRIEF.md` (glossary-first, byte-exact tags/placeholders/markers,
+MSA register, no sanitising, UI length discipline). `scripts/batch_check.ps1` gates every chunk
+before the master (id set and order, empty cells, U+FFFD, ordered tag/placeholder/speaker/timing
+token equality, `%` and `||` counts, length warnings) and `scripts/batch_apply.ps1` then fills only
+rows inside the batch row set that do not already carry Arabic, sets Status=DRAFT, note `batch1`,
+and appends to the union TM. `validate_translation.ps1` runs after each chunk; no error was carried
+forward.
+
+Part 3 - Copy-class policy. The validator hard-fails Arabic == English and Arabic with no Arabic
+letter, so rows whose correct Arabic is byte-identical to the English (bare numbers, resolutions,
+symbols, lone tags, key names, model/tech codes, language endonyms, gibberish, pure-format strings)
+are NOT translated and NOT marked DRAFT: they stay UNTRANSLATED with an empty Arabic cell, and the
+carrier fills them from the en-US locres - which is exactly the English the row shows today.
+Evidence: `localization/working/batch1/copy_keep.tsv` (170 distinct strings / 378 rows). The
+checker and the applier use the validator's Arabic-letter class so a value whose only "Arabic"
+character is punctuation can never be applied (it happened once, 17 rows, and was repaired).
+
+Part 4 - Glyph-gate exemption. `scripts/glyph_gate.ps1` gained `-AllowSourceInheritedNonLatin`.
+It splits missing codepoints into those the ENGLISH SOURCE of the same row already needs (Cyrillic
+in designations, invisible format characters in an obfuscated string) and those the Arabic
+introduced. The gate passes only when the Arabic introduced none; the five inherited codepoints are
+listed in the report with their provenance. Rationale: the engine already renders them through its
+fallback face for the original text, so the Arabic does not add a glyph requirement.
+
+Part 5 - Whitespace normalisation. Trailing whitespace in a locres value is stripped by the
+UnrealLocres round-trip, so it cannot survive the carrier build. `scripts/trim_trailing_ws.ps1`
+trims the master Arabic column (15 rows in batch 1) and the TM. Every future batch must do the same
+before the build (KI-024).
+
+Part 6 - Carrier p5. Built with the unchanged builder: 3,775,007 bytes, sha256
+087f6b640a0f649d605148316a80cb3f51baf94994b4c317c5bd0e910f025a9f, 35/35 scopes, 27,618 keys,
+6,564 Arabic + 21,054 English-filled + 0 kept Korean, 0 round-trip failures, 35/35 unpack
+byte-identical. NOT installed: p4 + font v2 stay installed until the user approves. Install:
+`install_mod.ps1 -Carrier p5 -Font p2_plex` (reconciling; removes p4 only after its hash matches
+the manifest; font v2 untouched). Rollback: `install_mod.ps1 -Carrier p4 -Font p2_plex`.
+
+Part 7 - Batch-2 preparation. `scripts/batch_plan.ps1` still uses a case-insensitive `@{}` index
+for its occurrence counter, which produced the `Off`/`OFF` mis-attribution (KI-023). It never
+changes the stable ids, but it must be switched to a `Dictionary[string,int]` before batch 2 is
+planned, and the batch-2 planner must run with a fresh state file rather than reusing batch-1 ids.

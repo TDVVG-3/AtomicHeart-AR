@@ -2,3 +2,49 @@ find	replace	note
 أن تنتفخ صدرك	أن تنفخ صدرك	pilot fix (a): grammar - "تنفخ" not "تنتفخ" (same phrase exists in the Theatre_Dialogues and DIALOGUES FOR LQA siblings)
 قتلة خادعة	تصفية خفية	pilot fix (b): stealth-kill game tip wording; the <tag .../> in the row is untouched
 &Surgeon& مسحة.	&Surgeon& قطنة.	pilot fix (c): Surgeon scene "Swab" = cotton swab
+نيوروبوليمر	البوليمر العصبي	batch1 fix: glossary consistency - Neuropolymer is translated as البوليمر العصبي (glossary.tsv line 87), not transliterated
+التركيز التلقائي	تركيز تلقائي	batch1 shorten: 16 -> 12 chars
+العودة إلى القائمة الرئيسية	القائمة الرئيسية	batch1 shorten: 27 -> 16 chars
+مشهد سينمائي	مشهد	batch1 shorten: 12 -> 4 chars
+قتال قريب تجريبي	قتال تجريبي	batch1 shorten: 16 -> 11 chars
+المجموعة الأولى	مجموعة أولى	batch1 shorten: 15 -> 11 chars
+العثور على بطاقة	إيجاد بطاقة	batch1 shorten: 16 -> 11 chars
+العثور على مفتاح	إيجاد مفتاح	batch1 shorten: 16 -> 11 chars
+العثور على موارد جديدة: بيانات المهارات	موارد جديدة: بيانات المهارات	batch1 shorten: 39 -> 28 chars
+الذراع اليسرى	ذراع يسرى	batch1 shorten: 13 -> 9 chars
+نظرة عامة على التقييم	ملخص التقييم	batch1 shorten: 21 -> 12 chars
+الذراع الثالثة	ذراع ثالثة	batch1 shorten: 14 -> 10 chars
+التلميح التالي	تلميح آخر	batch1 shorten: 14 -> 9 chars
+التبويب التالي	تبويب لاحق	batch1 shorten: 14 -> 10 chars
+بلا ارتداد عند الطاقة الكاملة	بلا ارتداد بكامل الطاقة	batch1 shorten: 29 -> 23 chars
+المهارة الأساسية	مهارة رئيسية	batch1 shorten: 16 -> 12 chars
+الذراع الأيمن	ذراع أيمن	batch1 shorten: 13 -> 9 chars
+استخدم عنصراً	استخدم غرضاً	batch1 shorten: 13 -> 12 chars
+تظليل الحواف	حواف معتمة	batch1 shorten: 12 -> 10 chars
+التصويب التلقائي	تصويب تلقائي	batch1 shorten: 16 -> 12 chars
+مستوى صوت الراديو	صوت الراديو	batch1 shorten: 17 -> 11 chars
+مستوى المؤثرات	صوت المؤثرات	batch1 shorten: 14 -> 12 chars
+أوه، أيتها الكائنات المقرمشة!	أوه، أيتها المقرمشة!	batch1 shorten: 29 -> 20 chars
+لاختراق الأبراج، استمرّ بالضغط على Q	لاختراق الأبراج، امسك Q	batch1 shorten: 36 -> 23 chars
+المهارات قيد الاستخدام	المهارات النشطة	batch1 shorten: 22 -> 15 chars
+استخدم حقيبة الإسعاف بالاستمرار في الضغط على H	للإسعاف، استمرّ بالضغط على H	batch1 shorten: 46 -> 28 chars
+ذاكرة التظليل المؤقّتة	ذاكرة التظليل	batch1 shorten: 22 -> 13 chars
+LUC-1 البومة الليزرية	LUC-1 بومة ليزرية	batch1 shorten: 21 -> 17 chars
+دولاب الموازنة المغناطيسي	دولاب موازنة مغناطيسي	batch1 shorten: 25 -> 21 chars
+أقصى معدّل إطارات	أقصى إطارات	batch1 shorten: 17 -> 11 chars
+ليس بهذه السرعة، أيها الرائد	مهلًا، أيها الرائد	batch1 shorten: 28 -> 18 chars
+إعادة الضبط إلى الإعدادات الافتراضية	استعادة الافتراضي	batch1 shorten: 36 -> 17 chars
+مستوى الصوت الرئيسي	الصوت الرئيسي	batch1 shorten: 19 -> 13 chars
+افتح البوّابة	افتح البوابة	batch1 shorten: 13 -> 12 chars
+PM—المسدّس الدوّار	PM—مسدس دوّار	batch1 shorten: 18 -> 13 chars
+النفّاثة البوليمرية:	نفّاثة بوليمرية:	batch1 shorten: 20 -> 16 chars
+التحميل المسبق	تحميل مسبق	batch1 shorten: 14 -> 10 chars
+المرحّل الزمني	مرحّل زمني	batch1 shorten: 14 -> 10 chars
+صُنع في الاتحاد السوفييتي	صنع في الاتحاد السوفييتي	batch1 shorten: 25 -> 24 chars
+المواد الصناعية	مواد صناعية	batch1 shorten: 15 -> 11 chars
+التغذية الراجعة للوحدة الطبية	استجابة الوحدة الطبية	batch1 shorten: 29 -> 21 chars
+شخصيات مرموقة شابة	شباب مهمّون	batch1 shorten: 18 -> 11 chars
+تم حفظ البيانات	حُفظت البيانات	batch1 shorten: 15 -> 14 chars
+أصلحوا هذا بأسرع ما يمكن!	أصلحوا هذا فوراً!	batch1 shorten: 25 -> 17 chars
+جارٍ حفظ البيانات	جارٍ الحفظ	batch1 shorten: 17 -> 10 chars
+قائمة الأشياء التي عُثر عليها	قائمة المكتشفات	batch1 shorten: 29 -> 15 chars

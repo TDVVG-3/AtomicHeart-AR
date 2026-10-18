@@ -266,3 +266,39 @@ Facts:
   text began exactly at the 2nd marker boundary); clipping-vs-scroll stays NOT TESTED and is
   checklist item 4. Evidence: reports/subtitle_display_finding.md (KI-022).
 - Batches 1-4 still not started; they start on the user's "next".
+
+## Cycle 010 - Batch 1 delivered (15 chunks): Arabic applied, gates green, carrier p5 built (not installed) (2026-10-18)
+
+Batch 1 of 4 is done and everything is committed locally. Nothing is installed: the game still runs
+carrier p4 + font v2, so batch-1 text shows English in game until p5 is approved.
+
+```
+Step              Item                          Result
+Planning          batch row set + unique set    PASS  6,905 rows / 4,562 unique / 4,494 to author,
+                                                     15 chunks of 300 (last 294)
+Authoring         15 chunk Arabic files         PASS  4,426 distinct strings authored, 15 notes files
+Per-chunk gate    scripts/batch_check.ps1       PASS  15/15 chunks, 0 protected-token violations
+Master apply      scripts/batch_apply.ps1       PASS  6,564 rows with Arabic (DRAFT), TM 102 -> 4,427
+Validator         scripts/validate_translation  PASS  0 errors / 197 warnings
+Quality pass      glossary + UI shortening      PASS  4 glossary rows aligned, 86 labels shortened
+Repair            trailing-whitespace trim      PASS  15 rows trimmed -> round-trip clean
+Glyph gate        scripts/glyph_gate.ps1        PASS  0 codepoints introduced by the Arabic (KI-025)
+Reference         AR_EN_REFERENCE.md            PASS  6,564 rows / 4,426 unique / 13 scopes
+Review sample     reports/review_sample.md      PASS  40 rows (20 spread, 15 tagged, 5 longest)
+Carrier build     p5 (not installed)            PASS  3,775,007 B, sha256 087f6b64...f025a9f,
+                                                     35/35 scopes, 0 round-trip failures, 35/35 identical
+```
+
+Facts:
+- Coverage now: **6,564 of 27,618 (23.77%)** rows; **4,426 of 19,996 (22.13%)** unique strings.
+- Batch-1 row set accounting: 6,905 rows = 6,527 translated + 378 copy-class left as-is (numbers,
+  symbols, lone tags, key letters, model/tech codes, language endonyms, gibberish, pure-format
+  strings). Evidence: localization/working/batch1/copy_keep.tsv.
+- Every batch-1 row is Status=DRAFT and awaits the reviewer sample.
+- p5 = p4 + batch 1. p4 remains installed; the exact p5 install and p4 rollback commands are in
+  reports/cycle010_results.md.
+- Batch 2 (base dialogue, ~13,809 cumulative rows / 8,648 unique at the 50% cutoff) starts on the
+  user's "next"; `scripts/batch_plan.ps1` must switch its occurrence index to a case-sensitive
+  dictionary first (KI-023).
+- Open after this cycle: user's in-game p4 bridge report, the speaker-marker question, KI-026 (UI
+  length, NOT TESTED in game).

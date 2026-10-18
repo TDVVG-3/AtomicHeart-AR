@@ -1,0 +1,38 @@
+# chunk_13 notes — uncertain choices
+
+- u3630 `Chai! And chaps!` -> `شاي! ويا رفاق!` — a short exclamatory toast with no glossary entry; the cheer/party function and both exclamation marks were kept, "chaps" rendered as a vocative rather than literally.
+- u3627 `Turbine` -> `توربين` — no glossary entry; the established Arabic loan form was used for the location label (`Chelomey` does not need it).
+- u3760 `Thrift` -> `التوفير` — single ambiguous word in an uncontextualised list; read as the abstract quality ("frugality") rather than a shop name.
+- u3725 `SHOKer` -> `شوكر` / u3727 `SHOK therapy` -> `علاج شوك` — SHOK is fixed by the glossary (`شوك`); the two derived module names are not in the glossary, so a transliterated nickname and a descriptive compound were used instead of inventing a root.
+- u3650 `Lumberjack` -> `الحطّاب`, u3651 `Carousel` -> `الدوّار`, u3652 `Greaser` -> `المشحّم` — melee-weapon nicknames with no glossary entries; translated (like `Star` -> `النجمة`, `Fox` -> `الثعلب`, `Snowball` -> `كرة الثلج`) rather than transliterated, for a readable weapon list.
+- u3651 `Carousel` -> `الدوّار` — follows the approved TM row `WeaponsCarousel` -> `دوّار الأسلحة`.
+- u3671 `Fox` -> `الثعلب` — although TM u2003 keeps `Fox` in Latin in one list row, the approved TM row `FOX—ERGONOMIC HANDLE` -> `الثعلب—مقبض مهيّأ تشريحياً` translates it, so the translated form is used.
+- u3753 `RHINO ENERGY STORAGE` -> `مخزن طاقة الكركدن` / u3754 `CRICKET ENERGY STORAGE` -> `مخزن طاقة الجدجد` — weapon-specific energy-storage names without glossary entries; the animal nicknames were translated (short form) instead of transliterated.
+- u3716 `SDC-2 VOLAN` kept in Latin (`ورقة غشّ SDC-2 VOLAN`) — matches the approved TM row `SDC-2 Volan` -> `SDC-2 VOLAN`.
+- u3711 `BB`, u3742 `Snap-A`, u3825 `m`, u3859 `BP_WayPoint` — copied byte-exactly (ammo/model/unit code; `Snap-A` is already kept in Latin in TM u2494).
+- u3829 `русский`, u3831 `уйцуйцуйцу`, u3833 `—`, u3835 `日本語`, u3836 `汉语`, u3837 `漢語`, u3838 `한국어`, u3840 `DX11`, u3841 `DX12` — copied byte-exactly (language endonyms, gibberish, symbol-only, graphics-API codes).
+- u3876 `!!!`, u3881 `:(`, u3882 `?!`, u3883 `X(` — copied byte-exactly (symbol-only strings; the `?` in `?!` is a copy, not an Arabic sentence).
+- u3845 `PBR BaseColor Range` -> `نطاق اللون الأساسي PBR` / u3846 `PBR Specular Range` -> `نطاق اللمعان PBR` — engine buffer-visualisation labels; translated but `PBR` kept in Latin as a technical acronym.
+- u3858 `BIKE WITH SIPUHAr` -> `دراجة مع SIPUHAr` — developer asset name with a garbled tail; the readable part is translated and `SIPUHAr` kept Latin so the actor name still matches.
+- u3862 `ICE CREAM RAFIK` -> `آيس كريم رافيك` — `RAFIK` read as a personal name (رفيق/رافيك), so it is transliterated rather than translated as the word "comrade".
+- u3864 `MUSICAN` -> `موسيقي` — the English has a typo; translated as "musician" like the neighbouring Misc sound-emitter labels.
+- u3674 `binoculars` -> `منظار`, u3685 `Condensed Milk` -> `حليب مكثّف`, u3688 `Bottle of Vodka` -> `قنينة فودكا` — follow the approved TM rows `BINOCULARS` -> `منظار`, `CONDENSED MILK` -> `حليب مكثّف`, `VODKA` -> `فودكا`.
+- u3732/u3733 `Conventional barrel case` -> `غطاء ماسورة تقليدي` — no glossary entry; a neutral weapon-part rendering was used (`Conventional barrel` -> `ماسورة تقليدية`).
+- u3751 `EMP inductor` -> `ملف حثّ EMP` — "inductor" is the electrical component; `EMP` kept in Latin as in the approved TM (`وحدة EMP`).
+- u3760-adjacent list items u3730 `Staff Head` -> `رأس العصا` and u3755 `ERGONOMIC STAFF` -> `العصا المريحة` — "staff" read as the melee-weapon shaft, consistent with `Finial`/`Staff` being weapon parts.
+- u3762 `Expansive converter` -> `المحوّل التمدّدي` — follows the approved TM rows `PM—EXPANSIVE CONVERTER` / `KS-23—EXPANSIVE CONVERTER`.
+- u3717 `JAB` -> `لكمة` — a melee move label; the short boxing term was preferred over a literal verb phrase.
+- u3692 `not worth their salt` -> `لا قيمة له` — the idiom was localised to its function (a spy without a lockpick is worthless); the salt image does not survive in Arabic.
+- u3691 `It could drive you Limbonkers!` -> `هذا كفيل بأن يجنّنك حتى في ليمبو!` — the Limbo/`bonkers` pun cannot survive; the joke function and the place name `ليمبو` (glossary) were kept.
+- u3819 `Trouble in paradise?` -> `مشكلة في الجنّة؟` — idiomatic rendering; no glossary variant exists.
+- u3638 `Chelomey: High-Rise 1st Floor` -> `تشيلومي: الطابق 1 من البرج` — the ordinal was written with a Western digit to satisfy the digits rule, while `Final Floor` stays as words.
+- u3932 `Mastiffs, Unicorns` -> `الماستيف واليونيكورن` — WWII-era military robot nicknames with no glossary entry; transliterated so the veteran's named machines stay recognisable.
+- u3923 `Zmei Gorynich` -> `زمي غورينيتش`, `bravvies` -> `برافيز`, `Trebelov` -> `تريبلوف` — quoted codename/nickname/inventor name; transliterated rather than translated so the in-world citations stay consistent.
+- u3790 `Erich Maria Remarque`, u3804 `Yusup` -> `يوسوب`, u3803 `Korolyov`/`Yuri Gagarin` -> `كوروليف`/`يوري غاغارين` — established Arabic forms of real persons, matching the glossary transliteration conventions.
+- u3924 `chicken coop` -> `خمّ دجاجه` and `rutting roosters` -> `الديوك الهائجة` — kept the crude/ridiculous register of the complaint, not sanitised.
+- u3921 `Gimme a break...` -> `أرحمنا...` — exasperated filler localised to an Arabic equivalent; the rude `fucking apple trees` stays crude as `أشجار تفاح لعينة`.
+- u3941 `before we get our asses handed to us on a platter` -> `قبل أن تُوضع رؤوسنا على طبق` — the vulgar image was localised to a comparable Arabic idiom rather than softened.
+- u3934/u3935/u3941 `E. Puodjunas` -> `بووديوناس` and `E. Puojunas` -> `بوويوناس` — the English spells the same watchman two ways; each row follows its own spelling.
+- Other provisional transliterations: `Styzhev` -> `ستيجيف`, `Liteikina` -> `ليتيكينا`, `Kalinina` -> `كالينينا`, `Vybegallo` -> `فيبيغالو`, `Kislevsky` -> `كيسليفسكي`, `Muravyova` -> `مورافيوفا`, `Martashev` -> `مارتاشيف`, `Savelyeva` -> `سافيليفا`, `Kopylova` -> `كوبيلوفا`, `Osenev` -> `أوسينيف`, `Nikitin` -> `نيكيتين`, `Rukh` -> `روخ`, `Yegor` -> `ييغور` — no glossary entries; standard Russian-name transliteration used throughout.
+- Whitespace structure was preserved: the trailing space of u3697, the double space of u3724, the triple space of u3937, the double-space paragraph separators of u3872-u3942, the non-breaking space before the em dash in u3809, and the narrow no-break space plus word joiner inside `BEA‑Ds` in u3701.
+- Em dashes in compound part names were kept in place: `السويدي—…` (u3708-u3710), `إلكترو—…` (u3745-u3748) and the parenthetical em dashes of u3923/u3926/u3929.

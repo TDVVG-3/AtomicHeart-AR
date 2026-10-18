@@ -1,0 +1,301 @@
+id	english	scope	key	category	en_len
+u0905	SUPER DUPER IMPORTANT HINT (you'll never forget it, we promise)	NewP5	/B2BCAF0A46E590ADFF42F68E892AE67B	UI	63
+u0906	SUPER DUPER IMPORTANT DOUBLE HINT (you'll never forget it, we promise)	NewP5	/33EB491E442E116C9C5B85B07F17FD6C	UI	70
+u0907	SEE ON MAP	NewP5	/8A10E12E4F15E6D04FBFBCAEC32EA6EE	UI	10
+u0908	Variant1	NewP5	/C4A8497F41BE4702E6EBC2AE39F1E157	UI	8
+u0909	Variant2	NewP5	/F4E073FA435008A666D7B09B48C36292	UI	8
+u0910	Variant3	NewP5	/184F2AEE48EF18C78B5CB2ABB58DD05E	UI	8
+u0911	Variant4	NewP5	/F2ACF5614009D5FDDFF2F4A1D3AE20E6	UI	8
+u0912	Variant5	NewP5	/4FD023924028452C4E34D69F76B153B8	UI	8
+u0913	Variant6	NewP5	/0CB77B8442460DB343531B9F55DBED57	UI	8
+u0914	Vatrushka	NewP5	/8715CD7B4421A8DBFDE8899E3A01C754	UI	9
+u0915	VAVILOV	NewP5	/69C7FE1D4B030F4200A872A90DAE45FC	UI	7
+u0916	Vehicle	NewP5	/1165454E4E0536AF6E8A47AFD07CAAF7	UI	7
+u0917	Vertical	NewP5	/9BC6F8424DBD303C3B8B16BE7426C28C	UI	8
+u0918	Vertical alignment	NewP5	/86945AED48D67FA1AC58BDA50DABFDA0	UI	18
+u0919	Vertical recoil	NewP5	/AC470BA44ADD72EA96F50C9D51D44233	UI	15
+u0920	Vibrant	NewP5	/85922B4C456689FA81D68CA5B3348E51	UI	7
+u0921	Controller vibration	NewP5	/298ABA8D4D987820EBE06AAA638B35F5	UI	20
+u0922	Vignette	NewP5	/D1130B844883055F287470AFA123F14B	UI	8
+u0923	Volynsky's robotic theater has always attracted the attention  of the public.Bursting with the atmosphere of mystery,   unpredictable excitement and delicate sense of perfection,  it will not leave untouched the most demanding audience.  However, now that a dangerous criminal is hiding among   the grim shadows of the backstage, the festive mood has slightly...changed.	NewP5	/C00FA6A8431F1E170C3C508C67853214	UI	370
+u0924	WEAPONS	NewP5	/D6014F39451DB363257ABB906B0083E0	UI	7
+u0925	Wait for the performance to end	NewP5	/658F3CDB4D850B39D3E3D5A4EE438673	UI	31
+u0926	Warm	NewP5	/15984F0941696F1F079E09BB98439023	UI	4
+u0927	Note! Some game elements may not work correctly if you load save files created in the game's master version.	NewP5	/70F9D8B84481DFA5B7F430AF158FD9B2	UI	108
+u0928	Weapon Slot 1	NewP5	/750689BC4F258CD215D1719C2449A5A2	UI	13
+u0929	Weapon Slot 2	NewP5	/A4362BAD4F81EB1F7FCF3F90E0F218A6	UI	13
+u0930	Weapon Slot 3	NewP5	/338ACDFC46051CDCF4542198278520B3	UI	13
+u0931	Weapon Slot 4	NewP5	/549C2574464E6A947FD817A3264D1A0B	UI	13
+u0932	WeaponsCarousel	NewP5	/582343BE46E6D5F61A57778491A7E2E9	UI	15
+u0933	When you remove an upgrade, you get the resources back	NewP5	/962C816F463CE97A55BD3C94C6EEE119	UI	54
+u0934	Laborer	NewP5	/79C2987F48538893D4F9EDB6B329D147	UI	7
+u0935	YES ENERGY	NewP5	/6F5F3DC4453946F1424C1A846A38D044	UI	10
+u0936	YOUR BACKPACK IS OVERLOADED	NewP5	/BACA41374E262BC31606D7A433F1C07D	UI	27
+u0937	You have two ways to choose the default value:    1) Just set the value at the variable "DefaultValue" below.    or    2) Using this checkbox reference, call the node "initialize" (for example, at the construct node). In this node, you can choose a value for the checkbox. This option is good for those who want to set the value in runtime.	NewP5	/F97F70A54745AB7A1D52E49A6E3EE724	UI	340
+u0938	You have two ways to choose the default value:    1) Just set the value at the variable "DefaultValue" below.    or    2) Using this slider reference, call the node "initialize" (for example, at the construct node). In this node, you can choose a value for the slider. This option is good for those who want to set the value in runtime.	NewP5	/D2E7A75B4AC952FFECD207A5EC40BE20	UI	336
+u0939	You will lose this item and won't receive anything in return	NewP5	/A15BA519472795318CDD20B7D0A2F8EE	UI	60
+u0940	ZOOM	NewP5	/3565397F4490C92309D0468FA30A5226	UI	4
+u0941	ZOOM IN	NewP5	/3AE411B14C0177F26871BEAD0F3A88D0	UI	7
+u0942	ZOOM OUT	NewP5	/8F635AD34FD9A6623CC8668B0B2CADEC	UI	8
+u0943	Activate Star Reskin	NewP5	/1B974B2F40490499ED1136A5D4865687	UI	20
+u0944	[ Flatlined ]	NewP5	/97653547404E68B86AACD1955A07252A	UI	13
+u0945	[ FIRE ]	NewP5	/1665B8E9429C853960F7A28679EF512D	UI	8
+u0946	x2	NewP5	/6F560D2E4F6B7E1D123A9D89AFB4D049	UI	2
+u0947	x{0}	NewP5	/9FF4B22C4211BC7CD1628FBF67C1DD8D	UI	4
+u0948	]	NewP5	/9129EF1C4FBF9640706C7C858A328C21	UI	1
+u0949	_	NewP5	/7DA6ABF64FF5139DBA677BA37E592E50	UI	1
+u0950	button title	NewP5	/9E31B9CD42DE00243F9915BA9C7B1981	UI	12
+u0951	Close	NewP5	/2F295DD84D04CCA73B3BEB88DABAC298	UI	5
+u0952	cm	NewP5	/122E1AD74CDA4324C3AB41982F5C1AAD	UI	2
+u0953	deutsch	NewP5	/8EF8602A42C4F57C1C4EE3A8A141C75A	UI	7
+u0954	dтврвdsss  ghhg	NewP5	/196E117F40240D2308EBD5865C2F9D34	UI	15
+u0955	english	NewP5	/0B8973A9471D147FD49BC6AA8EB94A3F	UI	7
+u0956	español	NewP5	/C5307E7D497C344B2476548607BE1D16	UI	7
+u0957	français	NewP5	/466EF0ED4A73AF0410E97A81FA2F2900	UI	8
+u0958	geolocation system unavailable	NewP5	/03793BFF40CA64797A74AFB9D3E7F3AE	UI	30
+u0959	italiano	NewP5	/CBB882D04D923E493D6CB28C9CD4D104	UI	8
+u0960	Machines	NewP5	/0038CB8D4607A85D7E5F23868CB523AA	UI	8
+u0961	mm	NewP5	/3803C92E42A9BB52001AE5A30E75AE48	UI	2
+u0962	No subslots that can be deleted from the grid.	NewP5	/B5269E2940321982227CB38A5B0D4042	UI	46
+u0963	Organic	NewP5	/9B22A45F47DDC227E2E5C8BF3907F4FD	UI	7
+u0964	polski	NewP5	/BBBE11E04DFBAB32D0CCFD8166762581	UI	6
+u0965	português (Brazil)	NewP5	/609C480A4A0F71713DC09BA8C8522EE2	UI	18
+u0966	move into open space	NewP5	/64BCFB4C48DB3789CA500F90AA5E0B60	UI	20
+u0967	Underground	NewP5	/07A6EC3A44419320F0FDCD9F8557E6FD	UI	11
+u0968	Use Telekinesis to open the door	NewP5	/9FCA8C874EE703BAFDD2C3B7A1D7033F	UI	32
+u0969	x	NewP5	/975A1C3344327E03BC6625ACD0712491	UI	1
+u0970	{0}	NewP5	/9BF9AA44428DF2B7A0B202BFB8F93FCA	UI	3
+u0971	{0} m	NewP5	/DCDBD2AF414019E21CB082B4FBAA7431	UI	5
+u0972	{Class},  {Message}	NewP5	/17C07C4344E18FBB22599191C7E2266C	UI	19
+u0973	{Left} / {Max}	NewP5	/D87BD7FA42E44B0FD7F1D59D21950B1D	UI	14
+u0974	{b}	NewP5	/D91C62CD46E277E61C7CBD9F4CEDA43B	UI	3
+u0975	{a}.png	NewP5	/09B93A914A77A25826BCF78CCD35EF93	UI	7
+u0976	{a} m	NewP5	/0E5DA23645DBBD2AC55AC99DB9D438B9	UI	5
+u0977	Sakhalin	NewP5	/931A841F406328E52816F7B20A4C6EF5	UI	8
+u0978	Chelomey	NewP5	/353746934CEDE77994F7BCA3B7EC7F85	UI	8
+u0979	°	NewP5	/308A2D9245F5763F9E447EABF79D2108	UI	1
+u0980	º	NewP5	/28DFBF3549457D2079B7C59AEBF79CC2	UI	1
+u0981	MAGAZINE CAPACITY	NewP5	/18A832EB4A3B365A8054B0A85C3AF7FB	UI	17
+u0982	Cartridges get increased capacity.	NewP5	/8C485E8A4BD27E7A843C03A14407BDBD	UI	34
+u0983	Probably gonna see the post-credits scene!	NewP5	/259147614C2455A8B141D29FFC360B2F	UI	42
+u0984	I dreamed that love ruled the world, And I dreamed that a dream ruled the world.	NewP5	/A889404C4BD62DCB47E77C9C551719B0	UI	80
+u0985	We could have been friends! I think we could have been friends.	NewP5	/12BB41D54914F4290E648BBCF04DBE00	UI	63
+u0986	What is History? Merely setting the stage for cracking the enigma of death, and one day overcoming it.	NewP5	/839684E24DEA5C11B3B946A69B6CE904	UI	102
+u0987	Alexey Lebedev is an electrical engineer and energy specialist and the founder of Soviet computing technology. He was the head of the All-Russian Electronics Institute's automation department and the director of the Institute of Precision Mechanics and Computing Technology. Lebedev created the first electronic analog computing machine in the country in order to solve ordinary differential equations that are frequently encountered in energy-related fields. The first small electronic calculation machine in the Soviet Union and Continental Europe was also developed under his leadership. He is the head of a top-secret AoC department, but, thanks to his friend and colleague Privalov, he has been able to free himself from administrative duties and continue studying the quantum entanglement of radio waves. The Radio of the Future is his most cherished and inimitable creation.	NewP5	/7A8A05834396B1BD4E9F07BFD6E3E693	UI	881
+u0988	PARAGRAPH	NewP5	/65EBC5AB4351C63BB7AC058E3B17A910	UI	9
+u0989	AK	NewP5	/82A9E682490050F1E6AB5086E139E323	UI	2
+u0990	FLIP THE CIRCUIT BREAKER	NewP5	/4A504F314508577E37D0CE9D9EE0CF0D	UI	24
+u0991	MFU-68 LABORER	NewP5	/BFCF87AC4B5BFE91665470A785033AEA	UI	14
+u0992	ARU-31/6 Rotorobot	NewP5	/94A438AE4AD957199BF798A1A12F2304	UI	18
+u0993	ARU-31/8 Rotorobot	NewP5	/E193B6E5490FA2B2E5D8FE86245A3C9A	UI	18
+u0994	ATP injector	NewP5	/8D5A9F2242350AC957637087E6EF1CFF	UI	12
+u0995	Aaronovich	NewP5	/31135F784EB7EE6AFF5B6E8CB4B76ECA	UI	10
+u0996	Abdurakhimov	NewP5	/1C66134E47EAE5B246A6268C6264FA45	UI	12
+u0997	Although he has no interest whatsoever in the theater, Papkin knows robots and complex technological processes like the back of his hand. An introvert, he prefers to work at night in order to avoid his coworkers. He is a heavy smoker, which has led to a great deal of conflict with the performers, who often complain about the acrid stench of his cheap tobacco.	NewP5	/E68E71BC475ADBC2835426B4DA39B97D	UI	361
+u0998	Absolute Zero	NewP5	/8FDD206145B44157F883708929D4149D	UI	13
+u0999	Sponge Effect	NewP5	/0DE57CC74948203B21304E84CE309343	UI	13
+u1000	Avatar	NewP5	/A1419C2549FEE39DF7B8859794C94B09	UI	6
+u1001	Life is Like a Box of Chocolates	NewP5	/CC198B644B1E323463620A930DDEB0F6	UI	32
+u1002	Autosharpening	NewP5	/21DE5EA84AF49957F62C15BD5E89B34A	UI	14
+u1003	Free-bolt automation	NewP5	/FE10D0C84DD94B5C77B47386DEE8E9DB	UI	20
+u1004	Automatic firing	NewP5	/471B30D4408CBE01890DB6BBE897026E	UI	16
+u1005	Automatic fire mode if energy is above 50%	NewP5	/3EBB0B2A4CB6B9C91FFA008F4B7999A4	UI	42
+u1006	Auto-aim	NewP5	/8BE44D014CF0516BE47D568F90A171E9	UI	8
+u1007	Agatha Christie	NewP5	/331873CF44CFEAB60A810F84A539E0C3	UI	15
+u1008	Agent P-3 catches up to Viktor Petrov. Before his death, Petrov gives P-3 the beta connectors, the rings.	NewP5	/F1926C9D46F8D8ED8B7A77ADB748D6E6	UI	105
+u1009	Agent P-3 receives a mission and a new Argentum glove with a built-in Chatting Artificial Librarian-Educational System from Dr. Sechenov and heads to Facility 3826 in the Vavilov complex.	NewP5	/69C14D2D4883E333B5BD788DEB887689	UI	187
+u1010	Agent P3 found a flamer, denizens of the complex just got lamer.	NewP5	/B1CA9804440DC82FF7B2D384038A0CA5	UI	64
+u1011	An agronomist and food service engineer, Zolotukhin was one of the first to speak out against Lysenko and his theory before Vavilov's theories had been approved. A businesslike man of few words, he has demonstrated a high level of professionalism when it comes to overseeing the activities of the complex.	NewP5	/15F02B4B4CED7366513F97AD9D657C5C	UI	305
+u1012	Adaptive Calibration	NewP5	/55FFA04740D5288D0D59089C1C029987	UI	20
+u1013	Adaptive systems allow the shooter to better control spread when firing	NewP5	/295876DA47FB9F3D582FE69766A9111D	UI	71
+u1014	Adaptive triggers	NewP5	/0496DCCB4339E3BC937A94B51C0BF1BE	UI	17
+u1015	Adaptive balancer	NewP5	/687AB0354642AB00D65FA8A1CD4E8899	UI	17
+u1016	Administration	NewP5	/6E28016D453E5D069E2827ACB8903D16	UI	14
+u1017	Dr. Sechenov is a neurosurgeon, roboticist, inventor, and philanthropist. He began his career studying collective intelligence at the Soviet Academy of Medical Sciences' Brain Research Center, where he hoped to engineer a perfect way of life for the communal cities of the future. He worked on the ManKind Project before the war, but dedicated himself to studying the Polymer after it was discovered. After World War II he was put in charge of a robotics program designed to make up for the country's significant lack of human resources and took over Facility 3826 on Comrade Stalin's personal order. Once Soviet robots had been distributed throughout the world, Comrade Sechenov become the Minister of Industry. His revolutionary discovery of the Polymer's capacity for mimetic adaption made it possible to inject this extraordinarily promising new technology into human tissues. This laid the framework for what would later become Kollektiv 2.0, a merging of humans and machines into a single neural network capable of fundamentally transforming and improving the everyday lives of not just Soviet citizens, but the entire world.	NewP5	/60F9410E4985830A9528C9BA04F83742	UI	1131
+u1018	Academy of Consequences	NewP5	/298CEEF544F17768CD87F289AD77A2CB	UI	23
+u1019	Academy of Consequences: Archive	NewP5	/F9C3A8B74C550C1EED63C99DA0244FC9	UI	32
+u1020	Accumulator Module	NewP5	/587C184549A7B396A926ADB16B6CD4AC	UI	18
+u1021	Frequency Accelerator	NewP5	/FBEAE5E0469CA5ED43383A9012745267	UI	21
+u1022	Activate	NewP5	/150FA24E4C1671E5FB7A85801CC24DB9	UI	8
+u1023	Activate jamming	NewP5	/B9727EC549BC7E6279806EA61440E7EF	UI	16
+u1024	Activates a cable to attack with the finial detached.	NewP5	/80BAE16A4EB84881D11CF1AD25DFDB33	UI	53
+u1025	Activate the PEC-4 Birchtree	NewP5	/077A119D4524E2AC11D643B18BFD989D	UI	28
+u1026	Activate the Beluga	NewP5	/968637844D859A95531C7E8D3A78E98D	UI	19
+u1027	Deploying Polymeric Shield at full capacity then retracting it causes an explosion that sprays enemies with combat polymer. This skill has a cooldown.	NewP5	/4FAC78344D4B200E0320858B76D70272	UI	150
+u1028	Active Magnetic Defense	NewP5	/1B2506DD4CF8CB0457C6A693E0465F11	UI	23
+u1029	Active healing:	NewP5	/7A8DF2FB485F01987DD359915863DA24	UI	15
+u1030	Active stabilizer	NewP5	/AF2B4B8147E6B9FAD3830E8D6E11FB7C	UI	17
+u1031	Alexander	NewP5	/3F0A761C4A362AE0A0FF578A1F66CDCF	UI	9
+u1032	Alexeyevich	NewP5	/421A8291450ADBC364AAE2BED481CA58	UI	11
+u1033	Alexey	NewP5	/16BD286B4386D26B186E34A2FF2DFD30	UI	6
+u1034	Alexey Lebedev	NewP5	/52CE48C242A425AED67585A1EB30C01F	UI	14
+u1035	Alexey Filimonenko	NewP5	/4B63C31A45B39D35B242BB976D4CA064	UI	18
+u1036	Launch module	NewP5	/5FBEDE3F4D39D8DAC08F15B90D0BC55D	UI	13
+u1037	Aliyevich	NewP5	/9E3A008D4023CE2B5141938BA7A4F372	UI	9
+u1038	Avenue of Speed	NewP5	/A522A6A447B69722CDBA5EB05F89A79E	UI	15
+u1039	Diamond-polished barrel canal	NewP5	/63F84C3E44782ED1D57414B29B5FC79C	UI	29
+u1040	Albert Einstein	NewP5	/A2FDD99A49393EE42C02BE9896FAA4C6	UI	15
+u1041	Alternative attack	NewP5	/26258C004D45AC397C193DB0A4DB0DEB	UI	18
+u1042	Alternative Energy	NewP5	/A94280DA4B2C4B70B12B1EA4688443F8	UI	18
+u1043	Altupolis	NewP5	/D92F86F546F55264A0E563A265303ACE	UI	9
+u1044	Alphonse Daudet	NewP5	/0F6D445B4F63CF586DDDDE969DC31785	UI	15
+u1045	Alfred Hitchcock	NewP5	/ED30022C4438BE24B57537A7D32B469C	UI	16
+u1046	Амазаспович	NewP5	/A69AED6344F76676679B508E8267F3CD	UI	11
+u1047	Musclehead	NewP5	/38CD305F446C66EA77CACA80575FB4C9	UI	10
+u1048	Амбарцумян	NewP5	/72D987174647372EEB27328CC5628AA5	UI	10
+u1049	Ammo	NewP5	/FF30C42E4E499E7B773409BB4913F9B0	UI	4
+u1050	Shock Absorbing Deflector	NewP5	/93DF05894B1FF1B6D53757AD6918306F	UI	25
+u1051	Amplitude circuit	NewP5	/222DD7B04F07D1B7FE7AF6BD90161B6B	UI	17
+u1052	Amplifier	NewP5	/B67B09BB4B0E8462A28E3DB331B5775F	UI	9
+u1053	Power Amplifier	NewP5	/2E57BD9A40D17CDD55638AB65ACCC778	UI	15
+u1054	Anatomic stock shape	NewP5	/B8E717C145227C78B4ACD7838448F04D	UI	20
+u1055	Anatomically fitted grip	NewP5	/04FD22264210494A940012A255598D77	UI	24
+u1056	Andarovich	NewP5	/F6A33B354EC7719EF8B3F99B787EBC67	UI	10
+u1057	Andreyevna	NewP5	/B0DC94E0460992E3964EB88173F53369	UI	10
+u1058	Texture anisotropy	NewP5	/D4F02E99413242CE11B8E69B7FB46830	UI	18
+u1059	Anna	NewP5	/31DA6E2B4E7FEC7D86D8668101EFA228	UI	4
+u1060	Annushka has already bought the sunflower oil, and has not only bought it, but has already spilled it. So the meeting will not take place.	NewP5	/B9CDD6DD4125D6149BF88798B3FF6942	UI	138
+u1061	Anti-aliasing	NewP5	/4A5FCBE74A1EA88ACB06D59FE17008CB	UI	13
+u1062	Anti-friction coating	NewP5	/41C0964B4BAC5C1AE9C01CA26F21DC84	UI	21
+u1063	Anton	NewP5	/370E63D642A62F516D2B61AC41CAF756	UI	5
+u1064	Антон Николаевич, я кажется уже предупреждал о температуре в селекционных камерах? Сегодня опять было выше 35 градусов! Я все понимаю, у вас молодые лаборанты, но это осточертело уже!	NewP5	/6C48435F4DD17D59DB944C8EEE12B2B6	UI	183
+u1065	Antoine de Saint-Exupéry	NewP5	/1010853A400E48ED82DCA7913552F0D8	UI	24
+u1066	Uppercut	NewP5	/35FEFA2C41FB06C712AC8A94E5506A72	UI	8
+u1067	Arena	NewP5	/E30651EA4C31B990A15BB5B65CA0856C	UI	5
+u1068	Aristarchovich	NewP5	/E774C9854B679E83D5C09BA9CC7C736E	UI	14
+u1069	Arkady Chelomey	NewP5	/6C49D66E4FF18B47FD03E3815D22298F	UI	15
+u1070	Arkadyevna	NewP5	/93C0C03A4CD4D01214CFDB875FB0EEBA	UI	10
+u1071	Matthew Arnold	NewP5	/35BC93F6471DDFFC12B5C98972DD5ED2	UI	14
+u1072	Artemenkova	NewP5	/4A8CC36C4E28FCB086681EAAD6A10D76	UI	11
+u1073	Artemy Kurchatov	NewP5	/A6620F474A5040BE641B29B5EA22D5ED	UI	16
+u1074	Arthur Hastings and Hercule Poirot	NewP5	/EA1A7F114E2368ED29739991140B1D88	UI	34
+u1075	Arthur Schopenhauer	NewP5	/4D76ACC94C0178DC80378E9F988CF99A	UI	19
+u1076	Assistant Diagnostician	NewP5	/E0278307489580E7B4E3079CEE033EBD	UI	23
+u1077	Astamovich	NewP5	/E44A5F114967FE8A8917E583535E8863	UI	10
+u1078	Jump attack	NewP5	/5C6796BE49860A8B183430987B5B4538	UI	11
+u1079	Using SHOK to surprise attack an enemy completely recharges the ability	NewP5	/AB949BDC4B0ED05544AECC8EEF038B74	UI	71
+u1080	Melee attacks recharge your energy meter.	NewP5	/B75E04F84840034A281D4A88F10F9211	UI	41
+u1081	Atomic	NewP5	/21FFA8804CA4F91D947C1485ED10670F	UI	6
+u1082	Audio	NewP5	/CFC1DFAF42D903AAA117A783C01B3485	UI	5
+u1083	Afanasyevich	NewP5	/70197C52469573200B5FFBB6A852B5AE	UI	12
+u1084	Afanasyevna	NewP5	/6AA559574475B13111FCC2803D021DC6	UI	11
+u1085	Polymeric alloy extension	NewP5	/BFE48A9C4B02822762B54FAB3C642206	UI	25
+u1086	Polymeric alloy aerodynamic attachment	NewP5	/EF48355B49476970438E958F329C9FD9	UI	38
+u1087	BUG IN THE SYSTEM	NewP5	/F7E64AC2404E2AC7D9E2B8ABEB3BB4D1	UI	17
+u1088	MADMAN-IN-A-BOX	NewP5	/063F9841493FAFB298A54A9D63531204	UI	15
+u1089	BINGUN	NewP5	/B6BE22DA4C04292CE46241809F991374	UI	6
+u1090	BINOCULARS	NewP5	/8392A5224898A3196B69FDB999B2AEAB	UI	10
+u1091	BIOMATERIALS	NewP5	/6F817AFE41D6202C7D0EB8BBC1825318	UI	12
+u1092	LUMBERJACK	NewP5	/AF6AE7124727D77168082F9EC17D1B89	UI	10
+u1093	COMBAT GRANNY	NewP5	/DB19ADFF4699C1CBA0D278B0E1120A9F	UI	13
+u1094	LARGE BATTERY	NewP5	/99CDC21B4998149E19C5C4A695F2B4D5	UI	13
+u1095	BIOS Tool—USSR	NewP5	/F586E90A40DCDF208770808ECECD3632	UI	14
+u1096	BIOS Tool—USSR 1952–1955 Moscow, Atomic	NewP5	/5A5E98184D1932E5ACA55FB46CE866A7	UI	39
+u1097	BIOS Tool. USSR. 1954	NewP5	/BB9F73794F373938FFFE7299F83C3897	UI	21
+u1098	CENTAUR BEA-D	NewP5	/54CEE1BB42D5DEE01FB1F896021D7DC9	UI	13
+u1099	BEA-D	NewP5	/168311894E02235B7828D08BFC99A5F3	UI	5
+u1100	MANTIS BEA-D	NewP5	/400E929044996853FD652D84044E5C61	UI	12
+u1101	COLOSSUS BEA-D	NewP5	/BF9E6B2840272D06625A52B14D67AF18	UI	14
+u1102	Basic grip	NewP5	/6E4240F3468CFE8F77AACBA53A5B0F8D	UI	10
+u1103	A basic blade.	NewP5	/7ADEDB98447E42E5371A40A741B4DB94	UI	14
+u1104	Basic Finial	NewP5	/199B333B4DF2DA9E32476DB71CA4F3CB	UI	12
+u1105	Basic barrels	NewP5	/F6EB29E04F39FBFA80C975B42F6B5F2C	UI	13
+u1106	Basic Stabilizer	NewP5	/C8872BF1497EE7AEA1FD5BB7CC68EABB	UI	16
+u1107	Basic Barrel	NewP5	/999435C44DEAE79A40D9A1BADBE4E466	UI	12
+u1108	A basic wooden stock.	NewP5	/50B25078428672722BF69082CA34B029	UI	21
+u1110	Ballistic Agent	NewP5	/5B86DD1C499013447958B9B97A2EF219	UI	15
+u1111	Barotrauma	NewP5	/A7C48AB045D030A19F588B84ACFE0BB3	UI	10
+u1112	High-Efficiency Battery	NewP5	/16498E8749A89E40AD14E0A15B54C8D7	UI	23
+u1113	Batyevich	NewP5	/B7599D3243D6EF0B5BEFD58E73DE872D	UI	9
+u1114	Tower of Memory	NewP5	/0050111B4AC1DD22B901578853B090D6	UI	15
+u1115	Safe areas	NewP5	/F72CD5F549DE8A23C09DFC8A36530D66	UI	10
+u1116	Lake Lazur Shore	NewP5	/8661754A414246209537799C48EFD435	UI	16
+u1117	Careful Disassembly	NewP5	/95AFD1B148A23425529EC98B31B03E92	UI	19
+u1118	Berthold Auerbach	NewP5	/CB85DD404DF05D2DEEA6DD9F6C485954	UI	17
+u1119	To produce Energy, the Birchtree needs four canisters of different Polymers that are located in Vavilov complex. You'll have to find them all to get out of here.	NewP5	/5C79515441C613003A08D9B9EBBE41F9	UI	161
+u1120	Daytime train ticket	NewP5	/A6747FC7482AD1782C790E8268AF65C5	UI	20
+u1121	Train ticket	NewP5	/FFC2ECCF45D8C66E235ACAB1FA3CBEE9	UI	12
+u1122	Morning train ticket	NewP5	/0782AFC542ABA4B9200594AAFEE4AB9D	UI	20
+u1123	Bioengineer	NewP5	/D0A660A142A6FA6D2B43E9B18118D223	UI	11
+u1124	Thanks to Pascal's law, the difference in area, and the polymer crown, you can launch a penetrating projectile with a variable trajectory that will tear an enemy to pieces if you hit them in the head or another vulnerable spot.	NewP5	/995C87584057A10D747945BC18AF144D	UI	227
+u1125	Polymer channels along the barrel and the difference in temperatures give the guides increased firing accuracy.	NewP5	/8D93C1044D739C7933B7C6BA6BD12C8E	UI	111
+u1126	Thanks to Korolyov and the entire flight control center, Earth's first satellite is launched. The USSR is the first country in space.	NewP5	/ECA3E4154B8595B50095F5A649168B2B	UI	133
+u1127	The improved cooling system in the form of SPT-2 alloy plating with diverting bolts increases the firing speed without causing overheating.	NewP5	/190C60C744F5DE9F11D5358BB93C129D	UI	139
+u1128	Blaise Pascal	NewP5	/A5CF27E246B5502C14C65DB2EDE03EC9	UI	13
+u1129	Zakharov was Sechenov's best friend and colleague (although many have remarked that the scientists were bound more by a strong professional relationship than anything else, and no one ever saw any evidence of real friendship between them). He worked with him on most of his innovations, starting before the war and ending with the discovery of the Neuropolymer. Unlike Sechenov, Zakharov was introverted and antisocial. Journalists and colleagues have emphasized that while Sechenov was driven by a desire to help mankind, Zakharov only seemed to derive pleasure from learning the laws of the universe and subjugating them to his intellect. Unfortunately, his misanthropy and indifference to his own well-being led him to ignore safety protocols, and he was killed during one of his own experiments.	NewP5	/B6A7044945FB0D28D107DCAE3777862F	UI	799
+u1130	Energy Vampire module	NewP5	/29B949D74D0E53E946537C95F13FB27F	UI	21
+u1131	Block B	NewP5	/AA6CD6CD456288444358E0B7493D46B3	UI	7
+u1132	EMP module	NewP5	/8B2827744C35712997E1449C38614C8F	UI	10
+u1133	Aerodynamic stabilization module	NewP5	/43F05B1B4BB10C31B984CCB12A0E803E	UI	32
+u1134	High-temperature heating module	NewP5	/B70F05E84B38D1E45408A4B8CE1E69D0	UI	31
+u1135	Recoil dampening module. Reduces the impact on the shooter's body at the moment of firing by half.	NewP5	/21318EB84204DACC2AFC54AA7F3ACD73	UI	98
+u1136	A pulse separation module that initiates plasma charge fusion. Six impact units of reduced power are synthesized instead of a single projectile. Reduces rate of fire.	NewP5	/591D1035499404104E28A4A3FA34E3CE	UI	166
+u1137	Smart guidance module	NewP5	/6C70F812405AED0BA5654B9750FC3DCB	UI	21
+u1138	A laser sensor module that reduces the time required to lock onto a target.	NewP5	/A92ACCC342561D12269B8AAE872AE929	UI	75
+u1139	A booster module that increases the pressure of the powder gases affecting the bullet as it passes through the barrel. Increases overall damage.	NewP5	/6BA722414C6A638C7B5C538A298E87A4	UI	144
+u1140	A booster module that increases the pressure of the powder gases. Increases overall damage.	NewP5	/DFB2774748CB79E743A361A882411F63	UI	91
+u1141	Peak load module	NewP5	/149EA8C248BBB15F314EA289DDEED649	UI	16
+u1142	Steel blade module	NewP5	/3EFC25C4464416BEA3F34E9A56F97B46	UI	18
+u1143	A module of standard steel blades.	NewP5	/37B1CEC9466AAFD8B10B87AABFA95DB0	UI	34
+u1144	Generator booster module	NewP5	/304FB2A5474CC383346FAF96AFDBBAEA	UI	24
+u1145	Energy booster module	NewP5	/5C8242AB4225C5FD70F6119D29AC6143	UI	21
+u1146	Applied to a target, Combat Polymer affects nearby enemies.	NewP5	/503AE2EB4B3E2C8ED967B585089B3DBF	UI	59
+u1147	Increases the combat polymer's viscosity, allowing it to slow down targets.	NewP5	/F6806B714F0E1F17ABD440AF12136BDD	UI	75
+u1148	Increases the viscosity of the combat polymer so it can slow down rotors to down airborne enemies.	NewP5	/409AFE8A4FA1E8DF1304E1801AD6DFC3	UI	98
+u1149	Combat shock	NewP5	/6F8CEDA447A192452345499744B22BE6	UI	12
+u1150	This improved muzzle brake noticeably decreases recoil and increases firing accuracy.	NewP5	/1719448B4041A52D3D3948B72A6D3C3C	UI	85
+u1151	A more accurate setting of the magnetic field that allows you to increase the affected radius.	NewP5	/81FB97B14217040E613AF3AE7FFF2FED	UI	94
+u1152	More precise Energy distribution when building the charge increases the damage from the shot.	NewP5	/A07D069C458C8703090FF2891CF7967E	UI	93
+u1153	A comfortable grip offers extra confidence in combat.	NewP5	/2217DC864F3D67B4E691AB9DE6F9D143	UI	53
+u1154	Mired in Hopelessness	NewP5	/9A995936452EA031ABE730A245030A38	UI	21
+u1155	Increased Amplitude	NewP5	/552F1C17480404DCE8997E89A2911B12	UI	19
+u1156	LARGE NEUROMED CAPSULE	NewP5	/773857374B26D969896958AB1C274068	UI	22
+u1157	Most of the people who managed to escape from themselves were caught by the orderlies.	NewP5	/9B4918634DC3B7B54E93F8AD3CDA8B37	UI	86
+u1158	Large	NewP5	/69362F0948B35B611E22FEB60B8C021C	UI	5
+u1159	Increased energy bonus when P-3 has enough health	NewP5	/327D8CD64C894C69A3B395867AB9DB28	UI	49
+u1160	Increased energy bonus when P-3 has a lot of energy	NewP5	/E98D28D041110BD248A921BDF2022775	UI	51
+u1161	Boris	NewP5	/025CA0204F88463B44026A844E384691	UI	5
+u1162	Boris Pasternak	NewP5	/2832F45D445D321BD01AD68B382BD551	UI	15
+u1163	During their year and a half at the Academy, these twin brothers have become its unspoken symbol. Despite their lackadaisical attitude, excessive frivolity, and constant jibes at their coworkers' expense, the Klimovs are skilled specialists who have made a number of improvements to the statistics-gathering process that vastly increased its efficiency. However, they told no one about this for the first two months, preferring to spend their newfound free time on video games designed to look like work software.	NewP5	/704FCB38474BFE7157231497A5A0D602	UI	513
+u1164	Bronze key.	NewP5	/3C647E1F40AEF7173247F78A6BFCF9CF	UI	11
+u1165	Grip Center	NewP5	/1BBCA9994A0C7A62309F65B94403FD88	UI	11
+u1166	Being in a minority, even in a minority of one, did not make you mad. There was truth and there was untruth, and if you clung to the truth even against the whole world, you were not mad.	NewP5	/458AAC46410D625B446C5B90E7218C0F	UI	186
+u1167	Burak	NewP5	/894B670642EB66852FFC41B80ABFF900	UI	5
+u1168	Burlak	NewP5	/673913AC40E6C5997AD4ACA5796EA881	UI	6
+u1169	Explosive reaction	NewP5	/DF8075F84638AF193335F6B7BA092258	UI	18
+u1170	BEA-D Magneton	NewP5	/8ACF35794C25EBEE46ECCFA6E584B784	UI	14
+u1171	The Delivery Man and the Mistress	NewP5	/136E1BAC4CCDA0C61B595A9325DA7B3D	UI	33
+u1172	Divide et Impera!	NewP5	/2228AD1F45AB95801892C6AEEC44BA69	UI	17
+u1173	Surface Approach	NewP5	/DDF7B5D74E96BDB2E753DE88AD788D67	UI	16
+u1174	BEA-D Chutes	NewP5	/5E34FED1436A41B5A412069F105FF755	UI	12
+u1175	Reverse buffer inductor	NewP5	/6B50C28E481EFA68F368B98B4933FDCD	UI	23
+u1176	A former regional war commissar in the Kazakh Soviet Socialist Republic, Mukhtarev was assigned to Vavilov Complex following his early retirement due to an accident. According to his fellow servicemen and subordinates, not even the robots and architects know every inch of the complex as well as he does.	NewP5	/40EB841542751C39FF6A3C9A3B12F791	UI	304
+u1177	Was found at TESTING GROUND #12	NewP5	/966F64854F548C0CEF6D32B388D4DF66	UI	31
+u1178	Accumulates energy faster when health is full	NewP5	/D9D40A544A2049E0E4186887C15719B7	UI	45
+u1179	Brings the weapon to a firing position faster.	NewP5	/080E082E44753384407F85A602FFDABA	UI	46
+u1180	Rapid cooling	NewP5	/6300028A42803235874665A33370E54E	UI	13
+u1181	Greased Lightning	NewP5	/A4BEDFE147940F9D971806A6E3E123C1	UI	17
+u1182	A woodworking tool for domestic use.	NewP5	/976709EE498F363C526C32853853ACC6	UI	36
+u1183	The American government's Energy for All program is launched.	NewP5	/A0DD62244FC155C61DF68BB8AADC457B	UI	61
+u1184	IN AN OVERGROWN PARK...	NewP5	/C9E42E8D44E038D0493C39898BCC185D	UI	23
+u1185	The design bureau did not have enough time to fully test the stock, so the weapon is shipped without it.	NewP5	/D1FF267341E8818259BB4EA9E4A73037	UI	104
+u1186	INTO THE FIRE	NewP5	/6A2262B44B295BA358E289BA16A02085	UI	13
+u1187	In this world of robots gone mad you cannot ever trust a machine. Except me. Me, you can trust.	NewP5	/1DA157804A4D92DC410FA9800B6161CA	UI	95
+u1188	All the weapons you had when you finished the main campaign are still in your arsenal. Your equipment is waiting for you at the nearest NORA repair vendor!	NewP5	/A66FF5844C4F15BE4609D8843DBEF1A6	UI	155
+u1189	As the village overseer, Abdurakhimov routinely plans leisure and practical activities for employees lodged in Forester Village. He is extremely responsible and scrupulous, but has been prosecuted for embezzlement in the past. Because of this, he is extremely quick to curtail any attempt to use resources for anything other than their officially designated purpose.	NewP5	/022A4CE346CABB8BCA86BFB5A67E1492	UI	366
+u1190	A cartridge slot gives the weapon it is installed on elemental damage depending on the cartridge type: <h>fire, frost, or electricity</>. To install a cartridge, <h>you need to get the appropriate upgrade for the selected weapon</>. <h>Use the radial menu</> to select and install the cartridge.	NewP5	/907FFE044EF2748D99E156A2E99E60E1	UI	295
+u1191	The shocker recovers much faster in strong magnetic fields	NewP5	/5CA7C8A94C35EEEAA711D7B72D7624DC	UI	58
+u1192	Deathʼs door proves to be the undoing of egoism. Hence the fear of death.	NewP5	/E3E0C72740FBFD07D70A2C9BB5FFD788	UI	73
+u1193	You automatically retaliate against laser attacks of non-heavyweight enemies with a Cryoattack	NewP5	/6C2EB65F48CADD2CD52EA38016C48501	UI	94
+u1194	New life blossoms inside.	NewP5	/0C87FE2E444E0F95FE3FFF9467B672C9	UI	25
+u1195	Decreases recoil when aiming	NewP5	/A512F5B8485457AFE896A58E6EA2C805	UI	28
+u1196	Formerly prima ballerina Ryzhova's best friend, now a soloist at the Maya Plisetskaya Theater, Tamara Artemenkova had had to fill in for her ex-friend in lead roles when the latter was unable to make it to a performance (primarily due to capriciousness and a refusal to share the stage with robots, of course). Despite the enormous competition between human and robot ballerinas, Artemenkova loves and respects her mechanical colleagues and proudly boasts about sharing the stage with them, seeing it as an unprecedented artistic experiment.	NewP5	/3C6F4A8C4C2C86C913E096B2E741E2F3	UI	541
+u1197	In this mode, FPS can fluctuate and may sometimes drop below 60.  Performance yields a steady 60 FPS, sometimes at the expense of resolution.	NewP5	/F34E5C004763BE63F961D1B5895A7A2D	UI	141
+u1198	Detonation produces explosive fragments that increase the damage area.	NewP5	/976B3A2D4FB69253CF6F2C86CA8641C3	UI	70
+u1199	Destroying a Frozen enemy increases the amount of loot you get	NewP5	/59A2FB9A46E7C1329CC3A79D2FA7890A	UI	62
+u1200	If the target is destroyed, the fired projectiles automatically seek a new enemy.	NewP5	/C273672B4D077A3A5ECEAE9C3F36CEE0	UI	81
+u1201	Egor Molotov, one of the highest-ranking leaders in the Communist Party, dies while visiting the VDNH complex at Facility 3826 as part of the government commission.	NewP5	/741B988D41F6B789F93A899452E8E48F	UI	164
+u1202	It has often happened in physics that an essential advance was achieved by carrying out a consistent analogy between apparently unrelated phenomena.	NewP5	/8D1EFA88436F5E61BF281D99A4992E7F	UI	148
+u1203	VALVE	NewP5	/E96C2EB545AAD769C710AC929C706E36	UI	5
+u1204	WANTED DEAD OR ALIVE: VIKTOR PETROV	NewP5	/D8E8B6AC4D5250DA8C83C0A9E4EC2CF7	UI	35
+u1205	ВКЛЮЧИТЬ ГЕНЕРАТОР	NewP5	/0E7ED56F4F43421D636FD5BADD0F3792	UI	18

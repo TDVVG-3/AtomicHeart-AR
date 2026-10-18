@@ -1,0 +1,24 @@
+# chunk_06 — notes (uncertain / judgement calls)
+
+- Destabilizer -> مزعزع الاستقرار — no glossary entry; chose a descriptive weapon/module name over a terse opaque label.
+- Discrete (neuropolymeric destructor / microdoser) -> منفصل — "Discrete" read as "separate/stand-alone module", not "discreet".
+- microdoser -> موزّع جرعات دقيق — no glossary entry; provisional descriptive rendering.
+- Suffix "-er" agent nouns (Modulator, Detonator, Corrector, Amplifier, Supercharger) rendered with Arabic active-participle patterns (مُضمِّن، مفجّر، مصحّح، مضخّم، شاحن فائق).
+- stun / stunning -> تدويخ / مدوّخ (u1534, u1745) — chosen over شلّ (paralysis) to keep "temporary" sense; used consistently.
+- Juggernaut -> الجبّار — robot/character nickname, not in glossary; could also be "العملاق".
+- Juggler -> لاعب الخفة — stage-performer sense kept instead of "البهلوان".
+- Reaper -> الحاصد — death/reaper sense; could also be "المحصّاد".
+- Greedy Guts -> الطمّاع — nickname/insult; the pun ("guts"/belly) does not survive, the taunting function does.
+- Sucker Punch -> لكمة غادرة — "sucker punch" = treacherous surprise blow; kept as a terse ability name.
+- u1588 "Oh, crispy critters!" -> أوه، أيتها الكائنات المقرمشة! — exclamation localized by function, not literally.
+- Bottom of Lazur -> قاع لازور — "Lazur" transliterated as a place name (no glossary entry).
+- Race of Conscience -> سباق الضمير — read as an event/challenge name; levels rendered سهل/متوسط/صعب/بلا نهاية.
+- VOLAN (u1763) and HAWK (u1683, u1768) kept in Latin — follows tm.tsv, where VOLAN/HAWK are preserved untranslated in approved Arabic.
+- Sealed with Seven Seals -> مختوم بالأختام السبعة — film-title style; literal seal imagery kept.
+- u1740: engine markers `#.KEY:`, `//Msg. start//`, `//Msg. end//`, `#REG.ENTRY:`, `#June111955` and the two double spaces copied byte-exactly around the translated dossier text and the insult line.
+- Dr. Lizova -> الدكتورة ليزوفا — feminine form used (English "Dr." is gender-neutral); "Dr. Domov" -> الدكتور دوموف.
+- Makhnyov / Ludwig (u1727), Khozin / Aniva (u1775), Yablochkovo (u1513) transliterated (no glossary entries).
+- u1573, u1727, u1740: source whitespace preserved (one trailing space on u1573; internal double spaces kept).
+- u1603, u1606: source uses U+02BC (ʼ) in "puppetʼs"/"youʼre"; as possessives/contractions they have no Arabic equivalent, so the meaning was translated without the character.
+- Muzzle cryorails -> قضبان الفوهة المتجمّدة — "cryo" rendered as تجميد to match the glossary style of Cryo Jet (النفّاثة المتجمّدة) rather than a bare "كرايو".
+- Polymeric alloy bolt frame / Revolver-type bolt frame -> إطار مزلاج — "bolt frame" read as the firearm bolt carrier assembly.

@@ -1,0 +1,301 @@
+id	english	scope	key	category	en_len
+u1206	WARNING! Exposure to Polymers without a SAFETY VISOR is dangerous! The visor is deployed automatically, all you need is to locate one.	NewP5	/A606DE3545D88F1D99EA10A5AF738F8B	UI	134
+u1207	VOV-А6 LAB TECH	NewP5	/C160427945A31AAC85915CB0149DE234	UI	15
+u1208	VOV-A6 Lab Tech series SHIELD	NewP5	/04C124014C6C6674CECFEDB42490B93C	UI	29
+u1209	VOV-А6/CH Lab Tech	NewP5	/A98F027F4BFB584DE23226B505888319	UI	18
+u1210	PLAY	NewP5	/DD5698314153BEF830EDA197A61FA7A2	UI	4
+u1211	WHAT THE FUCK HAVE I GOTTEN MYSELF INTO?	NewP5	/4E596B4D40CDDC6C006C57B59FD986DF	UI	40
+u1212	FORWARD	NewP5	/B6AF685E4FF01B2E456B3ABD20D0EFF6	UI	7
+u1213	SKY'S THE LIMIT	NewP5	/57A8AEEC470C9437A367508763FCA051	UI	15
+u1214	RARE	NewP5	/368F407444A2A7DFC01E0BA36E26AC7E	UI	4
+u1215	FREQUENT	NewP5	/BE7EBF0541EBBEAEB76526ACF7193014	UI	8
+u1216	INCOMING	NewP5	/646C168A4D96BDA783B67FB3E797A78A	UI	8
+u1217	GMC-69/L Vatrushka	NewP5	/222D42414A55EBFD405411A3607F5C65	UI	18
+u1218	GMC-69/O Vatrushka	NewP5	/648BF2D14FEC6ADB724FD0A0ED234CBD	UI	18
+u1219	GMC-69/P Vatrushka	NewP5	/E1F2B51B4F867D979D829FB36F782C02	UI	18
+u1220	YOU	NewP5	/5D021FA345BDB78BE0BE48B1F0C4EDF7	UI	3
+u1221	YOU WILL RECEIVE	NewP5	/8E07DC644CE1DFC3368A268610CD0388	UI	16
+u1222	ARE YOU SURE?	NewP5	/10E473EE4872685477D4639B83B796E8	UI	13
+u1223	SPECIFY AMOUNT	NewP5	/121E4AF84FC2F6BCF6ED96A68EE937B2	UI	14
+u1224	CHOOSE A SKILL	NewP5	/B5FA45514EFC98516ADD8FB0242A0909	UI	14
+u1225	CHOOSE A WEAPON	NewP5	/371724B14E82B522F6582598F398A7FE	UI	15
+u1226	CHOOSE AN UPGRADE	NewP5	/08785A6341D24CAC03F146BD72840D65	UI	17
+u1227	CHOOSE UPGRADES	NewP5	/20699F2D4599AC13619FDEB2C384062F	UI	15
+u1228	SELECT LEVEL	NewP5	/D225E7EE410E2BC129D10EB3BE07F763	UI	12
+u1229	Vavilov	NewP5	/2192899F40062017BC7C3CA223FBAA1A	UI	7
+u1230	Important reminder	NewP5	/667285794BFC9BFED9DAFEBA1B4A53CB	UI	18
+u1231	Valeria	NewP5	/95EE6F764DFDAF5014105F9470594531	UI	7
+u1232	Valeria Ryzhova has dreamed of being a ballerina for as long as she can remember. When she was nine, she could already perform flawless battements and cabriolet, albeit at the cost of a broken chandelier or two. After graduating from the Moscow Ballet Academy with honors, she was recruited to the Maya Plisetskaya Theater, where she very quickly became the most sought-after dancer. However, following the appearance of robot dancers, her popularity gradually began to wane. Deeply conflicted, she eventually came out against performances that included both human and robot ballerinas. No one took her position particularly seriously, since Ryzhova was known for being difficult, and the theater's staff had already grown accustomed to her flights of fancy. "You've cried wolf too many times!" Artistic Director Stefan Lastochkin once told his protégée.	NewP5	/153D2CAA4159CE644A0FE585D2B09121	UI	854
+u1233	Valeryevich	NewP5	/ED0D371B4CE5D51504FB3198B920F5A7	UI	11
+u1234	Dominator unlocked	NewP5	/999441464D6EB173C35F099B6B269423	UI	18
+u1235	Kalashnikov unlocked	NewP5	/79B234C0455FD1CFC89A6F8C9564DBC7	UI	20
+u1236	Fat Boy unlocked	NewP5	/155E6002444F68BC92B8DE92E471340F	UI	16
+u1237	Railgun unlocked	NewP5	/067A39F3448393FA5D6F9CA706EB41A7	UI	16
+u1238	Electro unlocked	NewP5	/14E95EDF4135843923A22EB77E2E20CE	UI	16
+u1239	You can only choose the Land the Hawk option in the terminal	NewP5	/13666E9C4321A5E2E9D9FDB6CFF7533C	UI	60
+u1240	PM and Fox unlocked	NewP5	/F519BA4B4414A6A4FDB819B2C8978F23	UI	19
+u1241	New abilities are now available! You can upgrade them and your weapons at the closest NORA repair vendor.	NewP5	/31BDC32C41004DD464A23C86FACCB334	UI	105
+u1242	You've been injured! Press <tag id="InputAction.Gameplay.ActivateHealthSlot"/> to heal	NewP5	/748693AD4E43D2D90B79E9853EE9F5CC	UI	86
+u1243	Vasilyevich	NewP5	/539C930F4A7F727A47D544A3C9086D27	UI	11
+u1244	Vasilyevna	NewP5	/CEB2FA3A4441C0137C3ADDB79035C451	UI	10
+u1245	Vatslav	NewP5	/E35588614AF427BC9A4669A1ED130FF4	UI	7
+u1246	Your backpack is <h>full</>. All the selected items will automatically be <h>stored with the Repair Vendor</>, NORA.	NewP5	/ED7F6EB04E7DC9E9D586E987BBCA5788	UI	116
+u1247	Your glove is equipped with the ability to slow down time <tag id="InputAction.Gameplay.ActivateSpecialAbility"/>. Use this ability to find enemies' weak points.	NewP5	/AD5B72BF46125E79F13020B62BB31B25	UI	161
+u1248	Your glove is equipped with the ability to slow down time <tag id="InputAction.Gameplay.SwitchAbilityLeft"/>. Use this ability to find enemies' weak points.	NewP5	/927A058B4F1A3858D5B5858568341A23	UI	156
+u1249	When in combat, your volubility is enough to make a sailor turn green with envy	NewP5	/B2A926AB47E878C33A05A79D2B50D8A2	UI	79
+u1250	Melee attacks restore more energy to the recirculation chamber.	NewP5	/BEC14FA943FFC79251B1B6B97F4511A8	UI	63
+u1251	Your ranged attacks consume less recirculation chamber's power.	NewP5	/92CEBF5E48BCBAA6F9319380C528CFB7	UI	63
+u1252	Your enemies have acquired new capabilities — they are much more powerful and dangerous. Stay vigilant and adapt to the new battle conditions!	NewP5	/057078B84E1C0D61B4098AA880EF72B0	UI	142
+u1253	Prima Ballerina	NewP5	/71B1E33B44B7375223E6498CC5F83396	UI	15
+u1254	Vector transducer	NewP5	/717D790542361470407AB1B47A4BD529	UI	17
+u1255	Glory lies in the attempt to reach oneʼs goal and not in reaching it.	NewP5	/F7A5E9154518DBDB2AC9E48C64D4C836	UI	69
+u1256	Ventilation	NewP5	/252F05D8439F6CC4C9E3C8B2D4DD7C2A	UI	11
+u1257	Vera	NewP5	/3979086A4BF767965AD7BA8B057297D6	UI	4
+u1258	Verestenyets	NewP5	/EA6B7B1B4480A741C839B8A08B5522BB	UI	12
+u1259	Veritayev	NewP5	/D48367C04E9DCD294C7501A34B70EA55	UI	9
+u1260	The surest way to be deceived is to consider oneself cleverer than others.	NewP5	/851508CB4AB3911011694BA8AF39051C	UI	74
+u1261	Return to the hall	NewP5	/ECFC57E840F0B3A48A166683BE32EEA9	UI	18
+u1262	Return to the objective area	NewP5	/F97637F849264973B082F6A2AB325557	UI	28
+u1263	Return to the surface	NewP5	/328A3A4641AB2156F773FBB86EB253D7	UI	21
+u1264	Back to the menu	NewP5	/78C80BEE471E077421E1B18094423EC1	UI	16
+u1265	Return to platform	NewP5	/55A2B7184B54B6CD43A411976AC236B0	UI	18
+u1267	DirectX Version	NewP5	/D2A470934B22D0E426C041AFB3EE7E34	UI	15
+u1268	Vsync	NewP5	/16992D184FEAE63789CADE905E97C19F	UI	5
+u1269	Y-axis sensitivity	NewP5	/840BA9BE4AB2C7E8C983A8A1E44597EF	UI	18
+u1270	Upper Yablochkovo	NewP5	/CDC0B16143D6034FC2A6C1B26128526E	UI	17
+u1271	Upper blade	NewP5	/81B0507649E531F05812FCA95050F209	UI	11
+u1272	Top button on the right. Or was it left? The bottom left one, I bet... Or was it both?	NewP5	/479FCF554DA5F9A282DF218BDE2BA8C2	UI	86
+u1273	Vershinina	NewP5	/ADDFF3ED4A3BB751F88B15BB6245543E	UI	10
+u1274	The experiences you will have are yours, and yours alone. Be brave in meeting life's challenges. Try to take a broad view of things. Live this life to its full — with honor and dignity.	NewP5	/C498641B4F9E28030CE35AAEC9C33153	UI	185
+u1275	A WWII veteran who lost his leg in the war and experienced extreme PTSD as a result. He has a very negative attitude toward robots, colleagues who sympathize with his disability, and prisoners sentenced to community service. He is unsociable and rude, but regularly receives recognition for his tireless dedication to duty, which he uses to prove over and over again to himself and others that he is still fit for work.	NewP5	/8F925623471FB7CFEC90A891ADA552DF	UI	419
+u1276	Ismailov is a war veteran and retired officer. He is a gruff, straightforward, and crude man with an excellent reputation as a security expert. His obvious character flaws include a tendency to promote his friends, especially those who served with him in the military, which often leads to conflict with the VDNH's other managers.	NewP5	/20011AB8481EDD7F0476D58D72097213	UI	330
+u1277	Mutual attraction	NewP5	/0E1AAAC448A43B2C0E23EDBF81DC3728	UI	17
+u1278	Interact/Scan (Double Tap)	NewP5	/115C83EB4145597BBF3CF8A4D003C4EE	UI	26
+u1279	Terminal Hacking	NewP5	/66426AA94B092A069B3882AE740E20AF	UI	16
+u1280	Explosive splitting of the rounds increases the diameter of the wound canals, resulting in additional bleeding. Increases damage to organic targets.	NewP5	/5CC0B885480B3FFDE22109801B45FE57	UI	148
+u1281	The neuropolymer's vibrating aura activates during a circular strike and absorbs some of the incoming damage.	NewP5	/A5CD3CFC45555FEE2ECE538F0B077277	UI	109
+u1282	Vibrating repeater	NewP5	/DB9D8A984DDA9675D5393E8F6653EBE6	UI	18
+u1283	NORA	NewP5	/6895116944021449F4F440B0BA72483A	UI	4
+u1284	Visual FX	NewP5	/A23C9D9545ACB5C7C139D8A244621241	UI	9
+u1285	Art subtitles	NewP5	/3DA0715B406AFCFEAE77808DAE96C16F	UI	13
+u1286	Viktor	NewP5	/6351911441B960CFEE3B91B0848A8A5A	UI	6
+u1287	Viktor Tsoi	NewP5	/D15D39B1496D200CADAD2893E737A94B	UI	11
+u1288	Viktorovich	NewP5	/3B4C063D4E95E38D728FE79DA3FA8CD1	UI	11
+u1289	Viktorovna	NewP5	/84FFB67B4B7AA28E5BE3BA84DDFAABD4	UI	10
+u1290	Vilenovich	NewP5	/40DF3C874734877F1E96368802A4B128	UI	10
+u1291	Vortex transducer	NewP5	/01E0043444BD5CB81DCDB49A8712F765	UI	17
+u1292	Vishnevskaya	NewP5	/4E67EFEC4CD49D1CF763A4838B6126C2	UI	12
+u1294	Includes a modernized system of removing powder gases, which decreases the time between shots.	NewP5	/7DBE99534B49B12B16DF9DA8C6B579C7	UI	94
+u1295	Vladimir	NewP5	/F36A6D58414BF21A0ACD0C93B446FDBF	UI	8
+u1296	Vladimir Vysotsky	NewP5	/CFDB08634202DA76DCB41680DFA4A851	UI	17
+u1297	Vladimir Lenin	NewP5	/245F4D7B4CD5505D99DBA2BF22829455	UI	14
+u1298	Vladimir Mayakovsky	NewP5	/700E43294BBF6E874C89E0B63D7F131E	UI	19
+u1299	Vladimirovich	NewP5	/41F17BB04AEDE545A3E01386580E1CDB	UI	13
+u1300	Vladimirovna	NewP5	/EC5EE52C448ABAE301FD60AEE3B8DA9F	UI	12
+u1301	A capacious storage for a swarm of flying workers. The Hive moves on paved surfaces at the speed of a passenger car. When alerted by the ecosystem, it can release several Pchelas per minute.	NewP5	/26B4BB214A3D8B3AE0582880283B04A2	UI	190
+u1302	Polymeric Shield reflects all ranged attacks back to the enemy.	NewP5	/A67F7F854689375B0131FEA95A4B542D	UI	63
+u1303	While active, Polymeric Shield doubles incoming melee damage and reflects it back to the enemy.	NewP5	/C24840AD422355B2C7E0A7BFA7890EE2	UI	95
+u1304	Shields you from all damage while dodging.	NewP5	/78E4C5C54DF05F0FD3A81BB2648127A4	UI	42
+u1305	Polymeric Shield redirects part of incoming damage to the med unit, restoring your Health.	NewP5	/ECBBFCDB47DCF18035E3E7A6DD516A7A	UI	90
+u1306	Keep an eye on your Health and restore it often, or it might prove too late for that, even against a weaker opponent.	NewP5	/DB0FE3B346456978ADC59CB442C39F57	UI	117
+u1307	Keep an eye out on your Health and restore it, or it might prove too late for that, even with a weaker opponent.	NewP5	/F5D63E7349B58D2F561071BB0E4E4EB1	UI	112
+u1308	VODKA	NewP5	/7CB23E224531EC2228D42E9E3B93ED76	UI	5
+u1309	Composite alloy return spring	NewP5	/63D688DC4840CA8224CD17B2528AF1FE	UI	29
+u1310	Exposure to wave oscillations destabilizes the cartridge and significantly increases its effect.	NewP5	/00BBA3EF4827561A3AEBE993AF53A49D	UI	96
+u1311	The return spring increases the speed of locking the barrel. Increases rate of fire.	NewP5	/B02A597347713D2C951512A9205E2317	UI	84
+u1312	You can drop on your enemies from above dealing increased damage	NewP5	/39143E1243BE1E24351758B31FAABA64	UI	64
+u1313	Age:	NewP5	/C4AFC94A4CB3BBD1E475E1AC25A55801	UI	4
+u1314	Take the capsule	NewP5	/A29DFB2B48717807BB6C69999D9340DC	UI	16
+u1315	Enter the building	NewP5	/9657578B45E719C1986278805C5F3718	UI	18
+u1316	Enter the hut	NewP5	/A3FA8F764DA2BD4CD840A184AFC56080	UI	13
+u1317	Enter the exhibition	NewP5	/22A15C524FFEDC7356451FA1800C9F3F	UI	20
+u1318	Enter the room	NewP5	/90F70E1C49D97254CB4367BF1AD6AA79	UI	14
+u1320	Voltaire	NewP5	/21C8DCCF43C561D4B502D8963E518E10	UI	8
+u1321	Tungsten Coating	NewP5	/3B0B98B84F150B96F679078AB417F886	UI	16
+u1322	Despite his parents' and teachers' expectations, Petelka did not become a famous physicist. Although he certainly had the potential, the young man's exceptional mind and fantastic imagination ultimately allowed his reach to exceed his grasp. Comrade Petelka learned about robots from a newspaper article even before the war and never stopped fantasizing about them. Petelka did end up becoming a physicist, although he was never famous. He worked with Comrade Filimonenko on a cold Polymer synthesis project, was an excellent robot configuration technician at the Maya Plisetskaya Theater, and even made his way to the secret departments of the AoC, where he truly felt his "insignificance before the vastness of the cosmos."  "I understand this world perfectly. We're all just grains of sand in an ocean of electrical connections," Comrade Petelka declared before retiring from science, effective immediately. But he did not leave the Facility. Having returned to his duties configuring robots and servicing the theater's electrical grid, Petelka is, perhaps more than any other Soviet citizen, eagerly anticipating the Kollektiv 2,0 update that will utterly efface the boundary between human cognition and the capabilities of robots.  "We're all just electric currents, just ones and zeroes" is a favorite phrase of Petelka's, who often spends his free time in the theater's coat check room observing his favorite robot, the coat check girl.	NewP5	/B0B203E8406EB68A2BFE2993084E4C55	UI	1443
+u1323	Sets the target on fire	NewP5	/8FA63E3E4E7152AD1C0ABE9290E8B4F6	UI	23
+u1324	Replenishes a large amount of energy to the suit's storage.	NewP5	/C5BCEF6F48A0F611BED198924943FC99	UI	59
+u1325	Restores Health and increases dodge recovery rate for a short period.	NewP5	/015879624D09B580683593A15529C84B	UI	69
+u1326	Use the Telekinesis ability. To use Telekinesis, press C	NewP5	/2AF422DE4B8DF3C055F6D6A2FBA0AE2E	UI	56
+u1327	Use a cable to get down to Chelomey	NewP5	/08BB962E421F6B3AF69B9DB411B53F7F	UI	35
+u1328	Restores Health and Dodge	NewP5	/D3909D5F4E9C511FB8B759BDF4166257	UI	25
+u1329	Restores 5 health after killing an enemy	NewP5	/233B7B48407B4FEE0DF8678088A3B357	UI	40
+u1330	Recovers 50 EN.	NewP5	/F8EE915442E7682B03E19EA91691B881	UI	15
+u1331	Restores health for every opponent killed	NewP5	/5B7BBFB44DC3C1F87D1B77ABF945730C	UI	41
+u1332	Restores health after cutting off an enemy's head	NewP5	/2AAB9B9A44B11E6645FA34B2B24A917C	UI	49
+u1333	Restores health for each hit	NewP5	/95292EC0433272D94E9F578AB6ED5CA3	UI	28
+u1334	Restores Energy for a while	NewP5	/F0CB057E444FFA4E61CB9D90728B8D00	UI	27
+u1335	Restores energy after killing an enemy	NewP5	/77477A0E4962C13276B3709068C7A63E	UI	38
+u1336	Recovers Health after a hit	NewP5	/4F18FE8F4DACF2CCA2F945A1B6960A68	UI	27
+u1337	Eastern Wing	NewP5	/946BD9664A93ACEDFBC67F8EC79FBF1E	UI	12
+u1338	It is entirely possible that you have outgrown my tips.	NewP5	/1B9F20BC4747EED144B48A82301604EF	UI	55
+u1339	You deal increased damage with cold weapons mid-jump	NewP5	/CEC86C3B4CEE40688676F1BB0D91760C	UI	52
+u1340	Temporarily boosts armor stats through energy from each destroyed enemy.	NewP5	/06A8D724402DCBB4033231AE62DCF781	UI	72
+u1341	Temporal Deflector	NewP5	/6F89A11640365A3ED5B366B1930365DA	UI	18
+u1342	Maintenance off time updated	NewP5	/AA2AF8CA4A39AA523039AA921046D7AB	UI	28
+u1343	Swing time decreased based on energy	NewP5	/875E8B6F4A4C9B3D74CEDA87E5FB24E4	UI	36
+u1344	Maintenance off time increased	NewP5	/D835326B4BD60BE74F512EB1B3EAD3CA	UI	30
+u1345	Hold time	NewP5	/E5E8B81B4AA6D5C87F0EB18AC812B116	UI	9
+u1346	Everythingʼs got a moral, if only you can find it.	NewP5	/6155A2044653F43734B24E881E36D174	UI	50
+u1347	Throughout the Infinite, the forces are in a perfect balance, and hence the energy of a single thought may determine the motion of a universe.	NewP5	/84A7B4484C3D081A0DEEA6B301145675	UI	142
+u1348	A surge of wave oscillations has a chance to double profile damage due to resonance.	NewP5	/5A88661E4B8909E1F1839BA40CA3A898	UI	84
+u1349	Supernova flash	NewP5	/258FEFD24D4A2A9C48C1E99A5FB1831E	UI	15
+u1350	Your suit's built-in Med Unit restores more Health.	NewP5	/102A4AC9462A642670134A89F13EB0D5	UI	51
+u1351	Second Ballerina	NewP5	/8DE63EF94613FEE9E46E9DADB92D138F	UI	16
+u1352	Secondary polarizer segment	NewP5	/2956778441AA0FE512B8EDA7FD1DB3EE	UI	27
+u1353	Secondary Expansive Polarizer	NewP5	/73C3A3DC475DBC4DC2D050B4057B2F80	UI	29
+u1354	Second Wind	NewP5	/C5403A734C7F0F07E7AEBAB9A5C5BF6B	UI	11
+u1355	Secondary targets hit by Chain Lightning receive full damage.	NewP5	/333BD05440DCEC8BD9737AA8F3740DA5	UI	61
+u1356	Research Center Entrance	NewP5	/AE1CDD1845C0E3C7DBEFEA90E1BD0236	UI	24
+u1357	Do you like animals, Comrade Major? I, for example, am a cat person! Please, don't forget to feed your pet if you have one.	NewP5	/3B7C37904A9D4B6E174457A9B2389883	UI	123
+u1358	You can <h>reset skills and redistribute the returned Neuropolymer</> to use other skills if you get tired of the old ones or want to change your play style. <h>You won't be punished with fines or penalties, so feel free to experiment!</>	NewP5	/AB7805264B1F9BAF3246F1A18347D0FD	UI	238
+u1359	You can finish off an enemy by using the Telekinesis Unit to rip out their innards. All loot is automatically added to your Inventory. Not effective against heavyweight enemies	NewP5	/B347E39E406AE8431C0F0DAFFB00F656	UI	176
+u1360	You can use your SCANNER ability to highlight important objects by holding X	NewP5	/0F6FB42946F6A690198B93945B1223A1	UI	76
+u1361	You can use Sprint while flying	NewP5	/384DEC7B486BF2DB3937F09EB200D638	UI	31
+u1362	You can use a Neuromed capsule with one hand.	NewP5	/5C0569F54A383EA45536F897D92CBEBD	UI	45
+u1363	You are trained to tuck and roll when falling to avoid damage. To do so, try jumping right before you land.	NewP5	/FA8533514EB14DA923262EBB033B8366	UI	107
+u1364	You are trained to tuck and roll when falling to turn a fall into a safe jump that leaves you energized.	NewP5	/AFDCC698497C63504F358182E94C55C7	UI	104
+u1365	You are trained to tuck and roll when falling to turn a fall into a safe jump that leaves you energized and allows you to get up faster.	NewP5	/43BA0BCD45731D23827A12AA95E314CF	UI	136
+u1366	You won't be able to use this ability and all sub-abilities. The cost of all abilities will be returned. Are you sure?	NewP5	/3025C32A4237DAE6CF771AAE9D499021	UI	118
+u1368	You've been injured! Press and hold <tag id="InputAction.Gameplay.ActivateHealthSlot"/> to heal.	NewP5	/3686DBDB49785068179C2E99067AF16B	UI	96
+u1369	Display selection	NewP5	/55D7A4C94D80F8959D04FCA783598576	UI	17
+u1370	Choose maintenance off time	NewP5	/E4660F614C173442EE100C93944E1A70	UI	27
+u1371	Exit morgue	NewP5	/C52702F14D1E0D2921467BA04C105C94	UI	11
+u1372	Leave the hotel and shake NORA off	NewP5	/783441CE48ACE323E65F84BE8279A5D0	UI	34
+u1373	Find a way out of the swamps	NewP5	/3DEFB6DE441B5778E76DACAB5B5AA3ED	UI	28
+u1374	Increases speed of the cryopolymer discharge to freeze enemies more quickly.	NewP5	/EF53EE3F47E661A95F188590183A80E2	UI	76
+u1375	Call cargo	NewP5	/B9D247CB41158B6B5CDB3A8D28A3FA12	UI	10
+u1376	Calling repair kit	NewP5	/A735D5224843168F2C333EAD24B28E9F	UI	18
+u1377	Hitting soft tissue causes the bullet to tumble, increasing damage to organic targets.	NewP5	/370DB070445E70F2B5DC0585BC029314	UI	86
+u1379	Disables camera shake. Blocks "camera shake strength" setting.	NewP5	/B955EBB84D55EF19BF08FBA6647765D7	UI	62
+u1380	Emerging:	NewP5	/93FA02B34F6AD9B6EB1100AF4E5F47AA	UI	9
+u1381	Launched projectiles are accompanied by an energy pulse that increases damage to the target's weak points.	NewP5	/9CB1B5024B6A3C8EA01721981F9852AB	UI	106
+u1382	Changes the ordnance to a trap mine that deploys wherever it lands.	NewP5	/53F725E849ECEB1F8F69F8B8B1D28BB3	UI	67
+u1383	A groove in the stock allows installing an additional vent that drains the excess powder gases and decreases recoil.	NewP5	/7B342D634FD6E8F2CFFDB4834327D7D3	UI	116
+u1384	High-frequency modulation	NewP5	/DEC290AA4FEB547B8790DE9F557E427F	UI	25
+u1385	High Viscosity	NewP5	/5F1D117D49C1D6A924DDD19CF594DB59	UI	14
+u1386	An incredibly sharp cutting edge deals additional damage to wounded enemies.	NewP5	/5ACB8A6E448ED026358BC283104054E8	UI	76
+u1387	HIGH	NewP5	/10E8B2D04479125AA463F88E3F17D2A6	UI	4
+u1388	High-discrete oscillating circuit	NewP5	/39C91CCD4C59E98EA9F1F4A3B453F4C4	UI	33
+u1389	High Pressure	NewP5	/CC6CBA924DA5D53B07D7019AF066151B	UI	13
+u1390	High-capacity capacitor	NewP5	/8462C088460099ACB650CA95C1A1164B	UI	23
+u1391	High-intensity modulators	NewP5	/E67936D64796DA732DD3E2B4CC7A6890	UI	25
+u1392	A top-notch neurosurgeon and colleague of Zakharov's, Dr. Filatova is a talented Academy employee and a specialist known for her intelligence and subtly manipulative behavior. After her mentor's death, she continued to work on integrating human consciousness into the Kollektiv 2.0 network. Her social rating has been reduced due to her romantic relationship with Viktor Petrov.	NewP5	/0F1C7F764138119FBDA64493451199F7	UI	378
+u1393	High-precision transducer	NewP5	/9358515748B33B07FF536C8667D720C6	UI	25
+u1394	High-frequency drive	NewP5	/D3B3AED5405CE6FBB9B1A89F76B34298	UI	20
+u1395	Museum: Atrium	NewP5	/31F6BD904F6A080DC415DB9962A1E50F	UI	14
+u1396	Museum: Main Entrance	NewP5	/F30AD90F4B4E70BF544A0E8FD9A8536D	UI	21
+u1397	Museum: Stairs to the Exhibits	NewP5	/08FAFE214F465EEC20A258BB153E0D33	UI	30
+u1398	Museum: Information Stand	NewP5	/BB1BF3FA412AF63B097448BD3A8FD35E	UI	25
+u1399	Museum: Vavilov Floor	NewP5	/9020E12443F4EC648B458A9AFD171849	UI	21
+u1400	Museum: Pavlov Floor	NewP5	/183DF5674FB10F5C8335A0964B239516	UI	20
+u1401	Museum: Sakhalin Floor	NewP5	/9CFA081B41DAD10033F4FFB7BC0C4153	UI	22
+u1402	Museum: Chelomey Floor	NewP5	/78B7B409430C3DC7587877AB50F8B380	UI	22
+u1403	Exhibition Hall	NewP5	/417EAB7946B8B842426D0DBB4D829E92	UI	15
+u1404	Meddlesome Lady	NewP5	/78C32A724D7AB91845FC2FBB5007B525	UI	15
+u1405	As a child in the hot city of Koktebel, Alexei Kasitsyn quickly developed a passion for the work of Russian botanist Ivan Michurin, even breeding an enormous ear of corn to the delight of his compatriots. His amazing creation can still be observed at the Facility 3826 VDNH today. After being awarded a medal of honor by Comrade Khrushchev, Junior Lab Assistant Kasitsyn took a brief vacation and returned to his hometown before taking charge of a new secret project in a more senior role.	NewP5	/F77F032247E9856859AF6D8F6AC97815	UI	489
+u1406	Vyacheslavovna	NewP5	/58880EFE4B29A94C2010F7948842D3AD	UI	14
+u1407	CONTROLLER DISCONNECTED	NewP5	/9B1113A64FF7C1B3D1C58884147A0F61	UI	23
+u1408	BREATH OF FRESH AIR	NewP5	/B4641CE74F0EEEAEF3D07F96FCA4D158	UI	19
+u1409	SM-1	NewP5	/AA9AECAD4EA6BE9B37987686F33B3F74	UI	4
+u1410	VIKTOR'S HEAD	NewP5	/034318924F2FF4B35F0BCA8CDFB8650E	UI	13
+u1411	CLAIRE'S HEAD	NewP5	/92477A774652C010B570B08973F94885	UI	13
+u1412	CHRONOS TRIGGER	NewP5	/24C42D4A466F447BAF6753B5A948C991	UI	15
+u1413	HAWK 01	NewP5	/6453502A42CA782C3F8B9BA2A641E6A1	UI	7
+u1414	HAWK 02	NewP5	/07EEF0374F1EF568D9B6A6929E278200	UI	7
+u1415	HAWK 03	NewP5	/6C82AEAA430D90CBF42AF99D612E43A3	UI	7
+u1416	HAWK 04	NewP5	/6EE8360B45A55016683E25A9AA779E81	UI	7
+u1417	HAWK 05	NewP5	/04CF6EFB4FD23547BB456BB2AE7C733D	UI	7
+u1418	HAWK 06	NewP5	/5DA38FE24842367A5B52B8AED0A671E1	UI	7
+u1419	HAWK 07	NewP5	/797A2F954523B8A7CE171184E50D36EF	UI	7
+u1420	HAWK 08	NewP5	/02751A4944EE1EC0C5B02C8B6C4D17F0	UI	7
+u1421	HAWK DEACTIVATED	NewP5	/F2AA5E404F3A7E94F010F0A1FA7D1731	UI	16
+u1422	HAWK—SAKHALIN	NewP5	/E98EA67B41D09B532A8C3C8C9503C47C	UI	13
+u1423	HAWK—FORESTER	NewP5	/F8737E1C49C27861B694F3B1660769D9	UI	13
+u1424	Gas chamber	NewP5	/762345AE446125F1436D3B9C46D8187D	UI	11
+u1425	Guard With Diffuser	NewP5	/634B6F1D4873398DC935B4A0CE4B0A9F	UI	19
+u1426	Controller Camera 1	NewP5	/40D6CAD24B0A6A913CCCF0AC22E6C6E3	UI	19
+u1427	Controller Camera 2	NewP5	/874DE5644A161D3BD41EA8AE8793EC93	UI	19
+u1428	Gameplay	NewP5	/15E1741840A4B695EFDAB5A08A48C8F2	UI	8
+u1429	General Director	NewP5	/CD5837744693D7D9A542769B83DC73AD	UI	16
+u1430	The EMP generator causes robotic control circuits to fail temporarily. Robots lose their functionality for the duration of the effect.	NewP5	/0B9F2B5E44083EB55B3D2E83CA159428	UI	134
+u1431	Magnetic field generator	NewP5	/A335E9614AFD4243BB29E5AA565D7B6C	UI	24
+u1432	Generator	NewP5	/CE50217A44066966AE06B18F92468AC2	UI	9
+u1433	DLSS Frame Generation	NewP5	/EE29EDD34DDE07CC76022A9DF7827263	UI	21
+u1434	Georgiy Vitsyn	NewP5	/B3A5CE894BBCEE881DD5F99C966209F4	UI	14
+u1435	Gigantic	NewP5	/D78F518F461B337C9AF7D3890D0E5F26	UI	8
+u1436	Gireyev	NewP5	/E9CCDF5B431687FCA3F651B31058B608	UI	7
+u1437	Gyrostabilizer	NewP5	/95A649F648CE9D915627CA89318D331D	UI	14
+u1438	Head Physician	NewP5	/3C1E6EAF401F8CDA93A6A4A0477A4CBE	UI	14
+u1439	Settlement Service Manager	NewP5	/E0BB02A94868ECBE8467B095D8C9A066	UI	26
+u1440	Lead Dog Trainer	NewP5	/7FF602F2406A424C27CB42B6F5CD11EE	UI	16
+u1441	Depth of Field	NewP5	/EF9D62A0401696B9AC3546B799CB3848	UI	14
+u1442	Flared magazine socket	NewP5	/E2AA35E242C4F69C76C411BA497B85B8	UI	22
+u1444	Viktor's head in a container.	NewP5	/5FEE75464BC65391546A13BB29FACA3D	UI	29
+u1445	Viktor's head.	NewP5	/03505B3E40BAA7566A79CBB77295CCA5	UI	14
+u1446	Grip Head	NewP5	/AE9EDB7445F6B45B9FE28682B6CF9719	UI	9
+u1447	Computer System Voice	NewP5	/797DECF447EB411CE3946F9B0EAB1D1C	UI	21
+u1448	X-axis sensitivity	NewP5	/1B71A5FC4F5B8FD31133B4B779BB284D	UI	18
+u1449	Horizontal Barrel	NewP5	/8B5377ED440973F29542FEB3CA05BF41	UI	17
+u1450	Bawler	NewP5	/D30DDAE04DF1639C90C2ADBBC0B08745	UI	6
+u1451	Dolphin City	NewP5	/033D7D0F475DDD9C2CED50A099B571A5	UI	12
+u1452	Infirmary	NewP5	/9C88FB9E4A72603498FD06AF99B1079C	UI	9
+u1453	Pavlov Complex Hospital	NewP5	/1BF44B02486A716BE2D7799202EE3F91	UI	23
+u1454	State Television and Radio of the USSR	NewP5	/D9AA249C4DB32FDB813D6CB3C7BEBE5E	UI	38
+u1455	Mendeleev Complex: Lyogkaya Hotel	NewP5	/9115CBF74DE3C4A47EAED69FCBD0FE95	UI	33
+u1456	Grabov	NewP5	/A39EDA9D4A698E10F344D4BDC6A36806	UI	6
+u1457	Use energy weapons, guns, and melee weapons wisely in order to allocate your resources efficiently.	NewP5	/21A4CE114FA3C118625372932D22DAAB	UI	99
+u1458	A rocket launcher shot that automatically locks onto a target and pursues it until it is hit.	NewP5	/07347DE04A8D2DD84864F98BCE8955C9	UI	93
+u1459	Graphite manipulators	NewP5	/43DA10D6471712D6EB254EA126C13425	UI	21
+u1460	Graphite magnetic field generator	NewP5	/F33E15A641E39FE21F88A6941D043AFB	UI	33
+u1461	Grigory	NewP5	/B28A6F5D41272DB6D9C3729AD489F188	UI	7
+u1462	Grigoryevna	NewP5	/9F3158514975B0F2D2684795537C13A5	UI	11
+u1463	An intimidating weapon built from everyday parts—a shovel and bicycle spokes.	NewP5	/C3CA4CF049396A3DBEA27DA96416F2BB	UI	77
+u1464	Dialogue volume	NewP5	/C82A999343AFFD0932374E8870674F4D	UI	15
+u1465	Interface FX volume	NewP5	/A38368264B5BFC4DD064E180EAD1395F	UI	19
+u1466	Environmental audio FX volume	NewP5	/0D3F6D864C36ACB57D04FDB4BC6A4F26	UI	29
+u1467	Radio volume	NewP5	/BC48D2FF45760310E5C199A061BA9F76	UI	12
+u1468	FX volume	NewP5	/DAED9595481AD238EC5282A61117872E	UI	9
+u1469	Music volume	NewP5	/607816AC496ED95CEDA7C9B3F4D667AD	UI	12
+u1470	Gromyko	NewP5	/5F102B7942423EB5E790B99DEAEBE43A	UI	7
+u1471	Cargo inbound	NewP5	/5BD13FBA4B50EDBB33531982D1A2D0A3	UI	13
+u1472	Gyunterovna	NewP5	/43BBAB1244EDEFB915B8EAB9A2623889	UI	11
+u1473	YES	NewP5	/33A700AD4A374B23A6F074B47151E3C5	UI	3
+u1474	METAL PARTS	NewP5	/BF22CC2D4BBE48ADB7E973BD688EEC12	UI	11
+u1475	ECHIDNA	NewP5	/08D6540E4B20D498EAF303AC6E2E6328	UI	7
+u1476	ADDED TO STORAGE 	NewP5	/B2D306FD45D852A83569158F7F0EBAED	UI	17
+u1477	COUNTRY HOUSE	NewP5	/30DD22134A05CEA9A960949A4A668900	UI	13
+u1478	DOMINATOR	NewP5	/B592CC7F4192DA26ACF278854AC25CDB	UI	9
+u1479	DOMINATOR—ANTI-BLACKHOLE	NewP5	/EC1FABC645259B2E2892CCAFBEA348B5	UI	24
+u1480	DOMINATOR—IMPULSE DIVIDER	NewP5	/28502B4349EE6C506F4D7CA5F679F133	UI	25
+u1481	DOMINATOR—CARTRIDGE GUN	NewP5	/C6155C304978B49CFCEB3A87B8546B1D	UI	23
+u1482	DOMINATOR—SPINNING ORB	NewP5	/DC381A9045270723735BAABF80DCE3A0	UI	22
+u1483	DOMINATOR—HIGH-INTENSITY MODULATORS	NewP5	/F530ED5044327ECA47A840A2F932447E	UI	35
+u1484	DOMINATOR—VORTEX TRANSDUCER	NewP5	/4257BD3849188681DC4947952C18570D	UI	27
+u1485	SUFFICIENT RESOURCES	NewP5	/87F05A1A411A351F62B6EEB8009D3251	UI	20
+u1486	AVAILABLE NEUROPOLYMER	NewP5	/40DCED8E43A979B8D235CD9C7F144753	UI	22
+u1487	UPGRADE AVAILABLE: LEVEL	NewP5	/06E18F1247DD8DE44D62E6AB2DA096EC	UI	24
+u1488	FILE	NewP5	/92ED90C44C7EEDDEC92E1799D15D2A12	UI	4
+u1489	SHOTGUN	NewP5	/BF576BE1401EDD3116DDBD961150D119	UI	7
+u1490	TREMORS	NewP5	/2A7D8B9D4992A9AF6B0D8796485B9E97	UI	7
+u1491	Yes, man is mortal, but that would be only half the trouble. The worst of it is that heʼs sometimes unexpectedly mortal — thereʼs the trick!	NewP5	/CCC8D4144C336C46B1DEAA9DCEC9AD9B	UI	140
+u1492	Increases the per-second damage of Mass Telekinesis.	NewP5	/23A247A84AF557C36B3E7F89FDFA9E3C	UI	52
+u1493	Even the strangest creature can one day serve its purpose.	NewP5	/840A4BE648794D18254EC5A9FA3F94C4	UI	58
+u1494	Daniil	NewP5	/F11454774894DCF2047B5E8E8EC47288	UI	6
+u1495	High sensitivity sensor	NewP5	/95C3D1E94334C772C8D6C98922C9F94C	UI	23
+u1496	Grants more energy per hit	NewP5	/BE64759E414078283BCB8F89A0B2D945	UI	26
+u1497	Grants a chance for a cartridge to inflict an increased effect	NewP5	/9B9979904F6150218418E0B92AB01A46	UI	62
+u1498	Doors are open	NewP5	/2DE6BC864A5DDEE1891DB292B78CE85C	UI	14
+u1499	Double polymeric infusion	NewP5	/C3BC47C440FAAF5D80FEDAA7C83A86DB	UI	25
+u1500	Double kinetic reverse buffer inductor	NewP5	/CB75206F4AB0F8F23728179CB32B830E	UI	38
+u1501	Double strike	NewP5	/0446A4384F0560812B298F888DF641D0	UI	13
+u1502	What would you have, you curs, That like nor peace nor war? The one affrights you, The other makes you proud. He that trusts to you, Where he should find you lions, finds you hares; Where foxes, geese: you are no surer, no, Than is the coal of fire upon the ice, Or hailstone in the sun. Your virtue is To make him worthy whose offense subdues him, And curse that justice did it. Who deserves greatness Deserves your hate.	NewP5	/B4EDA58F47B2D3D90069EF9890C6AAA2	UI	422
+u1503	Debaltovskaya	NewP5	/E6274E6B4F026D0E836B9AB6E4423E58	UI	13
+u1504	Action is not possible	NewP5	/7A158E8E4552DA276319DA9F7F394DBC	UI	22
+u1505	December 1944	NewP5	/DCF99304462886A238965F9274094240	UI	13
+u1506	Makes targets stand out	NewP5	/FB18412B4F0EECF7741CC0A849A7C727	UI	23
+u1507	Keep doing what you're doing. It will eventually lead to something.	NewP5	/8A169151418ED8AB385513882833B80C	UI	67
+u1508	Impulse divider	NewP5	/CE65ECA74D82C85C805894A2A018530A	UI	15
+u1509	Дельфин с панамкой 	NewP5	/3F60845B4E8F6CB0E74C80AE71411084	UI	19
+u1510	Damper-polymeric stock	NewP5	/F1393E144F35D345551F30BFB91CA737	UI	22
+u1511	Little Venice	NewP5	/85494BF34F79AD46984723BAD2F85D80	UI	13

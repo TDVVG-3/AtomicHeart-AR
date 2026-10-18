@@ -1,0 +1,24 @@
+# chunk_15 notes — uncertain choices
+
+- Crispy critters -> `الكائنات المقرمشة` — P-3's catchphrase ("хрустящие твари"), used as an expletive; the same compound is reused in u4333 (`Crispy...` -> `المقرمش...`), u4372, u4438 and u4466 so the running joke stays recognisable.
+- Chatting Artificial Librarian -> `أمين مكتبة آلي ثرثار` — the English is a backronym that spells CHARLES; Arabic cannot keep the acronym, so the meaning is translated and the Latin form `CHAR-LES` / `CHARLES` is kept verbatim where the pun itself is the point (u4332, u4345).
+- Chariton Zakharov, Zakharov, Chariton Radeonovich -> `خاريتون زاخاروف`, `زاخاروف`, `خاريتون راديونوفيتش` — glossary forms.
+- Spark Polymer extension -> `امتداد البوليمر «سبارك»` — no glossary entry; the name is transliterated like the sibling extension `Voskhod` -> `فوسخود` (glossary).
+- THOUGHT (device) -> `THOUGHT` — kept in Latin, matching the approved pilot TM rows.
+- Loops (coat check) / password "loop" -> `العروة` — the password (u4262) ties into the girls who "sew loops"; kept Arabic rather than a bare Latin word.
+- Password "Fluffy" (u4475) -> `«زغبي»` — cutesy password word with no glossary entry; rendered as an Arabic adjective for consistency with `loop` above.
+- Drofas -> `الدروفات` (sg. `دروفا`) — provisional transliteration of the robot type; no glossary entry.
+- Hemlock -> `الشوكران` — the mutated plant of the Neyelov experiment; used consistently in u4253/u4276.
+- Bullrushes -> `البردي` — the cultivation subject Lastochkin half-remembers in u4253.
+- Blitzar -> `بليتزار` — provisional transliteration of the neutron-star term (u4252).
+- Teardrop (u4297) -> `الدمعة` — shape/object label, matching u4399 `بشكل قطرة دمع`.
+- Neptune -> `نبتون` — site name, matching the approved TM `منشأة نبتون`.
+- A. Neyelova's first name "Anna" (u4284) -> `آنا`; Neyelova -> `نييلوفا` (approved TM).
+- Lyubun (u4279, a typo of Lyubin) -> `ليوبين` — same person as u4266's `A. Lyubin`, so one Arabic spelling is kept.
+- Kuznetsov -> `كوزنتسوف` (Commander); Schnipperson / Shniperson -> `شنيبرسون` (one spelling for the same physicist); Necheyev -> `نيتشاييف` per glossary `Nechaev`.
+- DATA DELETED -> `بيانات محذوفة`; bare `DELETED` (u4285) -> `محذوف` — readable English, so translated.
+- `#down_with#Sechenov`, `#robo-theater`, `#maglev #station_master`, `#3826 #Vavilov #A. Neyelova` — channel/handle tokens copied byte-exact in Latin.
+- `*attachment:` (u4266), the ASCII fish `><(((~'>` (u4277), the emoticon `;)` (u4256) and the appended `*N.NN*` pacing markers are preserved byte-exact in place.
+- "dickbag" (u4416) -> `وغد` — kept as a crude insult without sanitising; Arabic has no single-word equivalent that is both short and natural.
+- u4465 English is broken ("What are you justifying atrocities?"); rendered as the intended question `ماذا؟ أنت تبرّر الفظائع؟`.
+- Session/speaker labels in Chelomey_Dialogues translated as plain role nouns; character names (`Lida`, `Rafik`, `Romeo`, `Semyon`) transliterated.

@@ -1,0 +1,26 @@
+# chunk_04 — uncertain choices (DRAFT)
+
+- SEE ON MAP -> على الخريطة — because en_len is only 10; dropped the verb to keep a terse UI label.
+- Vatrushka -> فاتروشكا — Russian pastry name; transliterated rather than translated.
+- YES ENERGY -> نعم، طاقة — source looks like a debug/leftover label; kept a literal reading.
+- [ Flatlined ] -> [ مسطّح ] — brackets and inner spaces preserved; "flatline" rendered literally (death/HUD state).
+- Laborer / MFU-68 LABORER -> عامل / عامل MFU-68 — robot/worker name; "Laborer" translated, model number kept in Latin.
+- Free-bolt automation -> أتمتة المزلاج الحرّ — "free-bolt" is a firearm action term; chose a literal technical reading.
+- Agent P3 found a flamer... -> rhyme lost; kept the mockery of the complex's denizens.
+- Musclehead -> رأس العضلات — nickname/insult; literal rendering kept.
+- Texture anisotropy -> تباين النسيج — graphics setting; used the common short Arabic form rather than a transliteration.
+- BINGUN -> بينغن — no glossary entry; transliterated. Consider confirming against the in-game weapon list.
+- Ballistic Agent -> عامل باليستي — possibly a module name; literal reading chosen.
+- Lake Lazur Shore -> شاطئ بحيرة لازور — "Lazur" transliterated; could be "الّلازورد".
+- Block B -> الجناح B — "Block" as a facility wing; could also be "الكتلة B".
+- Most of the people who managed to escape from themselves were caught by the orderlies. -> الممرّضون — "orderlies" in an asylum context; psychiatric-attendant sense assumed.
+- The Delivery Man and the Mistress -> عامل التوصيل والعشيقة — title of an in-game play/poster; literal reading.
+- Surface Approach -> المدخل السطحي — could be a location ("approach to the surface") rather than a method.
+- Greased Lightning -> سريع كالصاعقة — idiom localized to keep the "very fast" function, image changed.
+- Forester Village -> قرية الغابة — location name not in the glossary; provisional rendering.
+- Commonwealth / ManKind Project -> مشروع البشرية — "ManKind" treated as a program name and translated.
+- AoC (Academy of Consequences) -> أكاديمية العواقب — abbreviation expanded because the Arabic has no equivalent initialism.
+- CENTAUR / MANTIS / COLOSSUS BEA-D, BEA-D Magneton -> القنطور BEA-D / فرس النبي BEA-D / العملاق BEA-D / ماغنيتون BEA-D — BEA-D kept Latin per glossary; the variant word moved after the designation.
+- FPS kept as Latin "FPS" in u1197 (common in-game abbreviation).
+- SHOK -> شوك — glossary form used instead of the Latin display spelling (validator glossary check).
+- Endonyms (deutsch, english, español, français, italiano, polski, português (Brazil)) and the gibberish/symbol strings (x2, x, ], _, {0}, {a}.png, °, º, AK) copied byte-exact per brief rules 4.7/4.8.

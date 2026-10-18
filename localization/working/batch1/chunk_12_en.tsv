@@ -1,0 +1,301 @@
+id	english	scope	key	category	en_len
+u3325	Swinging with the balancer shifted to the tip increases the weapon's damage radius	NewP5	/B95573AB45CD939806630290D53AAFCA	UI	82
+u3326	Increases rate of fire and decreases recoil of emitted charge	NewP5	/580F42F74B53E6A56B8AD2B9A6326E3A	UI	61
+u3327	Reduces the time needed to charge a Wave Shot	NewP5	/B68EEB88480A0DD29649C7AF3DA647CA	UI	45
+u3328	A staff made of lightweight materials increases attack speed	NewP5	/7D3D35884D86D0BD5C70BC9C7CE290F4	UI	60
+u3329	Increases stun duration	NewP5	/F17FA6574D4BC5DA23D87B8E94413B2A	UI	23
+u3330	Increasing relay maintenance time by 10 minutes	NewP5	/E73D4BCD4D9C171EBB326588E6430F51	UI	47
+u3331	Increases duration	NewP5	/3E3B6CCB4BCCB4506E66ECB50A30EA0E	UI	18
+u3332	Increased Polymer Generation	NewP5	/BFE65E594607E58B9F8AD8B756DD140E	UI	28
+u3333	Increased range	NewP5	/BC13D6924A28ACD7AD79B988283FBAA7	UI	15
+u3334	Capacity increased to 120 charges	NewP5	/15C3E0BD40769249B0F2E7BBF6535E05	UI	33
+u3335	Capacity increased to 100 charges	NewP5	/C9502F3A4EED06F083B745B07E3E3C42	UI	33
+u3336	Increases maximum rate of fire	NewP5	/40CE8A1E478EE686487979989A7E898C	UI	30
+u3337	Increases stopping power	NewP5	/7125AE944F5EF8816B0C059778B648FB	UI	24
+u3338	Increases the EMP's area of effect.	NewP5	/4F71898F4999AADB5BFCFFBA75EF8762	UI	35
+u3339	Increases energy absorption	NewP5	/5DD95B6F450752F78EDE7DB62E279011	UI	27
+u3340	Increases the activation radius	NewP5	/982D43994183CAD09D2B128CE10182A9	UI	31
+u3341	Increased blast radius	NewP5	/738E70EA41BB67CCB19775A6B287F411	UI	22
+u3342	Increases size	NewP5	/81094EAC44B01AAD64CB99A16B51EB39	UI	14
+u3343	Increases the activation speed	NewP5	/85D4DCCD423CB54A650CD5BF3F415B6E	UI	30
+u3344	Reduced Sprint cooldown	NewP5	/D6233CEA4CF312FA453F7F885EC982F1	UI	23
+u3345	Increases aiming speed.	NewP5	/F68D74F1433791A5A13770B681D066A4	UI	23
+u3346	Increases rocket speed	NewP5	/30234C744622D7EEBB1B11BB63BE51DD	UI	22
+u3347	Increases spooling speed	NewP5	/07B4B7E4403D693E041CA1A368E73B5C	UI	24
+u3348	Increases rocket accuracy	NewP5	/C090284C46C5350E49904B9FAD0874FA	UI	25
+u3349	Increases the density of the active polymeric substance in a charge.	NewP5	/9AC8B3704E4D875D0447809016E45A49	UI	68
+u3350	Increased damage	NewP5	/6BBDA379414F8DA05F64F0B30A13A137	UI	16
+u3351	Increases damage at maximum rate of fire	NewP5	/6279B9204345EC3B7345EBB2DF40EAA9	UI	40
+u3352	Increases damage based on distance covered	NewP5	/0540C87C43BEE4E448DDAEA209B47306	UI	42
+u3353	Increases damage to flying targets	NewP5	/B54E7DB3419C27E4092487BF9E605FB3	UI	34
+u3354	Increased damage to organics	NewP5	/1646AB134F49762681E072AE74D5D029	UI	28
+u3355	Increased damage to robots	NewP5	/90CF01F1428C7432C921F88140E779DE	UI	26
+u3356	Increasing the barrel bore pitch decreases general spread.	NewP5	/09C963D7485CEF73C60DB9B574311656	UI	58
+u3357	Increased elemental damage	NewP5	/FBA86F0E423BA9161B4E6594392937FA	UI	26
+u3358	Increasing the modulation of the plasma charge fusion partially compensates for the overall loss of fire rate.	NewP5	/72A8DE364B544A0B4DB47B801158F8CF	UI	110
+u3359	Increases Wave Shot width when at max charge	NewP5	/A317992944A1958D4ECFA0A6CBBF0E92	UI	44
+u3360	Increases initial Wave Shot width	NewP5	/E3D0402048124A37270926A2D2F6EFCD	UI	33
+u3361	The more durable shell design doubles the internal pressure of the active material, increasing the blast radius.	NewP5	/46F162B74E30299E0F1F95AD52BB461E	UI	112
+u3362	Extended magazine with a fine spring	NewP5	/3028411440152848E97AE984AFA025F8	UI	36
+u3363	Increased Impact	NewP5	/DD60C8DA4BE875320DBB60AFE168081B	UI	16
+u3364	Increases cartridge slot effect duration	NewP5	/B2C0753B49C78FE716E9C3BDC7DC3229	UI	40
+u3365	Extended magazine	NewP5	/D64AE030484946A121FACF92D774D838	UI	17
+u3366	The extended magazine allows the user to stay in combat for longer before reloading.	NewP5	/1873C651458B8D6BEA2E7986C8E931A1	UI	84
+u3367	Extended magazine with a polymeric feeder	NewP5	/2369B9A840BA04B5CC8E18A730526DB2	UI	41
+u3368	Increased energy gain per hit after killing an enemy.	NewP5	/12617BA74F7C975B2F12989355BB621B	UI	53
+u3369	With this polymeric seeker, the weapon deals major damage to enemies' vulnerable spots	NewP5	/A757C2574F96917330F275BADFC3B903	UI	86
+u3370	Increased rifle pitch	NewP5	/6F3C0B884C3484606846889E5BE61490	UI	21
+u3371	Increased rifle pitch significantly reduces spread when shooting.	NewP5	/7FF5007645BF9921B1346B95C01B181B	UI	65
+u3372	Increases energy bonus	NewP5	/26D670A84D21390BF9A1EAA0A45F5505	UI	22
+u3373	Increases charged damage	NewP5	/10D06FD74C7662CAED62D68A1006DF77	UI	24
+u3374	Increases recoil	NewP5	/9E0895F845C29F4FA0239795C1BC3C79	UI	16
+u3375	Increases damage radius	NewP5	/377E98574A8ACE5C6328F3A45C8CC558	UI	23
+u3376	Increases attack speed	NewP5	/ACC25FED4A3B37090D76F788A38427E8	UI	22
+u3377	Increases energy expenditure	NewP5	/6FDBFF4D40CFB9511CB469AE29DC0D32	UI	28
+u3378	Increases the capacity by 12 rounds with a more compact ammo housing.	NewP5	/11D1917346AC6A7F25EFBE9AD0C18026	UI	69
+u3379	Increases projectile duration	NewP5	/303FAF014146F7896010F6AD2DEC59C3	UI	29
+u3380	Increases trap duration	NewP5	/D70AF0624DBB456C7E8E8A87872C5034	UI	23
+u3381	Increases enemy knockdown time	NewP5	/CD2EFDF642DC2FF613ABF09920B51295	UI	30
+u3382	Increases pressure in the barrel bore, improving weapon damage.	NewP5	/0B5CA0984027B787A73A51B183804B2D	UI	63
+u3383	Increases pressure of the powder gas, improving weapon damage.	NewP5	/3D3519644857B95515EF9AA9EDEF1995	UI	62
+u3384	Increases the amount of buckshot in one shot	NewP5	/71CFDECE48A191BD891C7EAE49D5076D	UI	44
+u3385	Increases the number of bounces	NewP5	/462EE9F04341E9C7A72490970E82D6B7	UI	31
+u3386	Increases firing accuracy by effectively removing excess pressure.	NewP5	/E754092146E9D8AFFF3E80888AFB76C9	UI	66
+u3387	Increases the maneuverability of the homing rocket.	NewP5	/4F24740C4909E2010CA793984AB71404	UI	51
+u3388	Increases minimum damage	NewP5	/EE3CE5774CD72600A713D78EBE6A4956	UI	24
+u3389	Improves shot power by reducing the loss of powder gas pressure. Increases damage to weak points.	NewP5	/8F56508E45FAE35E7474E58288F859A2	UI	97
+u3390	Extends the magazine	NewP5	/B508F68E4CB1B9A97ABFB7A13E13157F	UI	20
+u3391	If frame generation is on, reflex will always be on	NewP5	/2114492D4BF37AF4D2EF7CAD1760E0AA	UI	51
+u3392	Increases stats when P-3 has under 50% Health	NewP5	/CD74DAF743E62D8885204E9C585EE81D	UI	45
+u3393	Increases the amount of energy recovered by your attacks.	NewP5	/1661E0A544C8C8B2FFD4438F5FB5E910	UI	57
+u3394	Increased rate of fire	NewP5	/90BBD50C4F066E2428B29ABA0CDDE0AE	UI	22
+u3395	Increases the rate of fire by reducing delays between shots using advanced explosive cycle process acceleration technology.	NewP5	/9D7B3FE24AD2AA308EC73FBB452C96C4	UI	123
+u3396	Increases rate of revolver fire	NewP5	/2B46C5674B6EFCD5B87A5AA291CD6819	UI	31
+u3397	Increases the rate of fire by optimizing the cooling cycles and preparing the system for firing.	NewP5	/178D6F684D594B0C7F8B60B599B344DC	UI	96
+u3398	Increases the rate of fire by improving the synchronization between ammo supply and the recoil system.	NewP5	/5168188A416EB7D206C9BCB774627A88	UI	102
+u3399	Increases the rate of fire by speeding up the mechanism's activation and reload.	NewP5	/AA1BCC5C4ACF9109B827DF88F8255839	UI	80
+u3400	Improves attack speed scaling with energy.	NewP5	/CB7CC1FF464E827F4FAC11A2FC3BF2EF	UI	42
+u3401	Accelerates special attack recharge	NewP5	/E666BC244E1A1333FF8E6DAECA5214F2	UI	35
+u3402	Increases reload speed	NewP5	/17FBB9D34E015E9B2A512493DAB9A219	UI	22
+u3403	Increases reload speed by speeding up replacement cycles for cells or ammo.	NewP5	/70067FB0498F8FCF2D0B95BD308F7C84	UI	75
+u3404	Increases the flight speed of the homing shot.	NewP5	/A3B6A3BE4354F57AAE8766A1D7FDB3F0	UI	46
+u3405	Increases aiming speed	NewP5	/0FA9E10B45D3387CDE7C78B40BE7B53E	UI	22
+u3406	Increases aiming speed by reducing device weight.	NewP5	/FB3E49B14E1A8CC31A88D29141F33061	UI	49
+u3407	Increases accuracy	NewP5	/D7B500EA440ED5D4731D47A30D27B761	UI	18
+u3408	Increases aiming comfort.	NewP5	/E34C0D45479647B4EBF7E2B0BB3C140B	UI	25
+u3409	Increases damage	NewP5	/7A5D3ED2451D05050646D2AAD78CDB47	UI	16
+u3410	Increases damage.	NewP5	/8988807449010E3FAF231E98C8182408	UI	17
+u3411	Increases damage depending on how long the attack is held.	NewP5	/4421BE934B2F764048C5A383EE6D34A7	UI	58
+u3412	Increases damage to weakened points	NewP5	/7D7062834053B5B14FB61EACFDC647E4	UI	35
+u3413	Increases damage for every grazed enemy.	NewP5	/6FC3ACF5407EB9EEA67B568744530CE7	UI	40
+u3414	Increases damage due to a resonance wave that amplifies shots.	NewP5	/D997C5034B559946B4D42695C98A4020	UI	62
+u3415	Increases trap damage	NewP5	/8BA5E7164D8D461932433F8F5AFCEA92	UI	21
+u3416	Increases Throw damage by 2.528 times	NewP5	/C7C7162A4EE9517C256FECAEB3AE2582	UI	37
+u3417	Increases weak point damage	NewP5	/3773CB5F4414790DA5A693B9E9375632	UI	27
+u3418	Increases weak point damage to weak enemies	NewP5	/9792A0F443123138FEBB16B83B937D77	UI	43
+u3419	Increases damage to the next target after a hit	NewP5	/BDA09779496423626520448A82C43CEB	UI	47
+u3420	Increases damage after each hit	NewP5	/0E5933CC499420210AF7289CC38D8CA6	UI	31
+u3421	Increases damage after killing an enemy	NewP5	/15EA1BB44A21BFF91A1D14897BDC479B	UI	39
+u3422	Increases damage after dodging	NewP5	/6B35E3714053820ECCCACB964F95C5EA	UI	30
+u3423	Increases damage when the enemy has a lot of health	NewP5	/F8B070F34CBECFA75A768A89E5DF61C0	UI	51
+u3424	Increases damage over long bursts	NewP5	/CFC5629F44087065237724A935B7B705	UI	33
+u3425	Increases damage when swinging	NewP5	/55491B874266A8E2391C7194EEFFB4A0	UI	30
+u3426	Increases damage when P-3 has low health	NewP5	/276F7E2C489B8E25A73589ACDD9558A9	UI	40
+u3427	Increases damage with each hit	NewP5	/A10F85CB4BC60265A71BA4BB4E1F29E3	UI	30
+u3428	Increases damage with each subsequent shot.	NewP5	/4379F82E4B9767F3BC4C9794EBE539B4	UI	43
+u3429	Increases special attack damage	NewP5	/D1D4691F45563BC4103EB1953C8ED2C0	UI	31
+u3430	Increases energy damage when firing by applying additional pulse charges.	NewP5	/F83C60EA4BA1F26C1F94A3A8B239EBB8	UI	73
+u3431	Increases damage by temporarily charging an additional energy pulse before a shot.	NewP5	/2B99CCE34057D8A070367A96AE88771B	UI	82
+u3432	Increases ergonomics	NewP5	/D41588FF42C8D40F22DAE48586C121B1	UI	20
+u3433	Increase relay maintenance time	NewP5	/2CBF09724B3FF17DA07778889947CA03	UI	31
+u3434	Increase speed of Polymer production by overclocking the motors	NewP5	/E4DEC38D48D3761A73E70AAB0F06AF76	UI	63
+u3435	Mph! Gr!	NewP5	/93745E8347C1882AFB972B8AEE782F1A	UI	8
+u3436	An electromagnetic discharge briefly causes robotic control circuits to malfunction. After reaching a certain charge, the target loses functionality for the duration of the effect.	NewP5	/01712EA448F552AEEB7B0C91437B12C6	UI	180
+u3437	Mid-jump Kick	NewP5	/6AD7BF2344157F337DEDC6A4B1FFB3FC	UI	13
+u3438	Attacking with the reflex blade activates the ATP injector built into the grip, reducing dodge recovery time. This effect stacks.	NewP5	/4F5BB5AD40EB252C06D8C884B1E7EA1F	UI	129
+u3439	Using SHOK on low-HP Polymerized enemies breaks them into pieces.	NewP5	/F1F81A1C49C78D7546D4A9AE9A2F33AB	UI	65
+u3440	SHOK deals more damage.	NewP5	/15E92F764BC972572351898C32299530	UI	23
+u3441	SHOK deals more damage and pushes back enemies.	NewP5	/23162965470E28F37212CA9A9124E8B2	UI	47
+u3442	SHOK electrifies enemies.	NewP5	/D209F29B41AE687D0FCF70BD1C7C5F3D	UI	25
+u3443	The impact surface is treated to improve its aerodynamic properties, increasing weapon swing speed.	NewP5	/1ADD1E4C4DE05A2AF9DAF99FBFFDB8D8	UI	99
+u3444	Impact units have mutual attraction, allowing to decrease the charge spread when firing.	NewP5	/A83DF9D442D6517917358E84A4FD51A6	UI	88
+u3445	Doubles the number of frames per second on Nvidia 40xx video cards. Additional frames may be incorrect if the initial FPS is low	NewP5	/75D6BC554FC251A76A58F9ACF4054C4D	UI	128
+u3446	Energy Density	NewP5	/5D3BE232420D6DD308F687A749F79632	UI	14
+u3447	The density of the active polymeric substance in a charge is increased to the maximum possible level.	NewP5	/8B2F049A406933BAE555C8AD722071D2	UI	101
+u3448	Press <tag id="InputAction.Gameplay.ActivateSpecialAbility"/> to use the selected skills. Press <tag id="InputAction.Gameplay.SwapSpecialAbilitiesIndexes"/> to switch abilities.	NewP5	/864072C34A6BB438DB7E93AB5C5C5871	UI	177
+u3449	Hold <tag id="InputAction.Gameplay.EquippedItemSecondaryAction"/> and press <tag id="InputAction.Gameplay.SwitchAbilityLeft"/> or <tag id="InputAction.Gameplay.SwitchAbilityRight"/> to use the selected skills.	NewP5	/48B0016D4BA01C2D49DAD5B5DD7FF20E	UI	209
+u3450	The Kollektiv hub is expecting an update on June 13, 1955. Are you sure you want to update and reboot the system?	NewP5	/B0124D5A412A90F477B9028A9AC9B82C	UI	113
+u3451	Magnetic attachment node	NewP5	/3073FCF54D4FBD7C1DBDCC8DFFAEBEEB	UI	24
+u3452	Upgrades the Cryo Jet's pressure chamber, increasing its maximum range.	NewP5	/F3BB71084AA8A8D7CE0102B029F4A73D	UI	71
+u3453	The pressure chamber, controlling the Cryo jet's maximum discharge distance, can be modified to increase the discharge distance. The closer an enemy is to the source, the higher damage they receive	NewP5	/5EDFF1DC4FE620603777BFBC304CD732	UI	197
+u3454	Upgrades the Polymeric Jet's pressure chamber, increasing its maximum range.	NewP5	/8668A19F451763BF4DCE1C83A7A17BC6	UI	76
+u3455	William Shakespeare	NewP5	/CC5134DF43204615E3E7F4A8FC681694	UI	19
+u3456	Winston Churchill	NewP5	/139FF4B348FCCC88C4BD48AA83CF81EE	UI	17
+u3457	Indicates rocket landing spots	NewP5	/C235A0A54F38DAE2D1C50BA0DCACBA6E	UI	30
+u3458	Українська	NewP5	/E9B9B4274131F3269872A59385886F4F	UI	10
+u3459	Enlarging the massive striking parts increases the weapon's impact on the target.	NewP5	/0C7400D14F557EEA2E760A9D1E686DA1	UI	81
+u3460	Hive	NewP5	/8FEA0F7445CF23777F02C4BBA79CC90B	UI	4
+u3461	Improves homing accuracy	NewP5	/8DD4557843A03207D2055D881366937E	UI	24
+u3462	Improves all of the weapon's stats depending on the amount of energy.	NewP5	/87EBB2BD4F6E94DA4F8E70B8C3B1C8F1	UI	69
+u3463	Improves weapon control and decreases shake when aiming.	NewP5	/D5798F5D49C1134696F04CA1F8B3A67A	UI	56
+u3464	Increased chance to set the enemy on Fire	NewP5	/425B3E87437E0492297DE7AD1C93B066	UI	41
+u3465	Med Unit upgrade	NewP5	/43E02B934060869B361DEC910D72F215	UI	16
+u3466	Improved firing stability. Reduces recoil and muzzle rise.	NewP5	/1B3B34A54150CC9E9015EC97CB46134D	UI	58
+u3467	Improved fiber conductivity allows for effective conversion of impact energy.	NewP5	/3184E1D2407D0827D027619B6711D78A	UI	77
+u3468	Improved Grip	NewP5	/AD444E044B774E3D8B2F45B3F911C24D	UI	13
+u3469	Improved chamber	NewP5	/2786CE6B4111372146AFE194C911F46B	UI	16
+u3470	Improved chamber allows reload faster.	NewP5	/2FF11F27485DCFB49D672D8F50BDA7DD	UI	38
+u3471	Improved spigots	NewP5	/A2CBA1BF4E57643AE511ADA20A7D6B11	UI	16
+u3472	Improved spigots allow energy to be transmitted with next to no loss.	NewP5	/849F452041C5F7FA1C713B969284432B	UI	69
+u3473	Improved muzzle brake compensator	NewP5	/91F97F2941A2516711A621A1BFD48682	UI	33
+u3474	Improved Stabilizer	NewP5	/F867235747A955B6BAB0BA9A92190D80	UI	19
+u3475	Improved barrel return mechanism	NewP5	/6918E1504234968DB7BB22A0C9AB44B1	UI	32
+u3476	Improved Feeder	NewP5	/1A428AEF4246464490764CA7792FEDD1	UI	15
+u3477	Kinetic Reflector upgrade	NewP5	/655592F048FA794D17281D8B74587909	UI	25
+u3478	Mixture upgrade	NewP5	/00B7D2A94E54B21A8AB545BDE492C95D	UI	15
+u3479	Ultra Performance	NewP5	/78398B694EF3CF4883FDB3AE08461B34	UI	17
+u3480	You don't have the Lockpicking skill	NewP5	/40EC2FC5492279845ABACF8040DB24A8	UI	36
+u3481	Skills, experiments, and unique experience:	NewP5	/41C8B56045886222EC36A7AE57B26811	UI	43
+u3482	Decreases rate of fire	NewP5	/F35366174EC8CBF3134E488C9C2835F2	UI	22
+u3483	Decreases accuracy	NewP5	/44CA16EA4C691AAB9B08B2813BA9E60E	UI	18
+u3484	Decreases energy expenditure	NewP5	/3BAD7BD3422F12C01AAD089D18E34B89	UI	28
+u3485	Decreases damage	NewP5	/65A447564E422A081D0DAE81446BA40B	UI	16
+u3486	Decreases ergonomics	NewP5	/5B4189DE4D049186251AACA7CBD228D8	UI	20
+u3487	Decreases cartridge slot consumption	NewP5	/3D00B80E410CC24B2A14B2944B6CE37C	UI	36
+u3488	Decreases the energy consumption of special attacks	NewP5	/E4A4EFD64B03143541B2858B88B3D0D4	UI	51
+u3489	Decreases recoil	NewP5	/0B18B07E450360CACE3D3C9A33D0CFE4	UI	16
+u3490	Decreases spread depending on the amount of energy.	NewP5	/23C1F9C94197AB1D012D4292AD2B88A0	UI	51
+u3491	Decreases buckshot spread, controlling how it leaves the barrel and directing the pellets closer to each other.	NewP5	/F775BD4F46D64549D8E5AEA5E0D9F8CC	UI	111
+u3492	Decreases energy consumption for shots by increasing energy conversion efficiency.	NewP5	/85EB92D3458901498D062CAE938F25D8	UI	82
+u3493	Decreases reload speed	NewP5	/B00F82894CED72EBC6CAACA01D2816B8	UI	22
+u3494	Decreases aiming speed	NewP5	/4F525CCB442B1641A5A139A69DA8A07A	UI	22
+u3495	Lowers the cost of a shot by maintaining a lower energy output per unit of charge.	NewP5	/35B974F24D63BAC61E1061A921B699E1	UI	82
+u3496	Lowers the cost of a shot by concentrating and directing energy more efficiently through a jet channel.	NewP5	/478AAB1545B56C330A02EBA149CD935D	UI	103
+u3497	Lowers the cost of an energy shot by optimizing the energy expenditure when shooting, reducing losses in the capacitors.	NewP5	/BE2126D8479102E41B37C188C1DF7F7C	UI	120
+u3498	Decreases damage done to weak points	NewP5	/1EEA279E4AD8BCA849570AA6B0260E76	UI	36
+u3499	Energy for powerful blows accumulates faster	NewP5	/01A2427B46E5C3D1BFB7B89687EC0DCB	UI	44
+u3500	The decreased weight increases the weapon's attack speed.	NewP5	/AA6D13B8495381A39A8218A239F1B9D6	UI	57
+u3501	Decreases recoil while aiming down sights.	NewP5	/0FFB1BEF48D4B23D5A160E89966A897E	UI	42
+u3502	Decreased Consumption	NewP5	/191DB3C4458AB6C680E7E29E1EFC2B77	UI	21
+u3503	Decreases damage taken	NewP5	/6A4E18644FDD90443427B8BB86A6BD45	UI	22
+u3504	Decreases shot cost	NewP5	/03C996E143E4503CAD0422A85334E7D7	UI	19
+u3505	Facility 3826's universal transport robot loader. It replaced the Pelican loader and became the foundation of the inter- and intra-complex logistics system of the Facility. Standardized clamps and grippers allow the Burlak to interact with any of the Facility's products, lifting containers and transport capsules, or securing itself the cargo compartments of the Maglev high-speed Vortex trains.	NewP5	/0699E6B14870681885FC97A2112F287D	UI	396
+u3506	A unique treatment of the blade using neuromyomers allows for a significant increase in damage when under the influence of an active biofield at full Health.	NewP5	/2B2841F845156155933B18B710822F21	UI	157
+u3507	The unique microstructural conversion increases the angular velocity of the flying blades, greatly increasing the damage they inflict.	NewP5	/ECF2026C46E9F398423E21BD469353AB	UI	134
+u3508	A unique neuropolymeric component. Briefly increases the body's overall reflexes when taking damage, temporarily boosting the strength of your blows.	NewP5	/341A2CE849252EADD464CB820FA42E32	UI	149
+u3509	A unique experimental neuropolymeric component. Recycles the red blood cells lost to bleeding into ATP and directs it into the upper arm muscles, significantly increasing the damage dealt in the critical state.	NewP5	/11A5539247393273A4DFB7A08B533270	UI	210
+u3510	A unique experimental module that deals increasing damage with every subsequent unanswered blow. The bonus is reset when you take damage.	NewP5	/FC87C14E47F3C094ADBE48900CCE5F19	UI	137
+u3511	Compensates for recoil.	NewP5	/B66B738F410E4579A600F283D7933E4C	UI	23
+u3512	Controls	NewP5	/9D34F3C646A8BD1CC67BB9BEE058F35B	UI	8
+u3513	Camera Controls	NewP5	/5AB9E208466FFD9BA09E2A818F644A93	UI	15
+u3514	Engine room security door control	NewP5	/82175B28461258A8F0B2AD98CBD410F2	UI	33
+u3515	Inventory management	NewP5	/EC3DB0C8407CA2E5A3010FAD11658E25	UI	20
+u3516	Simplifies aiming	NewP5	/F7CD61A1439A88C704989ABBFE11BAB4	UI	17
+u3517	A simplified mounting system allows you to change cartridges much faster.	NewP5	/0AE35B0849870BA57DBBD4BFAAEFDE26	UI	73
+u3518	Detail level for volumetric fog	NewP5	/3871B9BA4CB9C44CAC2E49BF3ABDDC70	UI	31
+u3519	Huge, ugly and deadly, Neptune brings fear into the atomic hearts of your enemies.	NewP5	/5FD9298141275D676D18848C93585A9B	UI	82
+u3520	Energy-vampire damage redirects energy from the target's polymer battery to the suit's storage.	NewP5	/5D72B8C9475F4DBDC5B1539547D92DFA	UI	95
+u3521	Increased damage to enemies when P-3 has full health	NewP5	/A52DCC5F439D14C858FB0E94AA2111F3	UI	52
+u3522	Reinforced extension	NewP5	/AAFE0E7B48EF4997D7682DBB39CC09DE	UI	20
+u3523	Enhanced freezing	NewP5	/1113AE604BA9B285681471BAC80DB2F9	UI	17
+u3524	ENHANCED FINIAL	NewP5	/BA2957BC4B746CDF6C6F12B2370F71C5	UI	15
+u3525	The destructive modulation-enhanced discharges destabilize the target's molecular structure, further decreasing its integrity with every hit.	NewP5	/062840FC400D60E016F05880196F29BA	UI	141
+u3526	Reinforced marching engine	NewP5	/0A7DEBED4A384B1B9CC96A8FB41628D8	UI	26
+u3527	Amplified Modulator	NewP5	/7205DF23464ADB71D02F73BFF9A76951	UI	19
+u3528	Increases the intensity of the discharge. Increases damage to robots.	NewP5	/E44DD8C74187A2D69F76F48CB3759339	UI	69
+u3529	CYCLE AMPLIFIER	NewP5	/8CD63DF2497F243244230DAF6B6D1144	UI	15
+u3530	The swing amplifier allows you to knock enemies off their feet after half a swing.	NewP5	/779B1E2249C9D7864AF6048C4ED51848	UI	82
+u3531	Increases speed of targeting	NewP5	/5EE3A7554B93C49279EC9C82B7890992	UI	28
+u3532	Forced Fall Acceleration	NewP5	/0B01B3D74509DD1957982EB30657F58E	UI	24
+u3533	The acceleration of plasma fusion rate made it possible to increase the number of shock units in the composition of the charge.	NewP5	/E7A7DC734F5A4F6FF24963A45481910D	UI	127
+u3534	BALLISTICS ACCELERATOR	NewP5	/3649365742319B941DCA2CA754D377A8	UI	22
+u3535	RECHARGE ACCELERATOR	NewP5	/B12673A64048327BF177EC8257A731ED	UI	20
+u3536	REFLEX ACCELERATOR	NewP5	/DA7F78A74D8921C383545183C8B0946A	UI	18
+u3537	Increases speed of attacks after killing an enemy	NewP5	/7A435A434F057FB3AD3240951278F8D6	UI	49
+u3538	Increases speed of cartridge slot setup	NewP5	/FEDC93DC40D66694FF84D2817D02ED46	UI	39
+u3539	Successful combat robot trials.	NewP5	/C90D49484707AA8373993C8F3D954A04	UI	31
+u3540	Successful trials of robot control via polymeric connection and Hawk trigger the launch of Kollektiv 1.0.	NewP5	/5280836349D269CAC4FE8188E1CB84D4	UI	105
+u3541	Shaders are being installed to optimize performance	NewP5	/8206798041A4C7BC24E4FDAC585C9DAF	UI	51
+u3542	Installing graphite conductors in manipulators saves a small amount of energy.	NewP5	/AA4066624E97E50AA18FD889FAAC11B6	UI	78
+u3543	Installing an additional circuit to increase exposure increases the range of the energy absorption beam.	NewP5	/01724A2F4333D9F94564538B1DD490AF	UI	104
+u3544	Installing an additional modulator raises the maximum rate of fire above the permissible limit.	NewP5	/A2CD59B04D5DC8925A431FA1A900426B	UI	95
+u3545	Installing an additional expansive converter segment causes buckshot to tumble when hitting soft tissue. Additionally increases damage to organic targets.	NewP5	/24F80C0C41C295DBAF825E927BF41F3D	UI	154
+u3546	Cartridge installation	NewP5	/4DAAD24849DA2DD7C66785ABAB39EC44	UI	22
+u3547	The installation of a cartridge module allows for the application of a thin layer of special chemical polymer to the weapon's blade, giving it additional properties when it comes in contact with the enemy.	NewP5	/0BF67A0F45C6D8C1478242B7F63DC1FD	UI	205
+u3548	The installation of a cartridge module allows for the application of a thin layer of special chemical polymer to the bullet as it passes through the barrel, giving it additional properties when it comes in contact with the enemy.	NewP5	/687C56F64A246FDE8BC039881B371983	UI	229
+u3549	Polymeric printer installation	NewP5	/FA13900B4FBA270A313B82B5B7A74A9C	UI	30
+u3550	Installing an improved induction loop increases the effect an electromagnetic pulse has on a target.	NewP5	/F1078FA548082C616E0AA2A887FA683C	UI	100
+u3551	Shader installation is in progress. If you start playing now, it may cause noticeable drops in performance.	NewP5	/D9B9DAAB4C6AD99F54F884A82A447B4A	UI	107
+u3552	Environmental Resistance	NewP5	/C8B38B6E4983E68E08318C8E11A02417	UI	24
+u3553	Cliff of Perseverance	NewP5	/21C0108C4DBF61506F9DDD95B9BA3105	UI	21
+u3554	Morning Exercise	NewP5	/356BDE8F49489C92879435A3628E1759	UI	16
+u3555	Extended Magazine	NewP5	/5AEB29344B8AAF908381ADA87B790CB4	UI	17
+u3556	Increases attack speed.	NewP5	/0B1EF9F64461A5F99E2AD5BF983F0EFA	UI	23
+u3557	Increases damage by using excess powder gases to increase the velocity of the shot and, consequently, the damage.	NewP5	/83F998EA41A5F42361471CA1F4748293	UI	113
+u3558	Increases damage to organic targets.	NewP5	/FE9009354B1AA72C9518C389967A3237	UI	36
+u3559	Learn continually. Thereʼs always "one more thing" to learn.	NewP5	/CA2CFFF44689E0EB1F79338477EA51B9	UI	60
+u3560	Vulnerabilities	NewP5	/9FDCB43A4FFDF0478446CF899140DE0F	UI	15
+u3561	PLANT 01	NewP5	/E6A008884E7B288CF4D310B4D43DF33D	UI	8
+u3562	PLANT 02	NewP5	/570E556D4C7CEF3B01F3B89DE9EAD25D	UI	8
+u3563	Plant	NewP5	/9D76F8664D41CF78614805BE5FBB3750	UI	5
+u3564	Faina Ranevskaya	NewP5	/82D0F55046CFF5E9FA61BCBEE1CAB191	UI	16
+u3565	Nazi Germany begins to seize territories and engage in military action in Europe.	NewP5	/43529E9044A4FAF59680928F62691F5C	UI	81
+u3566	Feofanovich	NewP5	/F178E709497635B3CCFCA08A2DEF3F82	UI	11
+u3567	Filatova	NewP5	/1462E2274B246970A37301B31BD16CD3	UI	8
+u3568	Final	NewP5	/27545E4C44D7960D25B56FA7F93E9722	UI	5
+u3569	Triton Complex Foyer	NewP5	/E9A4EB604FB93714215C9F8C5AA5A692	UI	20
+u3570	Focuses a magnetic vortex within the temporal bubble into enemies' vulnerable areas to significantly increase the incoming damage.	NewP5	/8181159B4C25657E79FD63AC77FF9EE1	UI	130
+u3571	Focuses charge energy, significantly increasing kinetic energy or explosive power when firing.	NewP5	/22262F2C44E10B2171F024BCC521D82E	UI	94
+u3572	Photon Sink	NewP5	/CC9BEC4A4D9DB46758BCF38A58B01AC9	UI	11
+u3573	Francois de La Rochefoucauld	NewP5	/4C25CE6F4FEFAA91B025A6B45ED36F9E	UI	28
+u3574	Functions are temporarily unavailable	NewP5	/AC8D52DA4D2D5190090878866977F46C	UI	37
+u3575	Functional medical injector	NewP5	/AA54CCEE4D396512AA92C3AB5588CAC6	UI	27
+u3576	Furman	NewP5	/27594F784DBEF6BB77CA1097FE16DEE7	UI	6
+u3577	Fyodor	NewP5	/B7C8916D4904533C3E794E97762E2A6F	UI	6
+u3578	Fyodor Korolyov	NewP5	/5D041AD34774DB99BD71DC92C6F7028F	UI	15
+u3579	Fyodor Dostoyevsky	NewP5	/42DCE429484B3FB153B53FBD885F6967	UI	18
+u3580	CHEMISTRY	NewP5	/7425C6404C2F423B0C62B49A09E2E3A6	UI	9
+u3581	GREASER	NewP5	/9F42F3CB48B45D394231D19E7D9C8D20	UI	7
+u3582	SURGEON	NewP5	/43AB9D194243695D085BBD971F171F07	UI	7
+u3583	CHAR-les reveals himself and confesses that he is actually Chariton Zakharov, whose consciousness had been placed in a neuropolymer and was in Agent P-3's glove.	NewP5	/05318AB3453ACD4B26E397815A513181	UI	161
+u3584	Hack	NewP5	/2023218344BDC0932FBC83A8F4952E67	UI	4
+u3585	Chariton	NewP5	/80E4F4784FFD6389DDA068987A970A26	UI	8
+u3586	Chariton Zakharov	NewP5	/4483FB6540B54A899C15B5BBFA858F3F	UI	17
+u3587	Useless bric-a-brac that nevertheless can be repurposed for crafting.	NewP5	/2932B4ED4C2E5D96ECFD508D97013216	UI	69
+u3588	Khodyukova	NewP5	/C33BB0FE4BE61E9E6D3943A3E8499F39	UI	10
+u3589	Cold synthesis will start the hottest heart of our science!	NewP5	/451AA8994038171CE5B6BB92D5366E7E	UI	59
+u3590	Even though your eyes are protected with Polymer lenses, I still suggest you give them a break every now and then. Don't spend too much time staring at a terminal screen — if you're catching my drift, Comrade Major.	NewP5	/6F59D6DE40D6E63DDF51C7BD8CD3EA69	UI	215
+u3591	Although human life is priceless, we always act as if something had an even greater price than life.	NewP5	/A8D1098C4DF362018F7F1680B469B8BB	UI	100
+u3592	Artistic Director	NewP5	/44BEB176476F2670A3E4F0905113A3B9	UI	17
+u3593	DIGITAL ART BOOK	NewP5	/5BC63858417637805CEF51878A627582	UI	16
+u3594	CPSU Central Committee	NewP5	/7064A5C34D17F63316D1AEB768827829	UI	22
+u3595	Yellow. Empty.	NewP5	/ECB6858E4EA47DD10011C195766BCA93	UI	14
+u3596	Green. Empty.	NewP5	/E96858AF436EB1F92E79AEA8EAB92262	UI	13
+u3597	Red. Empty.	NewP5	/5ACA3FA64424AAD3CCA6B793E83DCC62	UI	11
+u3598	Blue. Empty.	NewP5	/70C4FD06495D52F473433D8BBDAAB50F	UI	12
+u3599	A target hit by the roundhouse attack twice receives massive damage.	NewP5	/6D5E9DE649DC0612D593B2A05C4836E4	UI	68
+u3600	Destroying a Frozen target shatters it into icy splinters that deal damage to nearby enemies	NewP5	/65AD9BEC40E7C8E5C9AF11A4E0AF72EC	UI	92
+u3601	Research Center	NewP5	/0A5D19C44DA3F5CC39FB0ABE869D7E86	UI	15
+u3602	Ichthyology Center	NewP5	/397EC19A44DF2BEFE7C644BF3917E023	UI	18
+u3603	Air Purification Center	NewP5	/491CE7124733F568B20EC8A7260D3E7C	UI	23
+u3604	Recycling Center	NewP5	/17322CAB4CD8B38CE1F2D3B8D898FD35	UI	16
+u3605	Extended Topology	NewP5	/4BB6FB474AD756CB49FC9F82939E4467	UI	17
+u3606	Chain Lightning can hit one additional target.	NewP5	/60B29DFF4456050827FC2184216585B9	UI	46
+u3607	Chain reaction	NewP5	/58B7F4D14DA965D530A7548D30AB34CC	UI	14
+u3608	BLUEPRINT: KALASH ROUNDS	NewP5	/D194EF5B45BE9F1DD221358F2C7F184E	UI	24
+u3609	BLUEPRINT: SNOWBALL—AUGER	NewP5	/8383EAC14BCF4AC481A8EC9F76336F5A	UI	25
+u3610	BLUEPRINT: BINGUN	NewP5	/4B56536E455F5063D65E9EB3D1DF66F3	UI	17
+u3611	BLUEPRINT: LUMBERJACK	NewP5	/85571B4141C4551F8A75F2A1E1E91933	UI	21
+u3612	BLUEPRINT: SHOTGUN	NewP5	/C6A5FA3C42B5C9EC3F718FBC1E37157F	UI	18
+u3613	BLUEPRINT: CAROUSEL	NewP5	/59A756A54FB9AB5DA750159A09F3BFDE	UI	19
+u3614	BLUEPRINT: ANCHOVY	NewP5	/589ACA8E4B7AD80C5C6989805131CC2F	UI	18
+u3615	BLUEPRINT: Frost cartridge	NewP5	/604D43754B44994EE4425E883F073143	UI	26
+u3616	BLUEPRINT: FIRE CARTRIDGE	NewP5	/75E0E1BB4ADDDE376B93418F86DF37CB	UI	25
+u3617	BLUEPRINT: LOCKPICK	NewP5	/D0F0BF6846EFD964ACF08A82C7E4A582	UI	19
+u3618	BLUEPRINT: MACHINE GUN AMMO	NewP5	/B3A86248438A90072C7C1C9A50092362	UI	27
+u3619	BLUEPRINT: SECATEUR	NewP5	/D85ABD0146A4005F0A5ADF85FA3227BC	UI	19
+u3620	BLUEPRINT: GREASER	NewP5	/5352C70C4819AF29A1AB6481BDE5B5C3	UI	18
+u3621	BLUEPRINT: SURGEON	NewP5	/8CA60DF14F3826E3E12726B4E9996443	UI	18
+u3622	BLUEPRINT: ELECTRIC CARTRIDGE	NewP5	/B25362CD446282AA46AFF5ABA54C1752	UI	29
+u3623	READ	NewP5	/9C95E09D4D47259956199FAAFA845AD3	UI	4
+u3624	THE BRAVE NEW WORLD	NewP5	/29F150FD4D0076DB3A51DDBF1D6C98F7	UI	19

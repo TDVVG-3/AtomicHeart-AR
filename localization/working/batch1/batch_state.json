@@ -1,0 +1,19 @@
+﻿{
+    "generated_utc":  "2026-10-18T19:35:43.0761055Z",
+    "row_cutoff":  6905,
+    "rows":  6905,
+    "unique_total":  4562,
+    "unique_done":  68,
+    "unique_todo":  4494,
+    "unique_target_plan":  4562,
+    "chunks":  15,
+    "chunk_size":  300,
+    "scopes":  {
+                   "Academy_Dialogues":  282,
+                   "PearTerminals":  545,
+                   "Misc":  21,
+                   "Chelomey_Dialogues":  460,
+                   "NewP5":  5597
+               },
+    "english_chars_todo":  340101
+}

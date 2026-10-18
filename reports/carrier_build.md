@@ -1,8 +1,8 @@
 # Carrier pak build report
 
-Generated: 2026-10-18 22:23:07
-Variant: **p4**  |  pak: `C:\AtomicHeart-AR\build\package\zzz_atomicheart-ar_carrier_koKR_p4_P.pak`
-sha256: `aa894b4468888ac22a3fd3e58619d4cdb70ae24a895c35f286b002b2f4132f22`  |  size: 3614845 bytes
+Generated: 2026-10-18 23:33:43
+Variant: **p5**  |  pak: `C:\AtomicHeart-AR\build\package\zzz_atomicheart-ar_carrier_koKR_p5_P.pak`
+sha256: `087f6b640a0f649d605148316a80cb3f51baf94994b4c317c5bd0e910f025a9f`  |  size: 3775007 bytes
 
 Fill policy: Arabic (master non-empty) > English (en-US same key) > keep Korean.
 
@@ -10,11 +10,11 @@ Fill policy: Arabic (master non-empty) > English (en-US same key) > keep Korean.
 |---|---|
 | scopes covered | 35 |
 | total ko-KR keys | 27618 |
-| Arabic rows | 125 |
-| english-filled keys | 27493 |
+| Arabic rows | 6564 |
+| english-filled keys | 21054 |
 | kept Korean (no en-US text) | 0 |
-| round-trip exact | 26128 |
-| round-trip newline-normalized only | 1490 |
+| round-trip exact | 26421 |
+| round-trip newline-normalized only | 1197 |
 | round-trip failures | 0 |
 | unpack byte-identical entries | 35 of 35 |
 
@@ -22,8 +22,8 @@ Fill policy: Arabic (master non-empty) > English (en-US same key) > keep Korean.
 
 | scope | ko keys | Arabic | English | kept Korean | exact | newline-only | fail |
 |---|---|---|---|---|---|---|---|
-| Academy_Dialogues | 282 | 1 | 281 | 0 | 282 | 0 | 0 |
-| Chelomey_Dialogues | 1204 | 46 | 1158 | 0 | 1198 | 6 | 0 |
+| Academy_Dialogues | 282 | 259 | 23 | 0 | 282 | 0 | 0 |
+| Chelomey_Dialogues | 1204 | 382 | 822 | 0 | 1198 | 6 | 0 |
 | Chelomey_dlc3 | 776 | 0 | 776 | 0 | 774 | 2 | 0 |
 | ChelomeyFinal_Dialogues | 214 | 0 | 214 | 0 | 211 | 3 | 0 |
 | CrystalComplex_dlc4 | 1219 | 0 | 1219 | 0 | 1219 | 0 | 0 |
@@ -38,12 +38,12 @@ Fill policy: Arabic (master non-empty) > English (en-US same key) > keep Korean.
 | Mails_Shebetars_Tech_dlc3 | 579 | 0 | 579 | 0 | 482 | 97 | 0 |
 | Marshes_dlc1 | 156 | 0 | 156 | 0 | 156 | 0 | 0 |
 | Mendeleev_dlc1 | 411 | 0 | 411 | 0 | 411 | 0 | 0 |
-| Misc | 21 | 0 | 21 | 0 | 21 | 0 | 0 |
-| NewP5 | 5597 | 41 | 5556 | 0 | 5541 | 56 | 0 |
+| Misc | 21 | 19 | 2 | 0 | 21 | 0 | 0 |
+| NewP5 | 5597 | 5332 | 265 | 0 | 5597 | 0 | 0 |
 | NTD | 1429 | 0 | 1429 | 0 | 1020 | 409 | 0 |
 | OpenWorldVDNKh_Dialogues | 443 | 3 | 440 | 0 | 443 | 0 | 0 |
 | Pavlov_Dialogues | 520 | 3 | 517 | 0 | 520 | 0 | 0 |
-| PearTerminals | 545 | 4 | 541 | 0 | 308 | 237 | 0 |
+| PearTerminals | 545 | 539 | 6 | 0 | 545 | 0 | 0 |
 | Phasatron_dlc4 | 489 | 0 | 489 | 0 | 489 | 0 | 0 |
 | Polygon_Dialogues | 199 | 1 | 198 | 0 | 198 | 1 | 0 |
 | Sakhalin_dlc3 | 848 | 0 | 848 | 0 | 811 | 37 | 0 |

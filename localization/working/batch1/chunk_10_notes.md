@@ -1,0 +1,28 @@
+# chunk_10 notes - uncertain choices
+
+- Volan -> `VOLAN` (kept in Latin) — because the approved TM row `The <h>VOLAN</> is an auxiliary interface...` (u0150) keeps `VOLAN` in Latin and there is no glossary entry; DANDELION and HAWK are treated the same way, so `SDC-2 Volan` -> `SDC-2 VOLAN`, `Volan's data` -> `بيانات VOLAN`.
+- Windbender / Windcatcher -> `ويندبندر` / `ويندكاتشر` — because these are made-up power-generator device names with no glossary entry; transliteration keeps a stable identity instead of inventing a descriptive name.
+- Pchela -> `بشيلا` — because the glossary has no entry and chunk_05 (approved) regularised the same Russian robot name as `بشيلا`.
+- Polymeric Overload -> `فرط الحمل البوليمري` — because a literal `التحميل البوليمري الزائد` (25 chars) trips the length warning on an 18-char label; `فرط الحمل` is the established short Arabic form for "overload".
+- finial -> `الطرف الزخرفي` — because chunk_04 (approved) renders `Finial` / `Basic Finial` with this form and it must stay consistent between weapon parts.
+- Stock -> `الأخمص` — because chunk_04 (approved) uses `الأخمص` for the weapon stock (`A basic wooden stock.`).
+- Grip / Handle -> `المقبض` / `القبضة` — because chunk_04/05 use `المقبض` for "Grip" (`Grip Center`, `Grip Head`); "Handle" is a separate part in the same list, so a distinct short term was needed.
+- magazine (swap magazines, SECATEUR—MAGAZINE) -> `المخزن` — because the glossary only fixes `Cartridge` = `خرطوشة`; the ammo magazine is a different part and `المخزن` is the neutral Arabic firearm term.
+- Receiver -> `المستقبِل` — because the English is ambiguous between a firearm receiver and a signal receiver, and the string sits in an uncontextualised parts list.
+- Robogirl -> `الفتاة الروبوت` — because the robot nickname has no glossary entry; a descriptive Arabic compound reads better than a transliteration and fits the 8-char label limit.
+- Reufe -> `روفه` — provisional transliteration only (short surname, no glossary entry).
+- Koschevna / Koschey -> `كوشتشيفنا` / `كوشتشي` — provisional transliterations of the folklore nickname and its source character.
+- Khodyukova -> `خوديوكوفا` — provisional transliteration (no glossary entry); `Nonna Khodyukova` -> `نونا خوديوكوفا`.
+- Gireyev -> `غيرييف`, Nyukhov -> `نيوخوف`, Dyagterev -> `دياغتيريف`, Raguzin -> `راغوزين`, Privalov -> `بريفالوف`, Robertovich -> `روبرتوفيتش`, Larisa -> `لاريسا` — provisional transliterations, matching the glossary conventions for Russian names (г = غ, ж = ج).
+- Radeonovich -> `راديونوفيتش` — follows the glossary entry `Chariton Radeonovich` -> `خاريتون راديونوفيتش`.
+- Ryzhova -> `ريجوفا` — matches the approved chunk_05/04 rendering of the same ballerina.
+- Pesticide Workshop / Cold Workshop -> `ورشة المبيدات` / `الورشة الباردة` — because only `Algae Workshop` and `Hot Workshop` are in the glossary; the other two workshops (chunk_06) get the same `ورشة/الورشة + modifier` pattern.
+- Seed Bank -> `بنك البذور`, lighthouse -> `المنارة` — no glossary entries; descriptive renderings used consistently.
+- Torrent modulation -> `تعديل التدفق` — because "torrent" has no established Arabic technical sense here; kept neutral and short for a menu label.
+- Chain Lighting -> `البرق المتسلسل` — the English has a typo ("Lighting"); translated as "Chain Lightning" per the weapon-upgrade meaning.
+- Splitting blow -> `الضربة الشاطبة`; Full Contact -> `التماس الكامل`; Tar and Feather -> `القار والريش`; Peaceful Atom -> `الذرة السلمية`; Worker and Kolkhoz Woman -> `العامل والمرأة الكولخوزية` — no glossary entries; rendered as established Arabic names/idioms rather than transliterations.
+- Relay -> `المرحّل` and Power Cell -> `خلية طاقة` — used consistently across the chunk to keep the HAWK/security-relay and recirculation-chamber parts readable.
+- BEA-D, P-3, HAWK, PEC-4, RAF-9, ESRB, WTG, ATP, DANDELION kept in Latin — model codes, characters and systems that the glossary or the TM marks as preserved.
+- MADE IN THE USSR -> `صُنع في الاتحاد السوفييتي` — the idiomatic full phrase is 2 characters over the length-warning threshold for a 16-char label; accepted in favour of the natural stamp text (`صناعة سوفييتية` is the shorter alternative).
+- u2822 (USSR humanitarian-aid resolution) — the trailing space of the English fragment is preserved in the Arabic cell.
+- Objective strings (`Get...`, `Bring...`, `Survive...`, `Proceed...`) -> Arabic verbal nouns (`الحصول على...`, `إحضار...`, `النجاة من...`, `التوجّه إلى...`) — because the approved TM uses that pattern (`Detain Petrov in the Theater` -> `احتجاز بيتروف في المسرح`).

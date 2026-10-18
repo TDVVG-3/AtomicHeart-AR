@@ -1,0 +1,33 @@
+# chunk_07 notes — uncertain choices
+
+- FOX -> `الثعلب`, CRICKET -> `الجدجد` (weapons). The project translates English-language weapon nicknames (glossary: Swede -> السويدي, Snowball -> كرة الثلج, Needle -> الإبرة, Whip -> السوط) while Russian ones are transliterated (Kalash -> كلاش, Pashtet -> باشتيت), so the meaning was kept instead of a transliteration. Note: chunk_05 u1240 left `Fox` in Latin inside the sentence "PM and Fox unlocked" -> `PM وFox مفتوحان`; reviewer may want to align these two rows.
+- Килька (Russian source) -> `الأنشوفة` — because chunk_06 has the same weapon under its English name `ANCHOVY` (u1796), and both rows must end up with the same Arabic.
+- KS-23 (u1830) copied byte-exact: it is a model code, and `КS-23` (u1832, u1835) keeps its Cyrillic `К` (U+041A), not a Latin `K`.
+- DUMMY Х / DUMMY Y (u2042, u2043) copied byte-exact — dev/test placeholder labels; u2042 keeps the Cyrillic `Х` (U+0425), u2043 keeps Latin `Y`.
+- Tanks/canisters u1812 `TRIANGLE MOON CANISTER` -> `حاوية القمر المثلّثة` — because the sibling rows (chunk_06 u1808-u1811 SQUARE/RING/X/CIRCLE MOON CANISTER) all follow the "canister + moon + engraved shape" pattern; u1895-u1899 use the same shape words (مربّع، دائرة، مثلّث، حلقة).
+- LUC-1 Laser/Rocket Owl -> `LUC-1 البومة الليزرية/الصاروخية`, LUC-1 OWL -> `LUC-1 البومة`; MFU-68/CP Duck -> `MFU-68/CP البطّة` — because chunk_03 u0802 translated `Owl` as `البومة` and its description keeps `LUC-1` in Latin, so the model code stays Latin and the nickname is translated.
+- Dandelion Security CCTV Camera -> `كاميرا مراقبة الأمن DANDELION` — because the approved TM row (chunk_01 series) keeps the product name `DANDELION` in Latin inside its description.
+- KS-23—DAMPER-POLYMERIC STOCK -> `KS-23—أخمص مخمّد بوليمري` — the hyphen inside `DAMPER-POLYMERIC` is realised as Arabic word order, exactly as the already accepted row chunk_05 u1510 `Damper-polymeric stock` -> `أخمص مخمّد بوليمري`; the em dash itself is preserved.
+- KS-23—EXPANSIVE CONVERTER -> `KS-23—محوّل تمدّدي` — "expansive" has no fixed Arabic term here; `تمدّدي` keeps the technical register and matches `محوّل` (converter -> محوّل, chunk_05 u1254).
+- Vector controller -> `متحكّم المتجه` — deliberately different from chunk_05 u1254 `Vector transducer` -> `محوّل المتجه`, since the English nouns differ.
+- Cafeteria -> `المقصف` (locations `مجمّع مندليف: المقصف`, `ممرّات المقصف`) — "cafeteria" is rendered with the MSA word rather than the transliteration `الكافيتيريا`, following the project's preference for translated common nouns; the row `Cafeteria Manager` lives in chunk_06 and should be aligned.
+- Cable Car -> `التلفريك` (u1942, u1943) — no established project form yet; the common Arabic loanword was chosen for UI fit.
+- Hangar -> `الحظيرة` (u1911, u1915) — short label kept for UI length instead of `مستودع الطائرات`.
+- Flights of Stairs -> `أدراج السلالم` (u1930), In-Patient Facility Stairs -> `سلالم قسم المرضى المقيمين` (u1952) — "in-patient facility" has no glossary form; the descriptive rendering was preferred to a vague `الدرج`.
+- Interchange (Vavilov tunnels) -> `التبادل` (u1941) — could also be `الوصلة`/`المحطة التبادلية`; kept terse.
+- ULTRA (u1864) -> `فائق` — a graphics preset, kept in line with the seed TM (Balanced -> متوازن, Quality -> الجودة); alternative was copying `ULTRA` Latin.
+- LORE MENU -> `قائمة المعلومات` — "lore" has no clean Arabic UI word; `المعلومات` avoids both the literal `الحكايات` and a clash with the glossary `Archive` -> الأرشيف.
+- Shop -> `متجر`, Store -> `دكّان` (u2055, u2056) — the two adjacent labels are near-synonyms in English; two different Arabic words were used in case both appear on the same screen. `Store` here is not the inventory (that is `المخزن`, used for MAGAZINE and EXPANDED STORAGE).
+- Full House (u2022) -> `البيت الكامل` — a dossier/letter title with no context; the poker idiom was translated rather than transliterated.
+- Looter (u2081) -> `النهّاب` — a role/nickname; the pejorative register was kept.
+- BLOOD COURIER (u1828) -> `ساعي الدم` — no context (robot or unit name); the literal translation was chosen over a transliteration.
+- Cryo Sleep -> `سبات متجمّد` (u1979), Icy Destruction -> `الدمار الجليدي` (u2014), Drastic Measure -> `إجراء جذري` (u1973), It's Complicated -> `الأمر معقّد` (u1909) — nightmare/letter titles with no glossary form.
+- Rooster sledgehammer -> `مطرقة الديك` (u1988), A box of deadly items -> `صندوق من العناصر الفتّاكة` (u1967) — museum/loot labels with no context.
+- MED-6 Doc -> `دكتور MED-6` (u2045) — model code kept Latin, `Doc` rendered with the glossary `Doctor` form `دكتور`.
+- PR-3 in RECONFIGURED PR-3 RESISTORS -> `مقاومات PR-3 المعاد ضبطها` (u2037) — `PR-3` kept Latin; it is read as a part code, not the character `P-3`.
+- SPOKE BOOST -> `تعزيز الأضلاع` (u2034) — "spoke" (of the saw wheel) has no settled Arabic term; `الأضلاع` was used for UI length and readability.
+- Klimovs -> `آل كليموف` (u1890) — familial plural has no Arabic single-word equivalent.
+- Altupolis (u1848) -> `ألتوبوليس` — provisional transliteration, not yet in the glossary.
+- Karamelkin, Kuzmich, Krayeva, Meglina, Makhnyov, Lebedyansky, Lebedin, Malakhova, Lorievich, Klavdia, Konstantinovna, Lizova, Larisa, Kristina, Marina, Maria, Lev, Karamela-related names — provisional transliterations (كاراميلكين، كوزميتش، كراييفا، ميغلينا، ماخنيوف، ليبيديانسكي، ليبيدين، مالاخوفا، لوريفيتش، كلافديا، كونستانتينوفنا) pending glossary additions.
+- Carl Jung -> `كارل يونغ`, Leo Tolstoy -> `ليو تولستوي`, Lewis Carroll -> `لويس كارول`, Mark Twain -> `مارك توين`, Marty McFly -> `مارتي مكفلاي`, Mahatma Gandhi -> `المهاتما غاندي`, Konstantin Tsiolkovsky -> `كونستانتين تسيولكوفسكي` — well-known names rendered with their standard Arabic forms.
+- Language-selection/punctuation rows: Arabic commas `،` and the Arabic question mark `؟` used inside Arabic sentences (u2020, u2067); ASCII colon kept inside location labels, matching chunk_05 (`المتحف: البهو`, `مجمّع مندليف: فندق ليوهكايا`).
