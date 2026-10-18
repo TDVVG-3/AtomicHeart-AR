@@ -292,3 +292,42 @@ Consequence:
   this still changes the Latin typeface LOOK during tests; acceptable only for
   prototyping).
 - Production (Phase 8): implement composite fallback; verify Latin look unchanged.
+
+---
+
+## DEC-015 - Options language list: engine-side finding and strategy decision
+
+Date: 2026-10-18
+Status: ACTIVE (primary route locked; any pak install still needs user approval)
+
+Evidence (cycle 004, docs/LANGUAGE_SELECTION.md):
+The Options > Language list is NOT generated from LocMeta staging. It is a hardcoded
+13-record list inside the cooked DataAsset
+AtomicHeart/Content/Core/Data/Settings/DA_Audio.uasset (+.uexp), consumed by the native
+AHGameSettingsSubsystem via +ConfigurableSettings in the cooked DefaultGame.ini.
+Staging a culture in LocMeta (cycle 003/004 test-1 setup) therefore can never add a
+menu entry - this explains Test-1 outcome B with certainty of mechanism.
+Both DA_Audio and DefaultGame.ini are ordinary pak contents (pakchunk0) -> overridable
+from ~mods with no EXE change (override mechanism itself already proven by the font pak).
+
+Decision (per the user's rule, cycle 004 step 3):
+PRIMARY (strategy a): the list is data-driven and pak-editable -> add Arabic as a real
+14th record: override DA_Audio in the mod pak with an appended record
+(display name "العربية" as UTF-16 FString, engine culture `ar`, audio culture = en-US
+fallback), with length/count/ExportMap surgery and a self-validation parser.
+The frontier culture `ar` keeps the existing locmeta+locres work valid as-is.
+FALLBACK (strategy b, DEC-007 carrier, prepared but NOT chosen): only if the DA_Audio
+override fails validation or the in-game test is blocked. Candidates prepared:
+ko-KR (recommended: officially text-only in retail, VO falls back to en-US, not a
+listed VO language), zh-TW, uk-UA. User approval REQUIRED before any slot is used;
+the user's played language and voice must not be sacrificed anywhere.
+
+Voice invariance (user rule 4c): confirmed with asset evidence. Retail VO exists ONLY
+for en-US and ru-RU (DA_Audio_VoiceBanks); all other slots' audio mapping falls back to
+en-US, so both routes keep the user's English voice intact as long as they do not
+select ru-RU. No separate text/voice selector exists in the assets (single OptionSelect).
+
+Constraints:
+- No install until the user approves the specific candidate (their order, cycle 004 step 5).
+- The DA_Audio patcher must round-trip validate (re-parse the output asset) before any
+  packaging, and the font pak v2 is a separate approval

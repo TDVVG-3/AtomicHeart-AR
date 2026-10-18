@@ -1,165 +1,141 @@
-# Report 003 - Cycle 003 (2026-10-18)
+# Report 004 - Cycle 004 (2026-10-18)
 
-Scope: user's in-game test feedback processing for the Phase 7 prototype v1, per ordered
-steps 1-7. Evidence labels used: PASS/FAIL/PARTIAL/BLOCKED/NOT TESTED/CONFIRMED/LIKELY/
-UNKNOWN only. All work committed locally (no remote exists).
+Input: user Test 1 report (locres-only pak). Outcome B - game boots normally, no Arabic
+option in Options > Language. The user's message left three placeholders unfilled
+(FPS stability, list contents, voice language); I flag them below in the questions to
+the user, they do not change the diagnosis.
 
-## Step 1 - Uninstall on user order: DONE, PASS
+## Step 0 - Standing checks
 
-`scripts/uninstall_mod.ps1` executed. Exact, hash-verified removal of our files only:
+- Spec hash re-verified at cycle start: VERIFIED OK (no restore needed).
+- `git remote -v`: zero remotes (checked before commit, standing rule).
+- Game folder: read-only this cycle (repak list/get operations only; all extracted
+  analysis files live in the project's gitignored analysis area).
 
-- removed: `zzz_atomicheart-ar_font_p1_P.pak`
-- removed: `zzz_atomicheart-ar_locres_p1_P.pak`
-- removed: `atomic-heart-ar-install-manifest.json`
-- `~mods` folder removed (it was empty afterwards)
-- Paks directory final state: **19 files = 19 stock paks only**. Game folder is stock.
-- Nothing else was written to the game folder this cycle.
+## Step 1 - AtomicHeart.log: NOT AVAILABLE (tested negative)
 
-## Step 2 - Diagnosis with evidence
+Order was to read AtomicHeart.log ("the -log option is active"). Searched:
 
-### Log availability: FAIL (no engine log exists) -> new KI-012
+- `%LOCALAPPDATA%\AtomicHeart\Saved\Logs\` - no `AtomicHeart.log`; contains ONLY the
+  `NGX` folder (and its inner file is now GONE - the folder is empty; its content was
+  cleaned up by the latest boot).
+- The game tree - no `.log` files anywhere.
+- Verdict: the `-log` launch option produced NO log file on this build
+  (CONFIRMED by absence after a boot with the option active). KI-012 updated to
+  CONFIRMED-negative: log capture is not viable in this build; do not spend cycles on it.
+- Per-cause verdicts from asset-level evidence instead (see step 2): nothing to report
+  from log lines; NOT AVAILABLE applies to all log-based claims in this cycle.
 
-- `Saved\Logs` exists only under `%LOCALAPPDATA%\AtomicHeart\` and contains ONLY the
-  NGX log (`NGX_2026.10.18-13.55.53_...`, timestamp matches your test session at 13:55).
-- No `AtomicHeart.log`, no crash dumps, no font/locmeta/pak error lines anywhere - the
-  shipping build does not write an engine log in this configuration.
-- No `Saved` folder at all inside the game tree (write-protected install dir).
-- Consequence: log-based confirmation of the hang mechanism is NOT AVAILABLE in this
-  build. Mitigation documented: next test round can optionally add `-log` to the Steam
-  launch options to capture a full engine log.
+## Step 2 - WHY is native `ar` not listed? (the core investigation)
 
-### Per-cause verdicts (setup under test: BOTH paks installed together)
+Root cause found and documented in full in `docs/LANGUAGE_SELECTION.md`:
 
-a. **The font swap (Arabic-only Naskh payloads replacing all 6 UI FontFaces):**
-   - Cause of the blank Latin UI text: **CONFIRMED**.
-     - Render-output evidence: only "2", "!" visible, empty buttons. Decimal digits
-       0-9, space, and a small punctuation set are exactly what Noto Naskh Arabic UI
-       maps (Latin-Basic = 15 codepoints, zero Latin letters). What you saw on screen
-       matches the missing-coverage set 1:1, while localization was left untouched
-       (English culture) - no locres/locmeta involvement needed to explain it.
-   - Cause of the FPS collapse / hang: **LIKELY**.
-     - Mechanism: for every Latin glyph request the engine runs the missing-glyph
-       fallback chain (composite fallback / default engine faces); thousands of
-       failing glyph lookups per frame typically degenerate into a glyph-cache
-       storm/deadlock - a known engine-wide behavior class. However this build writes
-       no log, so the mechanism itself is UNCONFIRMED on this title (KI-012).
+**The Options > Language list is hardcoded inside the cooked DataAsset
+`AtomicHeart/Content/Core/Data/Settings/DA_Audio.uasset` (+`.uexp`).**
 
-b. **The modified `NewP5.locmeta` (ar culture added):** **UNKNOWN** for its actual
-   goal (the language list was never reached), but with a bound from this test: boot
-   progressed past package loading to the main menu WITH the locres/locmeta pak
-   mounted -> the modified content is not a boot-blocker. No hang attribution is
-   possible from this test either way.
+Which file defines it (user's direct question): DA_Audio, a `DA_GameSettingsConfig`
+instance; its LanguageMap OptionSelect carries per-language records. The page source
+list in the cooked `AtomicHeart/Config/DefaultGame.ini` adds it as
+`+ConfigurableSettings=/Game/Core/Data/Settings/DA_Audio.DA_Audio`
+(consumed by the native `AHGameSettingsSubsystem` through `WBP_Options`).
 
-c. **The locres pak (NewP5-ar + Arabic content):** **UNKNOWN** (Arabic never selected).
-   Same boot bound as (b): the pak mount itself did not prevent reaching the menu.
+Evidence:
+1. DA_Audio.uexp string dump shows 13 records verbatim (display name + culture code):
+   en-US, ru-RU, fr-FR, it-IT, de-DE, es-ES, pt-BR, pl-PL, zh-CN (+zh-hans),
+   zh-TW (+zh-hant), ko-KR, ja-JP, uk-UA.
+2. It is NOT derived from LocMeta: `be-BY` is staged (present in locmeta/config) yet
+   NOT listed in the menu. That is why our modified locmeta (+ar) could never add a
+   menu entry - Test-1 outcome B is fully explained by mechanism. Our pak did nothing
+   wrong; locres contents were never even reached.
+3. Standard UE4 tagged-property serialization confirmed by hex layout
+   (int32 length + string + NUL per FString; repeating tag kinds).
+4. No other options-list asset exists across all 19 paks (all indexes searched for
+   language/culture-bearing names; only DA_Audio matches).
 
-### Additional verdict from this test (major positive)
+## Step 3 - Strategy decision (DECISIONS.md: DEC-015)
 
-- **Mod loading pipeline (paks in `~mods`): PASS, CONFIRMED.** The game booted past
-  Steam/Denuvo, loaded our override payloads, and visibly USED them (the glyph
-  starvation is itself proof the engine consumed our font bytes, not stock).
-- **Signature enforcement: not observed in practice.** Upgraded from "LIKELY not
-  enforced" toward observed-absent on this machine/build; not labeled fully
-  CONFIRMED (one boot on one machine is not a proof).
+- The list IS data-driven (a cooked asset + a cooked ini, both ordinary pak files) and
+  it IS editable by a mod pak without EXE changes (override mechanism already proven
+  by our font-pak test). **Per your rule, strategy (a) applies and is logged:** add
+  Arabic as a REAL 14th menu record via a DA_Audio override (display name "العربية"
+  as an in-asset UTF-16 FString, culture `ar`, audio culture = en-US fallback).
+  Our existing locmeta+NewP5-ar.locres work stays valid as-is; the missing piece was
+  always this list entry.
+- Type of work: binary surgery (append one record, bump count, extend the export's
+  SerialSize/SerialOffset), implemented as scripts/patch_language_map.ps1 with a
+  round-trip self-validation parser before packaging. BUILD ONLY until you approve
+  installation (your step 5) - nothing is installed; the game folder is stock
+  (test-1 pak was already removed last cycle and I did not reinstall anything).
 
-## Step 3 - Isolated variants: BUILT (NOT installed)
+## Step 4 - Fallback checks (prepared for DEC-007, not chosen)
 
-Both variants exist independently; the locres-only side needed no rebuild.
+**a. Are text and audio cultures selectable separately? (evidence)**
 
-| Variant | Pak | Contents |
+- The assets show ONE language selector. The LanguageMap entries couple
+  display name + engine culture + Wwise audio culture per record; no separate VO
+  selector exists in DA_Audio/DA_Display/DA_Gameplay, and WBP_Options has no second
+  language widget. Verdict: no separate VO choice exists in the UI (CONFIRMED at asset
+  level; the consuming code is native, so LIKELY overall).
+- HOWEVER the practical outcome is voice-invariant: see (c).
+
+**b. Slot candidates (3, with pros/cons) - approval required, none chosen silently**
+
+IMPORTANT: whichever slot is chosen is only what shows in the menu; the slot's TEXT is
+replaced by our Arabic locres. The user must never need that language as a language.
+
+| Slot (shown in menu as) | Pros | Cons |
 |---|---|---|
-| **Locres-only** | `build/package/zzz_atomicheart-ar_locres_p1_P.pak` | NewP5-ar.locres (25 Arabic strings) + modified NewP5.locmeta (adds `ar` culture). No fonts. |
-| **Font-only v2** | `build/package/zzz_atomicheart-ar_font_p2_plex_P.pak` | The 6 `.ufont` sidecars replaced with IBM Plex Sans Arabic payloads (dual-script; see Step 4). No locres/locmeta. |
-| (reference) v1 font pak | `build/package/zzz_atomicheart-ar_font_p1_P.pak` | REJECTED; never to be installed again. |
+| **ko-KR (Korean)** - recommended | Officially TEXT-ONLY in retail (no Korean VO exists); enumerated in the menu already; rare target need; VO mapping falls back to en-US per DA_Audio_VoiceBanks (no voice change). | Wholesale replacement of Korean text; if Mundfish ever adds KO VO, the slot loses meaning; string-list details differ (menu still shows "Korean"). |
+| **zh-TW (Chinese Traditional)** | Also text-only officially (VO falls back en-US); distinct Wwise alias zh-hant proves the slot is text-shaped by design; well-isolated reading area (mostly unused by the user). | Same replacement-of-language concern; zh display name would remain (cosmetic). |
+| **uk-UA (Ukrainian)** | Fresh localization; VO mapping also en-US fallback; staged in locmeta; plausible the user never plays it. | Ukrainian HAS an official text localization used by UA players - ethically/ethnically sensitive to replace; if the UA VO patch exists in your build, selecting the slot may attempt UA audio banks (unverified). |
 
-### Recommended test order and expectations
+NOT candidates: en-US (your own language), ru-RU (has real Russian VO - would change
+your voice when selected), any slot you actually play, and be-BY (staged but NOT in
+the menu list - could never be selected without the same DA_Audio surgery needed by
+strategy (a), which would defeat the point).
 
-1. **Test 1 - locres-only pak installed.**
-   Expect: normal boot, normal FPS, main menu text 100% normal English (original
-   fonts intact - no font pak). This isolates the locmeta+locres path cleanly.
-   If it passes: open settings/language and screenshot whether an Arabic option
-   exists. If instead the game hangs: (b)+(c) are implicated -> STOP and rethink.
-2. **Test 2 - locres pak + font v2 pak installed together.**
-   Expect: boot, normal FPS, main-menu text READABLE but with a different (Plex)
-   typeface - temporary, prototype-only. Then select Arabic and check menu text,
-   shaping/RTL, then in-game GameTips popups.
-3. If the game still hangs in Test 2: uninstall and we proceed locres-first only;
-   no permanent failure at this point.
+**c. Voice language stays untouched? (evidence)**
 
-## Step 4 - Font fix: DONE (v2), verification PASS
+- DA_Audio_VoiceBanks.uexp: retail voice banks exist ONLY for English (en-US) and
+  Russian (ru-RU). Polish/Italian/French/Chinese/German/Spanish/Japanese/Portuguese
+  records map their audio/subs to `en-US` (verbatim in asset). Wwise media is shared
+  (`WwiseAudio/Windows/`, no per-language folders).
+- Therefore: selecting a non-en/non-ru slot (ko-KR / zh-TW / uk-UA / or our new `ar`
+  record with audio=en-US) leaves the actual VO = whatever the mapping says =
+  English when you play in English. Your voice stays untouched (CONFIRMED at asset
+  level for this build) as long as you do not switch to ru-RU.
 
-Per your order (never replace the original Latin fonts in the final product;
-options a then b):
+## Step 5 - Status of builds (per your order: NOTHING installed)
 
-- Option (a) - add Arabic as a composite-font fallback on the ORIGINAL Font objects:
-  assessed, NOT ATTEMPTED this cycle. It requires editing cooked Font uassets
-  (CompositeFont fallback tables); headless tooling for that does not exist in our
-  current toolchain (UAssetGUI is GUI-only; a custom UAssetAPI patcher is a Phase 8
-  build item). Recorded in DEC-014 as the PRODUCTION path (Phase 8).
-- Option (b) (replacement unavoidable for the prototype): implemented with
-  **IBM Plex Sans Arabic**, which contains BOTH scripts in one family, so Latin stays
-  fully readable during testing:
-  - Downloaded from the official release page
-    `https://github.com/IBM/plex/releases/tag/%40ibm/plex-sans-arabic%401.1.0`
-    (asset ibm-plex-sans-arabic.zip, 3,898,251 bytes).
-  - SHA256: `f03915581aea37d82792c188b08064023a73494d679b8e19f85f5971db714013`
-    (no upstream digest published for this asset; recorded locally per DEC-012 rules).
-  - License: **SIL OFL 1.1**, shipped with the font; copied to
-    `fonts/licenses/IBM-Plex-Sans-Arabic-OFL-1.1.txt`; redistribution permitted.
-  - **Glyph verification BEFORE building (your rule 4): PASS.**
-    Scanner: `reports/font_glyph_coverage_plex.txt` - Latin-Basic **95/95** (every
-    printable ASCII incl. digits and `!`), Latin-Ext 113, Arabic core letters
-    **42/42**, Arabic total 676 including **presentation forms A+B** (shaping data);
-    VERDICT FULL for Regular, Medium and Bold weights.
-  - Weight mapping (face -> payload): BlenderPro-Book -> Regular, BlenderPro-Medium
-    -> Medium, BlenderPro-Bold -> Bold, BrutalType -> Bold, Gotham-BookItalic ->
-    Regular (no italic in family; test-grade), Gotham-Black -> Bold.
-  - Builder: `scripts/build_fontpak_p2_plex.ps1` (hard coverage gate: refuses to
-    pack any payload without a FULL scanner verdict).
-  - Output: `build/package/zzz_atomicheart-ar_font_p2_plex_P.pak` (1,461,408 bytes).
-  - **What v2 still changes:** the Latin typeface LOOK during the prototype
-    (Plex instead of BlenderPro/Gotham/BrutalType). Accepted as test-grade only;
-    the factory faces stay untouched in the game folder, and production requires
-    the option-(a) composite fallback.
+- Game folder: stock (19 paks, no ~mods). The test-1 pak stays available at
+  `build/package/zzz_atomicheart-ar_locres_p1_P.pak` (not installed).
+- Font pak v2 exists, untouched, NOT installed (separate later approval).
+- New build tasks queued (never installed without your approval):
+  1. scripts/patch_language_map.ps1 - DA_Audio override with the 14th `ar` record
+     (build to build/, self-validate re-parse, verify round-trip, no install).
+  2. (only if that fails) carrier-slot locres variant for your approved slot.
 
-## Steps 5-6 - Standing constraints re-affirmed
+## Step 6 - Standing rules
 
-- No EXE/DLL/Steam/Denuvo files touched; nothing written outside `~mods` (the game
-  folder was only read this cycle).
-- No uploads anywhere: `git remote -v` re-verified this cycle -> **zero remotes**;
-  commit `047a063` is local-only. The sole download (IBM Plex zip) is from the
-  official upstream release page with SHA256 recorded - DEC-012-compliant.
+No EXE/DLL changes; game folder untouched this cycle (read-only pak indexing +
+extraction to the project area); nothing uploaded anywhere (`git remote -v` = zero
+remotes verified before commit); spec hash verified at cycle start.
 
-## Step 7 - Documentation updated, all committed
+## Step 7 - Documentation updated and committed
 
-- `DECISIONS.md`: **DEC-014** (v1 rejected with evidence; v2 interim dual-script;
-  composite-fallback as the production/Phase 8 requirement).
-- `KNOWN_ISSUES.md`: **KI-009** updated (CONFIRMED mono-script failure + mitigation),
-  **KI-012** added (shipping build writes no engine log; optional `-log` mitigation).
-- `STATUS.md`: cycle 003 snapshot (Phase 7 attempt 1 = FAIL; mount pipeline = PASS;
-  v2 = BUILT and verification-PASS; language path = NOT TESTED).
-- `CHANGELOG.md` + `THIRD_PARTY_LICENSES.md` (IBM Plex entry + license path).
-- Commit: `047a063` (9 files, local only). This file + same content in
-  `lastreport.md` (standing rule).
+- docs/LANGUAGE_SELECTION.md (new, full evidence dossier).
+- DECISIONS.md: DEC-015 (strategy a locked as primary; DEC-007 fallback prepared).
+- KNOWN_ISSUES.md: KI-012 closed as CONFIRMED-negative; KI-013 added (DA_Audio
+  language list override = the new plan).
+- STATUS.md + CHANGELOG.md cycle-004 sections; commits local-only.
+- This report: lastreport.md + reports/history/report_004.md.
 
-## Next - your action (manual); I stop here
+## Questions to you (approval gate; nothing installs before answers)
 
-I stay stopped until you decide. Two clean tests are ready:
-
-**Test 1 (recommended first) - locres-only pak:**
-1. Say "install test 1"; I run the installer with only the locres pak.
-2. Launch normally. Expected: normal FPS, menu text normal English.
-3. Open the language list in game settings; screenshot it (looking for Arabic /
-   العربية).
-4. Optional diagnostic: Steam -> game Properties -> Launch Options -> add `-log`;
-   after playing copy `%LOCALAPPDATA%\AtomicHeart\Saved\Logs\*.log` to your desktop
-   for me. Untested whether Denuvo accepts it - mark it "did not help" if empty.
-5. Report outcome as one of: A = Arabic option listed; B = not listed; C = rendering
-   problem; D = hang/no boot (then run `scripts/uninstall_mod.ps1` immediately).
-
-**Test 2 - both paks (locres + font v2):** readable Plex Latin in menus; then select
-Arabic and screenshot menu text, shaping/RTL quality, and a GameTips popup in game.
-
-(For non-technical reference: Test 1 proves the language switch itself is safe;
-Test 2 proves Arabic is readable on screen. If Test 1 fails, we never needed the
-font, and the diagnosis gets much easier.)
+1. BUILD approval: proceed to build the DA_Audio override with the Arabic record
+   (build only, not installed)? Recommended: YES.
+2. Fallback slot pick (for prepared DEC-007 variant): ko-KR / zh-TW / uk-UA?
+   Recommended: ko-KR.
+3. Missing Test-1 data (helps the next checklist, not blocking): was FPS normal
+   during your test? What languages exactly did you see in the list (count/names)?
+   What is your current voice language (English? Russian?)?

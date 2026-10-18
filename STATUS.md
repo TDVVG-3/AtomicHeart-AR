@@ -1,48 +1,52 @@
 # Current State
 
-Status snapshot after Cycle 003 (2026-10-18). Rule: PASS/FAIL/PARTIAL/BLOCKED/NOT TESTED
+Status snapshot after Cycle 004 (2026-10-18). Rule: PASS/FAIL/PARTIAL/BLOCKED/NOT TESTED
 labels only; never claim success without evidence.
 
 ```
 Phase 1  Repo structure + governing docs:   PASS (committed)
 Phase 2  Steam + game detection:            PASS (App 668580, buildid 24534183)
-Phase 3  Archive inventory (19 PAKs):       PASS (SHA256-hashed, headers parsed)
-Phase 4  Toolchain:                         PASS (repak, UnrealLocres, LocResUtility v2.1.1 + .NET 8.0.32)
-Phase 5  Extraction + master DB:            PASS (565 locres+locmeta; 27,618-row TSV)
+Phase 3  Archive inventory (19 PAKs):       PASS (SHA256-hashed)
+Phase 4  Toolchain:                         PASS (repak, UnrealLocres, LocResUtility + .NET 8)
+Phase 5  Extraction + master DB:            PASS (565 locres/locmeta; 27,618-row TSV)
 Phase 6  Font discovery:                    PASS (49 fonts scanned)
-Phase 7  Prototype attempt 1 (v1):          FAIL (font: Naskh swap blanks all Latin UI text,
-                                            LIKELY caused FPS collapse/hang; paks UNINSTALLED)
-Phase 7  Locres/locmeta path:               NOT TESTED (language menu not reached in test 1)
-Phase 7  Font v2 (IBM Plex Sans Arabic):    BUILT + verification PASS (NOT TESTED in-game)
-Mod loading pipeline (pak mount):           PASS (game booted, rendered with mod payloads)
-Signature enforcement:                      not observed (game booted with modded paks mounted)
-Arabic translation:                          25 strings (prototype seed corpus)
-RTL rendering test:                          NOT TESTED
+Phase 7  Prototype attempt 1 (v1):          FAIL (Naskh font swap blanks Latin UI; uninstalled)
+Phase 7  Test 1: locres-only pak:           RESULT B: game boots normally, NO Arabic option
+                                            (no font pak; install reverted for now)
+Language-list mechanism:                    CONFIRMED (hardcoded 13 records in DA_Audio;
+                                            locmeta staging alone can NEVER add a menu entry)
+Native-ar route (DEC-015 primary):          PLAN LOCKED (DA_Audio override; build pending)
+Carrier fallback (DEC-007, plan b):         PREPARED (ko-KR recommended; needs approval)
+Voice-culture evidence:                     CONFIRMED (retail VO only en-US + ru-RU; other
+                                            slots fall back to en-US)
+Font v2 (IBM Plex Sans Arabic):             BUILT, verified, NOT installed
+Mod loading pipeline:                       PASS (boots + applies overrides)
+RTL rendering test:                         NOT TESTED
 ```
 
-## Key findings this cycle (Cycle 003)
+## Key findings this cycle (Cycle 004)
 
-1. **Boot + pak mount WORKS**: the game launched and visibly used the mod payload (font
-   swap active) — mod loading, and mounting our paks, are CONFIRMED functioning. Even the
-   modified locmeta (ar culture added) did not block boot. No signature enforcement was
-   observed in practice.
-2. **v1 font approach FAIL CONFIRMED**: the menu rendered with empty buttons; only "2"
-   and "!" were visible. Noto Naskh Arabic UI Latin-Basic coverage = 15 codepoints
-   (digits + minimal punctuation) — exactly matching what survived on screen. Latin was
-   blanked by the swap, and the heavy FPS collapse is LIKELY a missing-glyph fallback
-   storm (UNCONFIRMED: no engine log; KI-012).
-3. **No engine log exists** (KI-012): Saved\Logs has only the NGX log; diagnosis relies
-   on render-output analysis + isolated variant tests. `-log` launch option to be used
-   next round (optional).
-4. **v2 font pak built and verified** (DEC-014): payload = IBM Plex Sans Arabic
-   (official IBM/plex release 1.1.0, OFL 1.1, SHA256 recorded); coverage gate PASS —
-   Latin-Basic 95/95, Arabic core 42/42, presentation forms complete.
-5. Uninstall_mod.ps1 re-verified this cycle: both paks + manifest removed exactly, game
-   folder back to stock (19 paks, no ~mods).
+1. **Why Test 1 showed no Arabic (root cause CONFIRMED, mechanism-level)**: the Options >
+   Language menu is a hardcoded 13-record list inside the cooked DataAsset
+   `Core/Data/Settings/DA_Audio.uasset/.uexp` (docs/LANGUAGE_SELECTION.md). LocMeta
+   staging can never populate this menu, therefore a modified locmeta alone could not
+   have produced an Arabic entry in any test configuration. NOT a failure of our pak.
+2. Both DA_Audio and its consumer list (`+ConfigurableSettings` in the cooked
+   `Config/DefaultGame.ini`) are ordinary pak files - overridable from `~mods` with no
+   EXE change. DEC-015: native `ar` via DA_Audio override = PRIMARY; DEC-007 carrier
+   = prepared fallback (candidates: ko-KR recommended, zh-TW, uk-UA; approval needed).
+3. Voice evidence (DA_Audio_VoiceBanks): retail VO exists only for en-US and ru-RU.
+   Every other slot's audio mapping falls back to en-US -> carrier slots and the new
+   `ar` record both keep the English voice intact by design.
+4. `-log` produced NO engine log even when active (KI-012 closed as negative result).
+5. zh cultures carry distinct Wwise aliases (zh-hans / zh-hant) inside the same records -
+   the list's records are per-language OptionSelect entries with display name +
+   culture + audio alias, all inline strings.
 
 ## Next
 
-STOP. Awaiting user instruction to run test 1 (locres-only pak: expect normal Latin UI,
-language list gains العربية) and test 2 (font v2 + locres paks: expect readable Plex
-Latin; then Arabic selection test → shaping/RTL verdict). Full checklist in
-lastreport.md / reports/history/report_003.md.
+STOP. Awaiting user's approval/decision on: (1) proceed to BUILD (not install) the
+DA_Audio override with a 14th Arabic record; (2) which carrier slot they want as
+prepared fallback (ko-KR recommended); (3) the three remaining Test-1 data points
+(FPS? exact list contents? voice language in use?). No pak installed meanwhile; game
+folder stock except the reverted test-1 state (nothing installed).

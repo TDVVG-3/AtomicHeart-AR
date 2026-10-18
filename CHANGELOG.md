@@ -5,6 +5,22 @@ Format loosely follows Keep a Changelog.
 
 ## [Unreleased]
 
+### Added (Cycle 004 - 2026-10-18)
+- Test 1 result: outcome B - game boots with the locres-only pak, language list has NO
+  Arabic option (not a pak failure; locmeta staging alone provably can never add a menu
+  entry). Installation reverted to stock unless the user keeps testing with it.
+- ROOT CAUSE found: Options > Language list is hardcoded (13 records) in the cooked
+  DataAsset Core/Data/Settings/DA_Audio.uasset+.uexp (docs/LANGUAGE_SELECTION.md);
+  consumer chain via cooked Config/DefaultGame.ini +ConfigurableSettings ->
+  native AHGameSettingsSubsystem -> WBP_Options.
+- DEC-015: primary = add a 14th record (ar, display name "العربية", audio = en-US
+  fallback) via DA_Audio mod-pak override (binary surgery + self-validation);
+  fallback = DEC-007 carrier prepared (ko-KR recommended, zh-TW, uk-UA; approval needed).
+- Voice-culture evidence from DA_Audio_VoiceBanks: retail VO only en-US + ru-RU; all
+  other slots fall back to en-US - both routes keep the English voice untouched.
+- KI-012 closed as negative: `-log` produced no log file even when active.
+- Locres pak kept available (not installed); font pak v2 untouched, not installed.
+
 ### Added / Fixed (Cycle 003 — 2026-10-18)
 - IN-GAME TEST RESULT (attempt 1): FAIL. Game booted and loaded mod paks (font swap
   visibly active = mount pipeline CONFIRMED), but all Latin UI text disappeared
