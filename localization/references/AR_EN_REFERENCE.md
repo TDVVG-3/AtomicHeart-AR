@@ -1,6 +1,6 @@
 # AR <-> EN reference (rows that already carry Arabic)
 
-Generated: 2026-10-18 20:44:55
+Generated: 2026-10-18 21:33:21
 Cycles: translation program, DRAFT rows only.
 
 Rule: this file lists ONLY master rows whose Arabic column is non-empty.
@@ -55,7 +55,7 @@ Arabic is shown FIRST, the English source BELOW it, followed by the locres key.
 ## DIALOGUES FOR LQA (7 rows)
 
 - `/962A2FA3462F1CE524EB09B650D0C297`  [Dialogue] pilot:LONG
-  - AR: *0.08*أتقول ذلك حقاً؟! أتُظهر أنيابك؟ يا له من تعبير بديع، وإن كان سوقياً. تذكّر يا فتى: *0.04*أن تنتفخ صدرك وتتفاخر بالشخصية لا يعني أنك تملك تلك الشخصية فعلاً.
+  - AR: *0.08*أتقول ذلك حقاً؟! أتُظهر أنيابك؟ يا له من تعبير بديع، وإن كان سوقياً. تذكّر يا فتى: *0.04*أن تنفخ صدرك وتتفاخر بالشخصية لا يعني أنك تملك تلك الشخصية فعلاً.
   - EN: *0.08*You don't say?! Are you showing your teeth? What a delightful, if plebian, expression. Remember, boy: *0.04*puffing your chest and showing off the character does not mean you are actually in possession of said character.
 - `/B56010C94E3ACF20E0F087B81E9CC41C`  [Dialogue] pilot:LONG
   - AR: *0.08*لا، لا، لا! لا نضيّع الوقت، اتفقنا؟ لم يبقَ منّي إلا القليل! انظر، لقد أجريت التحليل! *0.07*أجريت كل الحسابات! صدى الشبكة العصبية هذا الذي يسمح للموتى بالكلام — إنه مفتاح الخلود!
@@ -157,7 +157,7 @@ Arabic is shown FIRST, the English source BELOW it, followed by the locres key.
   - AR: لقد جُرحت! اضغط مع الاستمرار على <img id="Button.ConsumeItem"/> للعلاج
   - EN: You've been injured! Press and hold <img id="Button.ConsumeItem"/> to heal
 - `ST_GameTips_Texts_/esli_protivnik_stoit_spinoy`  [UI] seed:phase7
-  - AR: إذا فاجأت عدوًا، يمكنك التسلل إليه وطرحه أرضًا دون إطلاق إنذار. <h>لتنفيذ قتلة خادعة، اقترب من الخلف واضغط</> <tag id="InputAction.Gameplay.StealthKill"/>. أسرع، وإلا فقد تفقد عنصر المفاجأة.
+  - AR: إذا فاجأت عدوًا، يمكنك التسلل إليه وطرحه أرضًا دون إطلاق إنذار. <h>لتنفيذ تصفية خفية، اقترب من الخلف واضغط</> <tag id="InputAction.Gameplay.StealthKill"/>. أسرع، وإلا فقد تفقد عنصر المفاجأة.
   - EN: If you catch an enemy unawares, you can sneak up and knock them out without raising the alarm. <h>To perform a stealth kill, approach from behind and press</> <tag id="InputAction.Gameplay.StealthKill"/>. Be quick, or you might lose the element of surprise.
 - `ST_GameTips_Texts_/zazhmite_i_uderzhivayte`  [UI] seed:phase7
   - AR: لفتح عجلة الجرد، اضغط مع الاستمرار على <tag id="InputAction.Gameplay.RadialMenu"/>.
@@ -256,7 +256,7 @@ Arabic is shown FIRST, the English source BELOW it, followed by the locres key.
   - AR: *0.00-0.08* &Ministry of Culture curator& هذه مكنسة روبوتية أو "مكنسة روبوت". إنها رائعة تماماً! انظروا فقط كيف تتحرّك بالحركة البطيئة!*0.08-0.10* &Ministry of Culture curator& حسناً، لنرَ...*0.10-0.18* &Ministry of Culture curator& لها جسم مستطيل وكتفان ضيّقان جداً، ما يتيح لها شفط الأوساخ في أي مكان تقريباً.*0.18-0.28* &Ministry of Culture curator& انظروا إلى كل هذه القمامة في كل مكان! لكن المكنسة الروبوتية لا تهتم، إنها تدمّر كل ذلك الخردة وتواصل شفط الأوساخ.*0.29-0.39* &Ministry of Culture curator& أوه، لقد سكب أحدهم دلو دهان على المكنسة الروبوتية!*0.39-0.45* &Ministry of Culture curator& لكن المكنسة تتصرّف وكأنها لم تلاحظ أن الدهان اللزج تغطّى بها. انظروا إلى هذا الوغد — سينظّف كل شيء، وسيواصل الشفط فقط!*0.46-0.53* &Ministry of Culture curator& فهمت يا دميتري؟ هكذا يجب أن نفتح أعين مواطنينا على الأشياء المذهلة التي نصنعها هنا في المنشأة، لا ذلك الشريط الباهت*0.53-1.01* &Ministry of Culture curator& "مصنع زابوريجيا للسيارات يقدّم الطراز ROZGDFG-20 أو 40 أو أيّاً كان..." إنه ممل حتى الموت.
   - EN: *0.00-0.08* &Ministry of Culture curator& This is a robot vacuum or "robo-vacuum." It's totally bad ass! Just look at it moving in slow motion!*0.08-0.10* &Ministry of Culture curator& Okay, let's see...*0.10-0.18* &Ministry of Culture curator& It's got an elongated body and very narrow shoulders, which allows it to suck up dirt in almost any area.*0.18-0.28* &Ministry of Culture curator& Just look at all the trash everywhere! But the robo-vacuum doesn't give a crap, it just destroys all that junk and keeps on sucking up the dirt.*0.29-0.39* &Ministry of Culture curator& Uh-oh, someone spilled a bucket of paint on the robo-vacuum!*0.39-0.45* &Ministry of Culture curator& But the robo-vacuum acts like it doesn't even notice it got sticky paint all over it. Look at that fucker—it'll just clean everything up, and it'll just keep on sucking!*0.46-0.53* &Ministry of Culture curator& Get it, Dmitry? That's how we need to open our fellow citizens' eyes to the amazing things we make here at the Facility, not your lame old*0.53-1.01* &Ministry of Culture curator& "the Zaporizhzhia Automotive Factory presents model ROZGDFG-20 or 40 or whatever..." It's boring to death.
 - `/9511248745986BD47D906A9DB6D80DE0`  [Subtitles] pilot:LONG
-  - AR: *0.05-0.09* &Surgeon& مسحة. ركّزوا. راقبوا ذلك الشق!*0.09-0.10* &Nurse& حسناً... لحظة واحدة...*0.10-0.11* &Surgeon& ركّزوا!*0.16-0.18* &Surgeon& تبا. اضغطوا عليه، الآن!*0.22-0.25* &Surgeon& لم يتشرّبه النسيج بالبوليمر مجدداً، فأنشأ تجويفاً مرضياً.*0.26-0.32* &Surgeon& هناك عقد كهذه في كل جسده. ماذا تريد تلك الوحوش بلا قلب من الناس، هاه؟!*0.33-0.41* &Colonel& قد تكونون محقّين أيها الرفاق، لكن هذا ليس شأنكم. أدّوا عملكم. أيها الجندي، أدخل التالي.*0.42-0.43* &Private& نعم، أيها الرفيق العقيد.*0.44-0.50* &Colonel& يجب أن يتشرّب النسيج البوليمر. وإن لم يفعل، أنقذوا من تستطيعون إنقاذه...*0.51-0.53* &Colonel& ...ونظّفوا هذا المكان.
+  - AR: *0.05-0.09* &Surgeon& قطنة. ركّزوا. راقبوا ذلك الشق!*0.09-0.10* &Nurse& حسناً... لحظة واحدة...*0.10-0.11* &Surgeon& ركّزوا!*0.16-0.18* &Surgeon& تبا. اضغطوا عليه، الآن!*0.22-0.25* &Surgeon& لم يتشرّبه النسيج بالبوليمر مجدداً، فأنشأ تجويفاً مرضياً.*0.26-0.32* &Surgeon& هناك عقد كهذه في كل جسده. ماذا تريد تلك الوحوش بلا قلب من الناس، هاه؟!*0.33-0.41* &Colonel& قد تكونون محقّين أيها الرفاق، لكن هذا ليس شأنكم. أدّوا عملكم. أيها الجندي، أدخل التالي.*0.42-0.43* &Private& نعم، أيها الرفيق العقيد.*0.44-0.50* &Colonel& يجب أن يتشرّب النسيج البوليمر. وإن لم يفعل، أنقذوا من تستطيعون إنقاذه...*0.51-0.53* &Colonel& ...ونظّفوا هذا المكان.
   - EN: *0.05-0.09* &Surgeon& Swab. Focus. Keep an eye on that incision!*0.09-0.10* &Nurse& Okay... just a moment...*0.10-0.11* &Surgeon& Focus!*0.16-0.18* &Surgeon& Shit. Pressure on it, now!*0.22-0.25* &Surgeon& The Polymer wasn't absorbed by the tissue again, so it created a pathological cavity.*0.26-0.32* &Surgeon& There are nodules like this all over his body. What do those heartless animals want from people, huh?!*0.33-0.41* &Colonel& You may be right, comrades, but that is not your concern. Do your jobs. Private, bring in the next one.*0.42-0.43* &Private& Yes, Comrade Colonel.*0.44-0.50* &Colonel& The Polymer needs to be absorbed. And if it's not, save whoever you can...*0.51-0.53* &Colonel& ...And clean this place up.
 
 ## Theatre_Dialogues (4 rows)
@@ -265,7 +265,7 @@ Arabic is shown FIRST, the English source BELOW it, followed by the locres key.
   - AR: أتريد أن تفهمك الآلة يا رائد؟
   - EN: Do you want the machine to understand you, Major?
 - `/962A2FA3462F1CE524EB09B650D0C297`  [Dialogue] pilot:LONG
-  - AR: *0.08*أتقول ذلك حقاً؟! أتُظهر أنيابك؟ يا له من تعبير بديع، وإن كان سوقياً. تذكّر يا فتى: *0.04*أن تنتفخ صدرك وتتفاخر بالشخصية لا يعني أنك تملك تلك الشخصية فعلاً.
+  - AR: *0.08*أتقول ذلك حقاً؟! أتُظهر أنيابك؟ يا له من تعبير بديع، وإن كان سوقياً. تذكّر يا فتى: *0.04*أن تنفخ صدرك وتتفاخر بالشخصية لا يعني أنك تملك تلك الشخصية فعلاً.
   - EN: *0.08*You don't say?! Are you showing your teeth? What a delightful, if plebeian, expression. Remember, boy: *0.04*puffing your chest and showing off the character does not mean you are actually in possession of said character.
 - `/1CEF346C464B66A86673B0BD48312BCE`  [Dialogue] pilot:SHORT
   - AR: سأفعل — بعد أن يعطيني الرمز.

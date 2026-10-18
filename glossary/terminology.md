@@ -122,3 +122,34 @@ Owner rule set: MASTER_PROMPT.md + DEC-023. This file is ASCII-only by project r
 
 9.3 Install/uninstall only with `scripts/install_mod.ps1` / `scripts/uninstall_mod.ps1`,
     and only after explicit user approval.
+
+## 10. Speaker markers in subtitle lines (DLC2 "Schebetars" only)
+
+10.1 130 master rows contain an inline marker of the form `&Speaker Name&`, all inside three
+    DLC2 scopes: `Schebetar_Subs` (90), `Schebetars_dlc1` (39), `Locations_dlc2` (1). Base-game
+    dialogue has none. Evidence: reports/speaker_markers.md (145 distinct tokens).
+
+10.2 Standing rule: the marker and its delimiters are copied BYTE-EXACTLY into the Arabic, exactly
+    like a rich-text tag. The validator enforces the marker multiset per row.
+
+10.3 Conditional rule (activates ONLY if the in-game check shows the names are displayed to the
+    player - report case A in reports/speaker_marker_check.md):
+      - characters            -> transliterated using the glossary
+      - roles/descriptors     -> translated (Surgeon, Nurse, Colonel, Private, ...)
+      - non-verbal cues       -> translated (Moo!, WOOF!, KABOOM!, sound descriptions)
+      - unit/asset names      -> glossary form (P-3, NORA, Kollektiv PA, BEA-D, Argentum soldier)
+    The delimiters stay Latin `&`; only the text between them changes.
+
+10.4 If the check shows the markers are stripped or shown raw (cases B/C), 10.2 remains the whole
+    rule and no speaker name is ever translated.
+
+## 11. Reviewer fix workflow
+
+11.1 Reviewer corrections are never typed into a script (PowerShell 5.1 mangles non-ASCII script
+    literals, KI-021). They live in `localization/working/tm_fixups.tsv` as `find <tab> replace
+    <tab> note` and are applied by `scripts/apply_text_fixups.ps1` to the master Arabic column,
+    the translation memory and the seed CSV; `scripts/verify_text_fixups.ps1` then proves the old
+    text is gone and the master still matches the memory. The pass is idempotent.
+
+11.2 A fix is recorded in `reports/text_fixups_log.md` with the exact rows it touched, and is
+    mentioned in HANDOFF.md.

@@ -5,6 +5,12 @@ Scope: entries in `glossary/glossary.tsv` where the choice between
 TRANSLITERATION (Arabic letters, sound kept), TRANSLATION (meaning rendered) and
 PRESERVATION (kept in Latin script) is a judgement call, not a fact.
 
+> **DECISION 2026-10-18 (user): all 26 recommended defaults are ACCEPTED.** Nothing in this file
+> is open any more; the recommended option (marked `*`) is now the rule. The user will review the
+> sensitive terms (robot nicknames in group B, science/Soviet terms in group C, tone items in
+> group D) after batch 1, and any change will be applied through the standard reviewer-fix
+> workflow (`localization/working/tm_fixups.tsv` + `scripts/apply_text_fixups.ps1`).
+
 How to answer: reply with the item number and the option letter, e.g. "1B, 2A, 3C".
 Anything you do not answer keeps my RECOMMENDED option (marked with `*`).
 

@@ -1,6 +1,6 @@
 # AR/EN review sample (pilot)
 
-Generated: 2026-10-18 20:48:56
+Generated: 2026-10-18 21:35:16
 Rows with Arabic available: 85 | sample size: 40
 
 Read each block as: Arabic (what the player sees) then the English source it came from.
@@ -92,7 +92,7 @@ EN: Windowed Fullscreen
 ### 13. [Theatre_Dialogues] Dialogue
 reason: spread | key: /962A2FA3462F1CE524EB09B650D0C297 | notes: pilot:LONG
 
-AR: *0.08*أتقول ذلك حقاً؟! أتُظهر أنيابك؟ يا له من تعبير بديع، وإن كان سوقياً. تذكّر يا فتى: *0.04*أن تنتفخ صدرك وتتفاخر بالشخصية لا يعني أنك تملك تلك الشخصية فعلاً.
+AR: *0.08*أتقول ذلك حقاً؟! أتُظهر أنيابك؟ يا له من تعبير بديع، وإن كان سوقياً. تذكّر يا فتى: *0.04*أن تنفخ صدرك وتتفاخر بالشخصية لا يعني أنك تملك تلك الشخصية فعلاً.
 
 EN: *0.08*You don't say?! Are you showing your teeth? What a delightful, if plebeian, expression. Remember, boy: *0.04*puffing your chest and showing off the character does not mean you are actually in possession of said character.
 
@@ -148,7 +148,7 @@ EN: *0.06*How can I? The tractor ran me over the day before yesterday, and I've 
 ### 21. [Schebetar_Subs] Subtitles
 reason: longest | key: /9511248745986BD47D906A9DB6D80DE0 | notes: pilot:LONG
 
-AR: *0.05-0.09* &Surgeon& مسحة. ركّزوا. راقبوا ذلك الشق!*0.09-0.10* &Nurse& حسناً... لحظة واحدة...*0.10-0.11* &Surgeon& ركّزوا!*0.16-0.18* &Surgeon& تبا. اضغطوا عليه، الآن!*0.22-0.25* &Surgeon& لم يتشرّبه النسيج بالبوليمر مجدداً، فأنشأ تجويفاً مرضياً.*0.26-0.32* &Surgeon& هناك عقد كهذه في كل جسده. ماذا تريد تلك الوحوش بلا قلب من الناس، هاه؟!*0.33-0.41* &Colonel& قد تكونون محقّين أيها الرفاق، لكن هذا ليس شأنكم. أدّوا عملكم. أيها الجندي، أدخل التالي.*0.42-0.43* &Private& نعم، أيها الرفيق العقيد.*0.44-0.50* &Colonel& يجب أن يتشرّب النسيج البوليمر. وإن لم يفعل، أنقذوا من تستطيعون إنقاذه...*0.51-0.53* &Colonel& ...ونظّفوا هذا المكان.
+AR: *0.05-0.09* &Surgeon& قطنة. ركّزوا. راقبوا ذلك الشق!*0.09-0.10* &Nurse& حسناً... لحظة واحدة...*0.10-0.11* &Surgeon& ركّزوا!*0.16-0.18* &Surgeon& تبا. اضغطوا عليه، الآن!*0.22-0.25* &Surgeon& لم يتشرّبه النسيج بالبوليمر مجدداً، فأنشأ تجويفاً مرضياً.*0.26-0.32* &Surgeon& هناك عقد كهذه في كل جسده. ماذا تريد تلك الوحوش بلا قلب من الناس، هاه؟!*0.33-0.41* &Colonel& قد تكونون محقّين أيها الرفاق، لكن هذا ليس شأنكم. أدّوا عملكم. أيها الجندي، أدخل التالي.*0.42-0.43* &Private& نعم، أيها الرفيق العقيد.*0.44-0.50* &Colonel& يجب أن يتشرّب النسيج البوليمر. وإن لم يفعل، أنقذوا من تستطيعون إنقاذه...*0.51-0.53* &Colonel& ...ونظّفوا هذا المكان.
 
 EN: *0.05-0.09* &Surgeon& Swab. Focus. Keep an eye on that incision!*0.09-0.10* &Nurse& Okay... just a moment...*0.10-0.11* &Surgeon& Focus!*0.16-0.18* &Surgeon& Shit. Pressure on it, now!*0.22-0.25* &Surgeon& The Polymer wasn't absorbed by the tissue again, so it created a pathological cavity.*0.26-0.32* &Surgeon& There are nodules like this all over his body. What do those heartless animals want from people, huh?!*0.33-0.41* &Colonel& You may be right, comrades, but that is not your concern. Do your jobs. Private, bring in the next one.*0.42-0.43* &Private& Yes, Comrade Colonel.*0.44-0.50* &Colonel& The Polymer needs to be absorbed. And if it's not, save whoever you can...*0.51-0.53* &Colonel& ...And clean this place up.
 
@@ -246,7 +246,7 @@ EN: Objects that you can grab onto are often highlighted in <h>yellow</>.
 ### 35. [NewP5] UI
 reason: tagged | key: ST_GameTips_Texts_/esli_protivnik_stoit_spinoy | notes: seed:phase7
 
-AR: إذا فاجأت عدوًا، يمكنك التسلل إليه وطرحه أرضًا دون إطلاق إنذار. <h>لتنفيذ قتلة خادعة، اقترب من الخلف واضغط</> <tag id="InputAction.Gameplay.StealthKill"/>. أسرع، وإلا فقد تفقد عنصر المفاجأة.
+AR: إذا فاجأت عدوًا، يمكنك التسلل إليه وطرحه أرضًا دون إطلاق إنذار. <h>لتنفيذ تصفية خفية، اقترب من الخلف واضغط</> <tag id="InputAction.Gameplay.StealthKill"/>. أسرع، وإلا فقد تفقد عنصر المفاجأة.
 
 EN: If you catch an enemy unawares, you can sneak up and knock them out without raising the alarm. <h>To perform a stealth kill, approach from behind and press</> <tag id="InputAction.Gameplay.StealthKill"/>. Be quick, or you might lose the element of surprise.
 

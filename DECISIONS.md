@@ -665,3 +665,47 @@ Part 4 - Defects found by the new tooling (all recorded in KNOWN_ISSUES.md):
 Part 5 - Install policy unchanged: p3 is built and validated but NOT installed. Installation
 happens only on explicit user approval and only through the existing install/uninstall
 scripts. The pilot gate stops here until the user reports the in-game result.
+## DEC-025 - Pilot install (p3), reviewer fixes, Python declined, speaker-marker rule
+
+Date: 2026-10-18. Status: ACTIVE.
+
+Part 1 - Install APPROVED and executed (user order 2026-10-18). scripts/install_mod.ps1 was
+rewritten from a fixed two-file installer into a RECONCILING installer: it removes only files it
+previously installed (verified against the old manifest hash) and installs the requested set.
+Result in Paks\~mods:
+   - removed (hash-verified against the old manifest): carrier p2, sha256 3d4b0ea65c5dc789be98b46aa18c7c27959445b7d36454616b91be2ae55fa9e1
+   - installed: carrier p3, sha256 b58029662e5acf775087426ed85721905a5846127d6af5c209a482514f7b41df
+   - kept: font v2 (Plex), sha256 02b17f31e61a46ddba20bea8c4da5be44164173df608d52697f68d27d8269747
+   - manifest rewritten: sha256 346abd7f291f36d7aa033785c4e16d8dc9272e24d5d59443477130bc215298bd
+Verification (scripts/snapshot_game_folder.ps1 before/after + scripts/verify_install.ps1):
+PASS - no file added/removed/changed anywhere in the game folder outside ~mods; AtomicHeart.exe
+unchanged; 19/19 stock paks unchanged; ~mods contains exactly the three files above.
+Evidence: reports/install_verification.md, reports/install_verify/before_p3.json.
+
+Part 2 - Python DECLINED by the user. scripts/validate_translation.ps1 is the primary validator;
+scripts/validate_translation.py remains a delivered artefact for a machine that has Python.
+KI-020 closed.
+
+Part 3 - Glossary decisions: the user ACCEPTED all 26 recommended defaults
+(glossary/glossary_questions.md). Sensitive terms (robot nicknames, science/Soviet terms, tone)
+will be reviewed after batch 1, and any change goes through the reviewer-fix workflow.
+
+Part 4 - Reviewer fixes applied (three, from the pilot review) WITHOUT rebuilding the pak (they
+ship in p4 with the pilot results):
+   (a) grammar: "to puff your chest" phrase - "tanfukh" not "tantafikh" (Theatre_Dialogues and
+       its identical DIALOGUES FOR LQA sibling, same key /962A2FA3462F1CE524EB09B650D0C297)
+   (b) stealth-kill game tip: wording replaced; the <tag id="InputAction.Gameplay.StealthKill"/>
+       is byte-unchanged
+   (c) surgeon scene: "Swab" rendered as the cotton-swab word
+Applied by scripts/apply_text_fixups.ps1 (rules in localization/working/tm_fixups.tsv, a UTF-8
+data file per KI-021) to the master Arabic column, localization/working/tm.tsv and the seed CSV;
+proved by scripts/verify_text_fixups.ps1 (old text gone, master/memory match 85/85) and by the
+validator (0 errors). Log: reports/text_fixups_log.md.
+
+Part 5 - Speaker markers. Evidence: 130 master rows carry an inline &Speaker& marker, ALL of them
+inside three DLC2 "Schebetars" scopes (Schebetar_Subs 90, Schebetars_dlc1 39, Locations_dlc2 1);
+the base game has none; 145 distinct tokens. Standing rule: byte-exact copy (validator-enforced).
+Conditional rule (terminology.md section 10) activates ONLY if the user's in-game check shows the
+names are displayed: characters transliterated, roles translated, non-verbal cues translated,
+unit names from the glossary - delimiters always stay Latin '&'. Check sheet:
+reports/speaker_marker_check.md. Answer pending (expected with the pilot report).

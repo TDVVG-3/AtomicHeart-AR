@@ -1,0 +1,133 @@
+{
+    "taken_utc":  "2026-10-18T18:31:16.9922657Z",
+    "game_root":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Atomic Heart",
+    "paks_dir":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Atomic Heart\\AtomicHeart\\Content\\Paks",
+    "mods_dir":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Atomic Heart\\AtomicHeart\\Content\\Paks\\~mods",
+    "root_files":  {
+                       "name":  "AtomicHeart.exe",
+                       "size":  276832,
+                       "modifiedUtc":  "2026-10-16T13:38:27.4550344Z",
+                       "sha256":  "3d6a26424fbe4c56d34bcfd6a5f5992cad4196a3d68bc0948b5d1b0caf41ad3c"
+                   },
+    "root_dirs":  [
+                      "AtomicHeart",
+                      "Engine"
+                  ],
+    "paks_files":  [
+                       {
+                           "name":  "pakchunk0optional-WindowsNoEditor.pak",
+                           "size":  51647465,
+                           "modifiedUtc":  "2026-10-16T13:38:27.5203003Z"
+                       },
+                       {
+                           "name":  "pakchunk0-WindowsNoEditor.pak",
+                           "size":  33161284124,
+                           "modifiedUtc":  "2026-10-16T13:38:27.5203003Z"
+                       },
+                       {
+                           "name":  "pakchunk10-WindowsNoEditor.pak",
+                           "size":  176141929,
+                           "modifiedUtc":  "2026-10-16T13:38:27.5203003Z"
+                       },
+                       {
+                           "name":  "pakchunk11-WindowsNoEditor.pak",
+                           "size":  1693638369,
+                           "modifiedUtc":  "2026-10-16T13:38:27.5203003Z"
+                       },
+                       {
+                           "name":  "pakchunk12-WindowsNoEditor.pak",
+                           "size":  18883098113,
+                           "modifiedUtc":  "2026-10-16T13:38:27.5203003Z"
+                       },
+                       {
+                           "name":  "pakchunk13-WindowsNoEditor.pak",
+                           "size":  20714445497,
+                           "modifiedUtc":  "2026-10-16T13:38:27.5218042Z"
+                       },
+                       {
+                           "name":  "pakchunk14-WindowsNoEditor.pak",
+                           "size":  2786707503,
+                           "modifiedUtc":  "2026-10-16T13:38:27.5218042Z"
+                       },
+                       {
+                           "name":  "pakchunk15optional-WindowsNoEditor.pak",
+                           "size":  33554976,
+                           "modifiedUtc":  "2026-10-16T13:38:27.5228106Z"
+                       },
+                       {
+                           "name":  "pakchunk15-WindowsNoEditor.pak",
+                           "size":  21774890614,
+                           "modifiedUtc":  "2026-10-16T13:38:27.5228106Z"
+                       },
+                       {
+                           "name":  "pakchunk16-WindowsNoEditor.pak",
+                           "size":  33234925624,
+                           "modifiedUtc":  "2026-10-16T13:38:27.5238103Z"
+                       },
+                       {
+                           "name":  "pakchunk1-WindowsNoEditor.pak",
+                           "size":  6680608890,
+                           "modifiedUtc":  "2026-10-16T13:38:27.5203003Z"
+                       },
+                       {
+                           "name":  "pakchunk2-WindowsNoEditor.pak",
+                           "size":  487997778,
+                           "modifiedUtc":  "2026-10-16T13:38:27.5238103Z"
+                       },
+                       {
+                           "name":  "pakchunk3-WindowsNoEditor.pak",
+                           "size":  2900349197,
+                           "modifiedUtc":  "2026-10-16T13:38:27.5248115Z"
+                       },
+                       {
+                           "name":  "pakchunk4-WindowsNoEditor.pak",
+                           "size":  517357311,
+                           "modifiedUtc":  "2026-10-16T13:38:27.5248115Z"
+                       },
+                       {
+                           "name":  "pakchunk5-WindowsNoEditor.pak",
+                           "size":  5525516858,
+                           "modifiedUtc":  "2026-10-16T13:38:27.5248115Z"
+                       },
+                       {
+                           "name":  "pakchunk6-WindowsNoEditor.pak",
+                           "size":  1286356301,
+                           "modifiedUtc":  "2026-10-16T13:38:27.5248115Z"
+                       },
+                       {
+                           "name":  "pakchunk7-WindowsNoEditor.pak",
+                           "size":  6021896385,
+                           "modifiedUtc":  "2026-10-16T13:38:27.5248115Z"
+                       },
+                       {
+                           "name":  "pakchunk8-WindowsNoEditor.pak",
+                           "size":  4801837441,
+                           "modifiedUtc":  "2026-10-16T13:38:27.5248115Z"
+                       },
+                       {
+                           "name":  "pakchunk9-WindowsNoEditor.pak",
+                           "size":  2114788307,
+                           "modifiedUtc":  "2026-10-16T13:38:27.5263153Z"
+                       }
+                   ],
+    "mods_files":  [
+                       {
+                           "name":  "atomic-heart-ar-install-manifest.json",
+                           "size":  1306,
+                           "modifiedUtc":  "2026-10-18T13:41:12.1006586Z",
+                           "sha256":  "b5dd94c58bc50cd32db2ef7447129aa6a1c145cf6bca2ea44b329cc99ffbdc8d"
+                       },
+                       {
+                           "name":  "zzz_atomicheart-ar_carrier_koKR_p2_P.pak",
+                           "size":  503841,
+                           "modifiedUtc":  "2026-10-18T12:52:38.1825460Z",
+                           "sha256":  "3d4b0ea65c5dc789be98b46aa18c7c27959445b7d36454616b91be2ae55fa9e1"
+                       },
+                       {
+                           "name":  "zzz_atomicheart-ar_font_p2_plex_P.pak",
+                           "size":  1461408,
+                           "modifiedUtc":  "2026-10-18T12:44:39.4160558Z",
+                           "sha256":  "02b17f31e61a46ddba20bea8c4da5be44164173df608d52697f68d27d8269747"
+                       }
+                   ]
+}

@@ -1,53 +1,63 @@
-# Cycle 007 report - Arabic translation program: Phase 0 + pilot build
+# Cycle 008 report - pilot install (p3) + reviewer fixes + speaker-marker check
 
-Date: 2026-10-18 (local 20:49 +03:00 / UTC 17:49)  |  State: PILOT BUILT, NOT INSTALLED - gate reached
+Date: 2026-10-18 (local 21:36 +03:00)  |  State: WAITING FOR USER (pilot gate; carrier p3 installed)
 
 ## What this cycle did
 
-1. Phase 0 (no stopping between steps):
-   - TOTAL = 27,618 master rows with a non-empty English source (Status TECHNICAL 0, BLOCKED 0);
-     19,996 UNIQUE English strings = the size of the work, since each unique string is
-     translated once and reused where the context matches.
-   - Work order written to reports/translation_plan.md: tier 1 UI/menus/HUD/tutorials/items/
-     weapons/skills/objectives, tier 2 dialogue/subtitles/cutscenes, tier 3 lore/mail/DLC/credits.
-     Cumulative cutoffs: batch1 6,905 (25%), batch2 13,809 (50%), batch3 20,714 (75%),
-     batch4 27,618 (100%).
-   - Glossary built BEFORE translating: 136 entries (all DRAFT), every entry verified to occur
-     in the English corpus. 26 judgement calls left for the user in glossary_questions.md.
-   - Style guide glossary/terminology.md: MSA, register map per character, Western digits only,
-     Arabic question mark/comma, byte-exact tags/placeholders/engine markers, UI length rule,
-     translation-memory rule, Status workflow, validation gates.
+1. Install, with your approval (your task 1): rewrote `scripts/install_mod.ps1` into a reconciling
+   installer that removes only files we previously installed (verified against the old manifest's
+   sha256) and installs the requested set. It removed the old carrier p2
+   (`3d4b0ea6...5fa9e1`), installed carrier p3 (`b5802966...f7b41df`, 3,612,753 bytes), kept the
+   font v2 (`02b17f31...8269747`) and rewrote the manifest (`346abd7f...5298bd`).
+   Proof by new tools `scripts/snapshot_game_folder.ps1` (read-only before/after snapshot) and
+   `scripts/verify_install.ps1`: PASS - nothing outside `Paks\~mods` was added, removed or changed;
+   `AtomicHeart.exe` unchanged; 19/19 stock paks unchanged; `~mods` holds exactly the three files.
+   Evidence: `reports/install_verification.md`.
 
-2. Pilot (steps 5-8):
-   - 60 rows translated (20 UI, 20 short dialogue, 20 long subtitle incl. tags/markers/numbers)
-     = 57 unique strings, plus the 25 phase-7 seed rows carried forward => 85 rows with Arabic,
-     all Status DRAFT. Coverage: 85 of 27,618 (0.3%).
-   - Validator PASS with 0 errors (1 accepted length warning on a proper name).
-   - Glyph gate PASS: all 113 distinct codepoints used by the pilot Arabic exist in the subtitle
-     face the v2 font pak installs (BlenderPro-Medium -> IBM Plex Sans Arabic Medium). No font
-     pak extension is needed for the pilot.
-   - Carrier builder extended from NewP5-only to ALL 35 ko-KR locres scopes (UI, dialogue,
-     subtitles, cutscenes, mail, DLC). Pilot pak p3: 27,618 keys, 85 Arabic, 27,533 English-fill,
-     0 kept Korean, round-trip 0 failures, unpack verify 35/35 byte-identical. NOT installed.
+2. Python (your task 2): declined; the PowerShell validator stays primary. KI-020 closed.
+
+3. Glossary (your task 3): all 26 recommended defaults accepted; sensitive groups to be reviewed
+   after batch 1.
+
+4. Your three pilot corrections (your task 4) applied to the master, the memory and the seed CSV
+   by `scripts/apply_text_fixups.ps1` with rules in the UTF-8 data file
+   `localization/working/tm_fixups.tsv` (never as literals in a script, KI-021):
+   (a) grammar fix - 2 rows (`Theatre_Dialogues` + its identical `DIALOGUES FOR LQA` sibling, same
+   key); (b) stealth-kill tip - 1 row, tag byte-unchanged; (c) surgeon "Swab" - 1 row.
+   Proved by `scripts/verify_text_fixups.ps1` (old text gone, master == memory 85/85) and the
+   validator (0 errors, 1 accepted warning). Reference regenerated. **No pak was rebuilt** - the
+   fixes ship in p4, as ordered. Log: `reports/text_fixups_log.md`.
+
+5. Speaker markers (your task 5): evidence in `reports/speaker_markers.md` - 130 rows, 145 distinct
+   tokens, DLC2 "Schebetars" scopes ONLY; the base game has none. The short in-game check is
+   `reports/speaker_marker_check.md` (cases A/B/C). The conditional translate-the-names rule is
+   written in `glossary/terminology.md` section 10 and DEC-025.
+
+6. HANDOFF.md rewritten for Cycle 008 (WAITING FOR USER) with the standing 40-row AR/EN review
+   sample; STATUS.md, KNOWN_ISSUES.md, DECISIONS.md updated; history copies kept.
 
 ## Defects found and handled
 
-- KI-019 (FIXED, in-game proof pending): the INSTALLED p2 carrier ships malformed rich-text tags
-  in the 7 seeded game-tip rows (CSV-escaped quotes never unescaped -> `id=""Button.ConsumeItem""`).
-  Found by the new validator, confirmed by unpacking the installed pak. p3 fixes it.
-- KI-020 (OPEN, needs approval): Python is not installed (Store alias only), so the requested
-  scripts/validate_translation.py cannot run; the same checks run via the PowerShell twin.
-- KI-021 (MITIGATED): PowerShell 5.1 reads .ps1 as ANSI without a BOM, mangling Arabic literals
-  inside scripts. Rule: Arabic only in UTF-8 data files. The validator now hard-fails mojibake.
+- The old installer could not "remove only p2, keep font v2" (hardcoded two-file set). Fixed by the
+  reconciling installer; a hash mismatch on a superseded file aborts instead of deleting.
+- `-f` inside a method-argument list mis-parses (`.Add('...' -f a, b)`): formatted values are now
+  assigned to variables first (known PowerShell 5.1 trap).
+- Case-insensitive variable names struck again while building the handoff splicer: assigning a
+  string array to `$target` hit the `[string]$Target` parameter and silently coerced it into one
+  space-joined string. Fixed with a distinct variable name; the splicer is idempotent
+  (`scripts/embed_review_sample.ps1`).
+- Two rows held the same grammar error (Theatre + LQA sibling, same key): both corrected; the
+  sibling change is reversible on request.
 
 ## Numbers
 
-- master rows: 27,618 | unique English: 19,996 | rows with Arabic: 85 (DRAFT)
-- p3 pak: sha256 b58029662e5acf775087426ed85721905a5846127d6af5c209a482514f7b41df, 3,612,753 bytes
-- validator: 0 errors / 1 warning | glyph gate: 0 missing / 113 used | carrier: 0 round-trip failures
+- master rows: 27,618 | unique English: 19,996 | rows with Arabic: 85 (DRAFT) = 85 of 27,618 (0.3%)
+- installed: carrier p3 + font v2 + manifest (exactly three files in `Paks\~mods`)
+- validator: 0 errors / 1 warning | fixup verify: PASS | review sample: 40 rows, 0 mojibake
+- speaker markers: 130 rows / 145 tokens, DLC2 only
 
 ## Gate
 
-STOPPED at the pilot gate. The user runs reports/pilot_in_game_checklist.md (install p3 on their
-approval), reports back, and batch 1 starts on their "next". Nothing was installed, uploaded, or
-changed outside the project folder; the game folder was only read.
+STOPPED at the pilot gate. The user runs `reports/pilot_in_game_checklist.md` (areas D and E matter
+most) plus the speaker-marker question, reports back, and batch 1 starts on their "next". Nothing was
+uploaded; the only game-folder writes were the approved `~mods` changes above.

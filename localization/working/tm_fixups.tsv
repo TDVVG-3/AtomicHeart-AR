@@ -1,0 +1,4 @@
+find	replace	note
+أن تنتفخ صدرك	أن تنفخ صدرك	pilot fix (a): grammar - "تنفخ" not "تنتفخ" (same phrase exists in the Theatre_Dialogues and DIALOGUES FOR LQA siblings)
+قتلة خادعة	تصفية خفية	pilot fix (b): stealth-kill game tip wording; the <tag .../> in the row is untouched
+&Surgeon& مسحة.	&Surgeon& قطنة.	pilot fix (c): Surgeon scene "Swab" = cotton swab

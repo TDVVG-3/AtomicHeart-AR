@@ -177,3 +177,43 @@ Facts:
   rich-text tags in the 7 seeded game tips (KI-019). p3 carries the corrected tags.
 - Translation unit = unique English string (DEC-023); 27,618 rows reduce to 19,996 units,
   so reuse across identical strings is accounted for from the start.
+## Cycle 008 - Pilot install (p3) + reviewer fixes + speaker-marker check (2026-10-18)
+
+```
+Cycle open      spec hash guard:             PASS  579f581e5bb8caae2aff6ef60326f1f461688f1b
+                                                  1392391a56a97a6148a61c35 (unchanged)
+User task 1a    uninstall old carrier p2:    PASS  removed hash-verified against the old
+                                                  manifest (sha256 3d4b0ea65c5dc789...5fa9e1)
+User task 1b    install carrier p3:          PASS  installed; sha256 b58029662e5acf77...f7b41df
+User task 1c    keep font pak v2:            PASS  untouched; sha256 02b17f31e61a46dd...8269747
+User task 1d    verify manifest + ~mods:     PASS  ~mods holds exactly carrier p3 + font v2 +
+                                                  manifest (sha256 346abd7f291f36d7...5298bd)
+User task 1e    nothing else changed:        PASS  reports/install_verification.md - 0 files
+                                                  added/removed/changed outside ~mods; EXE
+                                                  unchanged; 19/19 stock paks unchanged
+User task 2     Python validator:            CLOSED by user decision - PowerShell validator is
+                                                  primary; KI-020 closed (Python not needed)
+User task 3     glossary questions:          PASS  all 26 recommended defaults ACCEPTED;
+                                                  sensitive terms to be reviewed after batch 1
+User task 4a    fix (grammar tanfukh):       PASS  2 rows (Theatre_Dialogues + its identical
+                                                  DIALOGUES FOR LQA sibling, same key)
+User task 4b    fix (stealth-kill tip):      PASS  1 row (NewP5 tip); <tag .../> byte-unchanged
+User task 4c    fix (Swab -> cotton swab):   PASS  1 row (Schebetar_Subs)
+User task 4d    revalidate (no pak rebuild): PASS  validator 0 errors / 1 warning; fixup verify
+                                                  PASS (old text gone, master==memory 85/85);
+                                                  AR_EN_REFERENCE.md regenerated (85 rows)
+User task 5     speaker-marker evidence:     PASS  reports/speaker_markers.md + speaker_marker_
+                                                  check.md - 130 rows / 145 tokens, DLC2 only;
+                                                  conditional rule added (terminology.md s.10)
+User task 6     HANDOFF rewrite + stop:      PASS  Handoff_012 written; waiting for the user
+```
+
+Facts:
+- Installed set right now in Paks\~mods: carrier p3 + font v2 + manifest. Nothing else.
+- Coverage unchanged: 85 of 27,618 (0.3%). Fixes touch existing rows only; no new rows translated.
+- The three reviewer fixes are in the master/TM/seed but NOT in the installed p3 (by order:
+  "install p3 as built; these fixes go into p4 together with the pilot results").
+- Speaker markers exist ONLY in DLC2 "Schebetars" scopes (base game has none).
+
+Next: the user runs the pilot check (reports/pilot_in_game_checklist.md + the speaker-marker
+question in reports/speaker_marker_check.md), reports back, and batch 1 starts on "next".
