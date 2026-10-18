@@ -22,10 +22,17 @@ $game = Get-Content (Join-Path $RepoRoot 'config\game.json') -Raw | ConvertFrom-
 $modsPath = $game.mods_path
 $paksDir = $game.paks_path
 
-foreach ($p in (Join-Path $RepoRoot 'build\package\zzz_atomicheart-ar_locres_p1_P.pak'),
-               (Join-Path $RepoRoot 'build\package\zzz_atomicheart-ar_font_p1_P.pak')) {
+foreach ($p in (Join-Path $RepoRoot 'build\package\zzz_atomicheart-ar_carrier_koKR_p1_P.pak'),
+               (Join-Path $RepoRoot 'build\package\zzz_atomicheart-ar_font_p2_plex_P.pak')) {
     if (-not (Test-Path $p)) { throw "build output missing, run the build scripts first: $p" }
 }
+# EXPLICIT TEST-2 SET ONLY. The rejected v1 Naskh font pak and the test-1 locres pak
+# are NOT installed by design (DEC-014 v1 rejected; DEC-015/KI-013 native-ar deferred;
+# test 2 = carrier ko-KR + font v2, user order 2026-10-18 "install test 2").
+$installSet = @(
+    'zzz_atomicheart-ar_carrier_koKR_p1_P.pak',
+    'zzz_atomicheart-ar_font_p2_plex_P.pak'
+)
 if (-not (Test-Path $paksDir)) { throw "game paks directory not found: $paksDir" }
 
 # safety: never touch existing folders/files other than ours
@@ -40,7 +47,8 @@ if (Test-Path $modsPath) {
 }
 
 $installed = New-Object System.Collections.Generic.List[object]
-foreach ($src in (Get-ChildItem (Join-Path $RepoRoot 'build\package') -Filter 'zzz_atomicheart-ar_*_P.pak')) {
+foreach ($name in $installSet) {
+    $src = Get-Item (Join-Path $RepoRoot (Join-Path 'build\package' $name))
     $destPath = Join-Path $modsPath $src.Name
     Copy-Item $src.FullName $destPath -Force
     $installed.Add([pscustomobject]@{
@@ -59,7 +67,7 @@ $manifest = [pscustomobject]@{
     installed_utc = (Get-Date).ToUniversalTime().ToString('o')
     game_build_id = $game.steam_build_id
     files = $installed
-    notes = 'Remove with scripts/uninstall_mod.ps1 only. These two paks are the ONLY files this project installs.'
+    notes = 'Remove with scripts/uninstall_mod.ps1 only. These paks are the ONLY files this project installs. Test-2 set: DEC-007 carrier (ko-KR slot, Arabic text) + font v2 (IBM Plex Sans Arabic dual-script).'
 }
 $manifestPath = Join-Path $modsPath 'atomic-heart-ar-install-manifest.json'
 $manifest | ConvertTo-Json -Depth 5 | Set-Content -Path $manifestPath -Encoding UTF8
