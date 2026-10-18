@@ -1,0 +1,149 @@
+﻿# Font glyph coverage report (Phase 6)
+# Generated (UTC): 2026-10-18T11:02:35.3333846Z
+# Method: pure-PowerShell sfnt cmap parser (formats 4 and 12).
+# Arabic verdict: FULL = all 42 core letter codepoints U+0621..U+064A mapped in scope; PARTIAL = some; NONE = none.
+
+### IBMPlexSansArabic-Bold.ttf  (247896 bytes)
+    codepointsMapped: 1032
+    coverage: Arabic=252, Arabic-Supplement=48, Arabic-ExtA=40, Arabic-PresentationA=196, Arabic-PresentationB=140, Latin-Basic=95, Latin-Ext=113, Greek=1, Thai=1
+    arabicCoreLetters: 42/28   arabicTotal: 676
+    VERDICT: FULL   (cmap formats present: 4)
+
+### IBMPlexSansArabic-ExtraLight.ttf  (242568 bytes)
+    codepointsMapped: 1032
+    coverage: Arabic=252, Arabic-Supplement=48, Arabic-ExtA=40, Arabic-PresentationA=196, Arabic-PresentationB=140, Latin-Basic=95, Latin-Ext=113, Greek=1, Thai=1
+    arabicCoreLetters: 42/28   arabicTotal: 676
+    VERDICT: FULL   (cmap formats present: 4)
+
+### IBMPlexSansArabic-Light.ttf  (239508 bytes)
+    codepointsMapped: 1032
+    coverage: Arabic=252, Arabic-Supplement=48, Arabic-ExtA=40, Arabic-PresentationA=196, Arabic-PresentationB=140, Latin-Basic=95, Latin-Ext=113, Greek=1, Thai=1
+    arabicCoreLetters: 42/28   arabicTotal: 676
+    VERDICT: FULL   (cmap formats present: 4)
+
+### IBMPlexSansArabic-Medium.ttf  (243028 bytes)
+    codepointsMapped: 1032
+    coverage: Arabic=252, Arabic-Supplement=48, Arabic-ExtA=40, Arabic-PresentationA=196, Arabic-PresentationB=140, Latin-Basic=95, Latin-Ext=113, Greek=1, Thai=1
+    arabicCoreLetters: 42/28   arabicTotal: 676
+    VERDICT: FULL   (cmap formats present: 4)
+
+### IBMPlexSansArabic-Regular.ttf  (236708 bytes)
+    codepointsMapped: 1032
+    coverage: Arabic=252, Arabic-Supplement=48, Arabic-ExtA=40, Arabic-PresentationA=196, Arabic-PresentationB=140, Latin-Basic=95, Latin-Ext=113, Greek=1, Thai=1
+    arabicCoreLetters: 42/28   arabicTotal: 676
+    VERDICT: FULL   (cmap formats present: 4)
+
+### IBMPlexSansArabic-SemiBold.ttf  (245544 bytes)
+    codepointsMapped: 1032
+    coverage: Arabic=252, Arabic-Supplement=48, Arabic-ExtA=40, Arabic-PresentationA=196, Arabic-PresentationB=140, Latin-Basic=95, Latin-Ext=113, Greek=1, Thai=1
+    arabicCoreLetters: 42/28   arabicTotal: 676
+    VERDICT: FULL   (cmap formats present: 4)
+
+### IBMPlexSansArabic-Text.ttf  (249000 bytes)
+    codepointsMapped: 1032
+    coverage: Arabic=252, Arabic-Supplement=48, Arabic-ExtA=40, Arabic-PresentationA=196, Arabic-PresentationB=140, Latin-Basic=95, Latin-Ext=113, Greek=1, Thai=1
+    arabicCoreLetters: 42/28   arabicTotal: 676
+    VERDICT: FULL   (cmap formats present: 4)
+
+### IBMPlexSansArabic-Thin.ttf  (243144 bytes)
+    codepointsMapped: 1032
+    coverage: Arabic=252, Arabic-Supplement=48, Arabic-ExtA=40, Arabic-PresentationA=196, Arabic-PresentationB=140, Latin-Basic=95, Latin-Ext=113, Greek=1, Thai=1
+    arabicCoreLetters: 42/28   arabicTotal: 676
+    VERDICT: FULL   (cmap formats present: 4)
+
+### plex-sans-arabic\ibm-plex-sans-arabic\fonts\complete\otf\IBMPlexSansArabic-Bold.otf  (181172 bytes)
+    codepointsMapped: 1030
+    coverage: Arabic=252, Arabic-Supplement=48, Arabic-ExtA=40, Arabic-PresentationA=196, Arabic-PresentationB=140, Latin-Basic=95, Latin-Ext=113, Greek=1, Thai=1
+    arabicCoreLetters: 42/28   arabicTotal: 676
+    VERDICT: FULL   (cmap formats present: 4)
+
+### plex-sans-arabic\ibm-plex-sans-arabic\fonts\complete\otf\IBMPlexSansArabic-ExtraLight.otf  (174752 bytes)
+    codepointsMapped: 1030
+    coverage: Arabic=252, Arabic-Supplement=48, Arabic-ExtA=40, Arabic-PresentationA=196, Arabic-PresentationB=140, Latin-Basic=95, Latin-Ext=113, Greek=1, Thai=1
+    arabicCoreLetters: 42/28   arabicTotal: 676
+    VERDICT: FULL   (cmap formats present: 4)
+
+### plex-sans-arabic\ibm-plex-sans-arabic\fonts\complete\otf\IBMPlexSansArabic-Light.otf  (176464 bytes)
+    codepointsMapped: 1030
+    coverage: Arabic=252, Arabic-Supplement=48, Arabic-ExtA=40, Arabic-PresentationA=196, Arabic-PresentationB=140, Latin-Basic=95, Latin-Ext=113, Greek=1, Thai=1
+    arabicCoreLetters: 42/28   arabicTotal: 676
+    VERDICT: FULL   (cmap formats present: 4)
+
+### plex-sans-arabic\ibm-plex-sans-arabic\fonts\complete\otf\IBMPlexSansArabic-Medium.otf  (178052 bytes)
+    codepointsMapped: 1030
+    coverage: Arabic=252, Arabic-Supplement=48, Arabic-ExtA=40, Arabic-PresentationA=196, Arabic-PresentationB=140, Latin-Basic=95, Latin-Ext=113, Greek=1, Thai=1
+    arabicCoreLetters: 42/28   arabicTotal: 676
+    VERDICT: FULL   (cmap formats present: 4)
+
+### plex-sans-arabic\ibm-plex-sans-arabic\fonts\complete\otf\IBMPlexSansArabic-Regular.otf  (170456 bytes)
+    codepointsMapped: 1030
+    coverage: Arabic=252, Arabic-Supplement=48, Arabic-ExtA=40, Arabic-PresentationA=196, Arabic-PresentationB=140, Latin-Basic=95, Latin-Ext=113, Greek=1, Thai=1
+    arabicCoreLetters: 42/28   arabicTotal: 676
+    VERDICT: FULL   (cmap formats present: 4)
+
+### plex-sans-arabic\ibm-plex-sans-arabic\fonts\complete\otf\IBMPlexSansArabic-SemiBold.otf  (179216 bytes)
+    codepointsMapped: 1030
+    coverage: Arabic=252, Arabic-Supplement=48, Arabic-ExtA=40, Arabic-PresentationA=196, Arabic-PresentationB=140, Latin-Basic=95, Latin-Ext=113, Greek=1, Thai=1
+    arabicCoreLetters: 42/28   arabicTotal: 676
+    VERDICT: FULL   (cmap formats present: 4)
+
+### plex-sans-arabic\ibm-plex-sans-arabic\fonts\complete\otf\IBMPlexSansArabic-Text.otf  (176312 bytes)
+    codepointsMapped: 1030
+    coverage: Arabic=252, Arabic-Supplement=48, Arabic-ExtA=40, Arabic-PresentationA=196, Arabic-PresentationB=140, Latin-Basic=95, Latin-Ext=113, Greek=1, Thai=1
+    arabicCoreLetters: 42/28   arabicTotal: 676
+    VERDICT: FULL   (cmap formats present: 4)
+
+### plex-sans-arabic\ibm-plex-sans-arabic\fonts\complete\otf\IBMPlexSansArabic-Thin.otf  (168492 bytes)
+    codepointsMapped: 1030
+    coverage: Arabic=252, Arabic-Supplement=48, Arabic-ExtA=40, Arabic-PresentationA=196, Arabic-PresentationB=140, Latin-Basic=95, Latin-Ext=113, Greek=1, Thai=1
+    arabicCoreLetters: 42/28   arabicTotal: 676
+    VERDICT: FULL   (cmap formats present: 4)
+
+### plex-sans-arabic\ibm-plex-sans-arabic\fonts\complete\ttf\IBMPlexSansArabic-Bold.ttf  (247896 bytes)
+    codepointsMapped: 1032
+    coverage: Arabic=252, Arabic-Supplement=48, Arabic-ExtA=40, Arabic-PresentationA=196, Arabic-PresentationB=140, Latin-Basic=95, Latin-Ext=113, Greek=1, Thai=1
+    arabicCoreLetters: 42/28   arabicTotal: 676
+    VERDICT: FULL   (cmap formats present: 4)
+
+### plex-sans-arabic\ibm-plex-sans-arabic\fonts\complete\ttf\IBMPlexSansArabic-ExtraLight.ttf  (242568 bytes)
+    codepointsMapped: 1032
+    coverage: Arabic=252, Arabic-Supplement=48, Arabic-ExtA=40, Arabic-PresentationA=196, Arabic-PresentationB=140, Latin-Basic=95, Latin-Ext=113, Greek=1, Thai=1
+    arabicCoreLetters: 42/28   arabicTotal: 676
+    VERDICT: FULL   (cmap formats present: 4)
+
+### plex-sans-arabic\ibm-plex-sans-arabic\fonts\complete\ttf\IBMPlexSansArabic-Light.ttf  (239508 bytes)
+    codepointsMapped: 1032
+    coverage: Arabic=252, Arabic-Supplement=48, Arabic-ExtA=40, Arabic-PresentationA=196, Arabic-PresentationB=140, Latin-Basic=95, Latin-Ext=113, Greek=1, Thai=1
+    arabicCoreLetters: 42/28   arabicTotal: 676
+    VERDICT: FULL   (cmap formats present: 4)
+
+### plex-sans-arabic\ibm-plex-sans-arabic\fonts\complete\ttf\IBMPlexSansArabic-Medium.ttf  (243028 bytes)
+    codepointsMapped: 1032
+    coverage: Arabic=252, Arabic-Supplement=48, Arabic-ExtA=40, Arabic-PresentationA=196, Arabic-PresentationB=140, Latin-Basic=95, Latin-Ext=113, Greek=1, Thai=1
+    arabicCoreLetters: 42/28   arabicTotal: 676
+    VERDICT: FULL   (cmap formats present: 4)
+
+### plex-sans-arabic\ibm-plex-sans-arabic\fonts\complete\ttf\IBMPlexSansArabic-Regular.ttf  (236708 bytes)
+    codepointsMapped: 1032
+    coverage: Arabic=252, Arabic-Supplement=48, Arabic-ExtA=40, Arabic-PresentationA=196, Arabic-PresentationB=140, Latin-Basic=95, Latin-Ext=113, Greek=1, Thai=1
+    arabicCoreLetters: 42/28   arabicTotal: 676
+    VERDICT: FULL   (cmap formats present: 4)
+
+### plex-sans-arabic\ibm-plex-sans-arabic\fonts\complete\ttf\IBMPlexSansArabic-SemiBold.ttf  (245544 bytes)
+    codepointsMapped: 1032
+    coverage: Arabic=252, Arabic-Supplement=48, Arabic-ExtA=40, Arabic-PresentationA=196, Arabic-PresentationB=140, Latin-Basic=95, Latin-Ext=113, Greek=1, Thai=1
+    arabicCoreLetters: 42/28   arabicTotal: 676
+    VERDICT: FULL   (cmap formats present: 4)
+
+### plex-sans-arabic\ibm-plex-sans-arabic\fonts\complete\ttf\IBMPlexSansArabic-Text.ttf  (249000 bytes)
+    codepointsMapped: 1032
+    coverage: Arabic=252, Arabic-Supplement=48, Arabic-ExtA=40, Arabic-PresentationA=196, Arabic-PresentationB=140, Latin-Basic=95, Latin-Ext=113, Greek=1, Thai=1
+    arabicCoreLetters: 42/28   arabicTotal: 676
+    VERDICT: FULL   (cmap formats present: 4)
+
+### plex-sans-arabic\ibm-plex-sans-arabic\fonts\complete\ttf\IBMPlexSansArabic-Thin.ttf  (243144 bytes)
+    codepointsMapped: 1032
+    coverage: Arabic=252, Arabic-Supplement=48, Arabic-ExtA=40, Arabic-PresentationA=196, Arabic-PresentationB=140, Latin-Basic=95, Latin-Ext=113, Greek=1, Thai=1
+    arabicCoreLetters: 42/28   arabicTotal: 676
+    VERDICT: FULL   (cmap formats present: 4)
+

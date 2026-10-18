@@ -141,7 +141,7 @@ C and clearly tell the user which language slot Arabic replaces.
 
 ## DEC-008 — Spec integrity guard (backup + hash + auto-restore)
 
-Date: 2026-10-18
+Date: 2026-10-17
 Status: ACTIVE (permanent, per user decision)
 
 Decision:
@@ -253,3 +253,42 @@ exit 0, output empty). Recorded in the cycle report.
 
 
 ---
+
+
+---
+
+## DEC-014 - Font strategy for UI Arabic (v1 rejected, v2 interim, composite fallback production)
+
+Date: 2026-10-18
+Status: ACTIVE
+
+Decision:
+v1 (Noto Naskh Arabic UI replacing all UI FontFace payloads) is REJECTED as a UI path:
+confirmed evidence from the user's in-game test (cycle 003) - every Latin string in the
+main menu rendered blank, only digits and '!' visible, matching Naskh's Latin-Basic
+coverage of only 15 codepoints (render-output analysis; the game writes no log to
+confirm the hang mechanism). The FPS collapse / hang is LIKELY the missing-glyph
+fallback storm over Latin lookups (UNCONFIRMED: no engine log exists in this build).
+
+v2 (interim, test-grade): all replaced UI FontFace payloads use IBM Plex Sans Arabic
+(OFL 1.1; official release @ibm/plex-sans-arabic@1.1.0, sha256
+f03915581aea37d82792c188b08064023a73494d679b8e19f85f5971db714013), whose verified
+cmap coverage is Latin-Basic 95/95 + Arabic 42/42 core letters + presentation forms.
+Latin stays readable, Arabic renderable, single self-contained family.
+
+Production requirement (user decision): the original game fonts (BlenderPro/Gotham/
+BrutalType) must NOT be replaced in the final mod. That demands composite-font
+fallback editing (adding Arabic faces as fallback entries on the original Font
+objects). This needs a headless Font-asset editor (candidate: UAssetAPI-based script
+or UAssetGUI hand-edit); NOT attempted in cycle 003. Recorded as the Phase 8 work item.
+
+Reason:
+v1 proved by experiment that single-script Arabic-only payloads are unusable for UI.
+The engine resolves missing glyphs through face fallbacks which, for these Font
+objects, cannot be configured without asset edits.
+
+Consequence:
+- Prototype (cycle 003+): sidecar swap with dual-script Plex payloads (v2 pak;
+  this still changes the Latin typeface LOOK during tests; acceptable only for
+  prototyping).
+- Production (Phase 8): implement composite fallback; verify Latin look unchanged.

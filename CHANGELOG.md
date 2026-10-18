@@ -5,6 +5,25 @@ Format loosely follows Keep a Changelog.
 
 ## [Unreleased]
 
+### Added / Fixed (Cycle 003 — 2026-10-18)
+- IN-GAME TEST RESULT (attempt 1): FAIL. Game booted and loaded mod paks (font swap
+  visibly active = mount pipeline CONFIRMED), but all Latin UI text disappeared
+  (only digits and '!' rendered = Naskh Latin-Basic 15), heavy FPS collapse, hang.
+  Root cause: single-script Arabic-only font payload replacing UI FontFaces (DEC-014).
+- Mods uninstalled on user order: uninstall_mod.ps1 run — both paks + manifest removed
+  exactly (hash-verified); ~mods back to stock (19 stock paks only).
+- Font strategy DEC-014: v1 rejected; v2 = dual-script IBM Plex Sans Arabic payloads;
+  production target = composite-font fallback (Phase 8, needs headless Font-asset tooling).
+- IBM Plex Sans Arabic downloaded from official IBM/plex release 1.1.0 (OFL 1.1,
+  SHA256 f03915581aea37d82792c188b08064023a73494d679b8e19f85f5971db714013), verified
+  locally: Latin-Basic 95/95, Arabic 42/42, presentation forms complete.
+- scripts/build_fontpak_p2_plex.ps1 + font pak v2 built
+  (build/package/zzz_atomicheart-ar_font_p2_plex_P.pak) — NOT installed.
+- Isolated-variant test plan documented (locres-only first, font v2 second).
+- KI-012 recorded: shipping build writes no engine log; `-log` optional next round.
+- fonts/licenses/IBM-Plex-Sans-Arabic-OFL-1.1.txt recorded (redistributable).
+- reports/font_glyph_coverage_plex.txt / .csv (Plex verification evidence).
+
 ### Added (Cycle 002 — 2026-10-18)
 - .NET 8 runtime install started (user-approved winget package, 8.0.32).
 - PHASE 7 prototype: native-`ar` NewP5 locres pak built (25 seed strings, locmeta

@@ -35,9 +35,16 @@ Therefore:
 
 ## Fonts
 
-No third-party font is bundled yet. When IBM Plex Sans Arabic (or Noto Sans Arabic)
-is downloaded in Phase 6/8, its license file will be placed in `fonts/licenses/` and
-checked for redistribution permission before it ships in any release.
+| Font | Version | License | Used as | Source |
+|------|---------|---------|---------|--------|
+| IBM Plex Sans Arabic | release @ibm/plex-sans-arabic@1.1.0 (SHA256 of zip: f03915581aea37d82792c188b08064023a73494d679b8e19f85f5971db714013) | SIL OFL 1.1 (redistributable) | Prototype UI font payload (v2 font pak, DEC-014) | https://github.com/IBM/plex/releases/tag/%40ibm/plex-sans-arabic%401.1.0 |
+
+License files live in `fonts/licenses/` (IBM-Plex-Sans-Arabic-OFL-1.1.txt). OFL fonts may
+be redistributed; they are NOT committed to this repository (only the license text is).
+
+Former game-font payloads (BlenderPro/Gotham/BrutalType, commercial) and the downloaded
+original font binaries under `source/original/fonts/` are gitignored and never
+committed or redistributed.
 
 ## Game content
 
