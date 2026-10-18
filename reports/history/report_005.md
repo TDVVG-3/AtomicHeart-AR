@@ -7,8 +7,8 @@ check, build the English-fill carrier, and prepare Test 3 for the user. Nothing 
 installed or uninstalled this cycle (per the standing rule; awaiting user go).
 
 ## Standing verifications
-- MASTER_PROMPT.md integrity: SHA256 verified OK at cycle start (5637... prefix of the
-  guard hash; auto-restore not needed).
+- MASTER_PROMPT.md integrity: SHA256 verified OK at cycle start
+  (579f581e... guard hash; auto-restore not needed).
 - git remote -v: EMPTY (local-only commits; no-upload rule respected).
 - Game folder untouched except Paks/~mods; no EXE/DLL/Steam files touched.
 
