@@ -62,12 +62,31 @@ for ($i = 0; $i -lt $al.Count; $i++) {
     $ve = $en[$id]
     if (-not $va.Trim()) { throw ('[' + $id + '] empty Arabic') }
     if ($va -notmatch $arRe) { throw ('[' + $id + '] Arabic cell has no Arabic letters - copy-class rows must be omitted: ' + $va) }
-    # token multiset comparison
-    $pat = '(\*\d+(?:\.\d+)?\*)|(\{[^}]*\})|(<[^>]{1,24}>)|(&[A-Za-z]{1,16}&)|(\\n)|(\[[A-Za-z/]{1,12}\])'
-    $te = ($ve | Select-String -AllMatches -Pattern $pat).Matches | ForEach-Object { $_.Value } | Sort-Object
-    $ta = ($va | Select-String -AllMatches -Pattern $pat).Matches | ForEach-Object { $_.Value } | Sort-Object
+    # token multiset comparison.
+    # Bracket labels may be localized ([Leave] -> [مغادرة]) - that is the KI-029/DEC-039 exception.
+    # Everything else must survive byte-exact, and the bracket count must still match, so a dropped
+    # or invented bracket token is still a hard failure.
+    # the timing-marker pattern is the validator's one: it also covers RANGE markers such as *0.01-0.28*
+    $patNon = '(\*[0-9][0-9.\-]*\*)|(\{[^}]*\})|(<[^>]{1,24}>)|(&[A-Za-z]{1,16}&)|(\\n)'
+    $patBrk = '\[[^\]]{1,40}\]'
+    $te = ($ve | Select-String -AllMatches -Pattern $patNon).Matches | ForEach-Object { $_.Value } | Sort-Object
+    $ta = ($va | Select-String -AllMatches -Pattern $patNon).Matches | ForEach-Object { $_.Value } | Sort-Object
     if ((($te -join '|') -cne ($ta -join '|'))) {
         throw ('[' + $id + '] token mismatch EN=[' + ($te -join ',') + '] AR=[' + ($ta -join ',') + ']')
+    }
+    $tb = @(($ve | Select-String -AllMatches -Pattern $patBrk).Matches | Where-Object { $_ } | ForEach-Object { $_.Value })
+    $ab = @(($va | Select-String -AllMatches -Pattern $patBrk).Matches | Where-Object { $_ } | ForEach-Object { $_.Value })
+    if ($tb.Count -ne $ab.Count) {
+        throw ('[' + $id + '] bracket token count mismatch EN=[' + ($tb -join ',') + '] AR=[' + ($ab -join ',') + ']')
+    }
+    if ($tb.Count -gt 0) {
+        $sbt = @($tb | Sort-Object)
+        $sba = @($ab | Sort-Object)
+        for ($bi = 0; $bi -lt $tb.Count; $bi++) {
+            if (($sba[$bi] -cne $sbt[$bi]) -and ($sba[$bi] -notmatch $arRe)) {
+                throw ('[' + $id + '] bracket token changed without an Arabic label? EN=[' + $sbt[$bi] + '] AR=[' + $sba[$bi] + ']')
+            }
+        }
     }
     if ($va.Length -gt [Math]::Ceiling($ve.Length * 1.6)) { Write-Output ('[warn] ' + $id + ': AR ' + $va.Length + ' chars vs EN ' + $ve.Length) }
     $rows.Add([pscustomobject]@{ id = $id; english = $ve; arabic = $va })

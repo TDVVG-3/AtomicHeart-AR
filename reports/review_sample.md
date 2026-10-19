@@ -1,149 +1,149 @@
 # AR/EN review sample (pilot)
 
-Generated: 2026-10-19 12:56:16
-Rows with Arabic available: 13989 | sample size: 40
+Generated: 2026-10-19 20:53:47
+Rows with Arabic available: 21220 | sample size: 40
 
 Read each block as: Arabic (what the player sees) then the English source it came from.
 
-### 1. [Vavilov_Dialogues] Dialogue
+### 1. [NTD] Lore
+reason: spread | key: NTD_StringTable/pust_vsegda_budet_solnce | notes: batch2-0021
+
+AR: لتشرق الشمس دائماً!
+
+EN: MAY THE SUN EVER SHINE!
+
+### 2. [Sakhalin_dlc3] Unknown
+reason: spread | key: DT_Subtitles_DLC03_Sakhalin/Sakhalin_139_Sentences | notes: batch2-0034
+
+AR: أكثر مما أرغب.
+
+EN: More than I'd like.
+
+### 3. [Vavilov_Dialogues] Dialogue
 reason: spread | key: /A81EE736450BBE0C9F549AA827F3A36E | notes: batch2-0008
 
 AR: فهمت. أريدك أن تتوجّه إلى فيدنخا فوراً يا P-3. فلدينا مشاكل أكبر من بيتروف لنعالجها.
 
 EN: Understood. I need you to report to the VDNH at once, P-3. We've got bigger problems than Petrov to deal with.
 
-### 2. [NewP5] UI
+### 4. [Marshes_dlc1] Unknown
+reason: spread | key: /E60F648346DEE686C2029485BAC2E9FB | notes: batch2-0024
+
+AR: تلك إحدى وسائل التنقل بين السطح وما تحت الأرض. لكن كل روبوتات ستريكوزا تحت سيطرة نورا.
+
+EN: That's one method of transportation between the surface and the underground. But all the Strekozas are under NORA's control.
+
+### 5. [NewP5] UI
 reason: spread | key: /FE629BCB49FADFD51998CD84DB989127 | notes: batch1
 
 AR: وحدة الاصطدام فائقة التوصيل
 
 EN: Superconducting impact module
 
-### 3. [VDNKh_Dialogues] Dialogue
+### 6. [VDNKh_Dialogues] Dialogue
 reason: spread | key: /F03480C34728DB65170756B8A38F3512 | notes: batch2-0005
 
 AR: إذن موصّل ألفا بحوزة الدكتور سيتشينوف الآن، ويريد الرفيق مولوتوف طرده من المنشأة ليأخذ موصّل ألفا لنفسه؟!
 
 EN: So Dr. Sechenov has the alpha connector right now, and Comrade Molotov wants to kick him out of the Facility so he can take the alpha connector for himself?!
 
-### 4. [VDNKh_Dialogues] Dialogue
+### 7. [VDNKh_Dialogues] Dialogue
 reason: spread | key: /E180602A42E319A4341A44B1B40E2BCB | notes: batch2-0006
 
 AR: هل تتحدث إليّ أيها الرائد؟
 
 EN: Are you talking to me, Major?
 
-### 5. [NewP5] UI
+### 8. [NewP5] UI
 reason: spread | key: /3C6F4A8C4C2C86C913E096B2E741E2F3 | notes: batch1
 
 AR: كانت تمارا أرتيمينكوفا صديقة ريجوفا الحميمة حين كانت الأخيرة الباليرينا الأولى، وهي الآن منفردة في مسرح مايا بليستسكايا. وقد اضطرّت للنيابة عن صديقتها السابقة في الأدوار الرئيسية كلما تعذّر عليها حضور عرض (بسبب تقلّب المزاج ورفضها مشاركة المسرح مع الروبوتات، بالطبع، في المقام الأول). وعلى الرغم من المنافسة الهائلة بين باليرينات البشر والروبوتات، تحبّ أرتيمينكوفا زميلاتها الميكانيكيات وتحترمهنّ، وتتباهى فخورةً بمشاركتها المسرح معهنّ، إذ ترى في ذلك تجربة فنية غير مسبوقة.
 
 EN: Formerly prima ballerina Ryzhova's best friend, now a soloist at the Maya Plisetskaya Theater, Tamara Artemenkova had had to fill in for her ex-friend in lead roles when the latter was unable to make it to a performance (primarily due to capriciousness and a refusal to share the stage with robots, of course). Despite the enormous competition between human and robot ballerinas, Artemenkova loves and respects her mechanical colleagues and proudly boasts about sharing the stage with them, seeing it as an unprecedented artistic experiment.
 
-### 6. [NewP5] UI
+### 9. [Schebetar_Subs] Subtitles
+reason: spread | key: /07C6120249BE7A2E2D4C8E9A0E6F0F53 | notes: batch2-0017
+
+AR: كولخوزي حائر: لا تضعي تلك الإوزة في الصندوق! لا، أنا لا أتحدث إليك يا زينا! كان عليّ أن أضربك ضرباً مبرحاً... كادوا يرسلون هونكر إلى مجمّع فافيلوف مع كل الآخرين! آي ياي ياي... أيمكنك تحضير الغداء، وسآتي بعد لحظة... مهلاً، لا أستطيع العثور عليه. أنت لم ترسليه، أليس كذلك؟
+
+EN: Confused kolkhoz man: Don't put that goose in the box! No, I'm not talking to you, Zina! I oughtta beat the living tar outta you... They almost sent Honker to the Vavilov Complex with all the others! Ai yai yai... Could you get lunch ready, I'll be there in a sec... hey, I can't find him. You didn't send him, did you?
+
+### 10. [Sakhalin_dlc3] Unknown
+reason: spread | key: /11E70A964EEB5C10FEF6478AD401009E | notes: batch2-0033
+
+AR: الرائد نيتشاييف. موظف في المنشأة 3826.
+
+EN: Major Nechaev. Employee Facility 3826.
+
+### 11. [NTD] Lore
+reason: spread | key: NTD_StringTable_DLC1/zapis_160 | notes: batch2-0022
+
+AR: ملاحظة 160. تجذّرت السلالة 149.R/1-A2 بنجاح في ظروف البيوت المحمية المغلقة لمندليف. وعند نقص الماء أو الضوء، تحفر نباتات اللفت نفسها من الأرض وتنتقل إلى منطقة أفضل. لكن مع انتقال العيّنات، صار لا بدّ من تحسين الأسوار المحيطة بالمحاصيل التجريبية: فقد أفسد اللفت تربة محاصيل أخرى، وحاول الخروج من البيت المحمي بحثاً عن الضوء والماء. ولم تُثبت حالات تغذية على حساب نباتات أخرى، لكن بحسب ملاحظة إيفان م.، ماتت في البيت المحمي عدة نباتات طماطم من سلالة معدّلة بيوديد البوتاسيوم.
+
+EN: Note 160. Propagant 149.R/1-A2 has successfully taken root under the conditions of the protected Mendeleev greenhouse. When faced with a lack of water or light, turnip plants dig themselves out of the ground and move to a more favorable area. However, with the specimens moving, it became necessary to improve the fences surrounding the experimental crops: the turnips spoiled the soil of other crops, and also tried to leave the greenhouse in search of light and water. Cases of feeding at the expense of other plants have not been confirmed, but, according to Ivan M., several tomato plants of a line modified with potassium iodide died in the greenhouse.
+
+### 12. [Chelomey_dlc3] Unknown
+reason: spread | key: DT_Subtitles_DLC03_Chelomey/Chelomey_250_Sentences | notes: batch2-0032
+
+AR: احترس.
+
+EN: Careful.
+
+### 13. [NewP5] UI
 reason: spread | key: /0C87FE2E444E0F95FE3FFF9467B672C9 | notes: batch1
 
 AR: حياة جديدة تتفتّح في الداخل.
 
 EN: New life blossoms inside.
 
-### 7. [CUTSCENES] Cutscene
+### 14. [CUTSCENES] Cutscene
 reason: spread | key: /7665C54B408C2118D53C80847F1A4DFE | notes: batch2-0004
 
 AR: أليس لديك عمل تفعله؟
 
 EN: Don't you have work to do?
 
-### 8. [Vavilov_Dialogues] Dialogue
+### 15. [Vavilov_Dialogues] Dialogue
 reason: spread | key: /23CCFC4246EF6F7F84A66C83DC9330B1 | notes: label:AI vendor (batch-1 wording kept)
 
 AR: نورا
 
 EN: NORA
 
-### 9. [Chelomey_Dialogues] Dialogue
+### 16. [Chelomey_Dialogues] Dialogue
 reason: spread | key: /4B8476EC4BD2275A98733F80E70C3227 | notes: batch1
 
 AR: رجل يتصوّر
 
 EN: Man posing for a picture
 
-### 10. [NewP5] UI
+### 17. [NewP5] UI
 reason: spread | key: /5D041AD34774DB99BD71DC92C6F7028F | notes: batch1
 
 AR: فيودور كوروليف
 
 EN: Fyodor Korolyov
 
-### 11. [Chelomey_Dialogues] Dialogue
+### 18. [Chelomey_Dialogues] Dialogue
 reason: spread | key: /41EEC98A4C81A98AED65F5ABB482DA64 | notes: batch2-0002
 
 AR: علينا مواصلة التقدم أيها الرفيق الرائد!
 
 EN: We need to keep moving, Comrade Major!
 
-### 12. [NewP5] UI
+### 19. [NewP5] UI
 reason: spread | key: /485C9D874CB3A9AD6D64D4878659760A | notes: batch1
 
 AR: الأبواب مفتوحة
 
 EN: Doors are open
 
-### 13. [NewP5] UI
+### 20. [NewP5] UI
 reason: spread | key: /934D0CEB4CB8C203F095F785D81F1A64 | notes: batch1
 
 AR: خذ رأس فيكتور إلى مختبر مجمّع بافلوف
 
 EN: Take Viktor's head to the Pavlov Complex lab
-
-### 14. [VDNKh_Dialogues] Dialogue
-reason: spread | key: /8754256742DC94C8F130048A1B4F62FE | notes: batch2-0006
-
-AR: *0.06*وضع التدريب؟! سيؤدي هذا إلى عدوانية أكبر من أنظمة الحماية السلبية والمادية! *0.07*سيضعك في خطر وقد يؤدي إلى موت الناس الناجين، إن كان هناك ناجون أصلاً!
-
-EN: *0.06*Drill mode?! This would lead to even greater aggression from passive and physical security systems! *0.07*It will endanger you and may lead to the death of the surviving people, assuming there are any still left!
-
-### 15. [NewP5] UI
-reason: spread | key: /A3FA8F764DA2BD4CD840A184AFC56080 | notes: batch1
-
-AR: ادخل الكوخ
-
-EN: Enter the hut
-
-### 16. [Vavilov_Dialogues] Dialogue
-reason: spread | key: /52EC7FF847D25DC9CFEE22B6BDEC31CD | notes: batch2-0011
-
-AR: *0.11*يا لسوء ما انتهى إليه كل شيء. لم يتخيل أحد أن يحدث شيء كهذا. كان الحديث دائماً عن «الانطلاق إلى النجوم»، و«المستقبل المشرق الذي ينتظرنا»... *0.04*والآن كل ما أستطيعه أن أرقد هنا وأفكر في كل ذلك.
-
-EN: *0.11*It's too bad how it all ended up. No one ever thought something like this could happen. It was always "going to the stars," "the bright future that awaits us..." *0.04*now all I can do is lie here and think about it all.
-
-### 17. [VDNKh_Dialogues] Dialogue
-reason: spread | key: /26EFCDF44B49D981D031D4B5B8AA33CF | notes: batch2-0006
-
-AR: حسناً، اهدأ. سأحاول أن أجدهم.
-
-EN: All right, calm down. I'll try to find them.
-
-### 18. [Polygon_Dialogues] Dialogue
-reason: spread | key: /80882C534DC27739B7EFB79FA62A4F03 | notes: batch2-0012
-
-AR: بالتأكيد، لكنها نُفّذت على نحو غير سليم. والاتحاد السوفييتي لن يرتكب خطأً كهذا أبداً.
-
-EN: Indeed, but it was implemented improperly. The Soviet Union would never make such a mistake.
-
-### 19. [NewP5] UI
-reason: spread | key: /F67A0C73418226C83B830C8B561B3EE0 | notes: batch1
-
-AR: رغم بساطته، يتيح التصويب على مسافة تزيد على 100 متر.
-
-EN: Despite its simplicity, allows to aim at a distance of more than 100 meters.
-
-### 20. [CUTSCENES] Cutscene
-reason: spread | key: /8B30CBC0472A42B17A4EE7917597AA74 | notes: batch2-0003
-
-AR: أعطِ هذا للاريسا. أسدل الستار!
-
-EN: Give this to Larisa. Curtain!
 
 ### 21. [PearTerminals] UI
 reason: longest | key: /9A3AD94643642C7E9B30C09C32D4615B | notes: batch1
@@ -166,19 +166,19 @@ AR: تاريخ: 9 مايو 1955 من: الأرشيف إلى: المساعد ال
 
 EN: Date: May 9, 1955 From: ARCHIVE To: Lab Assistant Y. Klimov  Add some conclusions at the end. It's really dry.  "Just a little while ago 'what if' conversations were, at best, the purview of statisticians and analysts, depending on the topic in question. But today, thanks to Lebedev's quantum systems, predicting alternate histories has literally become a science. This has allowed us to get a very accurate report on the history of the Soviet Union and World War II if the Party had not approved Sechenov's project to roboticize our troops in the late '30s. This theoretical report has received the designation "5P" at the Academy of Consequences.  Stage one: defeat. Due to the novelty of the technology and the weak adaptation of our manufacturing capabilities, the robots turn out to be unable to resist the Wehrmacht's forces, and initial casualties are colossal. The Soviet Union loses all its territory up to Moscow. Stage two: regrouping. Toward the middle of the war, human casualties and pressure from the Reich become so great that the Red Army's only salvation lies in building more advanced combat robots in order to make up for lost soldiers. The process of manufacturing new combat robots is reformed and enhanced in the Urals and Siberia. Stage three: respite. Seeing the Soviet Union's defeat and refusing to believe in upcoming robot upgrades, allied troops concentrate their forces and become more aggressive, since they understand that the Red Army will no longer be cannon fodder in the European war. The Reich halts its advance deep into the Soviet Union and switches to the Western Front. Stage four: breaking point. Massive battalions of robotic troops with various functions carry out highly effective sudden attacks, reclaiming our captured territory in a matter of weeks. In the winter, their mobility and lack of reliance on food and medicine give the Soviet machines a massive advantage. Stage five: victory. Even before the creation of the V-2 rocket and the failure of the Brown Plague, Soviet robots liberate most of Europe. Since the world's population is never reduced by illness, we find ourselves in a fragile world where a weakened Soviet Union is forced to rely on the might of its technology.
 
-### 24. [PearTerminals] UI
-reason: longest | key: /A917420A42D7C9A7C2D6399399143C84 | notes: batch1
+### 24. [Schebetars_dlc1] Unknown
+reason: longest | key: /D562C2CA4449AB7379033F877E94DB0E | notes: batch2-0025
 
-AR: تاريخ: 21 سبتمبر 1954 من: الرقيب أو. باراي-أوغلا إلى: مدير القرية الخدمية إ. عبد الرحيموف   ألقينا القبض على شخص يدعى م. غورشينيف، طالب جامعي ومراقب طيور من مجموعة سياحية من جامعة موسكو الحكومية. عُثر عليه في منطقة محظورة وعلى ظهره غيتار. وكان شعره أشعث، ولا يرتدي سوى ملابسه الداخلية. وفي ما يلي شهادة "الشاعر المغني" (بكلماته هو): "منهكًا من رحلتي، طرقت باب حارس الغابة وتوسّلت إليه أن يسمح لي بالمبيت الليلة. أدخلني رجل مسنّ، ونظر إليّ نظرة كريمة، وعرض عليّ عشاءً مسائيًا. واقترح أن "أشعر أنني في بيتي" وقدّم لي كل صنوف الضيافة. وحين سألني عن عملي كعالم فولكلور، أكّد لي أن لديه حكايات كثيرة يرويها. وبينما كنت جالسًا إلى الطاولة، أظلم الخارج. جلس حارس الغابة في مقابلتي يتحدث على راحته. وكان يفتخر بشكل خاص بأن كل حيوانات الغابة المحلية تعرفه، وأكّد أنه يستمتع بإطعام الذئاب. ولم أُلقِ بالًا لهذه الملاحظة في البداية، ثم سمعت عواء الذئاب في منتصف الليل. فارتعت، لكن العجوز ابتسم، ووقف، وخرج من البيت دون كلمة. وقبل أن أستوعب ما يجري، عاد ببندقية، وصوّبها إليّ فورًا، وقال: "أصدقائي جائعون. هيّا يا صاحبي، نحن ذاهبان إلى الغابة!" فقفزت من النافذة وهربت بأقصى ما يمكن من السرعة. وبعد حين ألقت الشرطة المحلية القبض عليّ." وخلاصة القول، حارس غابتنا عاد إلى إيقاع تسجيلات عواء الذئاب ليمازح الزوّار. فعلينا أن نوقفه عن ذلك. فطلاب مغنّون أمر يمرّ، لكن ماذا لو كان الشخص من الخدمة؟ سيأخذ بندقيته ويطلق عليه رصاصة في الرأس. تعاملوا مع هذا الأمر.
+AR: *0.00-0.15* &Scotch& التقرير الميداني رقم ثمانية! أندريه سكوتش وباثيسكاب، مجموعة صائدي كنوز مبادرون مؤلفة من بافيل الحقيبة، وميشا الرسام، وسيرغي الكلب البوليسي، يرفعون ما يلي: بعد تلقي رسالة عن طريق راديو المستقبل بالخطأ عن «كنز» معيّن... *0.16-0.19* &Bloodhound& هل أفهم صحيحاً أنك وضعت إشارات تنصيص هوائية الآن؟ أثناء التسجيل؟ *0.20-0.22* &Backpack& بالضبط، ها! *0.23-0.34* &Scotch& تباً. اسمعوا، كلنا وصلتنا رسالة عبر راديو المستقبل عن كنز في مكان ما في هذه المستنقعات! اتحدنا في باثيسكاب، فريق من الكيميائيين المجازفين، ونطوف المستنقعات في مرح منذ أسبوع! *0.35-0.36* &Artist& ولم نجد الكنز بعد! *0.36-0.37* &Bloodhound& انتظروا يا جماعة... لحظة... *0.37-0.40* &Scotch& اهدأ يا ميشا. سنجد الكنز. لا بد أنه موجود! *0.41-0.44* &Backpack& حقيبتي لن تكفي لحمله! راديو المستقبل لا يكذب! *0.45-0.46* &Artist& ماذا لو كان أحد يمزح؟ *0.47-0.48* &Bloodhound& انتظر! أندريه! *0.48-0.49* &Scotch& ما الأمر يا سيرغي؟ *0.50-0.52* &Bloodhound& هل أحضرت تسجيل الراديو معك؟ *0.53-0.54* &Backpack& عندي على تشيربر. لماذا؟ *0.55-0.57* &Bloodhound& شغّله. *0.58-1.10* &The recording plays& «التقرير الميداني رقم ثمانية! أندريه سكوتش وباثيسكاب، مجموعة صائدي كنوز مبادرون مؤلفة من بافيل الحقيبة، وميشا الرسام، وسيرغي الكلب البوليسي، يرفعون ما يلي...» *1.12-1.13* &Artist& ماذا! سمعنا أنفسنا؟ *1.14-1.15* &Bloodhound& ها ها! يا لها من حيلة! *1.15-1.18* &Backpack& ها؟ لا أفهم... إذن لا يوجد كنز؟ *1.19-1.23* &Scotch& هناك كنز يا الحقيبة. كنز حقيقي! اسمه الصداقة! *1.24-1.29* &Bloodhound& حسناً، حسناً. لا تكسِر بخاطرنا يا بافيل! ألم تكن رحلة رائعة! والآن، عودة إلى المنشأة! *1.30-1.32* &Artist& ألا يمكن أن يكون خلف الشلال؟ *1.33-1.36* &Scotch& هيا بنا! يا إخوة باثيسكاب، غنّوا! *1.37-1.50* &ALL TOGETHER& ماذا سنفعل بصائدي الكنوز؟ ماذا سنفعل بصائدي الكنوز؟ ماذا سنفعل بصائدي الكنوز؟ أعمق في المستنقعات!
 
-EN: Date: September 21, 1954 From: Sergeant U. Baray-Ogla To: Service Settlement Manager I. Abdurakhimov   We have taken a certain M. Gorshenev, a college student and bird watcher from a Moscow State University tourist group, into custody. He was found in an unauthorized area with a guitar on his back. His hair was disheveled, and he was dressed only in his undergarments. The "bard's" testimony follows (in his own words) "Exhausted from my travels, I knocked upon the forester's door and begged lodgings for the night. An elderly man let me in, looked me over in a hospitable manner, and offered me an evening's repast. He suggested that I "make myself at home" and offered me every hospitality. Upon inquiring about my work as a folklorist, he assured me that he had many a tale to tell. As I sat at the table, it grew dark outside. The forester sat across from me, conversing at his ease. He was particularly proud to be known by all the local fauna emphasized that he enjoyed feeding the wolves. I paid this comment little mind at first, but then I heard lupine howling in the middle of the night. I was frightened, but the old fellow smiled, stood up, and left the house with nary a word. Before I could comprehend what was transpiring, he returned with a rifle, which he promptly aimed at me and sad, "My friends are hungry. Come on, pal, we're going to the forest!" I leapt out the window and fled with all possible alacrity. After a time, I was apprehended by the local constabulary." To make a long story short, our forester has been using recordings of howling wolves to play pranks on tourists again. We need to get him to stop. Student bards are one thing, but what if it was someone in the service? He'd take his rifle and shoot him in the head. Handle this.
+EN: *0.00-0.15* &Scotch& Field report number eight! Andrey Scotch and Bathyscaphe, an enterprising group of treasure hunters consisting of Pavel the Backpack, Misha the Artist, and Sergey the Bloodhound, report as follows: after accidentally receiving a message via the Radio of the Future regarding a certain "treasure"... *0.16-0.19* &Bloodhound& Am I correct in understanding that you just made air quotes? On the recording? *0.20-0.22* &Backpack& Exactly, ha! *0.23-0.34* &Scotch& Shit. Look, we all got a message through the Radio of the Future about a treasure somewhere in these swamps! We united into the Bathyscaphe, a team of risk-taking chemists, and have been merrily stomping around the swamps for a week already! *0.35-0.36* &Artist& And still haven't found the treasure! *0.36-0.37* &Bloodhound& Hold on, guys... Wait a minute... *0.37-0.40* &Scotch& Stay cool, Misha. We'll find the treasure. It's got to exist! *0.41-0.44* &Backpack& My backpack won't be big enough to carry it! The Radio of the Future doesn't lie! *0.45-0.46* &Artist& What if someone was fooling around? *0.47-0.48* &Bloodhound& Wait up! Andrey! *0.48-0.49* &Scotch& What is it, Sergey? *0.50-0.52* &Bloodhound& Did you bring the radio recording with you? *0.53-0.54* &Backpack& I've got it on a chirper. Why? *0.55-0.57* &Bloodhound& Could you play it? *0.58-1.10* &The recording plays& "Field report number eight! Andrey Scotch and Bathyscaphe, an enterprising group of treasure hunters consisting of Pavel the Backpack, Misha the Artist, and Sergey the Bloodhound, report as follows..." *1.12-1.13* &Artist& What! We heard ourselves? *1.14-1.15* &Bloodhound& Haha! What a trick! *1.15-1.18* &Backpack& Huh? I don't understand... So, there's no treasure? *1.19-1.23* &Scotch& There is a treasure, Backpack. A real treasure! It's called friendship! *1.24-1.29* &Bloodhound& Okay, okay. Don't go sour on us, Pavel! Wasn't that a great getaway! Well, back to the Facility! *1.30-1.32* &Artist& Couldn't it be there behind the waterfall? *1.33-1.36* &Scotch& Let's go already! Brothers of the Bathyscaphe, sing! *1.37-1.50* &ALL TOGETHER& What will we do with a treasure hunter? What will we do with a treasure hunter? What will we do with a treasure hunter? Deeper in the swamps!
 
-### 25. [PearTerminals] UI
-reason: longest | key: /EF409AEA4C03909DD901188C7C80C668 | notes: batch1
+### 25. [Schebetars_dlc1] Unknown
+reason: longest | key: /8B4F23664E17D715B2E1538F294EF05C | notes: batch2-0025
 
-AR: تاريخ: 7 أبريل 1955 من: كبير خبراء الروبوتات أ. إشتيلبييف إلى: أمين أرشيف فافيلوف م. أورليكوفا  اقرأ هذه الترجمة لمقال من مجلة "ناشيونال جيولوجي" واسأل خبراء التربة في فافيلوف عن نوع الردّ اللاذع الذي يمكننا أن نوجّهه إلى "رفاقنا" عبر البحار. "بلا شكّ، إن روبوتات بوراف من أعظم إنجازات العلم السوفييتي. وبحسب البيانات المنشورة، يُعدّ بوراف واحدًا من التصاميم السوفييتية القليلة التي لا تُورَّد إلينا في الولايات المتحدة أو أي بلد آخر. لا نملك بيانات دقيقة، لكننا نعتقد أن عددها في كل البلدان السوفييتية مجتمعة أقل من عشرين. ديدان فولاذية جبّارة قادرة على قضم التربة السوداء والعروق المعدنية الجبلية بسهولة، وتستطيع أن تصنع مئات الأمتار المربعة من الفراغات النافعة تحت الأرض لصالح المنشآت السوفييتية في اليوم الواحد. ومن الصعب تخيّل كم من المجمّعات قائم بالفعل تحت سطح الاتحاد السوفييتي. على السطح، يبدو بوراف جهازًا مثاليًا. لكن لبوراف عيبًا واحدًا: أثره على التربة. وبسبب سريّتها، نادرًا ما تظهر روبوتات بوراف على السطح، لذا تنتقل من موقع بناء إلى آخر عبر أقصر طريق ممكن: تحت الأرض. وبحسب بيانات مستقلة حصل عليها الجيولوجيون، يتزايد عدد الكهوف والتجاويف والمغارات في الاتحاد السوفييتي منذ سنوات. وماذا عن حوادث انهيار التربة الهائلة في يامالا؟ إن روبوتات بوراف تهديد بيئي هائل قد يغيّر مناخ مناطق بأكملها في المستقبل."
+AR: سكوتش: هذا هو التقرير الميداني رقم ثمانية! أندريه سكوتش وباثيسكاب، مجموعة صائدي كنوز مبادرون مؤلفة من بافيل الحقيبة، وميشا الرسام، وسيرغي الكلب البوليسي، يرفعون ما يلي: بعد تلقي رسالة عن طريق راديو المستقبل بالخطأ عن «كنز» معيّن... الكلب البوليسي: هل أفهم صحيحاً أنك وضعت إشارات تنصيص هوائية الآن؟ أثناء التسجيل؟ الحقيبة: بالضبط، ها! سكوتش: تباً. اسمعوا، كل واحد منا وصلته رسالة عبر راديو المستقبل عن كنز في مكان ما في هذه المستنقعات البائسة! اتحدنا تلقائياً في باثيسكاب، فريق من الكيميائيين المجازفين، ونطوف المستنقعات في مرح منذ أسبوع! الرسام: ولم نجد الكنز بعد! الكلب البوليسي: انتظروا يا جماعة... لحظة... سكوتش: اهدأ يا ميشا. سنجد الكنز. لا بد أنه موجود! الحقيبة: حقيبتي لن تكفي لحمله! راديو المستقبل لا يكذب! الرسام: ماذا لو كان أحد يمزح؟ الكلب البوليسي: انتظر! أندريه! سكوتش: ما الأمر يا سيرغي؟ الكلب البوليسي: هل أحضرت تسجيل الراديو معك؟ الحقيبة: عندي على تشيربر. لماذا؟ الكلب البوليسي: شغّله. التسجيل يُشغَّل: «هذا هو التقرير الميداني رقم ثمانية! أندريه سكوتش وباثيسكاب، مجموعة صائدي كنوز مبادرون مؤلفة من بافيل الحقيبة، وميشا الرسام، وسيرغي الكلب البوليسي، يرفعون ما يلي...» الرسام: ماذا! سمعنا أنفسنا؟ الكلب البوليسي: ها ها! يا لها من حيلة! الحقيبة: ها؟ لا أفهم... إذن لا يوجد كنز؟ سكوتش: هناك كنز يا الحقيبة. كنز حقيقي! اسمه الصداقة! الكلب البوليسي: حسناً، حسناً. لا تكسِر بخاطرنا يا بافيل! ألم تكن رحلة رائعة! والآن، عودة إلى المنشأة! الرسام: ألا يمكن أن يكون خلف الشلال؟ لا؟ سكوتش: هيا بنا! يا إخوة باثيسكاب، غنّوا! الجميع معاً: ماذا سنفعل بصائدي الكنوز؟ ماذا سنفعل بصائدي الكنوز...
 
-EN: Date: April 7, 1955 From: Senior Roboticist A. Yshtelbyev To: Vavilov Archivist M. Orlikova  Read this translation of an article from the magazine "National Geology" and ask Vavilov's soil experts what kind of biting response we can give our overseas "comrades." "Without a doubt, Burav robots are one of the greatest achievements of Soviet science. According to published data, the Burav is one of just a few Soviet designs that are not supplied to us in the US or any other country. We have no precise data, but we believe there are less than two dozens of them in all the Soviet countries combined. Mighty steel worms capable of chewing through black soil and mountainous mineral veins with ease, they can create hundreds of square meters of useful underground space for Soviet facilities per day. It's hard to imagine how many complexes already exist beneath the surface of the Soviet Union. On the surface, the Burav would seem to be a perfect device. However, the Buravs have one flaw: the effect they have on the soil. Due to their secrecy, Buravs rarely appear above ground, so they move from one construction site to the next via the shortest route possible: underground. According to independent data obtained by geologists, the number of caverns, cavities, and caves in the USSR has been increasing for years now. But what about the massive incidents of soil collapse in Yamala? Buravs are a tremendous environmental threat that could alter the climates of entire regions in the future."
+EN: Scotch: This is field report number eight! Andrey Scotch and Bathyscaphe, an enterprising group of treasure hunters consisting of Pavel the Backpack, Misha the Artist, and Sergey the Bloodhound, report as follows: after accidentally receiving a message via the Radio of the Future regarding a certain "treasure"...  Bloodhound: Am I correct in understanding that you just made air quotes? On the recording?  Backpack: Exactly, ha!  Scotch: Shit. Look, each of us happened to get a message through the Radio of the Future about a treasure somewhere in these miserable swamps! We spontaneously united into the Bathyscaphe, a team of risk-taking chemists, and have been merrily stomping around the swamps for a week already!  Artist: And still haven't found the treasure!  Bloodhound: Hold on, guys... Wait a minute...  Scotch: Stay cool, Misha. We'll find the treasure. It's got to exist!  Backpack: My backpack won't be big enough to carry it! The Radio of the Future doesn't lie!  Artist: What if someone was fooling around?  Bloodhound: Wait up! Andrey!  Scotch: What is it, Sergey?  Bloodhound: Did you bring the radio recording with you?  Backpack: I've got it on a chirper. Why?  Bloodhound: Play it.  The recording plays: "This is field report number eight! Andrey Scotch and Bathyscaphe, an enterprising group of treasure hunters consisting of Pavel the Backpack, Misha the Artist, and Sergey the Bloodhound, report as follows..."  Artist: What! We heard ourselves?  Bloodhound: Haha! What a trick!  Backpack: Huh? I don't understand... So, there's no treasure?  Scotch: There is a treasure, Backpack. A real treasure! It's called friendship!  Bloodhound: Okay, okay. Don't go sour on us, Pavel! Wasn't that a great getaway! Well, back to the Facility!  Artist: Couldn't it be there behind the waterfall? No?  Scotch: Let's go already! Brothers of the Bathyscaphe, sing!  ALL TOGETHER: What will we do with a treasure hunter? What will we do with a treasure hunter? Deeper in the swamps! 
 
 ### 26. [NewP5] UI
 reason: tagged | key: /52CBBC8D4282AFCBBD82738F51F715E7 | notes: batch1

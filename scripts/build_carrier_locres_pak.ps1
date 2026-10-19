@@ -23,7 +23,7 @@
 param(
     [string]$RepoRoot = 'C:\AtomicHeart-AR',
     [string]$MasterTsV = '',
-    [string]$PakOut = 'C:\AtomicHeart-AR\build\package\zzz_atomicheart-ar_carrier_koKR_p3_P.pak',
+    [string]$PakOut = '',
     [string]$VariantLabel = 'p3',
     [string]$OnlyScopes = ''      # optional comma-separated subset, for debugging
 )
@@ -32,6 +32,7 @@ try { [Console]::OutputEncoding = [Text.Encoding]::UTF8 } catch {}
 trap { Write-Output ('ERROR at line ' + $_.InvocationInfo.ScriptLineNumber + ': ' + $_.Exception.Message); exit 1 }
 
 if (-not $MasterTsV) { $MasterTsV = Join-Path $RepoRoot 'localization\master\atomic-heart-ar.tsv' }
+if (-not $PakOut) { $PakOut = Join-Path $RepoRoot ('build\package\zzz_atomicheart-ar_carrier_koKR_' + $VariantLabel + '_P.pak') }
 $repak = Join-Path $RepoRoot 'tools\bin\repak\repak.exe'
 $ulr   = Join-Path $RepoRoot 'tools\bin\UnrealLocres\UnrealLocres.exe'
 $pak0  = 'C:\Program Files (x86)\Steam\steamapps\common\Atomic Heart\AtomicHeart\Content\Paks\pakchunk0-WindowsNoEditor.pak'
@@ -145,6 +146,12 @@ foreach ($scope in $scopes) {
         elseif ($enMap.ContainsKey($k) -and $enMap[$k] -ne '') { $want = $enMap[$k] }
         else { $want = $koMap[$k] }
         $t = Test-Val $reMap[$k] $want
+        if ($t -eq 'bad' -and ($reMap[$k]).Trim() -ceq ($want).Trim()) {
+            # the locres format cannot store leading/trailing whitespace: an edge-space-only
+            # difference is not content loss, it is the container normalising the value.
+            Write-Host ("   EDGE-WS (tolerated) ${scope} $k")
+            $t = 'exact'
+        }
         if ($t -eq 'bad') { $bad++; Write-Host ("   MISMATCH ${scope} $k") }
         elseif ($t -eq 'exact') { $exact++ }
         else { $newline++ }

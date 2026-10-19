@@ -189,3 +189,12 @@ Owner rule set: MASTER_PROMPT.md + DEC-023. This file is ASCII-only by project r
 12.5 Applied retroactively to already-shipped content (prologue, Chelomey, cutscenes) through
     `localization/working/tm_fixups.tsv`; listed with before/after in `reports/tone_pass.md`.
     New batch-2/3/4 authoring follows it from the start.
+
+## 13. Glossary cell syntax (cycle 014)
+
+The Arabic cell of `glossary/glossary.tsv` may list more than one accepted rendering, separated by `|`
+(e.g. `Cartridge -> خرطوشة|خراطيش`). The validator accepts the row when ANY listed rendering is present
+in the translation, and it also accepts inflected forms (plural/feminine/definite article, tanween) of a
+listed rendering. Add a rendering to the cell only when the shipped Arabic is correct and natural; that
+keeps the check honest instead of loosening it. The optional 7th column may hold `cs`, which makes the
+English-side match case-sensitive (`Major` uses it so that `major damage` does not warn).

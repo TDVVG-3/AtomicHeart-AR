@@ -1,7 +1,7 @@
 term	arabic	category	reason	status	notes
 NORA	نورا	character	transliterated	DRAFT	vending-machine AI; kept as a name
-CHAR-les	تشارلز	character	transliterated	DRAFT	the talking glove AI; Latin forms CHAR-les/CHARLES/Charles all map here
-CHARLES	تشارلز	character	transliterated	DRAFT	same as CHAR-les
+CHAR-les	تشارلز|CHAR-les	character	transliterated	DRAFT	the talking glove AI; Latin forms CHAR-les/CHARLES/Charles all map here
+CHARLES	تشارلز|CHARLES	character	transliterated	DRAFT	same as CHAR-les
 Computer	الحاسوب	character	translated	DRAFT	service-drone speaker label (rendered inside [] by the subtitle widget); one Arabic in every scope, overrides the device noun reading
 Sechenov	سيتشينوف	character	transliterated	DRAFT	Dmitry Sechenov, Facility director
 Dmitry Sechenov	دميتري سيتشينوف	character	transliterated	DRAFT	
@@ -44,7 +44,7 @@ Belyash	بيلياش	robot	transliterated	DRAFT	robot nicknamed after a fried-do
 Burav	بوراف	robot	transliterated	DRAFT	question: Russian for "drill"
 Kondor	كوندور	robot	transliterated	DRAFT	Russian for "condor"
 Secateur	المقصّ	robot	translated	DRAFT	question: a pruning-shears robot; translated
-Ballerina	الباليرينا	robot	transliterated	DRAFT	question: could be "راقصة الباليه"
+Ballerina	الباليرينا|راقصة باليه|راقصات الباليه	robot	transliterated	DRAFT	question: could be "راقصة الباليه"
 Prima Ballerina	الباليرينا الأولى	robot	translated	DRAFT	
 Dewdrop	قطرة الندى	robot	translated	DRAFT	
 Mutant	متحوّل	creature	translated	DRAFT	
@@ -62,7 +62,7 @@ Mendeleev Complex	مجمّع مندليف	location	translated	DRAFT
 Chelomey	تشيلومي	location	transliterated	DRAFT	
 Chelomey City	مدينة تشيلومي	location	translated	DRAFT	
 VDNH	فيدنخا	location	transliterated	DRAFT	question: museum-park district; transliteration "فيدنخا"
-Theater	المسرح	location	translated	DRAFT	
+Theater	المسرح|مسارح	location	translated	DRAFT	
 Maya Plisetskaya Theater	مسرح مايا بليستسكايا	location	translated	DRAFT	
 Kollektiv	كوليكتيف	location	transliterated	DRAFT	the neural network / hivemind
 Kollektiv 2.0	كوليكتيف 2.0	location	transliterated	DRAFT	
@@ -79,39 +79,39 @@ Hot Workshop	الورشة الساخنة	location	translated	DRAFT
 Algae Workshop	ورشة الطحالب	location	translated	DRAFT	
 Moscow	موسكو	location	translated	DRAFT	real place name
 USSR	الاتحاد السوفييتي	term	translated	DRAFT	
-Soviet Union	الاتحاد السوفييتي	term	translated	DRAFT	
+Soviet Union	الاتحاد السوفييتي|السوفييتي	term	translated	DRAFT	
 Soviet	سوفييتي	term	translated	DRAFT	
-Motherland	الوطن الأم	term	translated	DRAFT	
+Motherland	الوطن الأم|وطننا|الوطن	term	translated	DRAFT	
 Polymer	بوليمر	material	transliterated	DRAFT	
 Polymers	البوليمرات	material	transliterated	DRAFT	plural
 Polymeric	بوليمري	material	transliterated	DRAFT	adjective
-Neuropolymer	البوليمر العصبي	material	translated	DRAFT	
+Neuropolymer	البوليمر العصبي|البوليمرية العصبية|عصبية بوليمرية	material	translated	DRAFT	
 Neuropolymer Accelerator	مسرّع البوليمر العصبي	material	translated	DRAFT	
 Neuromed	نيوروميد	item	transliterated	DRAFT	medkit brand
 Voskhod	فوسخود	material	transliterated	DRAFT	question: Russian for "sunrise"
 Argentum	أرجنتوم	material	transliterated	DRAFT	question: Latin for "silver"
 Lumino-Polymer	لومينو-بوليمر	material	transliterated	DRAFT	
 Combat Polymer	البوليمر القتالي	material	translated	DRAFT	
-Cryopolymer	كرايو-بوليمر	material	transliterated	DRAFT	question: "cryo" + polymer
+Cryopolymer	كرايو-بوليمر|بوليمر مبرد	material	transliterated	DRAFT	question: "cryo" + polymer
 Chirper	تشيربر	item	transliterated	DRAFT	portable recorder device
 PEAR	PEAR	item	preserved	DRAFT	terminal network name; kept in Latin
-Terminal	محطة طرفية	item	translated	DRAFT	
-Canister	حاوية	item	translated	DRAFT	
+Terminal	محطة طرفية|طرفية	item	translated	DRAFT	
+Canister	حاوية|أسطوانة	item	translated	DRAFT	
 Blueprint	مخطط	item	translated	DRAFT	
 Recipe	وصفة	item	translated	DRAFT	
-Cartridge	خرطوشة	item	translated	DRAFT	
+Cartridge	خرطوشة|خراطيش	item	translated	DRAFT	
 Module	وحدة	item	translated	DRAFT	
 Workshop	ورشة	item	translated	DRAFT	
 Upgrade	ترقية	ui	translated	DRAFT	
-Crafting	التصنيع	ui	translated	DRAFT	
-Magnetic Beacon	منارة مغناطيسية	item	translated	DRAFT	
+Crafting	التصنيع|صناعة	ui	translated	DRAFT	
+Magnetic Beacon	منارة مغناطيسية|منارة	item	translated	DRAFT	
 Gadfly	جادفلاي	item	transliterated	DRAFT	question: Russian for "gadfly"
 Monorail	مونوريل	ui	transliterated	DRAFT	question: could be "أحادي السكة"
-Comrade	الرفيق	title	translated	DRAFT	Soviet address form
-Comrade Major	الرفيق الرائد	title	translated	DRAFT	
-Major	الرائد	title	translated	DRAFT	
-Professor	البروفيسور	title	translated	DRAFT	
-Doctor	دكتور	title	translated	DRAFT	
+Comrade	الرفيق|الرفاق	title	translated	DRAFT	Soviet address form
+Comrade Major	الرفيق الرائد|رفيق الرائد	title	translated	DRAFT	
+Major	الرائد	title	translated	DRAFT		cs
+Professor	البروفيسور|أستاذ	title	translated	DRAFT	
+Doctor	دكتور|طبيب|طبيبة|دكتورة	title	translated	DRAFT	
 Dr	د.	title	translated	DRAFT	abbreviation of Doctor
 SHOK	شوك	ability	transliterated	DRAFT	question: Russian for "shock"; displayed as SHOK
 Frostbite	الصقيع	ability	translated	DRAFT	
@@ -123,7 +123,7 @@ Cryo Jet	النفّاثة المتجمّدة	ability	translated	DRAFT
 Electro	إلكترو	weapon	transliterated	DRAFT	
 Dominator	دومينيتور	weapon	transliterated	DRAFT	
 Railgun	المدفع القضباني	weapon	translated	DRAFT	question: could be transliterated "ريلغن"
-Shotgun	بندقية رش	weapon	translated	DRAFT	
+Shotgun	بندقية رش|خراطيش رش|بندقية|بنادق	weapon	translated	DRAFT	
 Kalash	كلاش	weapon	transliterated	DRAFT	slang for the Kalashnikov
 Zvezdochka	زفيزدوتشكا	weapon	transliterated	DRAFT	question: Russian for "little star"
 Fat Boy	الفتى السمين	weapon	translated	DRAFT	heavy weapon nickname
@@ -136,7 +136,7 @@ PASHTET	باشتيت	weapon	transliterated	DRAFT	Russian nickname (pate); shown 
 BEA-D	BEA-D	robot	preserved	DRAFT	model designation; plural BEA-Ds; kept in Latin
 Archive	الأرشيف	location	translated	DRAFT	the Academy Archive
 Electro Capsule	كبسولة إلكترو	item	translated	DRAFT	energy capsule consumable
-Soda	صودا	item	translated	DRAFT	RU "газировка"; the everyday Soviet fizzy drink; replaces the previous "الغازية" (cycle 013, DEC-034)
+Soda	صودا|مياه غازية	item	translated	DRAFT	RU "газировка"; the everyday Soviet fizzy drink; replaces the previous "الغازية" (cycle 013, DEC-034); the NTD_StringTable/gazirovka sign row ships the sign form مياه غازية
 THOUGHT device	الفكرة	item	translated	DRAFT	the neuro-connector; Russian original «Мысль»; quoted in running text as «الفكرة»; replaces the Latin "THOUGHT" (DEC-035)
 Soda water	مياه غازية	item	translated	DRAFT	vending-machine sign "ГАЗИРОВАННАЯ ВОДА" (NTD_StringTable/gazirovka); sparkling water, distinct from the drink
 Cream Soda	كريم صودا	item	transliterated	DRAFT	lemonade flavour "Крем-сода" on the VDNH signs

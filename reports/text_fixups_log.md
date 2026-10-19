@@ -1,9 +1,9 @@
 # Reviewer text fixes
 
-Applied: 2026-10-19 13:01:58
+Applied: 2026-10-19 20:43:37
 Mode: apply
 
-master rows changed: 2 | tm rows changed: 2 | seed rows changed: 0
+master rows changed: 0 | tm rows changed: 0 | seed rows changed: 0
 
 ## أن تنتفخ صدرك -> أن تنفخ صدرك
 
@@ -68,8 +68,7 @@ master rows matched: 0
 ## الذراع اليسرى -> ذراع يسرى
 
 note: batch1 shorten: 13 -> 9 chars
-master rows matched: 1
-- VDNKh_Dialogues | /0E28213F464FB85E2DD203A2AD97A4F0 | Dialogue
+master rows matched: 0
 
 ## نظرة عامة على التقييم -> ملخص التقييم
 
@@ -234,8 +233,7 @@ master rows matched: 0
 ## تم حفظ البيانات -> حُفظت البيانات
 
 note: batch1 shorten: 15 -> 14 chars
-master rows matched: 1
-- Vavilov_Dialogues | /044B170A4E72954C37081DA33CD3E77A | Dialogue
+master rows matched: 0
 
 ## أصلحوا هذا بأسرع ما يمكن! -> أصلحوا هذا فوراً!
 
@@ -410,5 +408,10 @@ master rows matched: 0
 ## THOUGHT -> «الفكرة»
 
 note: cycle013 term: unify the neuro-device name; the Russian original translates it (Мысль) and the project quotes such names (DEC-035)
+master rows matched: 0
+
+## فطائر مقرمشة -> الكائنات المقرمشة
+
+note: cycle014 consistency: "crispy critters" expletive unified to the established rendering (3 rows from chunks 0017/0027 used the literal "crispy pastries")
 master rows matched: 0
 

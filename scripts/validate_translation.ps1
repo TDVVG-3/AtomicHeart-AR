@@ -47,9 +47,47 @@ function Get-Markers([string]$s) { return (Get-Multiset $s '\*[0-9][0-9.\-]*\*')
 function Get-Numbers([string]$s) { return Get-Multiset $s '[0-9]+' }
 function Get-Core([string]$s) {
     if (-not $s) { return '' }
-    $t = $s -replace '[\u064B-\u0652\u0640]', ''       # harakat + tatweel
-    $t = $t -replace '\u0627\u0644', ''                 # definite article "al-"
+    $t = $s -replace '[\u064B-\u0652\u0640]', ''                       # harakat + tatweel
+    $t = $t -replace '[\u0622\u0623\u0625]', ([string][char]0x0627)     # alef variants -> alef
+    $t = $t -replace '\u0649', ([string][char]0x064A)                   # alef maqsura -> ya
+    $t = $t -replace '\u0629', ([string][char]0x0647)                   # ta marbuta -> ha
+    $t = [regex]::Replace($t, '(^|\s)\u0627\u0644', '$1')               # definite article at word start only
     return $t
+}
+# Glossary Arabic cells may list accepted renderings separated by '|'; a morphological stem match
+# is accepted as well (plural / feminine / suffixed forms of the sanctioned rendering).
+$arSuffixes = @(
+    ([string][char]0x0627 + [char]0x062A),
+    ([string][char]0x064A + [char]0x0646),
+    ([string][char]0x0648 + [char]0x0646),
+    ([string][char]0x0647),
+    ([string][char]0x064A),
+    ([string][char]0x0627),
+    ([string][char]0x062A)
+)
+function Test-GlossaryArabic([string]$coreAr, [string]$termCell) {
+    foreach ($v in ($termCell -split '\|')) {
+        $c = Get-Core $v
+        if (-not $c) { continue }
+        if ($coreAr.IndexOf($c, [StringComparison]::OrdinalIgnoreCase) -ge 0) { return $true }
+        foreach ($sfx in $script:arSuffixes) {
+            if ($c.EndsWith($sfx) -and (($c.Length - $sfx.Length) -ge 3)) {
+                if ($coreAr.IndexOf($c.Substring(0, $c.Length - $sfx.Length), [StringComparison]::OrdinalIgnoreCase) -ge 0) { return $true }
+            }
+        }
+        # word-level tolerance: every content word of the sanctioned rendering must appear in the
+        # Arabic text as at least a 4-character prefix (covers case, tanween, plural and feminine
+        # endings such as "البوليمر العصبي" vs "بوليمراً عصبياً")
+        $okAll = $true; $n = 0
+        foreach ($w in ($c -split '\s+')) {
+            if ($w.Length -lt 3) { continue }
+            $n++
+            $pref = $w; if ($w.Length -ge 4) { $pref = $w.Substring(0, 4) }
+            if ($coreAr.IndexOf($pref, [StringComparison]::OrdinalIgnoreCase) -lt 0) { $okAll = $false; break }
+        }
+        if ($n -gt 0 -and $okAll) { return $true }
+    }
+    return $false
 }
 function Has-ArabicLetter([string]$s) { return [bool]([regex]::IsMatch($s, '[\u0621-\u064A\u0660-\u0669\u066E-\u06D3\u0750-\u077F\uFB50-\uFDFF\uFE70-\uFEFF]')) }
 
@@ -60,7 +98,9 @@ for ($i = 1; $i -lt $gl.Count; $i++) {
     if (-not $gl[$i].Trim()) { continue }
     $f = $gl[$i] -split "`t"
     if ($f.Count -lt 2) { continue }
-    $glossary.Add([pscustomobject]@{ term = $f[0]; arabic = $f[1] })
+    $fl = ''
+    if ($f.Count -ge 7) { $fl = $f[6].Trim() }
+    $glossary.Add([pscustomobject]@{ term = $f[0]; arabic = $f[1]; flags = $fl })
 }
 
 $lines = [IO.File]::ReadAllLines($masterPath, [Text.Encoding]::UTF8)
@@ -108,11 +148,19 @@ for ($i = 1; $i -lt $lines.Count; $i++) {
     if ((Get-Numbers $ar) -ne (Get-Numbers $en)) { $numWarn++; if ($warnings.Count -lt 400) { $warnings.Add(("line {0}: number multiset differs (en=[{1}] ar=[{2}])" -f ($i + 1), (Get-Numbers $en), (Get-Numbers $ar))) } }
     if ($cat -eq 'UI' -and $en.Trim().Length -ge 12 -and $ar.Length -gt ($en.Length * 1.2)) { $lenWarn++; if ($warnings.Count -lt 400) { $warnings.Add(("line {0}: UI length {1} > 1.2 x {2}" -f ($i + 1), $ar.Length, $en.Length)) } }
     $coreAr = Get-Core $ar
+    # the glossary check reads PROSE: markers, tags, bracket labels and channel handles are not words
+    $enProse = $en
+    $enProse = [regex]::Replace($enProse, '\*[0-9][0-9.\-]*\*', ' ')
+    $enProse = [regex]::Replace($enProse, '&[^&]{1,30}&', ' ')
+    $enProse = [regex]::Replace($enProse, '<[^<>]*>', ' ')
+    $enProse = [regex]::Replace($enProse, '\[[^\]]{1,40}\]', ' ')
+    $enProse = [regex]::Replace($enProse, '#[A-Za-z_][A-Za-z0-9_]*', ' ')
     foreach ($g in $glossary) {
         if ($g.term.Length -lt 4) { continue }
-        if ([regex]::IsMatch($en, '(?i)(^|[^A-Za-z])' + [regex]::Escape($g.term) + '($|[^A-Za-z])')) {
-            $coreTerm = Get-Core $g.arabic
-            if (-not $coreAr.Contains($coreTerm)) {
+        $enPat = '(?i)(^|[^A-Za-z])' + [regex]::Escape($g.term) + '($|[^A-Za-z])'
+        if ($g.flags -eq 'cs') { $enPat = [regex]::Replace($enPat, '^\(\?i\)', '') }   # case-sensitive term
+        if ([regex]::IsMatch($enProse, $enPat)) {
+            if (-not (Test-GlossaryArabic $coreAr $g.arabic)) {
                 $glossWarn++
                 if ($warnings.Count -lt 400) { $warnings.Add(("line {0}: glossary term '{1}' -> '{2}' not found in Arabic" -f ($i + 1), $g.term, $g.arabic)) }
             }

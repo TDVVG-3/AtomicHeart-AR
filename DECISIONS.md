@@ -1019,3 +1019,67 @@ Ruling (DRAFT, reviewer may override - `glossary/glossary_questions.md` section 
   `حُفظت البيانات`. New content can always re-create a phrasing that a reviewer already shortened.
 - Rule: re-run the fixups (global, idempotent) and the verifier after every batch apply. If they change
   the master, the carrier must be rebuilt/reinstalled - that is why p8 was rebuilt once this cycle.
+
+## DEC-039 (cycle 014, 2026-10-19): bracket-label gate exception (closes KI-029)
+
+- `scripts/batch2_chunk.ps1` now compares NON-bracket tokens byte-exact (markers `*0.00*`, `{...}`,
+  `<tag ...>`, `&Speaker&`, `\n`) and treats `[...]` bracket tokens as a separate class: the bracket
+  count must still match and every Arabic bracket token must either be byte-identical to the English
+  one or contain an Arabic letter. `[Leave]` -> `[مغادرة]` is therefore accepted, `[E]` -> `[E]` is
+  unchanged, and changing/dropping/adding a Latin bracket token is still a hard failure.
+- Verified: positive case (chunk 0016) PASS; three negative cases fail with explicit messages
+  (Latin bracket token changed while Arabic letters are present, bracket injected where English has
+  none, bracket dropped where English has one).
+- `localization/working/batch2/ar_0016.tsv` is a 1-id "label chunk" that carries `b1627` `[Leave]` ->
+  `[مغادرة]` through the normal TM path: 5 master rows filled, coverage 13,989 -> 13,994.
+- Scope note: 7 of the 8 ids named in KI-029 (`FinalDialog`, `FirstDialog`, `RANDOM`, `RadioDialog`,
+  `RadioReroute`, `SaidFirst`, `SaidSecond`; 42 master rows) stay untranslated on purpose. The ru-RU
+  locres of the SAME keys carries the same Latin internal names, i.e. they are asset/state identifiers,
+  not player-facing text (evidence `localization/extracted/ru_csv/VDNKh_Dialogues.csv`).
+
+## DEC-040 (cycle 014, 2026-10-19): glossary matcher - accepted forms, morphology, prose-only English (closes the DEC-036 follow-up)
+
+- Root causes of the 141 glossary warnings: (a) the Arabic side used a raw `Contains` of the sanctioned
+  rendering, so every inflection (plural/feminine/definite) warned; (b) the English side was matched
+  against raw cells, so speaker tags (`&Petrov&`), bracket labels and channel handles (`#cold_workshop`)
+  matched as if they were prose; (c) a real bug: `-replace '\u0629','\u0647'` inserts the LITERAL
+  escape text, because replacement operands do not expand `\uXXXX` - the normalisation inserted junk.
+- Fixes: (1) normalisation strips harakat/tatweel, unifies alef/ya forms, maps ta-marbuta to ha, and
+  strips a WORD-INITIAL definite article only (replacements now use literal characters); (2) a glossary
+  row may list accepted renderings separated by `|` (`Cartridge -> خرطوشة|خراطيش`); (3) matching also
+  accepts a suffix-stem match and a word-prefix match (every content word of the rendering must appear
+  as a >=4-character prefix); (4) the English side is matched against PROSE, with markers, tags, bracket
+  labels and channel handles blanked out; (5) the 7th glossary column may hold `cs` (case-sensitive
+  English match) - set on `Major` so `major damage` / `major reconstruction` stop warning.
+- Result: glossary warnings 141 -> 2 (validator totals: warnings 277 -> 138, errors 0). The 2 residual
+  warnings are verified benign (see KI-030). No real violation is hidden: a term whose sanctioned and
+  accepted renderings are all absent from the Arabic still warns.
+- Matcher is deliberately conservative: accepted renderings are explicit per glossary row, auditable in
+  `glossary/glossary.tsv`, and recorded here rather than as loose heuristics in the script.
+
+## DEC-041 (cycle 014, 2026-10-19): batch-3 authoring contract, gate/validator alignment, carrier-path fix
+
+- Workstream input contract: `scripts/batch2_sheet.ps1 -ChunkId NNNN -StartId bNNNN -Count 300` writes
+  `localization/working/batch2/sheet_NNNN.tsv` with columns `id, scope, category, english, ru, tm`.
+  `ru` is the official ru-RU text of the SAME key: the reader is a real CSV record parser because the
+  ru exports mix hashed locres keys (`/HASH`) and readable string-table keys (`NTD_StringTable/row`),
+  and values may be quoted and contain embedded newlines. `tm` is an existing Arabic rendering of the
+  exact same English. The plan remains the only authority for English; a workstream never retypes it.
+- Chunk gate: the timing-marker token now uses the VALIDATOR's pattern `\*[0-9][0-9.\-]*\*`, so RANGE
+  markers (`*0.01-0.28*`) are enforced. The old pattern only matched single markers (`*0.05*`) and let
+  one row (master L19766) ship without its range marker; the row and the authoring file were corrected.
+- `build_carrier_locres_pak.ps1`: `-VariantLabel` now derives the default output path. It used to be
+  hardcoded to the p3 file, so the first p9 build overwrote the p3 artefact (p3 was an intermediate
+  build; p7/p8 are the documented rollback targets; the stray file was removed and p9 rebuilt cleanly).
+  An edge-whitespace-only round-trip difference is now tolerated and logged as `EDGE-WS`: the locres
+  container cannot store leading/trailing whitespace, so that difference is container normalisation,
+  not content loss. One master row carried a leading space and was trimmed.
+- Result: 22 authoring chunks (0017-0038) plus the 1-id label chunk 0016, 6,530 ids authored, 7,226 rows
+  filled, coverage 13,994 -> 21,220 of 27,618 (76.83%), validator 0 errors, glyph gate 0 glyphs
+  introduced by Arabic, TM 9,132 -> 15,410 entries.
+- Defects found by the gates and fixed in this cycle: 1 missing range marker; 1 date transcribed from
+  the RU asset while the master English says another date (policy: the ENGLISH master is the anchor);
+  3 content reductions (dropped polymer expansion, dropped "a doctor", dropped "on Soviet soil");
+  2 route-terminal labels; 3 rows with a literal mistranslation of the recurring expletive; 1 edge
+  space. Reviewer fixes go through `tm_fixups.tsv` (one new rule this cycle), authoring artefacts are
+  patched in place, and the fixup verifier runs after every chunk (DEC-038 held).
