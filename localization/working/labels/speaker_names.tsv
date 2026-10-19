@@ -1,0 +1,334 @@
+english	arabic	note
+P-3		copy-class: keep Latin per DEC-028 (call-sign, no Arabic letters)
+Char-les		already DRAFT everywhere except 2 rows (see CHAR-les row)
+CHAR-les	تشارلز	uppercase variant used by DLC4 All_Const table
+Computer		already DRAFT (الحاسوب) per DEC-028
+Computer System Voice	صوت نظام الحاسوب	NewStringTable + Mails (batch-1 wording kept)
+Sechenov	سيتشينوف	speaker: Dmitry Sechenov (batch-1 wording kept)
+Dmitry	دميتري	first name (batch-1 wording kept)
+Petrov	بيتروف	engineer NPC (batch-1 wording kept)
+NORA	نورا	AI vendor (batch-1 wording kept)
+Filatova	فيلاتوفا	doctor (batch-1 wording kept)
+Granny Zina	الجدة زينا	Granny Zina (batch-1 wording kept)
+Stockhausen	شتوكهاوزن	German scientist (batch-1 wording kept)
+Tereshkova	تيريشكوفا	valentina (batch-1 wording kept)
+Molotov	مولوتوف	Vyacheslav Molotov (batch-1 wording kept)
+Vavilov	فافيلوف	Nikolai Vavilov (batch-1 wording kept)
+Zakharov	زاخاروف	Chariton Zakharov (batch-1 wording kept)
+Chelomey	تشيلومي	Vladimir Chelomey (batch-1 wording kept)
+Lebedev	ليبيديف	Alexey Lebedev (batch-1 wording kept)
+Pavlov	بافلوف	Ivan Pavlov (batch-1 wording kept)
+Semyon	سيميون	speaker (batch-1 wording kept)
+Claire	كلير	speaker
+Vera	فيرا	DLC3 staff (batch-1 wording kept)
+Larisa	لاريسا	speaker (batch-1 wording kept)
+Lida	ليدا	DLC3 staff (batch-1 wording kept)
+Svetlana	سفيتلانا	NewStringTable
+Nikolai	نيكولاي	terminals / DLC3 (batch-1 wording kept)
+Oleg	أوليغ	NewStringTable
+Vyacheslav	فياتشيسلاف	NewStringTable
+Pushkin	بوشكين	poet
+Semyon	سيميون	NewStringTable (batch-1 wording kept)
+Yulia	يوليا	speaker
+Blaze	بليز	weapon named as speaker
+Teardrop	الدمعة	Limbo character (batch-1 wording kept)
+Rafik	رافيك	NPC (batch-1 wording kept)
+RAF-9	راف-9	DLC3 robot (Rafik prototype)
+Chariton	خاريتون	Chariton Zakharov (batch-1 wording kept)
+Blesna	بليسنا	speaker
+Dolphin	الدلفين	DLC3 Neptune dolphin
+Dante the dolphin	دانتي الدلفين	NTD sign / DLC3
+Sam the whale	سام الحوت	signage mascot
+Robogirl	فتاة روبوت	speaker (batch-1 wording kept)
+Nale	نالي	DLC3 staff
+Samodelkin	ساموديلكين	DLC3 staff
+Terentiy	تيرينتي	DLC3 staff
+Vadim	فاديم	DLC3 staff
+Nastya	ناستيا	DLC3 staff
+Lola	لولا	DLC3 staff
+Kheimsov	خيمسوف	DLC4 character
+Korolyov	كوروليف	DLC4 character (glossary wording)
+Kolya	كوليا	nickname
+Orlikova	أورليكوفا	speaker (batch-1 wording kept)
+Koshchey the Revenant	كوشتشي العائد من الموت	DLC4 character
+Medjay	المِدْجاي	DLC4 Egyptian guard
+Mizaru	ميزارو	DLC4 robot
+Kikazaru	كيكازارو	DLC4 robot
+Iwazaru	إيوازارو	DLC4 robot
+Samokhin	ساموخين	NewStringTable
+Tikhonov	تيخونوف	NewStringTable
+Zhabov	جابوف	NewStringTable
+Kuropatkin	كوروباتكين	NewStringTable
+Lepyoshkin	ليبّوشكين	NewStringTable
+Isayeva	إيسايفا	NewStringTable
+Makar Kuzmich	ماكار كوزميتش	NewStringTable
+Dogov	دوغوف	DLC4 speaker
+Khosnak	خوسناك	DLC4 speaker
+Alexander	ألكسندر	mail sender / terminals (batch-1 wording kept)
+Andrey	أندريه	speaker (batch-1 wording kept)
+Anna	آنا	mail sender (batch-1 wording kept)
+Anton	أنطون	mail sender (batch-1 wording kept)
+Boris	بوريس	mail sender (batch-1 wording kept)
+Daniil	دانييل	mail sender (batch-1 wording kept)
+Ekaterina	إيكاترينا	mail sender (batch-1 wording kept)
+Fyodor	فيودور	mail sender (batch-1 wording kept)
+Ivan	إيفان	mail sender (batch-1 wording kept)
+Pavel	بافيل	mail sender (batch-1 wording kept)
+Viktor	فيكتور	mail sender (batch-1 wording kept)
+Alexey	ألكسي	mail sender (batch-1 wording kept)
+Vladimirovich	فلاديميروفيتش	patronymic (batch-1 wording kept)
+Alexeyevich	ألكسييفيتش	patronymic (batch-1 wording kept)
+Andreyevna	أندرييفنا	patronymic (batch-1 wording kept)
+Vasilyevich	فاسيلييفيتش	patronymic (batch-1 wording kept)
+Viktorovich	فيكتوروفيتش	patronymic (batch-1 wording kept)
+Sergeevich	سيرغييفيتش	patronymic (batch-1 wording kept)
+Pavlovich	بافلوفيتش	patronymic (batch-1 wording kept)
+Ilyich	إيليتش	patronymic (batch-1 wording kept)
+Yevgenia	يفغينيا	mail sender (batch-1 wording kept)
+Yevgeny	يفغيني	mail sender (batch-1 wording kept)
+Alexander Kuznetsov	ألكسندر كوزنتسوف	DLC2 mails
+Kuznetsov	كوزنتسوف	DLC2 mails
+Ekaterina Muravyova	إيكاترينا مورافيوفا	DLC2 mails
+Katya	كاتيا	DLC2 mails
+Katya Nechaeva	كاتيا نيتشايفا	DLC2 mails
+Sergey	سيرجي	DLC2 mails
+Sergey Nechaev	سيرغي نيتشاييف	DLC2 mails (glossary wording)
+Sergey and Ekaterina together	سيرجي وإيكاترينا معاً	DLC2 table label
+Newton	نيوتن	DLC2 elemental character
+Argon	الأرجون	DLC2 elemental character
+Plutonium	البلوتونيوم	DLC2 elemental character
+Krypton	الكريبتون	NewStringTable elemental
+Radon	الرادون	NewStringTable elemental
+Gingerbread Man	رجل الزنجبيل	DLC2 Kolobok
+Goose	الإوزة	DLC1/DLC2 bird
+Ibis	أبو منجل	DLC4 bird
+Beaver	القندس	DLC4 animal
+Twins	التوأمان	DLC1 speakers
+Dealer	التاجر	DLC1 speaker
+Announcer	المذيع	generic speaker (batch-1 wording kept)
+Woman	امرأة	generic speaker
+Man	رجل	generic speaker (batch-1 wording kept)
+Girl	فتاة	generic speaker (batch-1 wording kept)
+Guy	شاب	generic speaker (batch-1 wording kept)
+Old man	رجل عجوز	generic speaker (batch-1 wording kept)
+Mom	أم	generic speaker (batch-1 wording kept)
+Soldier	جندي	generic speaker
+Doctor	دكتور	generic speaker (glossary wording)
+Scientist	عالم	generic speaker (batch-1 wording kept)
+Professor	بروفيسور	generic speaker (batch-1 wording kept)
+Technician	فنّي	generic speaker (batch-1 wording kept)
+Politician	سياسي	generic speaker (batch-1 wording kept)
+Citizen	مواطن	generic speaker (batch-1 wording kept)
+Reporter	مراسل	generic speaker (batch-1 wording kept)
+Student	طالب	generic speaker (batch-1 wording kept)
+Spectator	متفرّج	generic speaker (batch-1 wording kept)
+Manager	مدير	generic speaker (batch-1 wording kept)
+Director	المدير	generic speaker (batch-1 wording kept)
+Secretary	السكرتيرة	DLC3 speaker
+Hunter	الصياد	DLC3 speaker
+Administration	الإدارة	speaker group (batch-1 wording kept)
+Audience	الجمهور	DLC4 speaker
+Presenter	مقدم البرنامج	DLC4 speaker
+Colleague	زميل	DLC4 speaker
+Specialist (female)	متخصصة	DLC4 speaker
+Unknown person	شخص مجهول	DLC4 speaker
+Shore patrol	دورية الشاطئ	DLC4 speaker
+Ship's officer	ضابط السفينة	DLC4 speaker
+Captain	القبطان	DLC4 speaker
+Submariner	غواص	DLC4 speaker
+Submarine	غواصة	DLC4 speaker
+Mr. Miao	السيد مياو	DLC4 speaker
+Mr. Takahashi	السيد تاكاهاشي	DLC4 speaker
+Mr. Tyrell	السيد تايرل	DLC4 speaker
+Ms. Wenjie	السيدة وينجي	DLC4 speaker
+Miss Delos	الآنسة ديلوس	DLC4 speaker
+Elderly scientist	عالم مسن	DLC4 speaker
+Lab director	مدير المختبر	DLC3 NewStringTable
+Senior technician	فني أول	DLC3 NewStringTable
+Young technician	فني شاب	DLC3 NewStringTable
+Radio operator	مشغل الراديو	DLC3 NewStringTable
+Radio transmission	رسالة لاسلكية	DLC3 NewStringTable
+Rescuer	المنقذ	DLC3 NewStringTable
+Security employee	موظف الأمن	DLC3 NewStringTable
+Agronomist	مهندس زراعي	DLC3 NewStringTable
+Ornithologist	عالم طيور	DLC3 NewStringTable
+Psychologist	عالم نفس	DLC4 hint label
+Cardiologist	طبيب القلب	DLC4 speaker
+Dentist	طبيب الأسنان	DLC4 speaker
+Ophthalmologist	طبيب العيون	DLC4 speaker
+Sergeant	رقيب	DLC3 NewStringTable
+Passerby	عابر سبيل	DLC3 NewStringTable
+Daughter	الابنة	DLC3 NewStringTable
+Man in the bathroom	رجل في الحمام	DLC3 NewStringTable
+Tanner	الدباغ	DLC4 speaker
+Salesman	البائع	DLC4 speaker
+Mustache salesman	بائع الشوارب	DLC4 speaker
+Altruist	الإيثاري	DLC4 personality
+Paranoiac	المصاب بجنون الارتياب	DLC4 personality
+Optimist	المتفائل	DLC4 personality
+Pessimist	المتشائم	DLC4 personality
+Skeptic	المتشكك	DLC4 personality
+Dreamer	الحالم	DLC4 personality
+Egoist	الأناني	DLC4 personality
+Loner	المنعزل	DLC4 personality
+Wallflower	الخجول	DLC4 personality
+Gourmand	الشره	DLC4 personality
+Gamer	اللاعب	DLC4 personality
+Guest	الضيف	DLC4 personality
+Musician	الموسيقي	DLC4 personality
+Pianist	عازف البيانو	DLC4 personality
+Music lover	محب الموسيقى	DLC4 personality
+Animal lover	محب الحيوانات	DLC4 personality
+Day lover	محب النهار	DLC4 personality
+Party gal	فتاة الحفلات	DLC4 personality
+Party guy	شاب الحفلات	DLC4 personality
+Party member	عضو الحزب	DLC4 personality
+Wild dancer	الراقص الجامح	DLC4 personality
+Disco dude	شاب الديسكو	DLC4 personality
+Angry one	الغاضب	DLC4 personality
+Curious one	الفضولي	DLC4 personality
+Frightened one	الخائف	DLC4 personality
+Invisible one	الخفي	DLC4 personality
+Enlightened one	المستنير	DLC4 personality
+Sad one	الحزين	DLC4 personality
+Trapped one	المحاصر	DLC4 personality
+Sleeper	النائم	DLC4 personality
+Healthy	السليم	DLC4 personality
+Creator	الخالق	DLC4 speaker
+Cream pie	فطيرة الكريمة	DLC4 speaker
+Fluffball	كرة الصوف	DLC4 speaker
+Polymorph	بوليمورف	DLC4 faction (glossary wording)
+Cryopolymorph	بوليمورف جليدي	DLC4 faction
+Electropolymorph	بوليمورف كهربائي	DLC4 faction
+Pyropolymorph	بوليمورف ناري	DLC4 faction
+Telepolymorph	بوليمورف ذهني	DLC4 faction
+Shy polymorph	بوليمورف خجول	DLC4 speaker
+Polymorph assistant	مساعد بوليمورف	DLC4 speaker
+Polymorph athlete	رياضي بوليمورف	DLC4 speaker
+Polymorph biker	دراج بوليمورف	DLC4 speaker
+Polymorph director	مدير بوليمورف	DLC4 speaker
+Polymorph engineer	مهندس بوليمورف	DLC4 speaker
+Polymorph listener (female)	مستمعة بوليمورف	DLC4 speaker
+Polymorph listener (male)	مستمع بوليمورف	DLC4 speaker
+Polymorph Neyelova	بوليمورف نييلوفا	DLC4 speaker
+Polymorph philosopher	فيلسوف بوليمورف	DLC4 speaker
+Polymorph resident	ساكن بوليمورف	DLC4 speaker
+Polymorph scooter rider	راكب سكوتر بوليمورف	DLC4 speaker
+Polymorph storyteller	راوي قصص بوليمورف	DLC4 speaker
+Polymorph technician	فني بوليمورف	DLC4 speaker
+Stationary Grabber	المقابض الثابت	DLC4 enemy
+Burlak	بورلاك	DLC4 speaker (batch-1 wording kept)
+Validol	فاليدول	DLC4 speaker
+VOV-A6		copy-class: glossary keeps the Latin robot designation
+RACCOON-SP	راكون-إس بي	DLC4 robot
+RACCOON-SP SM	راكون-إس بي إس إم	DLC4 robot
+WSP-9E	دبليو إس بي-9إي	DLC4 robot
+Dolphin	الدلفين	DLC3 Neptune
+Dead technician	فني ميت	DLC speaker
+Dead scientist	عالم ميت	DLC speaker
+Dead cook	طباخ ميت	DLC speaker
+Dead engineer	مهندس ميت	DLC speaker (batch-1 wording kept)
+Dead florist	بائع زهور ميت	DLC speaker
+Dead tour guide	مرشد سياحي ميت	DLC speaker
+Dead body	جثة	DLC speaker
+Dead accountant	محاسب ميت	DLC speaker
+Dead ballerina	الباليرينا الميتة	DLC speaker (glossary wording)
+Ballerina	الباليرينا	DLC1 ballet character (glossary wording)
+Dead bureaucrat	بيروقراطي ميت	DLC speaker
+Dead conductor	قائد أوركسترا ميت	DLC speaker
+Dead doctor	دكتور ميت	DLC speaker (glossary wording)
+Dead farmer	مزارع ميت	DLC speaker
+Dead game developer	مطور ألعاب ميت	DLC speaker
+Dead hen	دجاجة ميتة	DLC speaker
+Dead ichthyologist	عالم أسماك ميت	DLC speaker
+Dead loser	فاشل ميت	DLC speaker
+Dead milkwoman	بائعة حليب ميتة	DLC speaker
+Dead moo-cow	بقرة ميتة	DLC speaker
+Dead piggy	خنزير صغير ميت	DLC speaker
+Dead prima	نجمة الأوبرا الميتة	DLC speaker
+Dead romantic	رومانسي ميت	DLC speaker
+Dead weird scientist	عالم غريب ميت	DLC speaker
+Dead bartender	ساقي ميت	DLC1 table
+Dead biologist	عالم أحياء ميت	DLC1 table
+Dead lab tech	فني مختبر ميت	DLC1 table
+Dead actress	ممثلة ميتة	DLC3 table
+Dead debugger	مبرمج ميت	DLC3 table
+Dead deputy	نائب ميت	DLC3 table
+Dead electrician	كهربائي ميت	DLC3 table
+Dead foreigner	أجنبي ميت	DLC3 table
+Dead rescuer	منقذ ميت	DLC3 table
+Dead whale biologist	عالم حيتان ميت	DLC3 table
+Dead... dolphin?!	دلفين... ميت؟!	DLC3 table
+Defiant dead man	رجل ميت متحدٍ	DLC speaker
+Drowned man	رجل غريق	DLC speaker
+Evil dead man	رجل ميت شرير	DLC speaker
+Fallen corpse	جثة ساقطة	DLC speaker
+Cranky talking corpse	جثة متكلمة نكدة	DLC speaker
+Talking corpse	جثة متكلمة	DLC speaker
+Chatty corpse	جثة ثرثارة	DLC speaker
+Talking dead man	رجل ميت يتكلم	DLC speaker
+Silly corpse	جثة حمقاء	DLC speaker
+Stinky corpse	جثة منتنة	DLC speaker
+Strange corpse	جثة غريبة	DLC speaker
+Suicidal corpse	جثة انتحارية	DLC speaker
+Taciturn corpse	جثة صموتة	DLC speaker
+Vaccinated mutant	متحول ملقح	DLC speaker
+Trapped man	رجل محاصر	DLC speaker
+Evil dead man	رجل ميت شرير	DLC speaker
+Unknown girl	فتاة مجهولة	DLC speaker
+Lastochkin's corpse	جثة لاستوتشكين	DLC speaker
+Paranoiac's corpse	جثة المصاب بجنون الارتياب	DLC speaker
+Oracle	العرّاف	DLC speaker
+War veteran	محارب قديم	speaker
+Politician	سياسي	speaker (batch-1 wording kept)
+Facility representative	مندوب المنشأة	speaker (batch-1 wording kept)
+Planetarium worker	عامل القبّة الفلكية	speaker (batch-1 wording kept)
+Memorial worker	عامل النصب التذكاري	speaker (batch-1 wording kept)
+Checkpoint Guard	حارس نقطة التفتيش	speaker (batch-1 wording kept)
+Security Manager	مدير الأمن	speaker (batch-1 wording kept)
+Assistant Manager	مساعد المدير	speaker (batch-1 wording kept)
+Deputy Director	نائب المدير	speaker (batch-1 wording kept)
+Lighthouse Keeper	حارس المنارة	speaker (batch-1 wording kept)
+Artistic Director	المخرج الفنّي	speaker (batch-1 wording kept)
+Assistant Diagnostician	مساعد التشخيص	speaker (batch-1 wording kept)
+Bioengineer	مهندس أحياء	speaker (batch-1 wording kept)
+Butcher Workshop Manager	مدير ورشة الجزارة	speaker (batch-1 wording kept)
+Cable Car Station Master	رئيس محطة التلفريك	speaker (batch-1 wording kept)
+Cafeteria Manager	مدير الكافتيريا	speaker (batch-1 wording kept)
+Communication Engineer	مهندس اتصالات	speaker (batch-1 wording kept)
+Consulting Psychiatrist	طبيب نفسي استشاري	speaker (batch-1 wording kept)
+Diagnostician	أخصائي التشخيص	speaker (batch-1 wording kept)
+Engineer	مهندس	speaker (batch-1 wording kept)
+Programmer	مبرمج	speaker (batch-1 wording kept)
+Woman at the memorial	امرأة عند النصب التذكاري	speaker (batch-1 wording kept)
+Woman at the bench	امرأة عند المقعد	speaker (batch-1 wording kept)
+Woman at the promenade	امرأة في الممشى	speaker
+Woman by the statue	امرأة عند التمثال	speaker (batch-1 wording kept)
+Woman in cafe	امرأة في المقهى	speaker (batch-1 wording kept)
+Man at the memorial	رجل عند النصب التذكاري	speaker (batch-1 wording kept)
+Man at the promenade	رجل في الممشى	speaker
+Man on bench	رجل على المقعد	speaker (batch-1 wording kept)
+Man by statue	رجل عند التمثال	speaker (batch-1 wording kept)
+Man posing for a picture	رجل يتصوّر	speaker (batch-1 wording kept)
+Man in the cafe	رجل في المقهى	speaker (batch-1 wording kept)
+Playing girl	الفتاة اللاعبة	speaker (batch-1 wording kept)
+Playing guy	الشاب اللاعب	speaker (batch-1 wording kept)
+Forgetful citizen	مواطن ناسٍ	speaker (batch-1 wording kept)
+Unlucky citizen	مواطن سيئ الحظ	speaker
+Confident voice	صوت واثق	speaker (batch-1 wording kept)
+Coarse voice	صوت أجش	speaker (batch-1 wording kept)
+Strange Voice	صوت غريب	speaker (batch-1 wording kept)
+Radio	راديو	speaker (batch-1 wording kept)
+First Question	السؤال الأول	Academy speaker (batch-1 wording kept)
+Third Question	السؤال الثالث	Academy speaker (batch-1 wording kept)
+Archivist	أمين الأرشيف	Academy speaker (batch-1 wording kept)
+Academy of Consequences	أكاديمية العواقب	mail/terminal place (batch-1 wording kept)
+Maya Plisetskaya Theater	مسرح مايا بليستسكايا	terminal place (batch-1 wording kept)
+Pavlov Complex	مجمّع بافلوف	terminal place (batch-1 wording kept)
+Pavlov Complex Hospital	مستشفى مجمّع بافلوف	terminal place (batch-1 wording kept)
+Vavilov Complex	مجمّع فافيلوف	terminal place (batch-1 wording kept)
+Chelomey Complex	مجمّع تشيلومي	terminal place (batch-1 wording kept)
+VDNH	فيدنخا	terminal place (batch-1 wording kept)
+Facility 3826	المنشأة 3826	terminal place (batch-1 wording kept)
+Settlement #22-15-58	المستوطنة #22-15-58	terminal place (batch-1 wording kept)
+Programmer	مبرمج	terminal name (batch-1 wording kept)

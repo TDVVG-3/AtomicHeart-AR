@@ -1,80 +1,93 @@
-# HANDOFF
+# HANDOFF - Atomic Heart Arabic localization (cycle 012)
 
-Cycle: **011** | Step: **Chelomey canal boat scene translated + speaker labels; carrier p6 built AND installed** | State: **WAITING FOR YOUR IN-GAME REPORT**
-Date/time written: **2026-10-19 00:53 (local)** | Repo: `C:\AtomicHeart-AR` | Commits: local only, `git remote -v` empty
-Spec hash (MASTER_PROMPT.md): `579f581e5bb8caae2aff6ef60326f1f461688f1b1392391a56a97a6148a61c35` - **PASS**, unchanged.
+- Date/time: 2026-10-19 11:45 local
+- Last local commit before this cycle: `1185864` (tree was clean). This cycle adds one commit (see the end).
+- Nothing is uploaded; all work is local git only. The game folder was modified ONLY inside `~mods`.
 
-## Summary (5 lines)
+## 1. What is installed in the game right now
 
-1. The scene from your screenshot is the dialogue asset **`D_0072_Sipuha_BringSoda`** (Chelomey intro): a regex search for either of the two lines over **every** extracted asset dump returns exactly one hit each, and the asset dump names the 8 locres keys it uses.
-2. Its **5 subtitle lines** are translated (DRAFT, note `scene:chelomey-soda`), MSA with the tone kept: the soda offer, "Sure, thanks.", "It's just performing its function, Major.", the bots grumble, and "get the hell outta here" (`اغرب عن وجهي!`, not sanitised).
-3. The bracketed names are **not** `&Speaker&` markers and **not** a name table: they are ordinary locres rows, one per speaker, referenced by the dialogue asset; the widget draws the `[ ]`. Your screenshot proves they are **shown to the player**, so they must be translated - question answered.
-4. Speaker labels now use **one Arabic each, everywhere**: `Computer` -> `الحاسوب` (138 rows) and `Char-les` -> `تشارلز` (745 rows) completed this cycle (818 filled, 65 already identical, 0 conflicts); `P-3` (1,140 rows) stays Latin by the copy-class rule. Glossary + TM updated.
-5. Coverage **7,387 of 27,618 rows (26.75%)** / **4,431 of 19,996 unique (22.16%)**; validator 0 errors, glyph gate 0 introduced, carrier **p6 built (3,775,256 B) and INSTALLED** with snapshot proof and 0 changes outside `~mods`. Batch 2 NOT started.
+Game path: `C:\Program Files (x86)\Steam\steamapps\common\Atomic Heart\AtomicHeart\Content\Paks\~mods`
 
-## 1. Completed
-
-- **Scene identification.** Master search: `Would you care for some more soda, comrade?` -> `Chelomey_Dialogues` key `/E88AEA6244C8D2FDC686A38E266BE551`; `Sure, thanks.` -> same scope, key `/528883FC4A40D637D9D14D908CA990FD` (both were UNTRANSLATED, Category Dialogue). Owning asset `AtomicHeart/Content/Maps/Development/Dialogue_Test/Chelomey_Intro/D_0072_Sipuha_BringSoda.uasset` (pakchunk0) via `localization/extracted/dialogue/pakchunk0-WindowsNoEditor__D_0072_Sipuha_BringSoda.txt`.
-- **Speaker-label source.** The asset dump lists key `6EE193DF4F471FAB99A8779B0531AEFA` with the ASCII string `Computer`; the master row for that key is EN `Computer`. Likewise `B5B336694BC2A0036C3B6E9EAD7F8B31` -> EN `Char-les`. The five dialogue lines carry no speaker markup, so the label is a separate locres row, drawn in brackets by `WBP_TypingTextBox` -> `WBP_OneSubtitle` / `WBP_NPCSubtitle`. In game: **shown** (your screenshot).
-- **Scene translated** - all 5 text rows of the asset, authored in UTF-8 data files (`localization/working/scene_chelomey_soda_rows.tsv`), applied as DRAFT with note `scene:chelomey-soda`.
-- **Speaker labels completed** - `localization/working/speaker_labels.tsv` + `scripts/apply_scene_labels.ps1` (ASCII-only, hard-fails on mismatch/conflict): 5 scene rows + 818 label rows applied, 65 already identical, 0 mismatches, 0 conflicts.
-- **Glossary** gained `Computer` -> `الحاسوب`; `CHAR-les`/`CHARLES` -> `تشارلز` already present and matches. **TM** 4,427 -> 4,432 (5 appended, 2 identical, 0 conflicts).
-- **Gates.** Validator `rows=27618 translated=7387 errors=0 warnings=197` (unchanged counts); glyph gate PASS (148 codepoints, 0 introduced by the Arabic, 5 source-inherited per KI-025); `AR_EN_REFERENCE.md` regenerated (7,387 rows / 4,431 unique / 19 scopes); 40-row review sample regenerated and embedded below.
-- **Carrier p6** built with the unchanged builder: 35/35 scopes, 27,618 keys, 7,387 Arabic + 20,231 English-filled + **0 kept Korean**, 26,421 exact + 1,197 newline-only (KI-015 benign), **0 failures**, 35/35 unpack byte-identical.
-- **Installed (approved).** Reconciling install: `p4` removed only after its hash matched the manifest, font v2 untouched, manifest rewritten; `verify_install.ps1` **PASS** with 0 changes outside `~mods`, `AtomicHeart.exe` unchanged, stock paks 19/19.
-- **Docs.** `reports/cycle011_results.md`, `reports/scene_soda_ingame_check.md`, DEC-028, KI-027, KI-022 extension, STATUS.md cycle-011 section, `lastreport.md`, `reports/history/report_015.md`, `reports/history/handoff_015.md`.
-
-## 2. Problems (and what I did)
-
-1. `KNOWN_ISSUES.md` carried a **duplicated header block** (first 5 lines twice), which broke the table. Cosmetic, pre-existing; removed.
-2. A corpus search with `Select-String -SimpleMatch` and a `|` in the pattern matched the two hex keys literally and wrongly reported "no hits". Re-run as a plain hex regex, it returned exactly one hit per key. Recorded so the negative result can never be mistaken for an asset ruling-out.
-3. No pipeline defect this cycle: no trailing-whitespace or format repair was needed (build 0 round-trip failures).
-
-## 3. Decisions made this cycle
-
-- **DEC-028** - speaker-name labels are ordinary locres rows referenced by the dialogue asset, and they ARE player-visible (bracketed). One Arabic per speaker name in every scope; `P-3` stays Latin (copy-class); `Computer` -> `الحاسوب` in the glossary.
-- Scene translated as the whole row set of its owning asset (5 lines + the 2 labels it uses), authored only in UTF-8 data files (KI-021).
-- Carrier p6 installed with explicit approval; the reconciling installer removes the previous carrier only after hash verification and never touches the font pak.
-
-## 4. Installed right now (game folder, `~mods` only)
-
-| file | size | sha256 |
+| File | Bytes | SHA256 |
 |---|---|---|
-| `atomic-heart-ar-install-manifest.json` | 1,824 | `ad7164ebe3836bac9e54ea603b96a6517c21309d14327f451e1ebdd4fe9597be` |
-| `zzz_atomicheart-ar_carrier_koKR_p6_P.pak` | 3,775,256 | `b7dbb14e80a926c06d0255919a454747488778de98a1778645d117ef1dc4c321` |
-| `zzz_atomicheart-ar_font_p2_plex_P.pak` | 1,461,408 | `02b17f31e61a46ddba20bea8c4da5be44164173df608d52697f68d27d8269747` |
+| `zzz_atomicheart-ar_carrier_koKR_p7_P.pak` | 3,790,472 | `d7cddff41ac346d7a28c79646e702bb34c1672d1c3e32f8187fa77983b177d9c` |
+| `zzz_atomicheart-ar_font_p2_plex_P.pak` (font v2, untouched) | 1,461,408 | `02b17f31e61a46ddba20bea8c4da5be44164173df608d52697f68d27d8269747` |
+| `atomic-heart-ar-install-manifest.json` | 1,824 | `8685264a2c6ac4cd55bad7a19d5c6bc49df9fa4e7dd250e686297c202bcf5597` |
 
-- Game language during tests: **Korean** (the Arabic rides in the Korean locres slot). Nothing outside `~mods` was changed.
-- Rollback: `powershell -NoProfile -ExecutionPolicy Bypass -File C:\AtomicHeart-AR\scripts\install_mod.ps1 -Carrier p4 -Font p2_plex`
-  (or `-Carrier p5` to get the batch-1 build instead). Both variants are in `build\package\`.
+- The game language stays **Korean**; the mod replaces the Korean text. Do not change the language.
+- The previous carrier (p6) was removed by the installer only after its hash matched the manifest. No EXE/DLL/Denuvo file was touched.
+- **Rollback (one command):**
+  `powershell -NoProfile -ExecutionPolicy Bypass -File scripts\install_mod.ps1 -Carrier p6 -Font p2_plex`
+  (older targets in `build\package\`: p1..p7 plus font p1 and locres p1.)
+- In-game checklist for this build: `reports/scene_cycle012_ingame_check.md`.
 
-## 5. Known issues (current)
+## 2. Coverage
 
-| ID | State | Area | Description |
-|---|---|---|---|
-| KI-009 | PARTIAL-CONFIRMED | Fonts | menus/settings render Arabic; GameTips popups still NOT TESTED |
-| KI-010 | OPEN | Text | RU-native-only StringTables with no locres entry need a separate uasset path |
-| KI-013 | OPEN | Language list | native `ar` entry needs Phase 8 `DA_Audio` schema tooling |
-| KI-017 | BLOCKED | Text/binary | NotLifted_17 obfuscated (evidence only) |
-| KI-018 | OPEN | Text | 248 RU-only cooked dialogue assets / 6,012 strings need a Phase 8 decision |
-| KI-019 | FIXED, needs in-game proof | Tags | malformed tags fixed in p2; GameTips proof is Area E |
-| KI-021 | MITIGATED | Tooling | Arabic only in UTF-8 data files; scripts stay ASCII |
-| KI-022 | PARTIAL | Subtitle display | marker-defined parts CONFIRMED; speaker labels now CONFIRMED shown; clip-vs-scroll NOT TESTED |
-| KI-023 | FIXED | Tooling | PowerShell hashtables are case-insensitive; planner index to fix before batch 2 |
-| KI-024 | FIXED, STANDING RULE | Build | trailing whitespace does not survive the locres round-trip; trim before every build |
-| KI-025 | ACCEPTED | Fonts/Text | glyph exemption for source-inherited codepoints only; Arabic introduced none |
-| KI-026 | NOT TESTED | Text/UI | 112 UI rows above 1.2x English (9 above 1.4x); p6 is now installed, so testable |
-| **KI-027** | **PARTIAL (2 of N speaker names)** | **Text/UI** | **`Computer` and `Char-les` labels completed game-wide; `P-3` Latin by rule; other speaker names still Latin (coverage gap)** |
+- Rows: **8,981 of 27,618 (32.52%)** with Arabic, all DRAFT.
+- Unique English strings: **4,947 of 19,996 (24.74%)**.
+- Batch-2 target for this turn was 13,809 rows (50%) - NOT reached; 8,981 delivered. The gap is deliberate and reported: the turn went to the speaker-label fix (1,264 rows) plus the batch-2 plan, tooling and gates, and only chunk 1 was authored.
+- Remaining untranslated: 17,698 rows / 15,518 unique strings.
 
-## 6. What I should send back (to you)
+## 3. What changed this cycle
 
-- This HANDOFF.md (path, size and LastWriteTime printed in the chat).
-- `reports/cycle011_results.md` - the cycle report: identification evidence, the 5 translations, the label policy, the gate table, the install proof and both rollback commands.
-- `reports/scene_soda_ingame_check.md` - the short in-game checklist for the boat scene.
-- `localization/references/AR_EN_REFERENCE.md` - full AR/EN reference (7,387 rows / 4,431 unique / 19 scopes).
-- The 40-row review sample below.
+1. **Speaker labels (KI-027 closed for the curated set, DEC-030).** Inventoried every name-like value across all 35 scopes (`localization\working\labels\label_candidates.tsv`, 3,611 distinct / 9,168 rows), curated one Arabic per name (`speaker_names.tsv`, 324 translatable entries + 4 documented keeps) and applied it to 1,264 rows / 292 names with 0 conflicts via `scripts\apply_speaker_names.ps1`. Glossary wording won everywhere (`Doctor`, `Ballerina`, `Korolyov`, `Polymorph` + 18 family names, `Nechaev`, `Sergey Nechaev`, `VOV-A6` kept Latin); 116 names adopted the existing batch-1 Arabic instead of churning a shipped row. `P-3` (1,140 rows) stays Latin by the copy-class rule.
+2. **Batch-2 order = game progression (DEC-029).** `scripts\batch2_plan.ps1` reads the game's own subtitle DataTable dumps and assigns each locres key its playback index; the work order is prologue (`Chelomey_Dialogues`, then `CUTSCENES`) -> remaining base-game dialogue scopes in story order -> mail/signage -> DLC1..DLC4 -> UI last. Materialised in `localization\working\batch2\plan.tsv` / `plan_unique.tsv`.
+3. **KI-023 fixed.** `scripts\batch_plan.ps1` occurrence index is now an ordinal `Dictionary[string,int]`; every new batch-2 tool uses ordinal dictionaries / `HashSet[string]`, so a case-folded collision cannot happen.
+4. **Chunk 1 authored and applied.** 306 unique strings of the prologue -> 330 rows, timing markers byte-exact, 0 conflicts, 0 unmatched strings. Gate: `scripts\batch2_chunk.ps1` (id space `b####`, English copied from the plan by id, hard checks on unknown/duplicate id, empty Arabic, Latin-only Arabic, marker/tag multiset). Applier: `scripts\batch2_apply.ps1` (fills empty Arabic only, DRAFT, appends to `state.tsv`).
+5. **Carrier p7 built and installed** (+ reference and 40-row sample regenerated).
 
-## Review sample (40 rows, Arabic first, English below)
+## 4. Gates (all green)
+
+| Gate | Result |
+|---|---|
+| Validator | PASS - rows=27618 translated=8981 errors=0 warnings=197 (the p6 baseline exactly; zero new warnings) |
+| Glyph gate | PASS with `-AllowSourceInheritedNonLatin` (source-inherited 5, introduced-by-Arabic 0) |
+| Round-trip | PASS - 35/35 scopes unpack byte-identical, 26,427 exact + 1,191 newline-only, 0 kept Korean |
+| Copy-class | PASS - no Latin-only Arabic value; `P-3` / `VOV-A6` remain empty UNTRANSLATED |
+
+## 5. Exact resume point (no re-planning needed)
+
+- Plan: `localization\working\batch2\plan_unique.tsv` - next unauthored id is **`b0309`** (plan seq 310); 15,518 unique strings remain.
+- To continue: author `localization\working\batch2\ar_0002.tsv` (id<TAB>arabic, ~300 ids starting at b0309), then
+  `powershell -File scripts\batch2_chunk.ps1 -ChunkId 0002`,
+  `powershell -File scripts\batch2_apply.ps1 -ChunkId 0002`,
+  `powershell -File scripts\validate_translation.ps1`,
+  `powershell -File scripts\glyph_gate.ps1 -AllowSourceInheritedNonLatin`.
+- Copy-class rows must be omitted from chunks (`P-3`, `VOV-A6`, any value with no Arabic letters) - the chunk gate enforces this.
+- Trim trailing whitespace before any carrier build (KI-024) - `scripts\trim_trailing_ws.ps1`.
+- Carrier build: `scripts\build_carrier_locres_pak.ps1 -PakOut C:\AtomicHeart-AR\build\package\zzz_atomicheart-ar_carrier_koKR_p8_P.pak -VariantLabel p8`.
+- Install: `scripts\install_mod.ps1 -Carrier p8 -Font p2_plex`.
+
+## 6. Standing rules that did not change
+
+- Text only. No media extraction, no raw game assets committed, game folder read-only except `~mods`, never touch EXE/DLL/Denuvo, no install/uninstall without explicit approval, no uploads.
+- Arabic lives only in UTF-8 data files; every script stays ASCII (KI-021).
+- Always state coverage as "N of TOTAL (X%)". RU-only strings go to `reports\dialogue_ru_only.md`, never the English column.
+- Reviewer text fixes live only in `localization\working\tm_fixups.tsv`.
+- Chunks are ~300 unique strings; after each chunk: gate -> apply as DRAFT -> validate -> save resumable progress.
+- Do not sanitize: tone, humour and insults stay.
+
+## 7. Open items
+
+| Item | State |
+|---|---|
+| KI-027 speaker labels | Curated set done in data; in-game proof pending (checklist Q3/Q4) |
+| KI-022 subtitle clip-vs-scroll | PARTIAL - data side PASS, display NOT TESTED |
+| KI-026 UI fit | NOT TESTED - p7 installed, testable now |
+| KI-009 GameTips popups | NOT TESTED |
+| KI-018 248 RU-only cooked dialogue assets / 6,012 strings (whole `DT_Subtitles_*` family) | BLOCKED - needs a Phase 8 uasset decision |
+| KI-013 native `ar` language list | BLOCKED - needs Phase 8 `DA_Audio` schema tooling |
+| KI-017 `NotLifted_17` | BLOCKED - obfuscated, evidence only |
+| Residual label sweep | 2,588 single-occurrence name-like values not individually curated (`label_candidates.tsv`) |
+
+## 8. Reports and how to read them
+
+- This cycle: `reports\cycle012_results.md` (= `lastreport.md` = `reports\history\report_016.md`).
+- Gate detail: `reports\translation_validation.md`, `reports\glyph_gate.md`, `reports\carrier_build.md`, `reports\review_sample.md`.
+- Reference: `localization\references\AR_EN_REFERENCE.md` (8,981 rows / 4,947 unique / 28 scopes).
+- Questions for the reviewer: `glossary\glossary_questions.md` (sections 9 and 10 are new this cycle).
+
+## 9. Review sample (40 rows from the current master)
 
 <!-- BEGIN REVIEW SAMPLE -->
 
@@ -83,23 +96,23 @@ Spec hash (MASTER_PROMPT.md): `579f581e5bb8caae2aff6ef60326f1f461688f1b1392391a5
 | 1 | NewP5 | UI | spread | `/FE629BCB49FADFD51998CD84DB989127` | وحدة الاصطدام فائقة التوصيل | Superconducting impact module |
 | 2 | NewP5 | UI | spread | `/3C6F4A8C4C2C86C913E096B2E741E2F3` | كانت تمارا أرتيمينكوفا صديقة ريجوفا الحميمة حين كانت الأخيرة الباليرينا الأولى، وهي الآن منفردة في مسرح مايا بليستسكايا. وقد اضطرّت للنيابة عن صديقتها السابقة في الأدوار الرئيسية كلما تعذّر عليها حضور عرض (بسبب تقلّب المزاج ورفضها مشاركة المسرح مع الروبوتات، بالطبع، في المقام الأول). وعلى الرغم من المنافسة الهائلة بين باليرينات البشر والروبوتات، تحبّ أرتيمينكوفا زميلاتها الميكانيكيات وتحترمهنّ، وتتباهى فخورةً بمشاركتها المسرح معهنّ، إذ ترى في ذلك تجربة فنية غير مسبوقة. | Formerly prima ballerina Ryzhova's best friend, now a soloist at the Maya Plisetskaya Theater, Tamara Artemenkova had had to fill in for her ex-friend in lead roles when the latter was unable to make it to a performance (primarily due to capriciousness and a refusal to share the stage with robots, of course). Despite the enormous competition between human and robot ballerinas, Artemenkova loves and respects her mechanical colleagues and proudly boasts about sharing the stage with them, seeing it as an unprecedented artistic experiment. |
 | 3 | NewP5 | UI | spread | `/0C87FE2E444E0F95FE3FFF9467B672C9` | حياة جديدة تتفتّح في الداخل. | New life blossoms inside. |
-| 4 | Chelomey_Dialogues | Dialogue | spread | `/4B8476EC4BD2275A98733F80E70C3227` | رجل يتصوّر | Man posing for a picture |
-| 5 | NewP5 | UI | spread | `/5D041AD34774DB99BD71DC92C6F7028F` | فيودور كوروليف | Fyodor Korolyov |
-| 6 | NewP5 | UI | spread | `/485C9D874CB3A9AD6D64D4878659760A` | الأبواب مفتوحة | Doors are open |
-| 7 | NewP5 | UI | spread | `/934D0CEB4CB8C203F095F785D81F1A64` | خذ رأس فيكتور إلى مختبر مجمّع بافلوف | Take Viktor's head to the Pavlov Complex lab |
-| 8 | NewP5 | UI | spread | `/A3FA8F764DA2BD4CD840A184AFC56080` | ادخل الكوخ | Enter the hut |
-| 9 | NewP5 | UI | spread | `/F67A0C73418226C83B830C8B561B3EE0` | رغم بساطته، يتيح التصويب على مسافة تزيد على 100 متر. | Despite its simplicity, allows to aim at a distance of more than 100 meters. |
-| 10 | DIALOGUES FOR LQA | Dialogue | spread | `/A08B1FE845D63766B1918C9E5BE267CC` | تشارلز | Char-les |
-| 11 | NewP5 | UI | spread | `/D2A470934B22D0E426C041AFB3EE7E34` | إصدار DirectX | DirectX Version |
-| 12 | NewP5 | UI | spread | `/4777E7B64EF77FF9CC20F9A203855584` | تثبيت | INSTALL |
-| 13 | NewP5 | UI | spread | `/E3CD4A1B47D41D465DD381A7E539B0F4` | تصحيح سطوع الصورة | Image brightness correction |
-| 14 | NewP5 | UI | spread | `/DA129D4643D49F7AD9A82AAAED51F4AA` | فضلات مشابهة. هذا ليس ما سألت عنه. | Similar feces. That's not what I asked. |
-| 15 | NewP5 | UI | spread | `/6F7E6506432BD49AF4CC93A94A781AF1` | تنشأ أشدّ الكراهية تجاه من استطاعوا لمس القلوب ثم بصقوا في الروح. | The biggest hatred occurs to those who managed to touch the hearts, and then spit into the soul. |
-| 16 | NewP5 | UI | spread | `/56D01DBB43C3B5827E2B5BA81D542975` | سطح عاكس | Reflective Surface |
-| 17 | Chelomey_Dialogues | Dialogue | spread | `/0274464A44F83E078C1ED59E0F7E2D71` | صوت واثق | Confident voice |
-| 18 | Chelomey_Dialogues | Dialogue | spread | `/864474DD440B3A2551D0F9897E01C037` | شاب | Guy |
-| 19 | NewP5 | UI | spread | `/D4EF509F45FE2A26CF8DEFAB4CBBC4DC` | تبريد المرجل #1 | Cool off Boiler #1 |
-| 20 | NewP5 | UI | spread | `/569CDAE9408CE23A7F1D2E84EDE73DF3` | خراطيش الرش | SHOTGUN SHELLS |
+| 4 | Vavilov_Dialogues | Dialogue | spread | `/23CCFC4246EF6F7F84A66C83DC9330B1` | نورا | NORA |
+| 5 | Chelomey_Dialogues | Dialogue | spread | `/4B8476EC4BD2275A98733F80E70C3227` | رجل يتصوّر | Man posing for a picture |
+| 6 | NewP5 | UI | spread | `/5D041AD34774DB99BD71DC92C6F7028F` | فيودور كوروليف | Fyodor Korolyov |
+| 7 | NewP5 | UI | spread | `/485C9D874CB3A9AD6D64D4878659760A` | الأبواب مفتوحة | Doors are open |
+| 8 | NewP5 | UI | spread | `/934D0CEB4CB8C203F095F785D81F1A64` | خذ رأس فيكتور إلى مختبر مجمّع بافلوف | Take Viktor's head to the Pavlov Complex lab |
+| 9 | NewP5 | UI | spread | `/A3FA8F764DA2BD4CD840A184AFC56080` | ادخل الكوخ | Enter the hut |
+| 10 | NewP5 | UI | spread | `/F67A0C73418226C83B830C8B561B3EE0` | رغم بساطته، يتيح التصويب على مسافة تزيد على 100 متر. | Despite its simplicity, allows to aim at a distance of more than 100 meters. |
+| 11 | DIALOGUES FOR LQA | Dialogue | spread | `/A08B1FE845D63766B1918C9E5BE267CC` | تشارلز | Char-les |
+| 12 | Vavilov_Dialogues | Dialogue | spread | `/D5E2D7834F900E60981F48AF2E244C65` | متحول ملقح | Vaccinated mutant |
+| 13 | NewP5 | UI | spread | `/D2A470934B22D0E426C041AFB3EE7E34` | إصدار DirectX | DirectX Version |
+| 14 | NewP5 | UI | spread | `/4777E7B64EF77FF9CC20F9A203855584` | تثبيت | INSTALL |
+| 15 | NewP5 | UI | spread | `/E3CD4A1B47D41D465DD381A7E539B0F4` | تصحيح سطوع الصورة | Image brightness correction |
+| 16 | NewP5 | UI | spread | `/DA129D4643D49F7AD9A82AAAED51F4AA` | فضلات مشابهة. هذا ليس ما سألت عنه. | Similar feces. That's not what I asked. |
+| 17 | Mails_01 | Lore | spread | `/7EDCB4A04F02FC0B22F49E8CF9BB0F37` | ليبيديف | Lebedev |
+| 18 | NewP5 | UI | spread | `/6F7E6506432BD49AF4CC93A94A781AF1` | تنشأ أشدّ الكراهية تجاه من استطاعوا لمس القلوب ثم بصقوا في الروح. | The biggest hatred occurs to those who managed to touch the hearts, and then spit into the soul. |
+| 19 | NewP5 | UI | spread | `/56D01DBB43C3B5827E2B5BA81D542975` | سطح عاكس | Reflective Surface |
+| 20 | Chelomey_Dialogues | Dialogue | spread | `/3802E8894C08D6BACE017EBBB232A3DD` | صدّق أو لا تصدّق، هذه الاحتمالات أفضل من الفوز باليانصيب. يا لها من مصادفة. | Believe it or not, they're better than winning the lottery. Such a coincidence. |
 | 21 | PearTerminals | UI | longest | `/9A3AD94643642C7E9B30C09C32D4615B` | الموضوع: مشروع القلب الذري المتحدث: د. دميتري سيتشينوف  مرحبًا بكم، أيها الرفاق. في عام 1951، أعلنت الإمبريالية الرأسمالية في الولايات المتحدة، وهي تلتهمها الكراهية والحسد لإنجازات الاتحاد السوفييتي العلمية الرائعة، إطلاق برنامج "الطاقة للجميع" العالمي. وهذا البرنامج في جوهره منافق مثل النظام الرأسمالي نفسه تمامًا. فخلف واجهة من المُثُل العليا، يسعى الرأسماليون إلى الهيمنة على العالم، وقمع كل استقلال غير استقلالهم، وإبادة من لا يشاركونهم قيمهم.  وبالنظرة الأولى، تبدو "الطاقة للجميع" نبيلة إلى حد لا يُصدَّق: خمسون محطة طاقة نووية ستُبنى في كل أنحاء الولايات المتحدة لتزويد كل مواطن أمريكي بكهرباء رخيصة ومتاحة. لكن النظام الرأسمالي في الولايات المتحدة، كما في كل مرة، يخفي وجهه الحقيقي، الملتوي إلى ضحكة وحشية إمبريالية، خلف قناع من الشهامة. فإلى جانب محطات الطاقة هذه، تبني الولايات المتحدة سرًّا أيضًا شبكة من الصوامع والمظلات الأرضية لإطلاق الصواريخ النووية وإيواء القاذفات الاستراتيجية المسلّحة بالقنابل النووية.  وهدف الأمريكيين بسيط: بمجرد أن يصدّق الاتحاد السوفييتي مزاعمهم عن السلام والصداقة، سيُرخي حذره، فتنقضّ الآلة العسكرية الأمريكية وتدمّر الاتحاد السوفييتي وطريقة الحياة الشيوعية كلها بهجوم مباغت جبان! لكن الاتحاد السوفييتي ليس ممن يجلسون مكتوفي الأيدي وينتظرون بينما يعيد أعداؤنا تنظيم صفوفهم ويزيدون أعدادهم، ويخبّئون الأسلحة النووية تحت الأرض حيث لا نستطيع إبادتها من المدار. ولا هو ممن يتراجعون أو يفرّون من قوة أمة أخرى. وردًّا على التهديد الأمريكي، طوّرت المنشأة 3826 مشروعها الخاص المصمّم لا لحماية الاتحاد السوفييتي فحسب، بل لتخليص العالم نهائيًا من إمكان حدوث مذبحة كهذه. وقد وصف رئيس الولايات المتحدة ذات مرة برنامج "الطاقة للجميع" بأنه "القلب الذري" لأمريكا. وبالنظر إلى الخداع والنفاق العميقين في الرأسمالية الأمريكية، فإن هذا الاسم يعبّر تعبيرًا تامًا عن جوهر التهديد العالمي الذي طوّرته الولايات المتحدة. ولهذا السبب، استعار مشروعنا، الذي سيعطّل مكائد الأمريكيين القاتلة، استعارة قائدهم. فقلبنا الذري سيعيد الأمانة والاستقامة إلى أمريكا!  ويتكوّن مشروع القلب الذري من عدة مراحل متتالية:  - تصميم وبناء روبوتات مدنية لا تحمل أسلحة أو أي علامات أخرى على تطبيق عسكري محتمل. وقد صُمّمت هذه الروبوتات لتكون مستقلة عن برمجيّاتها. فأي مالك يستطيع تثبيت أي برمجيات يريدها عليها. ومن الخارج تبدو الروبوتات غير ضارّة تمامًا وآمنة وودودة. لكنها في الحقيقة مزوّدة بأساليب قتال متلاحم بالغة الفعالية، وتستطيع استخدام العتاد المدني أسلحةً قاتلة.  - وتقتضي المرحلة الثانية من هذا المشروع أن يرى العالم كله الروبوتات المدنية السوفييتية بوصفها سلعًا إنسانية. وقد نفّذنا هذه الاستراتيجية بالفعل عبر الأمم المتحدة. وبعد حصولها على صفة سلع إنسانية، بدأت الروبوتات السوفييتية تنتشر في العالم كله مجانًا، ما أعطى دفعة قوية لمواصلة تطوير مشروع القلب الذري. وقد أغرق الرأسماليون الأمريكيون المتعطّشون للربح بلدهم بروبوتاتنا. فقوة العمل الروبوتية المجانية حلم كل مغتصب رأسمالي، ولم يتردّد أحدهم في الحصول على أكبر عدد ممكن من الروبوتات السوفييتية.  - وخلال المرحلة الثالثة، جعل الاتحاد السوفييتي الحصول على الروبوتات المجانية أسهل ما يمكن لعملائنا الأجانب. فمثلاً استوردت الشركات الأمريكية بالفعل أكثر من مئة مليون روبوت مدني سوفييتي من طرازات متنوعة. ويُستخدم كثير منها في مرافق مرتبطة بـ"الطاقة للجميع"، أي محطات الطاقة الأمريكية وصوامع الصواريخ. وهناك تقوم روبوتاتنا، التي ثبّتت عليها القوات الخاصة الأمريكية برمجياتها، بأعمال الصيانة والخدمة والتشغيل في المرافق النووية. وهكذا تحقّق الهدف الأول لمشروع القلب الذري.  - وخلال المرحلة الأخيرة من المشروع، ستُحوَّل الروبوتات المدنية من التشغيل المدني إلى وضع القتال. وستسيطر بعدها على كل المكوّنات الأساسية للبنية التحتية في الولايات المتحدة. وسيصبح ذلك ممكنًا مع إطلاق كوليكتيف 2.0، الذي سيوحّد كل الروبوتات السوفييتية في شبكة بوليمر عصبي موحّدة لا تحتاج إلى إشارات راديو ولا بروتوكولات رقمية ولا أي إلكترونيات أخرى. وستتمكّن كل الروبوتات السوفييتية من تلقّي أوامرنا وتنفيذها بنجاح. وهجومهم سيكون مباغتًا، وسيقع في كل مكان دفعة واحدة، بالثانية. وسيُفاجأ العدوّ تمامًا، وسيُباد. وستتحرّر الطبقة العاملة الأمريكية من قهر الرأسمالية العالمية، وسيضيع مفهوم الرأسمالية نفسه في مياه نهر النسيان.  ولم يبقَ على إطلاق كوليكتيف 2.0 سوى شهرين. وفي شهرين فقط، سيقذف جنس بشري جديد تقدمي الرأسمالية في مزبلة التاريخ، وسيطرح عن كاهله نير الطغاة، وسيبدأ مسيرته إلى المستقبل. لن يعود العالم كما كان أبدًا، أيها الرفاق! | Topic: The Atomic Heart Project Speaker: Dr. Dmitry Sechenov  Welcome, Comrades. In 1951, the capitalist imperialism of the United States, consumed by hatred and envy for the Soviet Union's magnificent scientific achievements, declared the launch of the global Energy for All program. In essence, this program is just as hypocritical as the capitalist system itself. Hiding behind a facade of lofty ideals, the capitalists strive for worldwide hegemony, the suppression of all independence other than their own, and the eradication of those who do not share their values.  At first glance, Energy for All seems incredibly noble: fifty nuclear power stations will be constructed throughout the United States in order to provide every American citizen with cheap and available electricity. But the United States' capitalist regime is, as always, hiding its true face, twisted into the beastly grin of imperialism, behind a mask of magnanimity. In addition to these power stations, the United States is also secretly building a network of underground silos and hangars for launching nuclear missiles and housing strategic bombers armed with nuclear bombs.  The Americans' goal is simple: once the Soviet Union believes their claims of peace and friendship, it will let down its guard, and the American military machine will strike, destroying the Soviet Union and the entire communist way of life with a cowardly sneak attack! But the Soviet Union isn't one to sit on its hands and wait while our enemies regroup and swell their ranks, hiding nuclear weapons underground where we cannot eliminate them from orbit. Nor is the Soviet Union one to back down or run from another nation's might. In response to the American threat, Facility 3826 has developed its own project designed not only to protect the Soviet Union, but also to rid the world once and for all of the very possibility of such a bloodbath. The president of the United States once called Energy for All America's "atomic heart." Given the profound guile and hypocrisy of American capitalism, this name reflects the essence of the global threat developed by the United States all too well. For this reason, our project, which will counteract the Americans' deadly machinations, has co-opted their leader's metaphor. Our Atomic Heart will return honestly and integrity to America!  The Atomic Heart project is made up of several sequential steps:  - Design and build civilian robots with no weapons or other signs of a potential military application. These robots have been designed to be independent of their software. Any owner can install any software onto them they like. On the outside, the robots seems to be perfectly harmless, safe, and friendly. But in reality, they are equipped with highly effective hand-to-hand combat techniques and can use civilian equipment as lethal weapons.  - Stage two of this project requires that Soviet civilian robots be seen by the entire world as humanitarian goods. We have already implemented this strategy via the United Nations. Since receiving the status of humanitarian goods, Soviet robots have begun to spread throughout the entire world free of charge, which has given a powerful impetus to the further development of the Atomic Heart project. Profit-hungry American capitalists are flooding their country with our robots. A free robotic workforce is the dream of every capitalist usurper, and none of them has hesitated to obtain as many Soviet robots as possible.  - During stage three, the Soviet Union has made obtaining free robots as easy as possible for our foreign customers. American businesses, for one, have already imported over one hundred million Soviet civilian robots of various models. Many of these are used at facilities related to Energy for All, i.e. American power stations and missile silos. There, our robots, on which American special forces have installed their own software, maintain, service, and operate nuclear facilities. The first objective of the Atomic Heart project has thus been accomplished.  - During the final phase of the project, civilian robots will be switched form civilian operation to combat mode. They will then capture all key components of the infrastructure of the United States. This will become possible with the launch of Kollektiv 2.0, which will unite all Soviet robots into a unified Neuropolymer network that requires no radio signals, digital protocols, or other electronics. All Soviet robots will be able to receive and successfully carry out our commands. Their attack will be sudden, and it will happen everywhere, all at once, down to the second. The enemy will be taken completely by surprise, and they will be eradicated. The American working class will be liberated from the oppression of global capitalism, and the very notion of capitalism will be lost in the waters of Lethe.  The launch of Kollektiv 2.0 is only two months away. In just two months, a new, progressive human race will toss capitalism into the dustbin of history, cast off the tyrants' yoke, and begin its march into the future. The world will never be the same, comrades! |
 | 22 | PearTerminals | UI | longest | `/193AE0CF4419471FC25F6B9C8703D5AA` | تاريخ: 1 مارس 1955 من: قسم النشر إلى: أرشيف المطبعة  بناءً على طلبك، راجعت تجميعة الاقتباسات العبثية لأعلام بورجوازية سحقتها مسيرة التقدّم والعلوم السوفييتية سحقًا تامًا.   1876: "لهذا 'الهاتف' عيوب أكثر من أن يُؤخذ بجدية كوسيلة اتصال." ويليام أورتون، رئيس شركة ويسترن يونيون  "الأمريكيون بحاجة إلى الهاتف، أما نحن فلا. لدينا من الصبيان السعاة ما يكفي." السير ويليام برايس، كبير مهندسي مكتب البريد البريطاني  1889: "العبث بالتيار المتردد مضيعة للوقت. لن يستخدمه أحد أبدًا. خطير جدًا!" توماس إديسون (احذفوه، لا نريد السخرية من إديسون)  1921: "لصندوق الموسيقى اللاسلكي قيمة تجارية لا يمكن تخيّلها. من سيدفع مقابل رسالة تُرسل إلى لا أحد بعينه؟" شركاء ديفيد سارنوف ردًّا على طلبه الاستثمار في الراديو (أشيروا إلى أن الراديو اخترعه ألكسندر بوبوف)  1926: "قد يكون التلفاز ممكنًا نظريًا وتقنيًا، لكنه مستحيل تجاريًا وماليًا." لي دي فورست (احذفوه، مواطنونا لا تهمّهم النجاحات التجارية أو المالية)  1932: "لا أساس على الإطلاق للقول بأن الطاقة النووية ستصبح ممكنة يومًا. فذلك يعني أن الإنسان تعلّم شطر الذرة." ألبرت أينشتاين (جيد جدًا، لكن تأكدوا من أن أينشتاين قال ذلك فعلًا، وإلا فسيكون الأمر مثل أحجيته)  1936: "لن يستطيع صاروخ أن يغادر الغلاف الجوي للأرض أبدًا." نيويورك تايمز (هذا الاقتباس رائع ببساطة! عددهم الأول!)  1946: "العامل كان وسيبقى موجودًا، أما الروبوت فليس سوى بريق عابر." هنري فورد  "لن يتمكّن التلفاز من الحفاظ على أي سوق يظفر به بعد الأشهر الستة الأولى. وسيملّ الناس قريبًا من التحديق في صندوق من الخشب الرقائقي كل ليلة." داريل زانوك، منتج وأحد مؤسّسي شركة 20th Century Fox (لست متأكدًا من هذا، لا تنشروه حتى يُحلّ الحزب علاقته ببرامج الترفيه)  1949: "بينما يبلغ وزن حاسوب مثل ENIAC [أول حاسوب] اليوم 30 طنًا ويزوّد بـ18,000 صمام مفرّغ، قد تحتوي الحواسيب المستقبلية على 1000 صمام مفرّغ فقط وربما لا يزيد وزنها على 1½ طن." بوبيولار ميكانيكس (جيد، لكن ترجموا اسم المجلة "Popular Mechanics" إلى الروسية بدلًا من تركه بالإنجليزية)  1951: "لا تكاد توجد أي فرصة لأن تُستخدم الأقمار الصناعية في الاتصالات لتقديم خدمة هاتفية أو تلغرافية أو تلفازية أو إذاعية أفضل داخل الولايات المتحدة." ت. كرافن، مفوّض هيئة الاتصالات الفيدرالية (أبرزوا الحقيقة أنهم ربما لا يستطيعون ذلك، أما نحن فنستطيع بالتأكيد!)  1955: "لا سبب على الإطلاق لأن يمتلك أي فرد حاسوبًا في منزله." كين أولسن، مؤسّس شركة ديجيتال إكويبمنت. | Date: March 1, 1955 From: Publishing Dept. To: Printing Archive  At your request, I have reviewed the compilation of absurd quotations from bourgeois figures that have since been utterly trounced by progress and Soviet science.   1876: "This 'telephone' has too many shortcomings to be seriously considered as a means of communication." William Orton, president of Western Union  "The Americans have need of the telephone, but we do not. We have plenty of messenger boys." Sir William Price, chief engineer of the British Post Office  1889: "Fooling around with alternating current's just a waste of time. Nobody'll ever use it. Too dangerous!" Thomas Edison (get rid of it, we don't want to make fun of Edison)  1921: "The wireless music box has no imaginable commercial value. Who would pay for a message sent to nobody in particular?" David Sarnoff's partners in response to his request to invest in the radio (mention that the radio was invented by Alexander Popov)  1926: "While theoretically and technically television may be feasible, commercially and financially it is an impossibility." Lee de Forest (get rid of it, our citizens don't care about commercial or financial success)  1932: "There is no basis whatsoever on which to suggest that nuclear power will ever be possible. It would mean that man has learned to split the atom." Albert Einstein (very good, but make sure Einstein actually said it, otherwise it'll be like his riddle)  1936: "A rocket will never be able to leave the Earth's atmosphere." New York Times (this one is simply magnificent! Their very first issue!)  1946: "The working man always has been and always will be, but the robot is nothing more than a flash in the pan." Henry Ford  "Television won't be able to hold on to any market it captures after the first six months. People will soon get tired of staring at a plywood box every night." Darryl Zanuck, producer and one of the founders of 20th Century Fox (not sure about this one, don't publish it until the Party sorts out its relationship to entertainment programming)  1949: "Where a calculator like ENIAC [the first computer] today is equipped with 18,000 vacuum tubes and weighs 30 tons, computers in the future may have only 1000 vacuum tubes and perhaps weigh only 1½ tons." Popular Mechanics (good, but translate the name "Popular Mechanics" into Russian instead of leaving it in English)  1951: "There is practically no chance communications space satellites will be used to provide better telephone, telegraph, television, or radio service inside the United States." T. Craven, FCC commissioner (underscore the fact that maybe they can't do it, but we sure can!)  1955: "There is no reason for any individual to have a computer in their home." Ken Olsen, founder of Digital Equipment Corp. |
 | 23 | PearTerminals | UI | longest | `/9B1B009F4DE6273D54BC4AA17124DA05` | تاريخ: 9 مايو 1955 من: الأرشيف إلى: المساعد المخبري ي. كليموف  أضف بعض الخلاصات في النهاية. فالنص جافّ جدًا.  "قبل وقت قصير فقط كانت أحاديث "ماذا لو" حكرًا على الإحصائيين والمحللين في أفضل الأحوال، بحسب الموضوع المطروح. لكن اليوم، بفضل الأنظمة الكمومية لليبيديف، صار التنبؤ بالتواريخ البديلة علمًا بمعنى الكلمة. وقد أتاح لنا ذلك الحصول على تقرير بالغ الدقة عن تاريخ الاتحاد السوفييتي والحرب العالمية الثانية لو لم يكن الحزب قد أقرّ مشروع سيتشينوف لتحويل قواتنا إلى قوات روبوتية في أواخر الثلاثينيات. وقد حصل هذا التقرير النظري على التصنيف "5P" في أكاديمية العواقب.  المرحلة الأولى: الهزيمة. بسبب حداثة التقنية وضعف تكيّف قدراتنا الصناعية، تبين أن الروبوتات عاجزة عن مقاومة قوات الفيرماخت، وتكون الخسائر الأولية فادحة. ويفقد الاتحاد السوفييتي كل أراضيه حتى موسكو. المرحلة الثانية: إعادة التجميع. في منتصف الحرب، تصبح الخسائر البشرية وضغط الرايخ كبيرين إلى حد أن خلاص الجيش الأحمر الوحيد يكمن في بناء روبوتات قتالية أكثر تطوّرًا لتعويض الجنود المفقودين. وتُعاد هيكلة عملية تصنيع الروبوتات القتالية الجديدة وتُعزَّز في الأورال وسيبيريا. المرحلة الثالثة: هدنة. إذ يرى جنود الحلفاء هزيمة الاتحاد السوفييتي ويرفضون الإيمان بالترقيات المقبلة للروبوتات، فيركّزون قواهم ويصبحون أكثر عدوانية، لأنهم يدركون أن الجيش الأحمر لن يكون بعد الآن وقودًا للمدافع في الحرب الأوروبية. ويوقف الرايخ تقدّمه في عمق الاتحاد السوفييتي ويتحوّل إلى الجبهة الغربية. المرحلة الرابعة: نقطة الانكسار. تشنّ كتائب ضخمة من القوات الروبوتية بوظائف متنوعة هجمات مفاجئة بالغة الفعالية، فتستعيد أراضينا المحتلة في غضون أسابيع. وفي الشتاء، تمنح حركتها وعدم اعتمادها على الغذاء والدواء الآلاتَ السوفييتية ميزة هائلة. المرحلة الخامسة: النصر. وحتى قبل إنشاء صاروخ V-2 وفشل الطاعون البني، تحرّر الروبوتات السوفييتية معظم أوروبا. وبما أن عدد سكان العالم لا يتناقص أبدًا بسبب المرض، نجد أنفسنا في عالم هشّ يُضطر فيه اتحاد سوفييتي مضعضع إلى الاعتماد على قوة تقنيته." | Date: May 9, 1955 From: ARCHIVE To: Lab Assistant Y. Klimov  Add some conclusions at the end. It's really dry.  "Just a little while ago 'what if' conversations were, at best, the purview of statisticians and analysts, depending on the topic in question. But today, thanks to Lebedev's quantum systems, predicting alternate histories has literally become a science. This has allowed us to get a very accurate report on the history of the Soviet Union and World War II if the Party had not approved Sechenov's project to roboticize our troops in the late '30s. This theoretical report has received the designation "5P" at the Academy of Consequences.  Stage one: defeat. Due to the novelty of the technology and the weak adaptation of our manufacturing capabilities, the robots turn out to be unable to resist the Wehrmacht's forces, and initial casualties are colossal. The Soviet Union loses all its territory up to Moscow. Stage two: regrouping. Toward the middle of the war, human casualties and pressure from the Reich become so great that the Red Army's only salvation lies in building more advanced combat robots in order to make up for lost soldiers. The process of manufacturing new combat robots is reformed and enhanced in the Urals and Siberia. Stage three: respite. Seeing the Soviet Union's defeat and refusing to believe in upcoming robot upgrades, allied troops concentrate their forces and become more aggressive, since they understand that the Red Army will no longer be cannon fodder in the European war. The Reich halts its advance deep into the Soviet Union and switches to the Western Front. Stage four: breaking point. Massive battalions of robotic troops with various functions carry out highly effective sudden attacks, reclaiming our captured territory in a matter of weeks. In the winter, their mobility and lack of reliance on food and medicine give the Soviet machines a massive advantage. Stage five: victory. Even before the creation of the V-2 rocket and the failure of the Brown Plague, Soviet robots liberate most of Europe. Since the world's population is never reduced by illness, we find ourselves in a fragile world where a weakened Soviet Union is forced to rely on the might of its technology. |

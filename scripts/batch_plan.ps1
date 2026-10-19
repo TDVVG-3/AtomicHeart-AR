@@ -67,7 +67,7 @@ foreach ($r in $rows) {
     [void]$seen.Add($r.english)
     $unique.Add([pscustomobject]@{ english = $r.english; occurrences = 0; scope = $r.scope; key = $r.key; category = $r.category; en_len = $r.english.Length; done = $false; arabic = '' })
 }
-$idx = @{}
+$idx = New-Object 'System.Collections.Generic.Dictionary[string,int]' ([StringComparer]::Ordinal)   # KI-023: ordinal, never the case-insensitive PS hashtable
 for ($i = 0; $i -lt $unique.Count; $i++) { $idx[$unique[$i].english] = $i }
 foreach ($r in $rows) { $unique[$idx[$r.english]].occurrences++ }
 foreach ($r in $rows) {

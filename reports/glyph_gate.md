@@ -1,12 +1,12 @@
 # Glyph gate report (pilot)
 
-Generated: 2026-10-19 00:42:14
+Generated: 2026-10-19 11:43:41
 Font pak under test: build/package/zzz_atomicheart-ar_font_p2_plex_P.pak -> build/staging/font_p2/modpakfont
-Master: C:\AtomicHeart-AR\localization\master\atomic-heart-ar.tsv (7387 rows with Arabic)
+Master: C:\AtomicHeart-AR\localization\master\atomic-heart-ar.tsv (8981 rows with Arabic)
 
 VERDICT: **PASS**
 
-Distinct codepoints used by the translated rows: 148
+Distinct codepoints used by the translated rows: 149
 Codepoints missing from the subtitle face: 5
 Codepoints missing from the union of all six installed faces: 5
 Of those, source-inherited (also present in the English source of the same row): 5

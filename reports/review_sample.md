@@ -1,7 +1,7 @@
 # AR/EN review sample (pilot)
 
-Generated: 2026-10-19 00:42:17
-Rows with Arabic available: 7387 | sample size: 40
+Generated: 2026-10-19 11:44:30
+Rows with Arabic available: 8981 | sample size: 40
 
 Read each block as: Arabic (what the player sees) then the English source it came from.
 
@@ -26,124 +26,124 @@ AR: حياة جديدة تتفتّح في الداخل.
 
 EN: New life blossoms inside.
 
-### 4. [Chelomey_Dialogues] Dialogue
+### 4. [Vavilov_Dialogues] Dialogue
+reason: spread | key: /23CCFC4246EF6F7F84A66C83DC9330B1 | notes: label:AI vendor (batch-1 wording kept)
+
+AR: نورا
+
+EN: NORA
+
+### 5. [Chelomey_Dialogues] Dialogue
 reason: spread | key: /4B8476EC4BD2275A98733F80E70C3227 | notes: batch1
 
 AR: رجل يتصوّر
 
 EN: Man posing for a picture
 
-### 5. [NewP5] UI
+### 6. [NewP5] UI
 reason: spread | key: /5D041AD34774DB99BD71DC92C6F7028F | notes: batch1
 
 AR: فيودور كوروليف
 
 EN: Fyodor Korolyov
 
-### 6. [NewP5] UI
+### 7. [NewP5] UI
 reason: spread | key: /485C9D874CB3A9AD6D64D4878659760A | notes: batch1
 
 AR: الأبواب مفتوحة
 
 EN: Doors are open
 
-### 7. [NewP5] UI
+### 8. [NewP5] UI
 reason: spread | key: /934D0CEB4CB8C203F095F785D81F1A64 | notes: batch1
 
 AR: خذ رأس فيكتور إلى مختبر مجمّع بافلوف
 
 EN: Take Viktor's head to the Pavlov Complex lab
 
-### 8. [NewP5] UI
+### 9. [NewP5] UI
 reason: spread | key: /A3FA8F764DA2BD4CD840A184AFC56080 | notes: batch1
 
 AR: ادخل الكوخ
 
 EN: Enter the hut
 
-### 9. [NewP5] UI
+### 10. [NewP5] UI
 reason: spread | key: /F67A0C73418226C83B830C8B561B3EE0 | notes: batch1
 
 AR: رغم بساطته، يتيح التصويب على مسافة تزيد على 100 متر.
 
 EN: Despite its simplicity, allows to aim at a distance of more than 100 meters.
 
-### 10. [DIALOGUES FOR LQA] Dialogue
+### 11. [DIALOGUES FOR LQA] Dialogue
 reason: spread | key: /A08B1FE845D63766B1918C9E5BE267CC | notes: speaker:char-les
 
 AR: تشارلز
 
 EN: Char-les
 
-### 11. [NewP5] UI
+### 12. [Vavilov_Dialogues] Dialogue
+reason: spread | key: /D5E2D7834F900E60981F48AF2E244C65 | notes: label:DLC speaker
+
+AR: متحول ملقح
+
+EN: Vaccinated mutant
+
+### 13. [NewP5] UI
 reason: spread | key: /D2A470934B22D0E426C041AFB3EE7E34 | notes: batch1
 
 AR: إصدار DirectX
 
 EN: DirectX Version
 
-### 12. [NewP5] UI
+### 14. [NewP5] UI
 reason: spread | key: /4777E7B64EF77FF9CC20F9A203855584 | notes: batch1
 
 AR: تثبيت
 
 EN: INSTALL
 
-### 13. [NewP5] UI
+### 15. [NewP5] UI
 reason: spread | key: /E3CD4A1B47D41D465DD381A7E539B0F4 | notes: batch1
 
 AR: تصحيح سطوع الصورة
 
 EN: Image brightness correction
 
-### 14. [NewP5] UI
+### 16. [NewP5] UI
 reason: spread | key: /DA129D4643D49F7AD9A82AAAED51F4AA | notes: batch1
 
 AR: فضلات مشابهة. هذا ليس ما سألت عنه.
 
 EN: Similar feces. That's not what I asked.
 
-### 15. [NewP5] UI
+### 17. [Mails_01] Lore
+reason: spread | key: /7EDCB4A04F02FC0B22F49E8CF9BB0F37 | notes: label:Alexey Lebedev (batch-1 wording kept)
+
+AR: ليبيديف
+
+EN: Lebedev
+
+### 18. [NewP5] UI
 reason: spread | key: /6F7E6506432BD49AF4CC93A94A781AF1 | notes: batch1
 
 AR: تنشأ أشدّ الكراهية تجاه من استطاعوا لمس القلوب ثم بصقوا في الروح.
 
 EN: The biggest hatred occurs to those who managed to touch the hearts, and then spit into the soul.
 
-### 16. [NewP5] UI
+### 19. [NewP5] UI
 reason: spread | key: /56D01DBB43C3B5827E2B5BA81D542975 | notes: batch1
 
 AR: سطح عاكس
 
 EN: Reflective Surface
 
-### 17. [Chelomey_Dialogues] Dialogue
-reason: spread | key: /0274464A44F83E078C1ED59E0F7E2D71 | notes: scene:bridge-opening
+### 20. [Chelomey_Dialogues] Dialogue
+reason: spread | key: /3802E8894C08D6BACE017EBBB232A3DD | notes: batch2-0001
 
-AR: صوت واثق
+AR: صدّق أو لا تصدّق، هذه الاحتمالات أفضل من الفوز باليانصيب. يا لها من مصادفة.
 
-EN: Confident voice
-
-### 18. [Chelomey_Dialogues] Dialogue
-reason: spread | key: /864474DD440B3A2551D0F9897E01C037 | notes: batch1
-
-AR: شاب
-
-EN: Guy
-
-### 19. [NewP5] UI
-reason: spread | key: /D4EF509F45FE2A26CF8DEFAB4CBBC4DC | notes: batch1
-
-AR: تبريد المرجل #1
-
-EN: Cool off Boiler #1
-
-### 20. [NewP5] UI
-reason: spread | key: /569CDAE9408CE23A7F1D2E84EDE73DF3 | notes: batch1
-
-AR: خراطيش الرش
-
-EN: SHOTGUN SHELLS
+EN: Believe it or not, they're better than winning the lottery. Such a coincidence.
 
 ### 21. [PearTerminals] UI
 reason: longest | key: /9A3AD94643642C7E9B30C09C32D4615B | notes: batch1

@@ -1,0 +1,36 @@
+scope`tuntranslated_rows
+Chelomey_Dialogues	713
+CUTSCENES	606
+VDNKh_Dialogues	1064
+Vavilov_Dialogues	1799
+Pavlov_Dialogues	392
+Polygon_Dialogues	157
+Theatre_Dialogues	488
+OpenWorldVDNKh_Dialogues	352
+ChelomeyFinal_Dialogues	135
+Academy_Dialogues	23
+Schebetar_Subs	358
+Mails_01	389
+NTD	1428
+DIALOGUES FOR LQA	678
+Marshes_dlc1	156
+Mendeleev_dlc1	411
+Schebetars_dlc1	96
+Cutscenes_dlc1	405
+Locations_dlc2	798
+Mails_Shebetars_dlc2	246
+Tech_dlc2	224
+Chelomey_dlc3	712
+Sakhalin_dlc3	841
+Triton_dlc3	928
+Tech_dlc3	417
+Mails_Shebetars_Tech_dlc3	544
+CrystalComplex_dlc4	1219
+LebedevLab_dlc4	460
+Phasatron_dlc4	489
+WavePlatform_dlc4	291
+Tech_dlc4	1154
+Mails_Shebetars_dlc4	721
+PearTerminals	6
+NewP5	265
+Misc	2

@@ -181,3 +181,31 @@ grouped by chunk). Summary of the classes that need your judgement:
 8. **Glossary-pressure warnings (70)**: mostly plural forms the glossary matcher cannot see
    (`الخراطيش` for `Cartridge`) and `Shotgun` inside `4 shotgun shells`. These are wording choices,
    not errors; flag any you dislike.
+   9. **Speaker-name dictionary (cycle 012, DEC-030)**: 292 names were given one Arabic each in every scope
+      (1,264 rows). The whole dictionary is `localization/working/labels/speaker_names.tsv` and the per-name
+      counts are in `localization/working/labels/label_apply_report.tsv`; the inventory of every name-like
+      value in the project is `localization/working/labels/label_candidates.tsv` (3,611 distinct values /
+      9,168 rows). Points worth a native check:
+      - **Transliteration style** for personal names: `Sechenov`, `Petrov`, `Filatova`, `Stockhausen`,
+        `Tereshkova`, `Zakharov`, `Molotov`, `Vavilov`, `Chelomey`, `Lebedev`, `Pavlov`, `Korolyov`,
+        `Nechaev`/`Nechaeva`, `Chariton`, `Rafik`, `Blesna`, `Kheimsov`, `Orlikova`, `Samokhin`, `Tikhonov`,
+        `Zhabov`, `Kuropatkin`, `Lepyoshkin`, `Isayeva`, `Dogov`, `Khosnak`. The glossary (already agreed)
+        fixes `Doctor`, `Ballerina`, `Korolyov`, `Polymorph`, `Nechaev`, `Sergey Nechaev`, `Katya Nechaeva`,
+        and that wording was adopted rather than replaced.
+      - **Nicknames / puns**: `Teardrop`, `Robogirl`, `Nale`, `Cream pie`, `Fluffball`, `Angry one`,
+        `Talking corpse` (and the whole `Dead ...` / `... corpse` family), `Granny Zina`,
+        `Forgetful citizen`.
+      - **Machine ids kept Latin on purpose**: `P-3` (1,140 rows), `VOV-A6`, `RAF-9`, `RACCOON-SP`,
+        `WSP-9E`, `PTA-6` (rendered by sound in dialogue, Latin in its label). Confirm the Latin display is
+        what you want inside the subtitle brackets.
+      - **Left untranslated on purpose (technical service ids used as labels)**: `Start`, `NoText`,
+        `SaidSecond`, `FinalDialog`, `RadioReroute`, `Order`, plus the two DLC4 `CHAR-les` rows and the
+        single `Chariton` row in `Mails_01`. Say the word if any of these is actually shown to the player.
+      - **Not yet curated (residual)**: 2,588 name-like values that occur only once in the whole project have
+        not been individually reviewed; they are listed in `label_candidates.tsv` and can be swept in a
+        later cycle if you spot any still in English.
+   10. **Batch-2 opening chunk (cycle 012)**: the first 306 unique strings of the prologue (Chelomey boat
+       narration, the arrival monologue, the aerobics/photo/poem/phone-prank conversations) are now in
+       Arabic. If any line's tone, joke or insult reads wrong, name the chunk id (`b####`) - the file is
+       `localization/working/batch2/ar_0001.tsv`, and the English is in
+       `localization/working/batch2/plan_unique.tsv` under the same id.

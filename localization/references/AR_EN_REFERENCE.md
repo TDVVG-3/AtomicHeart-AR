@@ -1,6 +1,6 @@
 # AR <-> EN reference (rows that already carry Arabic)
 
-Generated: 2026-10-19 00:42:15
+Generated: 2026-10-19 11:44:28
 Cycles: translation program, DRAFT rows only.
 
 Rule: this file lists ONLY master rows whose Arabic column is non-empty.
@@ -8,29 +8,38 @@ Arabic is shown FIRST, the English source BELOW it, followed by the locres key.
 
 | rows with Arabic | unique English strings | scopes |
 |---|---|---|
-| 7387 | 4431 | 19 |
+| 8981 | 4947 | 28 |
 
 | scope | rows |
 |---|---|
 | Academy_Dialogues | 259 |
-| Chelomey_Dialogues | 389 |
-| Chelomey_dlc3 | 1 |
-| ChelomeyFinal_Dialogues | 46 |
-| CUTSCENES | 26 |
-| Cutscenes_dlc1 | 1 |
-| DIALOGUES FOR LQA | 21 |
-| Locations_dlc2 | 1 |
+| Chelomey_Dialogues | 801 |
+| Chelomey_dlc3 | 68 |
+| ChelomeyFinal_Dialogues | 79 |
+| CrystalComplex_dlc4 | 1 |
+| CUTSCENES | 236 |
+| Cutscenes_dlc1 | 16 |
+| DIALOGUES FOR LQA | 68 |
+| Locations_dlc2 | 18 |
+| Mails_01 | 65 |
+| Mails_Shebetars_dlc2 | 1 |
+| Mails_Shebetars_dlc4 | 35 |
+| Mails_Shebetars_Tech_dlc3 | 44 |
 | Misc | 19 |
 | NewP5 | 5332 |
-| OpenWorldVDNKh_Dialogues | 42 |
-| Pavlov_Dialogues | 82 |
+| NTD | 1 |
+| OpenWorldVDNKh_Dialogues | 91 |
+| Pavlov_Dialogues | 128 |
 | PearTerminals | 539 |
 | Polygon_Dialogues | 42 |
+| Sakhalin_dlc3 | 7 |
 | Schebetar_Subs | 3 |
-| Tech_dlc4 | 1 |
-| Theatre_Dialogues | 36 |
-| Vavilov_Dialogues | 379 |
-| VDNKh_Dialogues | 168 |
+| Tech_dlc2 | 4 |
+| Tech_dlc3 | 5 |
+| Tech_dlc4 | 119 |
+| Theatre_Dialogues | 142 |
+| Vavilov_Dialogues | 629 |
+| VDNKh_Dialogues | 229 |
 
 ## Academy_Dialogues (259 rows)
 
@@ -812,7 +821,7 @@ Arabic is shown FIRST, the English source BELOW it, followed by the locres key.
   - AR: سمعت ذلك من قبل. لكنني أشكّ أن أيّ شيء قد يفاجئني الآن.
   - EN: I've heard that before. But I doubt anything could surprise me now.
 
-## Chelomey_Dialogues (389 rows)
+## Chelomey_Dialogues (801 rows)
 
 - `/390799324C98ED38868918AC228ADC4C`  [Dialogue] scene:bridge-opening
   - AR: أيها المواطنون! اجمعوا أفكاركم واربطوا جهاز THOUGHT!
@@ -1948,47 +1957,1484 @@ Arabic is shown FIRST, the English source BELOW it, followed by the locres key.
 - `/C9167210439DF849E3855C87B22541AD`  [Dialogue] batch1
   - AR: تيريشكوفا
   - EN: Tereshkova
+- `/DD92C56F435E97D4F9C048B3C782EB42`  [Dialogue] label:valentina (batch-1 wording kept)
+  - AR: تيريشكوفا
+  - EN: Tereshkova
+- `/EA3E20B0483C9D7E8729BA946DAF7A6D`  [Dialogue] label:valentina (batch-1 wording kept)
+  - AR: تيريشكوفا
+  - EN: Tereshkova
+- `/F17EC269497E32772E1771B1AC036372`  [Dialogue] label:valentina (batch-1 wording kept)
+  - AR: تيريشكوفا
+  - EN: Tereshkova
+- `/FED31E044666202A14299EA2E608C410`  [Dialogue] label:valentina (batch-1 wording kept)
+  - AR: تيريشكوفا
+  - EN: Tereshkova
+- `/FF6919034D128FB70A604D9CE826B787`  [Dialogue] label:valentina (batch-1 wording kept)
+  - AR: تيريشكوفا
+  - EN: Tereshkova
+- `/33105AB94824FFDBC281BCB04C7B9A85`  [Dialogue] label:speaker
+  - AR: مواطن سيئ الحظ
+  - EN: Unlucky citizen
+- `/4F0AB30F4C6A33C1A2A1BB909AE9826A`  [Dialogue] label:speaker
+  - AR: مواطن سيئ الحظ
+  - EN: Unlucky citizen
+- `/7C0C7D13470DE4F8AFE005A5DBDBE06C`  [Dialogue] label:speaker
+  - AR: مواطن سيئ الحظ
+  - EN: Unlucky citizen
+- `/528EB817488491B02045AD9EE06485E0`  [Dialogue] label:speaker
+  - AR: محارب قديم
+  - EN: War veteran
+- `/7821022B443D7A600B5272B4DA26B34E`  [Dialogue] label:speaker
+  - AR: محارب قديم
+  - EN: War veteran
+- `/7F6E0C4E4A5C395B3C30A5A2898C05E8`  [Dialogue] label:speaker
+  - AR: محارب قديم
+  - EN: War veteran
+- `/84B243EB484A5830A4C085B9F19B0174`  [Dialogue] label:speaker
+  - AR: محارب قديم
+  - EN: War veteran
+- `/9D0FCA1F4A2C94FB7FD81CA812BCA7E4`  [Dialogue] label:speaker
+  - AR: محارب قديم
+  - EN: War veteran
+- `/A51F5ED94C3E4F70B1CE32AD92FBB0EF`  [Dialogue] label:speaker
+  - AR: محارب قديم
+  - EN: War veteran
+- `/A59E1F5749EE6737EB3ACF810B2C5AE2`  [Dialogue] label:speaker
+  - AR: محارب قديم
+  - EN: War veteran
+- `/B21356A343265AAEE52F61B0A94A33AA`  [Dialogue] label:speaker
+  - AR: محارب قديم
+  - EN: War veteran
+- `/FCB24D92476C044A9D023888EF1E5019`  [Dialogue] label:speaker
+  - AR: محارب قديم
+  - EN: War veteran
+- `/0DB82B61411994B1F9B6D79EA1C91F2D`  [Dialogue] label:generic speaker (batch-1 wording kept)
+  - AR: رجل
+  - EN: Man
+- `/2B339A684579EBFAB570EEB63080B6EB`  [Dialogue] label:generic speaker (batch-1 wording kept)
+  - AR: رجل
+  - EN: Man
+- `/36E92B954B05DD616E444FB098B444B1`  [Dialogue] label:generic speaker (batch-1 wording kept)
+  - AR: رجل
+  - EN: Man
+- `/3D2EB39A4436C08F20C5F6A8038D6B11`  [Dialogue] label:generic speaker (batch-1 wording kept)
+  - AR: رجل
+  - EN: Man
+- `/8AA1773F479609435CE100A6C5D932A7`  [Dialogue] label:generic speaker (batch-1 wording kept)
+  - AR: رجل
+  - EN: Man
+- `/363701F34C51CD5282A1C8809A9486BD`  [Dialogue] label:generic speaker (batch-1 wording kept)
+  - AR: رجل
+  - EN: Man
+- `/510D4F894FA146432B404DA7F7B07012`  [Dialogue] label:generic speaker (batch-1 wording kept)
+  - AR: رجل
+  - EN: Man
+- `/83761A4D434B758060B1DB94C0A3445C`  [Dialogue] label:generic speaker (batch-1 wording kept)
+  - AR: رجل
+  - EN: Man
+- `/CC473C4945ED0A0EB593DE9C962FAA18`  [Dialogue] label:generic speaker (batch-1 wording kept)
+  - AR: رجل
+  - EN: Man
+- `/D421BA6540CB4C86F73D3B9BCDCD127A`  [Dialogue] label:generic speaker (batch-1 wording kept)
+  - AR: رجل
+  - EN: Man
+- `/4496CF1A4A049A9DC4A880BF35DF7C72`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/559531B44404F9E326CEB4B2AE59C4FE`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/57F123314F128CA0F494A6AEA81A5F21`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/AD4DC3A24996C9DC91CA69A418A38F62`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/B3E8EEFB447ACF8A0E7119B0A1849CEC`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/CC4B28204CF20570EB21A3AE8D547141`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/029DD0114934358184DCE590C504190C`  [Dialogue] label:speaker
+  - AR: رجل في الممشى
+  - EN: Man at the promenade
+- `/200CF5FB4A704DFAC5CACDBD994596C2`  [Dialogue] label:speaker
+  - AR: رجل في الممشى
+  - EN: Man at the promenade
+- `/A57734CA42490D33505128BEDDAC80EF`  [Dialogue] label:speaker
+  - AR: رجل في الممشى
+  - EN: Man at the promenade
+- `/1162FCA449FB081BAF588493C27118EF`  [Dialogue] label:speaker
+  - AR: امرأة في الممشى
+  - EN: Woman at the promenade
+- `/3B4AEE3C48B4409870599AB15BD57DB0`  [Dialogue] label:speaker
+  - AR: امرأة في الممشى
+  - EN: Woman at the promenade
+- `/C624135749CF3AD26434E6B66E054319`  [Dialogue] label:speaker
+  - AR: امرأة في الممشى
+  - EN: Woman at the promenade
+- `/738D29A243EC0B42F62B0FAE754ADB32`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/C063CD44475300DC197E4CA2B4232A6E`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/282436154FDBC93A92C987B81DAABB0A`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/40FC3B764BF2F4B12F068883E4267147`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/7106978640E82711CB212195F0B0DBA2`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/84E4EC4F4691B1F0E0E14598140457F6`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/8E4C1B4B451EF0A34C77F5AEABEDC15A`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/9087579A4ECF80FEAF8185A19BF2876C`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/B6E22D3F443A8EDBBE2CD99C72A43DCE`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/C9C0A3D74978B9FD250675AF86758219`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/CFDB6B09410C83611EFAAAB11F966FDA`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/D546D16A4D8D2572C81F20BE2B737286`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/33DCB0CF4910B29E41F911861A88E457`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/4875C77E4959693408476C96CC14D204`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/8C8BF59B4A1D60C264DAE8B6262F2CBD`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/251CD1364903F49BAB3C1A90D0AF78D6`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/386C879346B7B2136DBF9FBF5593F0FF`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/42CBDEA34D5A7E34F51FDF9BC6FCD1DC`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/67ACF29445291A7D7D3BAE9FBD16AD12`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/901C35E6459B3C3F98C51496716487A5`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/4114E7C44E1BF782E06CA292C66172ED`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/A9EE5AEE4586364826D51C8D7802A8FD`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/AADBA572453B6E4AE440A09A4DCC77F0`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/ABF5CB394FF427D73F1CB6AAB684E1FD`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/F7C49B444100C1FEE29B9789195EE6C7`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/25E66AD741A22FECE89FC4B6CD917741`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/334E63D442ADD4C79E277F8868DD63FB`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/4905609946E3D1868B910DAAA23D0691`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/564799E448D43319193182824D87594D`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/7C883DE24735FD3AE1F6ED880A1736E7`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/7CCDCE5742C0B9E7BB0849A1BC48FBA8`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/B75545C64122B3391AB319AFB83D05B2`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/22B00D894D9420A09F3C44A2118D8736`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/6D4839364A75A27AD7582B81B955590D`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/96EEBB744261BC44346532880A74DA53`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/B572AA264CB9D2B79599EE861A636F4E`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/DB46C15E48123D2D234B57BFDA938440`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/2051D5914ACD851AEF5B08BBF259727F`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/B47A0A9645F7614043C6BD83E969BBC3`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/C96952E341724C86A665D982FBFF4EFA`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/D9A81DB745C22D70C90E04A444169A6D`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/F0D4487A4EC2541EF4ECFF876C1DB0B6`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/0F1F01BC4C3DB6C4D86B6FA06C93C2F9`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/8FC0795C4379E05C3F9A7FAFD6A2A3D1`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/A150FDC5424907AAE3463B8CB01F26D7`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/A7861A184FE10677CDC3269B04E01DDB`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/BE6692F7488F9BA0EB8F45A81040AA96`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/C81B54A144FFD03C3696D28AAE954234`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/26CC593248EC0A1FBBA91085A7BE6260`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/66A12916427EDB21BA6890BA1EC0B642`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/E04225D143D75A895B00F0ADD073F2CC`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/1FABB42646060083E87AF990372FB84B`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/206C9C184AAE7121CB58108B71A3BC76`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/11993983461DAE3F04E74AB3547FBF6A`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/921B1BF943A07C36C9444FB339692833`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/A3B0EACF4111FAD2EB88C399C9BAE323`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/C73908EB4D9D37C91291BAB6E1A8067E`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/F3D0E2914058B65EEFEF3E858051E981`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/1360C1D8425C6E23BC55A9AE033F3344`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/14011ACD435A9D2D464A9292E63BC032`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/706EB5864F2EC1E578164B9B6E0AD19B`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/7A44BC9C426637389BF51F86DCCC6210`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/55F22B944D7FDD93D112EC9A96BC6F35`  [Dialogue] label:generic speaker
+  - AR: امرأة
+  - EN: Woman
+- `/6DDB48C542FD5A3FFEE970AD81870D31`  [Dialogue] batch2-0001
+  - AR: «عزيزتي ليودميلا، أودّ أن أبلغك أن...» لا، لا، هذا رسمي جداً. هذه ليست رسالة رسمية، اللعنة...
+  - EN: "Dear Lyudmila, I'd like to inform you that..." No, no, that's too official. This isn't a formal letter, dammit...
+- `/4241D17C40265CBE71FEA18958F3C949`  [Dialogue] batch2-0001
+  - AR: «ليودميلا، يا أغلى ما لديّ، تعجز الكلمات عن وصف كيف...» لا، هذا عاطفي أكثر من اللازم. ما أنت، تلميذ مدرسة؟ آه، لماذا هذا صعب إلى هذا الحد الملعون؟
+  - EN: "Lyudmila, my dearest, words cannot express how I..." No, it's too sappy. What are you, a schoolboy? Ugh, why is this so bloody difficult?
+- `/0DDC9EB24A469F1651FEA7B05ABFFFC6`  [Dialogue] batch2-0001
+  - AR: «قلب الروبوت: ذرة سلمية».
+  - EN: "Heart of the Robot: a Peaceful Atom."
+- `/D9801916476D94EF4D9FEAB0FF2DA17D`  [Dialogue] batch2-0001
+  - AR: «أحببتك يوماً، وقد يكون الحب — أو ربما الصداع — يثقب عقلي بسرور...» آه! لا أستطيع صياغة هذا بالكلمات! ألا يمكنني أن أرسل لها مشاعري فحسب؟
+  - EN: "I loved you once, and love, it may well be,—or, maybe, headache—drills my brain with glee..." Argh! I can't put this into words! Can't I just send her my feelings?
+- `/1B36053A405FEC7AD3970186D34989E6`  [Dialogue] batch2-0001
+  - AR: لكن ما رأيك في موضوعها يا سيميون؟
+  - EN: But what do you think it's about, Semyon?
+- `/9FA905024AF5C6A5DDE84C9A36E60E7F`  [Dialogue] batch2-0001
+  - AR: أجل. أيمكنك تصور كيف ستكون الأمور بعد عام؟ أو خمسين؟
+  - EN: Yeah. Can you imagine what things will be like a year from now? Or fifty?
+- `/0214E3D34BA2DA607C192685FFAF1D17`  [Dialogue] batch2-0001
+  - AR: لديكم بسكويت؟
+  - EN: You've got cookies?
+- `/7DE31F52494AD41C1151249AB6343276`  [Dialogue] batch2-0001
+  - AR: في الواقع... هل ما زال هناك وقت لأذهب لأحضرها؟
+  - EN: Actually... is there still time to go get it?
+- `/4510008143C147BE70D3159D9D011F97`  [Dialogue] batch2-0001
+  - AR: أتساءل هل يمكنهم صنع كلب روبوت... مثل كلب حقيقي، إلا أنك لا تحتاج إلى أخذه إلى الطبيب البيطري، ولن يهرم...
+  - EN: I wonder if they could make a robot dog... like a real one, except you don't need to take it to a vet, and it won't get old...
+- `/749D1C6E42E8B088EC0CAA82FF09E70D`  [Dialogue] batch2-0001
+  - AR: كل شيء يعمل في تشيلومي. هناك بعض القيود، لكن يمكنك بالفعل التحكم بالروبوتات!
+  - EN: Everything's up and running in Chelomey. There are some restrictions, but you can already control robots!
+- `/EDBE17724463492ED71AB5827E391679`  [Dialogue] batch2-0001
+  - AR: يستخدمونها لتوصيل البريد. أشعر كأنني في كتاب أطفال!
+  - EN: They use them to deliver the mail. It's like I'm in a children's book!
+- `/5B2851ED4B73B50F1E26C99C6B09A6DC`  [Dialogue] batch2-0001
+  - AR: وما هذا هنا؟
+  - EN: And what's over here?
+- `/C0591F30459E6807A16043B34D62C5E9`  [Dialogue] batch2-0001
+  - AR: هل رأيت المهندس؟ مضحك!
+  - EN: Have you seen the engineer? Hilarious!
+- `/5F084E1048929206DAC0129207159383`  [Dialogue] batch2-0001
+  - AR: وأنت؟
+  - EN: And you?
+- `/27A47FB940F372FDB0C9CABD4E7D3644`  [Dialogue] batch2-0001
+  - AR: أنا العامل؟ أريد أن أكون رائد الفضاء!
+  - EN: I'm the Worker? I wanna be the Cosmonaut!
+- `/77A17B2D4C5E0819D1454596890F1772`  [Dialogue] batch2-0001
+  - AR: بأي شيء يتلاعب أصلاً؟
+  - EN: What's it juggling, anyway?
+- `/14B41EFE47D2F58628A00FA3D904E163`  [Dialogue] batch2-0001
+  - AR: أتدري؟ هذه فكرة رائعة حقاً!
+  - EN: You know what? That's actually a great idea!
+- `/D7BF1C834DD0D18ACFC77594D43B6C76`  [Dialogue] batch2-0001
+  - AR: ما هذا؟!
+  - EN: What's THAT?
+- `/35736DE14989E1C776DEB4B4C173DE46`  [Dialogue] batch2-0001
+  - AR: بمجرد أن يصلوني بـ«كوليكتيف»، سأدرس الفيزياء الفلكية. كلها. والكيمياء أيضاً. والرياضيات.
+  - EN: The moment they connect me to Kollektiv, I'm studying astrophysics. All of it. And chemistry. And math.
+- `/68B90FB04BC370208972B889E984A675`  [Dialogue] batch2-0001
+  - AR: سأكون أنا رائدة الفضاء، فابق بلا حركة!
+  - EN: I'll be the Cosmonaut, so keep still!
+- `/F7F8869345FDF0B44D140797B448A016`  [Dialogue] batch2-0001
+  - AR: أوه!
+  - EN: Oh!
+- `/11423E544CB7785372506A9EB966B9E3`  [Dialogue] batch2-0001
+  - AR: أو صنع الشطائر دون تحريك إصبع!
+  - EN: Or making sandwiches without lifting a finger!
+- `/4C3F78B54A63E8E6DFCEA0B6EAA692D2`  [Dialogue] batch2-0001
+  - AR: انظر إلى ذلك يا ألكسندر! هكذا يبدو المستقبل!
+  - EN: Look at that, Alexander! This is what the future looks like!
+- `/B8DF84B0441156DD7ACAA49B4B65837F`  [Dialogue] batch2-0001
+  - AR: مرحباً، هل...
+  - EN: Hey, do you...
+- `/2D0DB23E4C5F038E1DC97DA33D4F4925`  [Dialogue] batch2-0001
+  - AR: مرحباً، أبحث عن السيد جاز، اسمه الأول هيو. هل هو موجود؟
+  - EN: Hi, I'm looking for Mr. Jazz, first name Hugh. Is he there?
+- `/F7D5EEE7434FB728458D9DACC2B0C13E`  [Dialogue] batch2-0001
+  - AR: مرحباً، هل لديكم الأمير ألبرت في علبة؟
+  - EN: Hi, do you have Prince Albert in a can?
+- `/47922ED243D7E6FE8B239994F7A13A55`  [Dialogue] batch2-0001
+  - AR: هامجابا! كيتيبامبا!
+  - EN: Hammajaba! Kitipampa!
+- `/5452E8444068B31CF444738BC1CD3DE1`  [Dialogue] batch2-0001
+  - AR: العقل السليم يحتاج إلى جسم سليم. تبدو شاباً بالنسبة لعمرك.
+  - EN: A sound mind needs a sound body. You look young for your age.
+- `/B4A317BD47630BE48ABDEEAC739C5586`  [Dialogue] batch2-0001
+  - AR: بخير تام. المختبر يسير بسلاسة، وأطروحتي تتقدم بشكل جيد. وأنت؟
+  - EN: Very well. The laboratory is running smoothly, and my thesis is progressing nicely. You?
+- `/7202204643BF107F08EF2FB1DFC04CE5`  [Dialogue] batch2-0001
+  - AR: سترون كم أنا مميز قريباً. لكن عليك أن تناديني تشارلز، أي النظام التعليمي والمكتبي الاصطناعي الثرثار.
+  - EN: You'll see how special I am soon enough. But you are to refer to me as CHAR-les, the CHatting ARtificial Librarian and Educational System.
+- `/9A4EB87B48DD7823BE8D0984E8E77FEF`  [Dialogue] batch2-0001
+  - AR: في عصرنا هذا عصر الاختراقات العلمية، العمر مجرد رقم.
+  - EN: In our age of scientific breakthroughs, age is just a number.
+- `/91C7A13340C58B7524E715B9AAC3A3A4`  [Dialogue] batch2-0001
+  - AR: في غمضة عين، حوّل الطغاة المتعطشون للسلطة العالم المتحضر إلى جحيم مستعر، مأساة ستُذكر إلى الأبد في كل أمة وكل بيت.
+  - EN: In the blink of an eye, power-hungry dictators had turned the civilized world into a raging inferno, a tragedy that will forever be remembered in every nation and every household.
+- `/FC63DF834F1E0D617100E88C9EB69CEE`  [Dialogue] batch2-0001
+  - AR: فاديم، فاديم! هل رأيت ذلك؟
+  - EN: Vadim, Vadim! Did you see that?
+- `/C22C7780429D548B4986F9A38D84F73E`  [Dialogue] batch2-0001
+  - AR: ألم تعلّمك أمك ألا تقترب من الغرباء وتنتهك مساحتهم الشخصية؟
+  - EN: Didn't your mother ever teach you not to walk up to strangers and invade their personal space?
+- `/C761C94F42D6F1EF1133D890B5C47FE9`  [Dialogue] batch2-0001
+  - AR: التي ما زالت حيّة، مطبوعةً على هذه الجمادات،  اليدُ التي سخرت منها والقلبُ الذي غذّاها:
+  - EN: Which yet survive, stamped on these lifeless things,  The hand that mocked them and the heart that fed:
+- `/FA30FFCD48383AD7286ECF97E2BB5EAE`  [Dialogue] batch2-0001
+  - AR: وارفع! واستدر! وإلى اليمين! وإلى اليسار! بحيوية أكبر! بقيت تمارين قليلة!
+  - EN: And up! And turn! And right! And left! Snappier now! Just a few more!
+- `/C56BBAE1497E6FCEE036FA90F01759DE`  [Dialogue] batch2-0001
+  - AR: أجل، كان الأمر يستحق كل هذا.
+  - EN: Yeah, it was all worth it.
+- `/2EE43DF640E4AFD4B8DCB98F54C594F0`  [Dialogue] batch2-0001
+  - AR: فيكتوريا، تعالي إلى هنا بسرعة! انظري إلى ذلك!
+  - EN: Viktoria, get over here, quick! Look at that!
+- `/F5FCC67C4A14778BAFD5B0AA9D630893`  [Dialogue] batch2-0001
+  - AR: انتباه أيها الرفاق!
+  - EN: Attention, comrades!
+- `/DC4715624EABC8BADC064B99DEAA3823`  [Dialogue] batch2-0001
+  - AR: هذا رافيك بارع في كل شيء!
+  - EN: This Rafik is a real Jack-of-all-trades!
+- `/AA21E2584D72EDC364FEF9BF6FAA73C8`  [Dialogue] batch2-0001
+  - AR: هذا شيء مثير!
+  - EN: Now that's something!
+- `/BCFFFCF74F9ED66809E43AAC80D4B175`  [Dialogue] batch2-0001
+  - AR: لقد جعلوه عطلة وطنية! ليتني أستطيع العمل هنا... لن أطلب يوم عطلة أبداً! هذه المدينة مذهلة!
+  - EN: They made it a national holiday! If only I could work here... I'd never ask for a day off! This city is amazing!
+- `/9406B2CC41B915CB742E0E8CE946FA5B`  [Dialogue] batch2-0001
+  - AR: هذا مؤكد!
+  - EN: That's for sure!
+- `/596096DA403A22251AA6739F029D0F29`  [Dialogue] batch2-0001
+  - AR: أتدري، أود أن أقود صاروخاً إلى الشِعرى.
+  - EN: You know, I'd like to drive a rocket to Sirius.
+- `/D2453D044D73910F49D7969EC32FB9B4`  [Dialogue] batch2-0001
+  - AR: كل شيء حتى هناك يجب أن يظهر في الصورة! ستبدو رائعة.
+  - EN: Everything up to there should be in the picture! It'll look great.
+- `/50EE5DE142CDBC24B04AD593FA251F99`  [Dialogue] batch2-0001
+  - AR: أنت آخر من يتكلم.
+  - EN: You're one to talk.
+- `/5C6563EB43CB1CC07C5DF28BCA47BE19`  [Dialogue] batch2-0001
+  - AR: قبل عقد، لما صدّقت أن أشياء كهذه ممكنة.
+  - EN: A decade ago, I'd never have believed things like this were possible.
+- `/ED5B1DDC49BF3ED530C81BB3FAAA2AAE`  [Dialogue] batch2-0001
+  - AR: أجل، هكذا!
+  - EN: Yeah, like this!
+- `/D56CDE9F441243A6661CF38936BAC952`  [Dialogue] batch2-0001
+  - AR: وقد تركت كاميرتي في المنزل. تخيل ذلك!
+  - EN: And I left my camera at home. Imagine that!
+- `/EFAE8C274E2F6C70A2A411AC6FFDB07C`  [Dialogue] batch2-0001
+  - AR: آه، تباً...
+  - EN: Aw, crap...
+- `/33EE159D4DCC1A5085709BB2C3A18E42`  [Dialogue] batch2-0001
+  - AR: هذه هي البرمجة!
+  - EN: That's programming for you!
+- `/C21FA3AD4F575E41316F4094520B1484`  [Dialogue] batch2-0001
+  - AR: إنه عرض حقيقي!
+  - EN: It's a real performance!
+- `/D8A318FA4B49863486C01D8206FA7F5D`  [Dialogue] batch2-0001
+  - AR: أحسنت يا بطل! أرِهم!
+  - EN: Attaboy! You show 'em!
+- `/EB7564A8452162C992DAD8B53AC8D1B0`  [Dialogue] batch2-0001
+  - AR: حسناً، كل شيء جاهز. انتظر، نسيت أن أغلق الباب...
+  - EN: Alright, everything's set. Hold on, I forgot to lock up...
+- `/DD2F7AA64B21A33D7B6C3CB6AC5452F4`  [Dialogue] batch2-0001
+  - AR: ما زلت أعمل، أعالج الأرقام القديمة. «بي تي إيه-6» مثير للاهتمام. أراهن أن هناك تحسينات كثيرة يمكننا إدخالها على الدرع.
+  - EN: Still chugging along, crunching the old numbers. PTA-6 is interesting. I bet there's a bunch of improvements we can make to the armor.
+- `/EAAE25A14C3C715AC93085917B002176`  [Dialogue] batch2-0001
+  - AR: أوه، هيا، الوقت يمر!
+  - EN: Oh, come on, time's running out!
+- `/2B1D90B04EDC6FFBB2FDBDAE2D5A4AE6`  [Dialogue] batch2-0001
+  - AR: سترين — كل شيء ممكن!
+  - EN: You'll see—everything's possible!
+- `/B04081684F5653635882F1A7435C4CEF`  [Dialogue] batch2-0001
+  - AR: خضعت لجلسة العلاج بالبوليمر أمس، وأشعر بروعة حقيقية! وبدأت بالفعل بدراسة الفيزياء والكيمياء!
+  - EN: I had my Polymer treatment yesterday, and I feel really great! And I've already started studying physics and chemistry!
+- `/469B926E4EF5063918F9E09B6EE621E9`  [Dialogue] batch2-0001
+  - AR: هل رأيت روبوتات البومة الطائرة تلك بعد؟ إنها لطيفة جداً!
+  - EN: Have you seen those flying Owl robots yet? They're so cute!
+- `/E3A0556A4DF62B6354D110B154589AD1`  [Dialogue] batch2-0001
+  - AR: جئت لسماع الخطاب، صحيح؟ اذهب إلى ساحة المدينة. أرجّح أن أصدقاءك هناك.
+  - EN: You came to hear the speech, right? Go to the town square. I bet that's where your friends are.
+- `/7A31D20C475EFC735D0360BF8D09E26A`  [Dialogue] batch2-0001
+  - AR: هل أثنيت على روبوت للتو؟ أنا مندهش!
+  - EN: Did you just praise a robot? I'm amazed!
+- `/3802E8894C08D6BACE017EBBB232A3DD`  [Dialogue] batch2-0001
+  - AR: صدّق أو لا تصدّق، هذه الاحتمالات أفضل من الفوز باليانصيب. يا لها من مصادفة.
+  - EN: Believe it or not, they're better than winning the lottery. Such a coincidence.
+- `/21779B044A961B018A86968826EFDC97`  [Dialogue] batch2-0001
+  - AR: في حال كنت لا تعلم، الصحف مصدر للمعلومات.
+  - EN: In case you're unaware, newspapers are a source of information.
+- `/F38E441148D9B3A420BEBC935173871C`  [Dialogue] batch2-0001
+  - AR: صحيفة؟ وما حاجتي إليها بحق الجحيم؟
+  - EN: A newspaper? What the hell do I need that for?
+- `/8E4612EC420289FAB2E1D88459E74846`  [Dialogue] batch2-0001
+  - AR: أنت فيلسوف يا سيميون. لكن لا تكن كئيباً هكذا. أنا واثقة أن مستقبلنا مشرق.
+  - EN: You're a philosopher, Semyon. But don't be so glum. I'm sure our future's bright.
+- `/E897FAC6478DBC8C5B251C8F126920F1`  [Dialogue] batch2-0001
+  - AR: انظر إلى ذلك! مذهل!
+  - EN: Look at that! Amazing!
+- `/0E33AC3741D473F0166FD0AECCF8A389`  [Dialogue] batch2-0001
+  - AR: يقولون إن الرفيق تشيلومي سيراجع جميع الأطروحات بنفسه.
+  - EN: They say Comrade Chelomey will review all the theses personally.
+- `/496572504B143D112906419C5ACF25C4`  [Dialogue] batch2-0001
+  - AR: يا له من أداء!
+  - EN: What a rendition!
+- `/E44F3FA9468EFE09139B00AA3906D47A`  [Dialogue] batch2-0001
+  - AR: تطفو مدينة تشيلومي على منصة إيكاروس. مدينة في السحاب، بُنيت عام 1950 كإنجاز للعلم والتكنولوجيا الحديثة.
+  - EN: Chelomey City floats on the Icarus platform. A feat of modern science and technology, this city in the clouds was built in 1950.
+- `/2843B29744CF80E1809E2FB25213CC0E`  [Dialogue] batch2-0001
+  - AR: أصغوا. التذاكر متاحة الآن لعرض جديد في مسرح مايا بليستسكايا.
+  - EN: Listen up. Tickets are now available for a new performance at the Maya Plisetskaya Theater.
+- `/A350F63E429B83809197D1A946F4EE89`  [Dialogue] batch2-0001
+  - AR: أجل، أجل، أراه!
+  - EN: Yes, yes, I see it!
 - `/661F874B415EB4AEE6F32294A50FF506`  [Dialogue] scene:chelomey-soda
   - AR: والآن، اغرب عن وجهي!
   - EN: Now get the hell outta here.
+- `/D8EAA18F41771FC405F001B74992933D`  [Dialogue] batch2-0001
+  - AR: كلامك يشبه كلام حماتي تماماً! على أي حال، أوشكت على الانتهاء. أمسك هذا!
+  - EN: You sound just like my mother-in-law! I'm almost finished anyway. Hold this!
+- `/E191291E481F7B072F7C0AAB8FED9BE6`  [Dialogue] batch2-0001
+  - AR: لا، الخطاب على وشك البدء. سيكون غباءً أن يفوتنا.
+  - EN: Nah, the speech is about to start. It'd be stupid to miss it.
+- `/4718659B436D1D18DD71549B35658AF7`  [Dialogue] batch2-0001
+  - AR: إنه جميل لأنك ترتدينه يا كسينيا. أنت تحفة.
+  - EN: It's beautiful because you're wearing it, Kseniya. You're a doll.
+- `/5DEE8F3143CF1B4C2894098F75E47871`  [Dialogue] batch2-0001
+  - AR: أجل، مايكل مواطن سوفييتي حقيقي. أنا مدين له بزجاجة من الجعة البافارية!
+  - EN: Yeah, Michael is a real Soviet citizen. I owe him a bottle of Bavarian!
+- `/FE1E748B4381C4430316C88FDF057ACC`  [Dialogue] batch2-0001
+  - AR: أجل، لقد قُصّت من الصورة المرة الماضية.
+  - EN: Yeah, it got cropped out last time.
+- `/349E8AF047A6FAFB1D262C9D74D1D86C`  [Dialogue] batch2-0001
+  - AR: حسناً، استعدوا.
+  - EN: Okay, get ready.
+- `/A5695CED4ED3B6AFDEFCDFA5B73CA32A`  [Dialogue] batch2-0001
+  - AR: واو! هيا، هيا!
+  - EN: Wow! Come on, come on!
+- `/E1C194614F2CF262E1FA599DC48A2DD5`  [Dialogue] batch2-0001
+  - AR: لنفعلها مرة أخرى!
+  - EN: Let's do it one more time!
+- `/2D0E218F4230F48F71859781B0D661E2`  [Dialogue] batch2-0001
+  - AR: هيا، لنرَ الصورة!
+  - EN: Come on, let's see the picture!
+- `/EE09F83E4F2A5EAA8F007FB6422DD23B`  [Dialogue] batch2-0001
+  - AR: لنأخذ صورة كما نحن فحسب!
+  - EN: Let's just take a picture the way we are!
+- `/3E4B86E049F1ADD73F3F24A6B3FD4111`  [Dialogue] batch2-0001
+  - AR: هل يمكن أن تظهر الذرة في الصورة أيضاً؟
+  - EN: Can we get the atom in the picture too?
+- `/EF1B1C414E6CF94B764350BECC4E6715`  [Dialogue] batch2-0001
+  - AR: إليكم فكرة: أنا سيدة من المستقبل، وأنتم جنودي!
+  - EN: Here's an idea: I'm a lady from the future, and you're my soldiers!
+- `/D7C1E22A41E2716551D5BA9B678E233D`  [Dialogue] batch2-0001
+  - AR: أعطني رمز التحكم خاصتك وسأعيدها إلى صوابها. أمسكي الخنزير الصغير يا عزيزتي.
+  - EN: Give me your control code, I'll set 'em straight. Hold piggie, sweetie.
+- `/1ABC5653451141D84714FFAF74144BAE`  [Dialogue] batch2-0001
+  - AR: لا يمكنك تنشيط جهازين لمواطن واحد. لا فائدة من ذلك حقاً.
+  - EN: You can't activate two devices for one citizen. There's really no point.
+- `/684F7A074FE43048335393AA7650AA7E`  [Dialogue] batch2-0001
+  - AR: واثنان! عمل رائع! وثلاثة! مرة أخرى!
+  - EN: And two! Good job! And three! One more time!
+- `/022E4072426D433DCDEB3F995553DCA0`  [Dialogue] batch2-0001
+  - AR: يا له من يوم دافئ ومشمس! يكاد السماء تبتسم لنا... ألا تظن ذلك؟
+  - EN: What a warm, sunny day! It's almost like the sky is smiling down on us... don't you think?
+- `/57598A3C4212B67A802625874E151BCE`  [Dialogue] batch2-0001
+  - AR: مناسب لجميع الأعمار، وتذاكر مجانية لموظفي المنشأة.
+  - EN: Suitable for of all ages and free tickets for Facility employees.
+- `/8D3789D9401D5774AF21F4A3242806BB`  [Dialogue] batch2-0001
+  - AR: يا حبيبي، لا تتدافع أيها الشره.
+  - EN: Hey honey, don't shove, greedy guts.
+- `/DA6650C54E538323B46D5FBF510B497B`  [Dialogue] batch2-0001
+  - AR: أيها الرفاق، سكان وزوار مدينة تشيلومي! سيبدأ خطاب الدكتور سيتشينوف بعد عشر دقائق!
+  - EN: Comrades, residents, and visitors to Chelomey City! Dr. Sechenov's address will begin in ten minutes!
+- `/7C422ACA4BB9C22516F8AABE667C72CA`  [Dialogue] batch2-0001
+  - AR: أعتذر بشدة أيها الرفيق، لكن جميع الطاولات محجوزة بالفعل. عد لاحقاً من فضلك.
+  - EN: I'm terribly sorry, comrade, but all the tables have already been booked. Please come back later.
 - `/E88AEA6244C8D2FDC686A38E266BE551`  [Dialogue] scene:chelomey-soda
   - AR: هل ترغب بمزيد من الغازية، أيها الرفيق؟
   - EN: Would you care for some more soda, comrade?
+- `/A2F8DA754579B1E6968CEDAEDCBFCE87`  [Dialogue] batch2-0001
+  - AR: نخب وحدة الشعب!
+  - EN: Here's to the people's unity!
+- `/F063F0F949D5DAA796F3288FC8E0E442`  [Dialogue] batch2-0001
+  - AR: ولم لا؟ لديهم بالفعل قطارات الرفع المغناطيسي.
+  - EN: Why not? They already have magnetic levitation trains.
+- `/8D36403D46AF5A9B22C767A094ADC605`  [Dialogue] batch2-0001
+  - AR: أنا واثق أن المهندسين صمموا النظام ليتحمل هذا النوع من الذروة.
+  - EN: I'm sure the engineers designed the system to withstand that sort of peak load.
+- `/0EFAC4FE4943A855416C5D81415436B2`  [Dialogue] batch2-0001
+  - AR: سيدتي!
+  - EN: Ma'am!
+- `/E404A7D04A93045FFC550EBD186AC85D`  [Dialogue] batch2-0001
+  - AR: أوه، أمامنا وقت كافٍ. يمكننا حتى ركوب الألعاب بعد ذلك.
+  - EN: Oh, we've got plenty of time. We can even go on rides afterward.
+- `/4C1ADE4140B1C5B8FF3C288536322203`  [Dialogue] batch2-0001
+  - AR: لم يحنّ الظهر بعد، وبدأت أذرع التحكم تنفد مني!
+  - EN: It's not even noon yet, and I'm almost out of controllers already!
+- `/680F55594A318F3F0CD1B7949DB6EC94`  [Dialogue] batch2-0001
+  - AR: لحظة واحدة! و... انتهى!
+  - EN: Just a second! And... done!
+- `/02D8E2214C7854D7295D58AE25BE0AA1`  [Dialogue] batch2-0001
+  - AR: أشعر بالأسف على والدي العجوز. لم يتح له أن يرى هذا...
+  - EN: I feel sorry for my old man. He never got to see this...
 - `/BB484B6B4E2B8844D5ED278C7EDEC145`  [Dialogue] scene:chelomey-soda
   - AR: سئمت من الروبوتات حتى الموت. دائماً تتدخّل في شؤوني!
   - EN: I'm sick to death of bots. Always up in my grill!
+- `/C0E77B3246553AC2F32015848ECCF7BF`  [Dialogue] batch2-0001
+  - AR: هيا إلى العمل يا نيتشاييف! نفّذ أوامرك!
+  - EN: Get to work, Nechaev! Follow your orders!
+- `/6A48535D4F00C3EDB4B098B66B4918EE`  [Dialogue] batch2-0001
+  - AR: في آخر عدد من «منشأة هيرالد»، يعترف نائب المدير مايكل شتوكهاوزن بضعفه تجاه الحيوانات — لا سيما الثدييات الكبيرة. كشك المعلومات 55 — آخر الأخبار فقط!
+  - EN: In the latest issue of the Facility Herald, Deputy Director Michael Stockhausen admits he has a soft spot for animals—especially large mammals. Infokiosk 55—only the latest news!
+- `/52D264A9491624A9D8D8A1B18E699764`  [Dialogue] batch2-0001
+  - AR: غناء ممتاز!
+  - EN: Excellent singing!
+- `/ED2736C1458FC3EEAF0610BD7948CEDE`  [Dialogue] batch2-0001
+  - AR: من الجيد أنهم حلفاء الآن. انظر إلى شتوكهاوزن — إنه موظف مثالي!
+  - EN: It's good they're allies now. Just look at Stockhausen—he's a model employee!
+- `/EE2D808B446F9E203D17BBA187076CFB`  [Dialogue] batch2-0001
+  - AR: هذا مذهل! سأخضع للبولمرة اليوم. على بقية البلاد الانتظار حتى يوم الاثنين، أما هنا في تشيلومي فالمستقبل الآن!
+  - EN: That's amazing! I'm getting polymerized today. The rest of the country has to wait until Monday, but here in Chelomey, the future is now!
+- `/4C39819C4BA0C0EFC4C7A8B3B5474425`  [Dialogue] batch2-0001
+  - AR: على افتراض أنني سأفهمها...
+  - EN: Assuming I could understand her...
+- `/D7CD11334602E078F995FBA050D6EB42`  [Dialogue] batch2-0001
+  - AR: مرة أخرى!
+  - EN: One more time!
+- `/F2BFEC2C4DDD66B22DC34FB2657DF1D7`  [Dialogue] batch2-0001
+  - AR: وعلى القاعدة تظهر هذه الكلمات:  «اسمي أوزيماندياس، ملك الملوك؛  انظروا إلى أعمالي أيها الجبابرة، ويئسوا!»  لا شيء يبقى سوى ذلك. وحول الأطلال البالية
+  - EN: And on the pedestal, these words appear:  "My name is Ozymandias, king of kings;  Look on my works, ye Mighty, and despair!"  Nothing beside remains. Round the decay
+- `/241E93384BA1CDCF512A9D8907161C82`  [Dialogue] batch2-0001
+  - AR: وأفضل كباب أيضاً!
+  - EN: And the best kebabs too!
+- `/EF7AA8364F648B6C7631D9ABD7135399`  [Dialogue] batch2-0001
+  - AR: يا وغد.
+  - EN: You dickhead.
+- `/7DF3B75B45A22F36931A6A9694CFF542`  [Dialogue] batch2-0001
+  - AR: وشفةٌ مجعّدة، وابتسامةُ سخريةٍ من أمرٍ بارد،  تخبر أن نحّاته أحسن قراءة تلك الأهواء
+  - EN: And wrinkled lip, and sneer of cold command,  Tell that its sculptor well those passions read
+- `/298F11A345D407F00408C9B22A6F9FE8`  [Dialogue] batch2-0001
+  - AR: هل تستطيع تدفقات المعلومات تحمل كل الاتصالات الجديدة يوم الاثنين؟ تخيل كل هؤلاء الناس يتصلون في الوقت نفسه!
+  - EN: Can the infostreams handle all the new connections on Monday? Imagine all those people coming online at the same time!
+- `/CEE5BE4B4A1C4CF73F61948A3B4199F1`  [Dialogue] batch2-0001
+  - AR: الروبوت صديق الإنسان الوفيّ، أليس كذلك؟ مثير للاهتمام... أنا في سنٍّ تجعلني أتذكر حين طرح سيتشينوف هذه الفكرة قبل الحرب.
+  - EN: The Robot is man's best friend, eh? Interesting... I'm old enough to remember Sechenov pitching the concept before the war.
+- `/E970BBBC4F484CD44557BFA8285B6D40`  [Dialogue] batch2-0001
+  - AR: كشك المعلومات 55: ابقَ على اطلاع بأحدث إنجازات المنشأة في الروبوتات والهندسة الحيوية وأكثر من ذلك!
+  - EN: Infokiosk 55: stay abreast of the Facility's cutting-edge advancements in robotics, bioengineering, and much more!
+- `/6291AAB646E519EC5DA559BA19CBD4C8`  [Dialogue] batch2-0001
+  - AR: المس كتفيك! ظهرك مستقيم! مدّ ذراعيك! ثم الكتفان! وارفع! وارفع! وإلى الأمام!
+  - EN: Touch your shoulders! Back straight! Arms out! And shoulders! And up! And up! And forward!
+- `/C171727A4125BA6BEFA6E6A30C9744DF`  [Dialogue] batch2-0001
+  - AR: هل سيكون لدينا قطارات من موسكو إلى ذات الكرسي يوماً ما؟
+  - EN: Will we have trains from Moscow to Cassiopeia one day?
+- `/A67A78714A97194972A537ABE88966A6`  [Dialogue] batch2-0001
+  - AR: لا عمل، مثلجات، أحب الصيف!
+  - EN: No work, ice cream, I love summer!
+- `/8004730D44B4B56AC42225B571BF8C96`  [Dialogue] batch2-0001
+  - AR: هذا غريب... عطل آخر في العتاد، ربما؟ ينبغي أن أتحقق منه.
+  - EN: That's odd... another hardware malfunction, perhaps? I should check it out.
+- `/CAF84D7B4E7B67C6E95010BAB1B8593C`  [Dialogue] batch2-0001
+  - AR: إنه مثل إنسان حقيقي، بل أفضل!
+  - EN: It's like a real person, only better!
+- `/861CE9D24A0C006A1981579E37E39BA2`  [Dialogue] batch2-0001
+  - AR: مذهل، أليس كذلك؟
+  - EN: Amazing, isn't it?
+- `/34F02C3B4A469E78DF8E8EB550C2B911`  [Dialogue] batch2-0001
+  - AR: أتساءل كيف تحوم هكذا... أتدري؟ ليتني كنت مهندساً!
+  - EN: I wonder how they hover like that... you know what? I wish I was an engineer!
+- `/0E2D64EB4C2CF89CC86B369FF57EEE87`  [Dialogue] batch2-0001
+  - AR: كيف تسير أطروحتك؟
+  - EN: How's your thesis coming along?
+- `/03AEC1CE4AF733EB124CD3B0D7A168F5`  [Dialogue] batch2-0001
+  - AR: كيف لا يسقط؟!
+  - EN: How is he not falling over?!
 - `/BC1D6CD849ABD1FB2CC273976D4A2AD3`  [Dialogue] pilot:SHORT
   - AR: ماذا تعني بـ"نوع جديد"؟ جديد كيف؟
   - EN: What do you mean, "new type?" New how?
+- `/1D34014B4E9A9B141CE748AA7E0A07FA`  [Dialogue] batch2-0001
+  - AR: ما عملك؟
+  - EN: What do you do for work?
+- `/E2F6D68147DA81439ED472AC7996FF7A`  [Dialogue] batch2-0001
+  - AR: أتدري، لطالما أردت أن أتعلم التلاعب بالكرات أيضاً...
+  - EN: You know, I used to want to learn to juggle too...
 - `/6A457BE3481DD0447AAFD0B68C5B9C29`  [Dialogue] speaker:computer
   - AR: الحاسوب
   - EN: Computer
 - `/C608497D43F24BF4947EFD93924A814F`  [Dialogue] speaker:computer
   - AR: الحاسوب
   - EN: Computer
+- `/EAFE9CF6413FC5D6D9E0C382B9BE9DE5`  [Dialogue] batch2-0001
+  - AR: أجل، أعرف ذلك.
+  - EN: Yeah, I know that.
+- `/1529C8734B95A9C7327FA4A00A5C93B2`  [Dialogue] batch2-0001
+  - AR: بديع.
+  - EN: Fabulous.
+- `/1B09DD1F466C8E1E8405D297DDA330F6`  [Dialogue] batch2-0001
+  - AR: من ذلك الحطام الهائل، في فضاءٍ خالٍ لا حدّ له  تمتد الرمال الوحيدة الملساء بعيداً إلى الأفق.
+  - EN: Of that colossal wreck, boundless and bare  The lone and level sands stretch far away.
+- `/4EF055CF4D0F85B406CC989AB732DD41`  [Dialogue] batch2-0001
+  - AR: احصل على «الفكرة»، وإلا صارت حياتك إلى لا شيء! أهم... آسف، بالغت قليلاً.
+  - EN: Get yourself a THOUGHT, or your life will come to naught! Ahem... sorry, overdid it there.
+- `/BB9113DE4578C24107049F810E06D19A`  [Dialogue] batch2-0001
+  - AR: إنه دجاج مدخّن بالطريقة الجزيئية الداخلية! يذوب في فمك!
+  - EN: It's in-tra-mo-le-cu-lar smoked chicken! Melts in your mouth!
+- `/B2372A9B4776340DB6E9A5A339DBE136`  [Dialogue] batch2-0001
+  - AR: أجل، أظنك محقاً. لنواصل السير.
+  - EN: Yeah, I guess you're right. Let's keep going.
+- `/925750EE4256BF5EFEB29EAC9C2B4F8F`  [Dialogue] batch2-0001
+  - AR: هيا يا بومة! تعالي هنا أيها الروبوت! هيا يا روبوت، هيا هيا! آه...
+  - EN: Here, Owl! Come here, bot! Here, botty botty botty! Eh...
+- `/CB5BDF1142ECD8F62519249281731FEB`  [Dialogue] batch2-0001
+  - AR: لا تذهبي بعد يا ليدا! أردت أن أقرأ عليك شيئاً...
+  - EN: Don't go yet, Lida! I wanted to read you something...
+- `/34D7B5B24CDEB23F20DE27A792A055D4`  [Dialogue] batch2-0001
+  - AR: ستظهر وجوهكم جيداً!
+  - EN: Your faces will be just fine!
+- `/A7C2C1C64A7F2FEBA276E28D4D7BF8ED`  [Dialogue] batch2-0001
+  - AR: أنا أحب التجديف حقاً! منعش جداً!
+  - EN: I just love rowing! So refreshing!
+- `/1B5A9E22444AFF61452446A0B8A46E00`  [Dialogue] batch2-0001
+  - AR: أحب هذا المكان حقاً. أجواؤه رائعة.
+  - EN: I really love this place. Good vibes.
+- `/5F51BDAC406903BCCC2A20A4479C86EB`  [Dialogue] batch2-0001
+  - AR: أوه، يجب أن ترى ليودا هذا حقاً. ستحبه!
+  - EN: Oh, Lyuda should really see this. She'd love it!
+- `/70F17E0F4D45AF97EA2272AB1D46D424`  [Dialogue] batch2-0001
+  - AR: سمعت أنهم يعلّمون اللغات بالفعل عبر قناة بالدعوة فقط. أشتاق لتعلم لغة ثانية — أي لغة، حتى الصينية!
+  - EN: I heard they're already teaching languages through an invitation-only channel. I'm dying to learn a second language—anything, even Chinese!
+- `/19CEEE6A4269EA87176E40AE1A2775DF`  [Dialogue] batch2-0001
+  - AR: أمي! لقد علقت البومة خاصتي!
+  - EN: Mom! My Owl got stuck!
+- `/10FEE43249D2EEAFF281EAB03F718BF6`  [Dialogue] batch2-0001
+  - AR: يا إلهي!
+  - EN: Oh my goodness!
+- `/3C9BD0404AC1E8B371732C84F781D6B7`  [Dialogue] batch2-0001
+  - AR: آه، أظنني أغمضت عيني.
+  - EN: Ehhh, I think I blinked.
+- `/AD768F1D455064E7E42868B4F338EBF5`  [Dialogue] batch2-0001
+  - AR: من يعلم؟ ربما كانت نهاية الطاعون البني اللعين مختلفة.
+  - EN: Who knows? The damn Brown Plague could have ended up differently.
+- `/4CB67BF347528CF1C1CACD839FC2A50C`  [Dialogue] batch2-0001
+  - AR: آه، حقاً؟ ولمَ لا فريق سيتشينوف يا سيد الحالمين؟
+  - EN: Oh, yeah? Why not Sechenov's team, Mr. Daydreamer?
+- `/8B3293C545636D6A66C0FB96ED3D7E1D`  [Dialogue] batch2-0001
+  - AR: هل لي أن أرافقكم؟ أنتم ذاهبون إلى ساحة المدينة لسماع خطاب الدكتور سيتشينوف، صحيح؟
+  - EN: May I join you? You're going to the town square to listen to Dr. Sechenov's speech, right?
+- `/CDEBA2D94505C816159429B0B368959B`  [Dialogue] batch2-0001
+  - AR: أغمضت عيني...
+  - EN: I blinked...
+- `/C2E80CDC4AFAB5DAE87052AD047AD8AD`  [Dialogue] batch2-0001
+  - AR: إن كان أحد يستحق هذا الامتياز فهو نحن، الموظفون.
+  - EN: If anyone has earned this privilege, it's us, the employees.
+- `/DB6E47544E3C95A12F299E9FA4A48F4B`  [Dialogue] batch2-0001
+  - AR: هل سنلحق بالخطاب؟
+  - EN: Will we make it for the speech?
+- `/4798B64A4C78BC6CF7A940AA55537E69`  [Dialogue] batch2-0001
+  - AR: يقدمون أطزج وأصح طعام في تشيلومي.
+  - EN: They serve the freshest, healthiest food in Chelomey.
+- `/CE05ED5A44869C28CDA1A7AF1743780A`  [Dialogue] batch2-0001
+  - AR: لديهم أفضل شاورما في تشيلومي!
+  - EN: They've got the best shawarma in Chelomey!
+- `/2DCFB21A48A048FBE941FE9118AA680B`  [Dialogue] batch2-0001
+  - AR: ما زالوا يعملون على أنظمة الملاحة في الروبوتات.
+  - EN: They're still working on the robots' navigation systems.
+- `/1A412F74410F98C118EC44916F503786`  [Dialogue] batch2-0001
+  - AR: أثق أنك لم تنسَ أنهم ينتظروننا في المختبر.
+  - EN: I trust you haven't forgotten that they're expecting us at the laboratory.
+- `/331116D948F8B240375F48A5AB7C6D84`  [Dialogue] batch2-0001
+  - AR: لنأخذ صورة أخرى. هل من أفكار؟
+  - EN: Let's take another one. Any ideas?
+- `/9E527F6B43541E26151DBD91318126CE`  [Dialogue] batch2-0001
+  - AR: والتمثال أيضاً!
+  - EN: And the statue as well!
+- `/CF2879AE474DB99D46DB6CBCECC8478F`  [Dialogue] batch2-0001
+  - AR: احصل على جهاز «الفكرة» اليوم! واتصل بالشبكة فوراً!
+  - EN: Get your THOUGHT device today! Get connected straight away!
+- `/9905582C4A08134ADB204CB71D622483`  [Dialogue] batch2-0001
+  - AR: علينا أن نواصل.
+  - EN: We need to keep going.
+- `/1C4823BB4BB51AB75B762C9589DFF929`  [Dialogue] batch2-0001
+  - AR: ابتسموا!
+  - EN: Say cheese!
+- `/DF39E43D40CB22F2E6CD128955B09EA4`  [Dialogue] batch2-0001
+  - AR: ابتسموا!
+  - EN: Say cheese!
+- `/EC469E4B45F9EB21785166B2EFEE65A2`  [Dialogue] batch2-0001
+  - AR: ابتسموا!
+  - EN: Say cheese!
+- `/D6D4305746A5BF419A28669076EBA666`  [Dialogue] batch2-0001
+  - AR: لنبدأ ببعض التمارين الرياضية الأساسية! التمرين الأول!
+  - EN: Let's start with some basic aerobics! Exercise number one!
+- `/A1D6A1694DDB4C4918A9BDA652A16300`  [Dialogue] batch2-0001
+  - AR: شُيّد مجمع تشيلومي من الصفر ليكون مكان العمل المثالي المريح.
+  - EN: The Chelomey Complex was built from the ground up to be the ideal comfortable workplace.
+- `/62527F2E425563DAC0F7EAA220B31EEF`  [Dialogue] batch2-0001
+  - AR: رجاءً، كفى مكالمات مقالب أيها الرفيق الرائد.
+  - EN: Please, enough with the prank calls, Comrade Major.
+- `/12E5B99246DB8861F4376899AAF1A9CB`  [Dialogue] batch2-0001
+  - AR: لا أتذكر. انصرف.
+  - EN: I don't remember. Buzz off.
+- `/C447FF964EE865D2A8ED29B86412B068`  [Dialogue] batch2-0001
+  - AR: كفوا عن التدافع أيها الرفاق! كفوا عن التدافع!
+  - EN: Stop shoving, comrades! Stop shoving!
+- `/CAB69B5D429F04D376411E81672AD290`  [Dialogue] batch2-0001
+  - AR: وأشعر بالأسف على المدنيين الألمان.
+  - EN: And I feel sorry for the German civilians.
+- `/9D856D8E4B09545F025A2FA39221F3E9`  [Dialogue] batch2-0001
+  - AR: يا لهذا الروبوت، إنه جيد حقاً. تنسيق رائع.
+  - EN: Hey, that bot's actually pretty good. Nice coordination.
+- `/E9D461F04232B8934F0F33BC66BDF599`  [Dialogue] batch2-0001
+  - AR: شكراً، لكنني عابر سبيل فقط.
+  - EN: Thanks, but I'm just passing through.
+- `/AAF5A26D4F88C6D397BAE5ADAEBE4D8E`  [Dialogue] batch2-0001
+  - AR: أجل، ولن نخرجه.
+  - EN: Yeah, and we ain't lettin' him out.
+- `/644833B94A7DA289CF465EB1D3F0B391`  [Dialogue] batch2-0001
+  - AR: أجل، وهي قادمة لأمسك بك يا فتى!
+  - EN: Yeah, and it's comin' to get ya, kid!
+- `/5AE904F34AC2A15DD10191AE705346A9`  [Dialogue] batch2-0001
+  - AR: لست حالم! أنا مهندس!
+  - EN: I'm not a daydreamer! I'm an engineer!
+- `/27C557584728D2575B9314B04EC6857F`  [Dialogue] batch2-0001
+  - AR: *0.13*لكن لا شيء مستحيل على رجال العلم المتفانين. في غضون عام واحد، طوّروا علاجاً للعدو الخفي المتعطش للدماء المعروف بالطاعون البني. *0.11*بفضل جهود أخصائيي المنشأة 3826، ولا سيما الدكتور سيتشينوف والدكتور زاخاروف، أُتيحت للعالم فرصة ثانية.
+  - EN: *0.13*But to dedicated men of science, nothing is impossible. Within a single year, they developed a cure for the invisible, bloodthirsty adversary known as the Brown Plague. *0.11*Thanks to the efforts of Facility 3826's specialists, in particular Dr. Sechenov and Dr. Zakharov, the world was given a second chance.
+- `/F420343D46161CA4601A24B889069878`  [Dialogue] batch2-0001
+  - AR: انتبه يا بيوتر، سيبدأ ذلك الروبوت بمعاكسة زوجتك بعد قليل!
+  - EN: Look sharp, Pyotr, that robot'll start hitting on your wife next!
+- `/335F87D34A80BEF936E1D2ADB58A4AE3`  [Dialogue] batch2-0001
+  - AR: حسناً، كل شيء جاهز الآن بالتأكيد. معك المفاتيح، صحيح؟ آه... انتظر...
+  - EN: Alright, we're definitely all set now. You got the keys, right? Ugh... hold on...
+- `/AEC2C815433FAB300370FF92EFD161DD`  [Dialogue] batch2-0001
+  - AR: رائع، رائع حقاً!
+  - EN: Wonderful, just wonderful!
+- `/CBD3AD424CA69F9988CE1C9BFF11F426`  [Dialogue] batch2-0001
+  - AR: هل كان لا بد حقاً أن تصنع ذلك الوجه؟
+  - EN: Did you really have to make that face?
+- `/820091894E620488AABEB5BB9F72E28D`  [Dialogue] batch2-0001
+  - AR: براعة مذهلة!
+  - EN: Amazing dexterity!
+- `/379877894181A50B65E55EBCAD843F1E`  [Dialogue] batch2-0001
+  - AR: أجل، أغمضت عيني!
+  - EN: Yeah, I blinked!
+- `/2B557CD948551BEEDA1CCABE7887E862`  [Dialogue] batch2-0001
+  - AR: بالتأكيد، لنذهب.
+  - EN: Sure, let's go.
+- `/CBC991014757071641DA23BB8DFFFBB5`  [Dialogue] batch2-0001
+  - AR: ألا ترى نفسك كبيراً على مكالمات المقالب أيها الرائد؟
+  - EN: Aren't you a little old for crank calls, Major?
+- `/80930E964D735E8BC85CC69F96C85926`  [Dialogue] batch2-0001
+  - AR: هل انتهى؟
+  - EN: Is it done?
+- `/0377ADDF4F8FDF7726A3C081B5452CBC`  [Dialogue] batch2-0001
+  - AR: هل يمكنني التحرك الآن؟
+  - EN: Can I move now?
+- `/E2CA844344EC336807B7349DEC33A1B2`  [Dialogue] batch2-0001
+  - AR: إذاً، كيف حالك على الصعيد المهني؟
+  - EN: So, how are you faring, professionally speaking?
+- `/CC378EE14B69337258EE5D89A93308EB`  [Dialogue] batch2-0001
+  - AR: حسناً، يوم الاثنين مؤكد. لكن غداً هو ما يقلقني. عليّ غسل الملابس. ينبغي أن أتحقق من توقعات الطقس.
+  - EN: Well, Monday's a no-brainer. It's tomorrow I'm worried about. I need to do the laundry. I should check the weather forecast.
+- `/2E4A4C464BE111FB6ECABCB4327014F2`  [Dialogue] batch2-0001
+  - AR: يا لها من رقصة شعبية جميلة! إنها نابضة بالحياة!
+  - EN: What a nice folk dance! It's so lively!
+- `/711B433A4C60FEB24772CABD1510837F`  [Dialogue] batch2-0001
+  - AR: واو، هذا مذهل! هذا ما يسمى بتقنية الدقة!
+  - EN: Wow, that's amazing! Talk about precision technology!
+- `/78952BE343F178E2770C9AA66FC831F3`  [Dialogue] batch2-0001
+  - AR: هذه هي الروبوتات! وما التالي، روبوتات كرة القدم؟
+  - EN: That's robotics for you! What's next, soccer robots?
+- `/FAF3490C40D0E73B1CE66C8D36B3A664`  [Dialogue] batch2-0001
+  - AR: لا تقلق، سنجد حلاً ما.
+  - EN: Don't worry, we'll come up with something.
+- `/FDC9E2DF43592095ACFAFA95F86EE283`  [Dialogue] batch2-0001
+  - AR: لنرَ.
+  - EN: Let's see.
+- `/E24F3C7E4B8731EC2DBE7A924F42EE3F`  [Dialogue] batch2-0001
+  - AR: أن لا شيء يدوم إلى الأبد. ومن المخيف النظر إلى المستقبل لأنه مجهول تماماً.
+  - EN: How nothing lasts forever. And it's terrifying to look into the future because it's utterly unknowable.
+- `/C3552FA84D2C3A6381F3A58210F0672E`  [Dialogue] batch2-0001
+  - AR: أتبع حمية المأكولات البحرية! أرى الطعام، آكله!
+  - EN: I'm on a seafood diet! I see food, I eat it!
+- `/436CD7AB4D55779F56DE66976B567C62`  [Dialogue] batch2-0001
+  - AR: عجائب العلم الحديث، أليس كذلك؟
+  - EN: Wonders of modern science, eh?
+- `/95317C9C43C091ED12775DA284110A0E`  [Dialogue] batch2-0001
+  - AR: تشير توقعات الطقس إلى أجواء جميلة طوال نهاية الأسبوع ويوم الاثنين.
+  - EN: The weather forecast says it'll be nice all weekend and on Monday.
+- `/6F2306684613D2AC47685BB1908D4074`  [Dialogue] batch2-0001
+  - AR: واو!
+  - EN: Whoa!
+- `/DD8EFF174DCBA823B84817B4C007609A`  [Dialogue] batch2-0001
+  - AR: واو! يا لها من براعة حقيقية!
+  - EN: Whoa! That's some real dexterity!
+- `/172EA8A94493813FE4AD2BA474AFEA57`  [Dialogue] batch2-0001
+  - AR: واو! إذاً أنت تصنع الروبوتات؟
+  - EN: Wow! So you make robots?
+- `/C753D8654C3FC4CB3CBD1F9B8757D6E3`  [Dialogue] batch2-0001
+  - AR: واو!
+  - EN: Whoa!
+- `/4DF38125470996806EA4AAA0FD45E5A4`  [Dialogue] batch2-0001
+  - AR: هل رأيت شيئاً كهذا من قبل؟
+  - EN: Have you ever seen anything like that before?
+- `/76B75FF1417DD5D2557E1186C88E6E40`  [Dialogue] batch2-0001
+  - AR: إنه يتوهج!
+  - EN: It's glowing!
+- `/D55B90F54556BD1468DB73B5C7AEB8F5`  [Dialogue] batch2-0001
+  - AR: هل يمكنك أن ترينا الصورة؟
+  - EN: Can you show us the photograph?
+- `/CB3E421347F9546B5F403CB2496152C4`  [Dialogue] batch2-0001
+  - AR: آه، صحيح! يا لغبائي. شكراً جزيلاً لك.
+  - EN: Oh, right! Silly me. Thank you so much.
+- `/AC685A21477DF34FAF434EBF92C47757`  [Dialogue] batch2-0001
+  - AR: يا للعجب!
+  - EN: Oh, my!
 - `/5E327C8A4F443D66D60FBFB59385AE4B`  [Dialogue] scene:chelomey-soda
   - AR: إنه يؤدّي وظيفته فحسب، أيها الرائد.
   - EN: It's just performing its function, Major.
+- `/98339E6C4059A8D1B33802B885D58E85`  [Dialogue] batch2-0001
+  - AR: هوب! هوب! هي! هوب!
+  - EN: Hop! Hop! Hey! Hop!
+- `/26825E5D478A9E83EC92BCB32E786F96`  [Dialogue] batch2-0001
+  - AR: يبدو أن روبوتاً آخر علق في شجرة. هذا يضحكني دائماً.
+  - EN: Looks like another bot got stuck in a tree. That always cracks me up.
+- `/BC02F5414A76AFD27F528EA9B08A671C`  [Dialogue] batch2-0001
+  - AR: نشرة أخبار المكتب الإعلامي السوفييتي: آخر ما نشره ممثلو الحزب على وسائل التواصل!
+  - EN: Soviet Information Bureau news bulletin: the latest from Party representatives' social media!
+- `/699D287242E7CFA4FBAE849F7376D477`  [Dialogue] batch2-0001
+  - AR: اصمت أيها القفاز. لقد أتيت إلى هنا من قبل.
+  - EN: Can it, glove. I've been here before.
+- `/826535504A804D6827346AB6BB00CAF2`  [Dialogue] batch2-0001
+  - AR: اخرس أيها القفاز.
+  - EN: Zip it, glove.
+- `/136B2E4249989E244BE5349CA8779F69`  [Dialogue] batch2-0001
+  - AR: كيف تعرف اسمي؟
+  - EN: How do you know my name?
+- `/FAF88BEA432E9367ABED7CAE1B0D7A16`  [Dialogue] batch2-0001
+  - AR: يا لها من صورة رائعة أيها الرفاق! سترسل نسخة إلى طرفياتكم الشخصية. شكراً! التالي! ما رأيكم بصورة تذكارية؟
+  - EN: What a great picture, comrades! A copy will be sent to your personal terminals. Thank you! Next! How about a souvenir photo?
+- `/C50D8B674BCA40768A9E5F985E00E600`  [Dialogue] batch2-0001
+  - AR: كشك المعلومات 55 بائع رسمي لليانصيب السوفييتي. اشترِ تذكرة يانصيب واربح شقة في مدينة تشيلومي!
+  - EN: Infokiosk 55 is an official vendor of the Soviet Lottery. Buy a lottery ticket and win an apartment in Chelomey City!
+- `/D054B34343C02739410B38B6916DBB22`  [Dialogue] batch2-0001
+  - AR: بيرسي بيش شيلي، 1817.
+  - EN: Percy Bysshe Shelley, 1817.
+- `/E7141D1B4737052141D5D5A98D79E1E4`  [Dialogue] batch2-0001
+  - AR: مدّ ذراعيك. وواحد! واثنان! وإلى الأمام! وواحد! واثنان! إلى الجانب!
+  - EN: Stretch your arms out. And one! And two! And forward! And one! And two! To the side!
+- `/A01EBC3E4C5712193028A9878FAF1CEC`  [Dialogue] batch2-0001
+  - AR: واو، يا له من يوم جميل!
+  - EN: Wow, what a beautiful day!
+- `/397EF83A4374ACC83D5DE99F7A1DEF7F`  [Dialogue] batch2-0001
+  - AR: عد لاحقاً من فضلك. يُتوقع انخفاض الطلب التالي بعد: خمس ساعات وأربعين دقيقة.
+  - EN: Please come back later. The next decrease in demand is expected in: five hours and forty minutes.
+- `/5B63DF4A48AB6E94687B76946B1D7853`  [Dialogue] batch2-0001
+  - AR: رجاءً يا سيدي، أنت تعرض نفسك للخطر. ائذن لي باستدعاء روبوت لمساعدتك.
+  - EN: Please, sir, you're putting yourself in danger. Allow me to call a robot to help you.
+- `/4A54A0AA451C7B3AB8556C9963A07E5D`  [Dialogue] batch2-0001
+  - AR: هل لي أن أذكّرك بأننا في عجلة من أمرنا؟
+  - EN: May I remind you that we're in a hurry?
+- `/1F7CF79242577B957D72868F6F9ADBC1`  [Dialogue] batch2-0001
+  - AR: إنها على هذه الحال طوال اليوم. الروبوت رقم ثلاثة معطوب. أريد طلاء هذه المنازل، لكن انظر ماذا يفعلون بدلاً من ذلك!
+  - EN: They've been like that all day. Number three is borked. I need these houses painted, but look what they're doing instead!
+- `/71CEC371411B173235D66ABFB293A269`  [Dialogue] batch2-0001
+  - AR: إن أخذنا الفواصل في الحسبان... لا، المعادلة كلها خاطئة... ماذا لو أعدنا محاذاة المصفوفة الضخمة؟ لا جدوى... كيف استطاع سيتشينوف فعلها؟ مفارقة الثقب حقاً...
+  - EN: If you take the intervals into account... no, the whole equation's off... what if we realign the massive array? No good... how on Earth did Sechenov manage it? The Hole Paradox indeed...
+- `/4A9DC23B41844F84A28BBF9C9D37BBE3`  [Dialogue] batch2-0001
+  - AR: واضح كالكريستال. كفاك إلحاحاً.
+  - EN: Crystal. Get off my case already.
+- `/529970664F602D90FACB5C807447B653`  [Dialogue] batch2-0001
+  - AR: واو، انظر كم هو سريع!
+  - EN: Wow, look at him go!
+- `/7F72788B471648037AF3DFA5AFC8BAE7`  [Dialogue] batch2-0001
+  - AR: إنه روبوت لحّام. إن طرحت أسئلة سخيفة، فسيشوي مؤخرتك!
+  - EN: It's a welder robot. If you ask silly questions, it'll fry your fanny!
+- `/42F22C884882895AD279F58EB5EC309B`  [Dialogue] batch2-0001
+  - AR: لنذهب، وإلا فاتنا الخطاب! آه، انتظر، مظلتي...
+  - EN: Let's go, or we'll miss the speech! Oh, wait, my umbrella...
+- `/5D4189774F3212D82A3997A6F821D8BD`  [Dialogue] batch2-0001
+  - AR: جميل، أليس كذلك؟ كنت أحتفظ به لهذا اليوم.
+  - EN: Beautiful, isn't it? I was saving it for today.
+- `/32ABF9A845AFAF6CBBB5E3982621721C`  [Dialogue] batch2-0001
+  - AR: إن سقط أحد في بئر، سأكون أول من يعلم!
+  - EN: If anyone ever fell down a well, I'd be the first to know about it!
+- `/0CE28CD44D5DD6AE61A878B8F6CA8EE1`  [Dialogue] batch2-0001
+  - AR: تخيل فقط كل الاحتمالات التي ستجلبها البلمرة الشاملة!
+  - EN: Just imagine all the possibilities universal polymerization will bring!
+- `/F253E5AB4CEE30AB0903E58A85390A57`  [Dialogue] batch2-0001
+  - AR: تجمّعوا في ساحة المدينة لسماع خطابه.
+  - EN: Gather in the town square to hear his address.
+- `/28DA84E4447FD4586D737DB7E49D9CAE`  [Dialogue] batch2-0001
+  - AR: اتجه فحسب نحو المبنى الكبير. لن تخطئه إطلاقاً.
+  - EN: Just head for the large building. You really can't miss it.
+- `/E75E57D54511074C43813A91A322BD74`  [Dialogue] batch2-0001
+  - AR: إنه الفستان الجديد الذي ترتدينه يا حبيبتي. الشمس تحبه فحسب.
+  - EN: It's the new dress you're wearing, sweetheart. The sun just loves it.
+- `/CA917A0F4975F4BC1423F390D828C5E1`  [Dialogue] batch2-0001
+  - AR: إنه مثل استعراض يوم النصر... لكن بعدد أشخاص أقل.
+  - EN: It's like a Victory Day parade... only with fewer people.
+- `/C90B2B8D4E1D4B85118DB19605047B3C`  [Dialogue] batch2-0001
+  - AR: وخمسة! وستة! وسبعة! أحسنت!
+  - EN: And five! And six! And seven! Good!
+- `/064FBD4343CE4C536985C79FB206D15F`  [Dialogue] batch2-0001
+  - AR: وما علاقة هذا بنا؟ لنواصل السير، ما رأيك؟
+  - EN: What does this have to do with us? Let's keep going, shall we?
+- `/70A2BD41406936D27889C7B73A8BDFE2`  [Dialogue] batch2-0001
+  - AR: أجل، للأسف أغلقوا فكرة الروبوتات برمتها...
+  - EN: Yeah, too bad they shut down the whole robot idea...
 - `/528883FC4A40D637D9D14D908CA990FD`  [Dialogue] scene:chelomey-soda
   - AR: بالتأكيد، شكراً.
   - EN: Sure, thanks.
+- `/B244D47745D1F788EC8260A33048EBC6`  [Dialogue] batch2-0001
+  - AR: كانت معطوبة قليلاً اليوم... لا، لا، كل شيء سيعمل بحلول يوم الاثنين.
+  - EN: They've been a little glitchy today... No, no, everything should be up and running by Monday.
+- `/155886524EFDBBEB915636809DF8356A`  [Dialogue] batch2-0001
+  - AR: مع هذه البلمرة بأسره، لن نحتاج إلى السيرك بعد الآن!
+  - EN: With this whole polymerization business, we won't need circuses anymore!
+- `/99D6E8E84D8371F3F981A08651A264F1`  [Dialogue] batch2-0001
+  - AR: بي تي إيه-6؟ يبدو مألوفاً...
+  - EN: PTA-6? That rings a bell...
+- `/6E1AEA5D4AADDFCDEE52B29BA19725A2`  [Dialogue] batch2-0001
+  - AR: هل سيزيحون سحب المطر غداً يا سفيتا؟
+  - EN: Are they getting rid of the rain clouds tomorrow, Sveta?
 - `/B0DD819448F77EBBB149729CA05FFE18`  [Dialogue] pilot:LONG
   - AR: *0.10*يمكنك الآن مشاهدة عمليات مصنع آلي يجمّع الروبوتات ويوزّع القطع الميكانيكية التي تحتاجها مجمّعات المنشأة المختلفة. *0.10*ومصنع كهذا، تتحكّم به عن بُعد عقدة من كوليكتيف 1.0، قادر على إدارة ما يصل إلى مئة طلب في الساعة وتنفيذها باستقلالية تامة.
   - EN: *0.10*You can now observe the operations of an automated plant, performing robot assembly and distributing machine parts required by the Facility's various complexes. *0.10*Controlled remotely by a Kollektiv 1.0 node, a plant such as this is capable of autonomously managing and fulfilling up to a hundred orders per hour.
+- `/583D9BF64D240F6C960A4091B38F4C62`  [Dialogue] batch2-0001
+  - AR: لماذا تحمرّ خجلاً يا سيميون؟
+  - EN: Why are you blushing, Semyon?
+- `/3E8BEDA5483A6004A3E6F8BDFADFC7EB`  [Dialogue] batch2-0001
+  - AR: خذ بعض الشاي، البرنامج التلفزيوني يبدأ!
+  - EN: Grab some tea, the TV show's starting!
+- `/C361D0E44C5D899D42AADC9D9791F16E`  [Dialogue] batch2-0001
+  - AR: انطلاق «كوليكتيف 2.0» بات وشيكاً! إنه حصيلة سنوات من العمل الجاد. على جميع العلماء السوفييتيين أن يفتخروا بهذا الإنجاز المجيد!
+  - EN: The launch of Kollektiv 2.0 is now at hand! The result of many years' hard work. All Soviet scientists should be proud of this glorious achievement!
+- `/30C89E6148DFBEF6BF7F3FB9F83831EF`  [Dialogue] batch2-0001
+  - AR: والآن التمرين التالي.
+  - EN: Now for the next exercise.
+- `/78E66BDE4E96E2678A2EFFBF1A03DBDF`  [Dialogue] batch2-0001
+  - AR: انظر، ذلك الروبوت يُعرف بـ«بيلياش»!
+  - EN: Look, that robot is known as a Belyash!
+- `/F2FDC73C453F03A856992CB6DA325424`  [Dialogue] batch2-0001
+  - AR: يبدأ بعد قليل خطاب المدير العام للمنشأة 3826 الدكتور سيتشينوف!
+  - EN: The address by the Director General of Facility 3826 Dr. Sechenov is about to begin!
+- `/20FD836844F4D46BA57196879278CBBA`  [Dialogue] batch2-0001
+  - AR: اهدأي، من المفترض أن يكون غداً مشمساً.
+  - EN: Relax, tomorrow is supposed to be sunny.
+- `/C7F391554B093D2809CEAA9A1ED1105B`  [Dialogue] batch2-0001
+  - AR: *0.07*وجد مئات العلماء في الاتحاد السوفييتي والعالم أنفسهم أمام تحدٍّ لا يمكن تصور حجمه: *0.05*وباء كان يجتاح أوروبا، يحصد ملايين الأرواح يومياً...
+  - EN: *0.07*Hundreds of scientists across the USSR and the globe found themselves faced with a challenge of unimaginable proportions: *0.05*a pandemic that was sweeping across Europe, taking millions of lives daily...
+- `/24D4F9E545948DDD1982859D09B06D43`  [Dialogue] batch2-0001
+  - AR: شكراً. وفي أي اتجاه تقع ساحة المدينة؟
+  - EN: Thanks. And which way is the town square?
+- `/3D541B4F45DAC5EC5EF8BE942D87D986`  [Dialogue] batch2-0001
+  - AR: شكراً يا حبيبي! ها ها! والنسيم عليل ولطيف. أشعر وكأنه يداعب شعري... تماماً كيوم التقينا.
+  - EN: Thank you, sweetie! Ha ha! And the wind is so nice and gentle. I feel like it's caressing my hair... just like the day we met.
+- `/454075C3470BB155682847A0D4EC120C`  [Dialogue] batch2-0001
+  - AR: شكراً سيدتي. الرمز هو 0451.
+  - EN: Thanks, ma'am. The code's 0451.
+- `/812A2748448636A3306A6DA3A115EF01`  [Dialogue] batch2-0001
+  - AR: قف بلا حركة!
+  - EN: Stand still!
+- `/4F9E2DA74D6B3E24F04CAA96C717A8E9`  [Dialogue] batch2-0001
+  - AR: آسفة يا عزيزي. لا بد أنني ضغطت الزر الخطأ.
+  - EN: Sorry, honey. I must have pressed the wrong button.
+- `/F52E5E674B52DEEA12ED76ADA7A8DB57`  [Dialogue] batch2-0001
+  - AR: حسناً إذن... هيا إلى العمل يا أيها المتكاسلون! تحركوا، تحركوا!
+  - EN: Okay then... get to work, you bums! Move it, move it!
+- `/BEAB3AA148642E70009523B8889687F9`  [Dialogue] batch2-0001
+  - AR: تفاصيل حميمية عن الحياة الشخصية لمديري المنشأة 3826! فضائح حسابات وهمية لنظام ديموس! كشك المعلومات 55 — يكشف المخفي ويعلن المسكوت عنه.
+  - EN: Intimate details of Facility 3826 managers' personal lives! Exposés of fake Deimos OS accounts! Infokiosk 55—exposing the hidden, declaring the unspoken.
+- `/15FDB506460D3E889CE342A3F4005A65`  [Dialogue] batch2-0001
+  - AR: انتظر، أين تشيربر خاصتي؟ آسف، لحظة واحدة!
+  - EN: Wait, where's my Chirper? Sorry, just a sec!
+- `/317C32D94AA6C5A798E3689B357A9908`  [Dialogue] batch2-0001
+  - AR: أنت وأناتولي، قفا مثل العامل والفلاحة الجماعية!
+  - EN: You and Anatoly, stand like the Worker and the Kolkhoz Woman!
+- `/7F8704C740DFACFE6EB496A0D444E225`  [Dialogue] batch2-0001
+  - AR: جيد جداً. أظنني نجحت في زيادة كفاءة الدوّار. آمل أن أنتهي في مكتب التصميم الخاص بالرفيق تشيلومي!
+  - EN: Pretty well. I think I've managed to increase the efficiency of the rotor. I hope I end up in Comrade Chelomey's Design Bureau!
+- `/0B4B2EF44B45F78FA138F1BDCD54D3BE`  [Dialogue] batch2-0001
+  - AR: هيا يا رفاق، لا تخجلوا! هناك متسع!
+  - EN: Come on, guys, don't be shy! There's room!
+- `/654D5F19482DF72431617B85EDB6B570`  [Dialogue] batch2-0001
+  - AR: حسناً أيها الرفاق، كفوا عن التدافع، رجاءً؟ هناك آخرون يريدون المشاهدة أيضاً!
+  - EN: Alright, comrades, quit shoving, would you? Other people want to see too!
+- `/34C3D4E74B137F367CB1C482419F69E8`  [Dialogue] batch2-0001
+  - AR: مرة أخرى، لكن أسرع. وواحد! واثنان! وإلى الأمام! وواحد! واثنان! مدّ الذراعين! وثلاثة! وأربعة! وخمسة!
+  - EN: One more time, but faster. And one! And two! And forward! And one! And two! Arms out! And three! And four! And five!
+- `/32D2A88048B5B200AC9BE2AE7FE8365E`  [Dialogue] batch2-0001
+  - AR: لقد صدر أمر بانتقالك إلى المختبر أيها الرفيق الرائد. هناك عنفة تنتظرك عند المجرى الهوائي. هل أوامرك واضحة؟
+  - EN: You've been ordered to the laboratory, Comrade Major. There's a Turbine waiting for you at the airway. Are your orders clear?
+- `/78EA44914FE1A359CBD80C8E02DA78B5`  [Dialogue] batch2-0001
+  - AR: من قلة الأدب التنصت على أحاديث الآخرين أيها الرفيق الرائد.
+  - EN: It's rude to eavesdrop on other people's conversations, Comrade Major.
+- `/854B4E4C43CE3D8FEDDC7F9276E36A90`  [Dialogue] batch2-0001
+  - AR: أيها الرفيق! أيها الرفيق، هل يمكنك مساعدتي؟ كنت في جولة وانفصلت عن مجموعتي...
+  - EN: Comrade! Comrade, could you help me out? I was taking a tour and got separated from my group...
+- `/2C54D0FE4223EB6B681443831B51AA3A`  [Dialogue] batch2-0001
+  - AR: لا تقف هكذا أيها الرفيق! تريد مشاهدة الخطاب أيضاً، صحيح؟ سنفسح لك مكاناً.
+  - EN: Don't just stand there, comrade! You wanna watch the speech too, right? We'll make room.
+- `/5AB668DD45F3F0F3E0A34E8847EBE67E`  [Dialogue] batch2-0001
+  - AR: أيها الرفاق، سكان منصة إيكاروس، وضيوف المنشأة.
+  - EN: Comrades, Icarus platform residents, and Facility guests.
+- `/2D164FE94F27E7D51A30A48485EF58C2`  [Dialogue] batch2-0001
+  - AR: أيها الرفاق! احتلوا مكانكم في طليعة التقنية السوفييتية بجهاز «الفكرة»!
+  - EN: Comrades! Take your place at the forefront of Soviet technology with a THOUGHT device!
+- `/C2F4E9584D3ABE87F5F56A9375B7DB31`  [Dialogue] batch2-0001
+  - AR: تقدموا، يمكنكم أن تصيروا جزءاً من «كوليكتيف» بجهاز «الفكرة» أيها الرفاق!
+  - EN: Step right up, you can become part of Kollektiv with a THOUGHT device, comrades!
+- `/84F818204068DAC291FC989B5A6008E9`  [Dialogue] batch2-0001
+  - AR: *0.05*أيها الرفاق! تجمعوا قرب نصب الطاعون البني لجولة. *0.08*تعرّفوا على تاريخ المنشأة 3826، واستمعوا إلى اكتشافاتها العظيمة، وأدّوا تحيتكم لكل ضحايا الحرب!
+  - EN: *0.05*Comrades! Assemble near the Brown Plague Memorial for a tour. *0.08*Learn about the history of Facility 3826, hear about its great discoveries, and pay your respects to all the victims of war!
+- `/B5667E2B4AD0185F79AD55836896061E`  [Dialogue] batch2-0001
+  - AR: استعدوا لصورة جماعية أيها الرفاق!
+  - EN: Get ready for your group photo, comrades!
+- `/EAD9F7A440A31581B98F419A852BFC2D`  [Dialogue] batch2-0001
+  - AR: *0.08*أيها الرفاق! نشجع سكان وزوار منصة إيكاروس على الاستفادة من مختبر البلمرة المتنقل. *0.07*كن جزءاً من الشبكة العصبية كوليكتيف اليوم! المستقبل ينتظر! حقنة واحدة، وتنتهي المسألة!
+  - EN: *0.08*Comrades! Residents and visitors of the Icarus platform are encouraged to make use of our mobile polymerization lab. *0.07*Become part of the Kollektiv neural network today! The future awaits! One jab, and you're done!
+- `/583B9B6743095C7B3F91889044EE3917`  [Dialogue] batch2-0001
+  - AR: لا أطيق الانتظار لأتعلم كل شيء.
+  - EN: Can't wait to learn it all.
+- `/CC1A6D074A90922D0A56DF97BBBDC7E0`  [Dialogue] batch2-0001
+  - AR: لكن هذه المرة، تأكد أن الذرة في الصورة!
+  - EN: But this time, make sure the atom's in the picture!
+- `/895F46D042C95D53DD064EA96A48FEA5`  [Dialogue] batch2-0001
+  - AR: أعلم! كل أولئك الناس الذين أصابهم، بمن فيهم أهلهم... لقد قتل نصف القارة! لولا سيتشينوف...
+  - EN: I know! All those people they infected, including their own... it killed half the continent! If it wasn't for Sechenov...
+- `/7EEDDC2045FC87F96CE14A9B9269BD28`  [Dialogue] batch2-0001
+  - AR: يعيش هنا كبار العلماء من جميع الجمهوريات السوفييتية الأخرى، بما فيها جمهورية ألمانيا السوفييتية.
+  - EN: Leading scientists from all the other Soviet Republics live here, including the German SSR.
+- `/7773154A4086F9163BD6CF9D2BE55E76`  [Dialogue] batch2-0001
+  - AR: ذلك الروبوت مثير حقاً، أليس كذلك؟
+  - EN: That robot really is something, isn't it?
+- `/93C1E24649AFDAF96B84C0A6D38B4C66`  [Dialogue] batch2-0001
+  - AR: انظر إلى ذلك فحسب!
+  - EN: Just look at that!
+- `/5D774C75419DE4C00A27CC90457D0ADB`  [Dialogue] batch2-0001
+  - AR: سيكون لدينا أيام كثيرة مثل هذا، سترين!
+  - EN: We'll have many more days like this, you'll see!
+- `/0C433214481992B2B7A21595D1590F44`  [Dialogue] batch2-0001
+  - AR: أجل، لاحظت ذلك.
+  - EN: Yeah, I noticed.
+- `/B6A61E724A3876C0F84E59B86259A782`  [Dialogue] batch2-0001
+  - AR: يا لها من قصيدة مؤثرة!
+  - EN: What a striking poem!
+- `/71DBAF004F375F61D5C5C899B66EA0BA`  [Dialogue] batch2-0001
+  - AR: من كعكتي الصغيرة؟
+  - EN: Who's my little cupcake?
+- `/0E6A634345BF874D95FE90A00093270B`  [Dialogue] batch2-0001
+  - AR: واو، لقد نجحت! شكراً جزيلاً! استمتع بالاحتفال!
+  - EN: Whoa, you did it! Thanks a million! Enjoy the celebration!
+- `/9CF700E24CF4D40B4C3252B3B0D19326`  [Dialogue] batch2-0001
+  - AR: يا لقلة الأدب! ثم إن الروبوتات لا يمكنها شوي أحد. منافي لبرمجتها إيذاء إنسان.
+  - EN: How rude! Plus, robots can't fry anybody. It's against their programming to harm a human being.
+- `/40C056F846F96DF1BB5903ABF506A4B0`  [Dialogue] batch2-0001
+  - AR: ها! أتستطيع فعل ذلك يا فاديم؟ أشك!
+  - EN: Ha! Can you do that, Vadim? I doubt it!
+- `/CABA6A6D45BDFABB06F9E89CC2DE7AFD`  [Dialogue] batch2-0001
+  - AR: ها ها!
+  - EN: Ha ha!
+- `/A0FDD06B4BD679D1DBB54EB421C2B5F0`  [Dialogue] batch2-0001
+  - AR: ها ها!
+  - EN: Ha ha!
+- `/86EEEBA24804388964A3328762C23BF2`  [Dialogue] batch2-0001
+  - AR: اترك الخط يا فتى!
+  - EN: Get off the line, kid!
+- `/59EACF0D4DF2EFEABA1005A553AEA62D`  [Dialogue] batch2-0001
+  - AR: مثل كرة العجين المقلية؟ لكن لماذا؟
+  - EN: Like a fried dough ball? But why?
+- `/2D359EA84FA007307CC6D9AE83F45F2E`  [Dialogue] batch2-0001
+  - AR: ماذا عن الطيران؟ أو قراءة أفكار الآخرين؟
+  - EN: What about flying? Or reading other people's minds?
+- `/7AA2DA6644B0BD582C2C3FA2F742A8B7`  [Dialogue] batch2-0001
+  - AR: مذهل!
+  - EN: Amazing!
+- `/A9ED7CDA4B5317169378C6AB3F0DF4E1`  [Dialogue] batch2-0001
+  - AR: يا له من عرض رائع!
+  - EN: What a great performance!
+- `/01240F0B47718B12221106BB7EF6997A`  [Dialogue] batch2-0001
+  - AR: ززز... ززززز...
+  - EN: Zzz... zzzzz...
+- `/998FD26F4940CA2F20AD73B92D922F98`  [Dialogue] batch2-0001
+  - AR: ما الذي يجري؟
+  - EN: What's going on?
+- `/A4744824409789650618CD97C48D30F6`  [Dialogue] batch2-0001
+  - AR: وكيف ذلك؟
+  - EN: How so?
+- `/3038A284489C584962BCF1A4459BFE31`  [Dialogue] batch2-0001
+  - AR: يا لي، هذا لذيذ! إنه من مجمع فافيلوف، صحيح؟
+  - EN: My, this is delicious! It's from the Vavilov Complex, right?
+- `/EDD606BA4CD03658CF2384A9D3CE6C47`  [Dialogue] batch2-0001
+  - AR: ما هذا بحق الجحيم؟ كان ذلك مخيفاً... أعني، ما احتمالات حدوث ذلك؟
+  - EN: What the shit? That was spooky... I mean, what are the odds, right?
+- `/567304F34F26B61AE60EF7A431A66736`  [Dialogue] batch2-0001
+  - AR: ما خطب روبوتات فوفا خاصتك يا أندريه؟ إنها تعمل بجنون! ماذا فعلت بها بحق الجحيم؟
+  - EN: What's up with your Vovas bots, Andrey? They're going haywire! What the hell did you do to them?
+- `/42AC16A84BFCB30E7C5961AD3F8866F4`  [Dialogue] batch2-0001
+  - AR: هيا، هيا!
+  - EN: Come on, come on!
+- `/AA8FEEBF44C498D982EF648258B21D59`  [Dialogue] batch2-0001
+  - AR: تحتاج إلى عقل لامع ومتفانٍ استثنائياً لتعمل هنا.
+  - EN: You need to have an exceptionally brilliant and dedicated mind to work here.
+- `/35F7F9A844B6901F81A421A44F9B4331`  [Dialogue] batch2-0001
+  - AR: لأداء هذا التمرين، باعد بين قدميك. و... انحنِ جانبياً! وارفع! الآن قدماك! الآن ذراعاك! وساقاك! وظهرك!
+  - EN: To do this exercise, keep your feet wide apart. And... side bend! And up! Now your feet! Now your arms! And your legs! And your back!
 - `/699326494A29B1D52623CD8415E72237`  [Dialogue] pilot:SHORT
   - AR: هذا الروبوت حقيقي تماماً!
   - EN: That bot is the real deal!
+- `/C8D3BEEE4A4CB513F96A31AA3116FEC0`  [Dialogue] batch2-0001
+  - AR: يا أنت، أيها القفاز التجريبي! لدي شعور بأنك ستكون أنفع من هذه الأداة السخيفة على جبيني. بما أنك مميز إلى هذا الحد.
+  - EN: Hey you, experimental glove! I get the feeling you'll be more useful than this goofy contraption on my forehead. Since you're so special and all.
+- `/50C4A47C40D3D7C6E615DA8DB827DAAB`  [Dialogue] batch2-0001
+  - AR: يا روبوت! طلب آخر من فضلك!
+  - EN: Hey, Robot! Another helping, please!
+- `/0FF4AAF34000AA8127F01A9640368CB4`  [Dialogue] batch2-0001
+  - AR: بعيد جداً! سنحتاج عدسة مكبرة لنرى وجوهنا!
+  - EN: Too far away! We'll need a magnifying glass to see our faces!
+- `/78178A064413D8446C6B2CB50CD08CB8`  [Dialogue] batch2-0001
+  - AR: يسعدني سماع ذلك! ولا تقلق، حتى لو صارت الروبوتات لا غنى عنها، فالبشر هم ما يهم حقاً.
+  - EN: Glad to hear it! And don't worry, even if robots are becoming indispensable, people are still what really matters.
+- `/D4D1FBCF4895D17D1BFAF39737B1D956`  [Dialogue] batch2-0001
+  - AR: ذلك لأنه لا يحاول إعطائي نصائح غير مرغوبة طوال الوقت.
+  - EN: That's because it's not constantly trying to give me unsolicited advice.
+- `/E87266E8442D3CFE7486B2AD0B36C3D3`  [Dialogue] batch2-0001
+  - AR: أوه... إذاً هل ثلاجتكم تعمل؟
+  - EN: Oh... then is your refrigerator running?
+- `/03CC5A2E4E25CAA4A0CE6985DA7CC78A`  [Dialogue] batch2-0001
+  - AR: لدي قفاز يتكلم في يدي. ألا يمكنني الحصول على المعلومات منك فحسب؟
+  - EN: I've got a talking glove on my hand. Can't I just get the information from you?
+- `/AAC1F93B4DA4BFEA6BA9C8939D4B5BA0`  [Dialogue] batch2-0001
+  - AR: لقيتُ مسافراً من أرضٍ عتيقة  قال لي:
+  - EN: I met a traveler from an antique land  Who said:
+- `/DAF8C0A94CF0AE4D68A120AFD6625FBB`  [Dialogue] batch2-0001
+  - AR: أنا أعرف كل شيء! كل شيء! ها-ها-ها!
+  - EN: I know all! ALL! MWA-HA-HA!
+- `/C76FE5CF4CB47AD3A4060F96F27D9F18`  [Dialogue] batch2-0001
+  - AR: لا، أنا فني في المدينة. أنتم يا أهل المنشأة من تصنعون الروبوتات. أنا مجرد رجل من بلدة صغيرة في رحلة إلى تشيلومي. لكنني أرغب في أن أكون جزءاً من الجماعة!
+  - EN: Nah, I'm a city tech. You Facility folks are the ones making robots. I'm just a small-town guy on a trip to Chelomey. But I'd love to be part of the collective!
+- `/40674E6D46E6DA42156FCA8F6F3F5BAC`  [Dialogue] batch2-0001
+  - AR: تحركوا بسرعة!
+  - EN: Shake a leg!
+- `/2ADF271449A569680418329054C2A5EF`  [Dialogue] batch2-0001
+  - AR: هذا الخبر يملؤني فخراً! لقد عملنا جميعاً بجهد كبير من أجل هذا!
+  - EN: This news fills me with pride! We've all worked so hard for this!
+- `/825E696A4B28A7574FD838A2066012E7`  [Dialogue] batch2-0001
+  - AR: أجل! وسأسميها لاسي!
+  - EN: Yeah! And I'd call her Lassie!
 - `/61584C1A44429B98E680958B59E38BF1`  [Dialogue] pilot:SHORT
   - AR: جرّبت واحداً بالفعل. لا يعمل معي.
   - EN: I already tried one. It doesn't work on me.
+- `/DB2E68EB49C4B165C693DC848D19F707`  [Dialogue] batch2-0001
+  - AR: يسعدني أنك لا تملك أي أسئلة... ولأول مرة.
+  - EN: I'm pleased to hear you don't have any questions... for once.
+- `/736AEC0C4F5E87385FE054AB6078EBF4`  [Dialogue] batch2-0001
+  - AR: أنا فني أول.
+  - EN: I'm a senior technician.
+- `/5107DD4A4B140433CB53AF8527BE6F99`  [Dialogue] batch2-0001
+  - AR: سأناديك بما يحلو لي أيها القفاز!
+  - EN: I'll call you whatever I feel like, glove!
+- `/B5766DF24E2757BB5C5A92BA659D64FE`  [Dialogue] batch2-0001
+  - AR: ساقان حجريتان ضخمتان بلا جذع  تنتصبان في الصحراء. قربَهما، على الرمل،  وجهٌ مهشّم غارقٌ نصفه، وعبوسُه،
+  - EN: Two vast and trunkless legs of stone  Stand in the desert. Near them, on the sand,  Half sunk, a shattered visage lies, whose frown,
 
-## Chelomey_dlc3 (1 rows)
+## Chelomey_dlc3 (68 rows)
 
+- `/B8E5480041F9549A57636FBCA22AA9BC`  [Unknown] batch2-0001
+  - AR: وكيف ذلك؟
+  - EN: How so?
+- `DT_Subtitles_DLC03_Chelomey/Chelomey_93_Sentences`  [Unknown] batch2-0001
+  - AR: هيا، هيا!
+  - EN: Come on, come on!
+- `DT_Subtitles_DLC03_Chelomey/Chelomey_330_Sentences`  [Unknown] batch2-0001
+  - AR: واو!
+  - EN: Whoa!
+- `DT_Subtitles_DLC03_Chelomey/Chelomey_365_Sentences`  [Unknown] batch2-0001
+  - AR: واو!
+  - EN: Whoa!
+- `NewStringTable/Announcer`  [Unknown] label:generic speaker (batch-1 wording kept)
+  - AR: المذيع
+  - EN: Announcer
+- `NewStringTable/BabaZina`  [Unknown] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `NewStringTable/Blesna`  [Unknown] label:speaker
+  - AR: بليسنا
+  - EN: Blesna
 - `NewStringTable/Computer`  [Unknown] speaker:computer
   - AR: الحاسوب
   - EN: Computer
+- `NewStringTable/Cook`  [Unknown] label:DLC speaker
+  - AR: طباخ ميت
+  - EN: Dead cook
+- `NewStringTable/Crypton`  [Unknown] label:NewStringTable elemental
+  - AR: الكريبتون
+  - EN: Krypton
+- `NewStringTable/Dante`  [Unknown] label:NTD sign / DLC3
+  - AR: دانتي الدلفين
+  - EN: Dante the dolphin
+- `NewStringTable/DeadAgro`  [Unknown] label:DLC3 NewStringTable
+  - AR: مهندس زراعي
+  - EN: Agronomist
+- `NewStringTable/DeadDeputate`  [Unknown] label:DLC3 table
+  - AR: نائب ميت
+  - EN: Dead deputy
+- `NewStringTable/DeadDolphin`  [Unknown] label:DLC3 table
+  - AR: دلفين... ميت؟!
+  - EN: Dead... dolphin?!
+- `NewStringTable/DeadElectro`  [Unknown] label:DLC3 table
+  - AR: كهربائي ميت
+  - EN: Dead electrician
+- `NewStringTable/DeadScout`  [Unknown] label:DLC3 table
+  - AR: منقذ ميت
+  - EN: Dead rescuer
+- `NewStringTable/DeadSouth`  [Unknown] label:DLC3 table
+  - AR: أجنبي ميت
+  - EN: Dead foreigner
+- `NewStringTable/DeadTechnic`  [Unknown] label:DLC speaker
+  - AR: فني ميت
+  - EN: Dead technician
+- `NewStringTable/DeadTheDiver`  [Unknown] label:DLC3 table
+  - AR: مبرمج ميت
+  - EN: Dead debugger
+- `NewStringTable/DeadVoiceActor`  [Unknown] label:DLC3 table
+  - AR: ممثلة ميتة
+  - EN: Dead actress
+- `NewStringTable/DeadWhaler`  [Unknown] label:DLC3 table
+  - AR: عالم حيتان ميت
+  - EN: Dead whale biologist
+- `NewStringTable/Dictor`  [Unknown] label:generic speaker (batch-1 wording kept)
+  - AR: المذيع
+  - EN: Announcer
+- `NewStringTable/Dolphin_1`  [Unknown] label:DLC3 Neptune dolphin
+  - AR: الدلفين
+  - EN: Dolphin
+- `NewStringTable/Dolphin_2`  [Unknown] label:DLC3 Neptune dolphin
+  - AR: الدلفين
+  - EN: Dolphin
+- `NewStringTable/Dolphin_3`  [Unknown] label:DLC3 Neptune dolphin
+  - AR: الدلفين
+  - EN: Dolphin
+- `NewStringTable/Girl`  [Unknown] label:DLC3 NewStringTable
+  - AR: الابنة
+  - EN: Daughter
+- `NewStringTable/Hunter`  [Unknown] label:DLC3 speaker
+  - AR: الصياد
+  - EN: Hunter
+- `NewStringTable/Isaeva`  [Unknown] label:NewStringTable
+  - AR: إيسايفا
+  - EN: Isayeva
+- `NewStringTable/Kuropatkin`  [Unknown] label:NewStringTable
+  - AR: كوروباتكين
+  - EN: Kuropatkin
+- `NewStringTable/Lebedev`  [Unknown] label:Alexey Lebedev (batch-1 wording kept)
+  - AR: ليبيديف
+  - EN: Lebedev
+- `NewStringTable/Lepeshkin`  [Unknown] label:NewStringTable
+  - AR: ليبّوشكين
+  - EN: Lepyoshkin
+- `NewStringTable/Lida`  [Unknown] label:DLC3 staff (batch-1 wording kept)
+  - AR: ليدا
+  - EN: Lida
+- `NewStringTable/Lola`  [Unknown] label:DLC3 staff
+  - AR: لولا
+  - EN: Lola
+- `NewStringTable/Mother`  [Unknown] label:generic speaker (batch-1 wording kept)
+  - AR: أم
+  - EN: Mom
+- `NewStringTable/Nastya`  [Unknown] label:DLC3 staff
+  - AR: ناستيا
+  - EN: Nastya
+- `NewStringTable/Nekit`  [Unknown] label:DLC3 staff
+  - AR: نالي
+  - EN: Nale
+- `NewStringTable/Nick`  [Unknown] label:terminals / DLC3 (batch-1 wording kept)
+  - AR: نيكولاي
+  - EN: Nikolai
+- `NewStringTable/Nora`  [Unknown] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `NewStringTable/OldTech`  [Unknown] label:NewStringTable
+  - AR: ماكار كوزميتش
+  - EN: Makar Kuzmich
+- `NewStringTable/Oleg`  [Unknown] label:NewStringTable
+  - AR: أوليغ
+  - EN: Oleg
+- `NewStringTable/OrnithoGirl`  [Unknown] label:DLC3 NewStringTable
+  - AR: عالم طيور
+  - EN: Ornithologist
+- `NewStringTable/Pushkin`  [Unknown] label:poet
+  - AR: بوشكين
+  - EN: Pushkin
+- `NewStringTable/RadioWave`  [Unknown] label:DLC3 NewStringTable
+  - AR: رسالة لاسلكية
+  - EN: Radio transmission
+- `NewStringTable/Radioman`  [Unknown] label:DLC3 NewStringTable
+  - AR: مشغل الراديو
+  - EN: Radio operator
+- `NewStringTable/Radon`  [Unknown] label:NewStringTable elemental
+  - AR: الرادون
+  - EN: Radon
+- `NewStringTable/Rafik`  [Unknown] label:DLC3 robot (Rafik prototype)
+  - AR: راف-9
+  - EN: RAF-9
+- `NewStringTable/RescueSoldier`  [Unknown] label:DLC3 NewStringTable
+  - AR: المنقذ
+  - EN: Rescuer
+- `NewStringTable/RoboGirl`  [Unknown] label:speaker (batch-1 wording kept)
+  - AR: فتاة روبوت
+  - EN: Robogirl
+- `NewStringTable/Samodelkin`  [Unknown] label:DLC3 staff
+  - AR: ساموديلكين
+  - EN: Samodelkin
+- `NewStringTable/Samohin`  [Unknown] label:NewStringTable
+  - AR: ساموخين
+  - EN: Samokhin
+- `NewStringTable/Sechenov`  [Unknown] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `NewStringTable/Secretary`  [Unknown] label:DLC3 speaker
+  - AR: السكرتيرة
+  - EN: Secretary
+- `NewStringTable/Semyon`  [Unknown] label:speaker (batch-1 wording kept)
+  - AR: سيميون
+  - EN: Semyon
+- `NewStringTable/Sergeant`  [Unknown] label:DLC3 NewStringTable
+  - AR: رقيب
+  - EN: Sergeant
+- `NewStringTable/Supervisor`  [Unknown] label:DLC3 NewStringTable
+  - AR: مدير المختبر
+  - EN: Lab director
+- `NewStringTable/Svetlana`  [Unknown] label:NewStringTable
+  - AR: سفيتلانا
+  - EN: Svetlana
+- `NewStringTable/Terenty`  [Unknown] label:DLC3 staff
+  - AR: تيرينتي
+  - EN: Terentiy
+- `NewStringTable/Tereshkova`  [Unknown] label:valentina (batch-1 wording kept)
+  - AR: تيريشكوفا
+  - EN: Tereshkova
+- `NewStringTable/Tikhonov`  [Unknown] label:NewStringTable
+  - AR: تيخونوف
+  - EN: Tikhonov
+- `NewStringTable/Toilet_man`  [Unknown] label:DLC3 NewStringTable
+  - AR: رجل في الحمام
+  - EN: Man in the bathroom
+- `NewStringTable/TritonTech`  [Unknown] label:DLC3 NewStringTable
+  - AR: فني أول
+  - EN: Senior technician
+- `NewStringTable/Vadim`  [Unknown] label:DLC3 staff
+  - AR: فاديم
+  - EN: Vadim
+- `NewStringTable/Vera`  [Unknown] label:DLC3 staff (batch-1 wording kept)
+  - AR: فيرا
+  - EN: Vera
+- `NewStringTable/Vyacheslav`  [Unknown] label:NewStringTable
+  - AR: فياتشيسلاف
+  - EN: Vyacheslav
+- `NewStringTable/Walker`  [Unknown] label:DLC3 NewStringTable
+  - AR: عابر سبيل
+  - EN: Passerby
+- `NewStringTable/Warden`  [Unknown] label:DLC3 NewStringTable
+  - AR: موظف الأمن
+  - EN: Security employee
+- `NewStringTable/YoungTech`  [Unknown] label:DLC3 NewStringTable
+  - AR: فني شاب
+  - EN: Young technician
+- `NewStringTable/Zhabov`  [Unknown] label:NewStringTable
+  - AR: جابوف
+  - EN: Zhabov
 
-## ChelomeyFinal_Dialogues (46 rows)
+## ChelomeyFinal_Dialogues (79 rows)
 
 - `/01E92AAC49B560249E289AA925D77EE5`  [Dialogue] speaker:computer
   - AR: الحاسوب
@@ -2128,9 +3574,237 @@ Arabic is shown FIRST, the English source BELOW it, followed by the locres key.
 - `/F729EB894BBB0EA5E0557498E86FB3E2`  [Dialogue] speaker:char-les
   - AR: تشارلز
   - EN: Char-les
+- `/0141F4FD411AA4DF2237038D47048A80`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/170056364C3DC0A2DBAA2AB56AE7E513`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/187CD7324BB682AE10EDC081738C1828`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/1B9BBD064AB951354D66DC96042C0248`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/1CFF737C4D80EDBC8D7BB8AD8A6E29FD`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/1D7A43DF4143310AF1B7B9B0F7111210`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/373B14A44425AB28A84BD7B2F61C1791`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/3A68571442341E7CA0C83AA4EB9D81F2`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/423E98EB4CC4A79916FFFDAC4F70F45E`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/49CFE44748D6B6F9A92A01B5B382D3CF`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/4C07AF8347AAEF86A94D8E88E2A8C509`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/4D1FA8504338517E75FC219AD80D7EC5`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/54A3D900476C6517AEEA2A97673D6DAD`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/5A0025494BC642C68828D1BD68BDD883`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/60208FC4488BA8715DB133A58A4391DA`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/66A209334EA9BEDC8D5C9AB53C242640`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/674E4D86462620033B529C9CC5ADF457`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/69DB088047247B48F829328AD8847CFF`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/6BBDBE2E415E23E9A256C4A6F53DB16D`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/7243FFB645E4B5855FC24BA9FA6C8A92`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/7E04BBFF4B6E78CDCAF7EE82D39A4451`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/85B5C5FC4675623D1D13BBA0BEC6ED32`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/A6A0E34442E29E909C4C19BA249E3AF5`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/CB883D9F400E6733395CB4AEDBF798ED`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/D0CD4B614613E24FA577D790E393208E`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/D9C0CFED44993C6E6024B4AD1D5AB990`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/F7201758418FA5827895A0A773D09805`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/3A7493A9435876C8E5469E8E3D03F519`  [Dialogue] label:Limbo character (batch-1 wording kept)
+  - AR: الدمعة
+  - EN: Teardrop
+- `/47D82103449834DC43AD799313F3BFD2`  [Dialogue] label:Limbo character (batch-1 wording kept)
+  - AR: الدمعة
+  - EN: Teardrop
+- `/83732D164F899AEDC6FA22A849DF946F`  [Dialogue] label:Limbo character (batch-1 wording kept)
+  - AR: الدمعة
+  - EN: Teardrop
+- `/ABF5D3914782878C514C6794B3ECD23F`  [Dialogue] label:Limbo character (batch-1 wording kept)
+  - AR: الدمعة
+  - EN: Teardrop
+- `/AD7DFAF9408773D19F9238B636B853E2`  [Dialogue] label:Limbo character (batch-1 wording kept)
+  - AR: الدمعة
+  - EN: Teardrop
+- `/B7A5ED464CB4F2C833AC5B83D0AD43D5`  [Dialogue] label:Limbo character (batch-1 wording kept)
+  - AR: الدمعة
+  - EN: Teardrop
 
-## CUTSCENES (26 rows)
+## CrystalComplex_dlc4 (1 rows)
 
+- `DT_Subtitles_DLC4_CrystalComplex/CrystalComplex_77_Sentences`  [Unknown] batch2-0001
+  - AR: أجل، لاحظت ذلك.
+  - EN: Yeah, I noticed.
+
+## CUTSCENES (236 rows)
+
+- `/CDCEE4A9401ED51C832208B49E444CD1`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/05E2957340A48F24A87CB78DD0F84BDA`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/1799BEE34B1A31E3BC4BE192768173F6`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/19586E8648D278EBBD1EDBAC4FC6B1E1`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/1CFB106C4848609436071C891477A13B`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/28D1A9BE4DE20B1A884928B18B996BE4`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/2BC4781D44ACFF6CAD398A898EC5C2B2`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/32A146944D70F29BBBB9F6B6909B7648`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/3BB3D8ED4FE0338E8C29168F08F1F46E`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/3FA667DE4A048AFB9D99338345A9DF15`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/491700D34BBF301F203841AF6F2A236D`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/4ED79D694C420145C9F3B4A3FE057836`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/5410855249DABB1AEE1542A5115F1F68`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/5AFA0F8A4D5D8DD4EDE56F861C4ACEFA`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/5D743A794084F8C56D77B09058584197`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/5E8FD8D441E2629DFF39A398BD299AC3`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/669CECB44EFB487257D239B4D6AC6A5B`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/6A531B3D429D1B998BD52A806A06ACAD`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/7002C15543F052727E14B48659BDFFC1`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/7FF136924B17099DDA22189D347C89F8`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/80829A6A40B0D3918181C0914EC4CAB7`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/9093128447B167D4EE5BFB8115CD614A`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/945C1E984BC762AD0B8E92999D5523D4`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/9B9884C24A40CB5348A8719C84B59C6D`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/9F3FBF1A4B2DD0013A9F18BB99246DC0`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/A78C0B24483E22D7B18CA9895588B047`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/AFB81ADF44DE224052683AB3A45F9A3D`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/B02B703F45C663971F5E428AFD4ED629`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/B4F400E14BEB58AFEF6537A24FC0BA9E`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/BA2ABC5B4A1DC9082FE4958C81804C7A`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/CA13E87E498854BCDE69AAA2FCB933A6`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/CFA2971043E19F81EA44FA9E0784526B`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/D4ACFC90466BDB495852C8AA2F199D42`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/D8BC8A7545E4750916307EB02573CCE0`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/DB3089BC41CB997A3F8FE093E81B0930`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/DCB98FC04950D8D0973349B7EC14980F`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/DD7BF78843931D531B3728BD84087AB6`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/DF23E2F54AEC9209D543B1A3BAA49A87`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/E4E35F4D407CF0C941A4DDB00BB231CF`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/F22872B4457C6540D982FB8D57E3E71D`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/F4F9CA0B4A6FD22A602B05939A483958`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
 - `/69A09C54485A6BC5E3D468AD3BFD5FA7`  [Cutscene] speaker:computer
   - AR: الحاسوب
   - EN: Computer
@@ -2143,6 +3817,132 @@ Arabic is shown FIRST, the English source BELOW it, followed by the locres key.
 - `/98E5F4D14E93845135481BBA91B09FC3`  [Cutscene] speaker:computer
   - AR: الحاسوب
   - EN: Computer
+- `/4390EEDC494FBC79417C7289AD553F99`  [Cutscene] label:generic speaker (batch-1 wording kept)
+  - AR: المذيع
+  - EN: Announcer
+- `/349217AF46A160C85CB488850DE02B79`  [Cutscene] label:generic speaker (glossary wording)
+  - AR: دكتور
+  - EN: Doctor
+- `/3E03883743CE05882362978745DDA23F`  [Cutscene] label:generic speaker (glossary wording)
+  - AR: دكتور
+  - EN: Doctor
+- `/56769B914045926F589C96B7C426D753`  [Cutscene] label:generic speaker (glossary wording)
+  - AR: دكتور
+  - EN: Doctor
+- `/8090BED9447B4140B50C5A9AD16FF1E2`  [Cutscene] label:generic speaker (glossary wording)
+  - AR: دكتور
+  - EN: Doctor
+- `/A27D5EF840E4F838BFB94CB1C945B16C`  [Cutscene] label:generic speaker (glossary wording)
+  - AR: دكتور
+  - EN: Doctor
+- `/00C12FC14385F2AB4F0C1692E7E7B9E3`  [Cutscene] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/05902FF24E6901A908591F931B955DFD`  [Cutscene] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/0A35AE284985A4E4EF5DFDBB0BDA007D`  [Cutscene] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/1377454F40EAD2EF11D493A0380E7142`  [Cutscene] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/138D55A745FC68D8940BCC88C6831229`  [Cutscene] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/1BA372894E788A0BA124C5967269AAA1`  [Cutscene] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/361EA3E5493201F0B4681FADC0A56B18`  [Cutscene] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/44C035C2476DF792D17045BBAA821EF6`  [Cutscene] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/4F1C01D64FFEFA6FEDD130B8E7758A04`  [Cutscene] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/5251FC2B4919811A2C4AACBD3389A04B`  [Cutscene] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/53768C184ECCF6FE108A0496374352ED`  [Cutscene] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/6CAF8A6E42FD190102DD0C8603C0830A`  [Cutscene] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/6EC8B4B843DCA3CE4844C286583FC16D`  [Cutscene] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/7FDA69F2461FE4E667AFCAB02246AE51`  [Cutscene] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/85FAFD8244C6BF5DB9C2F1ACEE25658F`  [Cutscene] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/8E04E4634BEA68121008EFA1661FFE28`  [Cutscene] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/8F86B7C64CD4E6DDBD715F9EA9B42D91`  [Cutscene] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/9511760A4C7E023D92C9AA8F2F26BE81`  [Cutscene] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/95559D834B6D4EA19148F6969CDACE83`  [Cutscene] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/9A1E6E4344C6EDED765529AE5A8C9D33`  [Cutscene] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/A0507B334316D79B471FAAA902B71BB9`  [Cutscene] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/A3D59B374BBBB28BF8405E913947E335`  [Cutscene] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/ADD6A099485BA6386205F4962403E5BA`  [Cutscene] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/AFA539A04FCB520262E520AF107844F2`  [Cutscene] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/B0F2AC58419289757EAB35A452B3B3E1`  [Cutscene] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/BD98EF3946C018D74F55D390D60EC8A4`  [Cutscene] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/C4934DB54A181057065A35886C0AD4DD`  [Cutscene] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/C8D9EA3246B87BABC929F3B87CC683BD`  [Cutscene] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/CB13BE584F38E215E19EEA9639E14CD2`  [Cutscene] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/CF12ED9D48F96DCD72AE958ECF6719B8`  [Cutscene] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/DA6D225E4B5258900D27ECA0556C5FE7`  [Cutscene] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/E626358846C39CC6CC68D796B479EEED`  [Cutscene] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/F1181CFC4FA898823BE3959DA875103E`  [Cutscene] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/F4CDB0844AB1276314FFD9A3A293EBE0`  [Cutscene] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/FE0D91B44EDD3128B2BACC95EBA9CB56`  [Cutscene] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/FE1C14DB457E650CFD2D56B1E1EDF4DC`  [Cutscene] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
 - `/0326020B41D2260BDACCE9B91E2AC514`  [Cutscene] speaker:char-les
   - AR: تشارلز
   - EN: Char-les
@@ -2209,15 +4009,549 @@ Arabic is shown FIRST, the English source BELOW it, followed by the locres key.
 - `/FFD1AFDA4D0E8A3DC92F28B7551653D7`  [Cutscene] speaker:char-les
   - AR: تشارلز
   - EN: Char-les
+- `/88E6213B4E8238FC16FBAA83BBB7416E`  [Cutscene] label:speaker (batch-1 wording kept)
+  - AR: لاريسا
+  - EN: Larisa
+- `/B549D186438BF95093C96BB650E10FF4`  [Cutscene] label:speaker (batch-1 wording kept)
+  - AR: لاريسا
+  - EN: Larisa
+- `/17841F1E44774E1DDAA997AA792CCD85`  [Cutscene] label:Vyacheslav Molotov (batch-1 wording kept)
+  - AR: مولوتوف
+  - EN: Molotov
+- `/33831BCA4C759561FB82859D8AE1EDB8`  [Cutscene] label:Vyacheslav Molotov (batch-1 wording kept)
+  - AR: مولوتوف
+  - EN: Molotov
+- `/3C643271443AF5A1F001B291628B3F89`  [Cutscene] label:Vyacheslav Molotov (batch-1 wording kept)
+  - AR: مولوتوف
+  - EN: Molotov
+- `/596A1AAE4860928FFF7B0D904FA4B7AC`  [Cutscene] label:Vyacheslav Molotov (batch-1 wording kept)
+  - AR: مولوتوف
+  - EN: Molotov
+- `/88871EAB4A73155C25E7BCB8392C6239`  [Cutscene] label:Vyacheslav Molotov (batch-1 wording kept)
+  - AR: مولوتوف
+  - EN: Molotov
+- `/A009FA1B48007BCDC40344AF1A113202`  [Cutscene] label:Vyacheslav Molotov (batch-1 wording kept)
+  - AR: مولوتوف
+  - EN: Molotov
+- `/BE979F504A2ECBDCD60059AA9FB2AE1A`  [Cutscene] label:Vyacheslav Molotov (batch-1 wording kept)
+  - AR: مولوتوف
+  - EN: Molotov
+- `/DE6F56F74EFBC70C405380B45AB22E01`  [Cutscene] label:Vyacheslav Molotov (batch-1 wording kept)
+  - AR: مولوتوف
+  - EN: Molotov
+- `/E193596F45CB3F42656285B37E655B30`  [Cutscene] label:Vyacheslav Molotov (batch-1 wording kept)
+  - AR: مولوتوف
+  - EN: Molotov
+- `/F31DE05942E6D9262BBA75AA5F0D4E6E`  [Cutscene] label:Vyacheslav Molotov (batch-1 wording kept)
+  - AR: مولوتوف
+  - EN: Molotov
+- `/006272054A3E96709EF978803150CACF`  [Cutscene] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/06B3C1F74908A9BE0F330EBA8895FD19`  [Cutscene] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/081C478147FB3A789989C98C847F463D`  [Cutscene] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/0AC9A85E478840BBA5C624B4D4428423`  [Cutscene] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/1B5EAD324EA0650AB2CED2AB0FF9CC4E`  [Cutscene] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/1F9CB86342E2D187AB5F8EBDA6E9D8D5`  [Cutscene] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/2BA123164A60F7E6B5D775A81E90B1DD`  [Cutscene] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/3707752A4CA5C036168CBC86CF510B0E`  [Cutscene] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/3A0293254AF3D11F0AFF429E8BEFF137`  [Cutscene] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/3B1C11354B6BCAE1B502E2900188BC76`  [Cutscene] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/4A910A7F434A11888FF1E9B97E6E7EC1`  [Cutscene] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/4D37AD094F471373B5D94580027A1778`  [Cutscene] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/51EA52AF42C8F455B3EE5A8B44632BE1`  [Cutscene] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/5AB3F69E4DF17C8A6480F881FF7FC23D`  [Cutscene] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/6BC2F5EF441DD918AAD952B3EACA339B`  [Cutscene] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/74081F974425B8770EB8ECB727C05FEA`  [Cutscene] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/7D2182304DBF820ED7AE6788564A925A`  [Cutscene] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/7D61513541309602396C50B04BF008B3`  [Cutscene] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/80AED235461D856D403A11B326D4FD61`  [Cutscene] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/87445F58480098EEA1F8D2B9F1D207CA`  [Cutscene] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/8A2F7F8E43587F91012B5EA457E18A9A`  [Cutscene] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/9560DAB04BB0642BCCA7E79FC29ED178`  [Cutscene] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/C22C31EE436A33BBF367858821FE9365`  [Cutscene] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/C7C471DF4AB5C41BB1485FBC5313F820`  [Cutscene] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/C88D76334F0F4E686C78DF9588E8569E`  [Cutscene] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/CB50A5474842ED591F6428BEF3A03E18`  [Cutscene] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/D655F5CF4CE25B83F670C8A94BBFA4EC`  [Cutscene] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/D9C22E5F4F9F24B93BCEAFAEB7CDDEDB`  [Cutscene] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/EB03CA9343B49F258210408EDF4B432C`  [Cutscene] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/F5E57BD8484E2D0E049E6297C8E530D0`  [Cutscene] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/F751AD4F40B74D2534E997B2E05199EA`  [Cutscene] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/F7D9A10C43402A82B2A9E6975BA752A6`  [Cutscene] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/FD0CBE0843A6A6D2D0ECD4878FA0ACAC`  [Cutscene] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/FD9A524C48FBD2F26A5349B429B92F70`  [Cutscene] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/0153B2BC4981847187316C972894969D`  [Cutscene] label:generic speaker (batch-1 wording kept)
+  - AR: عالم
+  - EN: Scientist
+- `/1AEB7149426327C347FF79A48F29C5E1`  [Cutscene] label:generic speaker (batch-1 wording kept)
+  - AR: عالم
+  - EN: Scientist
+- `/25400726452427E4CD56CFBECC32558B`  [Cutscene] label:generic speaker (batch-1 wording kept)
+  - AR: عالم
+  - EN: Scientist
+- `/2E55742B4095E38335C9A29D02A6F636`  [Cutscene] label:generic speaker (batch-1 wording kept)
+  - AR: عالم
+  - EN: Scientist
+- `/3A4E1518401FEC00A1A212BA53034B55`  [Cutscene] label:generic speaker (batch-1 wording kept)
+  - AR: عالم
+  - EN: Scientist
+- `/419ABA5349D393358DC3639CC3F769D4`  [Cutscene] label:generic speaker (batch-1 wording kept)
+  - AR: عالم
+  - EN: Scientist
+- `/4D507BFA4B0793CDD785AAADFFA611A1`  [Cutscene] label:generic speaker (batch-1 wording kept)
+  - AR: عالم
+  - EN: Scientist
+- `/60084178439149E456D5208F0E2774FE`  [Cutscene] label:generic speaker (batch-1 wording kept)
+  - AR: عالم
+  - EN: Scientist
+- `/6CB4DEB347B8AC812DD80FBC98E1490D`  [Cutscene] label:generic speaker (batch-1 wording kept)
+  - AR: عالم
+  - EN: Scientist
+- `/7FA72B4947FA2DAEDB0E92A8D18EF5F0`  [Cutscene] label:generic speaker (batch-1 wording kept)
+  - AR: عالم
+  - EN: Scientist
+- `/9480733747429DE41DC9669661983BB2`  [Cutscene] label:generic speaker (batch-1 wording kept)
+  - AR: عالم
+  - EN: Scientist
+- `/B638ACC7467245E5DD880BAD66554BB3`  [Cutscene] label:generic speaker (batch-1 wording kept)
+  - AR: عالم
+  - EN: Scientist
+- `/B6A10E7D422B40539DBB958285E3C702`  [Cutscene] label:generic speaker (batch-1 wording kept)
+  - AR: عالم
+  - EN: Scientist
+- `/BD423F3D44369039141BC6855E190E12`  [Cutscene] label:generic speaker (batch-1 wording kept)
+  - AR: عالم
+  - EN: Scientist
+- `/C56B22E54E94A23233BA5888AE7EE62C`  [Cutscene] label:generic speaker (batch-1 wording kept)
+  - AR: عالم
+  - EN: Scientist
+- `/C6BEA6304A67B46245E649B0C7E4532B`  [Cutscene] label:generic speaker (batch-1 wording kept)
+  - AR: عالم
+  - EN: Scientist
+- `/D25613184A7F05D5F88E4B8EDDFCF9F3`  [Cutscene] label:generic speaker (batch-1 wording kept)
+  - AR: عالم
+  - EN: Scientist
+- `/E0121F624B97BEAC650956B722BB29DC`  [Cutscene] label:generic speaker (batch-1 wording kept)
+  - AR: عالم
+  - EN: Scientist
+- `/F737EAC54F252BF96E589A87A6E2CD44`  [Cutscene] label:generic speaker (batch-1 wording kept)
+  - AR: عالم
+  - EN: Scientist
+- `/0BF3A01B451406CCEBAB77BA27EAA185`  [Cutscene] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/198B527749CAC2504A63CDADA4C2D353`  [Cutscene] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/1C20709146CF75B7C4F15282077A7588`  [Cutscene] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/2B2E93804E97C84138D93D94A2C63452`  [Cutscene] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/2CA6E791490E2B2D19777B957498455A`  [Cutscene] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/31A3D6C34C2C7C58A2CF08A32771E63E`  [Cutscene] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/32E733D942FEC08178342EAAD5AB5917`  [Cutscene] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/351C8D7A4862F8CE939F22A542203DEA`  [Cutscene] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/7B0EE19542A73E3E9A5C959D804C9B06`  [Cutscene] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/7F9F616C4451053E387447AA19B67124`  [Cutscene] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/853FE1474FA7FC231E43B38C0FF5A665`  [Cutscene] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/8782955C45F950570298E4A6FA6277CD`  [Cutscene] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/8B605E3C4FFDCBDE84B2C0BD5576E410`  [Cutscene] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/9C5D903A47BD4D3ECEDAC9BCD498F52F`  [Cutscene] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/9E5036B1408BD36C3848919F3498652C`  [Cutscene] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/9E6C6B904CB2CCCE39623CB60AF85BBF`  [Cutscene] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/9EC4B55946FAFA70BEE5F9B118EE1CC6`  [Cutscene] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/A3C832EB495C14A4257213870D656B71`  [Cutscene] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/B17F1ACC489167B1C247A9BDBC7E83EF`  [Cutscene] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/B27877104719E30D2FB20FB0F87A8433`  [Cutscene] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/BF77929F457F26208758558187917054`  [Cutscene] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/C4475B034359E0976027DDA85DB149D7`  [Cutscene] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/CD7324FD47CD1ED922A4FCAF2C831976`  [Cutscene] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/D153C16F4E1F73B52701E7966E6C4B49`  [Cutscene] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/D55CA82242E7A2339CA3E68285C1F868`  [Cutscene] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/E154EF5B4A6AE78ED78F58AE1C91E730`  [Cutscene] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/0A1166044E8212B8C39304890D7D59E4`  [Cutscene] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/0A841E904BC46620DE2F488AA2F924BA`  [Cutscene] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/26A6E7A34A5C2C2C473E2F88AB6B4CA7`  [Cutscene] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/2954CE7A42D73361B20E4AA693A831CE`  [Cutscene] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/2A8502A5449D7B48E86ED0B0CB0DE85A`  [Cutscene] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/341B5CFC4DF639BD0FE652A2E9DD1DFE`  [Cutscene] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/36B9381F4C43E6748D62F5AE19AE306F`  [Cutscene] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/37D468A7410BFA7AB0314087B8C9343A`  [Cutscene] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/4E2AB93945C1E7C600D953BFB95E5769`  [Cutscene] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/6435783E45F8281B8BE1D99DF79870B9`  [Cutscene] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/6800FB924EEEB21C6EFA9C87EDF7859D`  [Cutscene] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/69BE4AB3412EAA26648D01A0B381125B`  [Cutscene] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/6C12CDD84EA28E8245700B8D56327AE3`  [Cutscene] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/7157B2CB47716848BA0AA69BD8BA57C6`  [Cutscene] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/7DE59073437AA0B0330B3E9F8D2DF490`  [Cutscene] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/87EF933445DCBD94E6A4E4916AE1A2B5`  [Cutscene] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/91AF4BB5454BEE72EEDDB0AC3778B2BA`  [Cutscene] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/BB87DDE243FC4CAF495EBDB24113F772`  [Cutscene] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/D16ACA8649BBC7AEE740D880C9832D2E`  [Cutscene] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/D8134DB74467076C7053609916EAB701`  [Cutscene] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/DC9963104F65706764D175B7C080B96B`  [Cutscene] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/E1C15FA4426BC98B49F33C8B5B7F84E8`  [Cutscene] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/E61A68CA4B599B5854F25B8921271D2B`  [Cutscene] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/24DD3BBC452A7EFC44E077866FF2E9F1`  [Cutscene] label:generic speaker
+  - AR: جندي
+  - EN: Soldier
+- `/37ED20DA4A8A3EE5CDBB7483777E7791`  [Cutscene] label:generic speaker
+  - AR: جندي
+  - EN: Soldier
+- `/48F3E8194887BDB84D01B2895D496B4F`  [Cutscene] label:generic speaker
+  - AR: جندي
+  - EN: Soldier
+- `/982148CB40E4A2CFB8E2849F0B3A4078`  [Cutscene] label:generic speaker
+  - AR: جندي
+  - EN: Soldier
+- `/A731C33D4BC903530378CCA19A6CB843`  [Cutscene] label:generic speaker
+  - AR: جندي
+  - EN: Soldier
+- `/04855FE140A10913C2EBB08A0CD0B870`  [Cutscene] label:DLC speaker
+  - AR: فتاة مجهولة
+  - EN: Unknown girl
+- `/15D4CDD54C23E065D2D336AE037F168B`  [Cutscene] label:DLC speaker
+  - AR: فتاة مجهولة
+  - EN: Unknown girl
+- `/1F601F3F449568892D532D98E8294AF9`  [Cutscene] label:DLC speaker
+  - AR: فتاة مجهولة
+  - EN: Unknown girl
+- `/433B8C3D4AA847BDFE7BEAB651CA5F08`  [Cutscene] label:DLC speaker
+  - AR: فتاة مجهولة
+  - EN: Unknown girl
+- `/7AA37A3643FF227F3D38BA878C391B57`  [Cutscene] label:DLC speaker
+  - AR: فتاة مجهولة
+  - EN: Unknown girl
+- `/B2C537C44DB941E28D096E98E2AE3E38`  [Cutscene] label:DLC speaker
+  - AR: فتاة مجهولة
+  - EN: Unknown girl
+- `/19DDB5C8497CD7DA09EF98AA9985659E`  [Cutscene] batch2-0001
+  - AR: ما الذي يجري؟
+  - EN: What's going on?
+- `/263DAA364301D8A003314BB424E20234`  [Cutscene] batch2-0001
+  - AR: ما الذي يجري؟
+  - EN: What's going on?
 
-## Cutscenes_dlc1 (1 rows)
+## Cutscenes_dlc1 (16 rows)
 
+- `All_const_dlc1_StringTable/BabaZina`  [Cutscene] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
 - `All_const_dlc1_StringTable/Computer`  [Cutscene] speaker:computer
   - AR: الحاسوب
   - EN: Computer
+- `All_const_dlc1_StringTable/ComsomolTech`  [Cutscene] label:DLC speaker
+  - AR: فني ميت
+  - EN: Dead technician
+- `All_const_dlc1_StringTable/Cook`  [Cutscene] label:DLC speaker
+  - AR: طباخ ميت
+  - EN: Dead cook
+- `All_const_dlc1_StringTable/DeadBartender`  [Cutscene] label:DLC1 table
+  - AR: ساقي ميت
+  - EN: Dead bartender
+- `All_const_dlc1_StringTable/DeadBiologist`  [Cutscene] label:DLC1 table
+  - AR: عالم أحياء ميت
+  - EN: Dead biologist
+- `All_const_dlc1_StringTable/Dictor`  [Cutscene] label:generic speaker (batch-1 wording kept)
+  - AR: المذيع
+  - EN: Announcer
+- `All_const_dlc1_StringTable/DopamineDealer`  [Cutscene] label:DLC1 speaker
+  - AR: التاجر
+  - EN: Dealer
+- `All_const_dlc1_StringTable/Goose`  [Cutscene] label:DLC1/DLC2 bird
+  - AR: الإوزة
+  - EN: Goose
+- `All_const_dlc1_StringTable/Lebedev`  [Cutscene] label:Alexey Lebedev (batch-1 wording kept)
+  - AR: ليبيديف
+  - EN: Lebedev
+- `All_const_dlc1_StringTable/Nora`  [Cutscene] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `All_const_dlc1_StringTable/Rafik`  [Cutscene] label:NPC (batch-1 wording kept)
+  - AR: رافيك
+  - EN: Rafik
+- `All_const_dlc1_StringTable/Sechenov`  [Cutscene] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `All_const_dlc1_StringTable/Twin`  [Cutscene] label:DLC1 speakers
+  - AR: التوأمان
+  - EN: Twins
+- `All_const_dlc1_StringTable/WiseScience`  [Cutscene] label:DLC speaker
+  - AR: عالم ميت
+  - EN: Dead scientist
+- `All_const_dlc1_StringTable/YoungLab`  [Cutscene] label:DLC1 table
+  - AR: فني مختبر ميت
+  - EN: Dead lab tech
 
-## DIALOGUES FOR LQA (21 rows)
+## DIALOGUES FOR LQA (68 rows)
 
+- `/27DB8A0B49C385FB76802D84A32E97E4`  [Dialogue] label:DLC speaker
+  - AR: العرّاف
+  - EN: Oracle
+- `/B3C5947547FE93BE974BFA8156227B4D`  [Dialogue] label:DLC speaker
+  - AR: رجل ميت متحدٍ
+  - EN: Defiant dead man
+- `/B7CC5CF84A1484393340178248373C6A`  [Dialogue] label:DLC speaker
+  - AR: دجاجة ميتة
+  - EN: Dead hen
+- `/2E197AAD4A89ECF84EF1369A45F797AF`  [Dialogue] label:DLC speaker
+  - AR: محاسب ميت
+  - EN: Dead accountant
+- `/44C445904BE48871F488759455E924E5`  [Dialogue] label:DLC speaker
+  - AR: رجل ميت شرير
+  - EN: Evil dead man
+- `/E7092A5E4C779A964B835BB95BD35643`  [Dialogue] label:DLC speaker (glossary wording)
+  - AR: الباليرينا الميتة
+  - EN: Dead ballerina
+- `/3BE8ED66452354664CCBEE845BDAF0D8`  [Dialogue] label:DLC speaker
+  - AR: بيروقراطي ميت
+  - EN: Dead bureaucrat
+- `/6A6B4C4E4A2B81819B3812BF7EA35D66`  [Dialogue] label:DLC speaker
+  - AR: بقرة ميتة
+  - EN: Dead moo-cow
+- `/B7C7DA5C4F31A7400BBB9F8EE66CFBCC`  [Dialogue] label:DLC speaker
+  - AR: عالم غريب ميت
+  - EN: Dead weird scientist
+- `/5DA166FC4425E87089FACD9D16280013`  [Dialogue] label:DLC speaker (glossary wording)
+  - AR: دكتور ميت
+  - EN: Dead doctor
+- `/0C1B030C426312C44E902F8406E0C420`  [Dialogue] label:DLC speaker (batch-1 wording kept)
+  - AR: مهندس ميت
+  - EN: Dead engineer
+- `/92579331450DDCE2673A7E9493445E1B`  [Dialogue] label:DLC speaker (batch-1 wording kept)
+  - AR: مهندس ميت
+  - EN: Dead engineer
+- `/BB6762514DD7944053D2AAA925FD553F`  [Dialogue] label:DLC speaker
+  - AR: بائع زهور ميت
+  - EN: Dead florist
+- `/2EF9C4424867ABB12DB687B534D04737`  [Dialogue] label:DLC speaker
+  - AR: مرشد سياحي ميت
+  - EN: Dead tour guide
+- `/A668684A412D34D034E798A3109585E2`  [Dialogue] label:DLC speaker
+  - AR: مرشد سياحي ميت
+  - EN: Dead tour guide
+- `/7212DD69402B70C7E5F0F380EEB35A59`  [Dialogue] label:DLC speaker
+  - AR: عالم أسماك ميت
+  - EN: Dead ichthyologist
+- `/851FCD60403B5EA7D9BEEF908477B7E9`  [Dialogue] label:DLC speaker
+  - AR: جثة لاستوتشكين
+  - EN: Lastochkin's corpse
+- `/4AD68AB24A9E6303E14CDAABCFF4BFD1`  [Dialogue] label:DLC speaker
+  - AR: مطور ألعاب ميت
+  - EN: Dead game developer
+- `/2C51BA9D4F7217163BE6359D80B92B4B`  [Dialogue] label:DLC speaker
+  - AR: فاشل ميت
+  - EN: Dead loser
+- `/C957D58F406EC3A1E1AEEFA1D4A74C03`  [Dialogue] label:DLC speaker
+  - AR: جثة متكلمة
+  - EN: Talking corpse
+- `/F7F0D2BB4DD1997BEBB7949103D94377`  [Dialogue] label:DLC speaker
+  - AR: جثة متكلمة
+  - EN: Talking corpse
+- `/6886D9B34E1367DEC31547B8567A9256`  [Dialogue] label:DLC speaker
+  - AR: بائعة حليب ميتة
+  - EN: Dead milkwoman
+- `/8BF0D169410C3390B4320B9E8BDF16E4`  [Dialogue] label:DLC speaker
+  - AR: بائع زهور ميت
+  - EN: Dead florist
+- `/7500FFC84608BBABD95301BB59CDC609`  [Dialogue] label:DLC speaker
+  - AR: جثة المصاب بجنون الارتياب
+  - EN: Paranoiac's corpse
+- `/821E532E427CDB51234DA78E19A74B09`  [Dialogue] label:DLC speaker
+  - AR: مزارع ميت
+  - EN: Dead farmer
+- `/7CD6EEB0445E572C90044384858E1044`  [Dialogue] label:DLC speaker
+  - AR: خنزير صغير ميت
+  - EN: Dead piggy
+- `/CBE6F324447253AC3BF190AFB047FC4E`  [Dialogue] label:DLC speaker
+  - AR: نجمة الأوبرا الميتة
+  - EN: Dead prima
+- `/7BAC65184F39E9966B60FABE5FE5BF28`  [Dialogue] label:DLC speaker
+  - AR: رومانسي ميت
+  - EN: Dead romantic
+- `/A232FCBB4E94ECDA4B672B850FABACA4`  [Dialogue] label:DLC speaker
+  - AR: عالم ميت
+  - EN: Dead scientist
+- `/0853CB6D494ED25B93296E9E9CBF3D1F`  [Dialogue] label:DLC speaker
+  - AR: جثة منتنة
+  - EN: Stinky corpse
+- `/7B14B6F64855CBC1A0F0B08A03698F26`  [Dialogue] label:DLC speaker
+  - AR: فني ميت
+  - EN: Dead technician
+- `/EC87E1A242346135C16AA9B77872F748`  [Dialogue] label:DLC speaker
+  - AR: فني ميت
+  - EN: Dead technician
+- `/1590BF2E4AD262FCB5DBB88BB05897A1`  [Dialogue] label:DLC speaker
+  - AR: جثة متكلمة
+  - EN: Talking corpse
+- `/8F20414C4E996B9CC51E8681DE2FCE69`  [Dialogue] label:DLC speaker
+  - AR: جثة متكلمة
+  - EN: Talking corpse
+- `/26F1B1CC4DF562897F524B8C113F7CD6`  [Dialogue] label:DLC speaker
+  - AR: جثة ساقطة
+  - EN: Fallen corpse
+- `/DC275ACC432AE0753131C195B02E112D`  [Dialogue] label:DLC speaker
+  - AR: جثة متكلمة نكدة
+  - EN: Cranky talking corpse
 - `/04CC45844AF861D232672AA077891EFA`  [Dialogue] speaker:char-les
   - AR: تشارلز
   - EN: Char-les
@@ -2260,6 +4594,39 @@ Arabic is shown FIRST, the English source BELOW it, followed by the locres key.
 - `/D7CDD3FB427B09588D1D4EAD13DB9C21`  [Dialogue] speaker:char-les
   - AR: تشارلز
   - EN: Char-les
+- `/C6C420AC4135EE21197098A0254B64A5`  [Dialogue] label:DLC speaker
+  - AR: جثة صموتة
+  - EN: Taciturn corpse
+- `/7292B6594A721478B635C392685D3665`  [Dialogue] label:DLC speaker
+  - AR: جثة ثرثارة
+  - EN: Chatty corpse
+- `/C733933E487E4B6A164864A9F17EE131`  [Dialogue] label:DLC speaker
+  - AR: جثة غريبة
+  - EN: Strange corpse
+- `/A2985381404D982B1E47C6A526A17D52`  [Dialogue] label:DLC speaker
+  - AR: رجل محاصر
+  - EN: Trapped man
+- `/E20C44024B4EA0ECC2EC8A911A11A94D`  [Dialogue] label:DLC speaker
+  - AR: رجل محاصر
+  - EN: Trapped man
+- `/D7A60C3F4E0B4692894CE4B249D39F7E`  [Dialogue] label:DLC speaker
+  - AR: جثة حمقاء
+  - EN: Silly corpse
+- `/E364A2DB4E6DDE7494500F8C61AE8937`  [Dialogue] label:DLC speaker
+  - AR: جثة انتحارية
+  - EN: Suicidal corpse
+- `/AFA4DD674E8E2934ECFE7A9F77DC53B8`  [Dialogue] label:DLC speaker
+  - AR: رجل غريق
+  - EN: Drowned man
+- `/19C938F4423D0C8167286A8812C7BE96`  [Dialogue] label:DLC speaker
+  - AR: جثة ثرثارة
+  - EN: Chatty corpse
+- `/EA8849714DA25AC0F5685296DFB9481A`  [Dialogue] label:DLC speaker
+  - AR: جثة ثرثارة
+  - EN: Chatty corpse
+- `/48C329E140A776D3A40414BDC4728158`  [Dialogue] label:DLC speaker
+  - AR: قائد أوركسترا ميت
+  - EN: Dead conductor
 - `/962A2FA3462F1CE524EB09B650D0C297`  [Dialogue] pilot:LONG
   - AR: *0.08*أتقول ذلك حقاً؟! أتُظهر أنيابك؟ يا له من تعبير بديع، وإن كان سوقياً. تذكّر يا فتى: *0.04*أن تنفخ صدرك وتتفاخر بالشخصية لا يعني أنك تملك تلك الشخصية فعلاً.
   - EN: *0.08*You don't say?! Are you showing your teeth? What a delightful, if plebian, expression. Remember, boy: *0.04*puffing your chest and showing off the character does not mean you are actually in possession of said character.
@@ -2282,11 +4649,509 @@ Arabic is shown FIRST, the English source BELOW it, followed by the locres key.
   - AR: *0.10*ها نحن نبدأ! اتضح أنه بسيط حقاً! هل معك قلم؟ لم أتوقّع أن يكون بهذه السهولة... *0.11*حين لا تملك إلا الأفكار، تصبح شديدة الوضوح وتتدفّق بسلاسة بالغة...
   - EN: *0.10*Here goes! Turns out it's really simple! Have you got a pen? I didn't expect it to be so easy... *0.11*When thoughts are the only things you have, they become so clear and flow so very smooth...
 
-## Locations_dlc2 (1 rows)
+## Locations_dlc2 (18 rows)
 
+- `All_Const_dlc2/Alexander_Kuznetsov`  [Dialogue] label:DLC2 mails
+  - AR: ألكسندر كوزنتسوف
+  - EN: Alexander Kuznetsov
+- `All_Const_dlc2/Argon`  [Dialogue] label:DLC2 elemental character
+  - AR: الأرجون
+  - EN: Argon
+- `All_Const_dlc2/Blesna`  [Dialogue] label:speaker
+  - AR: بليسنا
+  - EN: Blesna
+- `All_Const_dlc2/Ekaterina_Muravyova`  [Dialogue] label:DLC2 mails
+  - AR: إيكاترينا مورافيوفا
+  - EN: Ekaterina Muravyova
+- `All_Const_dlc2/Goose`  [Dialogue] label:DLC1/DLC2 bird
+  - AR: الإوزة
+  - EN: Goose
+- `All_Const_dlc2/Katusha_Nechaeva`  [Dialogue] label:DLC2 mails
+  - AR: كاتيا نيتشايفا
+  - EN: Katya Nechaeva
+- `All_Const_dlc2/Katya`  [Dialogue] label:DLC2 mails
+  - AR: كاتيا
+  - EN: Katya
+- `All_Const_dlc2/Katya_Nechaeva`  [Dialogue] label:DLC2 mails
+  - AR: كاتيا نيتشايفا
+  - EN: Katya Nechaeva
 - `All_Const_dlc2/Khraz`  [Dialogue] speaker:char-les
   - AR: تشارلز
   - EN: Char-les
+- `All_Const_dlc2/Kolobok`  [Dialogue] label:DLC2 Kolobok
+  - AR: رجل الزنجبيل
+  - EN: Gingerbread Man
+- `All_Const_dlc2/Kuznecov`  [Dialogue] label:DLC2 mails
+  - AR: كوزنتسوف
+  - EN: Kuznetsov
+- `All_Const_dlc2/Newton`  [Dialogue] label:DLC2 elemental character
+  - AR: نيوتن
+  - EN: Newton
+- `All_Const_dlc2/Plutonium`  [Dialogue] label:DLC2 elemental character
+  - AR: البلوتونيوم
+  - EN: Plutonium
+- `All_Const_dlc2/Serezha_Nechaev`  [Dialogue] label:DLC2 mails (glossary wording)
+  - AR: سيرغي نيتشاييف
+  - EN: Sergey Nechaev
+- `All_Const_dlc2/Sergey`  [Dialogue] label:DLC2 mails
+  - AR: سيرجي
+  - EN: Sergey
+- `All_Const_dlc2/Sergey_Nechaev`  [Dialogue] label:DLC2 mails (glossary wording)
+  - AR: سيرغي نيتشاييف
+  - EN: Sergey Nechaev
+- `All_Const_dlc2/S_and_E_tgr`  [Dialogue] label:DLC2 table label
+  - AR: سيرجي وإيكاترينا معاً
+  - EN: Sergey and Ekaterina together
+- `All_Const_dlc2/Zakharov`  [Dialogue] label:Chariton Zakharov (batch-1 wording kept)
+  - AR: زاخاروف
+  - EN: Zakharov
+
+## Mails_01 (65 rows)
+
+- `/83DAD93E4D092D07DCFABBBE91566B32`  [Lore] label:patronymic (batch-1 wording kept)
+  - AR: ألكسييفيتش
+  - EN: Alexeyevich
+- `/D666AFD54013E6FA2342E29F6A23A358`  [Lore] label:mail sender (batch-1 wording kept)
+  - AR: ألكسي
+  - EN: Alexey
+- `/CEFB87824DAB7C2B3701CE9ED660184D`  [Lore] label:mail sender (batch-1 wording kept)
+  - AR: آنا
+  - EN: Anna
+- `/1DB099C84C2F92A57218FB8C2E7DDB1A`  [Lore] label:mail sender (batch-1 wording kept)
+  - AR: أنطون
+  - EN: Anton
+- `/131B2FA944AE92C2324A0EAA92D15E72`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: مساعد التشخيص
+  - EN: Assistant Diagnostician
+- `/D9245A894E8B377953663495AF278189`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: مهندس أحياء
+  - EN: Bioengineer
+- `/401E27EE4C46E0B91A0768BF9A9E6BBC`  [Lore] label:mail sender (batch-1 wording kept)
+  - AR: بوريس
+  - EN: Boris
+- `/563D0A4B41405D769CE00C8488B56A0F`  [Lore] label:Nikolai Vavilov (batch-1 wording kept)
+  - AR: فافيلوف
+  - EN: Vavilov
+- `/94D5F1854E36888E1791E99E0CB224E0`  [Lore] label:DLC3 staff (batch-1 wording kept)
+  - AR: فيرا
+  - EN: Vera
+- `/690367544EED71B5F25FBB8EED43F0A4`  [Lore] label:patronymic (batch-1 wording kept)
+  - AR: فلاديميروفيتش
+  - EN: Vladimirovich
+- `/77D564B14CA35F6A64483BB3339D5788`  [Lore] label:NewStringTable + Mails (batch-1 wording kept)
+  - AR: صوت نظام الحاسوب
+  - EN: Computer System Voice
+- `/09FBEB5041D951477A14D49B388075C5`  [Lore] label:mail sender (batch-1 wording kept)
+  - AR: دانييل
+  - EN: Daniil
+- `/16E4D34B4A033C9868D415B68D13B8D8`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: أخصائي التشخيص
+  - EN: Diagnostician
+- `/4907413246F8C33B7E8EACBB2FE6A8FF`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: مدير الكافتيريا
+  - EN: Cafeteria Manager
+- `/1DEE7AAE4FD1484BF3D1EAA6345985A6`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: نائب المدير
+  - EN: Deputy Director
+- `/22004ABD495BB77AC9C5D980A7621EF5`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: مساعد المدير
+  - EN: Assistant Manager
+- `/A83C55EC4B169BDA91B48AB1FBFE73DC`  [Lore] label:Chariton Zakharov (batch-1 wording kept)
+  - AR: زاخاروف
+  - EN: Zakharov
+- `/6AA99A554B5D7C0213D9AE8BA4595DEF`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: مهندس اتصالات
+  - EN: Communication Engineer
+- `/0D2E949A4254F8FA8F22528122077EC0`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: مهندس
+  - EN: Engineer
+- `/138B1DCF4D2ECAEDC9A7C28BA268A6B8`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: لاريسا
+  - EN: Larisa
+- `/7EDCB4A04F02FC0B22F49E8CF9BB0F37`  [Lore] label:Alexey Lebedev (batch-1 wording kept)
+  - AR: ليبيديف
+  - EN: Lebedev
+- `/695162C14A5DB67045706B9E4DFC53CD`  [Lore] label:Vyacheslav Molotov (batch-1 wording kept)
+  - AR: مولوتوف
+  - EN: Molotov
+- `/ECCF79144905810C59F66ABC66C5A184`  [Lore] label:generic speaker (batch-1 wording kept)
+  - AR: المدير
+  - EN: Director
+- `/9D87AA9A470FAB887CA891A29567AEE0`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: مدير الأمن
+  - EN: Security Manager
+- `/660780064D34E28FB4B421805B3F6589`  [Lore] label:generic speaker (batch-1 wording kept)
+  - AR: مدير
+  - EN: Manager
+- `/54EA405F4E537ACAC2B6E78A74494A6E`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: مدير ورشة الجزارة
+  - EN: Butcher Workshop Manager
+- `/225BC8EA43B530C1BA825593CEF690F4`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: مدير الأمن
+  - EN: Security Manager
+- `/EFE44F884E9F67425D7C769447275F31`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: أورليكوفا
+  - EN: Orlikova
+- `/3998D0FE4D99BE8625A47F8A58264F06`  [Lore] label:Ivan Pavlov (batch-1 wording kept)
+  - AR: بافلوف
+  - EN: Pavlov
+- `/25E4AFC34CFFE7834C632291ADFE0EB9`  [Lore] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/CD1565AB4EE0DC9EE57DC58A9A477522`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: طبيب نفسي استشاري
+  - EN: Consulting Psychiatrist
+- `/879B25EC42179A039E8321BF95A5343E`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: حارس المنارة
+  - EN: Lighthouse Keeper
+- `/08ADD5C342F2094B25CE7193EE32D4D2`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: رئيس محطة التلفريك
+  - EN: Cable Car Station Master
+- `/F7606BE24D692CFA41A0FCA1F83E92FF`  [Lore] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/C99B0D1544EB2D8C64EAC89F210E3E78`  [Lore] label:Chariton Zakharov (batch-1 wording kept)
+  - AR: خاريتون
+  - EN: Chariton
+- `/682B6D504AF527B0DA55DE85C2805C2E`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: المخرج الفنّي
+  - EN: Artistic Director
+- `/A5DBEE3E4EF06F1C0D36A5A44BD186ED`  [Lore] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `Terminals_DLC1_StringTable/conseqacademy`  [Lore] label:mail/terminal place (batch-1 wording kept)
+  - AR: أكاديمية العواقب
+  - EN: Academy of Consequences
+- `Terminals_DLC1_StringTable/Alexander`  [Lore] label:mail sender / terminals (batch-1 wording kept)
+  - AR: ألكسندر
+  - EN: Alexander
+- `Terminals_DLC1_StringTable/Alexeyevich`  [Lore] label:patronymic (batch-1 wording kept)
+  - AR: ألكسييفيتش
+  - EN: Alexeyevich
+- `Terminals_DLC1_StringTable/Andreevna`  [Lore] label:patronymic (batch-1 wording kept)
+  - AR: أندرييفنا
+  - EN: Andreyevna
+- `Terminals_DLC1_StringTable/Vasilevich`  [Lore] label:patronymic (batch-1 wording kept)
+  - AR: فاسيلييفيتش
+  - EN: Vasilyevich
+- `Terminals_DLC1_StringTable/Victor`  [Lore] label:mail sender (batch-1 wording kept)
+  - AR: فيكتور
+  - EN: Viktor
+- `Terminals_DLC1_StringTable/Victorovich`  [Lore] label:patronymic (batch-1 wording kept)
+  - AR: فيكتوروفيتش
+  - EN: Viktorovich
+- `Terminals_DLC1_StringTable/HospitalPavlov`  [Lore] label:terminal place (batch-1 wording kept)
+  - AR: مستشفى مجمّع بافلوف
+  - EN: Pavlov Complex Hospital
+- `Terminals_DLC1_StringTable/Dmitry`  [Lore] label:first name (batch-1 wording kept)
+  - AR: دميتري
+  - EN: Dmitry
+- `Terminals_DLC1_StringTable/Evgeniy`  [Lore] label:mail sender (batch-1 wording kept)
+  - AR: يفغيني
+  - EN: Yevgeny
+- `Terminals_DLC1_StringTable/Evgenya`  [Lore] label:mail sender (batch-1 wording kept)
+  - AR: يفغينيا
+  - EN: Yevgenia
+- `Terminals_DLC1_StringTable/Ekaterina`  [Lore] label:mail sender (batch-1 wording kept)
+  - AR: إيكاترينا
+  - EN: Ekaterina
+- `Terminals_DLC1_StringTable/Ivan`  [Lore] label:mail sender (batch-1 wording kept)
+  - AR: إيفان
+  - EN: Ivan
+- `Terminals_DLC1_StringTable/Ilyich`  [Lore] label:patronymic (batch-1 wording kept)
+  - AR: إيليتش
+  - EN: Ilyich
+- `Terminals_DLC1_StringTable/ComplexVDNH`  [Lore] label:terminal place (batch-1 wording kept)
+  - AR: فيدنخا
+  - EN: VDNH
+- `Terminals_DLC1_StringTable/ComplexVavilov`  [Lore] label:terminal place (batch-1 wording kept)
+  - AR: مجمّع فافيلوف
+  - EN: Vavilov Complex
+- `Terminals_DLC1_StringTable/ComplexPavlov`  [Lore] label:terminal place (batch-1 wording kept)
+  - AR: مجمّع بافلوف
+  - EN: Pavlov Complex
+- `Terminals_DLC1_StringTable/ComplexChelomey`  [Lore] label:terminal place (batch-1 wording kept)
+  - AR: مجمّع تشيلومي
+  - EN: Chelomey Complex
+- `Terminals_DLC1_StringTable/np221558`  [Lore] label:terminal place (batch-1 wording kept)
+  - AR: المستوطنة #22-15-58
+  - EN: Settlement #22-15-58
+- `Terminals_DLC1_StringTable/headcomplex`  [Lore] label:generic speaker (batch-1 wording kept)
+  - AR: مدير
+  - EN: Manager
+- `Terminals_DLC1_StringTable/Nikolay`  [Lore] label:terminals / DLC3 (batch-1 wording kept)
+  - AR: نيكولاي
+  - EN: Nikolai
+- `Terminals_DLC1_StringTable/Pavel`  [Lore] label:mail sender (batch-1 wording kept)
+  - AR: بافيل
+  - EN: Pavel
+- `Terminals_DLC1_StringTable/Pavlovich`  [Lore] label:patronymic (batch-1 wording kept)
+  - AR: بافلوفيتش
+  - EN: Pavlovich
+- `Terminals_DLC1_StringTable/facility3826`  [Lore] label:terminal place (batch-1 wording kept)
+  - AR: المنشأة 3826
+  - EN: Facility 3826
+- `Terminals_DLC1_StringTable/Programmer`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: مبرمج
+  - EN: Programmer
+- `Terminals_DLC1_StringTable/Sergeevich`  [Lore] label:patronymic (batch-1 wording kept)
+  - AR: سيرغييفيتش
+  - EN: Sergeevich
+- `Terminals_DLC1_StringTable/TheatrePlesetskoy`  [Lore] label:terminal place (batch-1 wording kept)
+  - AR: مسرح مايا بليستسكايا
+  - EN: Maya Plisetskaya Theater
+- `Terminals_DLC1_StringTable/Fedor`  [Lore] label:mail sender (batch-1 wording kept)
+  - AR: فيودور
+  - EN: Fyodor
+
+## Mails_Shebetars_dlc2 (1 rows)
+
+- `DT_Subtitles_DLC02_Schebetars/Shebetars4_6_Sentences`  [Lore] batch2-0001
+  - AR: ها ها!
+  - EN: Ha ha!
+
+## Mails_Shebetars_dlc4 (35 rows)
+
+- `/BCFDCAB84A30260906223D8262B8939C`  [Lore] label:patronymic (batch-1 wording kept)
+  - AR: ألكسييفيتش
+  - EN: Alexeyevich
+- `/91C5E3A94964E51AC4C7BE851B7EB899`  [Lore] label:mail sender (batch-1 wording kept)
+  - AR: ألكسي
+  - EN: Alexey
+- `/2DBA0B034BA135C59F35E08F92A23F3F`  [Lore] label:mail sender (batch-1 wording kept)
+  - AR: آنا
+  - EN: Anna
+- `/F72E52604B09020C838E82A121B7CEC8`  [Lore] label:mail sender (batch-1 wording kept)
+  - AR: أنطون
+  - EN: Anton
+- `/C0FDE7F3452AAB55DB23CFA129F1C10A`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: مساعد التشخيص
+  - EN: Assistant Diagnostician
+- `/D7F4EE1643F2AB2F58E16994E525272D`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: مهندس أحياء
+  - EN: Bioengineer
+- `/852E96CB4F5ECFC160DFF892E8EC821B`  [Lore] label:mail sender (batch-1 wording kept)
+  - AR: بوريس
+  - EN: Boris
+- `/F1215B004D4135BE999F20BFC3D0028D`  [Lore] label:DLC3 staff (batch-1 wording kept)
+  - AR: فيرا
+  - EN: Vera
+- `/943D52F24672E217A6BAE28540A64EBD`  [Lore] label:patronymic (batch-1 wording kept)
+  - AR: فلاديميروفيتش
+  - EN: Vladimirovich
+- `/01486A8C49CB1F757C9DFE8F75A64BF9`  [Lore] label:NewStringTable + Mails (batch-1 wording kept)
+  - AR: صوت نظام الحاسوب
+  - EN: Computer System Voice
+- `/B5BF082D46C1750D8C03D88087DCC3F7`  [Lore] label:mail sender (batch-1 wording kept)
+  - AR: دانييل
+  - EN: Daniil
+- `/740B19134DC9D6E2D6E979B6E888F66E`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: أخصائي التشخيص
+  - EN: Diagnostician
+- `/239CB9D241CA8E840D1805AE53243B21`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: مدير الكافتيريا
+  - EN: Cafeteria Manager
+- `/26E5D10A4460DEEAF0C76C9AE05A5074`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: نائب المدير
+  - EN: Deputy Director
+- `/8E161DBD4AF5D3F97A3727BFBA0CC047`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: مساعد المدير
+  - EN: Assistant Manager
+- `/AA85A7704DFFDF5DAC1523A8DA12BC08`  [Lore] label:Chariton Zakharov (batch-1 wording kept)
+  - AR: زاخاروف
+  - EN: Zakharov
+- `/4E023ACF4D31C266550027AADD0E40C9`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: مهندس اتصالات
+  - EN: Communication Engineer
+- `/CA2844E545A9112F596F99ABF2181946`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: مهندس
+  - EN: Engineer
+- `/A3842B004E2A018215753F81B918C77C`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: لاريسا
+  - EN: Larisa
+- `/012EC5CA4DB1F3DE98C87CBE90A91E3C`  [Lore] label:Alexey Lebedev (batch-1 wording kept)
+  - AR: ليبيديف
+  - EN: Lebedev
+- `/3C8F5AB04238F2B2EF61DBB3F1315DA0`  [Lore] label:Vyacheslav Molotov (batch-1 wording kept)
+  - AR: مولوتوف
+  - EN: Molotov
+- `/C184E6C84E027259920E5CB109E53CCC`  [Lore] label:generic speaker (batch-1 wording kept)
+  - AR: المدير
+  - EN: Director
+- `/64E97ADA48E53BB2EB2B4AA342931DC6`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: مدير الأمن
+  - EN: Security Manager
+- `/6315345F422686988A5B0AB33B0CA2D0`  [Lore] label:generic speaker (batch-1 wording kept)
+  - AR: مدير
+  - EN: Manager
+- `/56A345D44435D419973D689EE8215037`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: مدير ورشة الجزارة
+  - EN: Butcher Workshop Manager
+- `/E573F7B5429C8D87AD2F2496BEA9BA89`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: مدير الأمن
+  - EN: Security Manager
+- `/8EB68C684B46DD6FC30AB4A9CFE8B6B6`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: أورليكوفا
+  - EN: Orlikova
+- `/0BE34C1B444BE3BBAEBFFABD5DD7A22E`  [Lore] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/53476130404EFD499A89C982520BE798`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: طبيب نفسي استشاري
+  - EN: Consulting Psychiatrist
+- `/784F4B08461BEA6312946890EFBFF3C3`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: حارس المنارة
+  - EN: Lighthouse Keeper
+- `/ADF22E314F29532B229D6E92C6B5F5D3`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: رئيس محطة التلفريك
+  - EN: Cable Car Station Master
+- `/AF1F6CF94139F8CE88308A848A77131A`  [Lore] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/3DD0EC52477D04612F9F6B882BE81E89`  [Lore] label:Chariton Zakharov (batch-1 wording kept)
+  - AR: خاريتون
+  - EN: Chariton
+- `/FEB2A9804B88338C63763999C7C70E9E`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: المخرج الفنّي
+  - EN: Artistic Director
+- `/7083312D4C13DAA445F87AB07244BFE7`  [Lore] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+
+## Mails_Shebetars_Tech_dlc3 (44 rows)
+
+- `/75CFE3034224C7989BB4F5B9BA575CE4`  [Lore] label:patronymic (batch-1 wording kept)
+  - AR: ألكسييفيتش
+  - EN: Alexeyevich
+- `/05888A3E414768EC33CFD690A685150D`  [Lore] label:mail sender (batch-1 wording kept)
+  - AR: ألكسي
+  - EN: Alexey
+- `/BBE2DA0B41A93929DB38518D9CDE8BFA`  [Lore] label:mail sender (batch-1 wording kept)
+  - AR: آنا
+  - EN: Anna
+- `/7DDD216B4185337ED41025B05356EE0D`  [Lore] label:mail sender (batch-1 wording kept)
+  - AR: أنطون
+  - EN: Anton
+- `/A92951E34372E3AA15A2DB85D6866B74`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: مساعد التشخيص
+  - EN: Assistant Diagnostician
+- `/D5B9C3684E3CF94C8689A38CE2D1190E`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: مهندس أحياء
+  - EN: Bioengineer
+- `/C4845D074A18DD5C5793A29EB78EEB20`  [Lore] label:mail sender (batch-1 wording kept)
+  - AR: بوريس
+  - EN: Boris
+- `/4615E907417DE472CDA52FA67840307E`  [Lore] label:DLC3 staff (batch-1 wording kept)
+  - AR: فيرا
+  - EN: Vera
+- `/9E63F2F24C6991A3E51C91B597DB032B`  [Lore] label:patronymic (batch-1 wording kept)
+  - AR: فلاديميروفيتش
+  - EN: Vladimirovich
+- `/7CF927DC42B960F3B3CAD1AF0D0FFDA2`  [Lore] label:NewStringTable + Mails (batch-1 wording kept)
+  - AR: صوت نظام الحاسوب
+  - EN: Computer System Voice
+- `/054ACCF347C209CC3D8B4FBB58CB6D66`  [Lore] label:mail sender (batch-1 wording kept)
+  - AR: دانييل
+  - EN: Daniil
+- `/5E5C18E44C6869E123526EB379ACAD4D`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: أخصائي التشخيص
+  - EN: Diagnostician
+- `/F5FFF1E242F4C01AA644ABBAC19A3FE6`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: مدير الكافتيريا
+  - EN: Cafeteria Manager
+- `/274DE2134AED9D4BE7370CAB2432E197`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: نائب المدير
+  - EN: Deputy Director
+- `/16DA8F4D4B228A8E12071E8DE5897BDD`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: مساعد المدير
+  - EN: Assistant Manager
+- `/E971B9984BBD6C9FD6E0DFA212B11E75`  [Lore] label:Chariton Zakharov (batch-1 wording kept)
+  - AR: زاخاروف
+  - EN: Zakharov
+- `/85E9B257425CE3C7B1DCE2B81314263E`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: مهندس اتصالات
+  - EN: Communication Engineer
+- `/53816F484C99D2A245594FAC4B05AA68`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: مهندس
+  - EN: Engineer
+- `/20BBA79E479AC6F02F9724B581ADCD91`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: لاريسا
+  - EN: Larisa
+- `/5B49B8B4447584CAEC7AF7A7A8E36E3B`  [Lore] label:Alexey Lebedev (batch-1 wording kept)
+  - AR: ليبيديف
+  - EN: Lebedev
+- `/54EB1E09460CDE6CF8B61FAA94F27D48`  [Lore] label:Vyacheslav Molotov (batch-1 wording kept)
+  - AR: مولوتوف
+  - EN: Molotov
+- `/1BB6F42F462D4ED2E4A674A682DA5794`  [Lore] label:generic speaker (batch-1 wording kept)
+  - AR: المدير
+  - EN: Director
+- `/1443FAB848E886BFF8CC8DB83D3FA472`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: مدير الأمن
+  - EN: Security Manager
+- `/7539289E4C83D2023A13A48B4BC9629D`  [Lore] label:generic speaker (batch-1 wording kept)
+  - AR: مدير
+  - EN: Manager
+- `/F9CD0DE24B10F0A603BC82B4F753BA85`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: مدير ورشة الجزارة
+  - EN: Butcher Workshop Manager
+- `/55BF8E484B7A7C3ECFED0881C39B26C8`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: مدير الأمن
+  - EN: Security Manager
+- `/52AB7D064527B3E92915D4BBEBA6E64D`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: أورليكوفا
+  - EN: Orlikova
+- `/FDF56FF542EBC49E164E43A93E4B806D`  [Lore] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/DD71714E47605464122C83819BBAAA8E`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: طبيب نفسي استشاري
+  - EN: Consulting Psychiatrist
+- `/6C7151BC48162181043406B50267DBB6`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: حارس المنارة
+  - EN: Lighthouse Keeper
+- `/F70262C040EF5E6ACD4FF987991E51A2`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: رئيس محطة التلفريك
+  - EN: Cable Car Station Master
+- `/5DBADE5F497D374E5B22CA96A5EE4F15`  [Lore] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/3CC3822145B2E89B5DCC4B9ABAAC0DDA`  [Lore] label:Chariton Zakharov (batch-1 wording kept)
+  - AR: خاريتون
+  - EN: Chariton
+- `/A1670E4F4CA11DAFF42D0AA0E850E8EF`  [Lore] label:speaker (batch-1 wording kept)
+  - AR: المخرج الفنّي
+  - EN: Artistic Director
+- `/B112815A443E098F8A8676BEDC0FB400`  [Lore] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `DT_Subtitles_DLC03_Schebetars/Chirpers_3_13_Sentences`  [Lore] batch2-0001
+  - AR: لكن ما رأيك في موضوعها يا سيميون؟
+  - EN: But what do you think it's about, Semyon?
+- `DT_Subtitles_DLC03_Schebetars/Chirpers_3_15_Sentences`  [Lore] batch2-0001
+  - AR: أنت فيلسوف يا سيميون. لكن لا تكن كئيباً هكذا. أنا واثقة أن مستقبلنا مشرق.
+  - EN: You're a philosopher, Semyon. But don't be so glum. I'm sure our future's bright.
+- `DT_Subtitles_DLC03_Schebetars/Chirpers_3_1_Sentences`  [Lore] batch2-0001
+  - AR: لا تذهبي بعد يا ليدا! أردت أن أقرأ عليك شيئاً...
+  - EN: Don't go yet, Lida! I wanted to read you something...
+- `DT_Subtitles_DLC03_Schebetars/Chirpers_3_16_Sentences`  [Lore] batch2-0001
+  - AR: هل لي أن أرافقكم؟ أنتم ذاهبون إلى ساحة المدينة لسماع خطاب الدكتور سيتشينوف، صحيح؟
+  - EN: May I join you? You're going to the town square to listen to Dr. Sechenov's speech, right?
+- `DT_Subtitles_DLC03_Schebetars/Chirpers_3_17_Sentences`  [Lore] batch2-0001
+  - AR: بالتأكيد، لنذهب.
+  - EN: Sure, let's go.
+- `DT_Subtitles_DLC03_Schebetars/Chirpers_3_14_Sentences`  [Lore] batch2-0001
+  - AR: أن لا شيء يدوم إلى الأبد. ومن المخيف النظر إلى المستقبل لأنه مجهول تماماً.
+  - EN: How nothing lasts forever. And it's terrifying to look into the future because it's utterly unknowable.
+- `DT_Subtitles_DLC03_Schebetars/Chirpers_3_12_Sentences`  [Lore] batch2-0001
+  - AR: بيرسي بيش شيلي، 1817.
+  - EN: Percy Bysshe Shelley, 1817.
+- `DT_Subtitles_DLC03_Schebetars/Chirpers_3_2_Sentences`  [Lore] batch2-0001
+  - AR: لماذا تحمرّ خجلاً يا سيميون؟
+  - EN: Why are you blushing, Semyon?
+- `DT_Subtitles_DLC03_Schebetars/Chirpers_3_11_Sentences`  [Lore] batch2-0001
+  - AR: يا لها من قصيدة مؤثرة!
+  - EN: What a striking poem!
 
 ## Misc (19 rows)
 
@@ -18347,8 +21212,89 @@ Arabic is shown FIRST, the English source BELOW it, followed by the locres key.
   - AR: سحر تحت البحر
   - EN: ENCHANTMENT UNDER THE SEA
 
-## OpenWorldVDNKh_Dialogues (42 rows)
+## NTD (1 rows)
 
+- `NTD_StringTable/RF9_2`  [Lore] label:DLC3 robot (Rafik prototype)
+  - AR: راف-9
+  - EN: RAF-9
+
+## OpenWorldVDNKh_Dialogues (91 rows)
+
+- `/E706C4BC416F618E984914B9B01AB1C0`  [Dialogue] label:DLC speaker
+  - AR: دجاجة ميتة
+  - EN: Dead hen
+- `/1EC7DF25466B0E4CCF58779CB2ECC2BB`  [Dialogue] label:DLC speaker
+  - AR: محاسب ميت
+  - EN: Dead accountant
+- `/21A5732E48C710B1479EC2839A359152`  [Dialogue] label:DLC speaker
+  - AR: بيروقراطي ميت
+  - EN: Dead bureaucrat
+- `/9B4B6AA24B6173C3D64B9BAC104C61DE`  [Dialogue] label:DLC speaker
+  - AR: بقرة ميتة
+  - EN: Dead moo-cow
+- `/929B4F534822B18BBC4BBA88BF47BF7A`  [Dialogue] label:DLC speaker
+  - AR: عالم غريب ميت
+  - EN: Dead weird scientist
+- `/90E7C43249E369D7FA452EBAEAEB7208`  [Dialogue] label:DLC speaker
+  - AR: مطور ألعاب ميت
+  - EN: Dead game developer
+- `/B476F7504727E8549A0EACB849C9BF84`  [Dialogue] label:DLC speaker
+  - AR: بائعة حليب ميتة
+  - EN: Dead milkwoman
+- `/BAAC6C154E66AE1413F90A83EAEA151A`  [Dialogue] label:DLC speaker
+  - AR: جثة المصاب بجنون الارتياب
+  - EN: Paranoiac's corpse
+- `/578120C64722A03CDACCD2A4389A22DE`  [Dialogue] label:DLC speaker
+  - AR: مزارع ميت
+  - EN: Dead farmer
+- `/FB616DFD4667F049066C3B91DBB70719`  [Dialogue] label:DLC speaker
+  - AR: خنزير صغير ميت
+  - EN: Dead piggy
+- `/FAF706684788C7B4B07FBDBB14A3AA63`  [Dialogue] label:DLC speaker
+  - AR: جثة منتنة
+  - EN: Stinky corpse
+- `/1590BF2E4AD262FCB5DBB88BB05897A1`  [Dialogue] label:DLC speaker
+  - AR: جثة متكلمة
+  - EN: Talking corpse
+- `/8F20414C4E996B9CC51E8681DE2FCE69`  [Dialogue] label:DLC speaker
+  - AR: جثة متكلمة
+  - EN: Talking corpse
+- `/3D525ED74344474E479FB497279F2D7F`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/54D4AEBE4B0E21F34727A78BA807A1F2`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/6A3CC6FE453C2D33BEE18384E7FF1ED9`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/7F9BA3794FC1EEA8B82E3E88ABF41211`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/8B1F6F5E4838B9F444C82CA620FB1CDD`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/8FFD31194C405C6634B8C28A49707F60`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/96224F634CD28F6405BEF1A48E44A10D`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/A88BC9614F68FD2F8B3299BF2AD80647`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/CE80C35B47574D56DF3618B11B1C110F`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/F14DA402450E004AC04397B8431D2B60`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/F6E1BAE24D71C8A93E38CFB39240468E`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/D5B4B3D84F224C35D377CF99A919F57A`  [Dialogue] label:DLC speaker
+  - AR: جثة ساقطة
+  - EN: Fallen corpse
 - `/0218D8E94F86A429B7B907BCD763A6B1`  [Dialogue] speaker:char-les
   - AR: تشارلز
   - EN: Char-les
@@ -18466,6 +21412,78 @@ Arabic is shown FIRST, the English source BELOW it, followed by the locres key.
 - `/F9B404B843AF4A18B8DEF5AC8591B4BB`  [Dialogue] speaker:char-les
   - AR: تشارلز
   - EN: Char-les
+- `/08D162F0462CB8C6D32DEF8561D44903`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/16551BDF44172E3B86BFFA89B64C2F15`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/23A3725D455DE6B30BCC9A997768CFA1`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/2792BB60408B7803259D959FE41CF42F`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/2F948EE344367400394B7C9B0D9A1531`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/300B75674E46B5C42C3FF5A0A23FBF39`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/467B9022431D2FD69E9B3E94F8A7664D`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/550A552C467AD7A93F445694CADD8701`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/5B1DFFAF48AB0AAB140681BCD7CFAFEB`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/758B79214FF63EEC5C119E8C4BACD4BD`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/81E723DA4E250ABC1ED2E1836657A667`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/8F86D44447B86001D16E689D3873CE7F`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/BFE28C8E4D2E53B5B827409174D22577`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/D3607E01446EE94B3D28A995AC492829`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/D855F6BD47ED1918F443DF93BE450EDF`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/DAEAE5BC4E3563979A4166845C283D61`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/DB649149409C4C0C8B27C794CDF204C9`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/E3AA015246FC867ADA001B8965BC34BB`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/E64F38A84688DC4A40F210BBF44A817C`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/EB53191144279B87AC06899A47A801D4`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/F67BF9034B59140380025ABD9CF13587`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/FD3F6A7A40D3B3AE498BB49699CC15A0`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/CDBD9DB441C8A3778336FEB5A6835BEB`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/5389DAE44C2ACACB552A11833DF391E6`  [Dialogue] label:DLC speaker
+  - AR: جثة غريبة
+  - EN: Strange corpse
 - `/14041A2D45BCEE6DB052579A48B9C8A4`  [Dialogue] pilot:LONG
   - AR: *0.08*الأمر بسيط حقاً يا رائد! قبل أربع سنوات، في عام 1951، أطلقوا في الولايات المتحدة مشروعاً طموحاً اسمه "الطاقة للجميع". *0.05*كل تلميذ يعرف ذلك! بل يجب أن تعرفه أنت أيضاً!
   - EN: *0.08*It really is simple, Major! Four years ago, in 1951, they launched an ambitious project called "Energy for everyone" in the US. *0.05*Every school kid is aware of this! This is something even you should know!
@@ -18476,7 +21494,7 @@ Arabic is shown FIRST, the English source BELOW it, followed by the locres key.
   - AR: *0.08*أنت مجرد كلب هجوم بلا عقل! منفّذ أغبى! لا تملك من الذكاء ما يكفي لفهم حتى البديهيات! *0.11*لكن لا، لن أستسلم. لن تقتلني الآن! أنا من يقود اللعبة الآن، وهذا أدائي أنا!
   - EN: *0.08*You're just a mindless attack dog! A dumb enforcer! You don't have the smarts to grasp even the obvious! *0.11*But no, I will not surrender. You won't kill me now! It is I calling the shots now, and this is my performance!
 
-## Pavlov_Dialogues (82 rows)
+## Pavlov_Dialogues (128 rows)
 
 - `/6C570E124CA0CECBC8DD498EB77EF076`  [Dialogue] speaker:computer
   - AR: الحاسوب
@@ -18484,6 +21502,99 @@ Arabic is shown FIRST, the English source BELOW it, followed by the locres key.
 - `/EB6CBC164ABD767891F0259B0FD54371`  [Dialogue] speaker:computer
   - AR: الحاسوب
   - EN: Computer
+- `/ED4B5A8E4876D911A0276EA18C08B945`  [Dialogue] label:DLC speaker
+  - AR: رجل ميت شرير
+  - EN: Evil dead man
+- `/5300C0D44AD55D8D27AE49ABD051E1DE`  [Dialogue] label:DLC speaker (glossary wording)
+  - AR: دكتور ميت
+  - EN: Dead doctor
+- `/60D36337435F51A54624F1B69A6DFA4B`  [Dialogue] label:DLC speaker
+  - AR: جثة
+  - EN: Dead body
+- `/7DA3FA214A9F6D89941182AE53D93C5C`  [Dialogue] label:DLC speaker
+  - AR: جثة
+  - EN: Dead body
+- `/9A4CCBC34332C49304EC1094CD2712A3`  [Dialogue] label:DLC speaker
+  - AR: جثة
+  - EN: Dead body
+- `/E50EF33C4E81BD90B1518182709338E5`  [Dialogue] label:DLC speaker
+  - AR: جثة
+  - EN: Dead body
+- `/2C60056041664F733BE8E8A08A2BE805`  [Dialogue] label:DLC speaker
+  - AR: جثة
+  - EN: Dead body
+- `/4294F26949E6A5E01B78F09841E98779`  [Dialogue] label:DLC speaker
+  - AR: جثة
+  - EN: Dead body
+- `/A40FA9D245CF4C3B7AFD4EA9806B714B`  [Dialogue] label:DLC speaker
+  - AR: جثة
+  - EN: Dead body
+- `/DB46B28A44CF9A3D1A9E468E7D034E98`  [Dialogue] label:DLC speaker
+  - AR: جثة
+  - EN: Dead body
+- `/DE1B24BF4055E205B6AA7284E808A00E`  [Dialogue] label:DLC speaker
+  - AR: جثة
+  - EN: Dead body
+- `/DECBB9C94AAD040D9813A9A8369896DD`  [Dialogue] label:DLC speaker
+  - AR: جثة
+  - EN: Dead body
+- `/E8210ACA4631885E63FC49B29D35A64D`  [Dialogue] label:DLC speaker
+  - AR: بائع زهور ميت
+  - EN: Dead florist
+- `/2F31602C4914F435FE94839A1F8FFBEC`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/37C898BB4ABD4FB99DB0CD8FB7033F77`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/415AC10A494AA76A0C299D8221DEBAD4`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/534B79174154AA1DEB782BA65E11EF24`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/5F542E4246A2D60D11BBB8AF623D1FA3`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/6A46549E4E4A3D8DB23E8A9EB84D8277`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/99650CAD4368EA97686AF990A921FC98`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/B301D5FC420FFAF44F640E89D3200426`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/BAC871054EB54913B0FD1BB316934BBF`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/C76AAA39421C603D39D3528CB0B02697`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/DE0F178E4AC4719749D76F9BBF0D64B0`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/FAC3FCED4C2D3C9BE5E581AF08F8767B`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/FDA077EF4E80B84E3829BE85A94389BE`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/5E979FC445B3C55FC8C10083193CC399`  [Dialogue] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/96E4CA9541C665E5F7EFD384F606C436`  [Dialogue] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/DBC3E67E4CEC70D009C103AE06D7FF5E`  [Dialogue] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/EF803EA7401373CCEC46858C371B4640`  [Dialogue] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/F487F2554750222C9719908FC421BBAA`  [Dialogue] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
 - `/02A4AD764E4667A3CE52B0AA9D1A7343`  [Dialogue] speaker:char-les
   - AR: تشارلز
   - EN: Char-les
@@ -18715,6 +21826,51 @@ Arabic is shown FIRST, the English source BELOW it, followed by the locres key.
 - `/FEA39D114E41FFB7EE4E86A12830830B`  [Dialogue] speaker:char-les
   - AR: تشارلز
   - EN: Char-les
+- `/0863ED6B4543C6AB4C962A93F03F4C93`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/1ECA5F3748CC57ADC3021598EB5479CF`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/3F2490BF4881872E304D70865B3DB26E`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/4BADD01F4F22A432DEB20CAB75F136AC`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/8C690D8D4FBA245B6376E7B55599D280`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/AC70E08D4136C9C449BAD7951C468D20`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/E648682F47E9E32C13CE9CB103514891`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/E8B41D04432728DDCE3414AE034FF90B`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/ECD93D5D4A2AA24AD98EC3A80AAF32C2`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/FD2BCB1A48FF1A58B43FE69A8D9CE151`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/26114BA448B8B402FE708D8B4921B6BA`  [Dialogue] label:Limbo character (batch-1 wording kept)
+  - AR: الدمعة
+  - EN: Teardrop
+- `/5C396780483A2A8F4751BE8D9A257949`  [Dialogue] label:Limbo character (batch-1 wording kept)
+  - AR: الدمعة
+  - EN: Teardrop
+- `/9FC2243A479D00A96BCA1F928F1F2097`  [Dialogue] label:Limbo character (batch-1 wording kept)
+  - AR: الدمعة
+  - EN: Teardrop
+- `/C1E555F74A4E6A842250BE95382B7482`  [Dialogue] label:Limbo character (batch-1 wording kept)
+  - AR: الدمعة
+  - EN: Teardrop
+- `/E0FB7A4245F80108A307E29EFBBCD711`  [Dialogue] label:Limbo character (batch-1 wording kept)
+  - AR: الدمعة
+  - EN: Teardrop
 - `/0136DBEB4EF88FFA06F2159616DE3977`  [Dialogue] pilot:LONG
   - AR: *0.08*لا أستطيع الجزم. ربما تكون المسألة مسألة راحة. أجهزة THOUGHT تحتاج إلى إعادة ضبط في كل مرة تُلبَس. *0.04*أما الخاتم فيمكن خلعه وإلباسه من جديد دون عناء.
   - EN: *0.08*I can't say for sure. Perhaps it's an issue of convenience. THOUGHT devices need to be reconfigured every time they are put on. *0.04*A ring can be taken off and put back on without inconvenience.
@@ -20474,6 +23630,30 @@ Arabic is shown FIRST, the English source BELOW it, followed by the locres key.
   - AR: *0.04*قسم التخطيط في ميدان الاختبار رقم 6 مسؤول عن:  *0.05*1. الحصول على حلول إنشاء ورش الاختبار المستقبلية ودعمها.  *0.07*2. إعداد التصاميم الإنشائية لإعادة بناء وترميم وبناء المباني الجديدة.  *0.05*3. إعداد المواصفات التصميمية والتقديرات لأعمال البناء.  *0.04*4. تحضير بيانات العمل المتعلقة بالتخطيط.
   - EN: *0.04*Testing Ground #6's Planning Department is responsible for:  *0.05*1. Obtaining and supporting solutions for the construction of future testing workshops.  *0.07*2. Producing construction designs for the reconstruction, repair, and construction of new buildings.  *0.05*3. Producing design specifications and estimates for construction jobs.  *0.04*4. Preparing planning-related statements of work.
 
+## Sakhalin_dlc3 (7 rows)
+
+- `NTD_ST_DLC3/NarrSubs_102`  [Unknown] label:speaker group (batch-1 wording kept)
+  - AR: الإدارة
+  - EN: Administration
+- `NTD_ST_DLC3/NarrSubs_87`  [Unknown] label:speaker group (batch-1 wording kept)
+  - AR: الإدارة
+  - EN: Administration
+- `NTD_ST_DLC3/NarrSubs_68`  [Unknown] label:generic speaker (batch-1 wording kept)
+  - AR: المدير
+  - EN: Director
+- `NTD_ST_DLC3/NarrSubs_80`  [Unknown] label:generic speaker (batch-1 wording kept)
+  - AR: مدير
+  - EN: Manager
+- `NTD_ST_DLC3/NarrSubs_141`  [Unknown] label:weapon named as speaker
+  - AR: بليز
+  - EN: Blaze
+- `NTD_ST_DLC3/NarrSubs_272`  [Unknown] label:DLC3 staff
+  - AR: لولا
+  - EN: Lola
+- `NTD_ST_DLC3/NarrSubs_274`  [Unknown] label:DLC3 staff
+  - AR: نالي
+  - EN: Nale
+
 ## Schebetar_Subs (3 rows)
 
 - `/A2103A53484B5DBD9475938EDC04C376`  [Subtitles] pilot:LONG
@@ -20486,14 +23666,482 @@ Arabic is shown FIRST, the English source BELOW it, followed by the locres key.
   - AR: *0.05-0.09* &Surgeon& قطنة. ركّزوا. راقبوا ذلك الشق!*0.09-0.10* &Nurse& حسناً... لحظة واحدة...*0.10-0.11* &Surgeon& ركّزوا!*0.16-0.18* &Surgeon& تبا. اضغطوا عليه، الآن!*0.22-0.25* &Surgeon& لم يتشرّبه النسيج بالبوليمر مجدداً، فأنشأ تجويفاً مرضياً.*0.26-0.32* &Surgeon& هناك عقد كهذه في كل جسده. ماذا تريد تلك الوحوش بلا قلب من الناس، هاه؟!*0.33-0.41* &Colonel& قد تكونون محقّين أيها الرفاق، لكن هذا ليس شأنكم. أدّوا عملكم. أيها الجندي، أدخل التالي.*0.42-0.43* &Private& نعم، أيها الرفيق العقيد.*0.44-0.50* &Colonel& يجب أن يتشرّب النسيج البوليمر. وإن لم يفعل، أنقذوا من تستطيعون إنقاذه...*0.51-0.53* &Colonel& ...ونظّفوا هذا المكان.
   - EN: *0.05-0.09* &Surgeon& Swab. Focus. Keep an eye on that incision!*0.09-0.10* &Nurse& Okay... just a moment...*0.10-0.11* &Surgeon& Focus!*0.16-0.18* &Surgeon& Shit. Pressure on it, now!*0.22-0.25* &Surgeon& The Polymer wasn't absorbed by the tissue again, so it created a pathological cavity.*0.26-0.32* &Surgeon& There are nodules like this all over his body. What do those heartless animals want from people, huh?!*0.33-0.41* &Colonel& You may be right, comrades, but that is not your concern. Do your jobs. Private, bring in the next one.*0.42-0.43* &Private& Yes, Comrade Colonel.*0.44-0.50* &Colonel& The Polymer needs to be absorbed. And if it's not, save whoever you can...*0.51-0.53* &Colonel& ...And clean this place up.
 
-## Tech_dlc4 (1 rows)
+## Tech_dlc2 (4 rows)
 
+- `/2176B1A94B65FF36D55DABAE30567BB2`  [Unknown] label:speaker (batch-1 wording kept)
+  - AR: راديو
+  - EN: Radio
+- `/118979E94CE230F7245696A2F8AB16D5`  [Unknown] label:DLC2 Kolobok
+  - AR: رجل الزنجبيل
+  - EN: Gingerbread Man
+- `/928B16184D4807D6CCDBEA9D2C6BED1C`  [Unknown] label:DLC2 Kolobok
+  - AR: رجل الزنجبيل
+  - EN: Gingerbread Man
+- `/FF04E5FD4E1638C19B6F809909FB9C6B`  [Unknown] label:DLC2 Kolobok
+  - AR: رجل الزنجبيل
+  - EN: Gingerbread Man
+
+## Tech_dlc3 (5 rows)
+
+- `/54BF63D74DCFA65FB0F11ABF19909708`  [Unknown] label:weapon named as speaker
+  - AR: بليز
+  - EN: Blaze
+- `/5CFF72794A1ECB431C17EB9E31F30636`  [Unknown] label:weapon named as speaker
+  - AR: بليز
+  - EN: Blaze
+- `/ABB15B614C40BC3E8B5EBC994130D24F`  [Unknown] label:weapon named as speaker
+  - AR: بليز
+  - EN: Blaze
+- `/B2EC965648849B638DBC0880842999CB`  [Unknown] label:weapon named as speaker
+  - AR: بليز
+  - EN: Blaze
+- `/6DB1CC334D27A3FD8D7D45BC56081D25`  [Unknown] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+
+## Tech_dlc4 (119 rows)
+
+- `All_Const_DLC4/Announcer`  [Unknown] label:DLC4 speaker
+  - AR: مقدم البرنامج
+  - EN: Presenter
+- `All_Const_DLC4/Audience`  [Unknown] label:DLC4 speaker
+  - AR: الجمهور
+  - EN: Audience
+- `All_Const_DLC4/BabaZina`  [Unknown] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `All_Const_DLC4/BayWatch`  [Unknown] label:DLC4 speaker
+  - AR: دورية الشاطئ
+  - EN: Shore patrol
+- `All_Const_DLC4/Blesna`  [Unknown] label:speaker
+  - AR: بليسنا
+  - EN: Blesna
+- `All_Const_DLC4/Captain`  [Unknown] label:DLC4 speaker
+  - AR: القبطان
+  - EN: Captain
 - `All_Const_DLC4/Computer`  [Unknown] speaker:computer
   - AR: الحاسوب
   - EN: Computer
+- `All_Const_DLC4/Coworker`  [Unknown] label:DLC4 speaker
+  - AR: زميل
+  - EN: Colleague
+- `All_Const_DLC4/DeadBober`  [Unknown] label:DLC4 animal
+  - AR: القندس
+  - EN: Beaver
+- `All_Const_DLC4/Dictor`  [Unknown] label:generic speaker (batch-1 wording kept)
+  - AR: المذيع
+  - EN: Announcer
+- `All_Const_DLC4/ExpertFemale`  [Unknown] label:DLC4 speaker
+  - AR: متخصصة
+  - EN: Specialist (female)
+- `All_Const_DLC4/ForeignFemCH`  [Unknown] label:DLC4 speaker
+  - AR: السيدة وينجي
+  - EN: Ms. Wenjie
+- `All_Const_DLC4/ForeignFemEN`  [Unknown] label:DLC4 speaker
+  - AR: الآنسة ديلوس
+  - EN: Miss Delos
+- `All_Const_DLC4/ForeignMaleCH`  [Unknown] label:DLC4 speaker
+  - AR: السيد مياو
+  - EN: Mr. Miao
+- `All_Const_DLC4/ForeignMaleEN`  [Unknown] label:DLC4 speaker
+  - AR: السيد تايرل
+  - EN: Mr. Tyrell
+- `All_Const_DLC4/ForeignMaleJA`  [Unknown] label:DLC4 speaker
+  - AR: السيد تاكاهاشي
+  - EN: Mr. Takahashi
+- `All_Const_DLC4/Heimsov`  [Unknown] label:DLC4 character
+  - AR: خيمسوف
+  - EN: Kheimsov
+- `All_Const_DLC4/Hunter`  [Unknown] label:DLC3 speaker
+  - AR: الصياد
+  - EN: Hunter
+- `All_Const_DLC4/Ibis`  [Unknown] label:DLC4 bird
+  - AR: أبو منجل
+  - EN: Ibis
+- `All_Const_DLC4/Izmailov`  [Unknown] label:DLC4 speaker
+  - AR: ضابط السفينة
+  - EN: Ship's officer
+- `All_Const_DLC4/KakoytoHyi`  [Unknown] label:DLC4 speaker
+  - AR: شخص مجهول
+  - EN: Unknown person
+- `All_Const_DLC4/Khraz`  [Unknown] label:uppercase variant used by DLC4 All_Const table
+  - AR: تشارلز
+  - EN: CHAR-les
+- `All_Const_DLC4/Korolev`  [Unknown] label:DLC4 character (glossary wording)
+  - AR: كوروليف
+  - EN: Korolyov
+- `All_Const_DLC4/Lebedev`  [Unknown] label:Alexey Lebedev (batch-1 wording kept)
+  - AR: ليبيديف
+  - EN: Lebedev
+- `All_Const_DLC4/Medjay`  [Unknown] label:DLC4 Egyptian guard
+  - AR: المِدْجاي
+  - EN: Medjay
+- `All_Const_DLC4/Nastya`  [Unknown] label:DLC3 staff
+  - AR: ناستيا
+  - EN: Nastya
+- `All_Const_DLC4/Nick`  [Unknown] label:nickname
+  - AR: كوليا
+  - EN: Kolya
+- `All_Const_DLC4/Nora`  [Unknown] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `All_Const_DLC4/OldSciFemale`  [Unknown] label:DLC4 speaker
+  - AR: عالم مسن
+  - EN: Elderly scientist
+- `All_Const_DLC4/Orlikova`  [Unknown] label:speaker (batch-1 wording kept)
+  - AR: أورليكوفا
+  - EN: Orlikova
+- `All_Const_DLC4/PartyDick`  [Unknown] label:DLC4 personality
+  - AR: عضو الحزب
+  - EN: Party member
+- `All_Const_DLC4/PolyAltruist`  [Unknown] label:DLC4 personality
+  - AR: الإيثاري
+  - EN: Altruist
+- `All_Const_DLC4/PolyAngry`  [Unknown] label:DLC4 personality
+  - AR: الغاضب
+  - EN: Angry one
+- `All_Const_DLC4/PolyBall`  [Unknown] label:DLC4 speaker
+  - AR: الدباغ
+  - EN: Tanner
+- `All_Const_DLC4/PolyChet`  [Unknown] label:DLC4 speaker
+  - AR: بائع الشوارب
+  - EN: Mustache salesman
+- `All_Const_DLC4/PolyCitizen1`  [Unknown] label:DLC4 personality
+  - AR: محب الحيوانات
+  - EN: Animal lover
+- `All_Const_DLC4/PolyCitizen2`  [Unknown] label:DLC4 personality
+  - AR: الفضولي
+  - EN: Curious one
+- `All_Const_DLC4/PolyCreator`  [Unknown] label:DLC4 speaker
+  - AR: الخالق
+  - EN: Creator
+- `All_Const_DLC4/PolyDayLover`  [Unknown] label:DLC4 personality
+  - AR: محب النهار
+  - EN: Day lover
+- `All_Const_DLC4/PolyDirector`  [Unknown] label:DLC4 speaker
+  - AR: مدير بوليمورف
+  - EN: Polymorph director
+- `All_Const_DLC4/PolyDreamer`  [Unknown] label:DLC4 personality
+  - AR: الحالم
+  - EN: Dreamer
+- `All_Const_DLC4/PolyEgoist`  [Unknown] label:DLC4 personality
+  - AR: الأناني
+  - EN: Egoist
+- `All_Const_DLC4/PolyFemListener`  [Unknown] label:DLC4 speaker
+  - AR: مستمعة بوليمورف
+  - EN: Polymorph listener (female)
+- `All_Const_DLC4/PolyFriend`  [Unknown] label:DLC4 speaker
+  - AR: مساعد بوليمورف
+  - EN: Polymorph assistant
+- `All_Const_DLC4/PolyGamer`  [Unknown] label:DLC4 personality
+  - AR: اللاعب
+  - EN: Gamer
+- `All_Const_DLC4/PolyInDoor`  [Unknown] label:DLC4 personality
+  - AR: المحاصر
+  - EN: Trapped one
+- `All_Const_DLC4/PolyInvisible`  [Unknown] label:DLC4 personality
+  - AR: الخفي
+  - EN: Invisible one
+- `All_Const_DLC4/PolyIwazaru`  [Unknown] label:DLC4 robot
+  - AR: إيوازارو
+  - EN: Iwazaru
+- `All_Const_DLC4/PolyKeks`  [Unknown] label:DLC4 speaker
+  - AR: فطيرة الكريمة
+  - EN: Cream pie
+- `All_Const_DLC4/PolyKikazaru`  [Unknown] label:DLC4 robot
+  - AR: كيكازارو
+  - EN: Kikazaru
+- `All_Const_DLC4/PolyLonely`  [Unknown] label:DLC4 personality
+  - AR: المنعزل
+  - EN: Loner
+- `All_Const_DLC4/PolyMaleListener`  [Unknown] label:DLC4 speaker
+  - AR: مستمع بوليمورف
+  - EN: Polymorph listener (male)
+- `All_Const_DLC4/PolyMelodist`  [Unknown] label:DLC4 personality
+  - AR: الموسيقي
+  - EN: Musician
+- `All_Const_DLC4/PolyMizaru`  [Unknown] label:DLC4 robot
+  - AR: ميزارو
+  - EN: Mizaru
+- `All_Const_DLC4/PolyMoto`  [Unknown] label:DLC4 speaker
+  - AR: دراج بوليمورف
+  - EN: Polymorph biker
+- `All_Const_DLC4/PolyMusician`  [Unknown] label:DLC4 personality
+  - AR: عازف البيانو
+  - EN: Pianist
+- `All_Const_DLC4/PolyNeelova`  [Unknown] label:DLC4 speaker
+  - AR: بوليمورف نييلوفا
+  - EN: Polymorph Neyelova
+- `All_Const_DLC4/PolyNeg`  [Unknown] label:DLC4 personality
+  - AR: المتشائم
+  - EN: Pessimist
+- `All_Const_DLC4/PolyParanoid`  [Unknown] label:DLC4 personality
+  - AR: المصاب بجنون الارتياب
+  - EN: Paranoiac
+- `All_Const_DLC4/PolyPartyman1`  [Unknown] label:DLC4 personality
+  - AR: الضيف
+  - EN: Guest
+- `All_Const_DLC4/PolyPartyman2`  [Unknown] label:DLC4 personality
+  - AR: شاب الحفلات
+  - EN: Party guy
+- `All_Const_DLC4/PolyPartyman4`  [Unknown] label:DLC4 personality
+  - AR: الراقص الجامح
+  - EN: Wild dancer
+- `All_Const_DLC4/PolyPartyman5`  [Unknown] label:DLC4 personality
+  - AR: محب الموسيقى
+  - EN: Music lover
+- `All_Const_DLC4/PolyPartyman6`  [Unknown] label:DLC4 personality
+  - AR: شاب الديسكو
+  - EN: Disco dude
+- `All_Const_DLC4/PolyPartywman3`  [Unknown] label:DLC4 personality
+  - AR: فتاة الحفلات
+  - EN: Party gal
+- `All_Const_DLC4/PolyPos`  [Unknown] label:DLC4 personality
+  - AR: المتفائل
+  - EN: Optimist
+- `All_Const_DLC4/PolyPovar`  [Unknown] label:DLC4 personality
+  - AR: الشره
+  - EN: Gourmand
+- `All_Const_DLC4/PolySad`  [Unknown] label:DLC4 personality
+  - AR: الحزين
+  - EN: Sad one
+- `All_Const_DLC4/PolySam`  [Unknown] label:DLC4 speaker
+  - AR: راكب سكوتر بوليمورف
+  - EN: Polymorph scooter rider
+- `All_Const_DLC4/PolyScared`  [Unknown] label:DLC4 personality
+  - AR: الخائف
+  - EN: Frightened one
+- `All_Const_DLC4/PolySilen`  [Unknown] label:DLC4 personality
+  - AR: الخجول
+  - EN: Wallflower
+- `All_Const_DLC4/PolySkeptic`  [Unknown] label:DLC4 personality
+  - AR: المتشكك
+  - EN: Skeptic
+- `All_Const_DLC4/PolyTeller`  [Unknown] label:DLC4 speaker
+  - AR: راوي قصص بوليمورف
+  - EN: Polymorph storyteller
+- `All_Const_DLC4/PolyVampire`  [Unknown] label:DLC4 personality
+  - AR: النائم
+  - EN: Sleeper
+- `All_Const_DLC4/PolyYogi`  [Unknown] label:DLC4 personality
+  - AR: المستنير
+  - EN: Enlightened one
+- `All_Const_DLC4/PolymorphA`  [Unknown] label:DLC4 speaker
+  - AR: فيلسوف بوليمورف
+  - EN: Polymorph philosopher
+- `All_Const_DLC4/PolymorphB`  [Unknown] label:DLC4 speaker
+  - AR: رياضي بوليمورف
+  - EN: Polymorph athlete
+- `All_Const_DLC4/PolymorphC`  [Unknown] label:DLC4 faction (glossary wording)
+  - AR: بوليمورف
+  - EN: Polymorph
+- `All_Const_DLC4/PolymorphD`  [Unknown] label:DLC4 speaker
+  - AR: ساكن بوليمورف
+  - EN: Polymorph resident
+- `All_Const_DLC4/PolymorphF`  [Unknown] label:DLC4 speaker
+  - AR: مهندس بوليمورف
+  - EN: Polymorph engineer
+- `All_Const_DLC4/PolymorphG`  [Unknown] label:DLC4 speaker
+  - AR: فني بوليمورف
+  - EN: Polymorph technician
+- `All_Const_DLC4/Pushist`  [Unknown] label:DLC4 speaker
+  - AR: كرة الصوف
+  - EN: Fluffball
+- `All_Const_DLC4/SalesMan`  [Unknown] label:DLC4 speaker
+  - AR: البائع
+  - EN: Salesman
+- `All_Const_DLC4/Sborkin`  [Unknown] label:DLC3 staff
+  - AR: ساموديلكين
+  - EN: Samodelkin
+- `All_Const_DLC4/Sechenov`  [Unknown] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `All_Const_DLC4/Secretary`  [Unknown] label:DLC3 speaker
+  - AR: السكرتيرة
+  - EN: Secretary
+- `All_Const_DLC4/ShyPolymorph`  [Unknown] label:DLC4 speaker
+  - AR: بوليمورف خجول
+  - EN: Shy polymorph
+- `All_Const_DLC4/Siviy`  [Unknown] label:DLC4 speaker
+  - AR: دوغوف
+  - EN: Dogov
+- `All_Const_DLC4/Speaker`  [Unknown] label:DLC4 speaker
+  - AR: خوسناك
+  - EN: Khosnak
+- `All_Const_DLC4/Student`  [Unknown] label:generic speaker (batch-1 wording kept)
+  - AR: طالب
+  - EN: Student
+- `All_Const_DLC4/Submariner`  [Unknown] label:DLC4 speaker
+  - AR: غواص
+  - EN: Submariner
+- `All_Const_DLC4/Terenty`  [Unknown] label:DLC3 staff
+  - AR: تيرينتي
+  - EN: Terentiy
+- `All_Const_DLC4/Tereshkova`  [Unknown] label:valentina (batch-1 wording kept)
+  - AR: تيريشكوفا
+  - EN: Tereshkova
+- `All_Const_DLC4/Vadim`  [Unknown] label:DLC3 staff
+  - AR: فاديم
+  - EN: Vadim
+- `All_Const_DLC4/Validol`  [Unknown] label:DLC4 speaker
+  - AR: فاليدول
+  - EN: Validol
+- `All_Const_DLC4/Whale`  [Unknown] label:signage mascot
+  - AR: سام الحوت
+  - EN: Sam the whale
+- `All_Const_DLC4/Zacharov`  [Unknown] label:Chariton Zakharov (batch-1 wording kept)
+  - AR: زاخاروف
+  - EN: Zakharov
+- `All_Const_DLC4/Burlak`  [Unknown] label:DLC4 speaker (batch-1 wording kept)
+  - AR: بورلاك
+  - EN: Burlak
+- `All_Const_DLC4/Dolphin`  [Unknown] label:DLC3 Neptune dolphin
+  - AR: الدلفين
+  - EN: Dolphin
+- `All_Const_DLC4/RACCOONSP`  [Unknown] label:DLC4 robot
+  - AR: راكون-إس بي
+  - EN: RACCOON-SP
+- `All_Const_DLC4/RACCOONSPSM`  [Unknown] label:DLC4 robot
+  - AR: راكون-إس بي إس إم
+  - EN: RACCOON-SP SM
+- `All_Const_DLC4/Terminal_DoctorButton`  [Unknown] label:DLC4 personality
+  - AR: السليم
+  - EN: Healthy
+- `All_Const_DLC4/Terminal_DoctorDisable_1`  [Unknown] label:DLC4 speaker
+  - AR: طبيب القلب
+  - EN: Cardiologist
+- `All_Const_DLC4/Cryopolymorph`  [Unknown] label:DLC4 faction
+  - AR: بوليمورف جليدي
+  - EN: Cryopolymorph
+- `All_Const_DLC4/StationaryGrabber`  [Unknown] label:DLC4 enemy
+  - AR: المقابض الثابت
+  - EN: Stationary Grabber
+- `All_Const_DLC4/Terminal_DoctorDisable_0`  [Unknown] label:DLC4 speaker
+  - AR: طبيب العيون
+  - EN: Ophthalmologist
+- `All_Const_DLC4/WSP9E`  [Unknown] label:DLC4 robot
+  - AR: دبليو إس بي-9إي
+  - EN: WSP-9E
+- `All_Const_DLC4/Pyropolymorph`  [Unknown] label:DLC4 faction
+  - AR: بوليمورف ناري
+  - EN: Pyropolymorph
+- `All_Const_DLC4/submarine`  [Unknown] label:DLC4 speaker
+  - AR: غواصة
+  - EN: Submarine
+- `All_Const_DLC4/Polymorph`  [Unknown] label:DLC4 faction (glossary wording)
+  - AR: بوليمورف
+  - EN: Polymorph
+- `All_Const_DLC4/Terminal_DoctorDisable_2`  [Unknown] label:DLC4 speaker
+  - AR: طبيب الأسنان
+  - EN: Dentist
+- `All_Const_DLC4/Telepolymorph`  [Unknown] label:DLC4 faction
+  - AR: بوليمورف ذهني
+  - EN: Telepolymorph
+- `All_Const_DLC4/CHARles`  [Unknown] label:uppercase variant used by DLC4 All_Const table
+  - AR: تشارلز
+  - EN: CHAR-les
+- `All_Const_DLC4/Electropolymorph`  [Unknown] label:DLC4 faction
+  - AR: بوليمورف كهربائي
+  - EN: Electropolymorph
+- `NTD_ST_DLC4/RoundNavigation_45`  [Unknown] label:speaker group (batch-1 wording kept)
+  - AR: الإدارة
+  - EN: Administration
+- `NTD_ST_DLC4/Stikers_2`  [Unknown] label:speaker group (batch-1 wording kept)
+  - AR: الإدارة
+  - EN: Administration
+- `NTD_ST_DLC4/FilmKashey_3`  [Unknown] label:DLC4 character
+  - AR: كوشتشي العائد من الموت
+  - EN: Koshchey the Revenant
+- `NTD_ST_DLC4/DoctorIcon_6`  [Unknown] label:DLC4 hint label
+  - AR: عالم نفس
+  - EN: Psychologist
+- `NTD_ST_DLC4/FasatronBoard_18`  [Unknown] label:Vladimir Chelomey (batch-1 wording kept)
+  - AR: تشيلومي
+  - EN: Chelomey
 
-## Theatre_Dialogues (36 rows)
+## Theatre_Dialogues (142 rows)
 
+- `/4DA8B677415D7220D885CBA3DB4A09D8`  [Dialogue] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/50C5796A468DD362B3B350ADC2BD1174`  [Dialogue] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/704AA6B24EC1EED7D12AA8A8B59F995C`  [Dialogue] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/98C2928A4799326BCCF72BA0BDA587D7`  [Dialogue] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/E5C8090F49DFA8700E417C890E3A86E0`  [Dialogue] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/6BDBAA1C4ACB863E87237885D07B005D`  [Dialogue] label:DLC1 ballet character (glossary wording)
+  - AR: الباليرينا
+  - EN: Ballerina
+- `/8A2133D4437680C0DE87219845EBE7EF`  [Dialogue] label:DLC1 ballet character (glossary wording)
+  - AR: الباليرينا
+  - EN: Ballerina
+- `/A6FD576F418FC201433FC98D10C357BC`  [Dialogue] label:DLC1 ballet character (glossary wording)
+  - AR: الباليرينا
+  - EN: Ballerina
+- `/B67402AF4FD2A5858F634D9A48365A15`  [Dialogue] label:DLC1 ballet character (glossary wording)
+  - AR: الباليرينا
+  - EN: Ballerina
+- `/F4A0CAEE464DEF91E156208DCE84B748`  [Dialogue] label:DLC1 ballet character (glossary wording)
+  - AR: الباليرينا
+  - EN: Ballerina
+- `/05F46FE4470730536C146D8928A905C5`  [Dialogue] label:DLC1 ballet character (glossary wording)
+  - AR: الباليرينا
+  - EN: Ballerina
+- `/344B63984C1447F808D716BAEDEE6FCA`  [Dialogue] label:DLC1 ballet character (glossary wording)
+  - AR: الباليرينا
+  - EN: Ballerina
+- `/630AEFED4C5235CFC57E299976E0A400`  [Dialogue] label:DLC1 ballet character (glossary wording)
+  - AR: الباليرينا
+  - EN: Ballerina
+- `/A8432BFE4D69C0D97A3F54993C6DCC99`  [Dialogue] label:DLC1 ballet character (glossary wording)
+  - AR: الباليرينا
+  - EN: Ballerina
+- `/6BEC0C424C735F146F39C1B8E13E4529`  [Dialogue] label:DLC speaker (glossary wording)
+  - AR: الباليرينا الميتة
+  - EN: Dead ballerina
+- `/03B36ADA409CA84DCA681F9CC10C02CB`  [Dialogue] label:DLC speaker
+  - AR: جثة لاستوتشكين
+  - EN: Lastochkin's corpse
+- `/F02D2472442B51BB82B2F589C68AEC01`  [Dialogue] label:DLC speaker
+  - AR: جثة لاستوتشكين
+  - EN: Lastochkin's corpse
+- `/000CB7A1426D125E14D064A9CABD7DAD`  [Dialogue] label:DLC speaker
+  - AR: جثة متكلمة
+  - EN: Talking corpse
+- `/1A79FFB74945D0913CE74495866BB159`  [Dialogue] label:DLC speaker
+  - AR: جثة متكلمة
+  - EN: Talking corpse
+- `/9FA739C641CDAE69AF22AA9A1EB098CC`  [Dialogue] label:DLC speaker
+  - AR: جثة متكلمة
+  - EN: Talking corpse
+- `/BEFBAEAD419D59F1315609811A6BB5C2`  [Dialogue] label:DLC speaker
+  - AR: جثة متكلمة
+  - EN: Talking corpse
+- `/C18F6A4A4735962E5A8012A81A26A0B9`  [Dialogue] label:DLC speaker
+  - AR: جثة متكلمة
+  - EN: Talking corpse
+- `/D9BC5B694FE72490FB568AAE3F9F98F9`  [Dialogue] label:DLC speaker
+  - AR: جثة متكلمة
+  - EN: Talking corpse
+- `/EF3E00B8454B9943D94637B4976BF4F8`  [Dialogue] label:DLC speaker
+  - AR: جثة متكلمة
+  - EN: Talking corpse
+- `/15C955324869A94678D3F8B958A38AFA`  [Dialogue] label:DLC speaker
+  - AR: نجمة الأوبرا الميتة
+  - EN: Dead prima
+- `/5BB6456E4DED1DA80FFA5B897576B873`  [Dialogue] label:DLC speaker
+  - AR: جثة
+  - EN: Dead body
+- `/ABA86BDC4F292F324C20779B26999B65`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
 - `/2C9DA1064BF1BAE3D16B448AC34EBF99`  [Dialogue] speaker:char-les
   - AR: تشارلز
   - EN: Char-les
@@ -20590,6 +24238,240 @@ Arabic is shown FIRST, the English source BELOW it, followed by the locres key.
 - `/FEBA774B4E57F10C577F56B5BF17C0B8`  [Dialogue] speaker:char-les
   - AR: تشارلز
   - EN: Char-les
+- `/D9335F284CF0D94D0BAAD386D87E72D9`  [Dialogue] label:Vyacheslav Molotov (batch-1 wording kept)
+  - AR: مولوتوف
+  - EN: Molotov
+- `/101C36514D7789FD1043B59288637251`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/13DA974E485C3142327376B8494CA383`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/172D69E34E651CF25D6CEFB105740918`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/28C4B2124CB1808A4C1316BC7D7FB2E3`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/2A158CAD4F25EE4EFF4BD6B9F140C589`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/30D062764BA0B48FCE7CA3A28631A2D1`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/310A47764534B32A2D45E99B4B43DCAB`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/345BF4D04D71B3A6C84D759536AAB20D`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/37E872C84872CCA5632327880029EAFA`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/429045FE465B4A7415863CB76F969957`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/4D35EAF64DD9C7E0C2442193105766B4`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/4FE97179445EFE7FAE3710991441B63A`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/521AE6D24C915065C19B0292827B6BB4`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/529ED6964D102E9CCCA847A9A89EEC6E`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/5B0A22F24F2A0FCCC0F4238929D6DDFF`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/5E6E911C45C388D522B043AFCD304E3F`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/665C1BAD496A291B01DC32B168EB35C1`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/6B89ECD14BC53E8D40A10092EEC93B65`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/6FC6A22E4F87A1027449F79A8CE6AEA6`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/721B7BB9489679585E941ABF2B76480B`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/7866297349D99B037E30BB9877E51267`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/82C779D54AD7E0A4DCE13ABC5F7E80BB`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/841ED856453D835A3EC4CFAB5F44EE2C`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/9BF722564E5C16AB229434876D684E20`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/9C05646647947912FBB7D884B2C38EC2`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/9D661ED34EC0001836D1CF953FD4EFB7`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/A20A54EF4FBDCBD9914738A4DBB2CDAE`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/C912FBE84DB0726433692C82107A7E3A`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/D58D69A2495C87E9ADCCDCB63A6ED1DA`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/D9F92DB84EBCB520839BF190E3E2DD10`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/EBCC0A1144959D58F38A0F828A2E910B`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/F1F0E9644BE72896DE7C259E9E9A2BD6`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/F41C99824EEE43F17AE5228126C969CD`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/FA4F99174F8A5BA485084B8B25D01233`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/FEAA53574D71A2BB67AB588345825750`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/2449E7DA4D880C8B930AB5BF18A80DF0`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/6C3AB6CE4EE90C78CB8D439705A9C9E9`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/ABFC06BF49E693ADC5E84084220F465F`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/AFC1D60D43CE7236FA2A5098E292DC4C`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/BB17B3EA4ACCC72B1D1F02B7732B93B8`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/C455EF834C569BEE1FBE3EABADEA3341`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/F772E6274B222022715949BF5AF3A0E2`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/033D33954344DF5854B26FA68922C597`  [Dialogue] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/06DDD19E47CA8C541D4BAD9B11592F18`  [Dialogue] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/2A2F948A4EA8FA4461A81B9723826D53`  [Dialogue] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/52A127A047F19F300CC218B4ADBD85B3`  [Dialogue] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/93FEF9A5449F4397A3BECF887E68DD02`  [Dialogue] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/B8C95E1945FC29521021E98DD60493CC`  [Dialogue] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/C396EF5A49A9DD28E39CCAB9C067D941`  [Dialogue] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/CB7A104A4C69A23D47A0CC8A436BF09E`  [Dialogue] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/ED734376488B8FC55B3500BA31E00E51`  [Dialogue] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/01A883A743F6038EFBA17B8089D9C26D`  [Dialogue] label:DLC1 ballet character (glossary wording)
+  - AR: الباليرينا
+  - EN: Ballerina
+- `/0A998C164FF8903A887EBFB52DB120A2`  [Dialogue] label:DLC1 ballet character (glossary wording)
+  - AR: الباليرينا
+  - EN: Ballerina
+- `/13FEA5A2415B9634C0563F92050DB074`  [Dialogue] label:DLC1 ballet character (glossary wording)
+  - AR: الباليرينا
+  - EN: Ballerina
+- `/22857225463B9F2C31ACE9B2BB9E2F21`  [Dialogue] label:DLC1 ballet character (glossary wording)
+  - AR: الباليرينا
+  - EN: Ballerina
+- `/2810D7A4418D4139611BE884DB8C93F2`  [Dialogue] label:DLC1 ballet character (glossary wording)
+  - AR: الباليرينا
+  - EN: Ballerina
+- `/29268AFF41DD2171B43A6E8DD0F5BB60`  [Dialogue] label:DLC1 ballet character (glossary wording)
+  - AR: الباليرينا
+  - EN: Ballerina
+- `/31F091E14DD9192542AB119EF187859B`  [Dialogue] label:DLC1 ballet character (glossary wording)
+  - AR: الباليرينا
+  - EN: Ballerina
+- `/366D2F194B2ADE65FAE58098D4B249EE`  [Dialogue] label:DLC1 ballet character (glossary wording)
+  - AR: الباليرينا
+  - EN: Ballerina
+- `/3963F2CD4582911276F0EF83E18A853A`  [Dialogue] label:DLC1 ballet character (glossary wording)
+  - AR: الباليرينا
+  - EN: Ballerina
+- `/3AEF81C34032482A90E0F880FCBF1183`  [Dialogue] label:DLC1 ballet character (glossary wording)
+  - AR: الباليرينا
+  - EN: Ballerina
+- `/3BA92A5943FEB0243A8C73A3DB5EB3EE`  [Dialogue] label:DLC1 ballet character (glossary wording)
+  - AR: الباليرينا
+  - EN: Ballerina
+- `/4C956EB24835704F177965A6ED4E2D33`  [Dialogue] label:DLC1 ballet character (glossary wording)
+  - AR: الباليرينا
+  - EN: Ballerina
+- `/5A9B565A433960044FB068915F98FA17`  [Dialogue] label:DLC1 ballet character (glossary wording)
+  - AR: الباليرينا
+  - EN: Ballerina
+- `/909A05C7403D9F3C1386CDBEE3738C29`  [Dialogue] label:DLC1 ballet character (glossary wording)
+  - AR: الباليرينا
+  - EN: Ballerina
+- `/963F65CC4B830978CF6C4EB16A01E96D`  [Dialogue] label:DLC1 ballet character (glossary wording)
+  - AR: الباليرينا
+  - EN: Ballerina
+- `/969BABE641FE75074B4305AA259F4ECD`  [Dialogue] label:DLC1 ballet character (glossary wording)
+  - AR: الباليرينا
+  - EN: Ballerina
+- `/973442254EED32C151E5ACA4BC334BDF`  [Dialogue] label:DLC1 ballet character (glossary wording)
+  - AR: الباليرينا
+  - EN: Ballerina
+- `/9A7C51ED4CDD074C488980A44D89312B`  [Dialogue] label:DLC1 ballet character (glossary wording)
+  - AR: الباليرينا
+  - EN: Ballerina
+- `/9D8FCC21434033638120549297BE2354`  [Dialogue] label:DLC1 ballet character (glossary wording)
+  - AR: الباليرينا
+  - EN: Ballerina
+- `/AEEA904147906C10BACC02A4D2FE145F`  [Dialogue] label:DLC1 ballet character (glossary wording)
+  - AR: الباليرينا
+  - EN: Ballerina
+- `/B27C57514A3015882CC2D387CEB146DF`  [Dialogue] label:DLC1 ballet character (glossary wording)
+  - AR: الباليرينا
+  - EN: Ballerina
+- `/B9640D784E0D1E6C3D5EAF9AF8090588`  [Dialogue] label:DLC1 ballet character (glossary wording)
+  - AR: الباليرينا
+  - EN: Ballerina
+- `/BB6C64D24978DBDC0819DBBAB6D9165F`  [Dialogue] label:DLC1 ballet character (glossary wording)
+  - AR: الباليرينا
+  - EN: Ballerina
+- `/C9E1218041944AC58D6A6DBB1D70BE2E`  [Dialogue] label:DLC1 ballet character (glossary wording)
+  - AR: الباليرينا
+  - EN: Ballerina
+- `/DC99601A4BFBBFDE12A888AAB8FDCE8F`  [Dialogue] label:DLC1 ballet character (glossary wording)
+  - AR: الباليرينا
+  - EN: Ballerina
+- `/E20A071C45A0C7574226B385D3A45E5B`  [Dialogue] label:DLC1 ballet character (glossary wording)
+  - AR: الباليرينا
+  - EN: Ballerina
 - `/91F1F452494D3BB13A0069B270383D0F`  [Dialogue] pilot:SHORT
   - AR: أتريد أن تفهمك الآلة يا رائد؟
   - EN: Do you want the machine to understand you, Major?
@@ -20602,9 +24484,60 @@ Arabic is shown FIRST, the English source BELOW it, followed by the locres key.
 - `/4C5FCB964ED524A6379E6A9923298A17`  [Dialogue] pilot:SHORT
   - AR: هل تقرّر أنت ما تفعل، أم يُقرَّر ذلك نيابة عنك؟
   - EN: Do you decide what to do, or is it decided for you?
+- `/D6E3A31F41F39B2A3C6E849F6927BABE`  [Dialogue] batch2-0001
+  - AR: أجل، لاحظت ذلك.
+  - EN: Yeah, I noticed.
 
-## Vavilov_Dialogues (379 rows)
+## Vavilov_Dialogues (629 rows)
 
+- `/06F5F2F6495CCB972729DEB60A711508`  [Dialogue] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/089E73294F6A708C2B4E8890AF778C47`  [Dialogue] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/2A99EBE6478B6980ED2C7EB009A7DF2B`  [Dialogue] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/4884E71D47375AF0771A90B3537D5762`  [Dialogue] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/51E80BB041EC4F0A377C218E5977D2E7`  [Dialogue] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/96431058429CD32974B90F9B1243D865`  [Dialogue] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/A7D6077C455728873A641DB243A8F3B6`  [Dialogue] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/CC190F7E45C42DC16CD42C8BA9E7B754`  [Dialogue] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/CE898AF142DE25DE418B31BC5B962E8A`  [Dialogue] label:Granny Zina (batch-1 wording kept)
+  - AR: الجدة زينا
+  - EN: Granny Zina
+- `/2055B1EC4338B7072A23A6BE7127D8AB`  [Dialogue] label:Vladimir Chelomey (batch-1 wording kept)
+  - AR: تشيلومي
+  - EN: Chelomey
+- `/247BC5744C7C934F6BD4FF84B3AE59A2`  [Dialogue] label:Vladimir Chelomey (batch-1 wording kept)
+  - AR: تشيلومي
+  - EN: Chelomey
+- `/69048FD747B325E6C6C0C9AB178EF84E`  [Dialogue] label:Vladimir Chelomey (batch-1 wording kept)
+  - AR: تشيلومي
+  - EN: Chelomey
+- `/701F2E0342E2CABAEE19E892336E6B2A`  [Dialogue] label:Vladimir Chelomey (batch-1 wording kept)
+  - AR: تشيلومي
+  - EN: Chelomey
+- `/858C6F544F5850175216E496CEACB490`  [Dialogue] label:Vladimir Chelomey (batch-1 wording kept)
+  - AR: تشيلومي
+  - EN: Chelomey
+- `/BAAAD7454D736AA33E89E09C29329E2D`  [Dialogue] label:Vladimir Chelomey (batch-1 wording kept)
+  - AR: تشيلومي
+  - EN: Chelomey
+- `/BAD1C5534BF394C0A397A7A7FB80D556`  [Dialogue] label:Vladimir Chelomey (batch-1 wording kept)
+  - AR: تشيلومي
+  - EN: Chelomey
 - `/0435D0F44A46A4761201A4B90B869D10`  [Dialogue] speaker:computer
   - AR: الحاسوب
   - EN: Computer
@@ -20836,6 +24769,336 @@ Arabic is shown FIRST, the English source BELOW it, followed by the locres key.
 - `/FFB6A2C6439CD4BBC20809AB59C1F565`  [Dialogue] speaker:computer
   - AR: الحاسوب
   - EN: Computer
+- `/2F96B7E04EA4BCB13762F69D1BFF35B1`  [Dialogue] label:DLC speaker
+  - AR: بائع زهور ميت
+  - EN: Dead florist
+- `/213D3D97435654FF0D1ECAB29A101D82`  [Dialogue] label:DLC speaker
+  - AR: فاشل ميت
+  - EN: Dead loser
+- `/573FA4CB4A56563F32B8ED843D75D829`  [Dialogue] label:DLC speaker
+  - AR: رجل ميت يتكلم
+  - EN: Talking dead man
+- `/732A95B04569C554F557AE811D370DF3`  [Dialogue] label:DLC speaker
+  - AR: رجل ميت يتكلم
+  - EN: Talking dead man
+- `/8C1562DF42C7EB27FF1AC9815CE3047E`  [Dialogue] label:DLC speaker
+  - AR: رجل ميت يتكلم
+  - EN: Talking dead man
+- `/AC16101F4B3C7927881CA3BECF624852`  [Dialogue] label:DLC speaker
+  - AR: رجل ميت يتكلم
+  - EN: Talking dead man
+- `/49D69B9B4DB01EBAD34FC3B5D9FFEE8F`  [Dialogue] label:DLC speaker
+  - AR: رجل ميت يتكلم
+  - EN: Talking dead man
+- `/7A12CE514540B13105E569A558C7C78D`  [Dialogue] label:DLC speaker
+  - AR: رجل ميت يتكلم
+  - EN: Talking dead man
+- `/849EA8A0462F61A5C2E341887B061A85`  [Dialogue] label:DLC speaker
+  - AR: رجل ميت يتكلم
+  - EN: Talking dead man
+- `/896F420B46FF943BE45BD7A81DDB2B11`  [Dialogue] label:DLC speaker
+  - AR: رجل ميت يتكلم
+  - EN: Talking dead man
+- `/9F49099B4EA09FACA51228B35BC4FAD2`  [Dialogue] label:DLC speaker
+  - AR: رجل ميت يتكلم
+  - EN: Talking dead man
+- `/13A402B747788D61AD8A59B31BEA151A`  [Dialogue] label:DLC speaker
+  - AR: رجل ميت يتكلم
+  - EN: Talking dead man
+- `/3D254E454E8377275A1EEC960D6412A3`  [Dialogue] label:DLC speaker
+  - AR: رجل ميت يتكلم
+  - EN: Talking dead man
+- `/A1532A6E421415709CA2208AA1DDCEA4`  [Dialogue] label:DLC speaker
+  - AR: رجل ميت يتكلم
+  - EN: Talking dead man
+- `/D430CE2A49B09437273DCFB3C8D829B3`  [Dialogue] label:DLC speaker
+  - AR: رجل ميت يتكلم
+  - EN: Talking dead man
+- `/FEC51B8149FBFCD71FB064A61B4B97DB`  [Dialogue] label:DLC speaker
+  - AR: رجل ميت يتكلم
+  - EN: Talking dead man
+- `/15D2290D4006E19A5BFD07BAADCED317`  [Dialogue] label:DLC speaker
+  - AR: رجل ميت يتكلم
+  - EN: Talking dead man
+- `/16A8DB484CAEB993BEFA91A82D8976C5`  [Dialogue] label:DLC speaker
+  - AR: رجل ميت يتكلم
+  - EN: Talking dead man
+- `/229E1C0D47CF25A7C1F5DE820E7F693F`  [Dialogue] label:DLC speaker
+  - AR: رجل ميت يتكلم
+  - EN: Talking dead man
+- `/7594BF6146D4480E55677CB71709B285`  [Dialogue] label:DLC speaker
+  - AR: رجل ميت يتكلم
+  - EN: Talking dead man
+- `/A1A0D3A0473642722E27F0B22CEC31A5`  [Dialogue] label:DLC speaker
+  - AR: رجل ميت يتكلم
+  - EN: Talking dead man
+- `/096723494FE4C97A610EEF9FCFDADDE4`  [Dialogue] label:DLC speaker
+  - AR: رجل ميت يتكلم
+  - EN: Talking dead man
+- `/1811AC4540DACC597F8D1AAF16AD7484`  [Dialogue] label:DLC speaker
+  - AR: رجل ميت يتكلم
+  - EN: Talking dead man
+- `/51C5FB5F45DC8CA8A36C9B99B6EA2361`  [Dialogue] label:DLC speaker
+  - AR: رجل ميت يتكلم
+  - EN: Talking dead man
+- `/E0B9B0EA467DF38CA92912B422964668`  [Dialogue] label:DLC speaker
+  - AR: رجل ميت يتكلم
+  - EN: Talking dead man
+- `/2341009A4A395349A7382BBF627D3F6E`  [Dialogue] label:DLC speaker
+  - AR: رجل ميت يتكلم
+  - EN: Talking dead man
+- `/51AFA4354F37D2257CC517861FEB7A89`  [Dialogue] label:DLC speaker
+  - AR: رجل ميت يتكلم
+  - EN: Talking dead man
+- `/C19203EB4BA3ABF56A51EC97476CF264`  [Dialogue] label:DLC speaker
+  - AR: رجل ميت يتكلم
+  - EN: Talking dead man
+- `/C9B4098245B8FD2995EB4E8C76B1C3B4`  [Dialogue] label:DLC speaker
+  - AR: رجل ميت يتكلم
+  - EN: Talking dead man
+- `/F56601AC489E0116E8D21F89B04F5323`  [Dialogue] label:DLC speaker
+  - AR: رجل ميت يتكلم
+  - EN: Talking dead man
+- `/C6381E7E49F1735C4F014E9BB29B70DA`  [Dialogue] label:DLC speaker
+  - AR: رومانسي ميت
+  - EN: Dead romantic
+- `/76A73C0E49287D7E445A60A2E45D45EF`  [Dialogue] label:DLC speaker
+  - AR: عالم ميت
+  - EN: Dead scientist
+- `/C982363C4EBEEBC8105C32918388FB04`  [Dialogue] label:DLC speaker
+  - AR: فني ميت
+  - EN: Dead technician
+- `/21BF9EEB4B6EA994BCFD3D9539CF0BA2`  [Dialogue] label:DLC speaker
+  - AR: فني ميت
+  - EN: Dead technician
+- `/0022FF8A482E068AD484779D9287E10A`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/0224E015496F4E4E676A5B8DABE8CD42`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/06D4EA36411EB5C3264344828432C327`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/0790AFDA439667BC842718B37801601B`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/07D5518446E2D64404C775B957BEB4DA`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/0A9FA6B34B0492FD2CBFB0845B84EA31`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/120791D84ECDDBDC0FC3E4BBBF6615C3`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/12353E10481206B7200E498F770E097A`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/12A3207748A30C8BFEF81397821880CF`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/19007A284027E6D285FCF2AE1D5DBEDF`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/1C315DBE45367F2083B53E8FB1232887`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/1F8BE5A94A6FD958753AFA9919844FF5`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/23CCFC4246EF6F7F84A66C83DC9330B1`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/268B2BF4408294E4311A99A724F30350`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/2B8C6AA84F84A2EBFEE82098514A1262`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/2C289A8B45E1B230F8F25DA62C4C9D1F`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/39DDC5EF4744917561A32B9538595A0F`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/3CC3EF3F4FD726DDF5E611B5BC15DA3F`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/408095944B7B644815BA11B42A0F7A05`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/45294AA945396DCC9540C3943210F028`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/47225199404D524B90DD68909F13EC7C`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/4A3C51CE49E08801799F6AA1FE6B350E`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/4CB3260340B383F4F4399C93EBD57DA8`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/4F67AA6644B0EB9291BC1E9EE01B9C77`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/5266477E46CC128C26923AB3A43EADED`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/54E125E34ECC653D617A5FA2F739AA70`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/5750E84746BC0DBC4650D1833F59BAA2`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/578F714141618251F65E6CB4BCD3CE07`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/5EEDEDCE466CC982272236826A99C376`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/5FA2D2ED4E18F4E138B8B1B0B096725E`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/60997C574FC7B9FE618F6D93F3944973`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/60E8374949E5125F6F07769D159F32F6`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/67097070427D67F28C484F8D5416DE15`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/6951C7DF4095BE1B3C9ADBB7B25BA687`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/6BDBA25F4B1E412414CC93B93C16010D`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/6BF3CED24114A5C606211085EA690913`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/6DCE651E45FF4B20D7D22F85451800C0`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/6FE13EE846DB2244E28F0B8F29A3EFAC`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/7234C9CA4CD0EE62BC23F0982C60C66B`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/730586D0433D1068D889C6999D6CDDC6`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/784BA5A0435B7BBC629831AB9C0685FE`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/7EE542124677F1C4EB37A7A86BD232B9`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/86D0FD3548700FBC9175E19F2D2F2CA2`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/8931D8CF4AD8A6E44B818C90218EF7FD`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/8C26573F4A9DD17CE87DD980E815473F`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/8D12AB79482D2E8D682B74BDA31DB78B`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/9445BE0948B19A72B6C0FCBFFC473154`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/99CD1E814C70E7A07736CFB82CF1AAC3`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/A8581A6D44258AE596D3A285F36BB761`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/A9F981544E1C3143E778EB9021FE7DFE`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/AD57B85B4976C95D208000B9E036A0B9`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/AFC450DA448BAA9D61AEA6ADD99E4AF2`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/B7FDEE324FE7DBA411A221AA40359577`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/BBEC9457467D7D02285B589A5369E42A`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/BFF8797E408EA30E7B7D96B24D174645`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/C22ED23045803B085C80268C0C597B65`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/CB6A58E1431DFC807C21D28D41723446`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/D15858854FEBCB445152038B56B2D581`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/D5E3192B479F7298E72BDDB723424451`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/DF4D7AAB41EF4DBA9A25DF9D4AD52117`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/DFB908A7435EA4809C0478A3C16CACDD`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/E44974F54FF07F4FD3A4C385855FE8FC`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/E54B9909429608288129FDA48A1295CC`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/E76A24D2419C1C7BE5DDEB9D7D87D9F8`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/E7A8499F47DEEC4D3B0501BA1721AC58`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/EEBAFF054DF7C341688CE7AA1D71705C`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/F21AE1424D8DA4CDB406ED86A2011590`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/F2AD63D3421BD198967DD8BCF1D50343`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/FAD448444CF47863D76240AAF8C14D38`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/FCC44C124A79BB81C19F7CA5E3626A88`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/FE2CEA724CE40F92700192873CA7C6A8`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/4B5954644E790C88EEB87AA7AF8FC723`  [Dialogue] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/87A89EB949B570F3EDF7F880978EB133`  [Dialogue] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/B6E4CB5E4921D58D70DE309631BCC0DD`  [Dialogue] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/D4EC8F1E41C308997057E6A368CEF75D`  [Dialogue] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
+- `/EF687CE84D535C2B49DBC7B0D9BC62D5`  [Dialogue] label:doctor (batch-1 wording kept)
+  - AR: فيلاتوفا
+  - EN: Filatova
 - `/0214D2034A51DCB71521F783BFC3D940`  [Dialogue] speaker:char-les
   - AR: تشارلز
   - EN: Char-les
@@ -21721,12 +25984,384 @@ Arabic is shown FIRST, the English source BELOW it, followed by the locres key.
 - `/FC539CD8486FCDA5B2E522882480EB89`  [Dialogue] speaker:char-les
   - AR: تشارلز
   - EN: Char-les
+- `/0CD01CE941F33EC499241FA54CAB1558`  [Dialogue] label:Alexey Lebedev (batch-1 wording kept)
+  - AR: ليبيديف
+  - EN: Lebedev
+- `/1E7CBD2C4113DAC0A1E9D28985EE7B89`  [Dialogue] label:Alexey Lebedev (batch-1 wording kept)
+  - AR: ليبيديف
+  - EN: Lebedev
+- `/5E71A11A404A837D8E9716B93CBBA899`  [Dialogue] label:Alexey Lebedev (batch-1 wording kept)
+  - AR: ليبيديف
+  - EN: Lebedev
+- `/65818904482F9AAF53A701A8A8A4469C`  [Dialogue] label:Alexey Lebedev (batch-1 wording kept)
+  - AR: ليبيديف
+  - EN: Lebedev
+- `/C5B09D464D5F2EBD535431BEAD314463`  [Dialogue] label:Alexey Lebedev (batch-1 wording kept)
+  - AR: ليبيديف
+  - EN: Lebedev
+- `/1697AAB94E997A7F069AB59DC139BF6D`  [Dialogue] label:Vyacheslav Molotov (batch-1 wording kept)
+  - AR: مولوتوف
+  - EN: Molotov
+- `/21C533C24E6A9B52082020AF6A35AD02`  [Dialogue] label:Vyacheslav Molotov (batch-1 wording kept)
+  - AR: مولوتوف
+  - EN: Molotov
+- `/3F8C39144AE5D8D5732A6480A8F36F90`  [Dialogue] label:Vyacheslav Molotov (batch-1 wording kept)
+  - AR: مولوتوف
+  - EN: Molotov
+- `/630988BD4FB5DD2E15A6D09F0C8BA97E`  [Dialogue] label:Vyacheslav Molotov (batch-1 wording kept)
+  - AR: مولوتوف
+  - EN: Molotov
+- `/7647E2954F020EE8160C6E89E34A0576`  [Dialogue] label:Vyacheslav Molotov (batch-1 wording kept)
+  - AR: مولوتوف
+  - EN: Molotov
+- `/7AF6B97A4FC6CB4F3430D1B522EB02D3`  [Dialogue] label:Vyacheslav Molotov (batch-1 wording kept)
+  - AR: مولوتوف
+  - EN: Molotov
+- `/7D11AD774EF23E9E3F8D8696FDCA45F2`  [Dialogue] label:Vyacheslav Molotov (batch-1 wording kept)
+  - AR: مولوتوف
+  - EN: Molotov
+- `/C1EF123746F4F536790CDBBCFE4D0D7B`  [Dialogue] label:Vyacheslav Molotov (batch-1 wording kept)
+  - AR: مولوتوف
+  - EN: Molotov
+- `/E813F08746710FC48DAD1E95F17D99F0`  [Dialogue] label:Vyacheslav Molotov (batch-1 wording kept)
+  - AR: مولوتوف
+  - EN: Molotov
 - `/A69501FC48D58711222F0CB8B83BAF83`  [Dialogue] speaker:char-les
   - AR: تشارلز
   - EN: Char-les
+- `/9BD7687C483B8FE7B17824BF374D69A3`  [Dialogue] label:Ivan Pavlov (batch-1 wording kept)
+  - AR: بافلوف
+  - EN: Pavlov
+- `/DD74082149B8A96370AB7F9B6E546E80`  [Dialogue] label:Ivan Pavlov (batch-1 wording kept)
+  - AR: بافلوف
+  - EN: Pavlov
+- `/E87E118649683338F17920BFCD069A42`  [Dialogue] label:Ivan Pavlov (batch-1 wording kept)
+  - AR: بافلوف
+  - EN: Pavlov
+- `/11C4B0074833CFAAFE4850AAE9833ED4`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/47C3B87F48975074543893B8337BDEBC`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/9A91FB2F40F9207B463DBEA8487C9D73`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/AC181A2E420B629952B07FA227C84288`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/B972E8CD433FC87F83F3D9B32DCADF9B`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/D326397947B3CAC8587AEFB13E5757C5`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/E2D3826A4F52EE5B6B701ABD57E29E13`  [Dialogue] label:engineer NPC (batch-1 wording kept)
+  - AR: بيتروف
+  - EN: Petrov
+- `/1E40F6064FB704DF2D68C0A7042C93B4`  [Dialogue] label:DLC speaker
+  - AR: متحول ملقح
+  - EN: Vaccinated mutant
+- `/31EB4CFA4838A9C988216098BC9C048D`  [Dialogue] label:DLC speaker
+  - AR: متحول ملقح
+  - EN: Vaccinated mutant
+- `/4F4AFBE747081CABAC7D6489B9D220E1`  [Dialogue] label:DLC speaker
+  - AR: متحول ملقح
+  - EN: Vaccinated mutant
+- `/668365F2421425144375B28D20FB50C9`  [Dialogue] label:DLC speaker
+  - AR: متحول ملقح
+  - EN: Vaccinated mutant
+- `/AE5D08364991D718BD8ACF9525E06790`  [Dialogue] label:DLC speaker
+  - AR: متحول ملقح
+  - EN: Vaccinated mutant
+- `/AFB75E2E4F3518A0092D3590E1E14B94`  [Dialogue] label:DLC speaker
+  - AR: متحول ملقح
+  - EN: Vaccinated mutant
+- `/B1FC2E75460431C8987F459F469CE459`  [Dialogue] label:DLC speaker
+  - AR: متحول ملقح
+  - EN: Vaccinated mutant
+- `/B6E1C1164F9D3839FE1D03B40BAAD458`  [Dialogue] label:DLC speaker
+  - AR: متحول ملقح
+  - EN: Vaccinated mutant
+- `/C6A8518F4C33D04E4C6917BB3FFE9B9D`  [Dialogue] label:DLC speaker
+  - AR: متحول ملقح
+  - EN: Vaccinated mutant
+- `/D042ED1F47044E13844E02B97B6CB6E5`  [Dialogue] label:DLC speaker
+  - AR: متحول ملقح
+  - EN: Vaccinated mutant
+- `/D5E2D7834F900E60981F48AF2E244C65`  [Dialogue] label:DLC speaker
+  - AR: متحول ملقح
+  - EN: Vaccinated mutant
+- `/E0F62002444AA43FDB80399D4AC5862C`  [Dialogue] label:DLC speaker
+  - AR: متحول ملقح
+  - EN: Vaccinated mutant
+- `/EB274E5747772268113BD7A9806A21DE`  [Dialogue] label:NPC (batch-1 wording kept)
+  - AR: رافيك
+  - EN: Rafik
+- `/035EE47E4CA4A4E460E90B878612D546`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/04A3228E478A4F993604D39E42C88C6E`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/1177919140094F067DEFD3A7C33ADE5D`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/1376D1E04EFF7974694ECE82E82D4AFD`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/1AB99A034DEC5CCB982C17BD3D1D5BB6`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/1B63E7EF4DB8999980E682B92493599F`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/25FA9604468EF6C37CFC3289B4295E30`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/293E16EB42995EEB54596389DC65C676`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/32F597CC4DFF11F1BD9AB5B06E66A5D6`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/587FB82D4714B94F4AFDC4BB97310EA5`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/596D3BA94FEC9236A5197691BD9CAE47`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/5FDC36D74D22F258C5FDE59EB28665FE`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/66E17BA54A3EDB852D9E548BC4473FAE`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/70C6267546AA9D984AAA70843683FB46`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/75A0D2934BA8DD650B8806A5CF2C0769`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/7CB985B8479F8CD79D6A53B6E03B0D5D`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/8E1FBB484F8D677DE9CEA8A86088BC90`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/9FF655E04FDD4CB05E1779910957B57E`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/A2EE25954DDE5518DA84729D326906B0`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/A9F9438E41C001491ED4F9ABC19FEB8F`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/B0D768F24CC19A252DCB22A606524B96`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/BF1907ED472538B06F0B30974BDCFD63`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/C1426E6944CD4E14D39945B978A72D1F`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/D87DF4DC42A8B3A1B96A969012533FE3`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/D9A5D28E46FC9DA1F5B0CDAD9BA269BD`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/E5B0FBFD4A54A6A36AB4089ED28253D5`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/F0D9D1534E657DB5A84A59AB8F07C0BD`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/F0E5A4294F608E1E1C644B9D6DD31D88`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/F3D0EF2C4E1426705D56DDAB9997C77D`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/FEDF1E664B16687ED7165EA33F04F104`  [Dialogue] label:speaker: Dmitry Sechenov (batch-1 wording kept)
+  - AR: سيتشينوف
+  - EN: Sechenov
+- `/4022D6E748ACBB776FF4D08C8137E2EE`  [Dialogue] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/6C01005047CB1C72FD92C687C67B8DB7`  [Dialogue] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/83F4D6594404CBA2E0EF74B61E9599DE`  [Dialogue] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/84CD4CFE4F9779C45C05938F1D6E2506`  [Dialogue] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/84F4D58249B3D59C1C44B1B4F31ECFB9`  [Dialogue] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/8C038396471FD3EF3D300996706808F0`  [Dialogue] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/A467FD8347CD2BCFDD501DA98225A9F6`  [Dialogue] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/D231CFB9406EEAA00BAC529B02FFF459`  [Dialogue] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/F0E3273C434F6BDB2D3E8883DE9DAC6C`  [Dialogue] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/69DA147E4280E12C6A494B8407EDEC11`  [Dialogue] label:DLC speaker
+  - AR: جثة ثرثارة
+  - EN: Chatty corpse
+- `/AF4469C04BB121214F6B29995619854D`  [Dialogue] label:DLC speaker
+  - AR: جثة ثرثارة
+  - EN: Chatty corpse
+- `/6FF03566418A960457A8AA9EAD6FF258`  [Dialogue] label:DLC speaker
+  - AR: رجل محاصر
+  - EN: Trapped man
+- `/A8D4A92347658708F6E2869C5CBC2A53`  [Dialogue] label:DLC speaker
+  - AR: رجل محاصر
+  - EN: Trapped man
+- `/AC6FBDDD47517DD08713218AEBB1ED4F`  [Dialogue] label:DLC speaker
+  - AR: رجل محاصر
+  - EN: Trapped man
+- `/FD76CD2C4AAF73407E8D69807E4CA671`  [Dialogue] label:DLC speaker
+  - AR: رجل محاصر
+  - EN: Trapped man
+- `/14B9D2684D0FE776F1B815B4F91DF796`  [Dialogue] label:DLC speaker
+  - AR: جثة ثرثارة
+  - EN: Chatty corpse
+- `/459A21B14CC2647D2611BC8D1B1E193E`  [Dialogue] label:DLC speaker
+  - AR: جثة ثرثارة
+  - EN: Chatty corpse
+- `/1FF728B44796269601E7D6948BDA20CF`  [Dialogue] label:DLC speaker
+  - AR: جثة ثرثارة
+  - EN: Chatty corpse
+- `/67920DE5499E999D1E6F7489107F1EE5`  [Dialogue] label:DLC speaker
+  - AR: جثة ثرثارة
+  - EN: Chatty corpse
+- `/9528D80840C4F53FCE63BC8141F85A9F`  [Dialogue] label:DLC speaker
+  - AR: جثة ثرثارة
+  - EN: Chatty corpse
+- `/BDE097734A955466D85A089F65D6E6F4`  [Dialogue] label:DLC speaker
+  - AR: جثة ثرثارة
+  - EN: Chatty corpse
+- `/DDBE0EE44048F3886F247E95F78ABA91`  [Dialogue] label:DLC speaker
+  - AR: جثة ثرثارة
+  - EN: Chatty corpse
+- `/EBA2478F4C0F72E3EF1AF3A607509901`  [Dialogue] label:DLC speaker
+  - AR: جثة ثرثارة
+  - EN: Chatty corpse
+- `/42C5687E4C23C9D13BA48AAEB839F10B`  [Dialogue] label:DLC speaker
+  - AR: جثة ثرثارة
+  - EN: Chatty corpse
+- `/B2E665D240FAA779E0F5CC8376E5C147`  [Dialogue] label:DLC speaker
+  - AR: جثة ثرثارة
+  - EN: Chatty corpse
+- `/D626AE6940DD1E9B59FA97BD950D9160`  [Dialogue] label:DLC speaker
+  - AR: جثة ثرثارة
+  - EN: Chatty corpse
+- `/0107CAAD4B800C992F31D58A07464AC9`  [Dialogue] label:DLC speaker
+  - AR: جثة ثرثارة
+  - EN: Chatty corpse
+- `/200079E546745591A43FEAB8EC61B0DC`  [Dialogue] label:DLC speaker
+  - AR: جثة ثرثارة
+  - EN: Chatty corpse
+- `/98C4A6AD45D65DC1FA0C7384DF5C2745`  [Dialogue] label:DLC speaker
+  - AR: جثة ثرثارة
+  - EN: Chatty corpse
+- `/A79C0623401952C3B0EACB9B320BF555`  [Dialogue] label:DLC speaker
+  - AR: قائد أوركسترا ميت
+  - EN: Dead conductor
+- `/00C84DEB476F1DA0C8A5F084028B72D5`  [Dialogue] label:Nikolai Vavilov (batch-1 wording kept)
+  - AR: فافيلوف
+  - EN: Vavilov
+- `/015DC0BA44989F91F49D519A96F761F2`  [Dialogue] label:Nikolai Vavilov (batch-1 wording kept)
+  - AR: فافيلوف
+  - EN: Vavilov
+- `/039F95E243E7A9BCAAFCD189872BAAC7`  [Dialogue] label:Nikolai Vavilov (batch-1 wording kept)
+  - AR: فافيلوف
+  - EN: Vavilov
+- `/20899A884CBFB8CE426D59B4BD921281`  [Dialogue] label:Nikolai Vavilov (batch-1 wording kept)
+  - AR: فافيلوف
+  - EN: Vavilov
+- `/26B1D88148E7822D223033AAAF6F3094`  [Dialogue] label:Nikolai Vavilov (batch-1 wording kept)
+  - AR: فافيلوف
+  - EN: Vavilov
+- `/3C704AE441791DDCA5A8199983F38909`  [Dialogue] label:Nikolai Vavilov (batch-1 wording kept)
+  - AR: فافيلوف
+  - EN: Vavilov
+- `/6CF87042444691EEAF2C39AF02A0F7F7`  [Dialogue] label:Nikolai Vavilov (batch-1 wording kept)
+  - AR: فافيلوف
+  - EN: Vavilov
+- `/99F401B2443AD660D5610985ED29C420`  [Dialogue] label:Nikolai Vavilov (batch-1 wording kept)
+  - AR: فافيلوف
+  - EN: Vavilov
+- `/A87E32954E06682909DB8EA5E03048DA`  [Dialogue] label:Nikolai Vavilov (batch-1 wording kept)
+  - AR: فافيلوف
+  - EN: Vavilov
+- `/ADFE8B3742F1F0D3F879F5B436677FF1`  [Dialogue] label:Nikolai Vavilov (batch-1 wording kept)
+  - AR: فافيلوف
+  - EN: Vavilov
+- `/C3FF36BA46197DBEE2BCE59199793E9E`  [Dialogue] label:Nikolai Vavilov (batch-1 wording kept)
+  - AR: فافيلوف
+  - EN: Vavilov
+- `/CD46A5624E3175F4009E2DB8AEBD763D`  [Dialogue] label:Nikolai Vavilov (batch-1 wording kept)
+  - AR: فافيلوف
+  - EN: Vavilov
+- `/DFE0A478456CAE2D33B8DBB326E570C2`  [Dialogue] label:Nikolai Vavilov (batch-1 wording kept)
+  - AR: فافيلوف
+  - EN: Vavilov
+- `/E01B885C47D0CB4937AF3DBD060C887C`  [Dialogue] label:Nikolai Vavilov (batch-1 wording kept)
+  - AR: فافيلوف
+  - EN: Vavilov
+- `/E0C2C73A4C401DF4AD98DFBB56F5F9F5`  [Dialogue] label:Nikolai Vavilov (batch-1 wording kept)
+  - AR: فافيلوف
+  - EN: Vavilov
+- `/FF506BCF441D5A44855C1784508370A1`  [Dialogue] label:Nikolai Vavilov (batch-1 wording kept)
+  - AR: فافيلوف
+  - EN: Vavilov
+- `/078AE031450C779BCAD32EADBD3C7D3B`  [Dialogue] label:Chariton Zakharov (batch-1 wording kept)
+  - AR: زاخاروف
+  - EN: Zakharov
+- `/10B55F7144D6C7F2EE18098B917261EF`  [Dialogue] label:Chariton Zakharov (batch-1 wording kept)
+  - AR: زاخاروف
+  - EN: Zakharov
+- `/7BD50A3346AD1FB5B40362866E5D3EB7`  [Dialogue] label:Chariton Zakharov (batch-1 wording kept)
+  - AR: زاخاروف
+  - EN: Zakharov
+- `/825DE92B43DA86E16C73BD8DCC552C3F`  [Dialogue] label:Chariton Zakharov (batch-1 wording kept)
+  - AR: زاخاروف
+  - EN: Zakharov
+- `/849E1A3F4B36F61A130307A39BECC925`  [Dialogue] label:Chariton Zakharov (batch-1 wording kept)
+  - AR: زاخاروف
+  - EN: Zakharov
+- `/8CCDBD4440F091FA92CBAAA46A177A82`  [Dialogue] label:Chariton Zakharov (batch-1 wording kept)
+  - AR: زاخاروف
+  - EN: Zakharov
+- `/8ED6EF6A4F4B2A7EE216FC9EA72EFF0B`  [Dialogue] label:Chariton Zakharov (batch-1 wording kept)
+  - AR: زاخاروف
+  - EN: Zakharov
+- `/A1E4AD0F43E34304EE1FCEBA0721DF63`  [Dialogue] label:Chariton Zakharov (batch-1 wording kept)
+  - AR: زاخاروف
+  - EN: Zakharov
+- `/C0AD80C44506C3F7C7F9D98E6092AE62`  [Dialogue] label:Chariton Zakharov (batch-1 wording kept)
+  - AR: زاخاروف
+  - EN: Zakharov
+- `/FEAB038D46DA7B69535045AF60D4481B`  [Dialogue] label:Chariton Zakharov (batch-1 wording kept)
+  - AR: زاخاروف
+  - EN: Zakharov
 - `/DDDA0B2B42F5AD4FB93384B4249C5997`  [Dialogue] pilot:SHORT
   - AR: آسف، الواجب ينادي. في وقت آخر.
   - EN: Sorry, duty calls. Some other time.
+- `/FB656906446F6B26E00734951EA6C4EC`  [Dialogue] batch2-0001
+  - AR: قف بلا حركة!
+  - EN: Stand still!
 - `/CD81CACE4DCFD2A7E3E24CB16B0B9D52`  [Dialogue] pilot:LONG
   - AR: *0.11*أوه، لا أعرف. لقد انتهت صلاحيته، إن جاز التعبير. أظن أن اللقاح هو السبب في كل هذا — أعني أن الموتى صاروا ثرثارين. *0.04*نشاط دماغي متبقٍ أو شيء من هذا القبيل. ماذا يمكن أن يكون غير ذلك؟
   - EN: *0.11*Oh, I don't know. He kinda expired, so to speak. I think this must all be the vaccination's fault—dead people being so chatty, I mean. *0.04*Residual brain activity or something. What else could it be?
@@ -21743,8 +26378,35 @@ Arabic is shown FIRST, the English source BELOW it, followed by the locres key.
   - AR: لقد قدّمت الدعم المعنوي!
   - EN: I provided moral support!
 
-## VDNKh_Dialogues (168 rows)
+## VDNKh_Dialogues (229 rows)
 
+- `/515835394C0807AC5F60A0A29859EBC0`  [Dialogue] label:DLC speaker
+  - AR: العرّاف
+  - EN: Oracle
+- `/501D87DA46A18D285C675E800146DDE1`  [Dialogue] label:DLC speaker
+  - AR: رجل ميت متحدٍ
+  - EN: Defiant dead man
+- `/0FB5DCBE4BB94D24CDB85E8A12033AEC`  [Dialogue] label:speaker
+  - AR: كلير
+  - EN: Claire
+- `/1E2CF49A4B727667B1725FA45B52CC06`  [Dialogue] label:speaker
+  - AR: كلير
+  - EN: Claire
+- `/2ADF4C6C44751743267954B1A2DA5D63`  [Dialogue] label:speaker
+  - AR: كلير
+  - EN: Claire
+- `/A25C07774C1F0111A4CD8982CBCA0E0A`  [Dialogue] label:speaker
+  - AR: كلير
+  - EN: Claire
+- `/D12F958A4F6436148D12949D9D9FD91B`  [Dialogue] label:speaker
+  - AR: كلير
+  - EN: Claire
+- `/E0CC102D47F19C049B562EAA08C2F5AE`  [Dialogue] label:speaker
+  - AR: كلير
+  - EN: Claire
+- `/E145C73744191597D1DD708A09FCB793`  [Dialogue] label:speaker
+  - AR: كلير
+  - EN: Claire
 - `/115803514051F361C6409589E3CEDF81`  [Dialogue] speaker:computer
   - AR: الحاسوب
   - EN: Computer
@@ -21802,6 +26464,54 @@ Arabic is shown FIRST, the English source BELOW it, followed by the locres key.
 - `/14E286B543CCD35BC4D4ED87D4B875A4`  [Dialogue] pilot:SHORT
   - AR: مهندس ميت
   - EN: Dead engineer
+- `/7CA59B8549D0D83F944D53AA65634FB2`  [Dialogue] label:DLC speaker (batch-1 wording kept)
+  - AR: مهندس ميت
+  - EN: Dead engineer
+- `/301717734F61BF340C4F2087311C2BB5`  [Dialogue] label:DLC speaker
+  - AR: مرشد سياحي ميت
+  - EN: Dead tour guide
+- `/5F6D398E4BA0294973A822A5C745646E`  [Dialogue] label:DLC speaker
+  - AR: مرشد سياحي ميت
+  - EN: Dead tour guide
+- `/25564A9C42407DFF1BF2AD8640668688`  [Dialogue] label:DLC speaker
+  - AR: عالم أسماك ميت
+  - EN: Dead ichthyologist
+- `/533B4A0449F1426965446CA179B6FBDE`  [Dialogue] label:generic speaker (batch-1 wording kept)
+  - AR: المذيع
+  - EN: Announcer
+- `/5E28659F4DEA01F56948CA8E16A5D305`  [Dialogue] label:generic speaker (batch-1 wording kept)
+  - AR: المذيع
+  - EN: Announcer
+- `/9209BA71492EA4010BF6E687EC3BEBD7`  [Dialogue] label:generic speaker (batch-1 wording kept)
+  - AR: المذيع
+  - EN: Announcer
+- `/B2D16EC14AF347F592C3A89AA827F26A`  [Dialogue] label:generic speaker (batch-1 wording kept)
+  - AR: المذيع
+  - EN: Announcer
+- `/F7AABFBD4FCB70AE830D429451EF3F83`  [Dialogue] label:generic speaker (batch-1 wording kept)
+  - AR: المذيع
+  - EN: Announcer
+- `/3FAEB7D84F7AFE285EEA168E7EEAD5BE`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/3FE55DDA4C597D1CAB263F99B74260CE`  [Dialogue] label:AI vendor (batch-1 wording kept)
+  - AR: نورا
+  - EN: NORA
+- `/E8C3EB124155971188ADC597F2F0FB61`  [Dialogue] label:DLC speaker
+  - AR: جثة متكلمة نكدة
+  - EN: Cranky talking corpse
+- `/2EEFF1C04630F9D140FFFF8BDA957A4E`  [Dialogue] label:speaker
+  - AR: يوليا
+  - EN: Yulia
+- `/9808ACC74E4B847C6E05EDB61F912D80`  [Dialogue] label:speaker
+  - AR: يوليا
+  - EN: Yulia
+- `/AF85A4F34967066BE840D8978BD2BABA`  [Dialogue] label:speaker
+  - AR: يوليا
+  - EN: Yulia
+- `/FE2B2BD4465DF933CA0A6F89A2B68074`  [Dialogue] label:speaker
+  - AR: يوليا
+  - EN: Yulia
 - `/037D77CF4BCB8BF06826FA9F6A5AAF9F`  [Dialogue] speaker:char-les
   - AR: تشارلز
   - EN: Char-les
@@ -22234,6 +26944,102 @@ Arabic is shown FIRST, the English source BELOW it, followed by the locres key.
 - `/FF71542A47654B03BD4085A714FCE562`  [Dialogue] speaker:char-les
   - AR: تشارلز
   - EN: Char-les
+- `/1977398E4835EB6D84184480C54F7EDF`  [Dialogue] label:DLC speaker
+  - AR: جثة صموتة
+  - EN: Taciturn corpse
+- `/09579B7D415D352B998DF2B8457E161C`  [Dialogue] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/28E946214E9EDD97AAA19B918E185742`  [Dialogue] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/65A20C6D4963AA628CBB99815DBACDF9`  [Dialogue] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/73649D04439F4FD76CA9C0AC3C5D8577`  [Dialogue] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/87831A954656642A4FF0DE8BF9E6EDF8`  [Dialogue] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/B2412043486603A1B5EE60B7751AE0D6`  [Dialogue] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/C5F223C34E5405824B125A9CD5F69621`  [Dialogue] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/C9D10B9F4E42D6BAFC0836BFF47F1E64`  [Dialogue] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/E2A11D0E4CF601A3BE64A882E74F721B`  [Dialogue] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/FE75E2F64A924297B590259541E4DB1A`  [Dialogue] label:German scientist (batch-1 wording kept)
+  - AR: شتوكهاوزن
+  - EN: Stockhausen
+- `/3E4CFD594D47CEFEA1C0ACB16B99BA22`  [Dialogue] label:Limbo character (batch-1 wording kept)
+  - AR: الدمعة
+  - EN: Teardrop
+- `/04A09A4B42BCFF37F6688C9695B9DB02`  [Dialogue] label:DLC speaker
+  - AR: جثة حمقاء
+  - EN: Silly corpse
+- `/796CB6204D54CD6EC9A899B22AEB60AE`  [Dialogue] label:DLC speaker
+  - AR: جثة انتحارية
+  - EN: Suicidal corpse
+- `/CA4D2BAB4261745B8A8D3FA7D795B967`  [Dialogue] label:DLC speaker
+  - AR: رجل غريق
+  - EN: Drowned man
+- `/030236B0470265B136F6E382D86B9D12`  [Dialogue] label:valentina (batch-1 wording kept)
+  - AR: تيريشكوفا
+  - EN: Tereshkova
+- `/0CDEFD55486176EBA4E9AF839F881FE0`  [Dialogue] label:valentina (batch-1 wording kept)
+  - AR: تيريشكوفا
+  - EN: Tereshkova
+- `/1A8D7ECC43AC7FFD59DDC886DBD0670F`  [Dialogue] label:valentina (batch-1 wording kept)
+  - AR: تيريشكوفا
+  - EN: Tereshkova
+- `/1E37BDB54D9D13ABA2C5A88874B3E6E9`  [Dialogue] label:valentina (batch-1 wording kept)
+  - AR: تيريشكوفا
+  - EN: Tereshkova
+- `/253303724DB6F36CBD3731B02D8B91F9`  [Dialogue] label:valentina (batch-1 wording kept)
+  - AR: تيريشكوفا
+  - EN: Tereshkova
+- `/278E2F07483B3B970ABF0B8B78EAE73D`  [Dialogue] label:valentina (batch-1 wording kept)
+  - AR: تيريشكوفا
+  - EN: Tereshkova
+- `/346EE8F145AB697B1B1639BF09BE1F89`  [Dialogue] label:valentina (batch-1 wording kept)
+  - AR: تيريشكوفا
+  - EN: Tereshkova
+- `/7E58C8E44BEB090B79478092E4B0AA25`  [Dialogue] label:valentina (batch-1 wording kept)
+  - AR: تيريشكوفا
+  - EN: Tereshkova
+- `/9649987A47658F7EBBBC1F937C6AA39D`  [Dialogue] label:valentina (batch-1 wording kept)
+  - AR: تيريشكوفا
+  - EN: Tereshkova
+- `/9DCDEC4044C255BA983DB49B09DBEE48`  [Dialogue] label:valentina (batch-1 wording kept)
+  - AR: تيريشكوفا
+  - EN: Tereshkova
+- `/A11AF7A545AF6EBAFAB3B7A750C3AEE8`  [Dialogue] label:valentina (batch-1 wording kept)
+  - AR: تيريشكوفا
+  - EN: Tereshkova
+- `/C4AA95FD42DACEFA481722AC21C0EE65`  [Dialogue] label:valentina (batch-1 wording kept)
+  - AR: تيريشكوفا
+  - EN: Tereshkova
+- `/CA2152304D9100ED5FE15785651B9033`  [Dialogue] label:valentina (batch-1 wording kept)
+  - AR: تيريشكوفا
+  - EN: Tereshkova
+- `/CD8448634425405B149EA586ECCE172B`  [Dialogue] label:valentina (batch-1 wording kept)
+  - AR: تيريشكوفا
+  - EN: Tereshkova
+- `/DD913E7848C7EC81DB59D0AFA9AC6646`  [Dialogue] label:valentina (batch-1 wording kept)
+  - AR: تيريشكوفا
+  - EN: Tereshkova
+- `/DEB1E4D94634B50B79AEA7AA580A617D`  [Dialogue] label:valentina (batch-1 wording kept)
+  - AR: تيريشكوفا
+  - EN: Tereshkova
+- `/EBFF0A8A49348E56A67D94AC240381BA`  [Dialogue] label:valentina (batch-1 wording kept)
+  - AR: تيريشكوفا
+  - EN: Tereshkova
 - `/61E6E69F4F621A89D6CCB8BC7863FFFF`  [Dialogue] pilot:SHORT
   - AR: الأسلحة الآلية: واحد. الكاراتيه: صفر.
   - EN: Automatic weapons, one. Karate, zero.
@@ -22243,9 +27049,21 @@ Arabic is shown FIRST, the English source BELOW it, followed by the locres key.
 - `/6AE0B965427422270F0F6BA2979259D6`  [Dialogue] pilot:SHORT
   - AR: افعل ما فعلته، وستعيش أطول!
   - EN: Do what I did, and you're gonna live longer!
+- `/629736A5494E408C2B2949A579615545`  [Dialogue] label:speaker
+  - AR: كلير
+  - EN: Claire
+- `/8EBA343B4AAE644338F4D6A207598DA5`  [Dialogue] label:speaker
+  - AR: كلير
+  - EN: Claire
+- `/9BD4F29046BEFB6F2CE3548654CDCBBC`  [Dialogue] label:speaker
+  - AR: كلير
+  - EN: Claire
 - `/BC80AD6147CE2576762634AE7971F2E0`  [Dialogue] pilot:SHORT
   - AR: إليك ذراعك اليسرى. تفضّل وأصلح نفسك.
   - EN: Here's your left arm. Go ahead and fix yourself up.
+- `/F1B57CAC436B4A3CA0503687A7B6DAC3`  [Dialogue] batch2-0001
+  - AR: وكيف ذلك؟
+  - EN: How so?
 - `/25DBAC3A4641291203480B9C0F3CD7DC`  [Dialogue] pilot:SHORT
   - AR: لم أرَ قط روبوتات كهذه من قبل.
   - EN: I've never seen bots like these before.

@@ -1,8 +1,8 @@
 # Carrier pak build report
 
-Generated: 2026-10-19 00:43:45
-Variant: **p6**  |  pak: `C:\AtomicHeart-AR\build\package\zzz_atomicheart-ar_carrier_koKR_p6_P.pak`
-sha256: `b7dbb14e80a926c06d0255919a454747488778de98a1778645d117ef1dc4c321`  |  size: 3775256 bytes
+Generated: 2026-10-19 11:45:18
+Variant: **p7**  |  pak: `C:\AtomicHeart-AR\build\package\zzz_atomicheart-ar_carrier_koKR_p7_P.pak`
+sha256: `d7cddff41ac346d7a28c79646e702bb34c1672d1c3e32f8187fa77983b177d9c`  |  size: 3790472 bytes
 
 Fill policy: Arabic (master non-empty) > English (en-US same key) > keep Korean.
 
@@ -10,11 +10,11 @@ Fill policy: Arabic (master non-empty) > English (en-US same key) > keep Korean.
 |---|---|
 | scopes covered | 35 |
 | total ko-KR keys | 27618 |
-| Arabic rows | 7387 |
-| english-filled keys | 20231 |
+| Arabic rows | 8981 |
+| english-filled keys | 18637 |
 | kept Korean (no en-US text) | 0 |
-| round-trip exact | 26421 |
-| round-trip newline-normalized only | 1197 |
+| round-trip exact | 26427 |
+| round-trip newline-normalized only | 1191 |
 | round-trip failures | 0 |
 | unpack byte-identical entries | 35 of 35 |
 
@@ -23,39 +23,39 @@ Fill policy: Arabic (master non-empty) > English (en-US same key) > keep Korean.
 | scope | ko keys | Arabic | English | kept Korean | exact | newline-only | fail |
 |---|---|---|---|---|---|---|---|
 | Academy_Dialogues | 282 | 259 | 23 | 0 | 282 | 0 | 0 |
-| Chelomey_Dialogues | 1204 | 389 | 815 | 0 | 1198 | 6 | 0 |
-| Chelomey_dlc3 | 776 | 1 | 775 | 0 | 774 | 2 | 0 |
-| ChelomeyFinal_Dialogues | 214 | 46 | 168 | 0 | 211 | 3 | 0 |
-| CrystalComplex_dlc4 | 1219 | 0 | 1219 | 0 | 1219 | 0 | 0 |
-| CUTSCENES | 840 | 26 | 814 | 0 | 840 | 0 | 0 |
-| Cutscenes_dlc1 | 421 | 1 | 420 | 0 | 421 | 0 | 0 |
-| DIALOGUES FOR LQA | 746 | 21 | 725 | 0 | 746 | 0 | 0 |
+| Chelomey_Dialogues | 1204 | 801 | 403 | 0 | 1204 | 0 | 0 |
+| Chelomey_dlc3 | 776 | 68 | 708 | 0 | 774 | 2 | 0 |
+| ChelomeyFinal_Dialogues | 214 | 79 | 135 | 0 | 211 | 3 | 0 |
+| CrystalComplex_dlc4 | 1219 | 1 | 1218 | 0 | 1219 | 0 | 0 |
+| CUTSCENES | 840 | 236 | 604 | 0 | 840 | 0 | 0 |
+| Cutscenes_dlc1 | 421 | 16 | 405 | 0 | 421 | 0 | 0 |
+| DIALOGUES FOR LQA | 746 | 68 | 678 | 0 | 746 | 0 | 0 |
 | LebedevLab_dlc4 | 460 | 0 | 460 | 0 | 460 | 0 | 0 |
-| Locations_dlc2 | 816 | 1 | 815 | 0 | 816 | 0 | 0 |
-| Mails_01 | 454 | 0 | 454 | 0 | 363 | 91 | 0 |
-| Mails_Shebetars_dlc2 | 246 | 0 | 246 | 0 | 237 | 9 | 0 |
-| Mails_Shebetars_dlc4 | 756 | 0 | 756 | 0 | 639 | 117 | 0 |
-| Mails_Shebetars_Tech_dlc3 | 579 | 0 | 579 | 0 | 482 | 97 | 0 |
+| Locations_dlc2 | 816 | 18 | 798 | 0 | 816 | 0 | 0 |
+| Mails_01 | 454 | 65 | 389 | 0 | 363 | 91 | 0 |
+| Mails_Shebetars_dlc2 | 246 | 1 | 245 | 0 | 237 | 9 | 0 |
+| Mails_Shebetars_dlc4 | 756 | 35 | 721 | 0 | 639 | 117 | 0 |
+| Mails_Shebetars_Tech_dlc3 | 579 | 44 | 535 | 0 | 482 | 97 | 0 |
 | Marshes_dlc1 | 156 | 0 | 156 | 0 | 156 | 0 | 0 |
 | Mendeleev_dlc1 | 411 | 0 | 411 | 0 | 411 | 0 | 0 |
 | Misc | 21 | 19 | 2 | 0 | 21 | 0 | 0 |
 | NewP5 | 5597 | 5332 | 265 | 0 | 5597 | 0 | 0 |
-| NTD | 1429 | 0 | 1429 | 0 | 1020 | 409 | 0 |
-| OpenWorldVDNKh_Dialogues | 443 | 42 | 401 | 0 | 443 | 0 | 0 |
-| Pavlov_Dialogues | 520 | 82 | 438 | 0 | 520 | 0 | 0 |
+| NTD | 1429 | 1 | 1428 | 0 | 1020 | 409 | 0 |
+| OpenWorldVDNKh_Dialogues | 443 | 91 | 352 | 0 | 443 | 0 | 0 |
+| Pavlov_Dialogues | 520 | 128 | 392 | 0 | 520 | 0 | 0 |
 | PearTerminals | 545 | 539 | 6 | 0 | 545 | 0 | 0 |
 | Phasatron_dlc4 | 489 | 0 | 489 | 0 | 489 | 0 | 0 |
 | Polygon_Dialogues | 199 | 42 | 157 | 0 | 198 | 1 | 0 |
-| Sakhalin_dlc3 | 848 | 0 | 848 | 0 | 811 | 37 | 0 |
+| Sakhalin_dlc3 | 848 | 7 | 841 | 0 | 811 | 37 | 0 |
 | Schebetar_Subs | 361 | 3 | 358 | 0 | 263 | 98 | 0 |
 | Schebetars_dlc1 | 96 | 0 | 96 | 0 | 41 | 55 | 0 |
-| Tech_dlc2 | 228 | 0 | 228 | 0 | 222 | 6 | 0 |
-| Tech_dlc3 | 422 | 0 | 422 | 0 | 422 | 0 | 0 |
-| Tech_dlc4 | 1273 | 1 | 1272 | 0 | 1025 | 248 | 0 |
-| Theatre_Dialogues | 629 | 36 | 593 | 0 | 627 | 2 | 0 |
+| Tech_dlc2 | 228 | 4 | 224 | 0 | 222 | 6 | 0 |
+| Tech_dlc3 | 422 | 5 | 417 | 0 | 422 | 0 | 0 |
+| Tech_dlc4 | 1273 | 119 | 1154 | 0 | 1025 | 248 | 0 |
+| Theatre_Dialogues | 629 | 142 | 487 | 0 | 627 | 2 | 0 |
 | Triton_dlc3 | 928 | 0 | 928 | 0 | 925 | 3 | 0 |
-| Vavilov_Dialogues | 2427 | 379 | 2048 | 0 | 2426 | 1 | 0 |
-| VDNKh_Dialogues | 1292 | 168 | 1124 | 0 | 1280 | 12 | 0 |
+| Vavilov_Dialogues | 2427 | 629 | 1798 | 0 | 2426 | 1 | 0 |
+| VDNKh_Dialogues | 1292 | 229 | 1063 | 0 | 1280 | 12 | 0 |
 | WavePlatform_dlc4 | 291 | 0 | 291 | 0 | 291 | 0 | 0 |
 
 ## Pak entries

@@ -324,14 +324,16 @@ Verify            verify_install.ps1            PASS  0 changes outside ~mods; e
 ```
 
 Facts:
-- Coverage now: **7,387 of 27,618 (26.75%)** rows; **4,431 of 19,996 (22.16%)** unique strings.
+- Coverage now: **8,981 of 27,618 (32.52%)** rows; **4,947 of 19,996 (24.74%)** unique strings.
 - Speaker labels: CONFIRMED displayed to the player in this scene (in brackets) and they are ordinary locres
   rows referenced by the dialogue asset - not `&Speaker&` markers (which stay DLC2-only, DEC-025). `Computer`
   -> `الحاسوب` (138 rows) and `Char-les` -> `تشارلز` (745 rows) now carry ONE Arabic each in every scope;
   `P-3` (1,140 rows) stays Latin by the copy-class rule. Glossary + TM updated (TM now 4,432).
-- Installed: carrier p6 (`b7dbb14e...`), font v2 (`02b17f31...`), manifest (`ad7164eb...`). Rollback:
-  `install_mod.ps1 -Carrier p4 -Font p2_plex` (or `-Carrier p5` for the batch-1 build).
-- In-game checklist: `reports/scene_soda_ingame_check.md`.
-- Batch 2 NOT started (waits for the user's word); batch 1 stays DRAFT.
-- Open: user's in-game report for the boat scene, KI-022 clip-vs-scroll, KI-026 UI fit, KI-027 label
-  coverage for the remaining speaker names.
+- Installed: carrier p7 (`d7cddff4...`), font v2 (`02b17f31...`), manifest (`8685264a...`). Rollback:
+  `install_mod.ps1 -Carrier p6 -Font p2_plex` (or `-Carrier p5` for the batch-1 build).
+- In-game checklist: `reports/scene_cycle012_ingame_check.md`.
+- Batch 2 STARTED (cycle 012): order rule DEC-029 (game progression, data-driven from the subtitle-table
+  dumps), plan in `localization\working\batch2\plan_unique.tsv`, chunk 1 (306 strings / 330 rows) applied as
+  DRAFT. Resume at id `b0309`. Batch 1 + 2 stay DRAFT.
+- Open: in-game report for p7 (does `[ Char-les ]` show Arabic; do other labels), KI-022 clip-vs-scroll,
+  KI-026 UI fit, KI-027 residual label sweep, KI-018/KI-013/KI-017 Phase 8 blockers.

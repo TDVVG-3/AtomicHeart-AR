@@ -839,3 +839,76 @@ user approval through the reconciling installer (`p4` removed only after its has
 font v2 untouched); before/after snapshot PASS with 0 changes outside `~mods`. Rollback:
 `install_mod.ps1 -Carrier p4 -Font p2_plex` (the previously installed build) or `-Carrier p5` (the batch-1
 build).
+
+## DEC-029 (cycle 012, 2026-10-19): batch-2 order follows GAME PROGRESSION, not the tier grid
+
+Ruling. Batch 2 translates DIALOGUE in story order; UI strings are pushed to the end of the batch.
+The order is written down in `scripts/batch2_plan.ps1` and materialised in
+`localization/working/batch2/plan.tsv` / `plan_unique.tsv`.
+
+Order rule (rank 0 first):
+   1. `CUTSCENES` and `Chelomey_Dialogues` - the prologue (boat narration, arrival, first quests),
+   2. the remaining base-game dialogue/subtitle scopes in story order: `VDNKh_Dialogues`,
+      `Vavilov_Dialogues`, `Pavlov_Dialogues`, `Polygon_Dialogues`, `Theatre_Dialogues`,
+      `OpenWorldVDNKh_Dialogues`, `ChelomeyFinal_Dialogues`, `Academy_Dialogues`, `Schebetar_Subs`,
+   3. side content of those areas: `Mails_01`, `NTD`, then the `DIALOGUES FOR LQA` mirror (last among
+      base-game scopes so that it reuses the finished TM),
+   4. DLC1 -> DLC2 -> DLC3 -> DLC4 dialogue scopes, in release order,
+   5. UI scopes LAST: `PearTerminals`, `NewP5`, `Misc`.
+
+Within a scope the order is DATA-DRIVEN, not guessed: the game's own subtitle DataTable dumps
+(`localization/extracted/dialogue/pakchunk0-WindowsNoEditor__DT_Subtitles_*.txt` and the pakchunk13/14/15/16
+equivalents) list the FText keys in the table's own row order, which is the order the game plays them. The
+planner assigns each key the index of its first appearance in its dump, so the work order equals playback
+order. DLC scopes whose dumps use readable keys (not hex) get no playback index and fall back to master
+line/key order - a documented limitation, not an approximation of story order.
+
+Why `Chelomey_Dialogues` before `CUTSCENES` in practice: the prologue's opening narration and the first
+playable dialogue live in `Chelomey_Dialogues` (verified: the user's screenshot line
+`/A1D6A1694DDB4C4918A9BDA652A16300` is playback index 3 of that scope). Both scopes are rank 0/1 and are
+translated together as the opening.
+
+Chunking rule unchanged (DEC-027): ~300 unique strings per chunk in plan order, per-chunk gate
+(`scripts/batch2_chunk.ps1`), apply to master as DRAFT (`scripts/batch2_apply.ps1`), validate, append to
+`localization/working/batch2/state.tsv`, resume.
+
+Id contract: batch 2 uses a FRESH id space (`b0001...`, `localization/working/batch2/plan_unique.tsv`);
+batch-1 ids are not reused. Chunk authoring is keyed by that id (`ar_<chunk>.tsv` = `id<TAB>arabic`) and the
+English column is copied from the plan by id, so an English cell can never drift from the master; the chunk
+builder hard-fails on an unknown/duplicate id, an empty Arabic cell, a cell without Arabic letters
+(copy-class rows must be omitted) or a placeholder/timing-marker/tag multiset mismatch.
+
+Copy-class still applies: `P-3` (1,140 rows) and `VOV-A6` stay Latin; their rows are deliberately omitted
+from chunks, so they remain UNTRANSLATED with an empty Arabic cell (validator hard-fails both a Latin-only
+Arabic and a translated copy-class row).
+
+## DEC-030 (cycle 012, 2026-10-19): speaker names are a single curated dictionary; existing batch-1 wording wins
+
+Ruling. `localization/working/labels/speaker_names.tsv` (english / arabic / note) is the single authority
+for speaker-name labels and is applied by `scripts/apply_speaker_names.ps1`.
+
+Rules:
+   - one Arabic per speaker name, applied to EVERY scope (DEC-028),
+   - exact, case-sensitive English match (ordinal `Dictionary[string,string]`, KI-023); `Char-les` and
+     `CHAR-les` are distinct source strings and both map to the same Arabic,
+   - only rows with an EMPTY Arabic cell are filled; a non-empty different Arabic is reported as a conflict
+     and never overwritten,
+   - an entry with an EMPTY Arabic is a documented copy-class keep (`P-3`, `Char-les`, `Computer`,
+     `VOV-A6`) and is skipped,
+   - the glossary is the higher authority: the dictionary adopts the glossary's Arabic for every term the
+     glossary already defines (`Doctor`, `Ballerina`, `Korolyov`, `Polymorph` family, `Nechaev`,
+     `Sergey Nechaev`, `Kollektiv Neural Network`, `Soviet`), and the glossary's own batch-1 wording wins
+     over a new draft (116 entries adopted the existing master wording, so no shipped row was churned),
+   - names the dictionary could not confidently render stay out and are listed in
+     `glossary/glossary_questions.md` section 9 (technical ids such as `Start`, `NoText`, `SaidSecond`,
+     `FinalDialog`, `RadioReroute` and a residual set of one-off label strings).
+
+Result (cycle 012): 1,264 rows filled across 292 distinct names, 0 conflicts, validator warnings unchanged
+at 197 (no new glossary/number/length warning), glyph gate PASS with `-AllowSourceInheritedNonLatin`.
+
+Build decision. Carrier p7 = p6 + labels + chunk 1: 3,790,472 bytes, sha256
+d7cddff41ac346d7a28c79646e702bb34c1672d1c3e32f8187fa77983b177d9c, 8,981 Arabic + 18,637 English-filled +
+0 kept Korean, 35/35 scopes, 0 round-trip failures, 35/35 unpack byte-identical. INSTALLED with explicit
+user approval through the reconciling installer (p6 removed only after its hash matched the manifest, font
+v2 untouched, `~mods` holds exactly the 3 expected files). Rollback: `install_mod.ps1 -Carrier p6 -Font
+p2_plex` (build in `build\package\`) or `-Carrier p5` for the batch-1 build.
