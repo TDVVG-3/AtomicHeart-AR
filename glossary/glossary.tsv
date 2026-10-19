@@ -136,3 +136,9 @@ PASHTET	باشتيت	weapon	transliterated	DRAFT	Russian nickname (pate); shown 
 BEA-D	BEA-D	robot	preserved	DRAFT	model designation; plural BEA-Ds; kept in Latin
 Archive	الأرشيف	location	translated	DRAFT	the Academy Archive
 Electro Capsule	كبسولة إلكترو	item	translated	DRAFT	energy capsule consumable
+Soda	صودا	item	translated	DRAFT	RU "газировка"; the everyday Soviet fizzy drink; replaces the previous "الغازية" (cycle 013, DEC-034)
+THOUGHT device	الفكرة	item	translated	DRAFT	the neuro-connector; Russian original «Мысль»; quoted in running text as «الفكرة»; replaces the Latin "THOUGHT" (DEC-035)
+Soda water	مياه غازية	item	translated	DRAFT	vending-machine sign "ГАЗИРОВАННАЯ ВОДА" (NTD_StringTable/gazirovka); sparkling water, distinct from the drink
+Cream Soda	كريم صودا	item	transliterated	DRAFT	lemonade flavour "Крем-сода" on the VDNH signs
+Tarkhun	طارخون	item	transliterated	DRAFT	tarragon lemonade "Тархун" on the VDNH buffet sign
+Duchess	ديوشيس	item	transliterated	DRAFT	pear lemonade "Дюшес" on the VDNH buffet sign

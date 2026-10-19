@@ -337,3 +337,31 @@ Facts:
   DRAFT. Resume at id `b0309`. Batch 1 + 2 stay DRAFT.
 - Open: in-game report for p7 (does `[ Char-les ]` show Arabic; do other labels), KI-022 clip-vs-scroll,
   KI-026 UI fit, KI-027 residual label sweep, KI-018/KI-013/KI-017 Phase 8 blockers.
+
+## Cycle 013 - reviewer style/term fixes + batch 2 to the 50% milestone: carrier p8 built AND installed (2026-10-19)
+
+- **Shipped:** carrier p8 (4,012,829 B, sha256 `dd0391ed...`) + font v2 (`02b17f31...`); `~mods` holds
+  exactly 3 files; superseded p7 removed after hash match. Rollback:
+  `scripts\install_mod.ps1 -Carrier p7 -Font p2_plex`.
+- **Coverage: 13,989 of 27,618 rows (50.65%)** - the 13,809-row (50%) milestone is reached and passed
+  (8,981 / 32.52% at the start of the cycle). Unique English 9,130 of 19,996 (45.66%).
+- **Reviewer feedback applied:** the soda term was fixed from the Russian source (`газировка` -> `صودا`,
+  DEC-034 - vending sign `مياه غازية`, flavours `كريم صودا`/`طارخون`/`ديوشيس`, previous `الغازية`
+  retired); 40 already-shipped rows were rewritten for tone with before/after evidence
+  (`reports/tone_pass.md`); the spoken-register rule is now standing policy
+  (`glossary/terminology.md` section 12, DEC-033); the device name was unified as `«الفكرة»`
+  (17 rows, DEC-035).
+- **Batch 2 finished:** chunks 0002-0015 (ids `b0309`-`b4508`, 4,189 strings, 5,008 rows) authored on
+  the frozen progression plan (DEC-029) under `localization\working\batch2\AUTHORING_BRIEF.md`
+  (contract DEC-037); every chunk passed its gate, was applied atomically, 0 conflicts. 11 ids are
+  documented copy-class keeps.
+- **Gates:** validator 0 errors (277 warnings = number 24 / length 112 / glossary 141, all triaged as
+  morphological false positives, DEC-036); glyph gate introduced-by-Arabic 0; carrier 35/35 scopes with
+  0 FAIL and 35/35 byte-identical round-trip; trailing whitespace 0; fixups PASS after catching a
+  regression (2 rows re-shortened, carrier rebuilt, DEC-038).
+- **Docs:** DEC-031..038, KI-028 (cosmetic choice layout) and KI-029 (`[...]` bracket rows cannot pass
+  the chunk gate), `reports/cycle013_results.md` = `lastreport.md` = `reports/history/report_017.md` =
+  `handoff_017.md`; `AR_EN_REFERENCE.md` (3,269,014 B) and the 40-row `reports/review_sample.md`
+  regenerated.
+- **Next:** plan id `b4509`; 13,629 rows remaining (11,316 ids) - the DLC scopes, the NTD VDNH sign
+  strings and the remaining UI. A p9 build/install happens only with explicit approval.

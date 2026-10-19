@@ -1,149 +1,149 @@
 # AR/EN review sample (pilot)
 
-Generated: 2026-10-19 11:44:30
-Rows with Arabic available: 8981 | sample size: 40
+Generated: 2026-10-19 12:56:16
+Rows with Arabic available: 13989 | sample size: 40
 
 Read each block as: Arabic (what the player sees) then the English source it came from.
 
-### 1. [NewP5] UI
+### 1. [Vavilov_Dialogues] Dialogue
+reason: spread | key: /A81EE736450BBE0C9F549AA827F3A36E | notes: batch2-0008
+
+AR: فهمت. أريدك أن تتوجّه إلى فيدنخا فوراً يا P-3. فلدينا مشاكل أكبر من بيتروف لنعالجها.
+
+EN: Understood. I need you to report to the VDNH at once, P-3. We've got bigger problems than Petrov to deal with.
+
+### 2. [NewP5] UI
 reason: spread | key: /FE629BCB49FADFD51998CD84DB989127 | notes: batch1
 
 AR: وحدة الاصطدام فائقة التوصيل
 
 EN: Superconducting impact module
 
-### 2. [NewP5] UI
+### 3. [VDNKh_Dialogues] Dialogue
+reason: spread | key: /F03480C34728DB65170756B8A38F3512 | notes: batch2-0005
+
+AR: إذن موصّل ألفا بحوزة الدكتور سيتشينوف الآن، ويريد الرفيق مولوتوف طرده من المنشأة ليأخذ موصّل ألفا لنفسه؟!
+
+EN: So Dr. Sechenov has the alpha connector right now, and Comrade Molotov wants to kick him out of the Facility so he can take the alpha connector for himself?!
+
+### 4. [VDNKh_Dialogues] Dialogue
+reason: spread | key: /E180602A42E319A4341A44B1B40E2BCB | notes: batch2-0006
+
+AR: هل تتحدث إليّ أيها الرائد؟
+
+EN: Are you talking to me, Major?
+
+### 5. [NewP5] UI
 reason: spread | key: /3C6F4A8C4C2C86C913E096B2E741E2F3 | notes: batch1
 
 AR: كانت تمارا أرتيمينكوفا صديقة ريجوفا الحميمة حين كانت الأخيرة الباليرينا الأولى، وهي الآن منفردة في مسرح مايا بليستسكايا. وقد اضطرّت للنيابة عن صديقتها السابقة في الأدوار الرئيسية كلما تعذّر عليها حضور عرض (بسبب تقلّب المزاج ورفضها مشاركة المسرح مع الروبوتات، بالطبع، في المقام الأول). وعلى الرغم من المنافسة الهائلة بين باليرينات البشر والروبوتات، تحبّ أرتيمينكوفا زميلاتها الميكانيكيات وتحترمهنّ، وتتباهى فخورةً بمشاركتها المسرح معهنّ، إذ ترى في ذلك تجربة فنية غير مسبوقة.
 
 EN: Formerly prima ballerina Ryzhova's best friend, now a soloist at the Maya Plisetskaya Theater, Tamara Artemenkova had had to fill in for her ex-friend in lead roles when the latter was unable to make it to a performance (primarily due to capriciousness and a refusal to share the stage with robots, of course). Despite the enormous competition between human and robot ballerinas, Artemenkova loves and respects her mechanical colleagues and proudly boasts about sharing the stage with them, seeing it as an unprecedented artistic experiment.
 
-### 3. [NewP5] UI
+### 6. [NewP5] UI
 reason: spread | key: /0C87FE2E444E0F95FE3FFF9467B672C9 | notes: batch1
 
 AR: حياة جديدة تتفتّح في الداخل.
 
 EN: New life blossoms inside.
 
-### 4. [Vavilov_Dialogues] Dialogue
+### 7. [CUTSCENES] Cutscene
+reason: spread | key: /7665C54B408C2118D53C80847F1A4DFE | notes: batch2-0004
+
+AR: أليس لديك عمل تفعله؟
+
+EN: Don't you have work to do?
+
+### 8. [Vavilov_Dialogues] Dialogue
 reason: spread | key: /23CCFC4246EF6F7F84A66C83DC9330B1 | notes: label:AI vendor (batch-1 wording kept)
 
 AR: نورا
 
 EN: NORA
 
-### 5. [Chelomey_Dialogues] Dialogue
+### 9. [Chelomey_Dialogues] Dialogue
 reason: spread | key: /4B8476EC4BD2275A98733F80E70C3227 | notes: batch1
 
 AR: رجل يتصوّر
 
 EN: Man posing for a picture
 
-### 6. [NewP5] UI
+### 10. [NewP5] UI
 reason: spread | key: /5D041AD34774DB99BD71DC92C6F7028F | notes: batch1
 
 AR: فيودور كوروليف
 
 EN: Fyodor Korolyov
 
-### 7. [NewP5] UI
+### 11. [Chelomey_Dialogues] Dialogue
+reason: spread | key: /41EEC98A4C81A98AED65F5ABB482DA64 | notes: batch2-0002
+
+AR: علينا مواصلة التقدم أيها الرفيق الرائد!
+
+EN: We need to keep moving, Comrade Major!
+
+### 12. [NewP5] UI
 reason: spread | key: /485C9D874CB3A9AD6D64D4878659760A | notes: batch1
 
 AR: الأبواب مفتوحة
 
 EN: Doors are open
 
-### 8. [NewP5] UI
+### 13. [NewP5] UI
 reason: spread | key: /934D0CEB4CB8C203F095F785D81F1A64 | notes: batch1
 
 AR: خذ رأس فيكتور إلى مختبر مجمّع بافلوف
 
 EN: Take Viktor's head to the Pavlov Complex lab
 
-### 9. [NewP5] UI
+### 14. [VDNKh_Dialogues] Dialogue
+reason: spread | key: /8754256742DC94C8F130048A1B4F62FE | notes: batch2-0006
+
+AR: *0.06*وضع التدريب؟! سيؤدي هذا إلى عدوانية أكبر من أنظمة الحماية السلبية والمادية! *0.07*سيضعك في خطر وقد يؤدي إلى موت الناس الناجين، إن كان هناك ناجون أصلاً!
+
+EN: *0.06*Drill mode?! This would lead to even greater aggression from passive and physical security systems! *0.07*It will endanger you and may lead to the death of the surviving people, assuming there are any still left!
+
+### 15. [NewP5] UI
 reason: spread | key: /A3FA8F764DA2BD4CD840A184AFC56080 | notes: batch1
 
 AR: ادخل الكوخ
 
 EN: Enter the hut
 
-### 10. [NewP5] UI
+### 16. [Vavilov_Dialogues] Dialogue
+reason: spread | key: /52EC7FF847D25DC9CFEE22B6BDEC31CD | notes: batch2-0011
+
+AR: *0.11*يا لسوء ما انتهى إليه كل شيء. لم يتخيل أحد أن يحدث شيء كهذا. كان الحديث دائماً عن «الانطلاق إلى النجوم»، و«المستقبل المشرق الذي ينتظرنا»... *0.04*والآن كل ما أستطيعه أن أرقد هنا وأفكر في كل ذلك.
+
+EN: *0.11*It's too bad how it all ended up. No one ever thought something like this could happen. It was always "going to the stars," "the bright future that awaits us..." *0.04*now all I can do is lie here and think about it all.
+
+### 17. [VDNKh_Dialogues] Dialogue
+reason: spread | key: /26EFCDF44B49D981D031D4B5B8AA33CF | notes: batch2-0006
+
+AR: حسناً، اهدأ. سأحاول أن أجدهم.
+
+EN: All right, calm down. I'll try to find them.
+
+### 18. [Polygon_Dialogues] Dialogue
+reason: spread | key: /80882C534DC27739B7EFB79FA62A4F03 | notes: batch2-0012
+
+AR: بالتأكيد، لكنها نُفّذت على نحو غير سليم. والاتحاد السوفييتي لن يرتكب خطأً كهذا أبداً.
+
+EN: Indeed, but it was implemented improperly. The Soviet Union would never make such a mistake.
+
+### 19. [NewP5] UI
 reason: spread | key: /F67A0C73418226C83B830C8B561B3EE0 | notes: batch1
 
 AR: رغم بساطته، يتيح التصويب على مسافة تزيد على 100 متر.
 
 EN: Despite its simplicity, allows to aim at a distance of more than 100 meters.
 
-### 11. [DIALOGUES FOR LQA] Dialogue
-reason: spread | key: /A08B1FE845D63766B1918C9E5BE267CC | notes: speaker:char-les
+### 20. [CUTSCENES] Cutscene
+reason: spread | key: /8B30CBC0472A42B17A4EE7917597AA74 | notes: batch2-0003
 
-AR: تشارلز
+AR: أعطِ هذا للاريسا. أسدل الستار!
 
-EN: Char-les
-
-### 12. [Vavilov_Dialogues] Dialogue
-reason: spread | key: /D5E2D7834F900E60981F48AF2E244C65 | notes: label:DLC speaker
-
-AR: متحول ملقح
-
-EN: Vaccinated mutant
-
-### 13. [NewP5] UI
-reason: spread | key: /D2A470934B22D0E426C041AFB3EE7E34 | notes: batch1
-
-AR: إصدار DirectX
-
-EN: DirectX Version
-
-### 14. [NewP5] UI
-reason: spread | key: /4777E7B64EF77FF9CC20F9A203855584 | notes: batch1
-
-AR: تثبيت
-
-EN: INSTALL
-
-### 15. [NewP5] UI
-reason: spread | key: /E3CD4A1B47D41D465DD381A7E539B0F4 | notes: batch1
-
-AR: تصحيح سطوع الصورة
-
-EN: Image brightness correction
-
-### 16. [NewP5] UI
-reason: spread | key: /DA129D4643D49F7AD9A82AAAED51F4AA | notes: batch1
-
-AR: فضلات مشابهة. هذا ليس ما سألت عنه.
-
-EN: Similar feces. That's not what I asked.
-
-### 17. [Mails_01] Lore
-reason: spread | key: /7EDCB4A04F02FC0B22F49E8CF9BB0F37 | notes: label:Alexey Lebedev (batch-1 wording kept)
-
-AR: ليبيديف
-
-EN: Lebedev
-
-### 18. [NewP5] UI
-reason: spread | key: /6F7E6506432BD49AF4CC93A94A781AF1 | notes: batch1
-
-AR: تنشأ أشدّ الكراهية تجاه من استطاعوا لمس القلوب ثم بصقوا في الروح.
-
-EN: The biggest hatred occurs to those who managed to touch the hearts, and then spit into the soul.
-
-### 19. [NewP5] UI
-reason: spread | key: /56D01DBB43C3B5827E2B5BA81D542975 | notes: batch1
-
-AR: سطح عاكس
-
-EN: Reflective Surface
-
-### 20. [Chelomey_Dialogues] Dialogue
-reason: spread | key: /3802E8894C08D6BACE017EBBB232A3DD | notes: batch2-0001
-
-AR: صدّق أو لا تصدّق، هذه الاحتمالات أفضل من الفوز باليانصيب. يا لها من مصادفة.
-
-EN: Believe it or not, they're better than winning the lottery. Such a coincidence.
+EN: Give this to Larisa. Curtain!
 
 ### 21. [PearTerminals] UI
 reason: longest | key: /9A3AD94643642C7E9B30C09C32D4615B | notes: batch1

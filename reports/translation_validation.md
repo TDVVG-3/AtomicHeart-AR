@@ -1,6 +1,6 @@
 # Translation validation report
 
-Generated: 2026-10-19 11:43:13
+Generated: 2026-10-19 13:03:24
 Validator: scripts/validate_translation.ps1 (PowerShell twin of scripts/validate_translation.py)
 
 RESULT: **PASS**
@@ -8,63 +8,69 @@ RESULT: **PASS**
 | metric | value |
 |---|---|
 | master rows | 27618 |
-| rows with Arabic | 8981 |
+| rows with Arabic | 13989 |
 | hard errors | 0 |
-| warnings (number/length/glossary) | 197 |
-| - number-multiset warnings | 15 |
+| warnings (number/length/glossary) | 277 |
+| - number-multiset warnings | 24 |
 | - UI length warnings | 112 |
-| - glossary warnings | 70 |
+| - glossary warnings | 141 |
 
 ## Status distribution (whole master)
 
 | Status | rows |
 |---|---|
-| DRAFT | 8981 |
-| UNTRANSLATED | 18637 |
+| DRAFT | 13989 |
+| UNTRANSLATED | 13629 |
 
 ## Translated rows per scope
 
 | scope | rows with Arabic |
 |---|---|
 | NewP5 | 5332 |
-| Chelomey_Dialogues | 801 |
-| Vavilov_Dialogues | 629 |
+| Vavilov_Dialogues | 1961 |
+| Chelomey_Dialogues | 1119 |
+| VDNKh_Dialogues | 1064 |
+| CUTSCENES | 720 |
+| DIALOGUES FOR LQA | 692 |
+| Theatre_Dialogues | 572 |
 | PearTerminals | 539 |
+| OpenWorldVDNKh_Dialogues | 431 |
+| Pavlov_Dialogues | 404 |
 | Academy_Dialogues | 259 |
-| CUTSCENES | 236 |
-| VDNKh_Dialogues | 229 |
-| Theatre_Dialogues | 142 |
-| Pavlov_Dialogues | 128 |
-| Tech_dlc4 | 119 |
-| OpenWorldVDNKh_Dialogues | 91 |
-| ChelomeyFinal_Dialogues | 79 |
-| DIALOGUES FOR LQA | 68 |
-| Chelomey_dlc3 | 68 |
-| Mails_01 | 65 |
+| ChelomeyFinal_Dialogues | 186 |
+| Polygon_Dialogues | 150 |
+| Tech_dlc4 | 120 |
+| Chelomey_dlc3 | 77 |
+| Mails_01 | 66 |
+| Schebetar_Subs | 57 |
 | Mails_Shebetars_Tech_dlc3 | 44 |
-| Polygon_Dialogues | 42 |
-| Mails_Shebetars_dlc4 | 35 |
+| Mails_Shebetars_dlc4 | 39 |
+| Locations_dlc2 | 31 |
+| Cutscenes_dlc1 | 22 |
+| CrystalComplex_dlc4 | 19 |
 | Misc | 19 |
-| Locations_dlc2 | 18 |
-| Cutscenes_dlc1 | 16 |
-| Sakhalin_dlc3 | 7 |
-| Tech_dlc3 | 5 |
+| LebedevLab_dlc4 | 13 |
+| Sakhalin_dlc3 | 12 |
+| Mendeleev_dlc1 | 9 |
+| Triton_dlc3 | 9 |
+| Marshes_dlc1 | 7 |
+| Tech_dlc3 | 6 |
 | Tech_dlc2 | 4 |
-| Schebetar_Subs | 3 |
+| WavePlatform_dlc4 | 2 |
+| Phasatron_dlc4 | 2 |
 | NTD | 1 |
 | Mails_Shebetars_dlc2 | 1 |
-| CrystalComplex_dlc4 | 1 |
 
 ## Translated rows per category
 
 | category | rows with Arabic |
 |---|---|
+| Dialogue | 6869 |
 | UI | 5890 |
-| Dialogue | 2486 |
-| Cutscene | 252 |
-| Unknown | 204 |
-| Lore | 146 |
-| Subtitles | 3 |
+| Cutscene | 742 |
+| Unknown | 280 |
+| Lore | 151 |
+| Subtitles | 57 |
 
 ## Hard errors
 
@@ -76,6 +82,18 @@ None.
 - line 122: glossary term 'CHAR-les' -> 'تشارلز' not found in Arabic
 - line 175: glossary term 'Soviet' -> 'سوفييتي' not found in Arabic
 - line 286: number multiset differs (en=[0|0|0|0|0|0|07|09|10|10|13|1955|2|2] ar=[0|0|0|0|0|0|07|09|10|10|1955|2|2])
+- line 970: glossary term 'Theater' -> 'المسرح' not found in Arabic
+- line 1274: glossary term 'Neuropolymer' -> 'البوليمر العصبي' not found in Arabic
+- line 1320: glossary term 'Soviet' -> 'سوفييتي' not found in Arabic
+- line 2416: glossary term 'Puppet' -> 'دمية' not found in Arabic
+- line 4079: glossary term 'Doctor' -> 'دكتور' not found in Arabic
+- line 4129: glossary term 'Doctor' -> 'دكتور' not found in Arabic
+- line 5131: glossary term 'Doctor' -> 'دكتور' not found in Arabic
+- line 5180: glossary term 'Professor' -> 'البروفيسور' not found in Arabic
+- line 5360: glossary term 'Puppet' -> 'دمية' not found in Arabic
+- line 5371: glossary term 'Doctor' -> 'دكتور' not found in Arabic
+- line 5398: glossary term 'Professor' -> 'البروفيسور' not found in Arabic
+- line 5568: number multiset differs (en=[50] ar=[])
 - line 9605: UI length 15 > 1.2 x 12
 - line 9614: UI length 52 > 1.2 x 42
 - line 9782: number multiset differs (en=[3] ar=[])
@@ -233,6 +251,17 @@ None.
 - line 14980: UI length 19 > 1.2 x 15
 - line 15031: glossary term 'Cartridge' -> 'خرطوشة' not found in Arabic
 - line 15111: glossary term 'Soviet' -> 'سوفييتي' not found in Arabic
+- line 16800: glossary term 'Professor' -> 'البروفيسور' not found in Arabic
+- line 17001: glossary term 'Ballerina' -> 'الباليرينا' not found in Arabic
+- line 17040: glossary term 'Doctor' -> 'دكتور' not found in Arabic
+- line 17048: glossary term 'Professor' -> 'البروفيسور' not found in Arabic
+- line 17352: glossary term 'Doctor' -> 'دكتور' not found in Arabic
+- line 17370: glossary term 'Doctor' -> 'دكتور' not found in Arabic
+- line 17374: glossary term 'Doctor' -> 'دكتور' not found in Arabic
+- line 17399: glossary term 'Terminal' -> 'محطة طرفية' not found in Arabic
+- line 17475: glossary term 'Doctor' -> 'دكتور' not found in Arabic
+- line 17506: glossary term 'Neuropolymer' -> 'البوليمر العصبي' not found in Arabic
+- line 17583: glossary term 'Doctor' -> 'دكتور' not found in Arabic
 - line 17593: glossary term 'Doctor' -> 'دكتور' not found in Arabic
 - line 17629: UI length 15 > 1.2 x 12
 - line 17679: glossary term 'Workshop' -> 'ورشة' not found in Arabic
@@ -269,4 +298,61 @@ None.
 - line 18096: glossary term 'Terminal' -> 'محطة طرفية' not found in Arabic
 - line 18100: glossary term 'Soviet' -> 'سوفييتي' not found in Arabic
 - line 18106: glossary term 'Doctor' -> 'دكتور' not found in Arabic
+- line 18737: glossary term 'Soviet' -> 'سوفييتي' not found in Arabic
+- line 18738: glossary term 'Module' -> 'وحدة' not found in Arabic
+- line 18799: number multiset differs (en=[0|0|0|0|000|07|08|08|12|2|42] ar=[0|0|0|0|07|08|08|12|2|42])
+- line 18799: glossary term 'Soviet' -> 'سوفييتي' not found in Arabic
+- line 18803: number multiset differs (en=[0|0|08|09|1|2] ar=[0|0|08|09|1])
+- line 18815: glossary term 'Soviet' -> 'سوفييتي' not found in Arabic
+- line 19682: glossary term 'Lastochkin' -> 'لاستوتشكين' not found in Arabic
+- line 19689: glossary term 'Petrov' -> 'بيتروف' not found in Arabic
+- line 19699: glossary term 'Major' -> 'الرائد' not found in Arabic
+- line 19700: glossary term 'Soviet' -> 'سوفييتي' not found in Arabic
+- line 19703: glossary term 'Lastochkin' -> 'لاستوتشكين' not found in Arabic
+- line 19705: glossary term 'Petrov' -> 'بيتروف' not found in Arabic
+- line 19708: glossary term 'Puppet' -> 'دمية' not found in Arabic
+- line 19713: glossary term 'Lastochkin' -> 'لاستوتشكين' not found in Arabic
+- line 19715: glossary term 'Workshop' -> 'ورشة' not found in Arabic
+- line 19721: glossary term 'Petrov' -> 'بيتروف' not found in Arabic
+- line 19726: glossary term 'VDNH' -> 'فيدنخا' not found in Arabic
+- line 19728: glossary term 'Kollektiv' -> 'كوليكتيف' not found in Arabic
+- line 19737: glossary term 'Petrov' -> 'بيتروف' not found in Arabic
+- line 19762: glossary term 'Petrov' -> 'بيتروف' not found in Arabic
+- line 22288: glossary term 'Ballerina' -> 'الباليرينا' not found in Arabic
+- line 22451: glossary term 'Puppet' -> 'دمية' not found in Arabic
+- line 22466: glossary term 'Ballerina' -> 'الباليرينا' not found in Arabic
+- line 22680: number multiset differs (en=[24] ar=[])
+- line 24987: number multiset differs (en=[1] ar=[])
+- line 25016: glossary term 'Terminal' -> 'محطة طرفية' not found in Arabic
+- line 25049: glossary term 'Upgrade' -> 'ترقية' not found in Arabic
+- line 25070: glossary term 'Soviet Union' -> 'الاتحاد السوفييتي' not found in Arabic
+- line 25151: glossary term 'Cryopolymer' -> 'كرايو-بوليمر' not found in Arabic
+- line 25156: glossary term 'Cryopolymer' -> 'كرايو-بوليمر' not found in Arabic
+- line 25180: glossary term 'Terminal' -> 'محطة طرفية' not found in Arabic
+- line 25205: glossary term 'Terminal' -> 'محطة طرفية' not found in Arabic
+- line 25277: glossary term 'Cryopolymer' -> 'كرايو-بوليمر' not found in Arabic
+- line 25403: glossary term 'Professor' -> 'البروفيسور' not found in Arabic
+- line 25459: glossary term 'Major' -> 'الرائد' not found in Arabic
+- line 25576: glossary term 'Professor' -> 'البروفيسور' not found in Arabic
+- line 25631: glossary term 'Cryopolymer' -> 'كرايو-بوليمر' not found in Arabic
+- line 25642: glossary term 'Motherland' -> 'الوطن الأم' not found in Arabic
+- line 25800: glossary term 'Neuropolymer' -> 'البوليمر العصبي' not found in Arabic
+- line 25882: glossary term 'Terminal' -> 'محطة طرفية' not found in Arabic
+- line 25944: glossary term 'Terminal' -> 'محطة طرفية' not found in Arabic
+- line 26496: number multiset differs (en=[0|0|000|04|10|3|78] ar=[0|0|04|10|3000|78])
+- line 26546: glossary term 'Ballerina' -> 'الباليرينا' not found in Arabic
+- line 26599: glossary term 'Professor' -> 'البروفيسور' not found in Arabic
+- line 26599: glossary term 'Doctor' -> 'دكتور' not found in Arabic
+- line 26691: glossary term 'Soviet' -> 'سوفييتي' not found in Arabic
+- line 26793: glossary term 'Soviet' -> 'سوفييتي' not found in Arabic
+- line 26864: glossary term 'Doctor' -> 'دكتور' not found in Arabic
+- line 26869: number multiset differs (en=[2|500] ar=[2500])
+- line 26971: glossary term 'Canister' -> 'حاوية' not found in Arabic
+- line 26986: number multiset differs (en=[1|1950|47] ar=[1950|47])
+- line 26987: glossary term 'Soviet' -> 'سوفييتي' not found in Arabic
+- line 27004: glossary term 'Polymers' -> 'البوليمرات' not found in Arabic
+- line 27093: glossary term 'Canister' -> 'حاوية' not found in Arabic
+- line 27154: glossary term 'Puppet' -> 'دمية' not found in Arabic
+- line 27191: number multiset differs (en=[50] ar=[])
+- line 27219: glossary term 'Soviet' -> 'سوفييتي' not found in Arabic
 

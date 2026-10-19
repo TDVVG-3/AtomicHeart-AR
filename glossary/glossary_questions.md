@@ -209,3 +209,29 @@ grouped by chunk). Summary of the classes that need your judgement:
        Arabic. If any line's tone, joke or insult reads wrong, name the chunk id (`b####`) - the file is
        `localization/working/batch2/ar_0001.tsv`, and the English is in
        `localization/working/batch2/plan_unique.tsv` under the same id.
+    G. **The drink in the canal boat scene (cycle 013) - please confirm the term.** Your note was right:
+       `الغازية` is colloquial and does not fit. I checked the Russian original (exported from the shipped
+       ru-RU locres with `scripts/export_ru_reference.ps1` into `localization/extracted/ru_csv/`):
+       - boat scene: `Дорогой товарищ, газировки не желаете?` - "газировка", the everyday Soviet fizzy
+         drink (English "soda"). Now: **`تريد صودا يا رفيقي العزيز؟`**.
+       - museum order list: `Газировка - 200 литров` (English "Soda, 200 liters"). Was `مياه غازية، 200 لتر`,
+         now **`صودا، 200 لتر`**.
+       - VDNH vending-machine sign: Russian is `ГАЗИРОВАННАЯ ВОДА` (sparkling water), English "SODA". The row
+         is still untranslated; when authored it becomes **`مياه غازية`** - that is the precise Arabic for a
+         water sign, which is why two Arabic terms exist for the two Russian ones.
+       - buffet/museum signs also sell lemonades: `Крем-сода`, `Тархун`, `Дюшес` -> **`كريم صودا`, `طارخون`,
+         `ديوشيس`** (flavour names, transliterated); `NEW FLAVORS: CREAM SODA AND SAKHALIN` -> `نكهات جديدة:
+         كريم صودا وساخالين`. Those rows are still untranslated and will use these forms.
+       - the metaphor "like popping the caps off soda bottles" (`словно бутылки газировки открывали`,
+         Vavilov/LQA) is still untranslated and will use `زجاجات الصودا`.
+       Q: is **`صودا`** the term you want (alternative: `مشروب غازي` everywhere), or should the sign form
+       `مياه غازية` be avoided? DECISION NEEDED (glossary row `Soda` is DRAFT).
+       Also note: `الغازية` was a substring of `التوربينات الغازية` ("gas turbines"), so the fix used a
+       full-row match - the turbine row was NOT touched.
+    H. **Style rule applied retroactively (cycle 013).** Your "too soft / polite / stiff" feedback is now a
+       standing rule (`glossary/terminology.md` section 12) and was applied to the already-shipped content:
+       40 rows rewritten (prologue, Chelomey, Academy, PearTerminals, NewP5), each compared with the Russian
+       source. Before/after with the reason for every row: `reports/tone_pass.md`. Deliberately NOT changed:
+       the PearTerminals/Mails official letters, whose Russian is itself a bureaucratic formula.
+       Q: if any remaining line still reads soft, give me the scene and I will treat it as a rule 12
+       violation - the same pass can be extended to more rows (my cap was 150 rows).

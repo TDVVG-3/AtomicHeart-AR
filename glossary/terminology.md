@@ -153,3 +153,39 @@ Owner rule set: MASTER_PROMPT.md + DEC-023. This file is ASCII-only by project r
 
 11.2 A fix is recorded in `reports/text_fixups_log.md` with the exact rows it touched, and is
     mentioned in HANDOFF.md.
+
+## 12. Spoken-register rule (standing, cycle 013 - user style decision)
+
+12.1 Natural spoken-register Modern Standard Arabic. Every line must read the way a native
+    speaker would really say it out loud in a game: not a literal word-by-word rendering of the
+    English, and not a formal literary register. If the English is short, the Arabic is short.
+    Prefer common everyday words over rare literary ones.
+
+12.2 Each character keeps their own voice; the English and (where the tone is ambiguous) the
+    RUSSIAN source decide how blunt or polite the line is:
+    - Char-les: cheerful, chatty, sarcastic, informal.
+    - Sechenov and officials: pompous, cold, bureaucratic.
+    - Soldiers, workers, peasants: blunt, rough, direct.
+    - Robots and service machines: mechanical, polite-formal ONLY when the English/Russian is.
+    - P-3 (Nechaev): sarcastic, often annoyed.
+    - NORA: cheerful product-assistant tone.
+    A line that is polite in the source stays polite - the rule is against stiffness the source
+    does not have, not against politeness the source does have.
+
+12.3 Never soften. Insults, swearing, threats, sarcasm and dark humour keep their full strength
+    and stay in the same register as the original (see 1.2 - no sanitizing).
+
+12.4 Typical stiffness markers to avoid unless the source is formal:
+    - "هل ترغب / هل تودّ" -> "تريد" (question formed by intonation, as in speech)
+    - "أليس كذلك؟" for a short "eh?/huh?" -> "هاه؟"
+    - "أودّ أن / أرغب في" -> "أريد / يا ليتني" depending on meaning
+    - "ينبغي أن" -> "عليّ أن"
+    - "يسعدني سماع ذلك" -> "هذا رائع"
+    - "من فضلك" for a shouted order or a plain request -> drop it or use a direct imperative
+    - "أنا في سنٍّ تجعلني..." -> "أنا كبير بما يكفي..."
+    - official-letter formulas ("من واجبي أن أسترعي انتباهكم") are KEPT where the Russian is
+      itself an official-letter formula - that is register, not stiffness.
+
+12.5 Applied retroactively to already-shipped content (prologue, Chelomey, cutscenes) through
+    `localization/working/tm_fixups.tsv`; listed with before/after in `reports/tone_pass.md`.
+    New batch-2/3/4 authoring follows it from the start.

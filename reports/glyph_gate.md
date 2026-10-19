@@ -1,26 +1,26 @@
 # Glyph gate report (pilot)
 
-Generated: 2026-10-19 11:43:41
+Generated: 2026-10-19 13:03:26
 Font pak under test: build/package/zzz_atomicheart-ar_font_p2_plex_P.pak -> build/staging/font_p2/modpakfont
-Master: C:\AtomicHeart-AR\localization\master\atomic-heart-ar.tsv (8981 rows with Arabic)
+Master: C:\AtomicHeart-AR\localization\master\atomic-heart-ar.tsv (13989 rows with Arabic)
 
 VERDICT: **PASS**
 
-Distinct codepoints used by the translated rows: 149
-Codepoints missing from the subtitle face: 5
-Codepoints missing from the union of all six installed faces: 5
-Of those, source-inherited (also present in the English source of the same row): 5
+Distinct codepoints used by the translated rows: 152
+Codepoints missing from the subtitle face: 6
+Codepoints missing from the union of all six installed faces: 6
+Of those, source-inherited (also present in the English source of the same row): 6
 Codepoints newly required by the Arabic and missing from the font: 0
 Source-inherited exemption switch: ON (-AllowSourceInheritedNonLatin)
 
 | face | mapped codepoints | missing (pilot chars) | Latin-Basic missing | Cyrillic | Hangul sample |
 |---|---|---|---|---|---|
-| BlenderPro-Medium (subtitle/dialogue) **(subtitle)** | 1032 | 5 | 0 | 0 | 0 |
-| BlenderPro-Book | 1032 | 5 | 0 | 0 | 0 |
-| BlenderPro-Bold | 1032 | 5 | 0 | 0 | 0 |
-| BrutalType | 1032 | 5 | 0 | 0 | 0 |
-| Gotham-Black | 1032 | 5 | 0 | 0 | 0 |
-| Gotham-BookItalic | 1032 | 5 | 0 | 0 | 0 |
+| BlenderPro-Medium (subtitle/dialogue) **(subtitle)** | 1032 | 6 | 0 | 0 | 0 |
+| BlenderPro-Book | 1032 | 6 | 0 | 0 | 0 |
+| BlenderPro-Bold | 1032 | 6 | 0 | 0 | 0 |
+| BrutalType | 1032 | 6 | 0 | 0 | 0 |
+| Gotham-Black | 1032 | 6 | 0 | 0 | 0 |
+| Gotham-BookItalic | 1032 | 6 | 0 | 0 | 0 |
 
 ## Missing codepoints
 
@@ -29,6 +29,7 @@ Source-inherited exemption switch: ON (-AllowSourceInheritedNonLatin)
 - U+0445 (source-inherited) first seen in NewP5 key /973BEB76455E2025A20AC0988F20DA2C
 - U+202F (source-inherited) first seen in NewP5 key /C963D0654B135C8FA61E1AA345081E80
 - U+2060 (source-inherited) first seen in NewP5 key /C963D0654B135C8FA61E1AA345081E80
+- U+0435 (source-inherited) first seen in Schebetar_Subs key /7F79D9724D1856FEEE7C9BB106E43C2E
 
 ## Notes
 

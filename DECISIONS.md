@@ -912,3 +912,110 @@ d7cddff41ac346d7a28c79646e702bb34c1672d1c3e32f8187fa77983b177d9c, 8,981 Arabic +
 user approval through the reconciling installer (p6 removed only after its hash matched the manifest, font
 v2 untouched, `~mods` holds exactly the 3 expected files). Rollback: `install_mod.ps1 -Carrier p6 -Font
 p2_plex` (build in `build\package\`) or `-Carrier p5` for the batch-1 build.
+
+## DEC-031 (cycle 013, 2026-10-19): carrier p7 is CONFIRMED in game - bracketed speaker labels, Arabic dialogue, choices and prompts all render
+
+Ruling. The user's in-game report on p7 (screenshot, 2026-10-19) confirms the whole visible surface of the
+Chelomey canal boat scene (`D_0072_Sipuha_BringSoda`) renders Arabic: the speaker label `[ الحاسوب ]`, the
+dialogue line, BOTH dialogue choices, and the `تطبيق` (Apply) prompt.
+
+Consequences:
+   - DEC-028/DEC-030 speaker-name policy is validated end to end: the bracketed names are ordinary locres
+     rows, they ARE player-visible, and one dictionary Arabic per name reaches the screen (KI-027 CONFIRMED).
+   - KI-009 (subtitle/dialogue font) moves from LIKELY to CONFIRMED for the subtitle path; only GameTips
+     popups stay NOT TESTED.
+   - KI-022 (subtitle marker parts) moves to partially confirmed: a marker-carrying row plays correctly and
+     prints no marker text; the very-long-part clip-vs-scroll question stays NOT TESTED.
+   - No data change is required by this report.
+
+## DEC-032 (cycle 013, 2026-10-19): choice number/separator placement is a Phase 8 cosmetic item
+
+Observation (same p7 screenshot): in a dialogue choice the number and its separator (`1 //`) are drawn to
+the LEFT of the Arabic choice text, because the choice widget lays out its row LTR while the text run
+itself is correct RTL Arabic.
+
+Ruling. KEEP AS IS for the current cycles. It is a widget-layout matter, not a text defect: the master rows
+and the locres values are correct, and every other checked string renders right. Logged as KI-028
+(COSMETIC / Phase 8) and in ROADMAP.md under "Deferred / parked". Revisit together with the Phase 8 widget
+work (mirroring the choice row so the index sits at the right edge in Arabic).
+
+## DEC-033 (cycle 013, 2026-10-19): standing spoken-register style rule + retroactive tone pass on shipped content
+
+Ruling (user decision, after the p7 in-game check - the Arabic read "too soft, polite and stiff" in places,
+e.g. `هل ترغب بمزيد من ...`). The standing style rule is now `glossary/terminology.md` section 12:
+   - natural spoken-register MSA - how a native speaker really says it, not a word-for-word rendering and
+     not a formal literary register; short English = short Arabic; common everyday words over rare ones,
+   - one voice per character (Char-les cheerful/sarcastic, Sechenov pompous, soldiers/workers blunt,
+     robots mechanical and polite-formal only when the source is, P-3 sarcastic, NORA cheerful);
+     the RUSSIAN source decides when the English tone is ambiguous,
+   - never soften: insults, swearing, threats, sarcasm and dark humour keep their strength,
+   - official-letter register is preserved where the Russian is itself an official letter (that is
+     register, not stiffness).
+
+Retroactive application: the already-shipped content (prologue, Chelomey, Academy, PearTerminals, NewP5) was
+swept with a stiffness-marker list, compared against the ru-RU source, and 40 rows were rewritten through
+`localization/working/tm_fixups.tsv` (KI-021) - 31 rules, 0 errors, validator warnings unchanged at 197,
+glyph gate unchanged (introduced-by-Arabic 0). Before/after: `reports/tone_pass.md`, log:
+`reports/text_fixups_log.md`. New batches follow the rule from the start.
+
+## DEC-034 (cycle 013, 2026-10-19): Russian "газировка" is rendered "صودا"; the previous "الغازية" is retired
+
+Finding (ru-RU locres export of the shipped game, `scripts/export_ru_reference.ps1` -> `localization/extracted/ru_csv/`):
+the boat-scene line is `Дорогой товарищ, газировки не желаете?` and the museum order list says
+`Газировка - 200 литров`; the VDNH vending sign is `ГАЗИРОВАННАЯ ВОДА` and the buffet sign sells lemonades
+`Тархун`, `Крем-сода`, `Дюшес`. So "газировка" is the everyday Soviet fizzy drink, not sparkling water.
+
+Ruling (DRAFT, reviewer may override - `glossary/glossary_questions.md` section G):
+   - `газировка` / `soda` (the drink) -> `صودا` (glossary row added, category item, DRAFT),
+   - `ГАЗИРОВАННАЯ ВОДА` (the vending-machine sign) -> `مياه غازية` (precise sense: sparkling water),
+   - flavour names are transliterated: `Крем-сода` -> `كريم صودا`, `Тархун` -> `طارخون`, `Дюшес` -> `ديوشيس`.
+   - the previous `الغازية` is retired; the boat line now reads `تريد صودا يا رفيقي العزيز؟` and the museum
+     order list `صودا، 200 لتر`.
+   - TOOLING LESSON: `الغازية` also occurs as a substring inside `التوربينات الغازية` ("gas turbines",
+     NewP5), so a bare-substring fixup would have corrupted that row. Every tone/term fix therefore uses a
+     full-row (or unique-phrase) `find` string, and the affected row counts are verified in
+     `reports/text_fixups_log.md`.
+   - rows still untranslated at this point (`NTD_StringTable/gazirovka`, `diaphilm_limonad_1`, `vdnh_bufet2`,
+     the "popping soda bottle caps" metaphor in Vavilov/LQA) carry the same glossary term when their chunk
+     is authored - they cannot be fixed through `tm_fixups.tsv` because their Arabic cell is empty.
+
+## DEC-035 (cycle 013, 2026-10-19): the neuro-connector device is quoted as «الفكرة», not the Latin THOUGHT
+
+- The master held both forms: 17 rows kept the Latin `THOUGHT` (batch 1) and 5 rows already used the
+  translated `«الفكرة»` (batch-2 chunk 1). The Russian original translates the name (`Мысль`), and the
+  project already quotes translated names/sayings (`«سبارك»`, `«راديو المستقبل»`, `«بيلياش»`), so the
+  translated form wins.
+- Applied through `tm_fixups.tsv` (1 global rule, 17 master rows + 17 TM values); glossary row
+  `THOUGHT device -> الفكرة` added so future chunks reuse it. The glossary term is deliberately written
+  as `THOUGHT device` (not bare `THOUGHT`) because bare `thought` is a common English word and would
+  flood the validator with false glossary warnings.
+
+## DEC-036 (cycle 013, 2026-10-19): validator glossary warnings are morphological false positives - triaged, no master change
+
+- 141 glossary warnings were raised at the 13,989-row mark. 10 terms across 20 rows were sampled and
+  every one is a false positive of the naive substring match: plural vs adjective (`السوفييت` vs
+  `سوفييتي`), feminine forms (`طبيبة` = a female doctor), definite/indefinite titles (`بروفيسور` vs
+  `البروفيسور`), word-embedded hits (`majority` matching `Major`) and byte-exact Latin speaker tags
+  (`&Petrov&`).
+- Consequence: no master edits; the matcher itself is the follow-up item (needs stemming or an accepted
+  inflected-forms list). The 24 number-multiset warnings were triaged the same way (Arabic word-numbers
+  such as `خمسين`, `طلقتين`, unseparated 2500/3000, identifier digits) - no defect.
+
+## DEC-037 (cycle 013, 2026-10-19): batch authoring contract - one chunk per independent authoring workstream
+
+- The authoring work is the expensive part (4,189 hand-written lines this cycle). The contract
+  `localization/working/batch2/AUTHORING_BRIEF.md` is written once (format, hard rules, style rule,
+  terminology table, self-verification) and each chunk is authored independently against the frozen
+  plan (DEC-029).
+- Acceptance is automated and non-negotiable: `scripts/batch2_chunk.ps1 -ChunkId NNNN` must PASS
+  (unknown/duplicate id, empty Arabic, Arabic without an Arabic letter, marker/tag multiset). Only the
+  lead session runs `batch2_apply.ps1`, so the master stays consistent and the run is resumable at any
+  point. Result this cycle: 14 chunks, 0 token mismatches, 0 master conflicts.
+
+## DEC-038 (cycle 013, 2026-10-19): `verify_text_fixups.ps1` runs after EVERY batch apply
+
+- `verify_text_fixups.ps1` failed at cycle close on 2 batch-1 shorten rules: new batch-2 rows had
+  reintroduced `الذراع اليسرى` and `تم حفظ البيانات` where the reviewer had approved `ذراع يسرى` and
+  `حُفظت البيانات`. New content can always re-create a phrasing that a reviewer already shortened.
+- Rule: re-run the fixups (global, idempotent) and the verifier after every batch apply. If they change
+  the master, the carrier must be rebuilt/reinstalled - that is why p8 was rebuilt once this cycle.
