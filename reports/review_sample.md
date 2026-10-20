@@ -1,287 +1,302 @@
-# AR/EN review sample (pilot)
+# AR/EN review sample - cycle 015 (p10 carrier)
 
-Generated: 2026-10-19 20:53:47
-Rows with Arabic available: 21220 | sample size: 40
+Generated: 2026-10-20 23:23:20
+Rows with Arabic available: 26022 | sample size: 40
 
 Read each block as: Arabic (what the player sees) then the English source it came from.
 
-### 1. [NTD] Lore
-reason: spread | key: NTD_StringTable/pust_vsegda_budet_solnce | notes: batch2-0021
+## Long dialogue
 
-AR: لتشرق الشمس دائماً!
+rows in this section: 10
 
-EN: MAY THE SUN EVER SHINE!
+## Short UI label
 
-### 2. [Sakhalin_dlc3] Unknown
-reason: spread | key: DT_Subtitles_DLC03_Sakhalin/Sakhalin_139_Sentences | notes: batch2-0034
+rows in this section: 10
 
-AR: أكثر مما أرغب.
+## Tagged / placeholder
 
-EN: More than I'd like.
+rows in this section: 10
 
-### 3. [Vavilov_Dialogues] Dialogue
-reason: spread | key: /A81EE736450BBE0C9F549AA827F3A36E | notes: batch2-0008
+## Edge case (bracket / speaker / escape / timing)
 
-AR: فهمت. أريدك أن تتوجّه إلى فيدنخا فوراً يا P-3. فلدينا مشاكل أكبر من بيتروف لنعالجها.
+rows in this section: 10
 
-EN: Understood. I need you to report to the VDNH at once, P-3. We've got bigger problems than Petrov to deal with.
-
-### 4. [Marshes_dlc1] Unknown
-reason: spread | key: /E60F648346DEE686C2029485BAC2E9FB | notes: batch2-0024
-
-AR: تلك إحدى وسائل التنقل بين السطح وما تحت الأرض. لكن كل روبوتات ستريكوزا تحت سيطرة نورا.
-
-EN: That's one method of transportation between the surface and the underground. But all the Strekozas are under NORA's control.
-
-### 5. [NewP5] UI
-reason: spread | key: /FE629BCB49FADFD51998CD84DB989127 | notes: batch1
-
-AR: وحدة الاصطدام فائقة التوصيل
-
-EN: Superconducting impact module
-
-### 6. [VDNKh_Dialogues] Dialogue
-reason: spread | key: /F03480C34728DB65170756B8A38F3512 | notes: batch2-0005
-
-AR: إذن موصّل ألفا بحوزة الدكتور سيتشينوف الآن، ويريد الرفيق مولوتوف طرده من المنشأة ليأخذ موصّل ألفا لنفسه؟!
-
-EN: So Dr. Sechenov has the alpha connector right now, and Comrade Molotov wants to kick him out of the Facility so he can take the alpha connector for himself?!
-
-### 7. [VDNKh_Dialogues] Dialogue
-reason: spread | key: /E180602A42E319A4341A44B1B40E2BCB | notes: batch2-0006
-
-AR: هل تتحدث إليّ أيها الرائد؟
-
-EN: Are you talking to me, Major?
-
-### 8. [NewP5] UI
-reason: spread | key: /3C6F4A8C4C2C86C913E096B2E741E2F3 | notes: batch1
-
-AR: كانت تمارا أرتيمينكوفا صديقة ريجوفا الحميمة حين كانت الأخيرة الباليرينا الأولى، وهي الآن منفردة في مسرح مايا بليستسكايا. وقد اضطرّت للنيابة عن صديقتها السابقة في الأدوار الرئيسية كلما تعذّر عليها حضور عرض (بسبب تقلّب المزاج ورفضها مشاركة المسرح مع الروبوتات، بالطبع، في المقام الأول). وعلى الرغم من المنافسة الهائلة بين باليرينات البشر والروبوتات، تحبّ أرتيمينكوفا زميلاتها الميكانيكيات وتحترمهنّ، وتتباهى فخورةً بمشاركتها المسرح معهنّ، إذ ترى في ذلك تجربة فنية غير مسبوقة.
-
-EN: Formerly prima ballerina Ryzhova's best friend, now a soloist at the Maya Plisetskaya Theater, Tamara Artemenkova had had to fill in for her ex-friend in lead roles when the latter was unable to make it to a performance (primarily due to capriciousness and a refusal to share the stage with robots, of course). Despite the enormous competition between human and robot ballerinas, Artemenkova loves and respects her mechanical colleagues and proudly boasts about sharing the stage with them, seeing it as an unprecedented artistic experiment.
-
-### 9. [Schebetar_Subs] Subtitles
-reason: spread | key: /07C6120249BE7A2E2D4C8E9A0E6F0F53 | notes: batch2-0017
+### 1. [Schebetar_Subs] Subtitles
+reason: Long dialogue | line: 19968 | key: /07C6120249BE7A2E2D4C8E9A0E6F0F53 | notes: batch2-0017
 
 AR: كولخوزي حائر: لا تضعي تلك الإوزة في الصندوق! لا، أنا لا أتحدث إليك يا زينا! كان عليّ أن أضربك ضرباً مبرحاً... كادوا يرسلون هونكر إلى مجمّع فافيلوف مع كل الآخرين! آي ياي ياي... أيمكنك تحضير الغداء، وسآتي بعد لحظة... مهلاً، لا أستطيع العثور عليه. أنت لم ترسليه، أليس كذلك؟
 
 EN: Confused kolkhoz man: Don't put that goose in the box! No, I'm not talking to you, Zina! I oughtta beat the living tar outta you... They almost sent Honker to the Vavilov Complex with all the others! Ai yai yai... Could you get lunch ready, I'll be there in a sec... hey, I can't find him. You didn't send him, did you?
 
-### 10. [Sakhalin_dlc3] Unknown
-reason: spread | key: /11E70A964EEB5C10FEF6478AD401009E | notes: batch2-0033
-
-AR: الرائد نيتشاييف. موظف في المنشأة 3826.
-
-EN: Major Nechaev. Employee Facility 3826.
-
-### 11. [NTD] Lore
-reason: spread | key: NTD_StringTable_DLC1/zapis_160 | notes: batch2-0022
+### 2. [NTD] Lore
+reason: Long dialogue | line: 16388 | key: NTD_StringTable_DLC1/zapis_160 | notes: batch2-0022
 
 AR: ملاحظة 160. تجذّرت السلالة 149.R/1-A2 بنجاح في ظروف البيوت المحمية المغلقة لمندليف. وعند نقص الماء أو الضوء، تحفر نباتات اللفت نفسها من الأرض وتنتقل إلى منطقة أفضل. لكن مع انتقال العيّنات، صار لا بدّ من تحسين الأسوار المحيطة بالمحاصيل التجريبية: فقد أفسد اللفت تربة محاصيل أخرى، وحاول الخروج من البيت المحمي بحثاً عن الضوء والماء. ولم تُثبت حالات تغذية على حساب نباتات أخرى، لكن بحسب ملاحظة إيفان م.، ماتت في البيت المحمي عدة نباتات طماطم من سلالة معدّلة بيوديد البوتاسيوم.
 
 EN: Note 160. Propagant 149.R/1-A2 has successfully taken root under the conditions of the protected Mendeleev greenhouse. When faced with a lack of water or light, turnip plants dig themselves out of the ground and move to a more favorable area. However, with the specimens moving, it became necessary to improve the fences surrounding the experimental crops: the turnips spoiled the soil of other crops, and also tried to leave the greenhouse in search of light and water. Cases of feeding at the expense of other plants have not been confirmed, but, according to Ivan M., several tomato plants of a line modified with potassium iodide died in the greenhouse.
 
-### 12. [Chelomey_dlc3] Unknown
-reason: spread | key: DT_Subtitles_DLC03_Chelomey/Chelomey_250_Sentences | notes: batch2-0032
+### 3. [VDNKh_Dialogues] Dialogue
+reason: Long dialogue | line: 26559 | key: /8754256742DC94C8F130048A1B4F62FE | notes: batch2-0006
 
-AR: احترس.
+AR: *0.06*وضع التدريب؟! سيؤدي هذا إلى عدوانية أكبر من أنظمة الحماية السلبية والمادية! *0.07*سيضعك في خطر وقد يؤدي إلى موت الناس الناجين، إن كان هناك ناجون أصلاً!
 
-EN: Careful.
+EN: *0.06*Drill mode?! This would lead to even greater aggression from passive and physical security systems! *0.07*It will endanger you and may lead to the death of the surviving people, assuming there are any still left!
 
-### 13. [NewP5] UI
-reason: spread | key: /0C87FE2E444E0F95FE3FFF9467B672C9 | notes: batch1
+### 4. [Vavilov_Dialogues] Dialogue
+reason: Long dialogue | line: 25002 | key: /52EC7FF847D25DC9CFEE22B6BDEC31CD | notes: batch2-0011
+
+AR: *0.11*يا لسوء ما انتهى إليه كل شيء. لم يتخيل أحد أن يحدث شيء كهذا. كان الحديث دائماً عن «الانطلاق إلى النجوم»، و«المستقبل المشرق الذي ينتظرنا»... *0.04*والآن كل ما أستطيعه أن أرقد هنا وأفكر في كل ذلك.
+
+EN: *0.11*It's too bad how it all ended up. No one ever thought something like this could happen. It was always "going to the stars," "the bright future that awaits us..." *0.04*now all I can do is lie here and think about it all.
+
+### 5. [Schebetar_Subs] Subtitles
+reason: Long dialogue | line: 19862 | key: /632B0F3D4F30C3E45C943ABC9B690058 | notes: batch2-0017
+
+AR: متآمر: اسمعني باهتمام شديد يا رستم. تركت لك طرداً للمُخفّي. حمّلت صندوقاً خاصاً على عربة شحن القطار. وبمجرد أن يتوقف في فيدنخا، سيفصل النظام الصندوق كي لا يلاحظ أحد. وإن حسبت كل شيء بشكل صحيح، فسينتهي به الأمر في الأحراش. لا تفسد الأمر، أتفهم؟ هذه البضاعة ثمينة.
+
+EN: Conspirator: Listen to me very carefully, Rustam. I left you a package for the fence. I loaded a special crate onto the train's cargo car. As soon as it stops at the VDNH, the system will decouple the crate so nobody notices. If I've calculated everything correctly, it'll end up in the bushes. Don't fuck this up, you got it? That shit's valuable.
+
+### 6. [VDNKh_Dialogues] Dialogue
+reason: Long dialogue | line: 26819 | key: /157EAA8B410B22D595E1F09D5B852422 | notes: batch2-0006
+
+AR: *0.06*المثير للاهتمام هو كيف تتحمل هذا النوع من الضغط! إن لم تعد إلى السطح الآن فأنت رجل ميت! *0.07*اذهب حالاً يا رجل الضفادع! أبقِ ذراعك اليسرى مرفوعة، وانتبه إلى أين تذهب! تجنّب تلك المراوح!
+
+EN: *0.06*What's interesting is how you can withstand this kind of pressure! If you don't get back to the surface right now, you're a dead man! *0.07*Off you go, frogman! Keep your left arm up, and watch where you're going! Steer clear of those rotors!
+
+### 7. [Mails_Shebetars_dlc4] Lore
+reason: Long dialogue | line: 7809 | key: /EE977C8F4B67F00AAD961A9E399F2A4A | notes: batch2-0052
+
+AR: التاريخ: 17 أكتوبر 1954 من: أمين مشروع المجمّع البلوري غ. سيرغيف إلى: سكرتيرة الأرشيف ي. زايتس  قرأت التقرير عن بروتوكول كريستال. التقدم إلهي ببساطة! المرحلة الأولى، وهي نوع من اختبار التقنية، تكللت بالنجاح ويمكن اعتبارها مكتملة.  بالنظر إلى نجاحنا، أطلق رسمياً المرحلة الثانية من التجربة. من الآن فصاعداً، نبدأ الهدف الحقيقي لمشروعنا: الحفاظ على الإمكانات الصناعية والفكرية لوطننا الأم. الدفعة التالية من المنتسبين ستكون من المدنيين الذين لعملهم قيمة استراتيجية للاقتصاد الوطني والعلوم والدفاع. بينهم ليس فقط علماء لامعون بل إداريون ومعماريون وضباط بخبرة قتالية فريدة. سأعطيك قائمة المرشحين، وكذلك وثائق المرحلة الثانية من المشروع. جرى تحديث تصريحك الأمني.  أرجو إبلاغي عندما تكونين جاهزة.
+
+EN: Date: October 17, 1954 From: Crystal Complex Project Curator G. Sergeyev To: Archive Secretary E. Zayts  I read over the report on the Crystal protocol. The progress is simply divine! The first stage, a sort of technology test run, ended in triumph and can be considered complete. Given our success, I am officially launching the second stage of the experiment. Starting now, we are embarking on our project's real objective: preserving the industrial and intellectual potential of our Motherland. The next round of initiates will be civilians whose work has strategic value to the national economy, science, and defense. Among them will be not only brilliant scientists but also administrators, architects, and officers with unique combat experience. I'll give you the list of candidates, as well as the documentation about the second stage of the project. Your security clearance has been updated.  Please let me know when you're ready.
+
+### 8. [Mails_01] Lore
+reason: Long dialogue | line: 7193 | key: /44DAFFAA4772B155945F28848F33F9B3 | notes: batch2-0018
+
+AR: للأسف، لا يستطيع جميع الموظفين الجدد الاندماج بنجاح مع فريق المنشأة 3826 — خصوصاً إذا لم يكن منصبهم بمستوى توقّعاتهم. خوزين، حارس منارة أنيفا الأسطورية، وهي منارة يابانية من جزيرة ساخالين الشرقية النائية، وجد نفسه عاجزاً عن التكيّف مع الواقع الحديث. وقد جعلته الحنين إلى حياته القديمة، ودوريات الروبوتات، ومجموعات السياح العابرة من ألماتي في كازاخستان التي تمرّ أحياناً قرب منارته، أكثر انطواءً مما هو عليه، وهو رجل وحيد قليل الاختلاط.
+
+EN: Unfortunately, not all new employees are able to successfully integrate with the Facility 3826 team—especially if their position fails to meet their own expectations. The keeper of the legendary Aniva, a Japanese lighthouse from the distant eastern island of Sakhalin, Khozin has found himself unable to adapt to modern reality. Nostalgia for his old life, robot patrols, and the occasional tour groups from Almaty, Kazakhstan that pass his lighthouse have rendered this lonely, unsociable man even more introverted.
+
+### 9. [Academy_Dialogues] Dialogue
+reason: Long dialogue | line: 203 | key: /AF2C15D94611068149C62D82D6D9DF57 | notes: batch1
+
+AR: *0.09*بعد تعافيه، تغيّرت شخصية العميل تغيّراً كبيراً، بما في ذلك أنماطه السلوكية والكلامية. ولهذا، *0.09*اتّخذت قراراً بإخراج العميل من وحدة أرجنتوم. ولمنع أيّ احتمال لانتكاس الذاكرة، *0.09*حصل بلوتونيوم على اسم نداء جديد هو P-3، وأصبح الآن تحت قيادتي ومراقبتي المباشرة. وقد أُبقي تواصل P-3 مع أرجنتوم عند الحدّ الأدنى، *0.07*وحُذّر أفراد أرجنتوم من ذكر اسم النداء «بليسنا» في حضور P-3.
+
+EN: *0.09*Following his recovery, the agent's personality was altered significantly, including his behavioral and speech patterns. Because of this, *0.09*I made the decision to remove the agent from the Argentum unit. In order to prevent any possibility of memory recidivism, *0.09*Plutonium received a new call sign, P-3, and is now under my direct command and observation. P-3's contact with Argentum has been kept to a minimum, *0.07*and Argentum personnel have been warned against mentioning the call sign "Blesna" in P-3's presence.
+
+### 10. [Mails_Shebetars_dlc2] Lore
+reason: Long dialogue | line: 7524 | key: DT_Subtitles_DLC02_Schebetars/Mails21_3_Sentences | notes: batch2-0030
+
+AR: لهذا نحتاج الموصّلات بيتا! لكن... محارب العلم! وفي قلب البيروقراطية الرأسمالية! لا شيء حرفياً في ليمبو، لكن ما الذي قصده سيتشينوف؟ وأين ومتى رآك هكذا؟
+
+EN: That's why we need beta connectors! But... a warrior of science! And at the heart of the capitalist bureaucracy! Nothing is literal in Limbo, but what did Sechenov mean? Where and WHEN did he see you like this?
+
+### 11. [NewP5] UI
+reason: Short UI label | line: 9609 | key: /FE629BCB49FADFD51998CD84DB989127 | notes: batch1
+
+AR: وحدة الاصطدام فائقة التوصيل
+
+EN: Superconducting impact module
+
+### 12. [NewP5] UI
+reason: Short UI label | line: 11328 | key: /0C87FE2E444E0F95FE3FFF9467B672C9 | notes: batch1
 
 AR: حياة جديدة تتفتّح في الداخل.
 
 EN: New life blossoms inside.
 
-### 14. [CUTSCENES] Cutscene
-reason: spread | key: /7665C54B408C2118D53C80847F1A4DFE | notes: batch2-0004
-
-AR: أليس لديك عمل تفعله؟
-
-EN: Don't you have work to do?
-
-### 15. [Vavilov_Dialogues] Dialogue
-reason: spread | key: /23CCFC4246EF6F7F84A66C83DC9330B1 | notes: label:AI vendor (batch-1 wording kept)
-
-AR: نورا
-
-EN: NORA
-
-### 16. [Chelomey_Dialogues] Dialogue
-reason: spread | key: /4B8476EC4BD2275A98733F80E70C3227 | notes: batch1
-
-AR: رجل يتصوّر
-
-EN: Man posing for a picture
-
-### 17. [NewP5] UI
-reason: spread | key: /5D041AD34774DB99BD71DC92C6F7028F | notes: batch1
+### 13. [NewP5] UI
+reason: Short UI label | line: 14808 | key: /5D041AD34774DB99BD71DC92C6F7028F | notes: batch1
 
 AR: فيودور كوروليف
 
 EN: Fyodor Korolyov
 
-### 18. [Chelomey_Dialogues] Dialogue
-reason: spread | key: /41EEC98A4C81A98AED65F5ABB482DA64 | notes: batch2-0002
-
-AR: علينا مواصلة التقدم أيها الرفيق الرائد!
-
-EN: We need to keep moving, Comrade Major!
-
-### 19. [NewP5] UI
-reason: spread | key: /485C9D874CB3A9AD6D64D4878659760A | notes: batch1
+### 14. [NewP5] UI
+reason: Short UI label | line: 11749 | key: /485C9D874CB3A9AD6D64D4878659760A | notes: batch1
 
 AR: الأبواب مفتوحة
 
 EN: Doors are open
 
+### 15. [NewP5] UI
+reason: Short UI label | line: 11499 | key: /A3FA8F764DA2BD4CD840A184AFC56080 | notes: batch1
+
+AR: ادخل الكوخ
+
+EN: Enter the hut
+
+### 16. [NewP5] UI
+reason: Short UI label | line: 11419 | key: /D2A470934B22D0E426C041AFB3EE7E34 | notes: batch1
+
+AR: إصدار DirectX
+
+EN: DirectX Version
+
+### 17. [NewP5] UI
+reason: Short UI label | line: 14440 | key: /4777E7B64EF77FF9CC20F9A203855584 | notes: batch1
+
+AR: تثبيت
+
+EN: INSTALL
+
+### 18. [NewP5] UI
+reason: Short UI label | line: 12430 | key: /E3CD4A1B47D41D465DD381A7E539B0F4 | notes: batch1
+
+AR: تصحيح سطوع الصورة
+
+EN: Image brightness correction
+
+### 19. [NewP5] UI
+reason: Short UI label | line: 13303 | key: /56D01DBB43C3B5827E2B5BA81D542975 | notes: batch1
+
+AR: سطح عاكس
+
+EN: Reflective Surface
+
 ### 20. [NewP5] UI
-reason: spread | key: /934D0CEB4CB8C203F095F785D81F1A64 | notes: batch1
+reason: Short UI label | line: 13307 | key: /D4EF509F45FE2A26CF8DEFAB4CBBC4DC | notes: batch1
 
-AR: خذ رأس فيكتور إلى مختبر مجمّع بافلوف
+AR: تبريد المرجل #1
 
-EN: Take Viktor's head to the Pavlov Complex lab
+EN: Cool off Boiler #1
 
-### 21. [PearTerminals] UI
-reason: longest | key: /9A3AD94643642C7E9B30C09C32D4615B | notes: batch1
+### 21. [OpenWorldVDNKh_Dialogues] Dialogue
+reason: Tagged / placeholder | line: 17068 | key: /DEDFE65846C74A1949E938AE4052744C | notes: batch2-0015
 
-AR: الموضوع: مشروع القلب الذري المتحدث: د. دميتري سيتشينوف  مرحبًا بكم، أيها الرفاق. في عام 1951، أعلنت الإمبريالية الرأسمالية في الولايات المتحدة، وهي تلتهمها الكراهية والحسد لإنجازات الاتحاد السوفييتي العلمية الرائعة، إطلاق برنامج "الطاقة للجميع" العالمي. وهذا البرنامج في جوهره منافق مثل النظام الرأسمالي نفسه تمامًا. فخلف واجهة من المُثُل العليا، يسعى الرأسماليون إلى الهيمنة على العالم، وقمع كل استقلال غير استقلالهم، وإبادة من لا يشاركونهم قيمهم.  وبالنظرة الأولى، تبدو "الطاقة للجميع" نبيلة إلى حد لا يُصدَّق: خمسون محطة طاقة نووية ستُبنى في كل أنحاء الولايات المتحدة لتزويد كل مواطن أمريكي بكهرباء رخيصة ومتاحة. لكن النظام الرأسمالي في الولايات المتحدة، كما في كل مرة، يخفي وجهه الحقيقي، الملتوي إلى ضحكة وحشية إمبريالية، خلف قناع من الشهامة. فإلى جانب محطات الطاقة هذه، تبني الولايات المتحدة سرًّا أيضًا شبكة من الصوامع والمظلات الأرضية لإطلاق الصواريخ النووية وإيواء القاذفات الاستراتيجية المسلّحة بالقنابل النووية.  وهدف الأمريكيين بسيط: بمجرد أن يصدّق الاتحاد السوفييتي مزاعمهم عن السلام والصداقة، سيُرخي حذره، فتنقضّ الآلة العسكرية الأمريكية وتدمّر الاتحاد السوفييتي وطريقة الحياة الشيوعية كلها بهجوم مباغت جبان! لكن الاتحاد السوفييتي ليس ممن يجلسون مكتوفي الأيدي وينتظرون بينما يعيد أعداؤنا تنظيم صفوفهم ويزيدون أعدادهم، ويخبّئون الأسلحة النووية تحت الأرض حيث لا نستطيع إبادتها من المدار. ولا هو ممن يتراجعون أو يفرّون من قوة أمة أخرى. وردًّا على التهديد الأمريكي، طوّرت المنشأة 3826 مشروعها الخاص المصمّم لا لحماية الاتحاد السوفييتي فحسب، بل لتخليص العالم نهائيًا من إمكان حدوث مذبحة كهذه. وقد وصف رئيس الولايات المتحدة ذات مرة برنامج "الطاقة للجميع" بأنه "القلب الذري" لأمريكا. وبالنظر إلى الخداع والنفاق العميقين في الرأسمالية الأمريكية، فإن هذا الاسم يعبّر تعبيرًا تامًا عن جوهر التهديد العالمي الذي طوّرته الولايات المتحدة. ولهذا السبب، استعار مشروعنا، الذي سيعطّل مكائد الأمريكيين القاتلة، استعارة قائدهم. فقلبنا الذري سيعيد الأمانة والاستقامة إلى أمريكا!  ويتكوّن مشروع القلب الذري من عدة مراحل متتالية:  - تصميم وبناء روبوتات مدنية لا تحمل أسلحة أو أي علامات أخرى على تطبيق عسكري محتمل. وقد صُمّمت هذه الروبوتات لتكون مستقلة عن برمجيّاتها. فأي مالك يستطيع تثبيت أي برمجيات يريدها عليها. ومن الخارج تبدو الروبوتات غير ضارّة تمامًا وآمنة وودودة. لكنها في الحقيقة مزوّدة بأساليب قتال متلاحم بالغة الفعالية، وتستطيع استخدام العتاد المدني أسلحةً قاتلة.  - وتقتضي المرحلة الثانية من هذا المشروع أن يرى العالم كله الروبوتات المدنية السوفييتية بوصفها سلعًا إنسانية. وقد نفّذنا هذه الاستراتيجية بالفعل عبر الأمم المتحدة. وبعد حصولها على صفة سلع إنسانية، بدأت الروبوتات السوفييتية تنتشر في العالم كله مجانًا، ما أعطى دفعة قوية لمواصلة تطوير مشروع القلب الذري. وقد أغرق الرأسماليون الأمريكيون المتعطّشون للربح بلدهم بروبوتاتنا. فقوة العمل الروبوتية المجانية حلم كل مغتصب رأسمالي، ولم يتردّد أحدهم في الحصول على أكبر عدد ممكن من الروبوتات السوفييتية.  - وخلال المرحلة الثالثة، جعل الاتحاد السوفييتي الحصول على الروبوتات المجانية أسهل ما يمكن لعملائنا الأجانب. فمثلاً استوردت الشركات الأمريكية بالفعل أكثر من مئة مليون روبوت مدني سوفييتي من طرازات متنوعة. ويُستخدم كثير منها في مرافق مرتبطة بـ"الطاقة للجميع"، أي محطات الطاقة الأمريكية وصوامع الصواريخ. وهناك تقوم روبوتاتنا، التي ثبّتت عليها القوات الخاصة الأمريكية برمجياتها، بأعمال الصيانة والخدمة والتشغيل في المرافق النووية. وهكذا تحقّق الهدف الأول لمشروع القلب الذري.  - وخلال المرحلة الأخيرة من المشروع، ستُحوَّل الروبوتات المدنية من التشغيل المدني إلى وضع القتال. وستسيطر بعدها على كل المكوّنات الأساسية للبنية التحتية في الولايات المتحدة. وسيصبح ذلك ممكنًا مع إطلاق كوليكتيف 2.0، الذي سيوحّد كل الروبوتات السوفييتية في شبكة بوليمر عصبي موحّدة لا تحتاج إلى إشارات راديو ولا بروتوكولات رقمية ولا أي إلكترونيات أخرى. وستتمكّن كل الروبوتات السوفييتية من تلقّي أوامرنا وتنفيذها بنجاح. وهجومهم سيكون مباغتًا، وسيقع في كل مكان دفعة واحدة، بالثانية. وسيُفاجأ العدوّ تمامًا، وسيُباد. وستتحرّر الطبقة العاملة الأمريكية من قهر الرأسمالية العالمية، وسيضيع مفهوم الرأسمالية نفسه في مياه نهر النسيان.  ولم يبقَ على إطلاق كوليكتيف 2.0 سوى شهرين. وفي شهرين فقط، سيقذف جنس بشري جديد تقدمي الرأسمالية في مزبلة التاريخ، وسيطرح عن كاهله نير الطغاة، وسيبدأ مسيرته إلى المستقبل. لن يعود العالم كما كان أبدًا، أيها الرفاق!
+AR: *0.05*أنا عالم! يجب أن أقضي كل لحظة في فحص ظواهر الطبيعة وفهرستها! *0.05*أيها الرفيق، هل تعرف كثيرين قادرين على توثيق تحلّل أجسادهم؟
 
-EN: Topic: The Atomic Heart Project Speaker: Dr. Dmitry Sechenov  Welcome, Comrades. In 1951, the capitalist imperialism of the United States, consumed by hatred and envy for the Soviet Union's magnificent scientific achievements, declared the launch of the global Energy for All program. In essence, this program is just as hypocritical as the capitalist system itself. Hiding behind a facade of lofty ideals, the capitalists strive for worldwide hegemony, the suppression of all independence other than their own, and the eradication of those who do not share their values.  At first glance, Energy for All seems incredibly noble: fifty nuclear power stations will be constructed throughout the United States in order to provide every American citizen with cheap and available electricity. But the United States' capitalist regime is, as always, hiding its true face, twisted into the beastly grin of imperialism, behind a mask of magnanimity. In addition to these power stations, the United States is also secretly building a network of underground silos and hangars for launching nuclear missiles and housing strategic bombers armed with nuclear bombs.  The Americans' goal is simple: once the Soviet Union believes their claims of peace and friendship, it will let down its guard, and the American military machine will strike, destroying the Soviet Union and the entire communist way of life with a cowardly sneak attack! But the Soviet Union isn't one to sit on its hands and wait while our enemies regroup and swell their ranks, hiding nuclear weapons underground where we cannot eliminate them from orbit. Nor is the Soviet Union one to back down or run from another nation's might. In response to the American threat, Facility 3826 has developed its own project designed not only to protect the Soviet Union, but also to rid the world once and for all of the very possibility of such a bloodbath. The president of the United States once called Energy for All America's "atomic heart." Given the profound guile and hypocrisy of American capitalism, this name reflects the essence of the global threat developed by the United States all too well. For this reason, our project, which will counteract the Americans' deadly machinations, has co-opted their leader's metaphor. Our Atomic Heart will return honestly and integrity to America!  The Atomic Heart project is made up of several sequential steps:  - Design and build civilian robots with no weapons or other signs of a potential military application. These robots have been designed to be independent of their software. Any owner can install any software onto them they like. On the outside, the robots seems to be perfectly harmless, safe, and friendly. But in reality, they are equipped with highly effective hand-to-hand combat techniques and can use civilian equipment as lethal weapons.  - Stage two of this project requires that Soviet civilian robots be seen by the entire world as humanitarian goods. We have already implemented this strategy via the United Nations. Since receiving the status of humanitarian goods, Soviet robots have begun to spread throughout the entire world free of charge, which has given a powerful impetus to the further development of the Atomic Heart project. Profit-hungry American capitalists are flooding their country with our robots. A free robotic workforce is the dream of every capitalist usurper, and none of them has hesitated to obtain as many Soviet robots as possible.  - During stage three, the Soviet Union has made obtaining free robots as easy as possible for our foreign customers. American businesses, for one, have already imported over one hundred million Soviet civilian robots of various models. Many of these are used at facilities related to Energy for All, i.e. American power stations and missile silos. There, our robots, on which American special forces have installed their own software, maintain, service, and operate nuclear facilities. The first objective of the Atomic Heart project has thus been accomplished.  - During the final phase of the project, civilian robots will be switched form civilian operation to combat mode. They will then capture all key components of the infrastructure of the United States. This will become possible with the launch of Kollektiv 2.0, which will unite all Soviet robots into a unified Neuropolymer network that requires no radio signals, digital protocols, or other electronics. All Soviet robots will be able to receive and successfully carry out our commands. Their attack will be sudden, and it will happen everywhere, all at once, down to the second. The enemy will be taken completely by surprise, and they will be eradicated. The American working class will be liberated from the oppression of global capitalism, and the very notion of capitalism will be lost in the waters of Lethe.  The launch of Kollektiv 2.0 is only two months away. In just two months, a new, progressive human race will toss capitalism into the dustbin of history, cast off the tyrants' yoke, and begin its march into the future. The world will never be the same, comrades!
+EN: *0.05*I am a scientist! I must spend every moment examining and cataloging nature's phenomena! *0.05*Comrade, do you know many people capable of documenting the decomposition of their own body?
 
-### 22. [PearTerminals] UI
-reason: longest | key: /193AE0CF4419471FC25F6B9C8703D5AA | notes: batch1
-
-AR: تاريخ: 1 مارس 1955 من: قسم النشر إلى: أرشيف المطبعة  بناءً على طلبك، راجعت تجميعة الاقتباسات العبثية لأعلام بورجوازية سحقتها مسيرة التقدّم والعلوم السوفييتية سحقًا تامًا.   1876: "لهذا 'الهاتف' عيوب أكثر من أن يُؤخذ بجدية كوسيلة اتصال." ويليام أورتون، رئيس شركة ويسترن يونيون  "الأمريكيون بحاجة إلى الهاتف، أما نحن فلا. لدينا من الصبيان السعاة ما يكفي." السير ويليام برايس، كبير مهندسي مكتب البريد البريطاني  1889: "العبث بالتيار المتردد مضيعة للوقت. لن يستخدمه أحد أبدًا. خطير جدًا!" توماس إديسون (احذفوه، لا نريد السخرية من إديسون)  1921: "لصندوق الموسيقى اللاسلكي قيمة تجارية لا يمكن تخيّلها. من سيدفع مقابل رسالة تُرسل إلى لا أحد بعينه؟" شركاء ديفيد سارنوف ردًّا على طلبه الاستثمار في الراديو (أشيروا إلى أن الراديو اخترعه ألكسندر بوبوف)  1926: "قد يكون التلفاز ممكنًا نظريًا وتقنيًا، لكنه مستحيل تجاريًا وماليًا." لي دي فورست (احذفوه، مواطنونا لا تهمّهم النجاحات التجارية أو المالية)  1932: "لا أساس على الإطلاق للقول بأن الطاقة النووية ستصبح ممكنة يومًا. فذلك يعني أن الإنسان تعلّم شطر الذرة." ألبرت أينشتاين (جيد جدًا، لكن تأكدوا من أن أينشتاين قال ذلك فعلًا، وإلا فسيكون الأمر مثل أحجيته)  1936: "لن يستطيع صاروخ أن يغادر الغلاف الجوي للأرض أبدًا." نيويورك تايمز (هذا الاقتباس رائع ببساطة! عددهم الأول!)  1946: "العامل كان وسيبقى موجودًا، أما الروبوت فليس سوى بريق عابر." هنري فورد  "لن يتمكّن التلفاز من الحفاظ على أي سوق يظفر به بعد الأشهر الستة الأولى. وسيملّ الناس قريبًا من التحديق في صندوق من الخشب الرقائقي كل ليلة." داريل زانوك، منتج وأحد مؤسّسي شركة 20th Century Fox (لست متأكدًا من هذا، لا تنشروه حتى يُحلّ الحزب علاقته ببرامج الترفيه)  1949: "بينما يبلغ وزن حاسوب مثل ENIAC [أول حاسوب] اليوم 30 طنًا ويزوّد بـ18,000 صمام مفرّغ، قد تحتوي الحواسيب المستقبلية على 1000 صمام مفرّغ فقط وربما لا يزيد وزنها على 1½ طن." بوبيولار ميكانيكس (جيد، لكن ترجموا اسم المجلة "Popular Mechanics" إلى الروسية بدلًا من تركه بالإنجليزية)  1951: "لا تكاد توجد أي فرصة لأن تُستخدم الأقمار الصناعية في الاتصالات لتقديم خدمة هاتفية أو تلغرافية أو تلفازية أو إذاعية أفضل داخل الولايات المتحدة." ت. كرافن، مفوّض هيئة الاتصالات الفيدرالية (أبرزوا الحقيقة أنهم ربما لا يستطيعون ذلك، أما نحن فنستطيع بالتأكيد!)  1955: "لا سبب على الإطلاق لأن يمتلك أي فرد حاسوبًا في منزله." كين أولسن، مؤسّس شركة ديجيتال إكويبمنت.
-
-EN: Date: March 1, 1955 From: Publishing Dept. To: Printing Archive  At your request, I have reviewed the compilation of absurd quotations from bourgeois figures that have since been utterly trounced by progress and Soviet science.   1876: "This 'telephone' has too many shortcomings to be seriously considered as a means of communication." William Orton, president of Western Union  "The Americans have need of the telephone, but we do not. We have plenty of messenger boys." Sir William Price, chief engineer of the British Post Office  1889: "Fooling around with alternating current's just a waste of time. Nobody'll ever use it. Too dangerous!" Thomas Edison (get rid of it, we don't want to make fun of Edison)  1921: "The wireless music box has no imaginable commercial value. Who would pay for a message sent to nobody in particular?" David Sarnoff's partners in response to his request to invest in the radio (mention that the radio was invented by Alexander Popov)  1926: "While theoretically and technically television may be feasible, commercially and financially it is an impossibility." Lee de Forest (get rid of it, our citizens don't care about commercial or financial success)  1932: "There is no basis whatsoever on which to suggest that nuclear power will ever be possible. It would mean that man has learned to split the atom." Albert Einstein (very good, but make sure Einstein actually said it, otherwise it'll be like his riddle)  1936: "A rocket will never be able to leave the Earth's atmosphere." New York Times (this one is simply magnificent! Their very first issue!)  1946: "The working man always has been and always will be, but the robot is nothing more than a flash in the pan." Henry Ford  "Television won't be able to hold on to any market it captures after the first six months. People will soon get tired of staring at a plywood box every night." Darryl Zanuck, producer and one of the founders of 20th Century Fox (not sure about this one, don't publish it until the Party sorts out its relationship to entertainment programming)  1949: "Where a calculator like ENIAC [the first computer] today is equipped with 18,000 vacuum tubes and weighs 30 tons, computers in the future may have only 1000 vacuum tubes and perhaps weigh only 1½ tons." Popular Mechanics (good, but translate the name "Popular Mechanics" into Russian instead of leaving it in English)  1951: "There is practically no chance communications space satellites will be used to provide better telephone, telegraph, television, or radio service inside the United States." T. Craven, FCC commissioner (underscore the fact that maybe they can't do it, but we sure can!)  1955: "There is no reason for any individual to have a computer in their home." Ken Olsen, founder of Digital Equipment Corp.
-
-### 23. [PearTerminals] UI
-reason: longest | key: /9B1B009F4DE6273D54BC4AA17124DA05 | notes: batch1
-
-AR: تاريخ: 9 مايو 1955 من: الأرشيف إلى: المساعد المخبري ي. كليموف  أضف بعض الخلاصات في النهاية. فالنص جافّ جدًا.  "قبل وقت قصير فقط كانت أحاديث "ماذا لو" حكرًا على الإحصائيين والمحللين في أفضل الأحوال، بحسب الموضوع المطروح. لكن اليوم، بفضل الأنظمة الكمومية لليبيديف، صار التنبؤ بالتواريخ البديلة علمًا بمعنى الكلمة. وقد أتاح لنا ذلك الحصول على تقرير بالغ الدقة عن تاريخ الاتحاد السوفييتي والحرب العالمية الثانية لو لم يكن الحزب قد أقرّ مشروع سيتشينوف لتحويل قواتنا إلى قوات روبوتية في أواخر الثلاثينيات. وقد حصل هذا التقرير النظري على التصنيف "5P" في أكاديمية العواقب.  المرحلة الأولى: الهزيمة. بسبب حداثة التقنية وضعف تكيّف قدراتنا الصناعية، تبين أن الروبوتات عاجزة عن مقاومة قوات الفيرماخت، وتكون الخسائر الأولية فادحة. ويفقد الاتحاد السوفييتي كل أراضيه حتى موسكو. المرحلة الثانية: إعادة التجميع. في منتصف الحرب، تصبح الخسائر البشرية وضغط الرايخ كبيرين إلى حد أن خلاص الجيش الأحمر الوحيد يكمن في بناء روبوتات قتالية أكثر تطوّرًا لتعويض الجنود المفقودين. وتُعاد هيكلة عملية تصنيع الروبوتات القتالية الجديدة وتُعزَّز في الأورال وسيبيريا. المرحلة الثالثة: هدنة. إذ يرى جنود الحلفاء هزيمة الاتحاد السوفييتي ويرفضون الإيمان بالترقيات المقبلة للروبوتات، فيركّزون قواهم ويصبحون أكثر عدوانية، لأنهم يدركون أن الجيش الأحمر لن يكون بعد الآن وقودًا للمدافع في الحرب الأوروبية. ويوقف الرايخ تقدّمه في عمق الاتحاد السوفييتي ويتحوّل إلى الجبهة الغربية. المرحلة الرابعة: نقطة الانكسار. تشنّ كتائب ضخمة من القوات الروبوتية بوظائف متنوعة هجمات مفاجئة بالغة الفعالية، فتستعيد أراضينا المحتلة في غضون أسابيع. وفي الشتاء، تمنح حركتها وعدم اعتمادها على الغذاء والدواء الآلاتَ السوفييتية ميزة هائلة. المرحلة الخامسة: النصر. وحتى قبل إنشاء صاروخ V-2 وفشل الطاعون البني، تحرّر الروبوتات السوفييتية معظم أوروبا. وبما أن عدد سكان العالم لا يتناقص أبدًا بسبب المرض، نجد أنفسنا في عالم هشّ يُضطر فيه اتحاد سوفييتي مضعضع إلى الاعتماد على قوة تقنيته."
-
-EN: Date: May 9, 1955 From: ARCHIVE To: Lab Assistant Y. Klimov  Add some conclusions at the end. It's really dry.  "Just a little while ago 'what if' conversations were, at best, the purview of statisticians and analysts, depending on the topic in question. But today, thanks to Lebedev's quantum systems, predicting alternate histories has literally become a science. This has allowed us to get a very accurate report on the history of the Soviet Union and World War II if the Party had not approved Sechenov's project to roboticize our troops in the late '30s. This theoretical report has received the designation "5P" at the Academy of Consequences.  Stage one: defeat. Due to the novelty of the technology and the weak adaptation of our manufacturing capabilities, the robots turn out to be unable to resist the Wehrmacht's forces, and initial casualties are colossal. The Soviet Union loses all its territory up to Moscow. Stage two: regrouping. Toward the middle of the war, human casualties and pressure from the Reich become so great that the Red Army's only salvation lies in building more advanced combat robots in order to make up for lost soldiers. The process of manufacturing new combat robots is reformed and enhanced in the Urals and Siberia. Stage three: respite. Seeing the Soviet Union's defeat and refusing to believe in upcoming robot upgrades, allied troops concentrate their forces and become more aggressive, since they understand that the Red Army will no longer be cannon fodder in the European war. The Reich halts its advance deep into the Soviet Union and switches to the Western Front. Stage four: breaking point. Massive battalions of robotic troops with various functions carry out highly effective sudden attacks, reclaiming our captured territory in a matter of weeks. In the winter, their mobility and lack of reliance on food and medicine give the Soviet machines a massive advantage. Stage five: victory. Even before the creation of the V-2 rocket and the failure of the Brown Plague, Soviet robots liberate most of Europe. Since the world's population is never reduced by illness, we find ourselves in a fragile world where a weakened Soviet Union is forced to rely on the might of its technology.
-
-### 24. [Schebetars_dlc1] Unknown
-reason: longest | key: /D562C2CA4449AB7379033F877E94DB0E | notes: batch2-0025
-
-AR: *0.00-0.15* &Scotch& التقرير الميداني رقم ثمانية! أندريه سكوتش وباثيسكاب، مجموعة صائدي كنوز مبادرون مؤلفة من بافيل الحقيبة، وميشا الرسام، وسيرغي الكلب البوليسي، يرفعون ما يلي: بعد تلقي رسالة عن طريق راديو المستقبل بالخطأ عن «كنز» معيّن... *0.16-0.19* &Bloodhound& هل أفهم صحيحاً أنك وضعت إشارات تنصيص هوائية الآن؟ أثناء التسجيل؟ *0.20-0.22* &Backpack& بالضبط، ها! *0.23-0.34* &Scotch& تباً. اسمعوا، كلنا وصلتنا رسالة عبر راديو المستقبل عن كنز في مكان ما في هذه المستنقعات! اتحدنا في باثيسكاب، فريق من الكيميائيين المجازفين، ونطوف المستنقعات في مرح منذ أسبوع! *0.35-0.36* &Artist& ولم نجد الكنز بعد! *0.36-0.37* &Bloodhound& انتظروا يا جماعة... لحظة... *0.37-0.40* &Scotch& اهدأ يا ميشا. سنجد الكنز. لا بد أنه موجود! *0.41-0.44* &Backpack& حقيبتي لن تكفي لحمله! راديو المستقبل لا يكذب! *0.45-0.46* &Artist& ماذا لو كان أحد يمزح؟ *0.47-0.48* &Bloodhound& انتظر! أندريه! *0.48-0.49* &Scotch& ما الأمر يا سيرغي؟ *0.50-0.52* &Bloodhound& هل أحضرت تسجيل الراديو معك؟ *0.53-0.54* &Backpack& عندي على تشيربر. لماذا؟ *0.55-0.57* &Bloodhound& شغّله. *0.58-1.10* &The recording plays& «التقرير الميداني رقم ثمانية! أندريه سكوتش وباثيسكاب، مجموعة صائدي كنوز مبادرون مؤلفة من بافيل الحقيبة، وميشا الرسام، وسيرغي الكلب البوليسي، يرفعون ما يلي...» *1.12-1.13* &Artist& ماذا! سمعنا أنفسنا؟ *1.14-1.15* &Bloodhound& ها ها! يا لها من حيلة! *1.15-1.18* &Backpack& ها؟ لا أفهم... إذن لا يوجد كنز؟ *1.19-1.23* &Scotch& هناك كنز يا الحقيبة. كنز حقيقي! اسمه الصداقة! *1.24-1.29* &Bloodhound& حسناً، حسناً. لا تكسِر بخاطرنا يا بافيل! ألم تكن رحلة رائعة! والآن، عودة إلى المنشأة! *1.30-1.32* &Artist& ألا يمكن أن يكون خلف الشلال؟ *1.33-1.36* &Scotch& هيا بنا! يا إخوة باثيسكاب، غنّوا! *1.37-1.50* &ALL TOGETHER& ماذا سنفعل بصائدي الكنوز؟ ماذا سنفعل بصائدي الكنوز؟ ماذا سنفعل بصائدي الكنوز؟ أعمق في المستنقعات!
-
-EN: *0.00-0.15* &Scotch& Field report number eight! Andrey Scotch and Bathyscaphe, an enterprising group of treasure hunters consisting of Pavel the Backpack, Misha the Artist, and Sergey the Bloodhound, report as follows: after accidentally receiving a message via the Radio of the Future regarding a certain "treasure"... *0.16-0.19* &Bloodhound& Am I correct in understanding that you just made air quotes? On the recording? *0.20-0.22* &Backpack& Exactly, ha! *0.23-0.34* &Scotch& Shit. Look, we all got a message through the Radio of the Future about a treasure somewhere in these swamps! We united into the Bathyscaphe, a team of risk-taking chemists, and have been merrily stomping around the swamps for a week already! *0.35-0.36* &Artist& And still haven't found the treasure! *0.36-0.37* &Bloodhound& Hold on, guys... Wait a minute... *0.37-0.40* &Scotch& Stay cool, Misha. We'll find the treasure. It's got to exist! *0.41-0.44* &Backpack& My backpack won't be big enough to carry it! The Radio of the Future doesn't lie! *0.45-0.46* &Artist& What if someone was fooling around? *0.47-0.48* &Bloodhound& Wait up! Andrey! *0.48-0.49* &Scotch& What is it, Sergey? *0.50-0.52* &Bloodhound& Did you bring the radio recording with you? *0.53-0.54* &Backpack& I've got it on a chirper. Why? *0.55-0.57* &Bloodhound& Could you play it? *0.58-1.10* &The recording plays& "Field report number eight! Andrey Scotch and Bathyscaphe, an enterprising group of treasure hunters consisting of Pavel the Backpack, Misha the Artist, and Sergey the Bloodhound, report as follows..." *1.12-1.13* &Artist& What! We heard ourselves? *1.14-1.15* &Bloodhound& Haha! What a trick! *1.15-1.18* &Backpack& Huh? I don't understand... So, there's no treasure? *1.19-1.23* &Scotch& There is a treasure, Backpack. A real treasure! It's called friendship! *1.24-1.29* &Bloodhound& Okay, okay. Don't go sour on us, Pavel! Wasn't that a great getaway! Well, back to the Facility! *1.30-1.32* &Artist& Couldn't it be there behind the waterfall? *1.33-1.36* &Scotch& Let's go already! Brothers of the Bathyscaphe, sing! *1.37-1.50* &ALL TOGETHER& What will we do with a treasure hunter? What will we do with a treasure hunter? What will we do with a treasure hunter? Deeper in the swamps!
-
-### 25. [Schebetars_dlc1] Unknown
-reason: longest | key: /8B4F23664E17D715B2E1538F294EF05C | notes: batch2-0025
-
-AR: سكوتش: هذا هو التقرير الميداني رقم ثمانية! أندريه سكوتش وباثيسكاب، مجموعة صائدي كنوز مبادرون مؤلفة من بافيل الحقيبة، وميشا الرسام، وسيرغي الكلب البوليسي، يرفعون ما يلي: بعد تلقي رسالة عن طريق راديو المستقبل بالخطأ عن «كنز» معيّن... الكلب البوليسي: هل أفهم صحيحاً أنك وضعت إشارات تنصيص هوائية الآن؟ أثناء التسجيل؟ الحقيبة: بالضبط، ها! سكوتش: تباً. اسمعوا، كل واحد منا وصلته رسالة عبر راديو المستقبل عن كنز في مكان ما في هذه المستنقعات البائسة! اتحدنا تلقائياً في باثيسكاب، فريق من الكيميائيين المجازفين، ونطوف المستنقعات في مرح منذ أسبوع! الرسام: ولم نجد الكنز بعد! الكلب البوليسي: انتظروا يا جماعة... لحظة... سكوتش: اهدأ يا ميشا. سنجد الكنز. لا بد أنه موجود! الحقيبة: حقيبتي لن تكفي لحمله! راديو المستقبل لا يكذب! الرسام: ماذا لو كان أحد يمزح؟ الكلب البوليسي: انتظر! أندريه! سكوتش: ما الأمر يا سيرغي؟ الكلب البوليسي: هل أحضرت تسجيل الراديو معك؟ الحقيبة: عندي على تشيربر. لماذا؟ الكلب البوليسي: شغّله. التسجيل يُشغَّل: «هذا هو التقرير الميداني رقم ثمانية! أندريه سكوتش وباثيسكاب، مجموعة صائدي كنوز مبادرون مؤلفة من بافيل الحقيبة، وميشا الرسام، وسيرغي الكلب البوليسي، يرفعون ما يلي...» الرسام: ماذا! سمعنا أنفسنا؟ الكلب البوليسي: ها ها! يا لها من حيلة! الحقيبة: ها؟ لا أفهم... إذن لا يوجد كنز؟ سكوتش: هناك كنز يا الحقيبة. كنز حقيقي! اسمه الصداقة! الكلب البوليسي: حسناً، حسناً. لا تكسِر بخاطرنا يا بافيل! ألم تكن رحلة رائعة! والآن، عودة إلى المنشأة! الرسام: ألا يمكن أن يكون خلف الشلال؟ لا؟ سكوتش: هيا بنا! يا إخوة باثيسكاب، غنّوا! الجميع معاً: ماذا سنفعل بصائدي الكنوز؟ ماذا سنفعل بصائدي الكنوز...
-
-EN: Scotch: This is field report number eight! Andrey Scotch and Bathyscaphe, an enterprising group of treasure hunters consisting of Pavel the Backpack, Misha the Artist, and Sergey the Bloodhound, report as follows: after accidentally receiving a message via the Radio of the Future regarding a certain "treasure"...  Bloodhound: Am I correct in understanding that you just made air quotes? On the recording?  Backpack: Exactly, ha!  Scotch: Shit. Look, each of us happened to get a message through the Radio of the Future about a treasure somewhere in these miserable swamps! We spontaneously united into the Bathyscaphe, a team of risk-taking chemists, and have been merrily stomping around the swamps for a week already!  Artist: And still haven't found the treasure!  Bloodhound: Hold on, guys... Wait a minute...  Scotch: Stay cool, Misha. We'll find the treasure. It's got to exist!  Backpack: My backpack won't be big enough to carry it! The Radio of the Future doesn't lie!  Artist: What if someone was fooling around?  Bloodhound: Wait up! Andrey!  Scotch: What is it, Sergey?  Bloodhound: Did you bring the radio recording with you?  Backpack: I've got it on a chirper. Why?  Bloodhound: Play it.  The recording plays: "This is field report number eight! Andrey Scotch and Bathyscaphe, an enterprising group of treasure hunters consisting of Pavel the Backpack, Misha the Artist, and Sergey the Bloodhound, report as follows..."  Artist: What! We heard ourselves?  Bloodhound: Haha! What a trick!  Backpack: Huh? I don't understand... So, there's no treasure?  Scotch: There is a treasure, Backpack. A real treasure! It's called friendship!  Bloodhound: Okay, okay. Don't go sour on us, Pavel! Wasn't that a great getaway! Well, back to the Facility!  Artist: Couldn't it be there behind the waterfall? No?  Scotch: Let's go already! Brothers of the Bathyscaphe, sing!  ALL TOGETHER: What will we do with a treasure hunter? What will we do with a treasure hunter? Deeper in the swamps! 
-
-### 26. [NewP5] UI
-reason: tagged | key: /52CBBC8D4282AFCBBD82738F51F715E7 | notes: batch1
+### 22. [NewP5] UI
+reason: Tagged / placeholder | line: 10619 | key: /52CBBC8D4282AFCBBD82738F51F715E7 | notes: batch1
 
 AR: لفتح باب، اضغط <tag id="InputAction.Gameplay.Shocker"/> واستخدم شوك على مغناطيسات عضادته.
 
 EN: To open a door, press <tag id="InputAction.Gameplay.Shocker"/> and use SHOK on its lintel magnets.
 
-### 27. [NewP5] UI
-reason: tagged | key: /AA2BD72840FCB771D7EED99421BFE2F5 | notes: batch1
+### 23. [VDNKh_Dialogues] Dialogue
+reason: Tagged / placeholder | line: 27136 | key: /534B71D44AC9105880189AB9CF510652 | notes: batch2-0007
 
-AR: بعض الأعداء مقاومون <h>للصقيع العادي</>. استخدم النفّاثة البوليمرية <h>لتعزيز تأثيرات التجميد والنار والكهرباء</>.
+AR: *0.06*ماذا تعني بأن الأمر لم يعد يهم؟! أتعرف من هو أصلاً؟ سيبني لك بيتاً ريفياً، *0.06*ويرسلك في إجازة! أو ربما تريد سيارة؟ هيا يا رجل! أخرجني من هنا فقط!
 
-EN: Some enemies are resistant to <h>regular frostbite</>. Use a Polymeric Jet to <h>enhance the effects of freezing, fire, and electricity</>.
+EN: *0.06*What do you mean it doesn't matter?! Do you even know who he is? He'll build you a country house, *0.06*send you on vacation! Or maybe you want a car? Come on, man! Just get me out of here!
 
-### 28. [NewP5] UI
-reason: tagged | key: /3FF9C5904EA50178771BA8B7251636FA | notes: batch1
+### 24. [Vavilov_Dialogues] Dialogue
+reason: Tagged / placeholder | line: 24788 | key: /AA007240457ABB454E84D4BE310917CE | notes: batch2-0008
 
-AR: يستخدم النظام البيئي قفل الوحدة <h>Snap-A</> للتحكّم في الوصول إلى المناطق المهمة. ولا يمكن سوى لكاميرا <h>Dandelion</> التفاعل مع القفل. ويستطيع المسؤول الاتصال بالكاميرا عبر أقرب واجهة مساعدة <h>VOLAN</>.
+AR: *0.06*وفي ضوء التطورات الجديدة في مجال معالجة المحاصيل بالبوليمر، يتزايد الطلب على نوع جديد من مبيدات الأعشاب، *0.05*مادة كيميائية قادرة على القضاء على الأعشاب الضارة أو النمو الجامح في غضون ساعات. *0.08*ورغم أن علماء مجمّع فافيلوف يتخذون كل احتياط عند تطوير أنواع نباتية جديدة، فقد تقع حوادث مع ذلك. *0.06*وأحياناً تختلف نتائج المختبر عما يراه علماء الزراعة في الممارسة الفعلية. *0.10*فمثلاً، حين زُرعت خارج المختبر، أظهرت البراعم التي كثر الحديث عنها سلوكيات غير متوقعة تتطلب ضبطاً صارماً لمنع هذا النبات النافع *0.03*من أن يصبح غازياً خطيراً.
 
-EN: The <h>Snap-A</> module lock is used by the ecosystem to control access to important areas. Only the <h>Dandelion</> camera can interact with the lock. An administrator can connect to the camera through the nearest <h>VOLAN</> auxiliary interface.
+EN: *0.06*In light of new developments in the field of Polymer crop treatment, there is increasing demand for a novel type of herbicide, *0.05*a chemical that could eliminate weeds or rogue growth in a matter of hours. *0.08*Despite the fact that Vavilov Complex scientists take every precaution when developing new plant species, incidents can still take place. *0.06*Sometimes lab-produced results can differ from what agricultural scientists see in actual practice. *0.10*For example, when cultivated outside of the lab, the much-discussed Sprouts have developed unexpected behaviors that require strict control to prevent this useful plant *0.03*from becoming dangerously invasive.
 
-### 29. [NewP5] UI
-reason: tagged | key: /7F2D296F47C45B2B1EBE54B59D22D46C | notes: batch1
+### 25. [CUTSCENES] Cutscene
+reason: Tagged / placeholder | line: 4297 | key: /A9C90EE34044771013AA028063592DB5 | notes: batch2-0004
 
-AR: فبدلاً من الرصاص، تستهلك <h>الأسلحة الطاقية</> طاقة قفّازك عبر كابل.
+AR: *0.14*لا ينبغي أن تسمّي شيئاً شراً لمجرد أنك لا تستطيع إدراكه. الشر مفهوم مجرد، وتفكيرك محدود. *0.10*أنت إنسان، وجنسك سيُباد قريباً. أدركت ذلك حين كففتُ أنا نفسه عن أن أكون إنساناً.
 
-EN: Instead of bullets, <h>energy weapons</> consume your glove's energy through a cable.
+EN: *0.14*You should not call something evil just because you cannot comprehend it. Evil is an abstract concept, and your thinking is limited. *0.10*You are a human, a species that will soon be extinct. I realized when I stopped being human myself.
 
-### 30. [NewP5] UI
-reason: tagged | key: /9B00946D485D42E443D1C0B5E4FBF835 | notes: batch1
+### 26. [Schebetar_Subs] Subtitles
+reason: Tagged / placeholder | line: 19690 | key: /FDB1619B43A5F452C29F869AB7996286 | notes: batch2-0015
 
-AR: لتسديد ضربة ثقيلة، اضغط <tag id="InputAction.Gameplay.EquippeditemSecondaryAction"/>. قوية الأثر، لكنها تستغرق وقتاً طويلاً للإعادة. لشحن الهجوم، استمرّ بالضغط على <tag id="InputAction.Gameplay.EquippeditemSecondaryAction"/>.
+AR: *0.00-0.05* &Complaining technician& أيها الرفاق، علينا أن نفعل شيئاً بشأن أبواغ الفطر في قسم الإنبات.*0.06-0.11* &Complaining technician& أرسلوا لنا روبوتاً آخر قالوا إنه معطوب، ففتحناه، فإذا هو ممتلئ بالفطر من الداخل.*0.12-0.18* &Complaining technician& الشيء كله محشو بالخيوط الفطرية. ما الذي يعجب الفطر إلى هذا الحد في بيئة البوليمر لدى الروبوتات؟*0.19-0.24* &Complaining technician& بهذا المعدل، سيصبح لدينا فنيو فطر بدلاً من فنيي مختبر.*0.25-0.28* &Complaining technician& أنتم أذكياء، صحيح؟ ابتكروا حلاً!
 
-EN: To deal a heavy blow, press <tag id="InputAction.Gameplay.EquippeditemSecondaryAction"/>. Hard-hitting, but takes a lot of time to repeat. To charge the attack, hold <tag id="InputAction.Gameplay.EquippeditemSecondaryAction"/>.
+EN: *0.00-0.05* &Complaining technician& Comrades, we need to do something about the mushroom spores in the germination department.*0.06-0.11* &Complaining technician& They sent us another robot they said was on the fritz, so we opened it up, and it's full of mushrooms on the inside.*0.12-0.18* &Complaining technician& The whole thing is packed with mycelia. What is it about the robots' Polymer environment that the mushrooms like so much?*0.19-0.24* &Complaining technician& At this rate, we'll have mushroom techs instead of lab techs.*0.25-0.28* &Complaining technician& You guys are smart, right? Come up with something!
 
-### 31. [NewP5] UI
-reason: tagged | key: /4AB893A84FF111E2F98D798C44C85D66 | notes: batch1
+### 27. [Schebetars_dlc1] Unknown
+reason: Tagged / placeholder | line: 20050 | key: /B0C531064B63B2F76C2E358FB49BE7C2 | notes: batch2-0025
 
-AR: استخدم البوليمر <h>لتعزيز تأثيرات</> التجميد والحرق والكهرباء. طبّق البوليمر على سطح أو صبّه مباشرة على أعدائك.
+AR: *0.00-0.15* &Client& اسمع يا صديقي... هذه كأسي الخامسة ولم أزل صاحياً. في لينينغراد كنت سأكون نائماً على المنضدة... آه، كم تنزل بسلاسة! *0.16-0.20* &Bartender& بالفعل. ولا صداع صباحاً — إن لم تُفرط. *0.21-0.34* &Client& أعجوبة لا مشروب! ها! لا شك أن الفضل يعود لمندليف. عبقري حقيقي! وشكر خاص على الفودكا. *0.35-0.42* &Bartender& هذه 3826! كل الجيد بلا السيئ. فماذا تريد — سيارة أجرة أم كأساً أخرى؟ *0.43-0.47* &Client& هيا بنا!
 
-EN: Use Polymer to <h>enhance the effects</> of freezing, fire, and electricity. Apply Polymer to a surface or pour it directly onto your enemies.
+EN: *0.00-0.15* &Client& Say, mate... I'm on my fifth shot and still not sloshed. In Leningrad, I would already be asleep on the counter... Oh, that's smooth! *0.16-0.20* &Bartender& Sure is. And no hangover in the morning—if you don't overdo it. *0.21-0.34* &Client& It's a miracle, not a drink! Ha! No doubt, the honor goes to Mendeleev. A true genius! And separate thanks for the vodka. *0.35-0.42* &Bartender& This is 3826! All the best stuff without the bad stuff. Now, what'll it be—a taxi or another round? *0.43-0.47* &Client& Let's go!
 
-### 32. [NewP5] UI
-reason: tagged | key: /5D3A1170464DF820580B9B919D37EF86 | notes: batch1
+### 28. [Schebetar_Subs] Subtitles
+reason: Tagged / placeholder | line: 19765 | key: /8178B2CE47BDCE735BC173B7D579ACE3 | notes: batch2-0017
 
-AR: <h>استمرّ بالضغط على</> <tag id="InputAction.Gameplay.EquippedItemSecondaryAction"/> وانقر <tag id="InputAction.Gameplay.SwitchAbilityLeft"/> أو <tag id="InputAction.Gameplay.SwitchAbilityRight"/> لاستخدام المهارات المحدّدة. <h>أفلت</> <tag id="InputAction.Gameplay.EquippedItemSecondaryAction"/> <h>للإلغاء</>. وعند الحاجة، <h>يمكنك تنشيط مهارة أخرى بالنقر على</> <tag id="InputAction.Gameplay.SwitchAbilityLeft"/> أو <tag id="InputAction.Gameplay.SwitchAbilityRight"/> الزر. وسيستبدل ذلك المهارة الحالية بالمهارة الجديدة.
+AR: *0.01-0.18* &Lighthouse keeper& حين قالوا لي إن منارتي... منارتي... منارتي الخاصة ستُقتلع من الأرض وتُنقل من ساخالين إلى كازاخستان على أيدي الروبوتات، ظننت أنهم ثمالى.*0.20-0.30* &Lighthouse keeper& لكن لا — إنها الآن على بعد آلاف الكيلومترات من المحيط. مثل معروض في متحف. وأنا هنا أيضاً، كمعروض آخر.*0.31-0.44* &Lighthouse keeper& صحيح، زاد راتبي. صحيح، لا عمل لي تقريباً. الآلات... الآلات تفعل كل شيء. وأنا والمنارة مجرد دليل على أن البشرية تفعل ما تشاء... *0.46-0.47* &Lighthouse keeper& لكن... *0.55-0.59* &Lighthouse keeper& ما الذي يحرسونه بحق الجحيم بكل هذه المدافع الطائرة في كل مكان، هاه؟
 
-EN: <h>Hold</> <tag id="InputAction.Gameplay.EquippedItemSecondaryAction"/> and tap <tag id="InputAction.Gameplay.SwitchAbilityLeft"/> or <tag id="InputAction.Gameplay.SwitchAbilityRight"/> to use the selected skills. <h>Release</> <tag id="InputAction.Gameplay.EquippedItemSecondaryAction"/> <h>to cancel</>. If necessary, <h>you can activate another skill by tapping the</> <tag id="InputAction.Gameplay.SwitchAbilityLeft"/> or <tag id="InputAction.Gameplay.SwitchAbilityRight"/> button. This will switch out the current skill for the new one.
+EN: *0.01-0.18* &Lighthouse keeper& When they told me that my... my... my lighthouse was going to be ripped out of the ground and brought from Sakhalin to Kazakhstan by the robots, I figured they were drunk.*0.20-0.30* &Lighthouse keeper& But nope—it's thousands of kilometers away from the ocean now. Like a museum exhibit. And I'm here too, like another exhibit.*0.31-0.44* &Lighthouse keeper& Sure, I got a raise. Sure, I barely have to do any work. The machines... machines do everything. The lighthouse and I are just a confirmation that humanity can do whatever it wants... *0.46-0.47* &Lighthouse keeper& But... *0.55-0.59* &Lighthouse keeper& What the fuck are they guarding with all these flying guns everywhere, huh?
 
-### 33. [NewP5] UI
-reason: tagged | key: /6C29A5424C2001804D56FCB5A3F4666C | notes: batch1
+### 29. [Schebetar_Subs] Subtitles
+reason: Tagged / placeholder | line: 19741 | key: /A78795D442364FCC00B0CB9CAE8056F8 | notes: batch2-0015
 
-AR: للمراوغة أثناء القفز، اضغط <tag id="InputAction.Gameplay.Dodge"/>.
+AR: *0.01-0.05* أأنت مع الوفد؟ لم أرك من قبل.*0.05-0.15* أجل، أنا... آه... أنا جديد هنا. أرسلني إلى هنا... همم... أنا... نسيت الاسم.*0.15-0.17* الرفيق لاستوتشكين؟*0.17-0.23* نعم، هذا صحيح! إنه... إنه هو. قال لي إنك ستريني المكان أيها الرفيق...*0.24-0.33* نادني أولغا. تفضّل بالجلوس. ولأنك مقرّب من الرئيس، على ما أظن، فقد دُفعت تكاليف زيارتك.*0.34-0.45* دُفعت؟ آه... لا أفهم. إنها... إنها أول مرة لي هنا في الحقيقة. هي هي. وما أنتِ، آه... ماذا سترينني؟*0.46-0.54* إنه أشبه بـ... عرض. برنامج خاص... للزوّار المميّزين.*0.55-0.56* هاه... أهي رقصة؟ *0.57-1.10* أوه، ألست لطيفاً؟ أنا أحبّ القادمين الجدد، فأنتم بريئون جداً! أظنك قد تسميها رقصة... أجل... لنسمّها «رقصة الحضن».*1.10-1.11* ZIP*1.11-1.13* عجباً! مهلاً! م-ماذا تفعلين يا الرفيقة أولغا؟!*1.13-1.16* هاه، يا أحمق. لا تصرخ... بعد.*1.16-1.23* أوه... أوه... واو، يا له من عرض! أوه...
 
-EN: To dodge while jumping, press <tag id="InputAction.Gameplay.Dodge"/>.
+EN: *0.01-0.05* Are you with the delegation? I haven't seen you before.*0.05-0.15* Yeah, I'm... uhh... I'm new here. I was sent here by... umm... I... I forget the name.*0.15-0.17* Comrade Lastochkin?*0.17-0.23* Yes, that's right! It... it was him. He told me you'd show me around, Comrade...*0.24-0.33* You can call me Olga. Have a seat. Since you're the Boss' protégé, I suppose, your visit's been paid for.*0.34-0.45* Paid? Uh... I don't understand. It's... it's my first time here, actually. He, he. What are you, ugh... what are you gonna show me?*0.46-0.54* It's more like... a performance. A special program... for special visitors.*0.55-0.56* Huh... Is it a dance? *0.57-1.10* Oh, aren't you sweet? I like newcomers, you're so innocent! I guess you could call it a dance... yeah... let's call it "lap dance."*1.10-1.11* ZIP*1.11-1.13* Whoa! Hey! W-What are you doing, Comrade Olga?!*1.13-1.16* Huh, silly. Don't shout... yet.*1.16-1.23* Oh... oh... wow, what a performance! Oh...
 
-### 34. [NewP5] UI
-reason: tagged | key: /907FFE044EF2748D99E156A2E99E60E1 | notes: batch1
+### 30. [Vavilov_Dialogues] Dialogue
+reason: Tagged / placeholder | line: 25933 | key: /40FA9FA44578DBDFD123CB9891ABBB4D | notes: batch2-0008
 
-AR: تمنح خانة الخرطوشة السلاحَ المركّبة فيه ضرراً عنصرياً بحسب نوع الخرطوشة: <h>نار أو صقيع أو كهرباء</>. ولتركيب خرطوشة، <h>يجب الحصول على الترقية المناسبة للسلاح المختار</>. <h>استخدم القائمة الدائرية</> لاختيار الخرطوشة وتركيبها.
+AR: *0.10*هذا هو بنك البذور، قلب مجمّع فافيلوف. تُحفظ هنا عيّنات بذور من كل أنواع النباتات ليُستزرع منها ما ينمو على القمر والمريخ. *0.05*وهذه التجارب المذهلة الفريدة في خطر أن تُفقد إلى الأبد!
 
-EN: A cartridge slot gives the weapon it is installed on elemental damage depending on the cartridge type: <h>fire, frost, or electricity</>. To install a cartridge, <h>you need to get the appropriate upgrade for the selected weapon</>. <h>Use the radial menu</> to select and install the cartridge.
+EN: *0.10*This is the Seed Bank, the heart of the Vavilov Complex. Samples of seeds from all manner of plants are stored here so they can be cultivated to grow on the Moon and Mars. *0.05*These stunning and unique experiments are in danger of being lost forever!
 
-### 35. [NewP5] UI
-reason: tagged | key: /0B4FE5CE4A7BB60F4C06968E4B407AB9 | notes: pilot:UI
+### 31. [CrystalComplex_dlc4] Unknown
+reason: Edge case (bracket / speaker / escape / timing) | line: 2488 | key: /77CD1BDC426C0113980C43B323E177B3 | notes: batch2-0041
 
-AR: للقفز فوق جسم أو التسلّق عليه، اضغط <tag id="InputAction.Gameplay.jump"/>.
+AR: [دع ناستيا تتكلم]
 
-EN: To vault or climb an object, press <tag id="InputAction.Gameplay.jump"/>.
+EN: [Let Nastya speak]
 
-### 36. [NewP5] UI
-reason: tagged | key: /6B35C53546915020025D07A97C4FBB1A | notes: batch1
+### 32. [Mails_01] Lore
+reason: Edge case (bracket / speaker / escape / timing) | line: 7112 | key: /FA95EF4B431F04C43FC44B8284DEB7E3 | notes: batch2-0018
 
-AR: يمكنك استخدام <h>كبسولات إلكترو</> لاستعادة الطاقة. ويمكنك الوصول إليها عبر <h>القائمة الشعاعية أو من حقيبة جردك</>.
+AR: التاريخ: 20 يناير 1955 من: المساعدة التفاعلية بيتسي إلى: المساعدة العلمية المبتدئة ز. ك. نيفسكايا نصّ تجربة طلاء بوليم 23/5 بتاريخ مارس 1953 [بداية النص] نيفسكايا: نبدأ الآن التجربة رقم 23، القسم الخامس، صبغة أساسها البوليمر، ردّ الفعل على المحفّزات البصرية واللمسية. العيّنة قرد عنكبوت من نوع Ateles belzebuth، اسمه مادلين. المراقبان: المساعدة العلمية المبتدئة زينايدا كونستانتينوفنا نيفسكايا والبروفيسور أليكسي فلاديميروفيتش ليبيديف. ليبيديف: حسناً، لنبدأ. نيفسكايا: أعرض على العيّنة صورة قطط صغيرة. [صمت] نيفسكايا: يتخذ فراء العيّنة لوناً وردياً و... آه... نعومة. نتابع... أعرض على العيّنة صورة نمر. [صراخ قرد في الخلفية.] نيفسكايا: يتخذ فراء العيّنة لوناً رمادياً. ليبيديف: هذا واضح تماماً. وماذا عن المحفّزات اللمسية؟ نيفسكايا: المساعد الفني B-457، مرّر الفرشاة على فراء العيّنة. [صمت] نيفسكايا: لا تغيير — هذا غريب. في المرة الماضية اتخذت لوناً ذهبياً. ليبيديف: ماذا يمكننا أن نفعل أيضاً؟ نيفسكايا: حسناً... تريد أن أضربها؟ ستظهر عليها نقاط بنفسجية! ليبيديف: لا، لا، شكراً. لا تفعلي. [نهاية النص]
 
-EN: You can use <h>Electro capsules</> to restore energy. Access them via <h>the radial menu or in your inventory</>.
+EN: Date: January 20, 1955 From: Interactive Assistant Betsy To: Junior Lab Assistant Z. K. Nevskaya  Transcript of Poly Paint Experiment 23/5 dated March 1953  [Start of transcript] Nevskaya: We now begin Experiment No. 23, section five, polymer-based pigment, reaction to visual and tactile stimuli. The test subject is a spider monkey, species Ateles belzebuth, named Madeleine. Observers: Junior Lab Assistant Zinaida Konstantinovna Nevskaya and Professor Alexey Vladimirovich Lebedev. Lebedev: Well, let's begin. Nevskaya: I am showing an image of kittens to the test subject. [Pause] Nevskaya: The test subject's fur is taking on a pink color and... uh... fluffiness. Continuing... I am showing an image of a tiger to the test subject. [A monkey shrieks in the background.] Nevskaya: The test subject's fur is taking on a gray hue. Lebedev: That's all clear enough. What about with tactile stimuli? Nevskaya: Lab Tech B-457, brush the test subject's fur. [Pause] Nevskaya: No changes—that's odd. Last time she took on a gold color. Lebedev: What else can we do? Nevskaya: Well... do you want me to hit her? She'll get purple polka dots! Lebedev: No, no, thanks. Don't. [End of transcript]
 
-### 37. [NewP5] UI
-reason: tagged | key: /48B0016D4BA01C2D49DAD5B5DD7FF20E | notes: batch1
+### 33. [CrystalComplex_dlc4] Unknown
+reason: Edge case (bracket / speaker / escape / timing) | line: 2492 | key: /CA5A0FF9480502E9C2DADA963E44DAD6 | notes: batch2-0041
 
-AR: استمرّ بالضغط على <tag id="InputAction.Gameplay.EquippedItemSecondaryAction"/> واضغط <tag id="InputAction.Gameplay.SwitchAbilityLeft"/> أو <tag id="InputAction.Gameplay.SwitchAbilityRight"/> لاستخدام المهارات المحدّدة.
+AR: [دع نورا تتكلم]
 
-EN: Hold <tag id="InputAction.Gameplay.EquippedItemSecondaryAction"/> and press <tag id="InputAction.Gameplay.SwitchAbilityLeft"/> or <tag id="InputAction.Gameplay.SwitchAbilityRight"/> to use the selected skills.
+EN: [Let NORA speak]
 
-### 38. [NewP5] UI
-reason: tagged | key: /719E9C154A9E98125C5227842BDA7C96 | notes: batch1
+### 34. [Schebetar_Subs] Subtitles
+reason: Edge case (bracket / speaker / escape / timing) | line: 19760 | key: /14EA63A142FDB6591025FE981CF2B2F4 | notes: batch2-0017
 
-AR: <h>يمكنك تشتيت انتباه كاميرا مراقبة</> برمي جسم في مكان آخر، أو تعطيلها مؤقتاً باستخدام شوك.
+AR: *0.01-0.10* &Semyon& لينا، هل ستأتين إلى الغداء اليوم؟ يقدّمون سلطة لينينغراد وسمك الحفش. أوه، سيكون رائعاً!*0.11-0.16* &Lena& بالتأكيد يا سيميون، عليّ فقط أن أنهي عملي هنا. عندي تقطيع كثير اليوم — خمس جثث أخرى.*0.17-0.19* &Lena& خنزيران، وخروف، وشيخان... رجل وامرأة.*0.20-0.26* &Lena& العجوز لن يستغرق سوى ثانية، لكن اذهب أنت. سألحق بعد نحو أربعين دقيقة.
 
-EN: <h>You can distract a CCTV camera</> by throwing an object elsewhere, or temporarily disable it by using SHOK.
+EN: *0.01-0.10* &Semyon& Lena, are you coming to lunch today? They're serving Leningrad salad and sturgeon. Oh, it is going to be amazing!*0.11-0.16* &Lena& Sure, Semyon, I just need to finish up here first. I've got a lot of butchering to do today—five more carcasses.*0.17-0.19* &Lena& There's two pigs, a sheep, and two old folks... a man and a woman.*0.20-0.26* &Lena& The old guy should just take a second, but you go on ahead. I'll be there in forty minutes or so.
 
-### 39. [NewP5] UI
-reason: tagged | key: /3686DBDB49785068179C2E99067AF16B | notes: batch1
+### 35. [Theatre_Dialogues] Dialogue
+reason: Edge case (bracket / speaker / escape / timing) | line: 22501 | key: /2D7128DC45D77F798E34A5BF58066162 | notes: batch2-0014
 
-AR: لقد جُرحت! اضغط مع الاستمرار على <tag id="InputAction.Gameplay.ActivateHealthSlot"/> للعلاج.
+AR: *0.11*بخصوص سؤالك: أجرى فيكتور تغييرات جوهرية عديدة في المسرح. ولن يكون اعتقاله سهلاً، حتى مع انهياره النفسي الواضح. *0.10*استعد بعناية، وحاول تفادي هجمات الفوفا. أما حالتك أنت، فلي قول واحد: لا بأس، لا بأس.
 
-EN: You've been injured! Press and hold <tag id="InputAction.Gameplay.ActivateHealthSlot"/> to heal.
+EN: *0.11*In regard to your question: Viktor has made a number of significant alterations to the theater. Arresting him will not be easy, even in light of his obvious psychological breakdown. *0.10*Prepare carefully, and try to avoid the Vova's attacks. As for your own condition, I have one thing to say: there, there.
 
-### 40. [NewP5] UI
-reason: tagged | key: ST_GameTips_Texts_/chtobi_uklonyatsya | notes: seed:phase7
+### 36. [Chelomey_Dialogues] Dialogue
+reason: Edge case (bracket / speaker / escape / timing) | line: 1328 | key: /6D7D86EE4E4BB6CFF3EC52A14D63B59E | notes: batch2-0002
 
-AR: للمراوغة بين الهجمات والأجسام الطائرة والمقذوفات، اضغط <tag id="InputAction.Gameplay.Dodge"/> أثناء التحرك.
+AR: *0.06*نحن الآن نحلق فوق مزارع عباد الشمس الشمسية، القادرة على تزويد فيدنخا بأكملها بالكهرباء، *0.05*وكذلك حديقة صداقة الشعوب والمستوطنات المجاورة وخطوط قطارات الرفع المغناطيسي.
 
-EN: To dodge attacks, flying objects, and projectiles, press <tag id="InputAction.Gameplay.Dodge"/> while moving.
+EN: *0.06*We are currently flying over Sunflower solar farms, capable of supplying electricity to the entire VDNH, *0.05*as well as the Friendship of Peoples Park, nearby settlements, and the Maglev train lines.
 
+### 37. [Vavilov_Dialogues] Dialogue
+reason: Edge case (bracket / speaker / escape / timing) | line: 25841 | key: /E11958A54B143091B6ED7BA43E8E234C | notes: batch2-0009
+
+AR: *0.20*أوف...! حسناً... أجل، هذا أفضل بكثير. الأوبرا تصنع العجائب معي. بالتأكيد. فلنواصل تسجيلي. *0.19*اليوم 783. أين كنت؟ آه، أجل. في البداية كان من الصعب للغاية ألّا أُعير هذا الأمر، كما يسمّونه، «دورة الحياة»، أي انتباه. *0.18*لكنني أدركت بعدها أن فيها شيئاً من الفن. «دورة الحياة» فعلاً! *0.08*ولماذا كان عليهم أصلاً اختراع اسم كهذا؟ رؤساؤنا يظنون أن الدعاية تزيد الإنتاجية. *0.11*ها! إذاً، في نظرهم، موظفوهم ليسوا سوى خنازير بلا عقل، مثل هذه الحيوانات؟ «هذا ليس قتلاً، إنه مجرد حفظ لدورة الحياة!» *0.11*تفو!... أتعلم يا أوليفر؟ حتى لو كنا مجرد خنازير، فمن منحنا الحق في إساءة معاملة الخنازير الأخرى؟ صحيح؟ *0.09*أنا آسف عليك بشدة، حقاً. والله إنه لحق. لقد مِتّ ميتة الأبطال. *0.07*أفكّر حتى في بناء نصب تذكاري لك. أعدك بأنني سأفعل. *0.09*أحياناً أفكّر أن التشنجات نفسها، على أنغام الموسيقى الكلاسيكية، تصبح نوعاً من... رقصة الموت. *0.08*ففي النهاية، تظل خنازير جديدة تُولد، بينما يظل الخنزير ذاته يموت. *0.09*هذا لا يمكن أن يكون صواباً... أم تراه صواباً؟ تفو! إلى الجحيم بكل هذا! *0.11*عليّ أن أطلب نقلي إلى قسم آخر، ولو مؤقتاً. لا! ابعدوا مخالبكم عن ذلك! ليس هذا التسجيل! حسناً، سأوقفه.
+
+EN: *0.20*Phew...! Well... yes, that's much better. Opera is doing wonders for me. Definitely. So, on with my log. *0.19*Day 783. Where was I? Ah, yes. At first, it was extremely difficult for me not to pay any attention to this, ahem, "circle of life," as they call it. *0.18*But then I realized there's something of an art form to it. "Circle of life" indeed! *0.08*Why did they even have to invent a name like that? Our superiors think that propaganda increases productivity. *0.11*Ha! So, to them, their employees are nothing but mindless swine, like these animals? "This isn't killing, it's just maintaining the circle of life!" *0.11*Pah!... you know what, Oliver? Even if we are just swine, who gave us the right to mistreat the other swine? Right? *0.09*I'm awfully sorry for you, I truly am. God knows it's true. You died a hero's death. *0.07*I'm even thinking about building you a memorial. I promise I will. *0.09*Sometimes I think that, when put to Classical music, the convulsions themselves become a kind of... dance of death. *0.08*After all, new pigs keep being born, and yet the same pig keeps on dying. *0.09*That can't be right... or can it? Bah! To hell with it! *0.11*I should ask to be transferred to another department, if only temporarily. No! Keep your claws off that! Not this recording! Okay, I'll switch it off.
+
+### 38. [DIALOGUES FOR LQA] Dialogue
+reason: Edge case (bracket / speaker / escape / timing) | line: 5274 | key: /157EAA8B410B22D595E1F09D5B852422 | notes: batch2-0006
+
+AR: *0.06*المثير للاهتمام هو كيف تتحمل هذا النوع من الضغط! إن لم تعد إلى السطح الآن فأنت رجل ميت! *0.07*اذهب حالاً يا رجل الضفادع! أبقِ ذراعك اليسرى مرفوعة، وانتبه إلى أين تذهب! تجنّب تلك المراوح!
+
+EN: *0.06*What's interesting is how you can withstand this kind of pressure! If you don't get back to the surface right now, you're a dead man! *0.07*Off you go, frogman! Keep your left arm up, and watch where you're going! Steer clear of those rotors!
+
+### 39. [Pavlov_Dialogues] Dialogue
+reason: Edge case (bracket / speaker / escape / timing) | line: 17423 | key: /58F092EE4B29B32435F716A2687B1FD8 | notes: batch2-0012
+
+AR: *0.08*بعضها كذلك، وأخرى لكواكب ذات جاذبية عالية. ويجري البحث لكل السيناريوهات. *0.04*وفي أحد الأحواض يمكنك حتى رؤية محاولات لتربية كائن قادر على العيش في محيطات المشتري.
+
+EN: *0.08*Some are, while others are for planets with high gravity. Research is being conducted for all scenarios. *0.04*In one of the vats, you can even see attempts to breed an organism capable of living in the oceans of Jupiter.
+
+### 40. [Vavilov_Dialogues] Dialogue
+reason: Edge case (bracket / speaker / escape / timing) | line: 25324 | key: /A1307A3E48720B9EF152D784AB57E570 | notes: batch2-0008
+
+AR: *0.05*لا يهم ذلك! كان عليّ أن آخذه حياً، وقد فشلت. وليس هذا كل شيء! *0.07*سيتشينوف أنقذ حياتي. إنه مثل أب لي... بحسب ما أتذكره على الأقل. *0لقد خيّبت أمله.
+
+EN: *0.05*That doesn't matter! I was supposed to take him alive, and I failed. And that's not all! *0.07*Sechenov saved my life. He's like a father to me... as far as I can remember, anyway. *0I let him down.

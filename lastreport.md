@@ -1,146 +1,129 @@
-# Cycle 014 results — Atomic Heart Arabic localization (text only)
+# lastreport — Atomic Heart Arabic localization
 
-**Date/time:** 2026-10-19, 20:55 +03:00 (Europe/Moscow) · Steam app 668580 · English-sourced, MSA
-**Deliverable:** this file (UTF-8; Arabic evidence inline) + `lastreport.md` + `reports\history\report_018.md`
-
----
-
-## Summary (5 lines)
-
-1. **Coverage 21,220 of 27,618 rows (76.83%)** — up from 13,994 (50.67%) at the start of the cycle;
-   **tier 3 (75%) is DONE**.
-2. Batch 3 shipped **22 chunks (0017-0038)**: 6,530 ids authored, **7,226 rows filled**, 71 ids
-   deliberately left copy-class (numbers, Latin-only, key names, asset ids).
-3. **KI-029 closed** (bracket labels now pass the chunk gate) and the validator **glossary matcher was
-   rebuilt** (DEC-040): old-corpus glossary warnings 141 -> 2; the 10 remaining are sense cases.
-4. Gates are green: validator **0 errors**, glyph gate **0 glyphs introduced by Arabic**, fixup verifier
-   PASS after every chunk, carrier round-trip 35/35 with 0 fail.
-5. **Carrier p9 built, validated and installed** (4,276,477 B, sha256 `90d41d78…`) with font
-   `p2_plex`; `~mods` holds exactly 3 files; rollback is `-Carrier p8`.
+**Date/time:** 2026-10-20 23:36 +03:00
+**Cycle:** 015 closed (batch 4 complete, carrier p10 installed)
+**Verdict:** PASS — 100% of translatable rows translated, all gates green, build installed and verified.
 
 ---
 
-## 1. Coverage
+## Five-line summary
+
+1. Batch 4 is finished: chunks 0039–0054, 4,716 ids, **4,802 rows** filled; coverage 21,220 → **26,022 of 27,618 (94.22%)**.
+2. **26,022 of 26,022 translatable rows (100%)** now carry Arabic; the remaining 1,596 rows are copy-class (identifiers, numbers, placeholders, proper names) and stay English-filled by design, each with a recorded reason.
+3. Validator **PASS (0 errors)**, glyph gate **PASS (0 glyphs introduced by Arabic)**, text-fixup verifier **PASS (87 rules, integrity 0 mismatches)**, trim 0 rows.
+4. Carrier **p10** built (4,473,788 B, sha256 `7fbed3a8…f49393`) and installed over p9 with a snapshot proof; `~mods` holds exactly 3 files; rollback is one command.
+5. The gates caught real defects (a silent first-entry loss in the applier, a leaked debug row, three glossary drifts); all are fixed and documented, and nothing is play-tested yet on p10.
+
+---
+
+## 1. What shipped
+
+| item | value |
+|---|---|
+| carrier | `zzz_atomicheart-ar_carrier_koKR_p10_P.pak` — 4,473,788 bytes |
+| carrier sha256 | `7fbed3a87fafb547ecf4a2557a590ae0d7c05da304a3c7f6facb7bb34ef49393` |
+| font | `zzz_atomicheart-ar_font_p2_plex_P.pak` — 1,461,408 bytes, sha256 `02b17f31…8269747` (unchanged) |
+| manifest | `atomic-heart-ar-install-manifest.json`, sha256 `c34ac3a1…38d474` |
+| ~mods | exactly 3 files (carrier, font, manifest); p9 removed hash-verified |
+| install proof | `verify_install.ps1 -Before ah_before_p10b.json` → **VERIFY INSTALL PASS, problems 0** |
+| rollback | `scripts\install_mod.ps1 -Carrier p9 -Font p2_plex` |
+| language slot | Korean (carrier occupies ko-KR) |
+| play-tested | **NO** — p10 installed, not played |
+
+## 2. Coverage
 
 | metric | value |
 |---|---|
 | master rows | 27,618 |
-| rows with Arabic (DRAFT) | **21,220** |
-| coverage | **21,220 of 27,618 (76.83%)** |
-| English-fill rows (no Arabic yet) | 6,398 |
-| kept-Korean rows | 0 |
-| TM entries | 15,410 (was 9,132) |
-| next unauthored plan id | **b11109** |
+| rows with Arabic (DRAFT) | **26,022** |
+| copy-class rows left English-filled | 1,596 |
+| translatable rows | 26,022 |
+| **coverage of translatable rows** | **26,022 of 26,022 (100%)** |
+| coverage of all rows | 26,022 of 27,618 (94.22%) |
+| rows needing review (translatable but empty) | **0** |
 
-Tiers: 25% (6,905) DONE · 50% (13,809) DONE · **75% (20,714) DONE** · 100% (27,618) in progress.
+Per category (all at 100% of translatable):
 
-## 2. Chunks applied this cycle
-
-| phase | chunks | ids authored | rows filled | coverage after |
+| category | rows | Arabic | copy-class | coverage |
 |---|---|---|---|---|
-| KI-029 label chunk | 0016 | 1 | 5 | 13,994 (50.67%) |
-| wave 1 (DLC2 subs / Mails / NTD) | 0017-0021 | 1,484 | 1,961 | 15,955 (57.77%) |
-| wave 2 (Mails / DLC1 / LQA) | 0022-0026 | 1,493 | 1,589 | 17,544 (63.52%) |
-| wave 3 (DLC1 / NTD / upgrades) | 0027-0031 | 1,452 | 1,543 | 19,087 (69.11%) |
-| wave 4 (Limbo / NTD / Triton) | 0032-0036 | 1,500 | 1,529 | 20,616 (74.65%) |
-| tail | 0038, then 0037 | 600 | 604 | **21,220 (76.83%)** |
-| **total** | **23 chunk ids** | **6,530** | **7,226** | — |
+| Cutscene | 1,261 | 1,137 | 124 | 1,137 of 1,137 (100%) |
+| Dialogue | 8,772 | 7,712 | 1,060 | 7,712 of 7,712 (100%) |
+| Lore | 3,464 | 3,439 | 25 | 3,439 of 3,439 (100%) |
+| Subtitles | 361 | 360 | 1 | 360 of 360 (100%) |
+| UI | 6,163 | 5,890 | 273 | 5,890 of 5,890 (100%) |
+| Unknown | 7,597 | 7,484 | 113 | 7,484 of 7,484 (100%) |
 
-Each apply reported `conflicts: 0` and `chunk strings with no master row: 0`. Chunk 0030 contributed
-the largest copy-class block (47 rows: pure numbers, `x{mult}`, `BP_WayPoint*` asset ids).
+Per scope: 35 of 35 scopes at 100% of translatable — full table in `reports\coverage_cycle015.md` (section 2 of `reports\cycle015_results.md`).
 
-## 3. Gates
+## 3. Gates (evidence)
 
-| gate | command | result |
-|---|---|---|
-| chunk gate | `batch2_chunk.ps1 -ChunkId NNNN` | PASS for all 23 chunks (first or second attempt) |
-| master validator | `validate_translation.ps1` | **PASS** — 27,618 rows, 21,220 translated, **0 errors**, 215 warnings |
-| warning split | — | number 93 / length 112 / glossary 10 (all triaged, see §5) |
-| glyph gate | `glyph_gate.ps1 -AllowSourceInheritedNonLatin` | **PASS** — 164 codepoints, 15 source-inherited, **0 introduced by Arabic** |
-| fixups | `verify_text_fixups.ps1` | **PASS** — 83 rules, 0 stale |
-| trim | `trim_trailing_ws.ps1` | 0 rows trimmed |
-| carrier round-trip | `build_carrier_locres_pak.ps1 -VariantLabel p9` | 35/35 scopes, arabic 21,220, english 6,398, korean 0, **fail 0**, unpack byte-identical 35/35 |
-
-## 4. Defects found by the gates and fixed (11 rows)
-
-| row | chunk | defect | fix |
-|---|---|---|---|
-| master L19766 | 0017 | range marker `*0.01-0.28*` missing (old gate pattern only matched single markers) | marker restored; gate pattern aligned to the validator |
-| master L7133 | 0018 | date transcribed from the RU asset ("5 июня") while the English row says "June 15, 1955" | follows the English master; divergence logged (KI-032) |
-| master L15246 | 0019 | dropped expansion "Polymer-Electronic Autonomous Relay" (kept only the acronym) | expansion restored next to `P.E.A.R.` |
-| master L15338 | 0019 | dropped "if a doctor wants" (impersonal rewrite) | restored with the glossary term |
-| master L15354 | 0019 | dropped "on Soviet soil" | restored |
-| master L15959/15960 | 0021 | `ROUTE TERMINAL` rendered "المسار: الاتجاه" | "محطة المسار" (RU for the key is just "ПУТЬ") |
-| 3 rows | 0017/0027 | literal mistranslation of the recurring expletive ("crispy pastries") | unified to the established expletive via `tm_fixups.tsv` |
-| master L20355 | 0031 | Arabic carried a leading space the locres cannot store | trimmed; build now tolerates + logs edge whitespace only |
-
-Tooling fixes shipped with these: chunk-gate marker pattern; `-VariantLabel` now derives the carrier
-output path; edge-whitespace-only round-trip tolerance; the rewritten glossary matcher (DEC-040).
-
-## 5. Quality notes
-
-* **Copy-class policy held**: 71 ids omitted with an empty Arabic cell (pure numbers, Latin-only words,
-  key names, asset ids, marker-only lines). Nothing was left as untranslated English in the Arabic column.
-* **Number warnings (93)** are Arabic word-numbers (`50` -> خمسين, `3D` -> ثلاثية الأبعاد,
-  `17th` -> السابع عشر) or unseparated digits; each class was sampled and verified, no defect.
-* **Length warnings (112)** are Arabic verbosity over 1.6x English (advisory; KI-026 still open).
-* **Glossary warnings (10)** are sense/form cases, reviewed row by row and kept (KI-033):
-  `Terminal` x6 (evolutionary branch, cargo terminal, communications terminal, route terminal - the
-  glossary form محطة طرفية is the computer sense), `Major` x3 (Sergeant Major / "Major depression"),
-  `Upgrade` x1 (verb in dialogue = تطوير, noun/UI = ترقية).
-* **New authoring input**: `scripts\batch2_sheet.ps1` produces `sheet_<nnnn>.tsv` with the official
-  Russian reference resolved per key — including readable string-table keys (`NTD_StringTable/…`),
-  which the earlier generator skipped. Every chunk this cycle had 300/300 Russian references available.
-* **EN/RU asset divergences** (KI-032) surfaced while authoring: "June 15" vs "5 июня";
-  "Marina" vs "Леночка"; "Monday starts on Sunday" vs «суббота»; "Rachel" vs "Дина";
-  "BATTLING ORIOLES" vs «скворцы». Policy used: the **English master is the factual anchor**, the
-  Russian is the register/flavour reference.
-
-## 6. Decisions and known issues
-
-| id | text |
+| gate | result |
 |---|---|
-| DEC-039 | bracket-label gate exception (closes KI-029): non-bracket tokens byte-exact, `[...]` counted, Arabic allowed inside |
-| DEC-040 | glossary matcher rebuild: normalisation, accepted forms (`a\|b\|c`), `cs` flag, prose-only English side |
-| DEC-041 | batch-3 authoring contract (sheets with RU/TM), gate/validator marker alignment, carrier path/edge-ws fixes |
+| `verify_text_fixups.ps1` | **PASS** — 87 rules, integrity 85 rows, 0 mismatches, 0 English missing from TM |
+| `validate_translation.ps1` | **PASS** — rows 27,618, translated 26,022, **errors 0**, warnings 259 (number 122 / length 112 / glossary 25) |
+| `glyph_gate.ps1 -AllowSourceInheritedNonLatin` | **PASS** — 195 codepoints, 46 source-inherited, **0 introduced by Arabic** |
+| `trim_trailing_ws.ps1` | 0 rows trimmed |
+| carrier round-trip | 27,617 exact + 1 newline-normalised, **0 fail** |
+| `verify_install.ps1` | **PASS**, 0 problems, expected file set |
 
-| id | state | note |
-|---|---|---|
-| KI-029 | **FIXED** (cycle 014) | `[Leave]` -> `[مغادرة]` shipped; 3 tamper cases still fail; 7 technical ids kept Latin on purpose |
-| KI-030 | open, docs only | 2-3 `Major` warnings, benign |
-| KI-031 | new, cosmetic | `<...>`-lookalike text stays Latin (1 row, e.g. `<- ALCOHOL ->`) |
-| KI-032 | new, informational | en-US vs ru-RU divergences; English anchor used |
-| KI-033 | new, docs only | 10 residual glossary warnings, sense/form cases, reviewed and kept |
-| KI-009/013/017/018/022/026/027/028 | open | unchanged: GameTips untested, native `ar` list, RU-only assets (6,012 strings), UI fit, label candidates, choice-separator cosmetic |
+Warning triage: number warnings are word-number renderings and timing markers (sampled, no lost numbers); length warnings are glossary-mandated long terms and documents; the 25 glossary warnings are the accepted sense/form cases of KI-033 (Terminal 7, Major 6, Phasotron 2, Comrade 2, Upgrade 2, plus one each for Argentum, Snowball, Archive, Neuropolymer, Professor, Doctor).
 
-## 7. Carrier p9 (installed)
+## 4. Defects found and fixed this cycle
 
-`zzz_atomicheart-ar_carrier_koKR_p9_P.pak` — 4,276,477 B —
-sha256 `90d41d78bdd5744ab2cae63980fa7b1376fd3a449c5987fbf9ac143e8f887de0`
-font `zzz_atomicheart-ar_font_p2_plex_P.pak` — 1,461,408 B — sha256 `02b17f31…`
-manifest `atomic-heart-ar-install-manifest.json` — sha256 `008cc3bc…`
+1. **Silent first-entry loss (tooling).** `batch2_apply.ps1` began reading `chunk_<id>.tsv` at line 1, so the first entry of *every* chunk was skipped (chunk files have no header). Detected when the residual audit found 623 unique strings still empty although their chunks had run; the bulk was chunks 0053/0054 that had never been applied. Fix: read from line 0, then replay chunks 0039–0054 (idempotent, 1 recovered row). → DEC-042, KI-034 (fixed).
+2. **Leaked debug row (content).** NewP5 `english` → `arabic` failed the validator ("Arabic contains no Arabic letter"). Row treated as copy-class: Arabic cell emptied, TM entry removed. → validator back to 0 errors.
+3. **Glossary drift (content).** Crystal Complex rendered as a transliteration in 23 DLC4 rows, Sakhalin 2, Kollektiv 3. Unified through `tm_fixups.tsv` rules (Crystal Complex → المجمّع البلوري, ساخالين, كوليكتيف). Glossary warnings 54 → 25. → DEC-046.
+4. **Wave-1 authoring defects** (already fixed earlier in the cycle): row 20676 had two invented `<tag id="InputAction…"/>` tags; 3 rows used the non-glossary bare spelling for Chirper; 4 rows re-introduced reviewer-deprecated spellings. All repaired, all re-verified.
+5. **7 chunk conflicts** (same English, second nuance in a later chunk): master keeps the first shipped variant; each pair reviewed, differences are stylistic only (e.g. agreement, a kasra), no meaning change.
 
-* `~mods` holds exactly these 3 files; in-game language stays **Korean**.
-* Rollback: `install_mod.ps1 -Carrier p8 -Font p2_plex`.
-* **Honest note:** the first p9 build overwrote the (intermediate) `p3` carrier because
-  `-VariantLabel` did not drive the output path. The stray file was removed, the script fixed, and p9
-  rebuilt to its own name; p3 is not a documented rollback target (p7/p8 are).
-* p9 is **NOT yet play-tested**.
+## 5. Decisions added
 
-## 8. What I should send back
+| id | decision |
+|---|---|
+| DEC-042 | Chunk files carry no header — appliers must read from line 0. `batch2_apply.ps1` fixed; all 16 chunks replayed. |
+| DEC-043 | The frozen work order is authoritative for order only; coverage comes from the master, and the end-of-cycle copy-class audit (multi-token scan) proves nothing translatable is left empty. |
+| DEC-044 | Copy-class definition for coverage accounting (no letters / single identifier / marker / placeholder / brand / debug label); such rows stay English-filled with a recorded reason; the headline number is coverage of translatable rows. |
+| DEC-045 | The review sample is stratified 10 long dialogue / 10 short UI / 10 tagged / 10 edge cases, deterministic by hash. |
+| DEC-046 | Glossary-unification changes go through `tm_fixups.tsv` (never a direct master edit); the three variant spellings are now permanent rules. |
 
-1. **In-game check of p9** (it is installed): menus/HUD, one DLC2 scene, one NTD sign board and
-   subtitles. Note whether subtitles clip or scroll (KI-022) and whether any UI label overflows (KI-026).
-2. **"upgrade" in dialogue**: 35 dialogue rows use the verb form تطوير, 46 rows use the noun ترقية.
-   Say the word if you want all dialogue unified to ترقية.
-3. **EN/RU divergences** (KI-032): keep the English master as the factual anchor (current policy), or
-   prefer the Russian canon for dates/names where the assets disagree?
-4. **Bracket labels**: now unblocked mechanically. Should the 7 remaining technical ids (`FinalDialog`,
-   `RANDOM`, `SaidFirst`, …) also be translated, or stay Latin?
-5. **KI-031**: may I translate inside `<- ... ->` arrows when the content is prose, not a tag?
-6. **Tone pass**: 40 of the 150-row cap used; tell me if you want the remaining 110 rows re-reviewed.
+## 6. Known issues touched
 
-## 9. Next move
+| id | status |
+|---|---|
+| KI-034 | **FIXED** — first-entry loss in `batch2_apply.ps1`; replay recovered the rows. |
+| KI-035 | OPEN (cosmetic, Phase 8) — 220 Arabic cells use straight quotes where the style is guillemets «»; needs a tag-safe pass. |
+| KI-036 | OPEN — p10 installed but not play-tested (p9 was never played either). |
+| KI-026 | Evidence produced: `reports\ui_length_watch.md` — 5,890 UI rows with Arabic, 5,569 labels, 1,019 labels > 40 chars, longest label 199 chars; 321 document-style cells excluded. In-game fit still NOT TESTED. |
+| KI-033 | Residual glossary warnings now 25 (was 10 documented, 54 after batch 4, 25 after unification); all reviewed as sense/form cases. |
+| KI-009, KI-022, KI-028 | unchanged — GameTips, subtitle clip-vs-scroll, choice-number placement still NOT TESTED / cosmetic Phase 8. |
+| KI-013, KI-018, KI-017 | unchanged — native `ar` entry, 248 RU-only assets (6,012 strings), obfuscated asset: Phase 8 / blocked. |
 
-Batch 4 — chunks 0039+ from id **b11109**, 300 ids per chunk in plan order, same gates per chunk, to
-reach 100% (6,398 rows). Then carrier **p10** + play-test sweep + close-out (ROADMAP milestone 8).
+## 7. Evidence files
+
+- `reports\cycle015_results.md` — full cycle report (coverage tables, English-filled inventory, 30 longest UI labels, gates, defects, questions).
+- `reports\coverage_cycle015.md` — per-scope and per-category coverage, copy-class reasons.
+- `reports\english_filled_rows.tsv` — all 1,596 English-filled rows with a reason.
+- `reports\ui_length_watch.md` — 30 longest Arabic UI labels with English (KI-026).
+- `reports\review_sample.md` — 40-row stratified AR/EN review sample.
+- `reports\carrier_build.md`, `reports\install_verification.md`, `reports\translation_validation.md`, `reports\glyph_gate.md`, `reports\text_fixups_log.md`.
+- `localization\references\AR_EN_REFERENCE.md` — regenerated (6,988,783 B, 26,022 rows, 19,732 unique English, 35 scopes).
+
+## 8. What is NOT tested
+
+- p10 in game: menus/HUD, one DLC2 scene, one NTD sign, subtitles, GameTips popups (KI-009), subtitle clip-vs-scroll (KI-022), UI fit (KI-026).
+- Font behaviour for the 46 source-inherited codepoints (Cyrillic/CJK present in the English source); the Arabic introduces none (KI-025).
+- Choice number/separator placement (KI-028), Phase 8 widget work.
+
+## 9. What I should send back
+
+1. **Play-test p10** — menus/HUD, one DLC2 scene, one NTD sign, subtitles. Report any clip, overlap, box glyph or English leak (with a screenshot and the scene name).
+2. **"Upgrade" in dialogue** — unify the verb to the noun term (ترقية), or keep the split (noun for UI, verb in speech, تطوير)?
+3. **EN/RU divergences (KI-032)** — keep the English master as the anchor (current policy) or follow the Russian canon?
+4. **Bracket labels** — translate the 7 remaining technical ids or keep them Latin?
+5. **KI-031** — may prose inside `<- … ->` be translated?
+6. **Tone pass** — extend beyond the 40 of 150 rows reviewed so far?
+7. **KI-035** — run the guillemet pass now or in Phase 8?
+
+## 10. Next move
+
+Phase 8 is **not started** and needs your go-ahead: native `ar` language entry (KI-013), RU-only assets (KI-018 / 6,012 strings), choice-number mirroring (KI-028), guillemet pass (KI-035), in-game fit fixes (KI-026). Nothing in Phase 8 changes the delivered carrier p10.

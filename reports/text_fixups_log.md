@@ -1,9 +1,9 @@
 # Reviewer text fixes
 
-Applied: 2026-10-19 20:43:37
+Applied: 2026-10-20 23:17:43
 Mode: apply
 
-master rows changed: 0 | tm rows changed: 0 | seed rows changed: 0
+master rows changed: 28 | tm rows changed: 28 | seed rows changed: 0
 
 ## أن تنتفخ صدرك -> أن تنفخ صدرك
 
@@ -414,4 +414,47 @@ master rows matched: 0
 
 note: cycle014 consistency: "crispy critters" expletive unified to the established rendering (3 rows from chunks 0017/0027 used the literal "crispy pastries")
 master rows matched: 0
+
+## مجمّع كريستال -> المجمّع البلوري
+
+note: cycle015 glossary: Crystal Complex -> glossary translation, not the transliteration
+master rows matched: 23
+- CrystalComplex_dlc4 | DT_Subtitles_DLC4_CrystalComplex/CrystalComplex_205_Sentences | Unknown
+- Mails_Shebetars_dlc4 | /A90F4EC649E38DC7B10C8B82D443CB2A | Lore
+- Mails_Shebetars_dlc4 | /38BEF7C54CEADFEA72D10D94F113A576 | Lore
+- Mails_Shebetars_dlc4 | /A0A3B52A4BD311315D8E069EECE262F1 | Lore
+- Mails_Shebetars_dlc4 | /4274274140DA8EA7B3F319835DA70D1C | Lore
+- Mails_Shebetars_dlc4 | /ABF64B6B4FE44830E902E78F76439750 | Lore
+- Mails_Shebetars_dlc4 | /DCE08DCD4335B50AE60CE486940BCA22 | Lore
+- Mails_Shebetars_dlc4 | /EE977C8F4B67F00AAD961A9E399F2A4A | Lore
+- Mails_Shebetars_dlc4 | /0157D19748466AC209E417A5925E8794 | Lore
+- Mails_Shebetars_dlc4 | /D8FDE369428EAEBF82D6BC8823ED17F0 | Lore
+- Mails_Shebetars_dlc4 | /1891CEE44413064F778B2EB64CDFD63F | Lore
+- Mails_Shebetars_dlc4 | /F12FD53E44A0E715BCDEEAA75F69EEBF | Lore
+- Mails_Shebetars_dlc4 | /B15452D547D9225312CFAAAA1F134BF6 | Lore
+- Mails_Shebetars_dlc4 | /F907B5CB4E9B06B353C27FBE0F57D62B | Lore
+- Mails_Shebetars_dlc4 | /9EC2958E419E73B1F21641A3F4EE28C3 | Lore
+- Mails_Shebetars_dlc4 | /97AA21334F52256C2BF3E69146EACA5B | Lore
+- Mails_Shebetars_dlc4 | /15F28B5C4243EA5285C94B869A8D2A93 | Lore
+- Mails_Shebetars_dlc4 | /80AB8DA4478D2EFA18FAE79807F2A66A | Lore
+- Mails_Shebetars_dlc4 | /B10C5DC046BCB2B2E4376FBF9F4AF823 | Lore
+- Mails_Shebetars_dlc4 | DT_Subtitles_DLC04_Schebetars/Chirpers_9_10_Sentences | Lore
+- Tech_dlc4 | All_Const_DLC4/DA_NewLockHint_desc | Unknown
+- Tech_dlc4 | All_Const_DLC4/DA_TipInfo_NewLock_desc | Unknown
+- Tech_dlc4 | All_Const_DLC4/DA_TipInfo_Collectable_desc | Unknown
+
+## سخالين -> ساخالين
+
+note: cycle015 glossary: Sakhalin -> glossary transliteration
+master rows matched: 2
+- Mails_Shebetars_dlc4 | /89AD90AD419D4ECE923C0BBF51A24866 | Lore
+- Mails_Shebetars_dlc4 | /3F1D2AEE46CF080595FF949858B909F8 | Lore
+
+## كولكتيف -> كوليكتيف
+
+note: cycle015 glossary: Kollektiv -> glossary transliteration
+master rows matched: 3
+- Mails_Shebetars_dlc4 | /424F0B284CF3F884A8993FB181F7E6D4 | Lore
+- Mails_Shebetars_dlc4 | /A68117B947D9592CF25250BACADD5000 | Lore
+- Mails_Shebetars_dlc4 | /E26CCBDF44BCB36A6E50649B29D74919 | Lore
 

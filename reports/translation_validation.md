@@ -1,6 +1,6 @@
 # Translation validation report
 
-Generated: 2026-10-19 20:50:38
+Generated: 2026-10-20 23:26:56
 Validator: scripts/validate_translation.ps1 (PowerShell twin of scripts/validate_translation.py)
 
 RESULT: **PASS**
@@ -8,19 +8,19 @@ RESULT: **PASS**
 | metric | value |
 |---|---|
 | master rows | 27618 |
-| rows with Arabic | 21220 |
+| rows with Arabic | 26022 |
 | hard errors | 0 |
-| warnings (number/length/glossary) | 215 |
-| - number-multiset warnings | 93 |
+| warnings (number/length/glossary) | 259 |
+| - number-multiset warnings | 122 |
 | - UI length warnings | 112 |
-| - glossary warnings | 10 |
+| - glossary warnings | 25 |
 
 ## Status distribution (whole master)
 
 | Status | rows |
 |---|---|
-| DRAFT | 21220 |
-| UNTRANSLATED | 6398 |
+| DRAFT | 26022 |
+| UNTRANSLATED | 1596 |
 
 ## Translated rows per scope
 
@@ -29,47 +29,47 @@ RESULT: **PASS**
 | NewP5 | 5332 |
 | Vavilov_Dialogues | 1962 |
 | NTD | 1405 |
+| Tech_dlc4 | 1262 |
+| CrystalComplex_dlc4 | 1219 |
 | Chelomey_Dialogues | 1119 |
 | VDNKh_Dialogues | 1067 |
-| Triton_dlc3 | 880 |
+| Triton_dlc3 | 928 |
 | Sakhalin_dlc3 | 842 |
 | Locations_dlc2 | 815 |
 | Chelomey_dlc3 | 772 |
+| Mails_Shebetars_dlc4 | 756 |
 | DIALOGUES FOR LQA | 746 |
 | CUTSCENES | 720 |
+| Mails_Shebetars_Tech_dlc3 | 578 |
 | Theatre_Dialogues | 572 |
 | PearTerminals | 539 |
+| Phasatron_dlc4 | 489 |
+| LebedevLab_dlc4 | 460 |
 | Mails_01 | 454 |
 | OpenWorldVDNKh_Dialogues | 432 |
 | Cutscenes_dlc1 | 417 |
 | Mendeleev_dlc1 | 411 |
 | Pavlov_Dialogues | 404 |
+| Tech_dlc3 | 400 |
 | Schebetar_Subs | 360 |
+| WavePlatform_dlc4 | 291 |
 | Academy_Dialogues | 259 |
 | Mails_Shebetars_dlc2 | 246 |
-| Mails_Shebetars_Tech_dlc3 | 238 |
-| Mails_Shebetars_dlc4 | 231 |
 | ChelomeyFinal_Dialogues | 186 |
 | Tech_dlc2 | 161 |
 | Marshes_dlc1 | 155 |
 | Polygon_Dialogues | 150 |
-| Tech_dlc4 | 141 |
 | Schebetars_dlc1 | 94 |
-| Tech_dlc3 | 45 |
-| CrystalComplex_dlc4 | 22 |
 | Misc | 19 |
-| LebedevLab_dlc4 | 18 |
-| Phasatron_dlc4 | 3 |
-| WavePlatform_dlc4 | 3 |
 
 ## Translated rows per category
 
 | category | rows with Arabic |
 |---|---|
 | Dialogue | 7712 |
+| Unknown | 7484 |
 | UI | 5890 |
-| Unknown | 3547 |
-| Lore | 2574 |
+| Lore | 3439 |
 | Cutscene | 1137 |
 | Subtitles | 360 |
 
@@ -80,10 +80,41 @@ None.
 ## Warnings
 
 - line 286: number multiset differs (en=[0|0|0|0|0|0|07|09|10|10|13|1955|2|2] ar=[0|0|0|0|0|0|07|09|10|10|1955|2|2])
+- line 2547: number multiset differs (en=[000|80] ar=[80])
+- line 3192: glossary term 'Major' -> 'الرائد' not found in Arabic
+- line 3196: glossary term 'Terminal' -> 'محطة طرفية|طرفية' not found in Arabic
+- line 3213: glossary term 'Major' -> 'الرائد' not found in Arabic
+- line 3409: glossary term 'Snowball' -> 'كرة الثلج' not found in Arabic
 - line 4706: glossary term 'Upgrade' -> 'ترقية' not found in Arabic
 - line 5568: number multiset differs (en=[50] ar=[])
+- line 5704: number multiset differs (en=[] ar=[50|50])
 - line 6360: number multiset differs (en=[20] ar=[])
 - line 7105: number multiset differs (en=[0|10|15|17|1955|30|5] ar=[10|15|17|1955|30|5])
+- line 7690: number multiset differs (en=[100] ar=[])
+- line 7795: number multiset differs (en=[112|3] ar=[112])
+- line 7802: number multiset differs (en=[140|3] ar=[140])
+- line 7803: number multiset differs (en=[141|3] ar=[141])
+- line 7805: number multiset differs (en=[154|3] ar=[154])
+- line 7812: glossary term 'Neuropolymer' -> 'البوليمر العصبي|البوليمرية العصبية|عصبية بوليمرية' not found in Arabic
+- line 7815: number multiset differs (en=[1|19|1955] ar=[19|1955])
+- line 7826: number multiset differs (en=[2|214] ar=[214])
+- line 7829: glossary term 'Phasotron' -> 'فازاترون' not found in Arabic
+- line 7830: glossary term 'Phasotron' -> 'فازاترون' not found in Arabic
+- line 7831: glossary term 'Professor' -> 'البروفيسور|أستاذ' not found in Arabic
+- line 7831: glossary term 'Doctor' -> 'دكتور|طبيب|طبيبة|دكتورة' not found in Arabic
+- line 7835: glossary term 'Argentum' -> 'أرجنتوم' not found in Arabic
+- line 7837: number multiset differs (en=[3|34] ar=[34])
+- line 7840: number multiset differs (en=[1|1955|25|5|5] ar=[1955|25|5|5])
+- line 7842: number multiset differs (en=[3|59] ar=[59])
+- line 7843: number multiset differs (en=[3|61] ar=[61])
+- line 7844: number multiset differs (en=[3|66] ar=[66])
+- line 7849: number multiset differs (en=[3|71] ar=[71])
+- line 7852: number multiset differs (en=[1|1955|9] ar=[1955|9])
+- line 7853: number multiset differs (en=[3|90] ar=[90])
+- line 7854: number multiset differs (en=[167|3] ar=[167])
+- line 8323: glossary term 'Comrade' -> 'الرفيق|الرفاق' not found in Arabic
+- line 8538: number multiset differs (en=[10|10|1955|2] ar=[10|1955|2])
+- line 8561: glossary term 'Comrade' -> 'الرفيق|الرفاق' not found in Arabic
 - line 9605: UI length 15 > 1.2 x 12
 - line 9614: UI length 52 > 1.2 x 42
 - line 9782: number multiset differs (en=[3] ar=[])
@@ -229,6 +260,7 @@ None.
 - line 18034: UI length 21 > 1.2 x 16
 - line 18048: UI length 23 > 1.2 x 18
 - line 18061: number multiset differs (en=[00|1955|7|9] ar=[1955|7])
+- line 18284: number multiset differs (en=[19] ar=[])
 - line 18799: number multiset differs (en=[0|0|0|0|000|07|08|08|12|2|42] ar=[0|0|0|0|07|08|08|12|2|42])
 - line 18803: number multiset differs (en=[0|0|08|09|1|2] ar=[0|0|08|09|1])
 - line 19382: number multiset differs (en=[10|25|90] ar=[10|2|25|90])
@@ -281,6 +313,17 @@ None.
 - line 20433: number multiset differs (en=[4] ar=[])
 - line 20434: number multiset differs (en=[4] ar=[])
 - line 20435: number multiset differs (en=[4] ar=[])
+- line 20498: glossary term 'Major' -> 'الرائد' not found in Arabic
+- line 20548: number multiset differs (en=[3] ar=[])
+- line 21184: glossary term 'Archive' -> 'الأرشيف' not found in Arabic
+- line 21244: number multiset differs (en=[118|1955|2] ar=[118|1955])
+- line 21247: number multiset differs (en=[1|1|60|60] ar=[60|60])
+- line 21299: number multiset differs (en=[20|60|7] ar=[])
+- line 21380: number multiset differs (en=[2] ar=[])
+- line 21396: number multiset differs (en=[000|4] ar=[4000])
+- line 21485: number multiset differs (en=[1|5] ar=[5])
+- line 21648: number multiset differs (en=[1|10|13|18|2|2|250|300|50|60|641|850|91] ar=[10|13|18|1850|2|2300|250|50|60|641|91])
+- line 21951: number multiset differs (en=[2] ar=[])
 - line 22680: number multiset differs (en=[24] ar=[])
 - line 22929: number multiset differs (en=[25] ar=[])
 - line 22944: number multiset differs (en=[19] ar=[])
@@ -289,6 +332,7 @@ None.
 - line 23082: number multiset differs (en=[30] ar=[])
 - line 23083: number multiset differs (en=[50] ar=[])
 - line 23084: number multiset differs (en=[30] ar=[])
+- line 23608: glossary term 'Upgrade' -> 'ترقية' not found in Arabic
 - line 24987: number multiset differs (en=[1] ar=[])
 - line 26496: number multiset differs (en=[0|0|000|04|10|3|78] ar=[0|0|04|10|3000|78])
 - line 26869: number multiset differs (en=[2|500] ar=[2500])

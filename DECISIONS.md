@@ -1083,3 +1083,54 @@ Ruling (DRAFT, reviewer may override - `glossary/glossary_questions.md` section 
   2 route-terminal labels; 3 rows with a literal mistranslation of the recurring expletive; 1 edge
   space. Reviewer fixes go through `tm_fixups.tsv` (one new rule this cycle), authoring artefacts are
   patched in place, and the fixup verifier runs after every chunk (DEC-038 held).
+
+## DEC-042 (cycle 015, 2026-10-20): chunk files are headerless - appliers read from line 0
+
+- `chunk_<id>.tsv` is written by `batch2_chunk.ps1` with no header row (one entry per authored id:
+  `english, arabic, note`). `batch2_apply.ps1` started its loop at index 1, so the FIRST entry of every
+  chunk was silently skipped while the script still reported success. Symptom: unique strings stayed
+  empty although their chunk had been applied; 623 unique / 1,971 rows were affected at the end of
+  batch 4, mostly because chunks 0053/0054 had never been applied and one entry per chunk was lost.
+- FIX: the applier reads from index 0. All 16 chunks (0039-0054) were replayed; the replay is
+  idempotent ("already identical" everywhere) and recovered the lost first entries. `tm.tsv` DOES
+  carry a header (`english/arabic/source`), so TM readers correctly start at index 1 - do not change
+  that. A future applier must assert that the chunk file has no header (or detect and skip one).
+
+## DEC-043 (cycle 015, 2026-10-20): the work order is order-only; coverage comes from the master
+
+- `plan_unique.tsv` is frozen for authoring order and stable ids. It is not a coverage ledger: any
+  string missing from it would be invisible. Therefore every cycle close now audits the master
+  directly: the copy-class classifier (`scripts/coverage_report.ps1`) lists every empty Arabic cell
+  with a reason, and any multi-token row that is not copy-class fails the audit (`review-needed > 0`).
+- Batch 4 closed with review-needed = 0, which is the proof that "all planned ids authored" also means
+  "nothing translatable is left empty".
+
+## DEC-044 (cycle 015, 2026-10-20): copy-class definition and the coverage headline
+
+- A row is copy-class (stays English-filled, Arabic empty) when its English is: empty; has no letters;
+  is a localization marker (`[do not localize]`); is a single identifier/name token (`P-3`, `NoText`,
+  `VOV-A6`, language endonyms, `{Class},  {Message}`-style templates, `<title>`, resolution names,
+  `DUMMY ...`, debug labels such as `GlobalSpeedMultiplier :`, audio-cue-only subtitles such as
+  `*0.00-0.44* &Scary sounds from the swamp&`, keyboard-mash debug strings).
+- The headline metric is **coverage of translatable rows** = Arabic rows / (all rows - copy-class rows);
+  overall coverage (Arabic rows / all rows) is reported too. Cycle 015: 26,022 of 26,022 (100%) and
+  26,022 of 27,618 (94.22%).
+- Evidence per row: `reports/english_filled_rows.tsv` (line, key, scope, category, english, reason).
+
+## DEC-045 (cycle 015, 2026-10-20): stratified review sample
+
+- `scripts/review_sample.ps1` now builds the 40-row sample in four deterministic sections: 10 long
+  dialogue rows (dialogue/cutscene/Lore, Arabic and English >= 150 chars), 10 short UI labels
+  (category UI, Arabic <= 30 chars), 10 tagged/placeholder rows (rich-text tag, placeholder, `\n`,
+  timing marker), 10 edge cases (bracket label, `&Speaker&`, escape, timing marker). Each section is
+  hash-ordered and topped up if short, so the file always has 40 unique rows.
+
+## DEC-046 (cycle 015, 2026-10-20): glossary drift is repaired through tm_fixups.tsv
+
+- Variant spellings found by the validator are repaired as find/replace rules in
+  `localization/working/tm_fixups.tsv` (never by hand-editing the master), then
+  `apply_text_fixups.ps1` + `verify_text_fixups.ps1` run. Three rules were added this cycle:
+  Crystal Complex transliteration -> the glossary translation `المجمّع البلوري`; the short Sakhalin
+  spelling -> `ساخالين`; `كولكتيف` -> `كوليكتيف`. Effect: 28 rows, glossary warnings 54 -> 25.
+- `scripts/cycle015_glossary_unify.ps1` is the idempotent generator for those three rules (ASCII-only,
+  Arabic built from [char] codepoints, per KI-021).

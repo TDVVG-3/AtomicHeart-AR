@@ -32,7 +32,8 @@ $utf8      = New-Object Text.UTF8Encoding($false)
 $ar = New-Object 'System.Collections.Generic.Dictionary[string,string]' ([StringComparer]::Ordinal)
 $nt = New-Object 'System.Collections.Generic.Dictionary[string,string]' ([StringComparer]::Ordinal)
 $cl = [IO.File]::ReadAllLines($chunkP, [Text.Encoding]::UTF8)
-for ($i = 1; $i -lt $cl.Count; $i++) {
+# chunk_<id>.tsv has NO header line: every line is data (start at 0, cycle 015 fix)
+for ($i = 0; $i -lt $cl.Count; $i++) {
     if (-not $cl[$i].Trim()) { continue }
     $f = $cl[$i] -split "`t"
     if ($f.Count -lt 2) { continue }
