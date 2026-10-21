@@ -1,6 +1,6 @@
 # AR/EN review sample - cycle 015 (p10 carrier)
 
-Generated: 2026-10-21 12:52:31
+Generated: 2026-10-21 14:21:46
 Rows with Arabic available: 26022 | sample size: 40
 
 Read each block as: Arabic (what the player sees) then the English source it came from.

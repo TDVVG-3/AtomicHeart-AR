@@ -1,6 +1,6 @@
 # Coverage - cycle 016 (text passes + carrier p11)
 
-Generated: 2026-10-21 12:53:26
+Generated: 2026-10-21 14:21:34
 
 Same classification as cycle 015: a row is copy-class when its Arabic cell is empty and
 the English needs no translation (placeholders, tags, resolutions, brands, debug ids,

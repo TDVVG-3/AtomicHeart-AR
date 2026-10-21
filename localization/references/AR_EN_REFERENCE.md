@@ -1,6 +1,6 @@
 # AR <-> EN reference (rows that already carry Arabic)
 
-Generated: 2026-10-21 12:52:32
+Generated: 2026-10-21 14:21:40
 Cycles: translation program, DRAFT rows only.
 
 Rule: this file lists ONLY master rows whose Arabic column is non-empty.
@@ -9213,7 +9213,7 @@ Arabic is shown FIRST, the English source BELOW it, followed by the locres key.
   - AR: يا رائد، عندك دقيقة؟ اسمح لي أن أسأل، كيف عرفت أنك وكاتيا... حسناً، أنكما تحبّان بعضكما؟ ومتى؟
   - EN: Major, got a minute? Let me ask, how did you know that you and Katya... Well, that you love each other? And when?
 - `DT_Subtitles_DLC4_CrystalComplex/CrystalComplex_190_Sentences`  [Unknown] batch2-0043
-  - AR: استخدمني... أنا!
+  - AR: يا رائد! استخدمني... أنا!
   - EN: Major! Use... me.
 - `DT_Subtitles_DLC4_CrystalComplex/CrystalComplex_545_Sentences`  [Unknown] batch2-0043
   - AR: يا رائد، إنهم يؤذونني! لقد وعدتني...
@@ -9276,7 +9276,7 @@ Arabic is shown FIRST, the English source BELOW it, followed by the locres key.
   - AR: هذه منطقة الفحص الطبي يا رائد. تحتاج إلى شهادة صحية نظيفة للمتابعة. اذهب واحصل عليها من محطات PEAR.
   - EN: This is the medical examination zone, Major. You'll need a clean bill of health to move on. Go get yours at the P.E.A.R. terminals.
 - `DT_Subtitles_DLC4_CrystalComplex/CrystalComplex_238_Sentences`  [Unknown] batch2-0043
-  - AR: أرصد بوليمرات مفيدة نشطة في جسمك... أعيد تركيب المواد في كبسولة نيوروميد خاصة. الكبسولة جاهزة.
+  - AR: يا رائد، أرصد بوليمرات مفيدة نشطة في جسمك... أعيد تركيب المواد في كبسولة نيوروميد خاصة. الكبسولة جاهزة.
   - EN: Major, I'm detecting active beneficial polymers in your body. Recombining substances into a special Neuromed capsule. Capsule ready.
 - `DT_Subtitles_DLC4_CrystalComplex/CrystalComplex_509_Sentences`  [Unknown] batch2-0043
   - AR: المزيد. أعطني المزيد. هيا يا قديم!
@@ -24255,7 +24255,7 @@ Arabic is shown FIRST, the English source BELOW it, followed by the locres key.
   - AR: أوه، إزمايلوف، لا يمكن أن تكون جاداً.
   - EN: Oh, Izmailov, you can't be serious.
 - `DT_Subtitles_DLC04_Schebetars/Chirpers_14_4_Sentences`  [Lore] batch2-0053
-  - AR: آه، صدقني يا زميلي، حين ننتهي من لحام هذا «التوأم» بالحاسوب، سيقتلنا.
+  - AR: آه، صدقني يا رفيقي، حين ننتهي من لحام هذا «التوأم» بالحاسوب، سيقتلنا.
   - EN: Ugh, mark my words, comrade, once we're done soldering this Twin to the ECM, he's gonna kill us.
 - `DT_Subtitles_DLC04_Schebetars/Chirpers_3_1_Sentences`  [Lore] batch2-0053
   - AR: أوه... تبا، هل هذا... عظم؟
@@ -24972,7 +24972,7 @@ Arabic is shown FIRST, the English source BELOW it, followed by the locres key.
   - AR: التاريخ: 5 فبراير 1955 من: الأخصائية النفسية ن. فادييفا إلى: كبيرة علماء المحيطات أ. بوليكاربوفا  بناءً على طلبكم، أجريت تحليلاً نفسياً لم. إيسايفا بشأن جاهزيتها للعودة إلى العمل. لا تزال علامات الاكتئاب والصمت المرتبطة بصدمة اختفاء زوجها ن. إيسايف في البحر قبل عامين قائمة. أرى أن عودتها إلى العمل ستؤثر إيجاباً في صحتها، وأوصي بالعمل مع الحيوانات. وعلى وجه الخصوص، توجد دراسات عن التأثير العلاجي للدلافين على المصابين بصدمات نفسية. كما أفهم، لا تعانون نقصاً في الدلافين.  ملاحظة: أودّ كتابة مقال عن تأثير الاكتئاب في التفاعلات الكيميائية في الدماغ عند التواصل مع الحيوانات. سأتولى هذه الحالة شخصياً.
   - EN: Date: February 5, 1955 From: Regular Psychologist N. Fadeyeva To: Senior Oceanographer A. Polikarpova  At your request, I have conducted a psychological analysis on M. Isayeva regarding her readiness to return to work. Her depression and muteness related to the shock of her husband, N. Isayev, going missing at sea two years ago remains. I believe that returning to work will have a positive impact on M. Isayeva's health, and I recommend working with animals. In particular, there are studies on the therapeutic effect of dolphins on people with psychological trauma. As I understand, you have no shortage of dolphins.  P.S. I'd like to write an article on how depression affects the chemical reactions in the brain when communicating with animals. I will personally oversee this case. 
 - `/351B0A354BC019205B6D3F982B53F9FE`  [Lore] batch2-0040
-  - AR: التاريخ: 6 يونيو 1955 من: نائب مدير الكتلة الطبية في مجمّع «ترايتون» أ. راجين إلى: #سجل_الملاحظات  جاء اليوم المساعد المختبري يوجيني خودوبروفوف. بحسب المعلومات المتاحة، كان في الكافيتيريا مع زملائه من قسم الأبحاث المتقدمة يحتفلون بمناقشة أطروحة زميلهم. شرب الشاي مع الكعك والحلويات. أكثر من الحلويات. شعر بغثيان وخرج إلى الحمام. ثم اختفى. عُثر عليه بعد ساعتين في أحد ممرات المجمّع. كان خودوبروفوف يحاول لعق الجدران وقضم الأبواب. وأصرّ على أنها مصنوعة من البسكويت. يتبيّن من التحليل أن جسم خودوبروفوف يحتوي على فائض من الدهون المتحولة والليزرجين والمالتوديكسترين والسكرالوز والأميلوبكتين ومواد أخرى متنوعة. التشخيص المبدئي: هلوسة عضوية وفصام بارانويدي. وكانت سمية السكريات المتعددة (يُستوضح) هي المحفّز. حالة غريبة. سنحتاج إلى أخذ عينات للفحص. استشارة أخصائي المجمّع النفسي ب. سوبول.
+  - AR: التاريخ: 6 يونيو 1955 من: نائب مدير الكتلة الطبية في مجمّع «ترايتون» أ. راجين إلى: #سجل_الملاحظات  جاء اليوم المساعد المختبري يوجيني خودوبروفوف. بحسب المعلومات المتاحة، كان في الكافيتيريا مع زملائه من قسم الأبحاث المتقدمة يحتفلون بمناقشة أطروحة رفيقهم. شرب الشاي مع الكعك والحلويات. أكثر من الحلويات. شعر بغثيان وخرج إلى الحمام. ثم اختفى. عُثر عليه بعد ساعتين في أحد ممرات المجمّع. كان خودوبروفوف يحاول لعق الجدران وقضم الأبواب. وأصرّ على أنها مصنوعة من البسكويت. يتبيّن من التحليل أن جسم خودوبروفوف يحتوي على فائض من الدهون المتحولة والليزرجين والمالتوديكسترين والسكرالوز والأميلوبكتين ومواد أخرى متنوعة. التشخيص المبدئي: هلوسة عضوية وفصام بارانويدي. وكانت سمية السكريات المتعددة (يُستوضح) هي المحفّز. حالة غريبة. سنحتاج إلى أخذ عينات للفحص. استشارة أخصائي المجمّع النفسي ب. سوبول.
   - EN: Date: June 6, 1955 From: Assistant Manager of the Triton Complex Medical Block A. Ragin To: #observation_log  The lab assistant, Evgeny Khudobrovov, came in today. According to available information, he was in the cafeteria with his colleagues from the Advanced Research department, celebrating their comrade's dissertation defense. He had tea with cake and sweets. Was heavy on the sweets. He became queasy and excused himself to the bathroom. Then he disappeared. He was discovered two hours later in a hallway of the complex. Khudobrovov was trying to lick the walls and take a bite out of the doors. He insisted they were made of cookies. It's clear from analysis that Khudobrovov's body contains an excess of trans fats, lysergine, maltodextrin, sucralose, amylopectine, and a variety of other substances. Preliminary diagnosis: organic hallucinosis and paranoid schizophrenia. Polysaccharide toxicity (TBC) acted as the catalyst. An odd case. Will need to take samples to check. Consult with complex psychologist, B. Sobol.
 - `/891F988D4CB561C23AF9949C35BF92DA`  [Lore] batch2-0040
   - AR: التاريخ: 6 يونيو 1955 من: نائب سكرتير مجمّع «تشيلومي» ي. نيكيشين إلى: سكرتير مجمّع «تشيلومي» د. تيومين  دانيا، هل لاحظت يوماً فرقاً في سلوك التوأمين؟ الجميع يقول إنهما كقطرتي ماء، كصورة في المرآة، وغيرها من عبارات «مقطوعان من قماش واحد». لكنني أعمل هنا منذ سنوات عدة، وأستطيع تمييز الفروق. اليسرى أكثر... رشاقة، كما أظن. حركاتها أنعم. أكثر انسيابية. أظن أن «أكثر شاعرية» هي الصياغة المناسبة، خصوصاً بالنظر إلى الطابع الوظيفي والصلابة في اليمنى. الأمر ليس صارخاً بالطبع، لكن إن دقّقت النظر، فالفرق بين هاتين الآلتين المتطابقتين ظاهرياً هائل. أتساءل إن كان سيتشينوف قد صممهما كذلك...
@@ -32226,13 +32226,13 @@ Arabic is shown FIRST, the English source BELOW it, followed by the locres key.
   - AR: بطارية كبيرة
   - EN: LARGE BATTERY
 - `/F586E90A40DCDF208770808ECECD3632`  [UI] batch1
-  - AR: أداة BIOS — الاتحاد السوفييتي
+  - AR: أداة BIOS السوفييتية
   - EN: BIOS Tool—USSR
 - `/5A5E98184D1932E5ACA55FB46CE866A7`  [UI] batch1
   - AR: أداة BIOS — الاتحاد السوفييتي 1952–1955 موسكو، ذرّي
   - EN: BIOS Tool—USSR 1952–1955 Moscow, Atomic
 - `/BB9F73794F373938FFFE7299F83C3897`  [UI] batch1
-  - AR: أداة BIOS. الاتحاد السوفييتي. 1954
+  - AR: أداة BIOS السوفييتية. 1954
   - EN: BIOS Tool. USSR. 1954
 - `/54CEE1BB42D5DEE01FB1F896021D7DC9`  [UI] batch1
   - AR: القنطور BEA-D
@@ -35313,10 +35313,10 @@ Arabic is shown FIRST, the English source BELOW it, followed by the locres key.
   - AR: جودة الترشيح متباين الخواص
   - EN: Anisotropic filtering quality
 - `/10BFD8464135DB09E6862FAB916D4C14`  [UI] batch1
-  - AR: جودة المجسّمات ثلاثية الأبعاد
+  - AR: جودة المجسّمات 3D
   - EN: 3D model quality
 - `/A311AA7648DF3A3CFC82A08FFF84FDA0`  [UI] batch1
-  - AR: جودة المجسّمات ثلاثية الأبعاد
+  - AR: جودة المجسّمات 3D
   - EN: 3D model quality
 - `/0ACECE794F5766B46323FB81B04C0088`  [UI] batch1
   - AR: جودة المجسّمات ثلاثية الأبعاد والتضاريس
@@ -58404,10 +58404,10 @@ Arabic is shown FIRST, the English source BELOW it, followed by the locres key.
   - AR: لأخذ الثأر
   - EN: TO GET REVENGE
 - `/AF2939F3425D0B8BAF68D09516C8B110`  [Unknown] batch2-0030
-  - AR: متجه الأربعة أعداد العشرية المستخدم لإرسال بيانات مخصصة إلى العارض.
+  - AR: متجه الأعداد العشرية الأربعة المستخدم لإرسال بيانات مخصصة إلى العارض.
   - EN: The 4-float vector used to send custom data to renderer.
 - `/F2D18F5D43B4105B378742AC079D6CAF`  [Unknown] batch2-0030
-  - AR: متجه الأربعة أعداد العشرية المستخدم لإرسال بيانات مخصصة إلى العارض.
+  - AR: متجه الأعداد العشرية الأربعة المستخدم لإرسال بيانات مخصصة إلى العارض.
   - EN: The 4-float vector used to send custom data to renderer.
 - `/8720B6D34617438BFB3658AEA59B5904`  [Unknown] batch2-0030
   - AR: مقياس XYZ لجزيء غير معتمد على الرُقعة.
@@ -58929,16 +58929,16 @@ Arabic is shown FIRST, the English source BELOW it, followed by the locres key.
   - AR: انقر <tag id="InputAction.Gameplay.ScannnerDoublePress"/> + واستمر بالضغط على <tag id="InputAction.Gameplay.ScannnerDoublePress"/> مجدداً لتفعيل الماسح.
   - EN: Tap <tag id="InputAction.Gameplay.ScannnerDoublePress"/> + hold <tag id="InputAction.Gameplay.ScannnerDoublePress"/> again to activate the scanner.
 - `/0A93ABC941C4D441926E1FA193941543`  [Unknown] batch2-0030
-  - AR: متجه الأربعة أعداد العشرية المستخدم لإرسال بيانات مخصصة إلى العارض.
+  - AR: متجه الأعداد العشرية الأربعة المستخدم لإرسال بيانات مخصصة إلى العارض.
   - EN: The 4-float vector used to send custom data to renderer.
 - `/AF2939F3425D0B8BAF68D09516C8B110`  [Unknown] batch2-0030
-  - AR: متجه الأربعة أعداد العشرية المستخدم لإرسال بيانات مخصصة إلى العارض.
+  - AR: متجه الأعداد العشرية الأربعة المستخدم لإرسال بيانات مخصصة إلى العارض.
   - EN: The 4-float vector used to send custom data to renderer.
 - `/F2D18F5D43B4105B378742AC079D6CAF`  [Unknown] batch2-0030
-  - AR: متجه الأربعة أعداد العشرية المستخدم لإرسال بيانات مخصصة إلى العارض.
+  - AR: متجه الأعداد العشرية الأربعة المستخدم لإرسال بيانات مخصصة إلى العارض.
   - EN: The 4-float vector used to send custom data to renderer.
 - `/F92278CD49297AB0831C80AE49BA8A10`  [Unknown] batch2-0030
-  - AR: متجه الأربعة أعداد العشرية المستخدم لإرسال بيانات مخصصة إلى العارض.
+  - AR: متجه الأعداد العشرية الأربعة المستخدم لإرسال بيانات مخصصة إلى العارض.
   - EN: The 4-float vector used to send custom data to renderer.
 - `/8720B6D34617438BFB3658AEA59B5904`  [Unknown] batch2-0030
   - AR: مقياس XYZ لجزيء غير معتمد على الرُقعة.
@@ -59031,7 +59031,7 @@ Arabic is shown FIRST, the English source BELOW it, followed by the locres key.
   - AR: أطلس هزّ كتفيه
   - EN: Atlas Shrugged
 - `/4C00A9A541654E2E9EC14ABA517ADB93`  [Unknown] batch2-0039
-  - AR: أداة BIOS. الاتحاد السوفييتي. 1954
+  - AR: أداة BIOS السوفييتية. 1954
   - EN: BIOS Tool. USSR. 1954
 - `/D2B086AC4033262182DE93B921A4B177`  [Unknown] batch2-0039
   - AR: بطارية المصباح
@@ -67131,7 +67131,7 @@ Arabic is shown FIRST, the English source BELOW it, followed by the locres key.
   - AR: واو. جميل، أليس كذلك؟
   - EN: Wow. Beautiful, isn't it?
 - `DT_Subtitles_DLC03_Triton/Triton_235_Sentences`  [Unknown] batch2-0037
-  - AR: النار، الماء... لم يبقَ إلا الأنابيب النحاسية. هل فهمت правильно؟
+  - AR: النار، الماء... لم يبقَ إلا أزمة خطيرة. هل فهمت صحيحًا؟
   - EN: Fire, water... All that's left are dire straights. Is that right?
 - `DT_Subtitles_DLC03_Triton/Triton_81_Sentences`  [Unknown] batch2-0037
   - AR: يا للعجب. ظننت أن هذه مجرد قاعدة صغيرة تحت الماء، لكن هنا مجمّع كامل!

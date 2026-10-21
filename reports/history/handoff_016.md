@@ -66,7 +66,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File C:\AtomicHeart-AR\scripts\sw
 
 ## 4. Text state and gates (current master)
 
-- Master: 27,618 rows x 13; Arabic = column 6. 283 rows changed vs the cycle-015 commit.
+- Master: 27,618 rows x 13; Arabic = column 6. 282 rows changed vs the cycle-015 commit.
 - Rules: `localization/working/tm_fixups.tsv` (300 lines); cycle-016 rules are cell-scoped
   (`[exact]`) so short finds cannot bleed into unrelated rows.
 - `verify_text_fixups.ps1` **PASS** | `validate_translation.ps1` **PASS** (0 hard errors,

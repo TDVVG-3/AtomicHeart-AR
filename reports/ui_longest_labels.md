@@ -1,6 +1,6 @@
 # 30 longest UI labels (Arabic length)
 
-Generated: 2026-10-21 12:53:26
+Generated: 2026-10-21 14:21:34
 
 These are the UI rows most likely to clip or wrap badly at the shipped widget size.
 Check them in the upgrade menu, the terminal and the PDA during the in-game pass.
