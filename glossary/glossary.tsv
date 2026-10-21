@@ -70,7 +70,7 @@ Kollektiv Neural Network	الشبكة العصبية كوليكتيف	location	t
 Limbo	ليمبو	location	transliterated	DRAFT	
 Sakhalin	ساخالين	location	transliterated	DRAFT	
 Triton	ترايتون	location	transliterated	DRAFT	
-Phasotron	فازاترون	location	transliterated	DRAFT	
+Phasotron	فازوترون|فازاترون	location	transliterated	DRAFT	
 Crystal Complex	المجمّع البلوري	location	translated	DRAFT	
 Wave Platform	منصة الموج	location	translated	DRAFT	
 Swamps	المستنقعات	location	translated	DRAFT	DLC1 location; the English text uses "Swamps"
@@ -85,33 +85,33 @@ Motherland	الوطن الأم|وطننا|الوطن	term	translated	DRAFT
 Polymer	بوليمر	material	transliterated	DRAFT	
 Polymers	البوليمرات	material	transliterated	DRAFT	plural
 Polymeric	بوليمري	material	transliterated	DRAFT	adjective
-Neuropolymer	البوليمر العصبي|البوليمرية العصبية|عصبية بوليمرية	material	translated	DRAFT	
+Neuropolymer	البوليمر العصبي|البوليمرية العصبية|عصبية بوليمرية|نوروبوليمري	material	translated	DRAFT	
 Neuropolymer Accelerator	مسرّع البوليمر العصبي	material	translated	DRAFT	
 Neuromed	نيوروميد	item	transliterated	DRAFT	medkit brand
 Voskhod	فوسخود	material	transliterated	DRAFT	question: Russian for "sunrise"
-Argentum	أرجنتوم	material	transliterated	DRAFT	question: Latin for "silver"
+Argentum	أرجنتوم|أرجينتوم	material	transliterated	DRAFT	question: Latin for "silver"
 Lumino-Polymer	لومينو-بوليمر	material	transliterated	DRAFT	
 Combat Polymer	البوليمر القتالي	material	translated	DRAFT	
 Cryopolymer	كرايو-بوليمر|بوليمر مبرد	material	transliterated	DRAFT	question: "cryo" + polymer
 Chirper	تشيربر	item	transliterated	DRAFT	portable recorder device
 PEAR	PEAR	item	preserved	DRAFT	terminal network name; kept in Latin
-Terminal	محطة طرفية|طرفية	item	translated	DRAFT	
+Terminal	محطة طرفية|طرفية|محطة	item	translated	DRAFT	
 Canister	حاوية|أسطوانة	item	translated	DRAFT	
 Blueprint	مخطط	item	translated	DRAFT	
 Recipe	وصفة	item	translated	DRAFT	
 Cartridge	خرطوشة|خراطيش	item	translated	DRAFT	
 Module	وحدة	item	translated	DRAFT	
 Workshop	ورشة	item	translated	DRAFT	
-Upgrade	ترقية	ui	translated	DRAFT	
+Upgrade	ترقية|تطوير|تطوّر	ui	translated	DRAFT	noun = ترقية; verb = طوّر/تطوير (added cycle 016)
 Crafting	التصنيع|صناعة	ui	translated	DRAFT	
 Magnetic Beacon	منارة مغناطيسية|منارة	item	translated	DRAFT	
 Gadfly	جادفلاي	item	transliterated	DRAFT	question: Russian for "gadfly"
 Monorail	مونوريل	ui	transliterated	DRAFT	question: could be "أحادي السكة"
-Comrade	الرفيق|الرفاق	title	translated	DRAFT	Soviet address form
+Comrade	الرفيق|الرفاق|رفيق|رفاق	title	translated	DRAFT	Soviet address form
 Comrade Major	الرفيق الرائد|رفيق الرائد	title	translated	DRAFT	
-Major	الرائد	title	translated	DRAFT		cs
-Professor	البروفيسور|أستاذ	title	translated	DRAFT	
-Doctor	دكتور|طبيب|طبيبة|دكتورة	title	translated	DRAFT	
+Major	الرائد|رائد	title	translated	DRAFT		cs
+Professor	البروفيسور|أستاذ|أساتذة	title	translated	DRAFT	
+Doctor	دكتور|طبيب|طبيبة|دكتورة|أطباء	title	translated	DRAFT	
 Dr	د.	title	translated	DRAFT	abbreviation of Doctor
 SHOK	شوك	ability	transliterated	DRAFT	question: Russian for "shock"; displayed as SHOK
 Frostbite	الصقيع	ability	translated	DRAFT	
@@ -128,13 +128,13 @@ Kalash	كلاش	weapon	transliterated	DRAFT	slang for the Kalashnikov
 Zvezdochka	زفيزدوتشكا	weapon	transliterated	DRAFT	question: Russian for "little star"
 Fat Boy	الفتى السمين	weapon	translated	DRAFT	heavy weapon nickname
 Swede	السويدي	weapon	translated	DRAFT	weapon nickname
-Snowball	كرة الثلج	weapon	translated	DRAFT	
+Snowball	كرة الثلج|كرات الثلج	weapon	translated	DRAFT	
 Needle	الإبرة	weapon	translated	DRAFT	
 Whip	السوط	weapon	translated	DRAFT	
 Glove	القفّاز	term	translated	DRAFT	the Polymer glove
 PASHTET	باشتيت	weapon	transliterated	DRAFT	Russian nickname (pate); shown as PASHTET
 BEA-D	BEA-D	robot	preserved	DRAFT	model designation; plural BEA-Ds; kept in Latin
-Archive	الأرشيف	location	translated	DRAFT	the Academy Archive
+Archive	الأرشيف|الأرشفة	location	translated	DRAFT	the Academy Archive
 Electro Capsule	كبسولة إلكترو	item	translated	DRAFT	energy capsule consumable
 Soda	صودا|مياه غازية	item	translated	DRAFT	RU "газировка"; the everyday Soviet fizzy drink; replaces the previous "الغازية" (cycle 013, DEC-034); the NTD_StringTable/gazirovka sign row ships the sign form مياه غازية
 THOUGHT device	الفكرة	item	translated	DRAFT	the neuro-connector; Russian original «Мысль»; quoted in running text as «الفكرة»; replaces the Latin "THOUGHT" (DEC-035)

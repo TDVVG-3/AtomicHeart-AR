@@ -102,12 +102,24 @@ for ($i = 1; $i -lt $gl.Count; $i++) {
     if ($f.Count -ge 7) { $fl = $f[6].Trim() }
     $glossary.Add([pscustomobject]@{ term = $f[0]; arabic = $f[1]; flags = $fl })
 }
+# English compounds that look like a glossary term but are a different sense (data-driven).
+$glossExceptions = New-Object System.Collections.Generic.List[object]
+$gexPath = Join-Path $RepoRoot 'glossary\glossary_exceptions.tsv'
+if (Test-Path $gexPath) {
+    $gex = [IO.File]::ReadAllLines($gexPath, [Text.Encoding]::UTF8)
+    for ($i = 1; $i -lt $gex.Count; $i++) {
+        if (-not $gex[$i].Trim()) { continue }
+        $f = $gex[$i] -split "`t"
+        if ($f.Count -lt 2) { continue }
+        $glossExceptions.Add([pscustomobject]@{ term = $f[0]; pattern = $f[1] })
+    }
+}
 
 $lines = [IO.File]::ReadAllLines($masterPath, [Text.Encoding]::UTF8)
 $nRows = 0; $nTranslated = 0
 $errors = New-Object System.Collections.Generic.List[string]
 $warnings = New-Object System.Collections.Generic.List[string]
-$lenWarn = 0; $glossWarn = 0; $numWarn = 0
+$lenWarn = 0; $glossWarn = 0; $numWarn = 0; $glossExc = 0
 $byScope = @{}
 $statusCount = @{}
 $catCount = @{}
@@ -160,6 +172,11 @@ for ($i = 1; $i -lt $lines.Count; $i++) {
         $enPat = '(?i)(^|[^A-Za-z])' + [regex]::Escape($g.term) + '($|[^A-Za-z])'
         if ($g.flags -eq 'cs') { $enPat = [regex]::Replace($enPat, '^\(\?i\)', '') }   # case-sensitive term
         if ([regex]::IsMatch($enProse, $enPat)) {
+            $excepted = $false
+            foreach ($x in $glossExceptions) {
+                if ($x.term -ieq $g.term -and $enProse.IndexOf($x.pattern, [StringComparison]::OrdinalIgnoreCase) -ge 0) { $excepted = $true; break }
+            }
+            if ($excepted) { $glossExc++; continue }
             if (-not (Test-GlossaryArabic $coreAr $g.arabic)) {
                 $glossWarn++
                 if ($warnings.Count -lt 400) { $warnings.Add(("line {0}: glossary term '{1}' -> '{2}' not found in Arabic" -f ($i + 1), $g.term, $g.arabic)) }
@@ -188,6 +205,7 @@ $r.Add(('| warnings (number/length/glossary) | {0} |' -f ($numWarn + $lenWarn + 
 $r.Add(('| - number-multiset warnings | {0} |' -f $numWarn))
 $r.Add(('| - UI length warnings | {0} |' -f $lenWarn))
 $r.Add(('| - glossary warnings | {0} |' -f $glossWarn))
+$r.Add(('| - glossary compound exceptions applied | {0} |' -f $glossExc))
 $r.Add('')
 $r.Add('## Status distribution (whole master)')
 $r.Add('')
@@ -218,7 +236,7 @@ $r.Add('')
 [IO.File]::WriteAllLines($reportPath, $r, (New-Object Text.UTF8Encoding($false)))
 
 if (-not $Quiet) {
-    Write-Output ('VALIDATOR {0}: rows={1} translated={2} errors={3} warnings={4} (number {5} / length {6} / glossary {7})' -f $status, $nRows, $nTranslated, $errors.Count, ($numWarn + $lenWarn + $glossWarn), $numWarn, $lenWarn, $glossWarn)
+    Write-Output ('VALIDATOR {0}: rows={1} translated={2} errors={3} warnings={4} (number {5} / length {6} / glossary {7}, exceptions {8})' -f $status, $nRows, $nTranslated, $errors.Count, ($numWarn + $lenWarn + $glossWarn), $numWarn, $lenWarn, $glossWarn, $glossExc)
     foreach ($e in ($errors | Select-Object -First 20)) { Write-Output ('  ERROR: ' + $e) }
     foreach ($w in ($warnings | Select-Object -First 15)) { Write-Output ('  warn : ' + $w) }
     Write-Output ('report: ' + $reportPath)

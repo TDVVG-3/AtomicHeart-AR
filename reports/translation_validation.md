@@ -1,6 +1,6 @@
 # Translation validation report
 
-Generated: 2026-10-21 12:57:29
+Generated: 2026-10-21 14:10:20
 Validator: scripts/validate_translation.ps1 (PowerShell twin of scripts/validate_translation.py)
 
 RESULT: **PASS**
@@ -10,10 +10,11 @@ RESULT: **PASS**
 | master rows | 27618 |
 | rows with Arabic | 26022 |
 | hard errors | 0 |
-| warnings (number/length/glossary) | 260 |
+| warnings (number/length/glossary) | 234 |
 | - number-multiset warnings | 122 |
 | - UI length warnings | 112 |
-| - glossary warnings | 26 |
+| - glossary warnings | 0 |
+| - glossary compound exceptions applied | 5 |
 
 ## Status distribution (whole master)
 
@@ -81,11 +82,6 @@ None.
 
 - line 286: number multiset differs (en=[0|0|0|0|0|0|07|09|10|10|13|1955|2|2] ar=[0|0|0|0|0|0|07|09|10|10|1955|2|2])
 - line 2547: number multiset differs (en=[000|80] ar=[80])
-- line 3192: glossary term 'Major' -> 'الرائد' not found in Arabic
-- line 3196: glossary term 'Terminal' -> 'محطة طرفية|طرفية' not found in Arabic
-- line 3213: glossary term 'Major' -> 'الرائد' not found in Arabic
-- line 3409: glossary term 'Snowball' -> 'كرة الثلج' not found in Arabic
-- line 4706: glossary term 'Upgrade' -> 'ترقية' not found in Arabic
 - line 5568: number multiset differs (en=[50] ar=[])
 - line 5704: number multiset differs (en=[] ar=[50|50])
 - line 6360: number multiset differs (en=[20] ar=[])
@@ -95,14 +91,8 @@ None.
 - line 7802: number multiset differs (en=[140|3] ar=[140])
 - line 7803: number multiset differs (en=[141|3] ar=[141])
 - line 7805: number multiset differs (en=[154|3] ar=[154])
-- line 7812: glossary term 'Neuropolymer' -> 'البوليمر العصبي|البوليمرية العصبية|عصبية بوليمرية' not found in Arabic
 - line 7815: number multiset differs (en=[1|19|1955] ar=[19|1955])
 - line 7826: number multiset differs (en=[2|214] ar=[214])
-- line 7829: glossary term 'Phasotron' -> 'فازاترون' not found in Arabic
-- line 7830: glossary term 'Phasotron' -> 'فازاترون' not found in Arabic
-- line 7831: glossary term 'Professor' -> 'البروفيسور|أستاذ' not found in Arabic
-- line 7831: glossary term 'Doctor' -> 'دكتور|طبيب|طبيبة|دكتورة' not found in Arabic
-- line 7835: glossary term 'Argentum' -> 'أرجنتوم' not found in Arabic
 - line 7837: number multiset differs (en=[3|34] ar=[34])
 - line 7840: number multiset differs (en=[1|1955|25|5|5] ar=[1955|25|5|5])
 - line 7842: number multiset differs (en=[3|59] ar=[59])
@@ -112,9 +102,7 @@ None.
 - line 7852: number multiset differs (en=[1|1955|9] ar=[1955|9])
 - line 7853: number multiset differs (en=[3|90] ar=[90])
 - line 7854: number multiset differs (en=[167|3] ar=[167])
-- line 8323: glossary term 'Comrade' -> 'الرفيق|الرفاق' not found in Arabic
 - line 8538: number multiset differs (en=[10|10|1955|2] ar=[10|1955|2])
-- line 8561: glossary term 'Comrade' -> 'الرفيق|الرفاق' not found in Arabic
 - line 9605: UI length 15 > 1.2 x 12
 - line 9614: UI length 52 > 1.2 x 42
 - line 9782: number multiset differs (en=[3] ar=[])
@@ -236,15 +224,12 @@ None.
 - line 15503: number multiset differs (en=[] ar=[8])
 - line 15510: number multiset differs (en=[17] ar=[])
 - line 15857: number multiset differs (en=[2] ar=[])
-- line 15959: glossary term 'Terminal' -> 'محطة طرفية|طرفية' not found in Arabic
-- line 15960: glossary term 'Terminal' -> 'محطة طرفية|طرفية' not found in Arabic
 - line 16125: number multiset differs (en=[1|2|2|6] ar=[1|2|2|5|6])
 - line 16176: number multiset differs (en=[70] ar=[5|7|70])
 - line 16458: number multiset differs (en=[000|2] ar=[2000])
 - line 16495: number multiset differs (en=[000|000|3|5|70] ar=[3000|5000|70])
 - line 17629: UI length 15 > 1.2 x 12
 - line 17718: number multiset differs (en=[12|1955|20|25|50] ar=[12|1955|25|50])
-- line 17730: glossary term 'Major' -> 'الرائد' not found in Arabic
 - line 17734: number multiset differs (en=[1|1|19|1954|2] ar=[19|1954])
 - line 17759: number multiset differs (en=[1955|1956|28|3|3826] ar=[1955|1956|28|3826])
 - line 17762: number multiset differs (en=[1|11|1955|21|260|3|47] ar=[11|1260|1955|21|3|47])
@@ -264,8 +249,6 @@ None.
 - line 18799: number multiset differs (en=[0|0|0|0|000|07|08|08|12|2|42] ar=[0|0|0|0|07|08|08|12|2|42])
 - line 18803: number multiset differs (en=[0|0|08|09|1|2] ar=[0|0|08|09|1])
 - line 19382: number multiset differs (en=[10|25|90] ar=[10|2|25|90])
-- line 19699: glossary term 'Major' -> 'الرائد' not found in Arabic
-- line 19749: glossary term 'Terminal' -> 'محطة طرفية|طرفية' not found in Arabic
 - line 19774: number multiset differs (en=[1] ar=[01])
 - line 19775: number multiset differs (en=[2] ar=[02])
 - line 19776: number multiset differs (en=[3] ar=[03])
@@ -282,8 +265,6 @@ None.
 - line 19813: number multiset differs (en=[3] ar=[03])
 - line 19814: number multiset differs (en=[4] ar=[04])
 - line 19818: number multiset differs (en=[1] ar=[01])
-- line 19860: glossary term 'Major' -> 'الرائد' not found in Arabic
-- line 19890: glossary term 'Terminal' -> 'محطة طرفية|طرفية' not found in Arabic
 - line 19928: number multiset differs (en=[1] ar=[01])
 - line 19929: number multiset differs (en=[2] ar=[02])
 - line 19930: number multiset differs (en=[3] ar=[03])
@@ -306,16 +287,13 @@ None.
 - line 20023: number multiset differs (en=[3] ar=[03])
 - line 20024: number multiset differs (en=[4] ar=[04])
 - line 20045: number multiset differs (en=[0|0|0|0|0|0|0|0|00|10|100|11|17|18|30|31|43|90] ar=[0|0|0|0|0|0|0|0|00|10|11|17|18|30|31|43|90])
-- line 20062: glossary term 'Terminal' -> 'محطة طرفية|طرفية' not found in Arabic
 - line 20235: number multiset differs (en=[4] ar=[])
 - line 20236: number multiset differs (en=[4] ar=[])
 - line 20432: number multiset differs (en=[4] ar=[])
 - line 20433: number multiset differs (en=[4] ar=[])
 - line 20434: number multiset differs (en=[4] ar=[])
 - line 20435: number multiset differs (en=[4] ar=[])
-- line 20498: glossary term 'Major' -> 'الرائد' not found in Arabic
 - line 20548: number multiset differs (en=[3] ar=[])
-- line 21184: glossary term 'Archive' -> 'الأرشيف' not found in Arabic
 - line 21244: number multiset differs (en=[118|1955|2] ar=[118|1955])
 - line 21247: number multiset differs (en=[1|1|60|60] ar=[60|60])
 - line 21299: number multiset differs (en=[20|60|7] ar=[])
@@ -327,14 +305,11 @@ None.
 - line 22680: number multiset differs (en=[24] ar=[])
 - line 22929: number multiset differs (en=[25] ar=[])
 - line 22944: number multiset differs (en=[19] ar=[])
-- line 23016: glossary term 'Terminal' -> 'محطة طرفية|طرفية' not found in Arabic
 - line 23017: number multiset differs (en=[30] ar=[])
 - line 23082: number multiset differs (en=[30] ar=[])
 - line 23083: number multiset differs (en=[50] ar=[])
 - line 23084: number multiset differs (en=[30] ar=[])
-- line 23608: glossary term 'Upgrade' -> 'ترقية' not found in Arabic
 - line 24987: number multiset differs (en=[1] ar=[])
-- line 25049: glossary term 'Upgrade' -> 'ترقية' not found in Arabic
 - line 26496: number multiset differs (en=[0|0|000|04|10|3|78] ar=[0|0|04|10|3000|78])
 - line 26869: number multiset differs (en=[2|500] ar=[2500])
 - line 26986: number multiset differs (en=[1|1950|47] ar=[1950|47])
