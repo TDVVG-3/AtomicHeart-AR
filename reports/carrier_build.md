@@ -1,8 +1,8 @@
 # Carrier pak build report
 
-Generated: 2026-10-20 23:21:10
-Variant: **p10**  |  pak: `C:\AtomicHeart-AR\build\package\zzz_atomicheart-ar_carrier_koKR_p10_P.pak`
-sha256: `7fbed3a87fafb547ecf4a2557a590ae0d7c05da304a3c7f6facb7bb34ef49393`  |  size: 4473788 bytes
+Generated: 2026-10-21 12:59:16
+Variant: **p11b**  |  pak: `C:\AtomicHeart-AR\build\package\zzz_atomicheart-ar_carrier_koKR_p11b_retime_P.pak`
+sha256: `2abc4ddcda886547592b785be09b210dffcf5e45ff7c7275031bd3469130fb23`  |  size: 4472836 bytes
 
 Fill policy: Arabic (master non-empty) > English (en-US same key) > keep Korean.
 

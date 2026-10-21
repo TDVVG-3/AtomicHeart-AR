@@ -29,7 +29,7 @@ for ($i = 1; $i -lt $fx.Count; $i++) {
     if (-not $fx[$i].Trim()) { continue }
     $f = $fx[$i] -split "`t"
     if ($f.Count -lt 3) { continue }
-    if ($f[2] -notlike 'cycle013*') { continue }
+    if ($f[2] -notlike 'cycle013 tone*' -and $f[2] -notlike 'cycle013 term+tone*' -and $f[2] -notlike 'cycle013 tone+term*' -and $f[2] -notlike 'cycle016 tone*') { continue }
     $rules.Add([pscustomobject]@{ find = $f[0]; replace = $f[1]; note = $f[2] })
 }
 
@@ -54,7 +54,7 @@ $total = 0
 foreach ($r in $rules) { $total += $hits[$r.find].Count }
 
 $out = New-Object System.Collections.Generic.List[string]
-$out.Add('# Tone pass - cycle 013 (2026-10-19)')
+$out.Add('# Tone pass - cycles 013 and 016 (2026-10-19 / 2026-10-21)')
 $out.Add('')
 $out.Add('Standing style rule: `glossary/terminology.md` section 12 (spoken-register MSA, one voice per')
 $out.Add('character, never soften). Requested by the user after the p7 in-game check.')
@@ -71,6 +71,11 @@ $out.Add('English alone. Rows whose source really is an official letter keep the
 $out.Add('Every change lives in `localization/working/tm_fixups.tsv` (KI-021), was applied by');
 $out.Add('`scripts/apply_text_fixups.ps1` and is proven by `scripts/verify_text_fixups.ps1` (PASS).')
 $out.Add('')
+$out.Add('Cycle 016 extension (2026-10-21): 24 further rules in the same spoken-register spirit -')
+$out.Add('written emphatics, polite request formulas, tag questions and stiff desire verbs were')
+$out.Add('replaced with the direct spoken forms used elsewhere in the same scenes. Letters and')
+$out.Add('system prompts were not touched.')
+$out.Add('')
 $out.Add('Order below = game progression, so the prologue and Chelomey come first.')
 $out.Add('')
 $out.Add('| # | scope | key | speaker | before | after | why |')
@@ -80,7 +85,7 @@ $n = 0
 foreach ($r in ($rules | Sort-Object { $r2 = $hits[$_.find]; if ($r2.Count -gt 0) { $r2[0].rank } else { 99 } })) {
     foreach ($h in ($hits[$r.find] | Sort-Object L)) {
         $n++
-        $why = ($r.note -replace '^cycle013 [a-z+]*:', '')
+        $why = (($r.note -replace '^cycle01[36] [a-z+]*:', '') -replace ' \[exact\]$', '')
         $out.Add(('| {0} | {1} | {2} | {3} | {4} | {5} | {6} |' -f $n, $h.scope, $h.key, $h.spk, $r.find, $r.replace, $why))
     }
 }

@@ -38,7 +38,7 @@ for ($i = 1; $i -lt $fx.Count; $i++) {
     if (-not $fx[$i].Trim()) { continue }
     $f = $fx[$i] -split "`t"
     if ($f.Count -lt 3) { throw "tm_fixups.tsv line $($i+1) needs 3 tab-separated fields" }
-    $rules.Add([pscustomobject]@{ find = $f[0]; replace = $f[1]; note = $f[2] })
+    $rules.Add([pscustomobject]@{ find = $f[0]; replace = $f[1]; note = $f[2]; exact = $f[2].Contains('[exact]') })
 }
 
 $log = New-Object System.Collections.Generic.List[string]
@@ -60,6 +60,14 @@ for ($i = 1; $i -lt $mlines.Count; $i++) {
     $ar = $f[6]
     $new = $ar
     foreach ($r in $rules) {
+        if ($r.exact) {
+            if ($new -ceq $r.find) {
+                $scope = 'other'; if ($f[2] -match '/Localization/(.+?)/en-US/') { $scope = $Matches[1] }
+                $masterHits[$r.find].Add(('{0} | {1} | {2}' -f $scope, $f[4], $f[9]))
+                $new = $r.replace
+            }
+            continue
+        }
         if ($new.Contains($r.find)) {
             $scope = 'other'; if ($f[2] -match '/Localization/(.+?)/en-US/') { $scope = $Matches[1] }
             $masterHits[$r.find].Add(('{0} | {1} | {2}' -f $scope, $f[4], $f[9]))
@@ -83,7 +91,10 @@ if (Test-Path $tmPath) {
         $f = $tlines[$i] -split "`t"
         if ($f.Count -lt 2) { continue }
         $new = $f[1]
-        foreach ($r in $rules) { if ($new.Contains($r.find)) { $new = $new.Replace($r.find, $r.replace) } }
+        foreach ($r in $rules) {
+            if ($r.exact) { if ($new -ceq $r.find) { $new = $r.replace }; continue }
+            if ($new.Contains($r.find)) { $new = $new.Replace($r.find, $r.replace) }
+        }
         if ($new -ne $f[1]) { $f[1] = $new; $tlines[$i] = ($f -join "`t"); $tmChanged++ }
     }
     if (-not $DryRun) { [IO.File]::WriteAllLines($tmPath, $tlines, $utf8NoBom) }
@@ -100,7 +111,10 @@ if (Test-Path $seedPath) {
         $key = $slines[$i].Substring(0, $idx)
         $val = $slines[$i].Substring($idx + 1)
         $new = $val
-        foreach ($r in $rules) { if ($new.Contains($r.find)) { $new = $new.Replace($r.find, $r.replace) } }
+        foreach ($r in $rules) {
+            if ($r.exact) { if ($new -ceq $r.find) { $new = $r.replace }; continue }
+            if ($new.Contains($r.find)) { $new = $new.Replace($r.find, $r.replace) }
+        }
         if ($new -ne $val) { $slines[$i] = ($key + ',' + $new); $seedChanged++ }
     }
     if (-not $DryRun) { [IO.File]::WriteAllLines($seedPath, $slines, $utf8NoBom) }

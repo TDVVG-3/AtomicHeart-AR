@@ -31,7 +31,7 @@ for ($i = 1; $i -lt $fx.Count; $i++) {
     if (-not $fx[$i].Trim()) { continue }
     $f = $fx[$i] -split "`t"
     if ($f.Count -lt 3) { continue }
-    $rules.Add([pscustomobject]@{ find = $f[0]; replace = $f[1]; note = $f[2] })
+    $rules.Add([pscustomobject]@{ find = $f[0]; replace = $f[1]; note = $f[2]; exact = $f[2].Contains('[exact]') })
 }
 
 $m = [IO.File]::ReadAllLines($masterPath, $utf8)
@@ -46,11 +46,16 @@ foreach ($r in $rules) {
     for ($i = 1; $i -lt $m.Count; $i++) {
         $f = $m[$i] -split "`t"
         if ($f.Count -ne 13) { continue }
-        if ($f[6].Contains($r.find)) { $leftInMaster++ }
-        if ($f[6].Contains($r.replace)) { $presentReplace++ }
+        if ($r.exact) {
+            if ($f[6] -ceq $r.find) { $leftInMaster++ }
+            if ($f[6] -ceq $r.replace) { $presentReplace++ }
+        } else {
+            if ($f[6].Contains($r.find)) { $leftInMaster++ }
+            if ($f[6].Contains($r.replace)) { $presentReplace++ }
+        }
     }
     $leftInTm = 0
-    foreach ($v in $tmAr) { if ($v.Contains($r.find)) { $leftInTm++ } }
+    if (-not $r.exact) { foreach ($v in $tmAr) { if ($v.Contains($r.find)) { $leftInTm++ } } }
     $ok = ($leftInMaster -eq 0 -and $presentReplace -ge 1 -and $leftInTm -eq 0)
     if (-not $ok) { $fail++ }
     Write-Output ('  [rule] old text left: master {0}, tm {1} | new text present in master rows: {2} | {3}' -f $leftInMaster, $leftInTm, $presentReplace, $(if ($ok) { 'OK' } else { 'FAIL' }))

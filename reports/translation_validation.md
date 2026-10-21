@@ -1,6 +1,6 @@
 # Translation validation report
 
-Generated: 2026-10-20 23:26:56
+Generated: 2026-10-21 12:57:29
 Validator: scripts/validate_translation.ps1 (PowerShell twin of scripts/validate_translation.py)
 
 RESULT: **PASS**
@@ -10,10 +10,10 @@ RESULT: **PASS**
 | master rows | 27618 |
 | rows with Arabic | 26022 |
 | hard errors | 0 |
-| warnings (number/length/glossary) | 259 |
+| warnings (number/length/glossary) | 260 |
 | - number-multiset warnings | 122 |
 | - UI length warnings | 112 |
-| - glossary warnings | 25 |
+| - glossary warnings | 26 |
 
 ## Status distribution (whole master)
 
@@ -334,6 +334,7 @@ None.
 - line 23084: number multiset differs (en=[30] ar=[])
 - line 23608: glossary term 'Upgrade' -> 'ترقية' not found in Arabic
 - line 24987: number multiset differs (en=[1] ar=[])
+- line 25049: glossary term 'Upgrade' -> 'ترقية' not found in Arabic
 - line 26496: number multiset differs (en=[0|0|000|04|10|3|78] ar=[0|0|04|10|3000|78])
 - line 26869: number multiset differs (en=[2|500] ar=[2500])
 - line 26986: number multiset differs (en=[1|1950|47] ar=[1950|47])

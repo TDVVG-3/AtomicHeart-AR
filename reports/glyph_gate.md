@@ -1,26 +1,26 @@
 # Glyph gate report (pilot)
 
-Generated: 2026-10-20 23:27:00
+Generated: 2026-10-21 12:57:33
 Font pak under test: build/package/zzz_atomicheart-ar_font_p2_plex_P.pak -> build/staging/font_p2/modpakfont
 Master: C:\AtomicHeart-AR\localization\master\atomic-heart-ar.tsv (26022 rows with Arabic)
 
 VERDICT: **PASS**
 
-Distinct codepoints used by the translated rows: 195
-Codepoints missing from the subtitle face: 46
-Codepoints missing from the union of all six installed faces: 46
-Of those, source-inherited (also present in the English source of the same row): 46
+Distinct codepoints used by the translated rows: 186
+Codepoints missing from the subtitle face: 37
+Codepoints missing from the union of all six installed faces: 37
+Of those, source-inherited (also present in the English source of the same row): 37
 Codepoints newly required by the Arabic and missing from the font: 0
 Source-inherited exemption switch: ON (-AllowSourceInheritedNonLatin)
 
 | face | mapped codepoints | missing (pilot chars) | Latin-Basic missing | Cyrillic | Hangul sample |
 |---|---|---|---|---|---|
-| BlenderPro-Medium (subtitle/dialogue) **(subtitle)** | 1032 | 46 | 0 | 0 | 0 |
-| BlenderPro-Book | 1032 | 46 | 0 | 0 | 0 |
-| BlenderPro-Bold | 1032 | 46 | 0 | 0 | 0 |
-| BrutalType | 1032 | 46 | 0 | 0 | 0 |
-| Gotham-Black | 1032 | 46 | 0 | 0 | 0 |
-| Gotham-BookItalic | 1032 | 46 | 0 | 0 | 0 |
+| BlenderPro-Medium (subtitle/dialogue) **(subtitle)** | 1032 | 37 | 0 | 0 | 0 |
+| BlenderPro-Book | 1032 | 37 | 0 | 0 | 0 |
+| BlenderPro-Bold | 1032 | 37 | 0 | 0 | 0 |
+| BrutalType | 1032 | 37 | 0 | 0 | 0 |
+| Gotham-Black | 1032 | 37 | 0 | 0 | 0 |
+| Gotham-BookItalic | 1032 | 37 | 0 | 0 | 0 |
 
 ## Missing codepoints
 
@@ -61,15 +61,6 @@ Source-inherited exemption switch: ON (-AllowSourceInheritedNonLatin)
 - U+202F (source-inherited) first seen in NewP5 key /C963D0654B135C8FA61E1AA345081E80
 - U+2060 (source-inherited) first seen in NewP5 key /C963D0654B135C8FA61E1AA345081E80
 - U+0435 (source-inherited) first seen in Schebetar_Subs key /7F79D9724D1856FEEE7C9BB106E43C2E
-- U+043F (source-inherited) first seen in Triton_dlc3 key DT_Subtitles_DLC03_Triton/Triton_235_Sentences
-- U+0440 (source-inherited) first seen in Triton_dlc3 key DT_Subtitles_DLC03_Triton/Triton_235_Sentences
-- U+0430 (source-inherited) first seen in Triton_dlc3 key DT_Subtitles_DLC03_Triton/Triton_235_Sentences
-- U+0432 (source-inherited) first seen in Triton_dlc3 key DT_Subtitles_DLC03_Triton/Triton_235_Sentences
-- U+0438 (source-inherited) first seen in Triton_dlc3 key DT_Subtitles_DLC03_Triton/Triton_235_Sentences
-- U+043B (source-inherited) first seen in Triton_dlc3 key DT_Subtitles_DLC03_Triton/Triton_235_Sentences
-- U+044C (source-inherited) first seen in Triton_dlc3 key DT_Subtitles_DLC03_Triton/Triton_235_Sentences
-- U+043D (source-inherited) first seen in Triton_dlc3 key DT_Subtitles_DLC03_Triton/Triton_235_Sentences
-- U+043E (source-inherited) first seen in Triton_dlc3 key DT_Subtitles_DLC03_Triton/Triton_235_Sentences
 
 ## Notes
 
