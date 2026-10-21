@@ -1,6 +1,6 @@
 # HANDOFF - Atomic Heart Arabic localization - cycle 016
 
-**Date:** 2026-10-21 14:12 (+03:00)
+**Date:** 2026-10-21 14:20 (+03:00)
 **State:** all text passes applied, all gates green, p11 + font v3 rebuilt and installed.
 **Rule for this file:** rewritten after every completed item, not only at cycle close.
 
@@ -20,7 +20,7 @@
 | **C6 - KI-018 RU-only assets** | **BLOCKED** | 248 assets / 6,012 strings, no Arabic translations yet |
 | **C7 - KI-013 14th culture** | **BLOCKED** | 13 cultures live in an opaque cooked `Extras` blob |
 | **C8 - final reports** | **DONE** | coverage, English-filled list, 30 longest UI labels, reference, 40-row sample |
-| **Warning audit** | **DONE (number) / RUNNING (UI length)** | 122 number warnings audited: 0 defects; 112 UI-length warnings next |
+| **Warning audit** | **DONE** | 122 number warnings: 0 defects; 112 UI-length warnings: 5 labels shortened; **0 glossary warnings** |
 
 ---
 
@@ -28,11 +28,11 @@
 
 | file | bytes | SHA256 |
 | --- | --- | --- |
-| `zzz_atomicheart-ar_carrier_koKR_p11_P.pak` | 4,472,886 | `567126733d5435ce55964c050d57b5372bfb8b73c7a3e22ca27b2120fecc31af` |
+| `zzz_atomicheart-ar_carrier_koKR_p11_P.pak` | 4,472,812 | `0ffd9cb8b3ab5861007689c093c7f3bff761b7b245e5c56cbc5a20cf47def225` |
 | `zzz_atomicheart-ar_font_p3_unhinted_P.pak` | 1,455,228 | `f4ed50679d8ed7184354f6714f8d43def2fde60f03906d7bf36b7b7c8e663ef4` |
-| `atomic-heart-ar-install-manifest.json` | 1,556 | `75cbef143e17437774bfc81aa5e3a794e152c6b85f60153120d0a5f59c6b107e` |
+| `atomic-heart-ar-install-manifest.json` | 1,556 | `c3fe0eba9115a4e7c5c5e8d53c6cb859afd0825c32fb63eb264ba3ef8066d1be` |
 
-Before-snapshot: `build/snapshots/before_p11_20261021_141216.json`.
+Before-snapshot: `build/snapshots/before_p11_20261021_142031.json`.
 Install proof: `reports/install_verification.md`. Nothing outside `Paks\~mods` was written.
 
 **Rollback (restores p10 + Plex v2):**
@@ -56,9 +56,9 @@ powershell -NoProfile -ExecutionPolicy Bypass -File C:\AtomicHeart-AR\scripts\sw
 
 | pak | bytes | SHA256 | state |
 | --- | --- | --- | --- |
-| `carrier_koKR_p11` | 4,472,886 | `567126733d5435ce55964c050d57b5372bfb8b73c7a3e22ca27b2120fecc31af` | **installed** |
+| `carrier_koKR_p11` | 4,472,812 | `0ffd9cb8b3ab5861007689c093c7f3bff761b7b245e5c56cbc5a20cf47def225` | **installed** |
 | `font_p3_unhinted` (v3) | 1,455,228 | `f4ed50679d8ed7184354f6714f8d43def2fde60f03906d7bf36b7b7c8e663ef4` | **installed** |
-| `carrier_koKR_p11b_retime` | 4,472,880 | `e293f9d366be87bbe6743b8516de2695ce4cc06d9825372a28f67da6c5d7f3a0` | experiment B |
+| `carrier_koKR_p11b_retime` | 4,472,806 | `851c8bd66ec740d4337b8a6437937367a63effb0fd399ca1dc42b2291f78d63a` | experiment B |
 | `font_p3b_linemetrics` (v3b) | 1,455,228 | `ed2659f1ebf29d51411e8ecc08a97c155e24c29b2007c917f66d5afe55d5fd94` | experiment C |
 | `carrier_koKR_p10` | 4,473,788 | `7fbed3a87fafb547ecf4a2557a590ae0d7c05da304a3c7f6facb7bb34ef49393` | rollback |
 
@@ -66,11 +66,11 @@ powershell -NoProfile -ExecutionPolicy Bypass -File C:\AtomicHeart-AR\scripts\sw
 
 ## 4. Text state and gates (current master)
 
-- Master: 27,618 rows x 13; Arabic = column 6. 278 rows changed vs the cycle-015 commit.
-- Rules: `localization/working/tm_fixups.tsv` (297 lines); cycle-016 rules are cell-scoped
+- Master: 27,618 rows x 13; Arabic = column 6. 283 rows changed vs the cycle-015 commit.
+- Rules: `localization/working/tm_fixups.tsv` (300 lines); cycle-016 rules are cell-scoped
   (`[exact]`) so short finds cannot bleed into unrelated rows.
 - `verify_text_fixups.ps1` **PASS** | `validate_translation.ps1` **PASS** (0 hard errors,
-  **234 warnings**: 122 number / 112 UI length / **0 glossary**, 5 compound exceptions) |
+  **230 warnings**: 120 number / 110 UI length / **0 glossary**, 5 compound exceptions) |
   `glyph_gate.ps1` **PASS** (`-AllowSourceInheritedNonLatin`: 37 source-inherited, **0
   introduced by Arabic**) | `subtitle_timing_audit.ps1` **0 mismatches** (537/537).
 - Coverage: 26,022 / 26,022 translatable = **100%**; 1,596 copy-class English-filled;
@@ -85,7 +85,9 @@ powershell -NoProfile -ExecutionPolicy Bypass -File C:\AtomicHeart-AR\scripts\sw
   terminal branch).
 - Quality fixes: restored 2 dropped vocatives (`Major!`), Comrade consistency
   (`زميل` -> `رفيق`) in 2 rows, restored a condensed sentence in `L7831`.
-- p11 rebuilt (4,472,886 B) and reinstalled + verified; p11b rebuilt from the same master.
+- UI-length audit: 112/112 reviewed; 5 fixed-width labels shortened (BIOS titles, 3D quality),
+  the rest accepted as normal Arabic expansion (`reports/ui_length_audit.md`).
+- p11 rebuilt (4,472,812 B) and reinstalled + verified; p11b rebuilt from the same master.
 
 ---
 
@@ -107,16 +109,12 @@ powershell -NoProfile -ExecutionPolicy Bypass -File C:\AtomicHeart-AR\scripts\sw
 
 ## 6. Resume point (exact)
 
-1. **NOW RUNNING - UI-length warning review.** 112 warnings (Arabic longer than English);
-   export them like the number audit, classify (buttons/menus vs lore/subtitles), shorten
-   only fixed-widget labels where meaning survives. Report as
-   `reports/ui_length_audit.md`.
-2. Apply any fixes -> `apply_text_fixups.ps1` -> `verify_text_fixups.ps1` -> rebuild p11 ->
-   reinstall -> update this file with the new hashes.
-3. **In-game A/B verdict** (user-run): A = p11 + v3 (installed), B = p11b, C = p11_3b.
+1. **In-game A/B verdict** (user-run): A = p11 + v3 (installed), B = p11b, C = p11_3b.
    Then either keep this set or promote p11b / v3b.
-4. **Phase 8 only** (cannot be done data-side): KI-028 choice widget RTL, KI-013 DA_Audio
+2. **Phase 8 only** (cannot be done data-side): KI-028 choice widget RTL, KI-013 DA_Audio
    14th culture, KI-018 Russian-only assets.
+3. All text work and warning audits are complete; rebuild + reinstall only if the A/B verdict
+   changes a variant (use `scripts/switch_variant.ps1`; p11/p11b are current).
 
 ---
 
@@ -159,6 +157,7 @@ reports/blocked_items.md                    KI-028 / KI-013 / KI-018 / C4 eviden
 reports/font_ab_evidence.md                 original vs Plex v2 vs v3/v3b
 reports/subtitle_timing_audit.md            537 markers, 0 mismatches
 reports/number_warnings_audit.md            122 warnings, 0 defects, classification
+reports/ui_length_audit.md                  112 warnings, 5 shortened, classification
 reports/coverage_cycle016.md                coverage by scope and category
 reports/english_filled_rows.tsv             1,596 copy-class rows
 reports/ui_longest_labels.md                top 30 UI labels by length

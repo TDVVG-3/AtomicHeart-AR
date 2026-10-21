@@ -1,6 +1,6 @@
 # Translation validation report
 
-Generated: 2026-10-21 14:10:20
+Generated: 2026-10-21 14:18:46
 Validator: scripts/validate_translation.ps1 (PowerShell twin of scripts/validate_translation.py)
 
 RESULT: **PASS**
@@ -10,9 +10,9 @@ RESULT: **PASS**
 | master rows | 27618 |
 | rows with Arabic | 26022 |
 | hard errors | 0 |
-| warnings (number/length/glossary) | 234 |
-| - number-multiset warnings | 122 |
-| - UI length warnings | 112 |
+| warnings (number/length/glossary) | 230 |
+| - number-multiset warnings | 120 |
+| - UI length warnings | 110 |
 | - glossary warnings | 0 |
 | - glossary compound exceptions applied | 5 |
 
@@ -134,9 +134,9 @@ None.
 - line 10834: UI length 39 > 1.2 x 30
 - line 10835: UI length 111 > 1.2 x 88
 - line 10913: UI length 17 > 1.2 x 14
-- line 11208: UI length 29 > 1.2 x 14
+- line 11208: UI length 20 > 1.2 x 14
 - line 11209: UI length 51 > 1.2 x 39
-- line 11210: UI length 34 > 1.2 x 21
+- line 11210: UI length 26 > 1.2 x 21
 - line 11213: UI length 15 > 1.2 x 12
 - line 11217: UI length 15 > 1.2 x 12
 - line 11271: UI length 15 > 1.2 x 12
@@ -160,10 +160,6 @@ None.
 - line 12171: UI length 19 > 1.2 x 15
 - line 12247: UI length 21 > 1.2 x 17
 - line 12248: UI length 21 > 1.2 x 17
-- line 12251: number multiset differs (en=[3] ar=[])
-- line 12251: UI length 29 > 1.2 x 16
-- line 12252: number multiset differs (en=[3] ar=[])
-- line 12252: UI length 29 > 1.2 x 16
 - line 12253: number multiset differs (en=[3] ar=[])
 - line 12253: UI length 39 > 1.2 x 30
 - line 12254: number multiset differs (en=[3] ar=[])
