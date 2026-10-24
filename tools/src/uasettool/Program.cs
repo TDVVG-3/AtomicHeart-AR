@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Text;
 using UAssetAPI;
@@ -16,14 +18,16 @@ namespace uasettool
             Console.OutputEncoding = new UTF8Encoding(false);
             if (args.Length < 2)
             {
-                Console.WriteLine("usage: uasettool <info|dump|dtstat> <uasset> [out]");
+                Console.WriteLine("usage: uasettool <info|dump|dtstat|setfloat|setbool|setint> <uasset> [out]");
+                Console.WriteLine("       uasettool setfloat <uasset> <property> <value> [out]");
                 return 2;
             }
 
             string mode = args[0];
             string path = args[1];
             EngineVersion version = EngineVersion.VER_UE4_27;
-            if (args.Length > 3 && Enum.TryParse<EngineVersion>(args[3], true, out var v)) version = v;
+            bool isSetMode = mode == "setfloat" || mode == "setbool" || mode == "setint";
+            if (!isSetMode && args.Length > 3 && Enum.TryParse<EngineVersion>(args[3], true, out var v)) version = v;
 
             var asset = new UAsset(path, version);
 
@@ -88,6 +92,59 @@ namespace uasettool
                 Console.WriteLine("wrote " + outp);
                 return 0;
             }
+            if (mode == "setfloat" || mode == "setbool" || mode == "setint")
+            {
+                if (args.Length < 4)
+                {
+                    Console.WriteLine("usage: uasettool " + mode + " <uasset> <property> <value> [out]");
+                    return 2;
+                }
+                string prop = args[2];
+                string rawValue = args[3];
+                string outPath = args.Length > 4 ? args[4] : path;
+                float fv = 0f; bool bv = false; int iv = 0;
+                if (mode == "setfloat") fv = float.Parse(rawValue, CultureInfo.InvariantCulture);
+                else if (mode == "setbool") bv = rawValue == "1" || rawValue.Equals("true", StringComparison.OrdinalIgnoreCase);
+                else iv = int.Parse(rawValue, CultureInfo.InvariantCulture);
+
+                int count = 0;
+                void WalkOne(PropertyData p)
+                {
+                    if (p == null) return;
+                    if (p.Name != null && p.Name.ToString() == prop)
+                    {
+                        if (mode == "setfloat" && p is FloatPropertyData fp) { fp.Value = fv; count++; }
+                        else if (mode == "setbool" && p is BoolPropertyData bp) { bp.Value = bv; count++; }
+                        else if (mode == "setint" && p is IntPropertyData ip) { ip.Value = iv; count++; }
+                    }
+                    if (p is StructPropertyData sp && sp.Value != null) Walk(sp.Value);
+                    if (p is ArrayPropertyData ap && ap.Value != null)
+                        foreach (var item in ap.Value) WalkOne(item);
+                }
+                void Walk(List<PropertyData> props)
+                {
+                    if (props == null) return;
+                    foreach (var p in props) WalkOne(p);
+                }
+
+                foreach (var e in asset.Exports)
+                {
+                    if (e is NormalExport ne) Walk(ne.Data);
+                    if (e is DataTableExport dte)
+                        foreach (var row in dte.Table.Data) Walk(row.Value);
+                }
+
+                if (count == 0)
+                {
+                    Console.Error.WriteLine("property not found: " + prop);
+                    return 3;
+                }
+
+                asset.Write(outPath);
+                Console.WriteLine("set " + count + " value(s) of " + prop + " to " + rawValue + " -> " + outPath);
+                return 0;
+            }
+
             Console.WriteLine("unknown mode " + mode);
             return 2;
         }

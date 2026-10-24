@@ -1,6 +1,22 @@
-# A/B test guide - p11 / p11b / font v3 / font v3b
+# A/B test guide - p11 / p11b / font v3 / font v3b / P4 timing variants
 
-Date: 2026-10-21 (cycle 016). Installed set right now: **carrier p11 + font v3 (unhinted)**.
+Date: 2026-10-24 (cycle 016 + P4). Installed set right now: **carrier p11 + font v3 (unhinted)**.
+**The P4 variants below are built but NOT installed**; p11 stays the default until you choose
+to test them. Switching to any of them is one command, and every command rolls back to p11.
+
+## P4 timing variants - one-line comparison
+
+| variant | what it changes | command to switch | what to look at | rollback |
+| --- | --- | --- | --- | --- |
+| `p11c` | subtitle **explicit range ends** +0.3 s (0.005 min); long lines x1.15 span; capped before the next page start; singleton pages untouched | `switch_variant.ps1 -Variant p11c` | a cinematic dialogue with explicit ranges (Academy / Verbitsky report): does the last page of each line stay a bit longer? | `-Variant p11` |
+| `tips_x125` | 20 timed input tips `DurationTime` x1.25 + item notification `WaitTime` 3.5 -> 4.375 s (spacing unchanged) | `switch_variant.ps1 -Variant tips_x125` | a short tutorial hint and an item pickup notification | `-Variant p11` |
+| `tips_x150` | same x1.5 (notification 5.25 s) | `switch_variant.ps1 -Variant tips_x150` | same as above; is it now too long? | `-Variant p11` |
+| `p11c_tips_x125` | both p11c and tips x1.25 | `switch_variant.ps1 -Variant p11c_tips_x125` | cinematic line + short hint + pickup | `-Variant p11` |
+| `p11c_tips_x150` | both p11c and tips x1.5 | `switch_variant.ps1 -Variant p11c_tips_x150` | cinematic line + short hint + pickup | `-Variant p11` |
+
+Notes: `tips_*` adds one extra pak and removes it again when you switch back; p11c replaces
+only the carrier. Quest / new-place banners and singleton-only subtitle pages are expected
+to stay unchanged (no data-side hold field - see `reports/p4_subtitle_investigation.md`).
 
 The three combinations below isolate the two remaining hypotheses:
 
@@ -33,6 +49,21 @@ powershell -NoProfile -ExecutionPolicy Bypass -File C:\AtomicHeart-AR\scripts\sw
 
 # rollback to the previously delivered set (p10 + Plex v2 font)
 powershell -NoProfile -ExecutionPolicy Bypass -File C:\AtomicHeart-AR\scripts\switch_variant.ps1 -Variant p10
+
+# --- P4 timing variants (NOT installed; p11 remains the default) ---
+# p11c - subtitle explicit-range end hold (+0.3 s, long lines x1.15)
+powershell -NoProfile -ExecutionPolicy Bypass -File C:\AtomicHeart-AR\scripts\switch_variant.ps1 -Variant p11c
+
+# tips x1.25 / x1.5 - longer input tips + item notifications
+powershell -NoProfile -ExecutionPolicy Bypass -File C:\AtomicHeart-AR\scripts\switch_variant.ps1 -Variant tips_x125
+powershell -NoProfile -ExecutionPolicy Bypass -File C:\AtomicHeart-AR\scripts\switch_variant.ps1 -Variant tips_x150
+
+# combined
+powershell -NoProfile -ExecutionPolicy Bypass -File C:\AtomicHeart-AR\scripts\switch_variant.ps1 -Variant p11c_tips_x125
+powershell -NoProfile -ExecutionPolicy Bypass -File C:\AtomicHeart-AR\scripts\switch_variant.ps1 -Variant p11c_tips_x150
+
+# back to the default (also removes the tips pak)
+powershell -NoProfile -ExecutionPolicy Bypass -File C:\AtomicHeart-AR\scripts\switch_variant.ps1 -Variant p11
 ```
 
 Every command takes a read-only snapshot, verifies the SHA256 of the files it replaces,
@@ -84,3 +115,6 @@ Please answer with a short note per run (A/B/C), even "same as before" is useful
 - `reports/font_ab_evidence.md` - original vs Plex table/metric comparison and the v3/v3b
   build proofs.
 - `reports/install_verification.md` - the current install proof (nothing outside ~mods moved).
+- `reports/p4_timing_sources.md` - CONFIRMED/LIKELY/UNKNOWN sources for tip and notification time.
+- `reports/p4_subtitle_investigation.md` - marker semantics, absent hold setting, p11c rules.
+- `reports/p11c_marker_hold.md` / `reports/p11c_audit.md` - p11c build stats and adapted gate.

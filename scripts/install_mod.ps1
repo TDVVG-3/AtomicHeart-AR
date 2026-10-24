@@ -22,6 +22,7 @@ param(
     [string]$Font = 'p2_plex',            # font variant    -> zzz_atomicheart-ar_font_<Font>_P.pak
     [string]$CarrierFile = '',            # optional explicit carrier file name
     [string]$FontFile = '',               # optional explicit font file name
+    [string]$Tips = '',                   # optional tips variant -> zzz_atomicheart-ar_tips_<Tips>_P.pak
     [switch]$Force
 )
 $ErrorActionPreference = 'Stop'
@@ -36,6 +37,7 @@ if (-not $paksDir -or -not (Test-Path $paksDir)) { throw "game paks directory no
 $carrierName = if ($CarrierFile) { $CarrierFile } else { "zzz_atomicheart-ar_carrier_koKR_${Carrier}_P.pak" }
 $fontName    = if ($FontFile)    { $FontFile }    else { "zzz_atomicheart-ar_font_${Font}_P.pak" }
 $installSet = @($carrierName, $fontName)
+if ($Tips) { $installSet += "zzz_atomicheart-ar_tips_${Tips}_P.pak" }
 
 $buildDir = Join-Path $RepoRoot 'build\package'
 $resolved = @{}
@@ -98,7 +100,7 @@ $manifest = [pscustomobject]@{
     phase         = 'phase7 prototype -> translation program pilot'
     installed_utc = (Get-Date).ToUniversalTime().ToString('o')
     game_build_id = $game.steam_build_id
-    variant       = ('carrier=' + $carrierName + ' ; font=' + $fontName)
+    variant       = ('carrier=' + $carrierName + ' ; font=' + $fontName + $(if ($Tips) { ' ; tips=' + $Tips } else { '' }))
     files         = $installed
     superseded    = $removedHashes
     notes         = 'Remove with scripts/uninstall_mod.ps1 only. These paks are the ONLY files this project installs into the game folder. Pilot set (DEC-024): carrier ko-KR p3 (all 35 ko-KR scopes, 85 Arabic rows, English fill) + font v2 (IBM Plex Sans Arabic dual-script).'

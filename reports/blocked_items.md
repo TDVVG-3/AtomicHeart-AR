@@ -65,6 +65,10 @@ through the Korean culture slot; that is why the mod works today without a 14th 
 **Evidence.** `source/original/uasset/settings_da/DA_Audio.uasset` + `.uasset.json`,
 `docs/LANGUAGE_SELECTION.md`, `KNOWN_ISSUES.md` KI-013, `DECISIONS.md` (language route).
 
+**Re-check 2026-10-24 (C7):** evidence unchanged - the asset is still 2,765 bytes, the
+culture list still lives only in the opaque `Extras` blob, and there is still no schema.
+No safe data-only path exists; this remains a Phase 8 editor task.
+
 **Next step (Phase 8).** Build a dedicated DA_Audio editor with the decoded layout, write
 `ar-SA` (and `ar` locres/locmeta), re-open the asset with UAssetAPI, diff every other byte,
 and ship as a **separate optional pak** - never in the default set - then test on a copy of
@@ -85,6 +89,10 @@ translator (or a reviewed MT pipeline) and a Russian term base. This is not a to
 **Evidence.** `reports/dialogue_ru_only.md`, `KNOWN_ISSUES.md` KI-018, `DECISIONS.md`
 (DEC-019 string selection: RU-only assets are tracked separately and excluded from the
 English source column).
+
+**Re-check 2026-10-24 (C6):** `reports/dialogue_ru_only.md` still reports **248 assets /
+6,012 strings**; no Arabic translation batch exists for them and there is no English
+source. C6 stays blocked until a reviewed Russian->Arabic pass is available.
 
 **Next step.** Batch the strings through the existing chunk pipeline with Russian as the
 source column, in ~300-string chunks, with the same gates. Until then the game falls back to
