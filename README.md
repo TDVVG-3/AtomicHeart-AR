@@ -1,137 +1,176 @@
-# AtomicHeart-AR
+<div align="center">
 
-Arabic localization for **Atomic Heart** on PC (Steam app `668580`).
+![AtomicHeart-AR — Arabic localization for PC](docs/assets/banner.svg)
 
-This is an open-source, script-driven localization pipeline: it extracts the game's
-localization resources read-only, keeps the English source next to the Arabic
-translation, validates every change, builds a data-only Korean-slot pak, and installs
-only inside `Paks\~mods`. The game executable, DLLs, stock paks, and DRM files are never
-modified.
+# AtomicHeart-AR · تعريب أتوميك هارت
 
-**Repository:** <https://github.com/TDVVG-3/AtomicHeart-AR>
-**License:** MIT for the project's own code and documentation. Atomic Heart content
-remains the property of Mundfish and its licensors.
+**عِش عالم Atomic Heart بالعربية.**
 
-This project is maintained as open source under the MIT license. The public repository
-is the source of truth for code, documentation, and the translation database; binary
-game paks and unlicensed third-party tools are not committed.
+مشروع تعريب مجتمعي للحاسب، مع قاعدة ترجمة مفتوحة وأدوات بناء وتحقق موثّقة.
 
-## Current release
+[![Platform: PC / Steam](https://img.shields.io/badge/PC-Steam-252525?style=flat-square)](https://store.steampowered.com/app/668580/)
+[![Version: 1.0.0 preparation](https://img.shields.io/badge/1.0.0-in_preparation-bc302f?style=flat-square)](docs/releases/v1.0.0.md)
+[![License: MIT](https://img.shields.io/badge/Code-MIT-e4d5b7?style=flat-square&labelColor=252525)](LICENSE)
 
-The current release is **p12** (`p12 + font v3 + tips_x150`).
+[الإصدارات والتنزيل](https://github.com/TDVVG-3/AtomicHeart-AR/releases) · [طريقة التثبيت](#التثبيت) · [المشاكل المعروفة](KNOWN_ISSUES.md) · [المساهمة](CONTRIBUTING.md)
 
-| component | file | size (bytes) | SHA256 |
-| --- | --- | ---: | --- |
-| carrier | `zzz_atomicheart-ar_carrier_koKR_p12_P.pak` | 4,470,295 | `910c06f2609237ac021dc1d3e2a6af02a05c64a828efdfe497a711bac66860c3` |
-| font | `zzz_atomicheart-ar_font_p3_unhinted_P.pak` | 1,455,228 | `f4ed50679d8ed7184354f6714f8d43def2fde60f03906d7bf36b7b7c8e663ef4` |
-| tips | `zzz_atomicheart-ar_tips_x150_P.pak` | 75,853 | `36de01c37231a8b88ec9fc744c4f663bb8461a56adede9a6a2151d78c7ef7fcc` |
+</div>
 
-Release highlights:
+---
 
-- 27,618 master rows; 27,175 translated-or-copy; 443 untranslated copy-class rows.
-- 458 weapon/item names keep their original English spelling; descriptions and
-  tooltips remain Arabic. In-sentence names use exact, cell-scoped rules.
-- All 1,140 speaker-label rows that used to show `P-3` now show `الرائد`.
-- Font v3 covers Arabic and the source-inherited Latin/Cyrillic/Hangul glyphs without
-  introducing new missing codepoints.
-- `p12g` is an experimental build that repairs H1/H2/H3 subtitle timing patterns. It is
-  built and gated but **not installed** by default.
-- The VEGA 9 archive scene is documented in `reports/subtitle_stack_audit_p12.md` and
-  `reports/subtitle_bottom_bar_p12.md`; `p12g` removes the scene's H3 markerless endings.
+## عن المشروع
 
-The full list of verified paks, including build-only variants, is in `HANDOFF.md`.
+يعرّب المشروع نصوص اللعبة عبر حزمة تستبدل **خانة اللغة الكورية**، مع خط داعم للعربية
+وبقاء الصوت الإنجليزي. يقرأ مسار البناء موارد اللعبة، ويحافظ على النص الإنجليزي بجانب
+الترجمة، ثم يتحقق من البيانات قبل بناء حزم التعريب. التثبيت محصور في `Paks\~mods`؛
+لا يغيّر ملفات اللعبة التنفيذية أو DLL أو حزم اللعبة الأصلية.
 
-## Download and install
+| المعلومة | التفاصيل |
+| --- | --- |
+| المنصة الموثّقة | Windows · Steam، رقم التطبيق `668580` |
+| نسخة اللعبة في تقارير التحقق | Steam build `24534183` |
+| مجموعة التعريب الافتراضية | `p12 + font v3 + tips_x150` |
+| لغة النص المختارة داخل اللعبة | **Korean / الكورية** |
+| الصوت | الإنجليزي يبقى كما هو |
+| ترخيص كود المشروع وتوثيقه | [MIT](LICENSE) |
 
-1. Download a release from
-   <https://github.com/TDVVG-3/AtomicHeart-AR/releases> or build from source (below).
-2. Close Atomic Heart.
-3. Back up `AtomicHeart\Content\Paks\~mods`.
-4. Copy the release paks into:
-   `...\Atomic Heart\AtomicHeart\Content\Paks\~mods`
-5. Set the game's **Text Language** to **Korean**. The mod replaces the Korean text slot;
-   English voice audio is unchanged.
-6. To uninstall, remove only the files listed in
-   `atomic-heart-ar-install-manifest.json` and restore your backup.
+## ما الذي يتضمنه التعريب؟
 
-The project never writes outside `Paks\~mods` and never modifies
-`AtomicHeart.exe`, DLLs, stock paks, Steam files, or Denuvo components.
+- قاعدة رئيسية تضم **27,618 صفًا**؛ منها **26,717 صفًا عربيًا** و**458 صفًا** تحتفظ
+  بالأسماء الإنجليزية، مع **443 صفًا** غير مترجم ضمن فئة النسخ.
+- إبقاء أسماء الأسلحة والعناصر الإنجليزية الأصلية، مع تعريب الأوصاف والتلميحات.
+- استبدال **1,140 تسمية متحدث** من `P-3` إلى **«الرائد»**.
+- خط v3 يدعم العربية ويحافظ على تغطية المحارف الموروثة من النص المصدر.
+- تقارير لفحص الترجمة والخطوط وتوقيت الترجمة النصية والتثبيت والاسترجاع.
 
-## Build from source
+الأرقام من [حالة المشروع](STATUS.md) و[تقرير p12](reports/p12_master.md).
+نسخة `p12g` تجريبية لمعالجة بعض مشاكل التوقيت، وليست ضمن الحزمة الافتراضية.
 
-Requirements: Windows, PowerShell 5.1, .NET 8, Python 3, and the tools described in
-`tools/tools.lock.json`. Third-party tool binaries are not committed and are not
-redistributed by this repository.
+## التنزيل
+
+تجد الملفات المنشورة في [صفحة الإصدارات الرسمية](https://github.com/TDVVG-3/AtomicHeart-AR/releases).
+توضح [ملاحظات 1.0.0](docs/releases/v1.0.0.md) محتويات الحزمة المطلوبة وحالة تجهيزها.
+
+> **حالة حزمة 1.0.0: قيد التجهيز.** ملفات `.pak` الجاهزة ليست ضمن المستودع.
+> خيار **Source code (zip)** يحمّل مصدر المشروع وقاعدة الترجمة، ولا يثبّت التعريب.
+> يلزم إرفاق الحزم الثلاث المعتمدة والتحقق من بصماتها قبل إعلان تنزيل التعريب جاهزًا.
+
+## التثبيت
+
+بعد توفر حزمة التعريب الجاهزة:
+
+1. أغلق اللعبة تمامًا، وفك ضغط حزمة التعريب خارج مجلد اللعبة.
+2. احتفظ بنسخة احتياطية من مجلد `~mods` إن كان موجودًا.
+3. انسخ **ملفات `.pak` الثلاثة المذكورة أدناه فقط** إلى المجلد التالي، وأنشئ `~mods` عند الحاجة:
+
+   ```text
+   ...\Atomic Heart\AtomicHeart\Content\Paks\~mods
+   ```
+
+4. شغّل اللعبة، واختر **Korean / الكورية** من إعداد **Text Language**.
+
+اللغة العربية تستخدم خانة الكورية؛ لن يظهر خيار مستقل باسم العربية في قائمة اللغات.
+تفاصيل ذلك في [توثيق اختيار اللغة](docs/LANGUAGE_SELECTION.md).
+
+### ملفات الحزمة الافتراضية
+
+| الوظيفة | اسم الملف | الحجم بالبايت |
+| --- | --- | ---: |
+| النصوص · p12 | `zzz_atomicheart-ar_carrier_koKR_p12_P.pak` | 4,470,295 |
+| الخط · v3 | `zzz_atomicheart-ar_font_p3_unhinted_P.pak` | 1,455,228 |
+| التلميحات · x150 | `zzz_atomicheart-ar_tips_x150_P.pak` | 75,853 |
+
+قارن بصمات الملفات مع [SHA256SUMS](docs/releases/v1.0.0-SHA256SUMS.txt) قبل التثبيت.
+للتحقق محليًا في PowerShell:
+
+```powershell
+Get-FileHash -Algorithm SHA256 .\*.pak
+```
+
+الحجوم والبصمات مرجعية من [تقرير التثبيت](reports/install_verification.md)؛
+تحتاج ملفات التنزيل الفعلية إلى التحقق منها قبل النشر.
+
+### إزالة التعريب
+
+أغلق اللعبة، واحذف ملفات الحزمة الثلاثة أعلاه فقط من `~mods`، ثم استعد نسختك الاحتياطية
+واختر لغة النص التي تريدها. إذا ثبّتَّ التعريب عبر أدوات المشروع، فاستخدم قائمة الملفات في
+`atomic-heart-ar-install-manifest.json`؛ لا تحذف مودات أخرى موجودة في المجلد.
+
+## التحقق والقيود المعروفة
+
+هذه نتائج **التقارير المحفوظة في المستودع**، وليست اختبارات أُعيد تشغيلها عند تعديل التوثيق:
+
+| الفحص | النتيجة المسجّلة | الدليل |
+| --- | --- | --- |
+| الترجمة، ستة متغيرات من عائلة p12 | PASS · صفر أخطاء صلبة | [ملخص الفحوص](reports/p12_gate_all.md) |
+| تغطية الصفوف | 27,618 / 27,618 محسوبة | [الحالة](STATUS.md) |
+| الخط | PASS · صفر محارف مفقودة مستحدثة بسبب العربية | [الحالة](STATUS.md) |
+| إعادة استخراج حزمة النصوص | 35 / 35، وتطابق البايتات بعد فك الحزمة | [التسليم التقني](HANDOFF.md) |
+| التثبيت والاسترجاع | PASS · صفر تغييرات خارج `~mods` | [تقرير التثبيت](reports/install_verification.md) |
+
+قد تستمر بعض مشاكل تراكب الترجمة النصية أو قصّها عند ظهور أربعة أسطر. بعض مشكلات التوقيت
+مرتبطة ببيانات اللعبة الأصلية ولا يصلحها تعديل النصوص وحده. توجد **343 حالة H3** دون مدة
+صوت قابلة للاستخدام. راجع [المشاكل المعروفة](KNOWN_ISSUES.md) و[دليل اختبار الترجمة النصية](reports/stack_test_guide.md).
+
+للإبلاغ عن مشكلة، [افتح Issue](https://github.com/TDVVG-3/AtomicHeart-AR/issues/new)
+وأرفق نسخة اللعبة، وأسماء حزم التعريب، وصورة أو خطوات إعادة المشكلة.
+
+## للمطورين والمساهمين
+
+ابدأ من [دليل المساهمة](CONTRIBUTING.md)، و[سلسلة الأدوات](docs/TOOLCHAIN.md)،
+و[التسليم التقني](HANDOFF.md). تمر تعديلات الترجمة عبر قواعد TM/fixup مع الحفاظ على
+النص الإنجليزي؛ لا تُعدَّل الصفوف المولّدة يدويًا لتجاوز فشل التحقق.
+
+<details>
+<summary><strong>Build from source · متطلبات وأوامر التحقق</strong></summary>
+
+The build pipeline targets Windows, PowerShell 5.1, .NET 8, and Python 3. Obtain
+third-party tools from the upstream releases listed in [tools.lock.json](tools/tools.lock.json).
+Tool binaries, original game resources, generated font payloads, and local build outputs
+are not included in a source download.
+
+Several scripts use `C:\AtomicHeart-AR` as their working root. The commands below
+assume that location and require the generated p12 master and font staging inputs
+to exist already; they are not a complete fresh-clone build.
 
 ```powershell
 cd C:\AtomicHeart-AR
-# Tool setup and verification
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts\setup_tools.ps1
-
-# Validate the p12 master, run the glyph gate, and build the carrier
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts\validate_translation.ps1 -Master build\variants\atomic-heart-ar_p12.tsv
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts\glyph_gate.ps1 -PayloadRoot build\staging\font_v3\modpakfont -ReportPath reports\glyph_gate_local.md
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts\build_carrier_locres_pak.ps1 -Master build\variants\atomic-heart-ar_p12.tsv -VariantLabel p12
 ```
 
-The complete build and gate chain is documented in `docs/TOOLCHAIN.md` and
-`scripts/p12_gate_all.ps1`. The installed-set switcher, with snapshot, backup,
-verification, and automatic rollback, is `scripts/switch_variant.ps1`.
+See [the toolchain](docs/TOOLCHAIN.md) and [the handoff](HANDOFF.md) for the build
+context, [p12_gate_all.ps1](scripts/p12_gate_all.ps1) for the gate chain, and
+[switch_variant.ps1](scripts/switch_variant.ps1) for snapshot, backup, verification,
+and automatic rollback when switching an installed set.
 
-## Repository layout
+</details>
 
-| path | purpose |
+### خريطة المستودع
+
+| المسار | المحتوى |
 | --- | --- |
-| `localization/master/` | canonical English + Arabic translation database |
-| `localization/working/` | TM, fixups, keep-original lists, review data |
-| `scripts/` | extraction, validation, carrier/font build, install, rollback, audits |
-| `reports/` | gate evidence, audits, play-test guide, handoffs |
-| `docs/` | format, toolchain, language-selection, and font research |
-| `glossary/` | terminology and accepted renderings |
-| `config/` | local game paths and build settings |
-| `build/` | local build output; not committed |
-| `dist/` | local release output; paks not committed |
+| [localization/master/](localization/master/) | قاعدة النص الإنجليزي والترجمة العربية |
+| [localization/working/](localization/working/) | قواعد TM والإصلاحات وقوائم الأسماء الأصلية |
+| [scripts/](scripts/) | الاستخراج والتحقق والبناء والتثبيت والاسترجاع |
+| [reports/](reports/) | أدلة الفحوص والتدقيق والاختبارات |
+| [docs/](docs/) | توثيق الصيغ والأدوات والخطوط واختيار اللغة |
+| [glossary/](glossary/) | المصطلحات والصيغ المعتمدة |
+| [config/](config/) | مسارات اللعبة وإعدادات البناء |
+| `build/` و`dist/` | مخرجات محلية؛ ملفات الحزم ليست ضمن Git |
 
-## Verification
+## الحقوق والشكر
 
-The release gates are reproducible and recorded under `reports/`:
+مشروع تعريب غير رسمي، بإشراف [TDVVG-3](https://github.com/TDVVG-3) ومساهمات المجتمع.
+تعود Atomic Heart وأصولها وأسماؤها وعلاماتها إلى Mundfish وأصحاب الحقوق المعنيين.
+كود المشروع وتوثيقه تحت [MIT](LICENSE)؛ تراخيص المكونات الأخرى في
+[THIRD_PARTY_LICENSES.md](THIRD_PARTY_LICENSES.md).
+لا تتضمن ملفات المصدر أرشيفات اللعبة الأصلية أو EXE أو DLL أو أدوات غير مرخّصة لإعادة التوزيع.
 
-- validator: 0 hard errors for all six p12-family variants;
-- coverage: 27,618/27,618 accounted, 27,175 translated-or-copy;
-- glyph gate: PASS, 0 Arabic-introduced missing codepoints;
-- carrier round-trip: 35/35, unpack byte-identical;
-- subtitle audit: H1-H4 counts and 30 worst scenes;
-- temp-install and forced-rollback matrix: PASS;
-- final install verification: PASS, 0 changes outside `~mods`, stock paks 19/19, EXE
-  unchanged.
+<div align="center">
 
-Start with `reports/p12_gate_all.md`, `reports/install_verification.md`, and
-`reports/stack_test_guide.md`.
+[سجل التغييرات](CHANGELOG.md) · [حالة المشروع](STATUS.md) · [التسليم التقني](HANDOFF.md) · [المساهمة](CONTRIBUTING.md)
 
-## Privacy and publishing
-
-This project is released under the MIT license and is intended for public distribution
-through <https://github.com/TDVVG-3/AtomicHeart-AR> (DEC-047). The repository contains
-project code, documentation, and the translation database. It does **not** contain
-Atomic Heart game archives, PAKs, EXEs, DLLs, decrypted game assets, or unlicensed
-third-party tools. Build artifacts and the local `build/` directory are ignored.
-
-## Contributing
-
-Contributions are welcome. Read `CONTRIBUTING.md` first. In short:
-
-- never write to the game installation outside `Paks\~mods`;
-- never commit game PAKs, EXEs, DLLs, or unlicensed tool binaries;
-- keep code, comments, filenames, and script output in English;
-- preserve the English source column;
-- add translation changes through the fixup/TM workflow, not by hand-editing the master;
-- include gate evidence with every behavior change.
-
-## Legal
-
-- Atomic Heart and all related content, names, and trademarks belong to Mundfish and
-  its applicable rights holders.
-- This is an unofficial fan localization, not an official product.
-- The project's own code and documentation are MIT licensed; see `LICENSE`.
-- Third-party components and their licenses are listed in `THIRD_PARTY_LICENSES.md`.
-- No DRM, Steam authentication, or licensing code is bypassed or modified.
+</div>

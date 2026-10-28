@@ -6,6 +6,8 @@ Format loosely follows Keep a Changelog.
 ## [1.0.0] - 2026-10-28
 
 ### Added
+- Arabic-first README with an original SVG banner, installation guide, and linked gate evidence.
+- 1.0.0 release preparation notes and reference PAK checksums; playable release assets remain pending verification and upload.
 - Public open-source release at <https://github.com/TDVVG-3/AtomicHeart-AR> (DEC-047).
 - **p12 release default:** clean canonical master + CHANGE 1 (original English
   weapon/item names) + CHANGE 2 (P-3 speaker label `الرائد`).
