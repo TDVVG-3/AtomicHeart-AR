@@ -14,6 +14,7 @@
 | tag | `v1.0.0` |
 | release | <https://github.com/TDVVG-3/AtomicHeart-AR/releases/tag/v1.0.0> |
 | localization asset | `AtomicHeart-AR-1.0.0-p12.zip` |
+| experimental asset | `AtomicHeart-AR-1.0.0-p12g-experimental.zip` |
 | source asset | `AtomicHeart-AR-1.0.0-source.zip` |
 
 ## Downloaded release 1 (before publication)
@@ -76,6 +77,7 @@ commit. It does not contain `build/`, game PAKs, EXEs, DLLs, or unlicensed tool 
 - Tag push: PASS (`v1.0.0`)
 - Release creation: PASS (`426807665`)
 - Localization asset upload: PASS (`2,371,883` bytes)
+- Experimental p12g asset upload: PASS (`2,377,620` bytes)
 - Source archive upload: PASS (`30,447,907` bytes)
 - GitHub repository content: source, scripts, localization database, docs, and reports
 - Release assets: localization zip + source archive
