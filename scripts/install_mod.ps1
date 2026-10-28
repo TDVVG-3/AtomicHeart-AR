@@ -12,8 +12,9 @@
      else anywhere in the game folder;
    - leaves the folder in exactly the requested set, then verifies it and prints hashes.
 
-  Default set = carrier ko-KR p3 + font v2 (DEC-024 pilot set). The superseded carrier p2
-  is removed automatically on first run.
+  Defaults are carrier p3 + font p2_plex, but switch_variant.ps1 always passes an explicit
+  set. A superseded file is removed automatically when its on-disk hash matches the old
+  manifest.
 #>
 [CmdletBinding()]
 param(
@@ -23,6 +24,8 @@ param(
     [string]$CarrierFile = '',            # optional explicit carrier file name
     [string]$FontFile = '',               # optional explicit font file name
     [string]$Tips = '',                   # optional tips variant -> zzz_atomicheart-ar_tips_<Tips>_P.pak
+    [switch]$RuOnly,                      # optional add-on: zzz_atomicheart-ar_ruonly_p1_P.pak
+    [string]$ModsPath = '',               # optional test override; empty = config/game.json mods_path
     [switch]$Force
 )
 $ErrorActionPreference = 'Stop'
@@ -30,7 +33,7 @@ trap { Write-Output ('ERROR at line ' + $_.InvocationInfo.ScriptLineNumber + ': 
 try { [Console]::OutputEncoding = [Text.Encoding]::UTF8 } catch {}
 
 $game = Get-Content (Join-Path $RepoRoot 'config\game.json') -Raw | ConvertFrom-Json
-$modsPath = $game.mods_path
+$modsPath = if ($ModsPath) { $ModsPath } else { $game.mods_path }
 $paksDir = $game.paks_path
 if (-not $paksDir -or -not (Test-Path $paksDir)) { throw "game paks directory not found: $paksDir" }
 
@@ -38,6 +41,7 @@ $carrierName = if ($CarrierFile) { $CarrierFile } else { "zzz_atomicheart-ar_car
 $fontName    = if ($FontFile)    { $FontFile }    else { "zzz_atomicheart-ar_font_${Font}_P.pak" }
 $installSet = @($carrierName, $fontName)
 if ($Tips) { $installSet += "zzz_atomicheart-ar_tips_${Tips}_P.pak" }
+if ($RuOnly) { $installSet += 'zzz_atomicheart-ar_ruonly_p1_P.pak' }
 
 $buildDir = Join-Path $RepoRoot 'build\package'
 $resolved = @{}
@@ -95,15 +99,17 @@ foreach ($name in $installSet) {
     Write-Host ("[OK] installed: {0} ({1} bytes)" -f $name, $src.Length)
 }
 
+$variantDesc = 'carrier=' + $carrierName + ' ; font=' + $fontName + $(if ($Tips) { ' ; tips=' + $Tips } else { '' }) + $(if ($RuOnly) { ' ; ruonly=p1' } else { '' })
 $manifest = [pscustomobject]@{
     project       = 'AtomicHeart-AR'
-    phase         = 'phase7 prototype -> translation program pilot'
+    phase         = 'phase7 prototype -> translation program'
     installed_utc = (Get-Date).ToUniversalTime().ToString('o')
     game_build_id = $game.steam_build_id
-    variant       = ('carrier=' + $carrierName + ' ; font=' + $fontName + $(if ($Tips) { ' ; tips=' + $Tips } else { '' }))
+    mods_path     = $modsPath
+    variant       = $variantDesc
     files         = $installed
     superseded    = $removedHashes
-    notes         = 'Remove with scripts/uninstall_mod.ps1 only. These paks are the ONLY files this project installs into the game folder. Pilot set (DEC-024): carrier ko-KR p3 (all 35 ko-KR scopes, 85 Arabic rows, English fill) + font v2 (IBM Plex Sans Arabic dual-script).'
+    notes         = 'Remove with scripts/uninstall_mod.ps1 only. These paks are the ONLY files this project installs into the game folder. Installed set: ' + $variantDesc
 }
 $manifest | ConvertTo-Json -Depth 6 | Set-Content -Path $manifestPath -Encoding UTF8
 Write-Host ("[DONE] manifest: {0}" -f $manifestPath)

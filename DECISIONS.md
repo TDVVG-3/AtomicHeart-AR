@@ -228,10 +228,11 @@ GUI is used).
 
 ---
 
-## DEC-012 — No online publishing, permanent
+## DEC-012 - No online publishing, permanent
 
 Date: 2026-10-18
-Status: ACTIVE (permanent, per user decision)
+Status: SUPERSEDED by DEC-047 (2026-10-28). Historical only; do not use this rule to
+block the approved open-source publication.
 
 Decision:
 Downloading from GitHub is allowed (official project pages and official release assets
@@ -1134,3 +1135,31 @@ Ruling (DRAFT, reviewer may override - `glossary/glossary_questions.md` section 
   spelling -> `ساخالين`; `كولكتيف` -> `كوليكتيف`. Effect: 28 rows, glossary warnings 54 -> 25.
 - `scripts/cycle015_glossary_unify.ps1` is the idempotent generator for those three rules (ASCII-only,
   Arabic built from [char] codepoints, per KI-021).
+
+---
+
+## DEC-047 (2026-10-28): open-source publication approved
+
+Status: ACTIVE
+
+Decision:
+The user explicitly approved publishing this project as open source at
+<https://github.com/TDVVG-3/AtomicHeart-AR>. The public repository may contain the
+project's code, scripts, documentation, reports, glossary, configuration examples, and
+the English/Arabic translation database. Uploading source and documentation to that
+repository is allowed.
+
+Restrictions that remain:
+- Do not upload Atomic Heart game archives, PAKs, EXEs, DLLs, decrypted assets, or
+  unlicensed third-party tool binaries.
+- Do not publish credentials, tokens, or personal machine secrets.
+- Keep the game installation read-only outside `Paks\~mods`.
+- Third-party tools remain governed by `THIRD_PARTY_LICENSES.md`; LocResUtility and
+  UnrealLocres must never be redistributed.
+- The translation database is derived from game text; game content remains the property
+  of Mundfish and its licensors.
+
+Consequence:
+DEC-012 is superseded. `git remote -v` may show the approved origin. Pushing to a
+different remote requires explicit user approval. Release assets should contain source
+archives and documentation, not game PAKs or unlicensed tools.

@@ -13,13 +13,20 @@
   ASCII-only script; all text comes from the UTF-8 master.
 #>
 [CmdletBinding()]
-param([string]$RepoRoot = 'C:\AtomicHeart-AR')
+param(
+    [string]$RepoRoot = 'C:\AtomicHeart-AR',
+    [string]$MasterTsV = '',
+    [string]$ReportPath = '',
+    [string]$Title = 'Coverage - p12 (CHANGE 1 + CHANGE 2)'
+)
 $ErrorActionPreference = 'Stop'
 try { [Console]::OutputEncoding = [Text.Encoding]::UTF8 } catch {}
 trap { Write-Output ('ERROR at line ' + $_.InvocationInfo.ScriptLineNumber + ': ' + $_.Exception.Message); exit 1 }
 
-$masterPath = Join-Path $RepoRoot 'localization\master\atomic-heart-ar.tsv'
-$outPath = Join-Path $RepoRoot 'reports\coverage_cycle015.md'
+if (-not $MasterTsV) { $MasterTsV = Join-Path $RepoRoot 'localization\master\atomic-heart-ar.tsv' }
+$masterPath = $MasterTsV
+if (-not $ReportPath) { $ReportPath = Join-Path $RepoRoot 'reports\coverage_cycle015.md' }
+$outPath = $ReportPath
 $lines = [IO.File]::ReadAllLines($masterPath, [Text.Encoding]::UTF8)
 
 $scopes = @{}; $cats = @{}
@@ -49,6 +56,11 @@ for ($i = 1; $i -lt $lines.Count; $i++) {
     if ($f[6].Trim()) {
         $translated++
         $scopes[$scope].ar++; $cats[$cat].ar++
+    } elseif ($f[10] -eq 'COPY') {
+        $copyClass++
+        $scopes[$scope].copy++; $cats[$cat].copy++
+        if (-not $reasons.ContainsKey('keep original name')) { $reasons['keep original name'] = 0 }
+        $reasons['keep original name']++
     } else {
         $reason = Reason-Of $f[5]
         if ($reason -eq 'technical label / proper name') {
@@ -85,7 +97,7 @@ $pctTr = 0.0; if ($translatable -gt 0) { $pctTr = [Math]::Round(100.0 * $transla
 $pctAll = [Math]::Round(100.0 * $translated / $total, 2)
 
 $out = New-Object System.Collections.Generic.List[string]
-$out.Add('# Coverage - cycle 015 (batch 4 complete, carrier p10)')
+$out.Add('# ' + $Title)
 $out.Add('')
 $out.Add(('Generated: {0}' -f (Get-Date -Format 'yyyy-MM-dd HH:mm:ss')))
 $out.Add('')
@@ -94,8 +106,9 @@ $out.Add('')
 $out.Add('| metric | value |')
 $out.Add('| --- | --- |')
 $out.Add(('| master rows | {0} |' -f $total))
-$out.Add(('| rows with Arabic (DRAFT) | {0} |' -f $translated))
+$out.Add(('| rows with Arabic | {0} |' -f $translated))
 $out.Add(('| copy-class rows left English-filled | {0} |' -f $copyClass))
+$out.Add(('| translated or copy-class | {0} of {1} |' -f ($translated + $copyClass), $total))
 $out.Add(('| translatable rows | {0} |' -f $translatable))
 $out.Add(('| coverage of translatable rows | {0} of {1} ({2}%) |' -f $translated, $translatable, $pctTr))
 $out.Add(('| coverage of all rows | {0} of {1} ({2}%) |' -f $translated, $total, $pctAll))
@@ -133,5 +146,5 @@ if ($unexpected -gt 0) {
     foreach ($r in $unexpectedRows) { $out.Add('- ' + $r) }
 }
 [IO.File]::WriteAllLines($outPath, $out, (New-Object Text.UTF8Encoding($false)))
-Write-Output ('[coverage] rows {0} | arabic {1} | copy-class {2} | translatable {3} | coverage {4}% of translatable | review-needed {5}' -f $total, $translated, $copyClass, $translatable, $pctTr, $unexpected)
+Write-Output ('[coverage] rows {0} | arabic {1} | copy-class {2} | translated-or-copy {3} of {0} | translatable {4} | coverage {5}% of translatable | review-needed {6}' -f $total, $translated, $copyClass, ($translated + $copyClass), $translatable, $pctTr, $unexpected)
 Write-Output ('[coverage] written: ' + $outPath)

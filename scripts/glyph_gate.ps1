@@ -27,6 +27,8 @@
 param(
     [string]$RepoRoot = 'C:\AtomicHeart-AR',
     [string]$MasterTsV = '',
+    [string]$PayloadRoot = '',
+    [string]$ReportPath = '',
     # Exempt codepoints that the translation INHERITED from the English source of the same
     # row (for example the Cyrillic A in "Workshop 308-A" or the Cyrillic x in "12x70
     # rounds"): the engine serves those from its fallback face today, so they are not a
@@ -39,8 +41,10 @@ try { [Console]::OutputEncoding = [Text.Encoding]::UTF8 } catch {}
 trap { Write-Output ('ERROR at line ' + $_.InvocationInfo.ScriptLineNumber + ': ' + $_.Exception.Message); exit 1 }
 
 if (-not $MasterTsV) { $MasterTsV = Join-Path $RepoRoot 'localization\master\atomic-heart-ar.tsv' }
-$payloadRoot = Join-Path $RepoRoot 'build\staging\font_p2\modpakfont'
-$reportPath = Join-Path $RepoRoot 'reports\glyph_gate.md'
+if (-not $PayloadRoot) { $PayloadRoot = Join-Path $RepoRoot 'build\staging\font_p2\modpakfont' }
+$payloadRoot = $PayloadRoot
+if (-not $ReportPath) { $ReportPath = Join-Path $RepoRoot 'reports\glyph_gate.md' }
+$reportPath = $ReportPath
 
 $faces = @(
     @{ name = 'BlenderPro-Medium (subtitle/dialogue)'; rel = 'AtomicHeart\Content\Development\UI\Fonts\BlenderPro-Medium.ufont'; subtitle = $true },
@@ -190,7 +194,7 @@ $r = New-Object System.Collections.Generic.List[string]
 $r.Add('# Glyph gate report (pilot)' )
 $r.Add('')
 $r.Add(('Generated: {0}' -f (Get-Date -Format 'yyyy-MM-dd HH:mm:ss')))
-$r.Add(('Font pak under test: build/package/zzz_atomicheart-ar_font_p2_plex_P.pak -> build/staging/font_p2/modpakfont'))
+$r.Add(('Font payload under test: `{0}`' -f $payloadRoot))
 $r.Add(('Master: {0} ({1} rows with Arabic)' -f $MasterTsV, $rowsWithArabic))
 $r.Add('')
 $r.Add(('VERDICT: **{0}**' -f $verdict))

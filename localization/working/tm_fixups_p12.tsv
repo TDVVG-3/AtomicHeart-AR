@@ -1,0 +1,127 @@
+find	replace	note	selector	value
+P-3	الرائد	speaker label P-3 -> Major [label]	label	P-3
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	Academy_Dialogues|/0D789B1E4A0168BD890BEEB06ECE3819
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	Academy_Dialogues|/1C53C1004E8B9BEB8082DEA639B83B3D
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	Academy_Dialogues|/BDE1F4B243CA8DA5BCB92DAE4B191737
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	Chelomey_Dialogues|/1002A45848240DE4F7234C932386D3BF
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	Chelomey_Dialogues|/EA4099FE437784700C8A1AA91DA6479A
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	Chelomey_dlc3|/4208414B48168005EF634BAFB4157A8E
+الفتى السمين	FAT BOY	in-sentence item name [cell]	cell	Chelomey_dlc3|/7010DF5443FD6C4427888088E2E92A1C
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	Chelomey_dlc3|/EFB89DE94E419AE702182BAE7246A8BA
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	ChelomeyFinal_Dialogues|/64AD1EFE4E9530EDC25721AAB099091F
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	ChelomeyFinal_Dialogues|/66A364B445704B0C7E9760B279F1ADA2
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	ChelomeyFinal_Dialogues|/DA75270D4FEF392A12F098A9A331E373
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	CrystalComplex_dlc4|/CF26053E4592E6BD8C07ADB69587278F
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	Cutscenes_dlc1|/39DCED594DBDE10CEDDD72AC50A9675C
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	Cutscenes_dlc1|/5301026E402641331FD79EA86CFAD568
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	Cutscenes_dlc1|/BDF3C3CF48D5B2BEE8013AA25627B73E
+المقصّ	SECATEUR	in-sentence item name [cell]	cell	Cutscenes_dlc1|/C59B58624060C496281BB4AE7A9A3E4D
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	Cutscenes_dlc1|/CE0425A242DAE1F4A43D14A489532E50
+المقصّ	SECATEUR	in-sentence item name [cell]	cell	Cutscenes_dlc1|/D84D610C40F93F8F992F0B913DA3FC36
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	CUTSCENES|/2D9CD9014A971A49BA8FD094A46878C0
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	LebedevLab_dlc4|DT_Subtitles_DLC4_Beach/SakhalinBeach_03_Sentences
+المقصّ	SECATEUR	in-sentence item name [cell]	cell	LebedevLab_dlc4|DT_Subtitles_DLC4_LebedevLab/LebedevLab_21_Sentences
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	Locations_dlc2|DT_Subtitles_DLC02_Climber/Step_Climber_70_Sentences
+فودكا	VODKA	in-sentence item name [cell]	cell	Mails_01|/0CAEBB874B73AC6A9C6374B37DF1E19B
+الفودكا	VODKA	in-sentence item name [cell]	cell	Mails_01|/30BD20B74F3260BB541B509C743C1F0D
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	Mails_01|/5A77E69C4D84FE4C43F52CA439B63131
+فودكا	VODKA	in-sentence item name [cell]	cell	Mails_01|/BC0E776A4708DE55D5ADE8A6302193CE
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	Mails_Shebetars_dlc4|/B0BBB20C4B5797767B28D99A161576E8
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	Mails_Shebetars_Tech_dlc3|/0C754BCF48E22C137FAC01A34AB52BF9
+المواد الحيوية	BIOMATERIALS	in-sentence item name [cell]	cell	Mails_Shebetars_Tech_dlc3|/1B28884745774189D1F40791D59E1604
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	Mails_Shebetars_Tech_dlc3|/FD00AAE2477AF0851B873F94AC5C4A2C
+المقصّ	SECATEUR	in-sentence item name [cell]	cell	Marshes_dlc1|/55A885B944BE8E5B7F93B4ADF256E3BE
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	Marshes_dlc1|/598E8F574682223841A2D09381A3CC38
+المقصّ	SECATEUR	in-sentence item name [cell]	cell	Mendeleev_dlc1|/1F9320664A566188EABFF190BA7728F1
+دومينيتور	DOMINATOR	in-sentence item name [cell]	cell	NewP5|/0504D4444BA3892BDB69A39652E28221
+مادة صناعية	SYNTHETIC MATERIAL	in-sentence item name [cell]	cell	NewP5|/19B78C3B4B42349806F6BF8395086ECB
+كلوشا	Klusha	in-sentence item name [cell]	cell	NewP5|/1F8EDB9840C47130DBE720A2B4E019ED
+باشتيت	PASHTET	in-sentence item name [cell]	cell	NewP5|/1F93AA694D2325442302029FBB8CCA96
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	NewP5|/3CE05F3F4ED22E4B34421B8F0C0EB058
+ذخيرة عيار صغير	SMALL CALIBER AMMO	in-sentence item name [cell]	cell	NewP5|/426E736946E49D7AF358F3B86E1CA0D2
+حليب مكثّف	CONDENSED MILK	in-sentence item name [cell]	cell	NewP5|/443537B540B0E5650B29CEB341D88BF4
+المدفع القضباني	RAILGUN	in-sentence item name [cell]	cell	NewP5|/4835657744DDD5D6FFFBD7853A60D5BD
+دينامو	DYNAMO	in-sentence item name [cell]	cell	NewP5|/4D8F1BA14576E3EAC5ADC69121F1CA23
+فودكا	VODKA	in-sentence item name [cell]	cell	NewP5|/5327998F493D20064D6ED787A47F57D3
+المقصّ	SECATEUR	in-sentence item name [cell]	cell	NewP5|/580BE42346FA8A1219B85787DDF20355
+حليب مكثّف	CONDENSED MILK	in-sentence item name [cell]	cell	NewP5|/5F5F9A6D4ADB7130BF2278AA964F489B
+الفودكا	VODKA	in-sentence item name [cell]	cell	NewP5|/62E841294321139519D95E8E17180C54
+بطاقة تنشيط زرقاء	BLUE ACTIVATION CARD	in-sentence item name [cell]	cell	NewP5|/6305F8C64F053437DF0255B934B1B0D8
+إلكترو	ELECTRO	in-sentence item name [cell]	cell	NewP5|/6B35C53546915020025D07A97C4FBB1A
+وحدة الإطلاق	Launch module	in-sentence item name [cell]	cell	NewP5|/6C4464FA42E384F271B5FD88DA91A32A
+الفتى السمين	FAT BOY	in-sentence item name [cell]	cell	NewP5|/6D6BD2CA4A4B0E4FFFD0848776A18DC5
+المقصّ	SECATEUR	in-sentence item name [cell]	cell	NewP5|/75ABED77401EF6EC4E088EBDB9C3FB0D
+إلكترو	ELECTRO	in-sentence item name [cell]	cell	NewP5|/75C77A5D409DB7F7A59DA0A3730DFE7B
+المقصّ	SECATEUR	in-sentence item name [cell]	cell	NewP5|/7AC0FBC24650DF2A90DD599B023D386B
+الفتى السمين	FAT BOY	in-sentence item name [cell]	cell	NewP5|/873571A44B24EB6EDC35D7BD7E4FA9C6
+حليب مكثّف	CONDENSED MILK	in-sentence item name [cell]	cell	NewP5|/894089C84C3DD65F2BE47AA26B32BED7
+بطاقة تفعيل صفراء	YELLOW ACTIVATION CARD	in-sentence item name [cell]	cell	NewP5|/9261D1FD4448CF0444CD178EDEA0C359
+صواريخ الفتى السمين	FAT BOY ROCKETS	in-sentence item name [cell]	cell	NewP5|/93A0AE294F2D98768FF033832FAB9B47
+باشتيت	PASHTET	in-sentence item name [cell]	cell	NewP5|/9C61E9CB42043C3F7C12B6B15A57DFAC
+فتّاحة أقفال	LOCKPICK	in-sentence item name [cell]	cell	NewP5|/9DA1E9284C440AA8A4EABFA7AC0DC4F1
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	NewP5|/A5CD3CFC45555FEE2ECE538F0B077277
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	NewP5|/AB7805264B1F9BAF3246F1A18347D0FD
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	NewP5|/AF9A229E4CF2D482A5746982277D4CD8
+إلكترو	ELECTRO	in-sentence item name [cell]	cell	NewP5|/B36B4711409339AA653BB4AF76850A45
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	NewP5|/B6A7044945FB0D28D107DCAE3777862F
+ذخيرة عيار صغير	SMALL CALIBER AMMO	in-sentence item name [cell]	cell	NewP5|/B73215DF4AA08343B6E351BEE71B2D61
+زفيزدوتشكا	ZVEZDOCHKA	in-sentence item name [cell]	cell	NewP5|/BAFF28994E13DDF00B0E51AF58123851
+كلاش	KALASH	in-sentence item name [cell]	cell	NewP5|/BFCB444140AF1660C90B0292FEA80266
+الكلاش	KALASH	in-sentence item name [cell]	cell	NewP5|/C100706841E2E46F7008E3AA9F4A789A
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	NewP5|/C1ADF7C3481135C48A0FBBA22BC3B2D7
+المقصّ	SECATEUR	in-sentence item name [cell]	cell	NewP5|/C42DBA4B43F5B7AA91373088668FFDA9
+باشتيت	PASHTET	in-sentence item name [cell]	cell	NewP5|/CAED9C2547A7C39434C9F894DCE341AF
+صواريخ الفتى السمين	FAT BOY ROCKETS	in-sentence item name [cell]	cell	NewP5|/D6973DA442F386B32ACCB998592E3800
+ذخيرة عيار صغير	SMALL CALIBER AMMO	in-sentence item name [cell]	cell	NewP5|/DA98FD4C418DE8174AF9B993C8843C97
+فتّاحة أقفال	LOCKPICK	in-sentence item name [cell]	cell	NewP5|/E8348C3A4DADA62E88C347B7D232E177
+الفتى السمين	FAT BOY	in-sentence item name [cell]	cell	NewP5|/EFA452CF4F96E1C6BC4E67ABC209D12E
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	OpenWorldVDNKh_Dialogues|/BD08D8764D1CBBC8F3D2768697A73963
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	OpenWorldVDNKh_Dialogues|/D37B20AB4921692E545EE8A990D5CFA8
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	OpenWorldVDNKh_Dialogues|/E8F5F4EA417E69826BCDE89C9B40BF43
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	Pavlov_Dialogues|/1193259E42FF5F950B43AF8143260607
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	Pavlov_Dialogues|/4171AD874AC37F316770449AC225E2B7
+فودكا	VODKA	in-sentence item name [cell]	cell	Pavlov_Dialogues|/ADF322D547311672BD78A0B419F9C75B
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	Pavlov_Dialogues|/DC03AB5C4D428158DA0BE68B0658DAB6
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	Pavlov_Dialogues|/F171B6B94204DA4C68898081207E59A3
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	PearTerminals|/9B7B00D644BC184707FDB98D58E5B9B7
+المدفع القضباني	RAILGUN	in-sentence item name [cell]	cell	Phasatron_dlc4|DT_Subtitles_DLC4_Phasatron/Phasatron_102_Sentences
+المقصّ	SECATEUR	in-sentence item name [cell]	cell	Phasatron_dlc4|DT_Subtitles_DLC4_Phasatron/Phasatron_102_Sentences
+الفودكا	VODKA	in-sentence item name [cell]	cell	Schebetars_dlc1|/92AA53684471C5BAAE73B3B37349726E
+الفودكا	VODKA	in-sentence item name [cell]	cell	Schebetars_dlc1|/B0C531064B63B2F76C2E358FB49BE7C2
+مافن	Muffin	in-sentence item name [cell]	cell	Tech_dlc2|/0E8FA71745A76A9C2DB7BFAEB0C4CCB1
+كلوندايك	Klondike	in-sentence item name [cell]	cell	Tech_dlc2|/15627082409549DB9B39B4ACDFE108BE
+حلوى الكراميل	Karamel Candy	in-sentence item name [cell]	cell	Tech_dlc2|/186614C744675D3D25C1C5B773C4D687
+إسكيمو	Eskimo	in-sentence item name [cell]	cell	Tech_dlc2|/4E31B04848071C934DB32CB36431150D
+خولودوك	Kholodok	in-sentence item name [cell]	cell	Tech_dlc2|/62F583F0447450BE152331ACD3C0720C
+كلوندايك	Klondike	in-sentence item name [cell]	cell	Tech_dlc2|/6772719C49F878948B1B0EB48691C207
+فدج	Fudge	in-sentence item name [cell]	cell	Tech_dlc2|/771853884DE712EF44E3E6BDAB9A297B
+فدج	Fudge	in-sentence item name [cell]	cell	Tech_dlc2|/85D28D8F4EE6E018D7E3EF8E9FA4CEAC
+حلوى الكراميل	Karamel Candy	in-sentence item name [cell]	cell	Tech_dlc2|/9981B1894239311BFFA204AC2E6D1BA1
+إسكيمو	Eskimo	in-sentence item name [cell]	cell	Tech_dlc2|/9B37B5F74D324098BAE3A388EFAA7A9B
+مافن	Muffin	in-sentence item name [cell]	cell	Tech_dlc2|/D3AD3D764CF84859B7F3C89F385E85C7
+خولودوك	Kholodok	in-sentence item name [cell]	cell	Tech_dlc2|/FCC047EF4ADAA2346257C18540C9D3CD
+فودكا	VODKA	in-sentence item name [cell]	cell	Tech_dlc3|/239F3C0343975DA639320A89E0B92C9D
+حليب مكثّف	CONDENSED MILK	in-sentence item name [cell]	cell	Tech_dlc3|/2AD9BB6841AB898533EAC1AC85543AD9
+قاصف الرعد	Thunderclap	in-sentence item name [cell]	cell	Tech_dlc3|/DABB9186466BBA8FDB886088220FCA1C
+كلاش	KALASH	in-sentence item name [cell]	cell	Tech_dlc4|ST_Weapon/DA_Item_AK47_DLC4_Recipe_desc
+قاصف الرعد	Thunderclap	in-sentence item name [cell]	cell	Tech_dlc4|ST_Weapon/DA_Item_Gromoverzhec_DLC4_desc
+كلوشا	Klusha	in-sentence item name [cell]	cell	Tech_dlc4|ST_Weapon/DA_Item_Klusha_Recipe_DLC4_desc
+المقصّ	SECATEUR	in-sentence item name [cell]	cell	Tech_dlc4|ST_Weapon/DA_Item_Plasmagun_DLC4_Desc
+المقصّ	SECATEUR	in-sentence item name [cell]	cell	Tech_dlc4|ST_Weapon/DA_Item_Plasmagun_DLC4_DescShort
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	Theatre_Dialogues|/CDFE195842568157BE7EDCA7D5F983F7
+جهاز الغوص	Scuba gear	in-sentence item name [cell]	cell	Triton_dlc3|DT_Subtitles_DLC03_Triton/Triton_474_Sentences
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	Triton_dlc3|DT_Subtitles_DLC03_Triton/Triton_535_Sentences
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	Vavilov_Dialogues|/0F72600C4D2E14691FB1C1B9C1CD6D2A
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	Vavilov_Dialogues|/12AAFF1D4672111814F08DBB83E45D41
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	Vavilov_Dialogues|/33C70A1E4D1ABBF548BDA3AE66E8A1DC
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	Vavilov_Dialogues|/88B6674040CBAFF479CE3A8F99B4D4BC
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	Vavilov_Dialogues|/AE00C27B45285A3C6F404D99601911F5
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	Vavilov_Dialogues|/AF42CC014FE3671C806BEC8A13D6FFFF
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	Vavilov_Dialogues|/C54B60BC415408EF4335039FC7BBE1BB
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	Vavilov_Dialogues|/D36B3FF84249AC2C7435F3B82B6331BA
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	Vavilov_Dialogues|/DC17ED6441CC6B0ADB93FC82ED2D55C0
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	VDNKh_Dialogues|/15D846C646D20AB6BAB7E28CE59920B1
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	VDNKh_Dialogues|/C75DA2C642A9985ECA57869E95325862
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	WavePlatform_dlc4|/7F0C9CD34638E13647699DAD2BC6543F
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	WavePlatform_dlc4|DT_Subtitles_DLC4_WavePlatform/WavePlatform_108_Sentences
+البوليمر العصبي	NEUROPOLYMER	in-sentence item name [cell]	cell	WavePlatform_dlc4|DT_Subtitles_DLC4_WavePlatform/WavePlatform_33_Sentences

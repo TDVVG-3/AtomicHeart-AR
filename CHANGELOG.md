@@ -3,6 +3,41 @@
 All notable changes to this project are documented here.
 Format loosely follows Keep a Changelog.
 
+## [1.0.0] - 2026-10-28
+
+### Added
+- Public open-source release at <https://github.com/TDVVG-3/AtomicHeart-AR> (DEC-047).
+- **p12 release default:** clean canonical master + CHANGE 1 (original English
+  weapon/item names) + CHANGE 2 (P-3 speaker label `الرائد`).
+- p12 family build gates: validator, coverage, glyph gate, subtitle-stack audit,
+  35/35 carrier round-trip, temp-install matrix, and forced-rollback matrix.
+- `p12g` experimental timing build: H1 duplicate-start offsets, H2 end caps, H3
+  final-page ends, and 2,422 `*0-end*` inserts for markerless pages.
+- `reports/stack_test_guide.md`: non-developer VEGA 9 archive test procedure.
+- `reports/subtitle_bottom_bar_p12.md`: bottom-bar layout evidence and arithmetic.
+- `scripts/subtitle_stack_audit.ps1`, `scripts/apply_subtitle_caps.ps1`, and
+  `scripts/p12_gate_all.ps1`.
+
+### Changed
+- Default installed set is `p12 + font v3 + tips_x150`.
+- `scripts/switch_variant.ps1` now supports the p12 family and `_tips_x150`
+  variants, with any variant accepting `-RuOnly`.
+- README, STATUS, CONTRIBUTING, and DECISIONS updated for the public release.
+
+### Fixed
+- 1,140 P-3 speaker labels now render `الرائد`.
+- 123 in-sentence item-name rows use exact English names while preserving Arabic
+  descriptions.
+- The VEGA 9 archive scene's four H3 lines now carry explicit ends in `p12g`;
+  audit count drops from 4/4 to 0/4.
+
+### Known limitations
+- H1m/H1k/H4 are stock DataTable-level conditions and are not fixable in a
+  locres-only pak.
+- 343 H3 rows have no usable clip duration.
+- The bottom-bar clip may persist when four lines are visible; exact clip owner is
+  `UNKNOWN`.
+
 ## [Unreleased]
 
 ### Fixed (Cycle 005 - 2026-10-18)

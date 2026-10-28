@@ -24,16 +24,22 @@
 [CmdletBinding()]
 param(
     [string]$RepoRoot = 'C:\AtomicHeart-AR',
+    [string]$MasterTsV = '',
+    [string]$ReportPath = '',
+    [switch]$AllowFinalMarkerRange,
+    [switch]$AllowTimingRepair,
     [switch]$Quiet
 )
 $ErrorActionPreference = 'Stop'
 try { [Console]::OutputEncoding = [Text.Encoding]::UTF8 } catch {}
 trap { Write-Output ('ERROR at line ' + $_.InvocationInfo.ScriptLineNumber + ': ' + $_.Exception.Message); exit 1 }
 
-$masterPath = Join-Path $RepoRoot 'localization\master\atomic-heart-ar.tsv'
+if (-not $MasterTsV) { $MasterTsV = Join-Path $RepoRoot 'localization\master\atomic-heart-ar.tsv' }
+$masterPath = $MasterTsV
 $glossPath  = Join-Path $RepoRoot 'glossary\glossary.tsv'
-$reportPath = Join-Path $RepoRoot 'reports\translation_validation.md'
-$allowedStatus = @('UNTRANSLATED','DRAFT','REVIEWED','APPROVED','TECHNICAL','BLOCKED')
+if (-not $ReportPath) { $ReportPath = Join-Path $RepoRoot 'reports\translation_validation.md' }
+$reportPath = $ReportPath
+$allowedStatus = @('UNTRANSLATED','DRAFT','REVIEWED','APPROVED','TECHNICAL','BLOCKED','COPY')
 
 function Get-Multiset([string]$s, [string]$pattern) {
     $m = [regex]::Matches($s, $pattern)
@@ -44,6 +50,54 @@ function Get-Multiset([string]$s, [string]$pattern) {
 function Get-Tags([string]$s) { return Get-Multiset $s '<[^<>]*>' }
 function Get-Placeholders([string]$s) { return (Get-Multiset $s '\{[^{}]*\}|%[sdifx]') + '#' + (Get-Multiset $s '\\[nrt]') }
 function Get-Markers([string]$s) { return (Get-Multiset $s '\*[0-9][0-9.\-]*\*') + '#' + (Get-Multiset $s '&[^&]{1,30}&') }
+function Test-FinalMarkerRange([string]$en, [string]$ar) {
+    $rx = [regex]'\*([0-9]+(?:\.[0-9]+)?)(?:-([0-9]+(?:\.[0-9]+)?))?\*'
+    $em = $rx.Matches($en); $am = $rx.Matches($ar)
+    if ($em.Count -ne $am.Count) { return $false }
+    if ((Get-Multiset $ar '&[^&]{1,30}&') -ne (Get-Multiset $en '&[^&]{1,30}&')) { return $false }
+    for ($i = 0; $i -lt $em.Count; $i++) {
+        if ($em[$i].Groups[1].Value -cne $am[$i].Groups[1].Value) { return $false }
+        $er = $em[$i].Groups[2].Success; $arr = $am[$i].Groups[2].Success
+        if ($er -and -not $arr) { return $false }
+        if (-not $er -and $arr -and $i -ne $em.Count - 1) { return $false }
+        if ($er -and $arr) {
+            $ee = [double]::Parse($em[$i].Groups[2].Value, [Globalization.CultureInfo]::InvariantCulture)
+            $ae = [double]::Parse($am[$i].Groups[2].Value, [Globalization.CultureInfo]::InvariantCulture)
+            if ($ae -lt $ee - 0.0001) { return $false }
+        }
+    }
+    return $true
+}
+function Test-TimingRepair([string]$en, [string]$ar) {
+    $rx = [regex]'\*([0-9]+(?:\.[0-9]+)?)(?:-([0-9]+(?:\.[0-9]+)?))?\*'
+    $em = $rx.Matches($en); $am = $rx.Matches($ar)
+    if ((Get-Multiset $ar '&[^&]{1,30}&') -ne (Get-Multiset $en '&[^&]{1,30}&')) { return $false }
+    if ($em.Count -eq 0) {
+        # A markerless Arabic cell may gain exactly one *0-end* page range.
+        if ($am.Count -eq 0) { return $true }
+        if ($am.Count -ne 1) { return $false }
+        $s = [double]::Parse($am[0].Groups[1].Value, [Globalization.CultureInfo]::InvariantCulture)
+        if ($s -ne 0) { return $false }
+        if (-not $am[0].Groups[2].Success) { return $false }
+        $e = [double]::Parse($am[0].Groups[2].Value, [Globalization.CultureInfo]::InvariantCulture)
+        return ($e -gt 0)
+    }
+    if ($em.Count -ne $am.Count) { return $false }
+    for ($i = 0; $i -lt $em.Count; $i++) {
+        $es = [double]::Parse($em[$i].Groups[1].Value, [Globalization.CultureInfo]::InvariantCulture)
+        $as = [double]::Parse($am[$i].Groups[1].Value, [Globalization.CultureInfo]::InvariantCulture)
+        if ($as -lt $es - 0.0001) { return $false }
+        if ($as -gt $es + 0.05) { return $false }
+        $er = $em[$i].Groups[2].Success; $arr = $am[$i].Groups[2].Success
+        if ($er -and -not $arr) { return $false }
+        if ($arr) {
+            $ae = [double]::Parse($am[$i].Groups[2].Value, [Globalization.CultureInfo]::InvariantCulture)
+            if ($ae -lt $as - 0.0001) { return $false }
+            if (-not $er -and $i -ne $em.Count - 1) { return $false }
+        }
+    }
+    return $true
+}
 function Get-Numbers([string]$s) { return Get-Multiset $s '[0-9]+' }
 function Get-Core([string]$s) {
     if (-not $s) { return '' }
@@ -116,7 +170,8 @@ if (Test-Path $gexPath) {
 }
 
 $lines = [IO.File]::ReadAllLines($masterPath, [Text.Encoding]::UTF8)
-$nRows = 0; $nTranslated = 0
+$nRows = 0; $nTranslated = 0; $nCopy = 0
+$copyByScope = @{}
 $errors = New-Object System.Collections.Generic.List[string]
 $warnings = New-Object System.Collections.Generic.List[string]
 $lenWarn = 0; $glossWarn = 0; $numWarn = 0; $glossExc = 0
@@ -137,6 +192,12 @@ for ($i = 1; $i -lt $lines.Count; $i++) {
     if ($allowedStatus -notcontains $st) { $errors.Add(("line {0}: Status '{1}' is not allowed" -f ($i + 1), $st)) }
 
     if (-not $ar.Trim()) {
+        if ($st -eq 'COPY') {
+            $nCopy++
+            if (-not $copyByScope.ContainsKey($scope)) { $copyByScope[$scope] = 0 }
+            $copyByScope[$scope]++
+            continue
+        }
         if ($st -in @('DRAFT', 'REVIEWED', 'APPROVED')) { $errors.Add(("line {0}: Status {1} but Arabic is empty" -f ($i + 1), $st)) }
         continue
     }
@@ -149,7 +210,13 @@ for ($i = 1; $i -lt $lines.Count; $i++) {
     # hard checks
     if ((Get-Tags $ar) -ne (Get-Tags $en)) { $errors.Add(("line {0}: rich-text tag multiset differs (en=[{1}] ar=[{2}])" -f ($i + 1), (Get-Tags $en), (Get-Tags $ar))) }
     if ((Get-Placeholders $ar) -ne (Get-Placeholders $en)) { $errors.Add(("line {0}: placeholder/escape multiset differs (en=[{1}] ar=[{2}])" -f ($i + 1), (Get-Placeholders $en), (Get-Placeholders $ar))) }
-    if ((Get-Markers $ar) -ne (Get-Markers $en)) { $errors.Add(("line {0}: fragment/speaker marker multiset differs (en=[{1}] ar=[{2}])" -f ($i + 1), (Get-Markers $en), (Get-Markers $ar))) }
+    if ($AllowTimingRepair) {
+        if (-not (Test-TimingRepair $en $ar)) { $errors.Add(("line {0}: timing-repair audit failed (en=[{1}] ar=[{2}])" -f ($i + 1), (Get-Markers $en), (Get-Markers $ar))) }
+    } elseif ($AllowFinalMarkerRange) {
+        if (-not (Test-FinalMarkerRange $en $ar)) { $errors.Add(("line {0}: final-marker-range audit failed (en=[{1}] ar=[{2}])" -f ($i + 1), (Get-Markers $en), (Get-Markers $ar))) }
+    } elseif ((Get-Markers $ar) -ne (Get-Markers $en)) {
+        $errors.Add(("line {0}: fragment/speaker marker multiset differs (en=[{1}] ar=[{2}])" -f ($i + 1), (Get-Markers $en), (Get-Markers $ar)))
+    }
     if ($ar -ceq $en) { $errors.Add(("line {0}: Arabic is identical to English (untranslated)" -f ($i + 1))) }
     if ($ar.IndexOf([char]0xFFFD) -ge 0) { $errors.Add(("line {0}: Arabic contains U+FFFD" -f ($i + 1))) }
     if ([regex]::IsMatch($ar, '[\u00D8\u00D9][\u0080-\u00BF]')) { $errors.Add(("line {0}: Arabic looks like UTF-8-read-as-Latin-1 mojibake" -f ($i + 1))) }
@@ -157,7 +224,7 @@ for ($i = 1; $i -lt $lines.Count; $i++) {
     if (-not (Has-ArabicLetter $ar)) { $errors.Add(("line {0}: Arabic contains no Arabic letter" -f ($i + 1))) }
 
     # warnings
-    if ((Get-Numbers $ar) -ne (Get-Numbers $en)) { $numWarn++; if ($warnings.Count -lt 400) { $warnings.Add(("line {0}: number multiset differs (en=[{1}] ar=[{2}])" -f ($i + 1), (Get-Numbers $en), (Get-Numbers $ar))) } }
+    if ($en.Trim() -cne 'P-3' -and (Get-Numbers $ar) -ne (Get-Numbers $en)) { $numWarn++; if ($warnings.Count -lt 400) { $warnings.Add(("line {0}: number multiset differs (en=[{1}] ar=[{2}])" -f ($i + 1), (Get-Numbers $en), (Get-Numbers $ar))) } }
     if ($cat -eq 'UI' -and $en.Trim().Length -ge 12 -and $ar.Length -gt ($en.Length * 1.2)) { $lenWarn++; if ($warnings.Count -lt 400) { $warnings.Add(("line {0}: UI length {1} > 1.2 x {2}" -f ($i + 1), $ar.Length, $en.Length)) } }
     $coreAr = Get-Core $ar
     # the glossary check reads PROSE: markers, tags, bracket labels and channel handles are not words
@@ -200,6 +267,8 @@ $r.Add('| metric | value |')
 $r.Add('|---|---|')
 $r.Add(('| master rows | {0} |' -f $nRows))
 $r.Add(('| rows with Arabic | {0} |' -f $nTranslated))
+$r.Add(('| copy-class rows (keep original name) | {0} |' -f $nCopy))
+$r.Add(('| translated or copy-class | {0} of {1} |' -f ($nTranslated + $nCopy), $nRows))
 $r.Add(('| hard errors | {0} |' -f $errors.Count))
 $r.Add(('| warnings (number/length/glossary) | {0} |' -f ($numWarn + $lenWarn + $glossWarn)))
 $r.Add(('| - number-multiset warnings | {0} |' -f $numWarn))
@@ -219,6 +288,12 @@ $r.Add('| scope | rows with Arabic |')
 $r.Add('|---|---|')
 foreach ($k in ($byScope.Keys | Sort-Object { -$byScope[$_] })) { $r.Add(('| {0} | {1} |' -f $k, $byScope[$k])) }
 $r.Add('')
+$r.Add('## Copy-class rows per scope (keep original name)')
+$r.Add('')
+$r.Add('| scope | copy-class rows |')
+$r.Add('|---|---|')
+foreach ($k in ($copyByScope.Keys | Sort-Object { -$copyByScope[$_] })) { $r.Add(('| {0} | {1} |' -f $k, $copyByScope[$k])) }
+$r.Add('')
 $r.Add('## Translated rows per category')
 $r.Add('')
 $r.Add('| category | rows with Arabic |')
@@ -236,7 +311,7 @@ $r.Add('')
 [IO.File]::WriteAllLines($reportPath, $r, (New-Object Text.UTF8Encoding($false)))
 
 if (-not $Quiet) {
-    Write-Output ('VALIDATOR {0}: rows={1} translated={2} errors={3} warnings={4} (number {5} / length {6} / glossary {7}, exceptions {8})' -f $status, $nRows, $nTranslated, $errors.Count, ($numWarn + $lenWarn + $glossWarn), $numWarn, $lenWarn, $glossWarn, $glossExc)
+    Write-Output ('VALIDATOR {0}: rows={1} translated={2} copy={3} translated-or-copy={4} of {1} errors={5} warnings={6} (number {7} / length {8} / glossary {9}, exceptions {10})' -f $status, $nRows, $nTranslated, $nCopy, ($nTranslated + $nCopy), $errors.Count, ($numWarn + $lenWarn + $glossWarn), $numWarn, $lenWarn, $glossWarn, $glossExc)
     foreach ($e in ($errors | Select-Object -First 20)) { Write-Output ('  ERROR: ' + $e) }
     foreach ($w in ($warnings | Select-Object -First 15)) { Write-Output ('  warn : ' + $w) }
     Write-Output ('report: ' + $reportPath)

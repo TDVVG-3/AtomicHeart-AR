@@ -1,6 +1,7 @@
 # Binaries and raw game data — never commit
 tools/bin/
 source/original/
+build/
 build/staging/
 build/package/
 dist/*.pak

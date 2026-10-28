@@ -99,6 +99,28 @@ Gates:
   rows that use explicit ranges (133 rows, 683 ranges) and leaves singleton dialogue
   untouched.
 
+## 2026-10-26 blueprint follow-up - CONFIRMED fade, still no hold constant
+
+The cooked widget bytecode was decoded after the original report. The earlier "layout only"
+row for `WBP_NPCSubtitle` was incomplete:
+
+- `WBP_OneSubtitle.Hide` calls `RemoveFromParent` immediately after clearing the typing text
+  and speaker name. No timer, no fade.
+- `WBP_Subtitle.HideSentence(Marker)` calls that `Hide` on the matching widget and removes
+  the map entry.
+- `WBP_TypingTextBox.AnimatedHide()` plays a `Hide` animation with `RenderOpacity` 1.0 -> 0.0
+  over **9000 ticks at 60000 ticks/s = 0.15 s**.
+- `WBP_NPCSubtitle.HideBack` has the same **0.15 s** `RenderOpacity` fade (plus a
+  `WidthOverride` track). `HideWidget` itself only toggles `Overlay_0` visibility.
+- `BP_SubtitlesSubsystem` has no script functions; its defaults are `WidgetTemplate`,
+  `SubtitleSizeScale=0.75`, the subtitle tables, and `bShouldBeCreated`.
+- Cooked INI has **no** `[/Script/AtomicHeart.SubtitlesSubsystem]` section and no
+  hold/fade/minimum-display key.
+
+This confirms the fade path, but it does **not** provide a display-duration lever. The native
+`SubtitlesSubsystem` scheduler remains UNKNOWN. Full evidence:
+[`reports/p4_subtitle_hide_blueprint.md`](p4_subtitle_hide_blueprint.md).
+
 ## What to look at in game
 
 - A cinematic conversation with explicit ranges (Academy / Verbitsky-style report): pages

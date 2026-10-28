@@ -99,7 +99,7 @@ foreach ($n in $stockBefore) {
 $verdict = if ($problems.Count -eq 0) { 'PASS' } else { 'FAIL' }
 
 $md = New-Object System.Collections.Generic.List[string]
-$md.Add('# Install verification (pilot: carrier p3 + font v2)')
+$md.Add('# Install verification')
 $md.Add('')
 $md.Add(('Generated: {0}' -f (Get-Date -Format 'yyyy-MM-dd HH:mm:ss')))
 $md.Add(('Game root: `{0}`' -f $b.game_root))

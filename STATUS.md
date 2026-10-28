@@ -1,68 +1,73 @@
-# STATUS — Atomic Heart Arabic localization (English-sourced, text only)
+# Status - Atomic Heart Arabic localization
 
-**As of:** 2026-10-20 23:41 +03:00 · cycle 015 closed · Steam app 668580
+**As of:** 2026-10-28 15:51:57 +03:00
+**Release:** p12 (`p12 + font v3 + tips_x150`)
+**Game:** Atomic Heart, Steam app `668580`, build `24534183`
 
-## Headline
+## Current release
 
 | metric | value |
-|---|---|
-| coverage of all rows | **26,022 of 27,618 (94.22%)** |
-| coverage of translatable rows | **26,022 of 26,022 (100%)** |
-| tier 1 (25% = 6,905) | DONE |
-| tier 2 (50% = 13,809) | DONE |
-| tier 3 (75% = 20,714) | DONE |
-| tier 4 (100% = 27,618) | DONE for translatable rows — batch 4 finished |
-| remaining rows | 1,596 copy-class rows (identifiers, numbers, placeholders, proper names), English-filled by design |
-| rows needing review | 0 |
-| next unauthored plan id | none — all 15,824 ids authored (b0001–b15824) |
+| --- | ---: |
+| master rows | 27,618 |
+| translated or copy-covered | 27,175 |
+| Arabic rows | 26,717 |
+| COPY (original English name) rows | 458 |
+| untranslated copy-class rows | 443 |
+| P-3 speaker-label rows changed to `الرائد` | 1,140 |
+| in-sentence item-name rows changed | 123 |
+| validator hard errors (p12) | 0 |
+| validator warnings (p12) | 296 |
 
-## Master, TM and plan
+## Installed set
 
-| item | value |
-|---|---|
-| master | `localization\master\atomic-heart-ar.tsv`, 27,618 rows × 13 cols, 26,022 Arabic (status DRAFT), 1,596 UNTRANSLATED copy-class |
-| TM | `localization\working\tm.tsv`, 19,733 entries (line 1 is the header `english/arabic/source`) |
-| work order | `localization\working\batch2\plan_unique.tsv`, 15,824 ids (game-progression order), fully authored |
-| authoring chunks applied | 0002–0015 (cycle 013), 0016–0038 (cycle 014), **0039–0054 (cycle 015)** |
-| copy-class accounting | `reports\coverage_cycle015.md` (reasons) and `reports\english_filled_rows.tsv` (all 1,596 rows) |
+The release default is:
 
-## Gates (last run, this cycle)
+- `zzz_atomicheart-ar_carrier_koKR_p12_P.pak`
+- `zzz_atomicheart-ar_font_p3_unhinted_P.pak`
+- `zzz_atomicheart-ar_tips_x150_P.pak`
+- `atomic-heart-ar-install-manifest.json`
+
+`Paks\~mods` contains exactly these four files. The game language stays **Korean**; the
+carrier fills the Korean text slot. Install verification is **PASS**: 0 changes outside
+`~mods`, stock paks 19 before / 19 after, `AtomicHeart.exe` unchanged.
+
+## Gates
 
 | gate | result |
-|---|---|
-| `validate_translation.ps1` | **PASS** — 27,618 rows, 26,022 translated, **0 errors**, 259 warnings (number 122 / length 112 / glossary 25) |
-| `glyph_gate.ps1 -AllowSourceInheritedNonLatin` | **PASS** — 195 distinct codepoints, 46 source-inherited, **0 introduced by Arabic** |
-| `verify_text_fixups.ps1` | **PASS** — 87 rules, integrity 85 rows, 0 mismatches, 0 English missing from TM (DEC-038) |
-| `trim_trailing_ws.ps1` | 0 rows trimmed |
-| carrier round-trip (`build_carrier_locres_pak.ps1`) | 35/35 scopes, 27,617 exact + 1 newline-normalised, **fail 0** |
-| `verify_install.ps1` | **PASS** — 0 problems, expected file set |
+| --- | --- |
+| validator, six p12 variants | PASS, 0 hard errors |
+| coverage | PASS, 27,618/27,618 accounted |
+| glyph gate, font v3 | PASS, 0 Arabic-introduced missing codepoints |
+| carrier round-trip | 35/35, unpack byte-identical |
+| subtitle stack audit | PASS, H1-H4 report written |
+| temp install / forced rollback | PASS for p12 family, tips, RU-only |
+| final install verification | PASS |
 
-Warnings are advisory and triaged:
-* **number (122)** — Arabic writes numbers as words (`fifty`, `80 ألف`) or uses unseparated digits, and
-  the checker counts timing markers separately; a sample with and without digits showed no lost or
-  altered number.
-* **length (112)** — Arabic longer than 1.2x the English; expected for dialogue, glossary-mandated
-  terms and documents. UI length evidence: `reports\ui_length_watch.md` (KI-026).
-* **glossary (25)** — sense/form cases only (Terminal 7, Major 6, Phasotron 2, Comrade 2, Upgrade 2,
-  Argentum 1, Snowball 1, Archive 1, Neuropolymer 1, Professor 1, Doctor 1), all reviewed (KI-033).
+## Built but not installed
 
-## Installed build
+`p12g`, `p12c`, `p12e`, `p12f`, `p12ef`, and all RU-only combinations are built and gated
+but **not installed**. Only the p12 default is approved for the current install. See
+`HANDOFF.md` for SHA256s and exact switch/rollback commands.
 
-* carrier **p10** `zzz_atomicheart-ar_carrier_koKR_p10_P.pak` — 4,473,788 B,
-  sha256 `7fbed3a87fafb547ecf4a2557a590ae0d7c05da304a3c7f6facb7bb34ef49393`
-* font **p2_plex** `zzz_atomicheart-ar_font_p2_plex_P.pak` — 1,461,408 B,
-  sha256 `02b17f31e61a46ddba20bea8c4da5be44164173df608d52697f68d27d8269747`
-* manifest `atomic-heart-ar-install-manifest.json` — sha256 `c34ac3a148c120a8d1a914641a2f5a91f2a1736d19d4ef7f43ac40867638d474`
-* `~mods` holds exactly these 3 files; in-game language stays **Korean**
-* rollback: `install_mod.ps1 -Carrier p9 -Font p2_plex`
-* p10 is **not yet play-tested** (p7 canal-boat scene remains the last in-game proof)
+## Known limitations
 
-## Docs
+- H1m/H1k/H4 are stock DataTable-level conditions; a locres-only pak cannot repair them.
+- 197 non-monotonic H1 tracks were left byte-exact.
+- 343 H3 rows remain because no clip duration is available.
+- Absolute DataTable row start offsets are unavailable; cross-line timing uses clip and
+  reading-speed caps.
+- The bottom-bar cut can remain when four lines are visible; `p12g` reduces concurrency
+  duration but does not change the 150 px layout. The exact clip owner is `UNKNOWN`.
 
-`DECISIONS.md` through DEC-046 · `KNOWN_ISSUES.md` through KI-036 · `ROADMAP.md` ·
-`localization\working\batch2\AUTHORING_BRIEF.md` · `glossary\terminology.md` (§1-13) ·
-`glossary\glossary.tsv` (pipe-separated accepted renderings, optional `cs` flag) ·
-`reports\cycle015_results.md` · `reports\coverage_cycle015.md` · `reports\english_filled_rows.tsv` ·
-`reports\ui_length_watch.md` · `reports\review_sample.md` · `reports\translation_validation.md` ·
-`reports\carrier_build.md` · `reports\install_verification.md` · `reports\glyph_gate.md` ·
-`reports\text_fixups_log.md` · `localization\references\AR_EN_REFERENCE.md`
+## Evidence
+
+Start with:
+
+- `reports/p12_gate_all.md`
+- `reports/p12_master.md`
+- `reports/install_verification.md`
+- `reports/subtitle_stack_audit_p12.md`
+- `reports/subtitle_stack_audit_p12g.md`
+- `reports/subtitle_bottom_bar_p12.md`
+- `reports/stack_test_guide.md`
+- `HANDOFF.md`

@@ -50,6 +50,38 @@ namespace uasettool
                 return 0;
             }
 
+            if (mode == "probe")
+            {
+                void DumpType(Type t)
+                {
+                    Console.WriteLine("TYPE " + t.FullName);
+                    foreach (var f in t.GetFields(System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.Static))
+                        Console.WriteLine("  FIELD " + f.FieldType.FullName + " " + f.Name);
+                    foreach (var p in t.GetProperties(System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Instance))
+                        Console.WriteLine("  PROP " + p.PropertyType.FullName + " " + p.Name);
+                }
+                DumpType(typeof(FStringTable));
+                DumpType(typeof(StringTableExport));
+                foreach (var e in asset.Exports)
+                {
+                    Console.WriteLine("EXPORT " + e.ObjectName + " :: " + e.GetType().FullName);
+                    if (e is StringTableExport ste)
+                    {
+                        Console.WriteLine("  Table runtime type: " + (ste.Table == null ? "null" : ste.Table.GetType().FullName));
+                        if (ste.Table != null) DumpType(ste.Table.GetType());
+                        if (ste.Table != null)
+                        {
+                            foreach (var kv in ste.Table)
+                            {
+                                string vs = kv.Value == null ? "" : kv.Value.ToString();
+                                Console.WriteLine("  ENTRY " + kv.Key + " LEN " + vs.Length + " B64 " + Convert.ToBase64String(Encoding.UTF8.GetBytes(vs)));
+                            }
+                        }
+                    }
+                }
+                return 0;
+            }
+
             if (mode == "dtstat")
             {
                 var sb = new StringBuilder();
@@ -142,6 +174,141 @@ namespace uasettool
 
                 asset.Write(outPath);
                 Console.WriteLine("set " + count + " value(s) of " + prop + " to " + rawValue + " -> " + outPath);
+                return 0;
+            }
+
+            if (mode == "settext")
+            {
+                if (args.Length < 3)
+                {
+                    Console.WriteLine("usage: uasettool settext <uasset> <map.tsv> [out] [--strict]");
+                    return 2;
+                }
+                string mapPath = args[2];
+                bool strict = false;
+                string outPath = null;
+                for (int i = 3; i < args.Length; i++)
+                {
+                    if (args[i] == "--strict") strict = true;
+                    else outPath = args[i];
+                }
+                if (outPath == null) outPath = path;
+
+                // map: kind \t field \t oldBase64 \t newBase64
+                var map = new Dictionary<string, string>(StringComparer.Ordinal);
+                var keyKind = new Dictionary<string, string>(StringComparer.Ordinal);
+                foreach (var line in File.ReadAllLines(mapPath, new UTF8Encoding(false)))
+                {
+                    if (line.Length == 0 || line[0] == '#') continue;
+                    var cols = line.Split('\t');
+                    if (cols.Length < 4) continue;
+                    if (cols[0] == "kind") continue;
+                    string kind = cols[0];
+                    string field = cols[1];
+                    string oldText = Encoding.UTF8.GetString(Convert.FromBase64String(cols[2]));
+                    string newText = Encoding.UTF8.GetString(Convert.FromBase64String(cols[3]));
+                    string k = kind + "\u0001" + field + "\u0001" + oldText;
+                    if (map.ContainsKey(k))
+                    {
+                        if (map[k] != newText)
+                        {
+                            Console.Error.WriteLine("conflicting translations for " + kind + "/" + field + " old=" + oldText);
+                            return 4;
+                        }
+                    }
+                    else map[k] = newText;
+                }
+
+                int changed = 0;
+                var hits = new Dictionary<string, int>(StringComparer.Ordinal);
+                void ApplyProps(List<PropertyData> props, string kind)
+                {
+                    if (props == null) return;
+                    foreach (var p in props)
+                    {
+                        if (p == null) continue;
+                        string pn = p.Name == null ? "" : p.Name.ToString();
+                        if (p is TextPropertyData tp && tp.CultureInvariantString != null)
+                        {
+                            string old = tp.CultureInvariantString.ToString();
+                            foreach (var k in new[] { kind + "\u0001" + pn + "\u0001" + old, kind + "\u0001" + "\u0001" + old })
+                            {
+                                if (map.TryGetValue(k, out var nv))
+                                {
+                                    tp.CultureInvariantString = new FString(nv);
+                                    changed++; hits[k] = (hits.TryGetValue(k, out var c) ? c : 0) + 1;
+                                    break;
+                                }
+                            }
+                        }
+                        else if (p is StrPropertyData spd && spd.Value != null)
+                        {
+                            string old = spd.Value.ToString();
+                            foreach (var k in new[] { kind + "\u0001" + pn + "\u0001" + old, kind + "\u0001" + "\u0001" + old })
+                            {
+                                if (map.TryGetValue(k, out var nv))
+                                {
+                                    spd.Value = new FString(nv);
+                                    changed++; hits[k] = (hits.TryGetValue(k, out var c) ? c : 0) + 1;
+                                    break;
+                                }
+                            }
+                        }
+                        if (p is StructPropertyData st && st.Value != null) ApplyProps(st.Value, kind);
+                        if (p is ArrayPropertyData ap && ap.Value != null)
+                            foreach (var item in ap.Value)
+                            {
+                                if (item is StructPropertyData st2 && st2.Value != null) ApplyProps(st2.Value, kind);
+                                else if (item != null) ApplyProps(new List<PropertyData> { item }, kind);
+                            }
+                    }
+                }
+
+                foreach (var e in asset.Exports)
+                {
+                    if (e is DataTableExport dte)
+                    {
+                        foreach (var row in dte.Table.Data) ApplyProps(row.Value, "DataTable");
+                    }
+                    else if (e is StringTableExport ste && ste.Table != null)
+                    {
+                        var keys = new List<FString>(ste.Table.Keys);
+                        foreach (var key in keys)
+                        {
+                            FString val = ste.Table[key];
+                            if (val == null) continue;
+                            string old = val.ToString();
+                            foreach (var k in new[] { "StringTable\u0001Table\u0001" + old, "StringTable\u0001\u0001" + old })
+                            {
+                                if (map.TryGetValue(k, out var nv))
+                                {
+                                    ste.Table[key] = new FString(nv);
+                                    changed++; hits[k] = (hits.TryGetValue(k, out var c) ? c : 0) + 1;
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                    else if (e is NormalExport ne)
+                    {
+                        ApplyProps(ne.Data, "Normal");
+                    }
+                }
+
+                int missing = 0;
+                foreach (var k in map.Keys)
+                {
+                    if (!hits.ContainsKey(k))
+                    {
+                        missing++;
+                        var parts = k.Split('\u0001');
+                        Console.WriteLine("MISSING\t" + parts[0] + "\t" + parts[1] + "\t" + parts[2]);
+                    }
+                }
+
+                asset.Write(outPath);
+                Console.WriteLine("changed=" + changed + " mapRows=" + map.Count + " missing=" + missing + " -> " + outPath);
+                if (strict && missing > 0) return 5;
                 return 0;
             }
 

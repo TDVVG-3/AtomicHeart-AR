@@ -1,8 +1,8 @@
 # Carrier pak build report
 
-Generated: 2026-10-24 16:23:21
-Variant: **p11c**  |  pak: `C:\AtomicHeart-AR\build\package\zzz_atomicheart-ar_carrier_koKR_p11c_P.pak`
-sha256: `cfb590e87e6e14e17a07e704d7d6065c5392ea98b70cf6702231746d3c4b8815`  |  size: 4474004 bytes
+Generated: 2026-10-28 14:08:16
+Variant: **p12ef**  |  pak: `build\package\zzz_atomicheart-ar_carrier_koKR_p12ef_P.pak`
+sha256: `db4387cc799e38c3fbcbfda5a2df63dbea99e1b5a8cb9e8332c771f2cd54974f`  |  size: 4463315 bytes
 
 Fill policy: Arabic (master non-empty) > English (en-US same key) > keep Korean.
 
@@ -10,8 +10,8 @@ Fill policy: Arabic (master non-empty) > English (en-US same key) > keep Korean.
 |---|---|
 | scopes covered | 35 |
 | total ko-KR keys | 27618 |
-| Arabic rows | 26022 |
-| english-filled keys | 1596 |
+| Arabic rows | 26717 |
+| english-filled keys | 901 |
 | kept Korean (no en-US text) | 0 |
 | round-trip exact | 27617 |
 | round-trip newline-normalized only | 1 |
@@ -22,40 +22,40 @@ Fill policy: Arabic (master non-empty) > English (en-US same key) > keep Korean.
 
 | scope | ko keys | Arabic | English | kept Korean | exact | newline-only | fail |
 |---|---|---|---|---|---|---|---|
-| Academy_Dialogues | 282 | 259 | 23 | 0 | 282 | 0 | 0 |
-| Chelomey_Dialogues | 1204 | 1119 | 85 | 0 | 1204 | 0 | 0 |
-| Chelomey_dlc3 | 776 | 772 | 4 | 0 | 776 | 0 | 0 |
-| ChelomeyFinal_Dialogues | 214 | 186 | 28 | 0 | 214 | 0 | 0 |
+| Academy_Dialogues | 282 | 282 | 0 | 0 | 282 | 0 | 0 |
+| Chelomey_Dialogues | 1204 | 1201 | 3 | 0 | 1204 | 0 | 0 |
+| Chelomey_dlc3 | 776 | 773 | 3 | 0 | 776 | 0 | 0 |
+| ChelomeyFinal_Dialogues | 214 | 214 | 0 | 0 | 214 | 0 | 0 |
 | CrystalComplex_dlc4 | 1219 | 1219 | 0 | 0 | 1219 | 0 | 0 |
-| CUTSCENES | 840 | 720 | 120 | 0 | 840 | 0 | 0 |
-| Cutscenes_dlc1 | 421 | 417 | 4 | 0 | 421 | 0 | 0 |
+| CUTSCENES | 840 | 839 | 1 | 0 | 840 | 0 | 0 |
+| Cutscenes_dlc1 | 421 | 418 | 3 | 0 | 421 | 0 | 0 |
 | DIALOGUES FOR LQA | 746 | 746 | 0 | 0 | 746 | 0 | 0 |
 | LebedevLab_dlc4 | 460 | 460 | 0 | 0 | 460 | 0 | 0 |
-| Locations_dlc2 | 816 | 815 | 1 | 0 | 816 | 0 | 0 |
+| Locations_dlc2 | 816 | 816 | 0 | 0 | 816 | 0 | 0 |
 | Mails_01 | 454 | 454 | 0 | 0 | 454 | 0 | 0 |
 | Mails_Shebetars_dlc2 | 246 | 246 | 0 | 0 | 246 | 0 | 0 |
 | Mails_Shebetars_dlc4 | 756 | 756 | 0 | 0 | 756 | 0 | 0 |
 | Mails_Shebetars_Tech_dlc3 | 579 | 578 | 1 | 0 | 579 | 0 | 0 |
 | Marshes_dlc1 | 156 | 155 | 1 | 0 | 156 | 0 | 0 |
 | Mendeleev_dlc1 | 411 | 411 | 0 | 0 | 411 | 0 | 0 |
-| Misc | 21 | 19 | 2 | 0 | 21 | 0 | 0 |
-| NewP5 | 5597 | 5332 | 265 | 0 | 5597 | 0 | 0 |
+| Misc | 21 | 20 | 1 | 0 | 21 | 0 | 0 |
+| NewP5 | 5597 | 5071 | 526 | 0 | 5597 | 0 | 0 |
 | NTD | 1429 | 1405 | 24 | 0 | 1428 | 1 | 0 |
-| OpenWorldVDNKh_Dialogues | 443 | 432 | 11 | 0 | 443 | 0 | 0 |
-| Pavlov_Dialogues | 520 | 404 | 116 | 0 | 520 | 0 | 0 |
+| OpenWorldVDNKh_Dialogues | 443 | 443 | 0 | 0 | 443 | 0 | 0 |
+| Pavlov_Dialogues | 520 | 520 | 0 | 0 | 520 | 0 | 0 |
 | PearTerminals | 545 | 539 | 6 | 0 | 545 | 0 | 0 |
 | Phasatron_dlc4 | 489 | 489 | 0 | 0 | 489 | 0 | 0 |
-| Polygon_Dialogues | 199 | 150 | 49 | 0 | 199 | 0 | 0 |
+| Polygon_Dialogues | 199 | 199 | 0 | 0 | 199 | 0 | 0 |
 | Sakhalin_dlc3 | 848 | 842 | 6 | 0 | 848 | 0 | 0 |
 | Schebetar_Subs | 361 | 360 | 1 | 0 | 361 | 0 | 0 |
 | Schebetars_dlc1 | 96 | 94 | 2 | 0 | 96 | 0 | 0 |
-| Tech_dlc2 | 228 | 161 | 67 | 0 | 228 | 0 | 0 |
-| Tech_dlc3 | 422 | 400 | 22 | 0 | 422 | 0 | 0 |
-| Tech_dlc4 | 1273 | 1262 | 11 | 0 | 1273 | 0 | 0 |
-| Theatre_Dialogues | 629 | 572 | 57 | 0 | 629 | 0 | 0 |
+| Tech_dlc2 | 228 | 143 | 85 | 0 | 228 | 0 | 0 |
+| Tech_dlc3 | 422 | 382 | 40 | 0 | 422 | 0 | 0 |
+| Tech_dlc4 | 1273 | 1117 | 156 | 0 | 1273 | 0 | 0 |
+| Theatre_Dialogues | 629 | 629 | 0 | 0 | 629 | 0 | 0 |
 | Triton_dlc3 | 928 | 928 | 0 | 0 | 928 | 0 | 0 |
-| Vavilov_Dialogues | 2427 | 1962 | 465 | 0 | 2427 | 0 | 0 |
-| VDNKh_Dialogues | 1292 | 1067 | 225 | 0 | 1292 | 0 | 0 |
+| Vavilov_Dialogues | 2427 | 2427 | 0 | 0 | 2427 | 0 | 0 |
+| VDNKh_Dialogues | 1292 | 1250 | 42 | 0 | 1292 | 0 | 0 |
 | WavePlatform_dlc4 | 291 | 291 | 0 | 0 | 291 | 0 | 0 |
 
 ## Pak entries
