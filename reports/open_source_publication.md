@@ -34,7 +34,8 @@ The local project was prepared for publication:
   open-source publication policy.
 - `.gitignore` now ignores the entire local `build/` directory.
 - MIT `LICENSE` retained; third-party and game-content restrictions remain documented.
-- Public Git commit: `a828d60` (release commit `6af5c2d` plus this report).
+- Public Git commit: tagged `v1.0.0`; the current commit is shown by `git log -1`.
+  The main release commit is `6af5c2d`; this report is a follow-up commit.
 - Local annotated tag: `v1.0.0`.
 - Source archive is built locally with `git archive` as
   `build/release/AtomicHeart-AR-1.0.0-source.zip`; its SHA256 is printed at release time
