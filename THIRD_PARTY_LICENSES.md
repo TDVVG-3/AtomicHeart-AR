@@ -1,5 +1,13 @@
 # THIRD_PARTY_LICENSES.md
 
+## Windows application runtime
+
+The self-contained Windows installer includes the .NET 8 runtime and Windows Desktop
+runtime. The packaging script copies their license files and available
+third-party notices from the exact restored runtime packages into the release's
+`licenses/` directory. These notices accompany the application's own MIT license.
+The desktop application uses WPF and has no third-party UI packages.
+
 This project does not claim ownership of any third-party work. Bundled/used third-party
 components, their licenses, and redistribution restrictions are documented below.
 

@@ -42,6 +42,16 @@ Attach or link the relevant report from `reports/`.
 
 ## Code contributions
 
+The Windows desktop application lives under `app/`. Run its isolated filesystem
+safety checks before changing installation behavior:
+
+```powershell
+dotnet run --project app/AtomicHeartAR.Tests -c Release -- C:\temp\ah-ar-tests
+```
+
+Keep production payload hashes tied to the approved p12 release. Never add PAKs or
+application build outputs to Git. See `app/README.md` for build and packaging details.
+
 - Keep changes consistent with the existing PowerShell/Python style.
 - Prefer small, reproducible scripts over manual edits.
 - Never put credentials, tokens, local usernames, or machine-specific secrets in the

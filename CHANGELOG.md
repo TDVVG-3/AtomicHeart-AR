@@ -3,6 +3,18 @@
 All notable changes to this project are documented here.
 Format loosely follows Keep a Changelog.
 
+## [1.0.1] - 2026-10-28
+
+### Added
+- Arabic Windows desktop installer with Steam discovery, package verification, installation, verification, and removal.
+- Fixed-name, SHA256-verified p12 payload handling with rollback, inter-process locking, path containment, and preservation of unrelated mods.
+- Reproducible self-contained Windows x64 packaging, safety fixtures, and application documentation.
+- Application-focused README with verified p12 download links and a clear separation of app and localization versions.
+
+### Release status
+- Source and packaging are prepared; upstream publication requires repository write access.
+- Localization payload remains the approved p12 set from v1.0.0; experimental p12g is excluded.
+
 ## [1.0.0] - 2026-10-28
 
 ### Added
