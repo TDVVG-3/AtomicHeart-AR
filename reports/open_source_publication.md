@@ -34,12 +34,14 @@ The local project was prepared for publication:
   open-source publication policy.
 - `.gitignore` now ignores the entire local `build/` directory.
 - MIT `LICENSE` retained; third-party and game-content restrictions remain documented.
-- Public Git commit: `6af5c2d` - `Open-source release: p12 Arabic localization, gates, and docs`.
+- Public Git commit: `a828d60` (release commit `6af5c2d` plus this report).
 - Local annotated tag: `v1.0.0`.
-- Source archive: `build/release/AtomicHeart-AR-1.0.0-source.zip`, 30,446,185 bytes,
-  SHA256 `782b2d47bc09385475a64207cb82265de16f4bce601107d943fa21425a5599d3`.
+- Source archive is built locally with `git archive` as
+  `build/release/AtomicHeart-AR-1.0.0-source.zip`; its SHA256 is printed at release time
+  rather than embedded here, because adding this report changes the archive.
 
-The commit contains 175 changed/added files and 85,019 insertions. It does not contain
+The release commit contains 175 changed/added files and 85,019 insertions; this report
+is the follow-up commit. The repository does not contain
 `build/`, game PAKs, EXEs, DLLs, or unlicensed tool binaries.
 
 ## 3. Remote status
