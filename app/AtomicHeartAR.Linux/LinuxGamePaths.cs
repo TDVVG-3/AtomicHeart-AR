@@ -8,6 +8,7 @@ public static class LinuxGamePaths
     // Resolve only the user-selected root. Internal Paks/mod symlinks are still refused by the installer.
     public static string ResolveRoot(string path)
     {
+        if (string.IsNullOrWhiteSpace(path)) throw new InvalidOperationException("اختر مجلد اللعبة أولًا.");
         var full = Path.GetFullPath(path);
         var current = Path.GetPathRoot(full)!;
         foreach (var part in full[current.Length..].Split(Path.DirectorySeparatorChar, StringSplitOptions.RemoveEmptyEntries))

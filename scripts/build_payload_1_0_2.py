@@ -43,6 +43,8 @@ def main():
         raise ValueError('Not the approved upstream v1.0.0 p12 ZIP')
     tool = ROOT / 'tools/bin/unreallocres/UnrealLocres.exe'
     repak = ROOT / 'tools/bin/repak/repak.exe'
+    if sha(repak) != 'fcd538e5994b9bb833622d425ae346f4e0692f02d4b0025114a559f9b6286022':
+        raise ValueError('repak binary hash mismatch')
     if sha(tool) != REP_HASH:
         raise ValueError('UnrealLocres executable differs from the recorded official 1.1.1 asset')
     work = ROOT / 'build' / ('payload-1.0.2-' + uuid.uuid4().hex)
@@ -107,6 +109,7 @@ def main():
         for p in sorted(payload.iterdir()):
             entry = zipfile.ZipInfo('payload/' + p.name, (2026, 10, 29, 0, 0, 0))
             archive.writestr(entry, p.read_bytes(), compress_type=zipfile.ZIP_DEFLATED, compresslevel=9)
+    (dist / (out.name + '.sha256')).write_text(sha(out) + '  ' + out.name + '\n')
     (dist / 'payload-1.0.2-catalog.json').write_text(json.dumps(catalog, indent=2))
     print(json.dumps({'zip': str(out), 'sha256': sha(out), 'catalog': catalog, 'changed_texts': len(fixes), 'verified_assets': len(actual)}, indent=2))
 

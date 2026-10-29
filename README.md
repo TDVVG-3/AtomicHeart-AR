@@ -1,6 +1,6 @@
 <div align="center">
 
-![AtomicHeart-AR · Arabic localization and Windows installer](docs/assets/banner.svg)
+![AtomicHeart-AR · Windows and Linux AppImage](docs/assets/banner.svg)
 
 # تعريب أتوميك هارت
 ### عالمٌ آخر. بلغتك.
@@ -8,12 +8,13 @@
 تعريب مجتمعي للعبة **Atomic Heart** على الحاسب، مع تطبيق لويندوز ولينكس لإدارة التركيب والفحص والإزالة.
 
 [![Windows x64](https://img.shields.io/badge/Windows-x64-263522?style=for-the-badge&logo=windows&logoColor=EEE9D8)](app/README.md)
+[![Linux AppImage](https://img.shields.io/badge/Linux-AppImage-263522?style=for-the-badge&logo=linux&logoColor=EEE9D8)](app/README.md#linux--appimage)
 [![Installer 1.0.2](https://img.shields.io/badge/Installer-1.0.2-E65043?style=for-the-badge&labelColor=172016)](docs/releases/v1.0.2.md)
 [![Localization p12](https://img.shields.io/badge/Localization-p12-C4CFAF?style=for-the-badge&labelColor=172016)](https://github.com/TDVVG-3/AtomicHeart-AR/releases/tag/v1.0.0)
 [![Code MIT](https://img.shields.io/badge/Code-MIT-C4CFAF?style=for-the-badge&labelColor=172016)](LICENSE)
 
-**[تنزيل حزمة التعريب](https://github.com/TDVVG-3/AtomicHeart-AR/releases/download/v1.0.0/AtomicHeart-AR-1.0.0-p12.zip)** &nbsp; · &nbsp;
-**[تطبيق 1.0.2 وحالة نشره](docs/releases/v1.0.2.md)** &nbsp; · &nbsp;
+**[تنزيل 1.0.2 وحالة النشر](docs/releases/v1.0.2.md)** &nbsp; · &nbsp;
+**[دليل التطبيق](app/README.md)** &nbsp; · &nbsp;
 **[ابدأ من هنا](#ابدأ-من-هنا)** &nbsp; · &nbsp;
 **[كل الإصدارات](https://github.com/TDVVG-3/AtomicHeart-AR/releases)**
 
@@ -41,13 +42,13 @@
 | الميزة | ما الذي تقدّمه؟ |
 | --- | --- |
 | **اختيار اللعبة** | اكتشاف مكتبات Steam، مع اختيار المجلد يدويًا عند الحاجة |
-| **فحص قبل التركيب** | مطابقة أحجام الحزم وبصمات SHA256 مع مجموعة p12 المعتمدة |
+| **فحص قبل التركيب** | مطابقة أحجام الحزم وبصمات SHA256 مع حزمة 1.0.2 المعتمدة |
 | **تركيب مباشر** | استخدام مجلد `payload` المرفق بالنسخة الكاملة تلقائيًا |
 | **إزالة محسوبة** | إزالة الملفات التي يديرها التطبيق، وترك المودات الأخرى |
 | **استرجاع عند الفشل** | التراجع عن العملية؛ والاحتفاظ بملفات الاسترداد إذا تعذّر الاسترجاع |
 | **سجل واضح** | عرض حالة العملية وتعليمات اختيار لغة النص |
 
- > **حالة 1.0.2:** النسخة الجديدة تضم Windows وAppImage وتعريبًا محدّثًا بثمانية تصحيحات نصية.
+> **حالة 1.0.2:** النسخة الجديدة تضم Windows وAppImage وتعريبًا محدّثًا بثمانية تصحيحات نصية.
 > الملفات تُبنى وتُختبر آليًا؛ نشر Release في المستودع الأصلي يحتاج صلاحية المالك.
 > [ملاحظات الإصدار وطريقة تنزيله](docs/releases/v1.0.2.md). يبقى إصدار 1.0.0 متاحًا إلى حين النشر.
 

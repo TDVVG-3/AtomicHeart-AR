@@ -9,7 +9,10 @@ import zipfile
 repo = Path(__file__).resolve().parents[1]
 archive, appdir = map(Path, sys.argv[1:])
 with archive.open('rb') as stream:
-    if hashlib.file_digest(stream, 'sha256').hexdigest() != '078bd3a295a7947d8deec249250608b3bb52cfbfcfc258b86ae33a5f74cc0eb5':
+    digest = hashlib.sha256()
+    for chunk in iter(lambda: stream.read(1024 * 1024), b''):
+        digest.update(chunk)
+    if digest.hexdigest() != '078bd3a295a7947d8deec249250608b3bb52cfbfcfc258b86ae33a5f74cc0eb5':
         raise ValueError('Unapproved translation archive')
 payload = appdir / 'usr/bin/payload'
 payload.mkdir()
