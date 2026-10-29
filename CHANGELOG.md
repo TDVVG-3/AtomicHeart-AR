@@ -3,6 +3,37 @@
 All notable changes to this project are documented here.
 Format loosely follows Keep a Changelog.
 
+## [1.0.2] - 2026-10-29
+
+### Added
+- Native Arabic Linux desktop installer using Avalonia, distributed as a self-contained x86_64 AppImage.
+- Shared installation engine with approved p12 upgrade support, backup/rollback and rejection of competing carrier PAKs.
+- Linux Steam library discovery, root-symlink resolution, Proton process checks and AppImage GUI smoke testing.
+- Windows/Linux CI packaging with verified payload and pinned AppImage build inputs.
+
+### Fixed
+- Eight Arabic text values in the master and rebuilt localization PAK; seven corresponding TM entries.
+- Subtitle time normalization, duplicate-start groups, clip limits and malformed marker handling in the timing builder.
+- Glyph coverage checks across every required row/font face, including Basic Latin and supplementary Unicode.
+- HUD documentation distinguishes padding from viewport clipping; unresolved game layout limitations remain documented.
+- Deterministic payload packing with a single repak worker.
+
+### Release status
+- Full packages contain the updated stable p12-based payload. Experimental p12g timing changes are excluded.
+- Publication in the original repository requires write permission. Game rendering and Steam Deck hardware are not revalidated.
+
+## [1.0.1] - 2026-10-28
+
+### Added
+- Arabic Windows desktop installer with Steam discovery, package verification, installation, verification, and removal.
+- Fixed-name, SHA256-verified p12 payload handling with rollback, inter-process locking, path containment, and preservation of unrelated mods.
+- Reproducible self-contained Windows x64 packaging, safety fixtures, and application documentation.
+- Application-focused README with verified p12 download links and a clear separation of app and localization versions.
+
+### Release status
+- Source and packaging are prepared; upstream publication requires repository write access.
+- Localization payload remains the approved p12 set from v1.0.0; experimental p12g is excluded.
+
 ## [1.0.0] - 2026-10-28
 
 ### Added

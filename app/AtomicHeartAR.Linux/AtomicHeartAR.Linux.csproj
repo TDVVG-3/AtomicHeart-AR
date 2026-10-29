@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType><TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable><ImplicitUsings>enable</ImplicitUsings>
+    <Version>1.0.2</Version><AssemblyName>AtomicHeartAR</AssemblyName>
+    <DebugType>none</DebugType><RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Avalonia.Desktop" Version="11.3.22"/>
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="11.3.22"/>
+    <Compile Include="../AtomicHeartAR.Installer/ModInstaller.cs" Link="ModInstaller.cs"/>
+  </ItemGroup>
+</Project>

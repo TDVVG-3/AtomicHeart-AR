@@ -1,0 +1,93 @@
+<Window x:Class="AtomicHeartAR.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:shell="clr-namespace:System.Windows.Shell;assembly=PresentationFramework" Title="AtomicHeart-AR · 1.0.2" Width="1130" Height="850" MinWidth="940" MinHeight="720" WindowStartupLocation="CenterScreen" Background="#121713" WindowStyle="None" FontFamily="Segoe UI" Foreground="#EEE9D8" Icon="Assets/app.ico">
+  <shell:WindowChrome.WindowChrome><shell:WindowChrome CaptionHeight="42" ResizeBorderThickness="6" GlassFrameThickness="0" CornerRadius="10"/></shell:WindowChrome.WindowChrome>
+  <Grid>
+    <Grid.RowDefinitions><RowDefinition Height="42"/><RowDefinition Height="*"/></Grid.RowDefinitions>
+    <Border Background="#101410" BorderBrush="#30382F" BorderThickness="0,0,0,1">
+      <Grid Margin="16,0"><TextBlock Text="ATOMICHEART / AR" FontSize="11" FontWeight="Bold" VerticalAlignment="Center" Foreground="#8F9C8F"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" shell:WindowChrome.IsHitTestVisibleInChrome="True">
+          <Button Content="─" Click="Minimize_Click" Padding="14,4" Background="Transparent" BorderThickness="0" AutomationProperties.Name="تصغير النافذة"/>
+          <Button Content="□" Click="Maximize_Click" Padding="14,4" Background="Transparent" BorderThickness="0" AutomationProperties.Name="تكبير أو استعادة النافذة"/>
+          <Button Content="✕" Click="Close_Click" Padding="14,4" Background="Transparent" BorderThickness="0" AutomationProperties.Name="إغلاق التطبيق"/>
+        </StackPanel>
+      </Grid>
+    </Border>
+    <Grid Grid.Row="1">
+      <Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="220"/></Grid.ColumnDefinitions>
+      <Border Grid.Column="1" Background="#181E18" BorderBrush="#343C32" BorderThickness="1,0,0,0">
+        <Grid Margin="24,30,24,22"><Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="*"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+          <StackPanel HorizontalAlignment="Right">
+            <Border Width="54" Height="54" Background="#E65043" CornerRadius="12" HorizontalAlignment="Right" Margin="0,0,0,14"><TextBlock Text="A" FontSize="35" FontWeight="Black" Foreground="#151A14" HorizontalAlignment="Center" VerticalAlignment="Center"/></Border>
+            <TextBlock Text="ATOMIC&#10;HEART — AR" FontSize="21" FontWeight="Black" TextAlignment="Right" LineHeight="25"/>
+            <TextBlock Text="تعريب أتوميك هارت" Foreground="#9EAD9B" FontSize="14" TextAlignment="Right" Margin="0,8,0,16"/>
+            <Border Background="#283125" CornerRadius="4" Padding="11,5" HorizontalAlignment="Right"><TextBlock Text="WINDOWS / 1.0.2" FontSize="10" FontWeight="Bold" Foreground="#BBD0AD"/></Border>
+          </StackPanel>
+          <StackPanel Grid.Row="1" Margin="0,36,0,0">
+            <Border Background="#303B2C" BorderBrush="#78936B" BorderThickness="0,0,3,0" CornerRadius="5" Padding="13,13"><TextBlock Text="التعريب" TextAlignment="Right" FontWeight="SemiBold" FontSize="16"/></Border>
+            <Button Content="طريقة التركيب" HorizontalContentAlignment="Right" Click="Guide_Click" Background="Transparent" BorderThickness="0" Margin="0,10,0,0" Padding="10,13"/>
+            <Button Content="المشروع على GitHub ↗" Click="Project_Click" Background="Transparent" BorderThickness="0" Padding="6,13"/>
+          </StackPanel>
+          <StackPanel Grid.Row="3">
+            <Border BorderBrush="#3D4938" BorderThickness="1" CornerRadius="7" Padding="12"><StackPanel><TextBlock Text="مجتمعي. مفتوح المصدر." FontSize="12" TextAlignment="Right"/><TextBlock Text="صُنع للاعبين العرب" FontSize="11" Foreground="#93A28D" Margin="0,5,0,0" TextAlignment="Right"/></StackPanel></Border>
+            <TextBlock Text="TDVVG-3 × COMMUNITY" FontSize="9" Foreground="#7F8E7B" HorizontalAlignment="Right" Margin="0,17,0,0"/>
+          </StackPanel>
+        </Grid>
+      </Border>
+      <ScrollViewer Grid.Column="0" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+        <StackPanel Margin="32,27,32,24">
+          <Grid Margin="0,0,0,20"><TextBlock Text="01 / LOCALIZATION" FontSize="10" Foreground="#8CA180" VerticalAlignment="Center"/><StackPanel Orientation="Horizontal" HorizontalAlignment="Right"><Ellipse x:Name="StatusDot" Fill="#E6B65C" Width="7" Height="7" Margin="0,0,8,0"/><TextBlock x:Name="StatusText" Text="بانتظار اختيار الملفات" FontSize="12" Foreground="#B9C3B3"/></StackPanel></Grid>
+          <Border Background="#202A1D" BorderBrush="#3C4A33" BorderThickness="1" CornerRadius="10" Padding="24,23" Margin="0,0,0,20" ClipToBounds="True">
+            <Grid MinHeight="172"><Grid.ColumnDefinitions><ColumnDefinition Width="190"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
+              <Viewbox Width="170" Height="170" HorizontalAlignment="Left" VerticalAlignment="Center" Opacity="0.9"><Canvas Width="180" Height="180">
+                <Ellipse Width="148" Height="148" Canvas.Left="16" Canvas.Top="16" Stroke="#738465" StrokeThickness="1"/>
+                <Ellipse Width="174" Height="58" Canvas.Left="3" Canvas.Top="61" Stroke="#C0C9AA" StrokeThickness="1.5"/>
+                <Ellipse Width="174" Height="58" Canvas.Left="3" Canvas.Top="61" Stroke="#C0C9AA" StrokeThickness="1.5" RenderTransformOrigin="0.5,0.5"><Ellipse.RenderTransform><RotateTransform Angle="60"/></Ellipse.RenderTransform></Ellipse>
+                <Ellipse Width="174" Height="58" Canvas.Left="3" Canvas.Top="61" Stroke="#C0C9AA" StrokeThickness="1.5" RenderTransformOrigin="0.5,0.5"><Ellipse.RenderTransform><RotateTransform Angle="120"/></Ellipse.RenderTransform></Ellipse>
+                <Ellipse Width="21" Height="21" Canvas.Left="79.5" Canvas.Top="79.5" Fill="#E65043"/>
+                <Ellipse Width="8" Height="8" Canvas.Left="169" Canvas.Top="86" Fill="#EEE9D8"/>
+              </Canvas></Viewbox>
+              <StackPanel Grid.Column="1" FlowDirection="RightToLeft" VerticalAlignment="Center" Margin="18,0,0,0">
+                <TextBlock Text="عالمٌ آخر." FontSize="39" FontWeight="Bold"/>
+                <TextBlock Text="بلغتك." FontSize="43" FontWeight="Bold" Foreground="#F16A58" Margin="0,-6,0,8"/>
+                <TextBlock Text="ركّب التعريب، وخلّ الرحلة تبدأ." FontSize="15" Foreground="#B8C6AE"/>
+                <TextBlock Text="نصوص 1.0.2  ·  خط v3  ·  تلميحات x150" FontSize="11" Foreground="#91A384" Margin="0,12,0,0"/>
+              </StackPanel>
+            </Grid>
+          </Border>
+          <Grid Margin="0,0,0,10"><TextBlock Text="PREPARE YOUR JOURNEY" Foreground="#82957A" FontSize="9" VerticalAlignment="Bottom"/><TextBlock Text="جهّز رحلتك" FontWeight="SemiBold" FontSize="20" HorizontalAlignment="Right"/></Grid>
+          <Border Background="#1B221A" BorderBrush="#364130" BorderThickness="1" CornerRadius="9" Padding="18" Margin="0,0,0,12">
+            <StackPanel>
+              <DockPanel Margin="0,0,0,10"><TextBlock x:Name="GameBadge" Text="غير محدد" FontSize="11" Foreground="#A4B199" DockPanel.Dock="Left"/><TextBlock Text="01   مجلد اللعبة" FontSize="15" FontWeight="SemiBold" TextAlignment="Right"/></DockPanel>
+              <Grid><Grid.ColumnDefinitions><ColumnDefinition Width="Auto"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions><Button x:Name="GameBrowse" Content="استعراض" Click="BrowseGame_Click" Margin="0,0,10,0"/><TextBox x:Name="GamePathBox" Grid.Column="1" TextChanged="Paths_Changed" AutomationProperties.Name="مسار مجلد اللعبة" ToolTip="المجلد الذي يحتوي على AtomicHeart.exe" FlowDirection="LeftToRight"/></Grid>
+            </StackPanel>
+          </Border>
+          <Border Background="#1B221A" BorderBrush="#364130" BorderThickness="1" CornerRadius="9" Padding="18" Margin="0,0,0,14">
+            <StackPanel>
+              <DockPanel Margin="0,0,0,10"><TextBlock x:Name="PackageBadge" Text="الحزمة غير مرفقة" FontSize="11" Foreground="#D5B47B" DockPanel.Dock="Left"/><TextBlock Text="02   حزمة التعريب" FontSize="15" FontWeight="SemiBold" TextAlignment="Right"/></DockPanel>
+              <Grid><Grid.ColumnDefinitions><ColumnDefinition Width="Auto"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions><Button x:Name="PackageBrowse" Content="استعراض" Click="BrowsePackage_Click" Margin="0,0,10,0"/><TextBox x:Name="PackagePathBox" Grid.Column="1" TextChanged="Paths_Changed" AutomationProperties.Name="مسار حزمة التعريب" ToolTip="مجلد ملفات 1.0.2 الثلاثة بعد فك الضغط" FlowDirection="LeftToRight"/></Grid>
+              <DockPanel Margin="0,10,0,0"><Button Content="الإصدارات ↗" Click="Releases_Click" Background="Transparent" BorderThickness="0" Padding="0,0" Foreground="#D7B783" FontSize="11" DockPanel.Dock="Left"/><TextBlock x:Name="PackageHint" Text="اختر مجلد حزمة 1.0.2 بعد فك الضغط، أو استخدم الحزمة المرفقة بالنسخة الكاملة." Foreground="#97A88D" FontSize="11" TextAlignment="Right" Margin="14,0,0,0"/></DockPanel>
+            </StackPanel>
+          </Border>
+          <Border Background="#292A1D" BorderBrush="#4A4B2F" BorderThickness="1" CornerRadius="7" Padding="12,9" Margin="0,0,0,16"><TextBlock Text="بعد التركيب: اختر Korean / الكورية من إعداد لغة النص داخل اللعبة." FontSize="12" TextAlignment="Right" Foreground="#DACEA2"/></Border>
+          <Grid><Grid.ColumnDefinitions><ColumnDefinition Width="Auto"/><ColumnDefinition Width="10"/><ColumnDefinition Width="Auto"/><ColumnDefinition Width="*"/><ColumnDefinition Width="210"/></Grid.ColumnDefinitions>
+            <Button x:Name="RemoveButton" Content="إزالة التعريب" Click="Remove_Click" Foreground="#E1B3A9" IsEnabled="False"/>
+            <Button x:Name="CheckButton" Grid.Column="2" Content="فحص الملفات" Click="Check_Click"/>
+            <Button x:Name="InstallButton" Grid.Column="4" Content="تثبيت التعريب  ↓" Style="{StaticResource PrimaryButton}" Click="Install_Click" IsEnabled="False"/>
+          </Grid>
+          <ProgressBar x:Name="Progress" Height="3" Margin="0,14,0,0" Background="#293224" Foreground="#E65043" Visibility="Collapsed" IsIndeterminate="True"/>
+          <TextBlock Text="سجل العملية" TextAlignment="Right" Foreground="#8F9F85" FontSize="11" Margin="0,15,0,6"/>
+          <TextBox x:Name="ActivityLog" Text="جاهز. اختر مجلد اللعبة وحزمة التعريب، ثم اضغط فحص الملفات." IsReadOnly="True" TextWrapping="Wrap" Height="78" VerticalScrollBarVisibility="Auto" BorderThickness="0" Background="#141A12" Foreground="#BAC5AF" FontSize="11" FlowDirection="RightToLeft" AutomationProperties.Name="سجل العملية"/>
+        </StackPanel>
+      </ScrollViewer>
+    </Grid>
+    <Border x:Name="GuidePanel" Grid.RowSpan="2" Background="#EF101610" Visibility="Collapsed" Padding="50" FlowDirection="RightToLeft">
+      <Border Background="#202A1C" CornerRadius="12" BorderBrush="#536248" BorderThickness="1" Padding="32" MaxWidth="650" VerticalAlignment="Center"><StackPanel>
+        <TextBlock Text="رحلتك، في ثلاث خطوات." FontSize="28" FontWeight="Bold" Margin="0,0,0,22"/>
+        <TextBlock Text="01   أغلق اللعبة، واختر مجلدها الذي يحتوي على AtomicHeart.exe." FontSize="16" Margin="0,0,0,18"/>
+        <TextBlock Text="02   فك ضغط حزمة 1.0.2 المعتمدة، ثم اختر مجلد ملفات .pak الثلاثة. يفحص التطبيق أحجامها وبصماتها قبل التثبيت." FontSize="16" Margin="0,0,0,18"/>
+        <TextBlock Text="03   ثبّت التعريب، ثم اختر لغة النص الكورية داخل اللعبة. الصوت الإنجليزي يبقى كما هو." FontSize="16" Margin="0,0,0,25"/>
+        <TextBlock Text="الإزالة تخص الملفات التي يديرها التطبيق. إذا تغيّر ملف بعد تثبيته، ستتوقف العملية لحماية بياناتك. النسخة الكاملة تتضمن حزمة 1.0.2 المعتمدة." FontSize="13" Foreground="#AABD9D" Margin="0,0,0,24"/>
+        <Button Content="فهمت، لنبدأ" Click="CloseGuide_Click" Style="{StaticResource PrimaryButton}" HorizontalAlignment="Left"/>
+      </StackPanel></Border>
+    </Border>
+  </Grid>
+</Window>

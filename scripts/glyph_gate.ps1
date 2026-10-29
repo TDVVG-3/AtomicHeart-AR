@@ -16,7 +16,7 @@
 
   Checks:
     1. every distinct codepoint in the master Arabic column is inside the SUBTITLE face
-    2. ... and inside the union of the six installed faces
+    2. ... and inside each of the six installed faces (a union is not HUD coverage)
     3. Latin-Basic (U+0020..U+007E) is complete in the subtitle face (tags/keys/numbers)
     4. report Cyrillic / Hangul presence per face (informational: those scripts are served
        by the engine fallback face, not by these payloads)
@@ -129,10 +129,19 @@ function Get-CmapSet([string]$path) {
     return $set
 }
 
+function Get-Codepoints([string]$text) {
+    for ($index = 0; $index -lt $text.Length; $index++) {
+        $cp = [char]::ConvertToUtf32($text, $index)
+        $cp
+        if ($cp -gt 0xFFFF) { $index++ }
+    }
+}
+
 # --- codepoints used by the translated master rows
 $lines = [IO.File]::ReadAllLines($MasterTsV, [Text.Encoding]::UTF8)
 $usedAr = New-Object 'System.Collections.Generic.HashSet[int]'
-$usedSource = New-Object 'System.Collections.Generic.HashSet[int]'
+$introduced = New-Object 'System.Collections.Generic.HashSet[int]'
+$introducedAt = @{}
 $rowsWithArabic = 0
 $distinctCodepoints = @{}
 for ($i = 1; $i -lt $lines.Count; $i++) {
@@ -141,15 +150,21 @@ for ($i = 1; $i -lt $lines.Count; $i++) {
     if ($f.Count -ne 13) { continue }
     if (-not $f[6].Trim()) { continue }
     $rowsWithArabic++
-    foreach ($ch in $f[6].ToCharArray()) {
-        $cp = [int][char]$ch
+    $rowSource = New-Object 'System.Collections.Generic.HashSet[int]'
+    foreach ($cp in (Get-Codepoints $f[5])) { [void]$rowSource.Add($cp) }
+    foreach ($cp in (Get-Codepoints $f[6])) {
         [void]$usedAr.Add($cp)
         if (-not $distinctCodepoints.ContainsKey($cp)) {
             $scope = 'other'; if ($f[2] -match '/Localization/(.+?)/en-US/') { $scope = $Matches[1] }
             $distinctCodepoints[$cp] = [pscustomobject]@{ scope = $scope; key = $f[4]; sample = $f[6] }
         }
     }
-    foreach ($ch in $f[5].ToCharArray()) { [void]$usedSource.Add([int][char]$ch) }
+    foreach ($cp in (Get-Codepoints $f[6])) {
+        if (-not $rowSource.Contains($cp)) {
+            [void]$introduced.Add($cp)
+            if (-not $introducedAt.ContainsKey($cp)) { $introducedAt[$cp] = [pscustomobject]@{ scope = $f[2]; key = $f[4] } }
+        }
+    }
 }
 
 $results = New-Object System.Collections.Generic.List[object]
@@ -180,14 +195,19 @@ foreach ($cp in $usedAr) { if (-not $union.Contains($cp)) { $unionMissing.Add($c
 # (the engine fallback serves them today) vs codepoints the Arabic introduced on its own.
 $allMissing = New-Object 'System.Collections.Generic.HashSet[int]'
 foreach ($cp in $unionMissing) { [void]$allMissing.Add($cp) }
-foreach ($cp in $subtitleMissing) { [void]$allMissing.Add($cp) }
+foreach ($faceResult in $results) {
+    foreach ($cp in $faceResult.missingList) { [void]$allMissing.Add($cp) }
+}
 $sourceInherited = New-Object System.Collections.Generic.List[int]
 $realMissing = New-Object System.Collections.Generic.List[int]
-foreach ($cp in $allMissing) { if ($usedSource.Contains($cp)) { $sourceInherited.Add($cp) } else { $realMissing.Add($cp) } }
+foreach ($cp in $allMissing) {
+    if ($cp -gt 0x7F -and -not $introduced.Contains($cp)) { $sourceInherited.Add($cp) }
+    else { $realMissing.Add($cp) }
+}
 $sourceInherited.Sort(); $realMissing.Sort()
 
 $verdict = 'PASS'
-if ($realMissing.Count -gt 0) { $verdict = 'FAIL' }
+if ($realMissing.Count -gt 0 -or @($results | Where-Object { $_.latinMissing -gt 0 }).Count -gt 0) { $verdict = 'FAIL' }
 elseif ($sourceInherited.Count -gt 0 -and -not $AllowSourceInheritedNonLatin) { $verdict = 'FAIL' }
 
 $r = New-Object System.Collections.Generic.List[string]
@@ -202,7 +222,8 @@ $r.Add('')
 $r.Add(('Distinct codepoints used by the translated rows: {0}' -f $usedAr.Count))
 $r.Add(('Codepoints missing from the subtitle face: {0}' -f $subtitleMissing.Count))
 $r.Add(('Codepoints missing from the union of all six installed faces: {0}' -f $unionMissing.Count))
-$r.Add(('Of those, source-inherited (also present in the English source of the same row): {0}' -f $sourceInherited.Count))
+$r.Add(('Codepoints missing from any replacement face: {0}' -f $allMissing.Count))
+$r.Add(('Of those, non-Latin source-inherited in EVERY translated occurrence: {0}' -f $sourceInherited.Count))
 $r.Add(('Codepoints newly required by the Arabic and missing from the font: {0}' -f $realMissing.Count))
 $r.Add(('Source-inherited exemption switch: {0}' -f $(if ($AllowSourceInheritedNonLatin) { 'ON (-AllowSourceInheritedNonLatin)' } else { 'off' })))
 $r.Add('')
@@ -212,23 +233,23 @@ foreach ($x in $results) {
     $r.Add(('| {0}{1} | {2} | {3} | {4} | {5} | {6} |' -f $x.face, $(if ($x.subtitle) { ' **(subtitle)**' } else { '' }), $x.mapped, $x.missing, $x.latinMissing, $x.cyrillic, $x.hangulSample))
 }
 $r.Add('')
-if ($unionMissing.Count -gt 0) {
+if ($allMissing.Count -gt 0) {
     $r.Add('## Missing codepoints')
     $r.Add('')
-    foreach ($cp in $unionMissing) {
-        $d = $distinctCodepoints[$cp]
-        $kind = if ($usedSource.Contains($cp)) { 'source-inherited' } else { 'INTRODUCED BY THE ARABIC' }
+    foreach ($cp in ($allMissing | Sort-Object)) {
+        $d = if ($introducedAt.ContainsKey($cp)) { $introducedAt[$cp] } else { $distinctCodepoints[$cp] }
+        $kind = if ($sourceInherited.Contains($cp)) { 'source-inherited in every occurrence' } else { 'REQUIRED / NOT EXEMPT' }
         $r.Add(('- U+{0:X4} ({1}) first seen in {2} key {3}' -f $cp, $kind, $d.scope, $d.key))
     }
     $r.Add('')
 }
 $r.Add('## Notes')
 $r.Add('')
-$r.Add('- Scripts: the installed Plex payloads carry Latin-Basic + Arabic. Cyrillic and Hangul are')
-$r.Add('  served at runtime by the engine fallback face (DroidSansFallback / NotoSansKR-*), which is')
-$r.Add('  still present in pakchunk0 and was confirmed working in Test 3 (Korean text rendered).')
-$r.Add('- Tags, placeholders and Latin key names need U+0020..U+007E only, which the subtitle face')
-$r.Add('  covers completely.')
+$r.Add('- Source-inherited exemptions require runtime fallback. The recorded Korean test does')
+$r.Add('  not prove fallback for every Cyrillic/Japanese character, widget or game version.')
+$r.Add('- Every replacement face must cover Latin-Basic. A missing character in any face is checked;')
+$r.Add('  the union of faces does not prove that the HUD can draw it. Source exemptions are per row.')
+$r.Add('- PASS with exemptions does not verify engine fallback, shaping, bidi ordering, or layout at runtime.')
 $r.Add('')
 [IO.File]::WriteAllLines($reportPath, $r, (New-Object Text.UTF8Encoding($false)))
 

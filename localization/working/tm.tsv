@@ -1302,7 +1302,7 @@ High-resolution screenshot function	وظيفة تصوير لقطات عالية 
 High-temperature heating module	وحدة التسخين عالي الحرارة	batch1
 Hits one enemy behind the target	يصيب عدواً واحداً خلف الهدف	batch1
 Hitting a non-organic target may cause the projectile to bounce and hit another non-organic target nearby. Bounced projectiles only deal half damage.	قد تؤدي إصابة هدف غير عضوي إلى ارتداد المقذوف ليصيب هدفاً غير عضوياً آخر قريب. والمقذوفات المرتدّة تلحق نصف الضرر فقط.	batch1
-Hitting soft tissue causes the bullet to tumble, increasing damage to organic targets.	يؤدّي إصابة النسيج الرخو إلى تقلّب الطلقة، ما يزيد الضرر على الأهداف العضوية.	batch1
+Hitting soft tissue causes the bullet to tumble, increasing damage to organic targets.	تؤدّي إصابة النسيج الرخو إلى تقلّب الطلقة، ما يزيد الضرر على الأهداف العضوية.	batch1
 HOG-7 Hedgie	HOG-7 هيدجي	batch1
 HOLD	استمرار	batch1
 HOLD (tag) TO SKIP	استمرار (tag) للتخطّي	batch1
@@ -2558,7 +2558,7 @@ The rifled choke significantly increases firing accuracy	يزيد خانق ال�
 The scary Plyusch is the endoskeleton of an experimental bionic creature, consisting of an animated blob of polymeric muscles with an implanted dog brain.   The Plyusch usually moves on its hind legs, but can run on all fours at the speed of a wild wolf. The biorobot can extend its limbs to several times their original length and jump dozens of meters high.	بليوش المرعب هو الهيكل الداخلي لمخلوق بيوني تجريبي، يتكوّن من كتلة حيّة من عضلات بوليمرية زُرع فيها دماغ كلب.   ويتحرّك بليوش عادةً على ساقيه الخلفيتين، لكنه يستطيع الركض على أربع بسرعة ذئب برّي. ويستطيع الروبوت الحيوي مدّ أطرافه إلى أضعاف طولها الأصلي والقفز عشرات الأمتار في الهواء.	batch1
 The shocker recovers much faster in strong magnetic fields	يتعافى الصاعق أسرع بكثير في المجالات المغناطيسية القوية	batch1
 The steel alloy adds weight to the finial, increasing the kinetic energy of blows.	تضيف السبيكة الفولاذية ثقلاً إلى الطرف، ما يزيد الطاقة الحركية للضربات.	batch1
-The strengthened electromagnetic discharge extends the duration of the malfunction, causing robots to stay incapacitated for longer.	التفريغ الكهرومغناطيسي المعزّز يطيل مدّة الخلل، فيبقى الروبوتات معطّلة لمدة أطول.	batch1
+The strengthened electromagnetic discharge extends the duration of the malfunction, causing robots to stay incapacitated for longer.	التفريغ الكهرومغناطيسي المعزّز يطيل مدّة الخلل، فتبقى الروبوتات معطّلة لمدة أطول.	batch1
 The surest way to be deceived is to consider oneself cleverer than others.	أضمن طريق للانخداع أن يعتبر المرء نفسه أذكى من الآخرين.	batch1
 The TER/A1 robot performs basic administrative and advisory functions.  This anthropomorphic robotic assistant is based on the VOV/A6 and designed with the participation of Comrade Tereshkova, the actress, cosmonaut, and decorated Soviet hero. The TER/A1 robot is the most advanced product of Facility 3826, addressing the shortcomings of the previous generation and introducing many new features such as voice modulation and self-repair.  Tereshkova is one of the few robots independent from the Kollektiv ecosystem: it still reacts only to verbal human commands. Perhaps after the launch of Kollektiv everyone will be able to enjoy a virtual Tereshkova of their own.	يؤدّي روبوت TER/A1 وظائف إدارية واستشارية أساسية.  هذا المساعد الروبوتي الشبيه بالإنسان مبنيّ على VOV/A6 وصُمّم بمشاركة الرفيقة تيريشكوفا، الممثلة ورائدة الفضاء والبطل السوفييتي المكرَّم. وروبوت TER/A1 هو أحدث منتجات المنشأة 3826، فهو يعالج عيوب الجيل السابق ويقدّم ميزات جديدة كثيرة مثل تعديل الصوت والإصلاح الذاتي.  وتيريشكوفا من الروبوتات القليلة المستقلّة عن منظومة كوليكتيف: فهي لا تستجيب إلا للأوامر اللفظية البشرية. وربما سيتمكّن الجميع، بعد إطلاق كوليكتيف، من الاستمتاع بتيريشكوفا افتراضية خاصة بهم.	batch1
 The theater's new office manager, Surkov is an elderly, experienced man who has worked at the Bolshoi and overseen performances on the front lines for soldiers. An honest, but also one-dimensional and somewhat cantankerous old man, Surkov often has harsh words for management and anyone else who draws his ire.	سوركوف هو مدير المكتب الجديد في المسرح، رجل مسنّ ذو خبرة عمل في مسرح البولشوي وأشرف على عروض على خطوط الجبهة أمام الجنود. وهو رجل صادق، لكنه أيضاً محدود الأفق وسريع الانفعال بعض الشيء، وكثيراً ما يوجّه كلاماً قاسياً إلى الإدارة وإلى كل من يستثير غضبه.	batch1
@@ -2899,7 +2899,7 @@ You can use a Neuromed capsule with one hand.	يمكنك استخدام كبسو
 You can use Sprint while flying	يمكنك استخدام العدو السريع أثناء الطيران	batch1
 You can use your SCANNER ability to highlight important objects by holding X	يمكنك استخدام قدرة الماسح لإبراز الأجسام المهمة بالاستمرار في الضغط على X	batch1
 You can't run out of mana in this game. There is no mana.	لا يمكن أن تنفد المانا في هذه اللعبة. فلا وجود للمانا.	batch1
-You deal increased damage with cold weapons mid-jump	تحدث ضرراً أكبر بالأسلحة الباردة أثناء القفز	batch1
+You deal increased damage with cold weapons mid-jump	تحدث ضرراً أكبر بالأسلحة البيضاء أثناء القفز	batch1
 You have two ways to choose the default value:    1) Just set the value at the variable "DefaultValue" below.    or    2) Using this checkbox reference, call the node "initialize" (for example, at the construct node). In this node, you can choose a value for the checkbox. This option is good for those who want to set the value in runtime.	لديك طريقتان لاختيار القيمة الافتراضية:    1) اضبط القيمة ببساطة عند المتغيّر «DefaultValue» أدناه.    أو    2) باستخدام مرجع مربّع الاختيار هذا، استدعِ العقدة «initialize» (على سبيل المثال عند عقدة construct). في هذه العقدة، يمكنك اختيار قيمة لمربّع الاختيار. هذا الخيار مناسب لمن يريد ضبط القيمة أثناء التشغيل.	batch1
 You have two ways to choose the default value:    1) Just set the value at the variable "DefaultValue" below.    or    2) Using this slider reference, call the node "initialize" (for example, at the construct node). In this node, you can choose a value for the slider. This option is good for those who want to set the value in runtime.	لديك طريقتان لاختيار القيمة الافتراضية:    1) اضبط القيمة ببساطة عند المتغيّر «DefaultValue» أدناه.    أو    2) باستخدام مرجع المنزلق هذا، استدعِ العقدة «initialize» (على سبيل المثال عند عقدة construct). في هذه العقدة، يمكنك اختيار قيمة للمنزلق. هذا الخيار مناسب لمن يريد ضبط القيمة أثناء التشغيل.	batch1
 You will lose this item and won't receive anything in return	ستفقد هذا العنصر ولن تحصل على أي شيء في المقابل	batch1
@@ -3212,7 +3212,7 @@ Chelomey: Sechenov's Office	تشيلومي: مكتب سيتشينوف	batch1
 CHEMISTRY	الكيمياء	batch1
 CHESSBOARD	رقعة الشطرنج	batch1
 CIGARETTES	سجائر	batch1
-Classic technology that speeds up ability cooldown time.	تقنية كلاسيكية تسرّع مدة انتظار القدرة.	batch1
+Classic technology that speeds up ability cooldown time.	تقنية كلاسيكية تقلّل مدة انتظار إعادة استخدام القدرة.	batch1
 Cliff of Perseverance	جرف المثابرة	batch1
 Club minutes	محضر النادي	batch1
 Coarse voice	صوت أجش	batch1
@@ -3741,7 +3741,7 @@ Increases damage radius	يزيد نصف قطر الضرر	batch1
 Increases damage to flying targets	يزيد الضرر على الأهداف الطائرة	batch1
 Increases damage to organic targets.	يزيد الضرر على الأهداف العضوية.	batch1
 Increases damage to the next target after a hit	يزيد الضرر على الهدف التالي بعد كل إصابة	batch1
-Increases damage to weakened points	يزيد الضرر على النقاط المُنهَكة	batch1
+Increases damage to weakened points	يزيد الضرر على نقاط الضعف	batch1
 Increases damage when P-3 has low health	يزيد الضرر عندما تكون صحة P-3 منخفضة	batch1
 Increases damage when swinging	يزيد الضرر عند التأرجح	batch1
 Increases damage when the enemy has a lot of health	يزيد الضرر عندما يمتلك العدو صحة كثيرة	batch1
@@ -15010,7 +15010,7 @@ You can do that too?	تستطيعين فعل ذلك أيضاً؟	batch2-0038
 Are you okay?	أنت بخير؟	batch2-0038
 Are you okay? It didn't eat your face, right?	أنت بخير؟ ما أكل وجهك، صحيح؟	batch2-0038
 Will you answer the question, Mom?	هل ستجيبين على السؤال يا أمي؟	batch2-0038
-You can probably see and hear through everything connected to Kollektiv... Right, Chariton?	أنتِ ترين وتسمعين على الأرجح عبر كل ما هو متصل بكوليكتيف... صحيح يا خاريتون؟	batch2-0038
+You can probably see and hear through everything connected to Kollektiv... Right, Chariton?	أنت ترى وتسمع على الأرجح عبر كل ما هو متصل بكوليكتيف... صحيح يا خاريتون؟	batch2-0038
 You don't remember this, but I was scared of dolphins in my youth. You laughed at me. And then you took us to the Black Sea, and I...	أنت لا تتذكرين، لكنني كنت أخاف الدلافين في شبابي. فضحكت مني. ثم أخذتنا إلى البحر الأسود، وهناك...	batch2-0038
 You're not a dog. You're a sea dog!	أنت لست كلباً. أنت كلب بحري!	batch2-0038
 Did you just decide to play by yourself? Are we a team or not?!	هل قررت أن تلعب وحدك؟ هل نحن فريق أم لا؟!	batch2-0038
@@ -17794,7 +17794,7 @@ Hey, guys. What's going on here?	مرحباً يا شباب. ماذا يجري �
 This is the most difficult prison break I've ever heard of. Now, where are we gonna put the boss?	هذا أصعب هروب من سجن سمعت به على الإطلاق. والآن، أين سنضع الرئيس؟	batch2-0047
 You know, Alexey, using the rings like a closed circuit... It's simply genius!	أتدري يا أليكسي، استخدام الخواتم كدارة مغلقة... هذا عبقري ببساطة!	batch2-0047
 And you're not alone now. We will save her!	وأنت لست وحدك الآن. سننقذها!	batch2-0047
-We couldn't ask for a better team. Hang in there. Whatever happens.	لم نكن نطلب فريقاً أفضل. اصمد. مهما حدث.	batch2-0047
+We couldn't ask for a better team. Hang in there. Whatever happens.	لا يمكننا تمنّي فريق أفضل. اصمد. مهما حدث.	batch2-0047
 And we delivered it to him on a silver platter. But won't he just destroy Katya?	وسلّمناه إياه على طبق من فضة. لكنه سيدمّر كاتيا فحسب، أليس كذلك؟	batch2-0047
 And we won't forget those who didn't make it to the end.	ولن ننسى من لم يصلوا معنا إلى النهاية.	batch2-0047
 Where's that coming from? Can't tell from looking at you.	من أين جاء هذا؟ لا يبدو عليك أبداً.	batch2-0047

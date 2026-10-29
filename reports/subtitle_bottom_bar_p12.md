@@ -1,100 +1,55 @@
-# Bottom subtitle bar - layout evidence for the VEGA 9 stack
+# Bottom subtitle bar — corrected interpretation (2026-10-29)
 
-**Generated:** 2026-10-28 14:22:32 +03:00
-**Scope:** read-only inspection of the cooked `WBP_Subtitle`, `WBP_OneSubtitle`,
-`WBP_TypingTextBox`, and `BP_SubtitlesSubsystem` exports already extracted under
-`build/extracted/`. No `.uasset` was re-serialized, no bytecode was patched, no pak was
-built, and nothing was installed.
+The earlier claim that bottom padding of 150 px means room for only three subtitle
+lines is withdrawn. Padding is spacing around content, not its clipping rectangle.
 
-## Verdict
+## Recorded properties
 
-| verdict | finding |
+These values come from the previous cooked-asset inspection. Raw extracted assets
+are not committed; they are historical observations, not fresh runtime measurements.
+
+| property | recorded value |
 | --- | --- |
-| **CONFIRMED** | `WBP_Subtitle` is a full-height, bottom-anchored canvas: `CanvasPanelSlot_0` anchors are `Min=(0.5, 0)`, `Max=(0.5, 1)`, alignment is `(0.5, 1)`, bottom offset is `0`, and `bAutoSize=True`. The subtitle stack therefore grows upward from the bottom edge. |
-| **CONFIRMED** | The dialogue overlay slot reserves `Padding.Top=150.0` and `Padding.Bottom=150.0` px. The visible subtitle area above the bottom safe edge is therefore about 150 px before any widget reaches the screen edge. |
-| **CONFIRMED** | `SizeBox_1` has `WidthOverride=2150.0` with the override enabled and no height override. The subtitle column is wide and auto-height; there is no fixed-height subtitle box in that branch. |
-| **CONFIRMED** | `SubtitleScaleBox` uses `Stretch=EStretch::UserSpecified`; `BP_SubtitlesSubsystem.SubtitleSizeScale=0.75`. The sentence font is `45`, so the rendered sentence size is `45 x 0.75 = 33.75` px; the speaker font is `35`, i.e. `26.25` px. |
-| **CONFIRMED** | `WBP_OneSubtitle` contains a sentence `SizeBox` whose vertical-box slot has `Padding.Bottom=100.0`, `SizeRule=Fill`, `HAlign_Left`, `VAlign_Bottom`. This is a per-subtitle bottom gap, not a scrollbar or a duration control. |
-| **CONFIRMED** | The exported widgets contain no `ScrollBox`, no `SetClipping`, and no subtitle-life timer in `WBP_Subtitle` / `WBP_OneSubtitle`. Stacking is plain `VerticalBox.AddChildToVerticalBox`. |
-| **LIKELY** | Four concurrent subtitle widgets (the three earlier VEGA lines plus the long P-3 line) need more than the 150 px bottom safe area. At a typical 1.2 em line box, one rendered line is about `1.2 x 33.75 = 40.5` px; four lines are about `162` px, already 12 px over the 150 px bottom padding before speaker names and the 100 px sentence gap are counted. The line nearest the bottom edge is the one that looks cut in the screenshot. |
-| **LIKELY** | The 100 px sentence-slot bottom padding is applied inside each `WBP_OneSubtitle`; with several widgets the gap is paid repeatedly, so a four-line stack can exceed the bottom bar even when each individual line is short. |
-| **UNKNOWN** | The exact engine clip owner (canvas, `SizeBox`, overlay, or viewport) and whether the 100 px padding is applied once per widget or once per page. The cooked exports do not identify a single clipping rectangle. A runtime test with 1, 2, 3, and 4 simultaneous lines is required to close this. |
-| **UNKNOWN** | The `SizeBox_0` 1x1 override in `WBP_Subtitle` looks like a spacer/background branch, not the text container; if it were the sole text container no subtitle text would render at normal size. Its exact role is not proven from the export alone. |
+| WBP_Subtitle anchors | Min=(0.5, 0), Max=(0.5, 1) |
+| alignment / auto-size | (0.5, 1) / True |
+| dialogue overlay padding | Top=150, Bottom=150 px |
+| SizeBox_1 | WidthOverride=2150; no height override |
+| SubtitleScaleBox / subsystem scale | UserSpecified / 0.75 |
+| WBP_OneSubtitle sentence slot | Bottom padding=100, Fill, Left / Bottom |
+| sentence / speaker font size | 45 / 35 |
+| container | VerticalBox; no ScrollBox observed |
 
-## Evidence chain
+## What remains unknown
 
-### `WBP_Subtitle`
+Available height depends on parent geometry, viewport, DPI/layout scale and runtime
+allocation. A bottom-anchored auto-sized stack can grow upward; the padding is not a
+150 px content viewport. The old three-line/four-line arithmetic cannot identify
+the clipping owner or prove why P-3's last words were cut.
 
-| node | property | value |
-| --- | --- | --- |
-| `CanvasPanelSlot_0` | anchors minimum | `X=0.5`, `Y=0.0` |
-| `CanvasPanelSlot_0` | anchors maximum | `X=0.5`, `Y=1.0` |
-| `CanvasPanelSlot_0` | alignment | `X=0.5`, `Y=1.0` |
-| `CanvasPanelSlot_0` | offsets bottom | `+0` |
-| `CanvasPanelSlot_0` | `bAutoSize` | `True` |
-| dialogue overlay slot | padding top / bottom | `150.0` / `150.0` px |
-| `SizeBox_1` | width override | `2150.0` px (override on) |
-| `SizeBox_1` | height override | none |
-| `SubtitleScaleBox` | stretch | `EStretch::UserSpecified` |
-| `VerticalBoxSubtitles` | child policy | plain vertical stack; no scroll/clip property in the export |
-| `BP_SubtitlesSubsystem` | `SubtitleSizeScale` | `0.75` |
+It also assumed a 1.2 em line box, while the default Plex v3 retains different metrics
+(see [font evidence](font_ab_evidence.md)). Neither number alone establishes the actual
+rendered line height. The 100 px slot padding is worth measuring, not blindly removing.
 
-The bottom anchor plus auto-size means the stack has no intrinsic vertical cap in this
-widget. The only explicit vertical reserve found in the chain is the 150 px overlay
-padding. A larger stack therefore competes with that reserve rather than with a fixed
-subtitle height.
+## Timing and layout are separate
 
-### `WBP_OneSubtitle`
+The p12 baseline does not repair timing. The published experimental p12g predates the
+seconds/minutes fix in apply_subtitle_caps.ps1. Fixing source does not update a PAK:
+a rebuilt, hash-identified candidate is required for a new comparison.
 
-| node | property | value |
-| --- | --- | --- |
-| root canvas slot | anchors maximum | `X=1.0`, `Y=1.0` |
-| root canvas slot | `bAutoSize` | `True` |
-| sentence `SizeBox` slot | `SizeRule` | `Fill` |
-| sentence `SizeBox` slot | padding bottom | `100.0` px |
-| sentence `SizeBox` slot | horizontal / vertical alignment | `HAlign_Left` / `VAlign_Bottom` |
-| `Sentence_TypingTextBox` | font size | `45` |
-| `SpeakerName_1_sub` | font size | `35` |
-| speaker widgets | justification | `ETextJustify::Center` |
+Explicit end markers may reduce overlap, but do not prove the HUD is fixed. The
+0.15 s hide animation is not additional reading time. No widget, font or game asset
+was changed by this correction.
 
-## Arithmetic for the screenshot
+## Verification still required
 
-The archive scene `VO_CS_01_15` has four lines in the screenshot sequence:
-`Larisa_15`, `Victor_16`, `Larisa_17`, and `P3_18`. The P-3 line is the long one.
+Use the same save, voice language, resolution and subtitle settings for every pass.
+Compare English, Arabic p12 and a rebuilt corrected candidate separately. Capture
+the full lifetime of one through four concurrent subtitle widgets at 1080p and 1440p:
 
-- Rendered sentence font: `45 x 0.75 = 33.75` px.
-- Typical line box at 1.2 em: `33.75 x 1.2 = 40.5` px.
-- Three lines: about `121.5` px, which fits inside the 150 px bottom padding with ~28.5 px to spare.
-- Four lines: about `162` px, which is 12 px past the 150 px padding before speaker names and the 100 px sentence gap are counted.
-- If the P-3 line wraps to two rendered lines, the total is five lines (~202.5 px), well past the reserve.
+- Last words, Arabic descenders/diacritics, wrapping and speaker names.
+- Arabic joining, mixed Latin/numbers and key prompts.
+- Whether old text remains alive or merely fades.
+- Allocated widget bounds and first clipping ancestor, if tooling exposes them.
 
-This matches the screenshot shape: H3 timing lets several voice events overlap, and the
-bottom bar has room for roughly three line boxes at the current 0.75 scale. The P-3 line
-is the newest/bottom-most line, so it is the one that looks cut.
-
-## What this does and does not prove
-
-- It **does** prove that the subtitle stack is bottom-anchored, auto-sized, scaled by
-  0.75, and padded by 150 px bottom / 100 px per sentence slot. There is no hidden
-  subtitle hold timer in these widgets.
-- It **does** explain why H3 concurrency produces the screenshot: H3 adds lines, and the
-  layout has only about three line boxes of bottom safe area at the current font/scale.
-- It **does not** prove the exact clipping rectangle. The export has no single
-  `SetClipping`/`ScrollBox` node; the clip may be the viewport, the canvas, or a parent
-  `SizeBox`. A runtime A/B with the same scene at 1, 2, 3, and 4 simultaneous lines is the
-  only way to close that.
-- No bytecode, widget, font, or `.uasset` change was made for this investigation.
-
-## Relation to p12 and p12g
-
-- `p12` is the clean baseline plus CHANGE 1 and CHANGE 2. It does not change subtitle
-  timing, so the H3 stack remains.
-- `p12g` adds explicit `*0-end*` ranges to markerless final pages and caps the other
-  pages. In the audit, the four screenshot lines now carry `*0-end*` ranges and the
-  baseline H3 count for the scene drops from 4/4 to 0/4. That reduces how long each line
-  can remain, but it does not change the 150 px bottom reserve or the 0.75 scale.
-- If `p12g` still shows a cut line when four lines are on screen at once, the remaining
-  cause is the layout arithmetic above, not a missing end marker.
-- The play-test guide is `reports/stack_test_guide.md`; it asks testers to compare the
-  English source, Korean with `p12`, and Korean with `p12g`, and to report whether the
-  old lines disappear and whether the bottom line is clipped.
+See the [test guide](stack_test_guide.md). The clipping owner, RTL appearance and
+correct layout adjustment remain unverified until runtime testing.

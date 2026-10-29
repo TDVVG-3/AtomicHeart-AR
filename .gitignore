@@ -31,3 +31,15 @@ Desktop.ini
 
 tools/src/**/obj/
 tools/src/**/bin/
+
+# Desktop application build output
+app/**/bin/
+app/**/obj/
+app/**/test-work/
+.serena/
+dist/*.zip
+dist/*.sha256
+dist/*.AppImage
+dist/*.json
+dist/*.png
+dist/*.txt

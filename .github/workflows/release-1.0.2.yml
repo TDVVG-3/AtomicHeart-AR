@@ -1,0 +1,72 @@
+name: Build and verify 1.0.2
+on:
+  workflow_dispatch:
+  push:
+    branches: [release/1.0.2]
+  pull_request:
+    paths: ['app/**', 'scripts/package*', 'scripts/build_payload_1_0_2.py', 'scripts/prepare_appdir.py', '.github/workflows/release-1.0.2.yml']
+permissions:
+  contents: read
+jobs:
+  windows:
+    runs-on: windows-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch verified upstream build inputs
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          New-Item -ItemType Directory -Force tools/bin/repak, tools/bin/unreallocres, build | Out-Null
+          Invoke-WebRequest https://github.com/TDVVG-3/AtomicHeart-AR/releases/download/v1.0.0/AtomicHeart-AR-1.0.0-p12.zip -OutFile build/base-p12.zip
+          Invoke-WebRequest https://github.com/trumank/repak/releases/download/v0.2.3/repak_cli-x86_64-pc-windows-msvc.zip -OutFile build/repak.zip
+          if ((Get-FileHash build/repak.zip).Hash.ToLowerInvariant() -ne '6720d602144d75df477a99d5bedb6ea780997546afc335901d4937cafeaa73fa') { throw 'repak hash mismatch' }
+          Expand-Archive build/repak.zip tools/bin/repak -Force
+          Invoke-WebRequest https://github.com/akintos/UnrealLocres/releases/download/1.1.1/UnrealLocres.exe -OutFile tools/bin/unreallocres/UnrealLocres.exe
+          python scripts/build_payload_1_0_2.py build/base-p12.zip
+          if ($LASTEXITCODE) { throw 'Payload build failed' }
+      - name: Test subtitle and glyph regressions
+        run: python -m unittest discover -s tests -p test_display_regressions.py -v
+      - name: Package and test Windows installer
+        run: ./scripts/package_installer.ps1 -PayloadZip dist/AtomicHeart-AR-1.0.2-payload.zip
+      - uses: actions/upload-artifact@v4
+        with:
+          name: windows-and-payload-1.0.2
+          path: dist/*
+          if-no-files-found: error
+  linux:
+    needs: windows
+    runs-on: ubuntu-22.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+      - uses: actions/download-artifact@v4
+        with:
+          name: windows-and-payload-1.0.2
+          path: dist
+      - name: Install desktop test dependencies
+        run: sudo apt-get update && sudo apt-get install -y xvfb fonts-dejavu-core libfontconfig1 libice6 libsm6 libx11-6 libxrandr2 libxcursor1 libxi6 libgl1 desktop-file-utils
+      - name: Build and test self-contained AppImage
+        run: mkdir -p build && bash scripts/package_appimage.sh dist/AtomicHeart-AR-1.0.2-payload.zip
+      - name: Render the packaged Arabic interface
+        run: |
+          set -o pipefail
+          APPIMAGE_EXTRACT_AND_RUN=1 timeout 60s xvfb-run -a /usr/bin/time -v -o dist/linux-smoke-metrics.txt ./dist/AtomicHeart-AR-1.0.2-linux-x86_64.AppImage --smoke-test "$PWD/dist/linux-interface.png" | tee dist/linux-smoke.log
+          grep -q GUI_SMOKE_PASS dist/linux-smoke.log
+          test -s dist/linux-interface.png
+      - uses: actions/upload-artifact@v4
+        with:
+          name: linux-appimage-1.0.2
+          path: |
+            dist/*.AppImage*
+            dist/linux-*
+          if-no-files-found: error

@@ -1,7 +1,31 @@
 # THIRD_PARTY_LICENSES.md
 
+## Windows application runtime
+
+The self-contained Windows installer includes the .NET 8 runtime and Windows Desktop
+runtime. The packaging script copies their license files and available
+third-party notices from the exact restored runtime packages into the release's
+`licenses/` directory. These notices accompany the application's own MIT license.
+The desktop application uses WPF and has no third-party UI packages.
+
 This project does not claim ownership of any third-party work. Bundled/used third-party
 components, their licenses, and redistribution restrictions are documented below.
+
+## Linux application runtime
+
+The self-contained AppImage includes .NET 8, Avalonia 11.3.22, SkiaSharp,
+HarfBuzzSharp, MicroCom and Tmds.DBus dependencies. Their notices and restored
+version list are packaged under `usr/share/doc/atomicheart-ar/`. Avalonia,
+MicroCom and Tmds notices are retained in `app/AtomicHeartAR.Linux/Packaging/licenses/`;
+the packager also copies notices from the exact NuGet/runtime packages.
+
+AppImage's unmodified type-2 runtime (release 20251108, SHA256 pinned in the
+packaging script) is MIT with the listed statically linked components under
+their own terms, including libfuse LGPL. The bundled runtime notice links those
+components. Source and build scripts:
+https://github.com/AppImage/type2-runtime/tree/dd6cebedcbddde9c82f89b011e8e1d40b6e43868
+Users can extract the AppDir and repackage it with a modified compatible runtime.
+DejaVu Sans is obtained from the Linux system, not redistributed in the AppImage.
 
 ## Tools
 

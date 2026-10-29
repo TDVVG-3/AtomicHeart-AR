@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=AtomicHeart-AR
+Comment=Arabic localization installer for Atomic Heart
+Exec=AtomicHeartAR
+Icon=atomicheart-ar
+Categories=Game;Utility;
+Terminal=false
