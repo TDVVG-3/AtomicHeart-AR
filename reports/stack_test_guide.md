@@ -6,6 +6,17 @@ the same time and the bottom Arabic line looks cut. You do **not** need to edit 
 install mods, or read code. The coordinator sets up each pass; you play the same scene
 three times and report what you see.
 
+## Correction — 2026-10-29
+
+The published experimental p12g predates the seconds/minutes fix. Pass C below must
+use a newly rebuilt, hash-identified candidate from the corrected scripts; do not
+interpret the old PAK as a test of this fix. No corrected PAK is supplied by the source-only
+repair. Record voice language, resolution, subtitle settings and a short video of the
+entire line lifetime. Repeat at 1080p and 1440p if available. Check Arabic joining,
+diacritics, mixed Latin/numbers and key prompts as well as overlap/clipping.
+The 150 px padding is not a proven three-line display limit; see the corrected
+[layout evidence](subtitle_bottom_bar_p12.md).
+
 ## 1. The scene to reach
 
 **Location:** VEGA 9, inside the **Academy of Consequences archive** (the room with the
