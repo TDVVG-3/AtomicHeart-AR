@@ -284,11 +284,7 @@ if ($scene.Count -eq 0) {
     } else {
         $r.Add('- H4: **supported or contributing** - at least one marker or key is reused in another stock DataTable.')
     }
-    if ($lastShot -and $lastShot.Tokens -eq 0) {
-        $r.Add('- The visible truncation of the long P-3 line is **not explained by H1-H4**. It is consistent with the bottom subtitle bar running out of vertical space when three wrapped lines are shown; the widget evidence is in `reports/p4_subtitle_hide_blueprint.md` and the play-test guide. H3 explains why the three lines are concurrent; it does not by itself truncate text.')
-    } else {
-        $r.Add('- The visible truncation of the long P-3 line is **not explained by H1-H4**. H3 has been addressed with explicit 0-end ranges, so the remaining truncation is consistent with the bottom subtitle bar running out of vertical space when three wrapped lines are shown; see `reports/p4_subtitle_hide_blueprint.md` and the play-test guide.')
-    }
+    $r.Add('- The visible truncation is not established by this timing audit. Explicit end markers do not verify clipping, and 150 px of bottom padding is not a three-line viewport. Measure the runtime widget bounds and full line lifetime; see reports/subtitle_bottom_bar_p12.md and reports/stack_test_guide.md.')
 }
 
 [IO.File]::WriteAllLines($ReportPath, $r, $utf8)
