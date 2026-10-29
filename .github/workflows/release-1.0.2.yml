@@ -1,6 +1,11 @@
 name: Build and verify 1.0.2
 on:
   workflow_dispatch:
+    inputs:
+      publish_release:
+        description: 'Publish v1.0.2 in TDVVG-3/AtomicHeart-AR after all checks pass'
+        type: boolean
+        default: false
   push:
     branches: [release/1.0.2]
   pull_request:
@@ -70,3 +75,38 @@ jobs:
             dist/*.AppImage*
             dist/linux-*
           if-no-files-found: error
+  publish:
+    needs: [windows, linux]
+    if: github.event_name == 'workflow_dispatch' && inputs.publish_release && github.repository == 'TDVVG-3/AtomicHeart-AR'
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: windows-and-payload-1.0.2
+          path: dist
+      - uses: actions/download-artifact@v4
+        with:
+          name: linux-appimage-1.0.2
+          path: dist
+      - name: Verify all downloadable files
+        working-directory: dist
+        run: |
+          sha256sum -c AtomicHeart-AR-1.0.2-payload.zip.sha256
+          sha256sum -c AtomicHeart-AR-1.0.2-win-x64.zip.sha256
+          sha256sum -c AtomicHeart-AR-1.0.2-linux-x86_64.AppImage.sha256
+      - name: Publish verified release in the original repository
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          if gh release view v1.0.2 >/dev/null 2>&1; then
+            echo "v1.0.2 already exists; refusing to overwrite an existing release."
+            exit 1
+          fi
+          gh release create v1.0.2 --draft --target "$GITHUB_SHA" --title "AtomicHeart-AR 1.0.2 · Windows + AppImage" --notes-file docs/releases/v1.0.2-publish.md
+          gh release upload v1.0.2 dist/AtomicHeart-AR-1.0.2-win-x64.zip dist/AtomicHeart-AR-1.0.2-win-x64.zip.sha256 dist/AtomicHeart-AR-1.0.2-linux-x86_64.AppImage dist/AtomicHeart-AR-1.0.2-linux-x86_64.AppImage.sha256 dist/AtomicHeart-AR-1.0.2-payload.zip dist/AtomicHeart-AR-1.0.2-payload.zip.sha256
+          gh release edit v1.0.2 --draft=false --latest
