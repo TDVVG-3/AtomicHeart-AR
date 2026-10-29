@@ -42,14 +42,14 @@ Attach or link the relevant report from `reports/`.
 
 ## Code contributions
 
-The Windows desktop application lives under `app/`. Run its isolated filesystem
+The Windows and Linux desktop applications live under `app/`. Run their shared filesystem
 safety checks before changing installation behavior:
 
 ```powershell
 dotnet run --project app/AtomicHeartAR.Tests -c Release -- C:\temp\ah-ar-tests
 ```
 
-Keep production payload hashes tied to the approved p12 release. Never add PAKs or
+Keep production payload hashes tied to the approved versioned release catalog. Never add PAKs or
 application build outputs to Git. See `app/README.md` for build and packaging details.
 
 - Keep changes consistent with the existing PowerShell/Python style.

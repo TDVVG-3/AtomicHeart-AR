@@ -6,6 +6,7 @@
 - Stable payload rebuilt with eight Arabic text corrections; all 35 contained assets round-trip verified.
 - Approved p12 upgrades retain transaction backups; unknown files and conflicting carriers are refused.
 - AppImage includes .NET, translation payload and license notices. Ubuntu 22.04 x86_64 is the CI baseline.
+- Final CI passed: 27 Windows safety checks, 31 Linux safety checks, 18 display-tool regressions, and a packaged AppImage GUI render. Build: [40843554060](https://github.com/exelight7/AtomicHeart-AR/actions/runs/40843554060).
 - See [1.0.2 release notes](docs/releases/v1.0.2.md) for build results and publication status.
 - Game rendering and Steam Deck hardware testing remain outstanding; experimental p12g is excluded.
 
