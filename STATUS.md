@@ -1,6 +1,15 @@
 # Status - Atomic Heart Arabic localization
 
-## Windows installer 1.0.1
+## Installer 1.0.2
+
+- Windows WPF and Linux Avalonia applications share the verified installation engine.
+- Stable payload rebuilt with eight Arabic text corrections; all 35 contained assets round-trip verified.
+- Approved p12 upgrades retain transaction backups; unknown files and conflicting carriers are refused.
+- AppImage includes .NET, translation payload and license notices. Ubuntu 22.04 x86_64 is the CI baseline.
+- See [1.0.2 release notes](docs/releases/v1.0.2.md) for build results and publication status.
+- Game rendering and Steam Deck hardware testing remain outstanding; experimental p12g is excluded.
+
+## Windows installer 1.0.1 (historical)
 
 - Arabic desktop application source is under `app/`; the full package includes the approved p12 payload from upstream release `v1.0.0`.
 - Installer verification: 20 safety checks passed, including install/verify/uninstall with the official payload in a fake game directory.

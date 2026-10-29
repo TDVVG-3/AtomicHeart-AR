@@ -3,6 +3,25 @@
 All notable changes to this project are documented here.
 Format loosely follows Keep a Changelog.
 
+## [1.0.2] - 2026-10-29
+
+### Added
+- Native Arabic Linux desktop installer using Avalonia, distributed as a self-contained x86_64 AppImage.
+- Shared installation engine with approved p12 upgrade support, backup/rollback and rejection of competing carrier PAKs.
+- Linux Steam library discovery, root-symlink resolution, Proton process checks and AppImage GUI smoke testing.
+- Windows/Linux CI packaging with verified payload and pinned AppImage build inputs.
+
+### Fixed
+- Eight Arabic text values in the master and rebuilt localization PAK; seven corresponding TM entries.
+- Subtitle time normalization, duplicate-start groups, clip limits and malformed marker handling in the timing builder.
+- Glyph coverage checks across every required row/font face, including Basic Latin and supplementary Unicode.
+- HUD documentation distinguishes padding from viewport clipping; unresolved game layout limitations remain documented.
+- Deterministic payload packing with a single repak worker.
+
+### Release status
+- Full packages contain the updated stable p12-based payload. Experimental p12g timing changes are excluded.
+- Publication in the original repository requires write permission. Game rendering and Steam Deck hardware are not revalidated.
+
 ## [1.0.1] - 2026-10-28
 
 ### Added

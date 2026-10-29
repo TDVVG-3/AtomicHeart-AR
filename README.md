@@ -5,15 +5,15 @@
 # تعريب أتوميك هارت
 ### عالمٌ آخر. بلغتك.
 
-تعريب مجتمعي للعبة **Atomic Heart** على الحاسب، مع تطبيق Windows لإدارة التركيب والفحص والإزالة.
+تعريب مجتمعي للعبة **Atomic Heart** على الحاسب، مع تطبيق لويندوز ولينكس لإدارة التركيب والفحص والإزالة.
 
 [![Windows x64](https://img.shields.io/badge/Windows-x64-263522?style=for-the-badge&logo=windows&logoColor=EEE9D8)](app/README.md)
-[![Installer 1.0.1](https://img.shields.io/badge/Installer-1.0.1-E65043?style=for-the-badge&labelColor=172016)](docs/releases/v1.0.1.md)
+[![Installer 1.0.2](https://img.shields.io/badge/Installer-1.0.2-E65043?style=for-the-badge&labelColor=172016)](docs/releases/v1.0.2.md)
 [![Localization p12](https://img.shields.io/badge/Localization-p12-C4CFAF?style=for-the-badge&labelColor=172016)](https://github.com/TDVVG-3/AtomicHeart-AR/releases/tag/v1.0.0)
 [![Code MIT](https://img.shields.io/badge/Code-MIT-C4CFAF?style=for-the-badge&labelColor=172016)](LICENSE)
 
 **[تنزيل حزمة التعريب](https://github.com/TDVVG-3/AtomicHeart-AR/releases/download/v1.0.0/AtomicHeart-AR-1.0.0-p12.zip)** &nbsp; · &nbsp;
-**[تطبيق 1.0.1 وحالة نشره](docs/releases/v1.0.1.md)** &nbsp; · &nbsp;
+**[تطبيق 1.0.2 وحالة نشره](docs/releases/v1.0.2.md)** &nbsp; · &nbsp;
 **[ابدأ من هنا](#ابدأ-من-هنا)** &nbsp; · &nbsp;
 **[كل الإصدارات](https://github.com/TDVVG-3/AtomicHeart-AR/releases)**
 
@@ -34,7 +34,7 @@
 القاعدة الرئيسية تضم **27,618 صفًا**، وتبقى **443 حالة** غير مترجمة ضمن فئة النسخ.
 هذه أرقام مجموعة p12 كما توثّقها [حالة المشروع](STATUS.md) و[تقرير توليد p12](reports/p12_master.md).
 
-## تطبيق التركيب · 1.0.1
+## تطبيق التركيب · 1.0.2
 
 واجهة عربية بهوية داكنة ولمسات حمراء، تجمع خطوات التعريب في نافذة واحدة:
 
@@ -47,9 +47,9 @@
 | **استرجاع عند الفشل** | التراجع عن العملية؛ والاحتفاظ بملفات الاسترداد إذا تعذّر الاسترجاع |
 | **سجل واضح** | عرض حالة العملية وتعليمات اختيار لغة النص |
 
-> **حالة 1.0.1:** مصدر التطبيق وتغليفه قيد التجهيز للنشر في المستودع الأصلي.
-> إصدار التعريب **1.0.0 / p12 متاح بالفعل** من الروابط أدناه.
-> رقم التطبيق **1.0.1** يخص أداة التركيب؛ بيانات التعريب المرفقة هي مجموعة **p12** نفسها.
+ > **حالة 1.0.2:** النسخة الجديدة تضم Windows وAppImage وتعريبًا محدّثًا بثمانية تصحيحات نصية.
+> الملفات تُبنى وتُختبر آليًا؛ نشر Release في المستودع الأصلي يحتاج صلاحية المالك.
+> [ملاحظات الإصدار وطريقة تنزيله](docs/releases/v1.0.2.md). يبقى إصدار 1.0.0 متاحًا إلى حين النشر.
 
 التطبيق يستخدم محرك تركيب مستقلًا، ولا يشغّل سكربتات PowerShell القديمة.
 تفاصيل التشغيل والبناء في [دليل التطبيق](app/README.md).
@@ -59,23 +59,30 @@
 | الملف | الاستخدام |
 | --- | --- |
 | **[حزمة p12 المعتمدة](https://github.com/TDVVG-3/AtomicHeart-AR/releases/download/v1.0.0/AtomicHeart-AR-1.0.0-p12.zip)** | التعريب والخط والتلميحات، للتركيب اليدوي الآن |
-| **[تطبيق 1.0.1](docs/releases/v1.0.1.md)** | حالة تجهيز النسخة الكاملة: التطبيق + حزمة p12 |
+| **[تطبيق 1.0.2](docs/releases/v1.0.2.md)** | Windows ZIP وLinux AppImage، مع حزمة التعريب المصحّحة |
 | **[المصدر](https://github.com/TDVVG-3/AtomicHeart-AR/releases/download/v1.0.0/AtomicHeart-AR-1.0.0-source.zip)** | الكود وقاعدة الترجمة للمطورين |
 | **[جميع الإصدارات](https://github.com/TDVVG-3/AtomicHeart-AR/releases)** | سجل التنزيلات والمتغيرات وملاحظات كل إصدار |
 
 **Source code (zip)** التلقائي في GitHub لا يثبّت التعريب. للعب، استخدم حزمة p12 أو النسخة الكاملة من التطبيق عند نشرها.
-المتغير **p12g تجريبي** لمعالجة التوقيت، وغير مرفق مع تطبيق 1.0.1 الافتراضي.
+المتغير **p12g تجريبي** لمعالجة التوقيت، وغير مرفق مع تطبيق 1.0.2 الافتراضي.
 
 ## ابدأ من هنا
 
 ### باستخدام التطبيق
 
-1. فك ضغط `AtomicHeart-AR-1.0.1-win-x64.zip` بعد توفره؛ اترك مجلد `payload` بجانب `AtomicHeartAR.exe`.
+1. فك ضغط `AtomicHeart-AR-1.0.2-win-x64.zip` بعد توفره؛ اترك مجلد `payload` بجانب `AtomicHeartAR.exe`.
 2. أغلق اللعبة، وشغّل التطبيق، ثم اختر مجلد Atomic Heart الذي يحتوي على `AtomicHeart.exe`.
 3. اضغط **فحص الملفات**، ثم **تثبيت التعريب**.
 4. افتح اللعبة، واختر **Korean / الكورية** من **Text Language**.
 
-النسخة الكاملة تشمل بيئة .NET اللازمة للعمل على **Windows x64**.
+على لينكس، استخدم `AtomicHeart-AR-1.0.2-linux-x86_64.AppImage`، وامنحه إذن التشغيل ثم افتحه في وضع سطح المكتب:
+
+```sh
+chmod +x AtomicHeart-AR-1.0.2-linux-x86_64.AppImage
+./AtomicHeart-AR-1.0.2-linux-x86_64.AppImage
+```
+
+نسخة AppImage تشمل التعريب و.NET وتعمل مع مكتبات Steam / Proton، على Ubuntu 22.04 أو بيئة متوافقة x86_64. تحتاج X11 أو XWayland وخطًا عربيًا. للتشغيل عند تعذّر FUSE أضف `--appimage-extract-and-run`. راجع [دليل لينكس](app/README.md#linux--appimage). نسخة ويندوز أيضًا تتضمن بيئة التشغيل.
 لإزالة التعريب، أغلق اللعبة واستخدم زر **إزالة التعريب**. يتوقف التطبيق إذا تغيّر ملف مسجّل
 بعد التثبيت؛ راجع السجل بدل حذف ملفات موداتك الأخرى.
 
@@ -95,22 +102,21 @@
 إذا استُخدمت سكربتات المشروع القديمة، راجع سجلها `atomic-heart-ar-install-manifest.json`؛
 سجل التطبيق الجديد مستقل واسمه `atomic-heart-ar-app-manifest.json`.
 
-## محتويات حزمة p12
+## محتويات حزمة 1.0.2
 
 | الوظيفة | الملف | الحجم بالبايت |
 | --- | --- | ---: |
-| النصوص | `zzz_atomicheart-ar_carrier_koKR_p12_P.pak` | 4,470,295 |
+| النصوص | `zzz_atomicheart-ar_carrier_koKR_p12_P.pak` | 4,470,307 |
 | الخط v3 | `zzz_atomicheart-ar_font_p3_unhinted_P.pak` | 1,455,228 |
 | التلميحات x150 | `zzz_atomicheart-ar_tips_x150_P.pak` | 75,853 |
 
-تجد البصمات في [SHA256SUMS](docs/releases/v1.0.0-SHA256SUMS.txt). للتحقق في PowerShell:
+تجد بصمات 1.0.2 في [SHA256SUMS](docs/releases/v1.0.2-payload-SHA256SUMS.txt). للتحقق في PowerShell:
 
 ```powershell
 Get-FileHash -Algorithm SHA256 .\*.pak
 ```
 
-البصمات مرتبطة [بتقرير التثبيت المعتمد](reports/install_verification.md)،
-والتطبيق يطابقها قبل نسخ الملفات.
+أُعيد بناء حزمة النصوص بإضافة ثمانية تصحيحات، مع فحص القيم بعد إعادة الاستخراج ومطابقة الملفات الـ35 داخل الحزمة. بقي الخط والتلميحات كما هما. اسم ملف النصوص بقي p12 لتسهيل الترقية، لكن بصمته تغيّرت.
 
 ## أسئلة سريعة
 
@@ -133,8 +139,7 @@ Get-FileHash -Algorithm SHA256 .\*.pak
 <details>
 <summary><strong>عندي تعريب مثبت يدويًا؛ أقدر أديره بالتطبيق؟</strong></summary>
 
-إذا كانت الملفات مطابقة تمامًا لمجموعة p12 المعتمدة، اختر الحزمة وثبّتها بالتطبيق ليتحقق منها
-ويسجّلها. الملفات المعدّلة أو المجموعات المختلفة تحتاج مراجعة قبل اعتمادها.
+نعم. يرقّي التطبيق مجموعة p12 المعتمدة إلى 1.0.2، ويحفظ النسخة القديمة أثناء التحديث ليسترجعها عند الفشل. الملفات المعدّلة أو المجموعات المختلفة تحتاج مراجعة قبل اعتمادها.
 
 </details>
 
@@ -142,7 +147,7 @@ Get-FileHash -Algorithm SHA256 .\*.pak
 <summary><strong>هل التعريب كامل وخالٍ من المشاكل؟</strong></summary>
 
 توجد 443 حالة غير مترجمة ضمن فئة النسخ، وبعض مشاكل التوقيت والتراكب أو قصّ أربعة أسطر.
-إصدار التطبيق لا يغيّر بيانات الترجمة ولا يصلح تلقائيًا هذه القيود.
+إصدار 1.0.2 يصحّح ثمانية نصوص، ويصلح أدوات تدقيق التوقيت والخطوط. إصلاح قصّ HUD داخل اللعبة غير مثبت، ومتغير التوقيت التجريبي p12g غير مرفق.
 راجع [المشاكل المعروفة](KNOWN_ISSUES.md) و[دليل اختبار الترجمة النصية](reports/stack_test_guide.md).
 
 </details>
@@ -164,12 +169,12 @@ Get-FileHash -Algorithm SHA256 .\*.pak
 ## للمطورين والمساهمين
 
 ابدأ من [CONTRIBUTING](CONTRIBUTING.md) و[دليل التطبيق](app/README.md).
-يتطلب بناء التطبيق **Windows و.NET 8 SDK**، ويستخدم WPF دون حزم واجهة خارجية.
+يستخدم Windows واجهة WPF، وLinux واجهة Avalonia، وكلاهما يشتركان في محرك التثبيت. البناء يحتاج **.NET 8 SDK**. [مسار البناء الآلي](.github/workflows/release-1.0.2.yml) يجهّز الحزم ويختبرها.
 
 ```powershell
 dotnet run --project app/AtomicHeartAR.Tests -c Release -- C:\temp\ah-ar-tests
-dotnet publish app/AtomicHeartAR.Installer -c Release -r win-x64 --self-contained true -o build/app-1.0.1
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts/package_installer.ps1 -PayloadZip C:\downloads\AtomicHeart-AR-1.0.0-p12.zip
+dotnet publish app/AtomicHeartAR.Installer -c Release -r win-x64 --self-contained true -o build/app-1.0.2
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/package_installer.ps1 -PayloadZip dist/AtomicHeart-AR-1.0.2-payload.zip
 ```
 
 لبناء حزم اللعبة نفسها، راجع [سلسلة الأدوات](docs/TOOLCHAIN.md) و[HANDOFF](HANDOFF.md).
@@ -178,7 +183,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts/package_installer.ps
 
 | المسار | المحتوى |
 | --- | --- |
-| [app/](app/) | تطبيق Windows واختبارات محرك التثبيت |
+| [app/](app/) | تطبيقا Windows وLinux واختبارات محرك التثبيت |
 | [localization/master/](localization/master/) | قاعدة النص الإنجليزي والترجمة العربية |
 | [localization/working/](localization/working/) | ذاكرة الترجمة وقواعد الإصلاح والمراجعة |
 | [scripts/](scripts/) | أدوات الاستخراج والبناء والتدقيق والتغليف |

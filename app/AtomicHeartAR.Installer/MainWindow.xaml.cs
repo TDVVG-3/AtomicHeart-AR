@@ -24,7 +24,7 @@ public partial class MainWindow : Window
             if (Directory.Exists(bundled))
             {
                 PackagePathBox.Text = bundled;
-                PackageHint.Text = "حزمة p12 مرفقة وجاهزة للفحص. اختر مجلد اللعبة للمتابعة.";
+                PackageHint.Text = "حزمة 1.0.2 مرفقة وجاهزة للفحص. اختر مجلد اللعبة للمتابعة.";
             }
             UpdateButtons();
         };
@@ -54,7 +54,7 @@ public partial class MainWindow : Window
 
     private void BrowsePackage_Click(object sender, RoutedEventArgs e)
     {
-        var dialog = new OpenFolderDialog { Title = "اختر مجلد ملفات حزمة p12 الثلاثة بعد فك الضغط" };
+        var dialog = new OpenFolderDialog { Title = "اختر مجلد ملفات حزمة 1.0.2 الثلاثة بعد فك الضغط" };
         if (dialog.ShowDialog(this) == true) PackagePathBox.Text = dialog.FolderName;
     }
 

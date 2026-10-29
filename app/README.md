@@ -1,40 +1,79 @@
-# AtomicHeart-AR Windows installer · 1.0.1
+# AtomicHeart-AR · 1.0.2
 
-Arabic desktop installer for the approved `p12 + font v3 + tips_x150` set.
-The full release ZIP includes the approved p12 localization PAKs in `payload/`.
-A source build and the optional AppOnly ZIP require a separate payload download.
-The application never includes the game itself.
+Arabic installer for Windows x64 and Linux x86_64 (Steam / Proton).
+Full packages include the corrected translation, font v3, tips x150 and .NET.
+The game itself is not included.
 
-## Use
+## Windows
 
-1. Extract the application ZIP and run `AtomicHeartAR.exe` on Windows x64.
-2. Close Atomic Heart. Select the game root containing `AtomicHeart.exe`.
-3. The full ZIP selects its adjacent `payload/` folder automatically. For an
-   AppOnly/source build, select the extracted approved localization package. The expected hashes are fixed in `ModInstaller.cs`
-   and match `docs/releases/v1.0.0-SHA256SUMS.txt`.
-4. Check the files and install. Select **Korean** for the game's text language.
+Extract `AtomicHeart-AR-1.0.2-win-x64.zip` and launch `AtomicHeartAR.exe`.
+Keep the adjacent `payload/` folder.
 
-The app writes its fixed PAK set and its own manifest only under `Paks/~mods`.
-Unrelated mods and the older scripts' manifest are preserved. Exact matching
-existing PAKs can be adopted by installing them through the application.
-Modified same-name files and invalid manifests block changes. Caught failures
-roll back; if rollback itself fails, recovery files are retained and their path
-is shown in the activity log. Power-loss recovery is not automatic: reopen the
-application and verify/repair before launching the game.
+## Linux / AppImage
 
-The application runs with the current user's permissions. The portable EXE is
-not code-signed. No network request is made by the installer; GitHub links open
-the user's browser. It does not execute the legacy PowerShell installers.
+Ubuntu 22.04 or compatible glibc 2.35+ desktop, x86_64, X11/XWayland,
+Fontconfig and an Arabic-capable font (DejaVu Sans) are required.
+
+```sh
+chmod +x AtomicHeart-AR-1.0.2-linux-x86_64.AppImage
+./AtomicHeart-AR-1.0.2-linux-x86_64.AppImage
+```
+
+Launch in desktop mode. The app runs natively; the game uses Steam / Proton.
+Steam Deck hardware has not been tested. No separate .NET installation is needed.
+If FUSE mounting is unavailable, add `--appimage-extract-and-run`.
+Extraction uses additional temporary disk space and starts more slowly.
+The pinned static runtime does not require a separate libfuse2 installation.
+
+## Install / update / remove
+
+1. Close Atomic Heart and choose its folder containing `AtomicHeart.exe`.
+2. Full packages automatically select their bundled `payload/`.
+3. Check files, then install/update. Select **Korean** for the game's text language.
+4. To remove, close the game and use the removal button.
+
+Eight Arabic text values are corrected in the new payload. Expected hashes are
+fixed in `ModInstaller.cs` and `docs/releases/v1.0.2-payload-SHA256SUMS.txt`.
+The carrier keeps its p12 filename for updates; its hash distinguishes versions.
+Approved p12 installs can be upgraded, including manual installs. Old files are
+backed up before replacement; unknown files and competing carriers block updates.
+Experimental p12g is not included.
+
+Only the fixed PAK set and app manifest under `Paks/~mods` are managed.
+Other mods and legacy manifests are preserved. Caught failures roll back;
+failed rollback keeps a recovery directory and reports its path. Power loss
+recovery is not automatic: verify/repair before starting the game.
+Linux Steam root symlinks are resolved; internal mods/payload symlinks are refused.
+
+No root/admin elevation, service, telemetry or automatic updater is used.
+The app makes no network requests; project links open the browser.
+The Windows binary is unsigned. Hashing and copying run off the UI thread.
+Windows WPF and Linux Avalonia share the same installation engine.
 
 ## Build and verify
 
-Requires Windows and the .NET 8 SDK. There are no third-party application packages.
+Requires .NET 8 SDK; Linux packaging also needs Python 3, curl and
+desktop-file-utils. The Windows payload builder obtains repak 0.2.3 and
+UnrealLocres 1.1.1 from their official releases and checks the inputs.
+Build tools are not redistributed in the application.
 
 ```powershell
-dotnet run --project app/AtomicHeartAR.Tests -c Release -- C:\temp\atomicheart-tests
-dotnet publish app/AtomicHeartAR.Installer -c Release -r win-x64 --self-contained true -o build/app-1.0.1
+python scripts/build_payload_1_0_2.py C:\downloads\AtomicHeart-AR-1.0.0-p12.zip
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/package_installer.ps1 -PayloadZip dist/AtomicHeart-AR-1.0.2-payload.zip
 ```
 
-Run tests with a disposable output directory. Test fixtures use fake payloads
-and fake game folders; they do not require the game. The production app always
-uses the approved PAK hashes. Real game rendering is a separate manual check.
+```sh
+mkdir -p build
+bash scripts/package_appimage.sh dist/AtomicHeart-AR-1.0.2-payload.zip
+dotnet run --project app/AtomicHeartAR.Tests -c Release -- build/test-fixtures
+```
+
+The [CI workflow](../.github/workflows/release-1.0.2.yml) builds both packages,
+tests safe installation in fake game folders with the real payload, checks
+subtitle/glyph regressions and renders the packaged Linux window.
+Real game rendering requires a separate manual test.
+
+Linux notices and dependency versions are under `usr/share/doc/atomicheart-ar/`.
+Inspect with `--appimage-extract`. Runtime source and build instructions:
+[AppImage/type2-runtime 20251108](https://github.com/AppImage/type2-runtime/tree/dd6cebedcbddde9c82f89b011e8e1d40b6e43868).
+The runtime is unmodified and replaceable by repackaging the extracted AppDir.

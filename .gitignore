@@ -39,3 +39,7 @@ app/**/test-work/
 .serena/
 dist/*.zip
 dist/*.sha256
+dist/*.AppImage
+dist/*.json
+dist/*.png
+dist/*.txt

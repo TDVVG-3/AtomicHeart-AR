@@ -2,7 +2,7 @@
 param([string]$PayloadZip = '')
 $ErrorActionPreference = 'Stop'
 $repo = Split-Path $PSScriptRoot -Parent
-$version = '1.0.1'
+$version = '1.0.2'
 $stage = Join-Path $repo ('build\installer-' + [guid]::NewGuid().ToString('N'))
 $name = if ($PayloadZip) { 'AtomicHeart-AR-' + $version + '-win-x64' } else { 'AtomicHeart-AR-AppOnly-' + $version + '-win-x64' }
 $bundle = Join-Path $stage $name
@@ -13,12 +13,12 @@ if ($LASTEXITCODE -ne 0) { throw 'Application publish failed.' }
 
 if ($PayloadZip) {
     $zipPath = (Resolve-Path -LiteralPath $PayloadZip).Path
-    $expectedZipHash = '813ac0e3b6c51034de33ae08109567a44bb3655e5d1aff39420999a0e94f00dd'
+    $expectedZipHash = '078bd3a295a7947d8deec249250608b3bb52cfbfcfc258b86ae33a5f74cc0eb5'
     if ((Get-FileHash -LiteralPath $zipPath -Algorithm SHA256).Hash.ToLowerInvariant() -ne $expectedZipHash) {
-        throw 'Payload ZIP does not match the approved upstream v1.0.0 p12 release.'
+        throw 'Payload ZIP does not match the approved 1.0.2 translation payload.'
     }
     $expected = @{}
-    foreach ($line in [IO.File]::ReadAllLines((Join-Path $repo 'docs\releases\v1.0.0-SHA256SUMS.txt'))) {
+    foreach ($line in [IO.File]::ReadAllLines((Join-Path $repo 'docs\releases\v1.0.2-payload-SHA256SUMS.txt'))) {
         $fields = $line -split '\s+', 2
         if ($fields.Count -eq 2) { $expected[$fields[1].Trim()] = $fields[0] }
     }
@@ -29,7 +29,7 @@ if ($PayloadZip) {
     $archive = [IO.Compression.ZipFile]::OpenRead($zipPath)
     try {
         foreach ($file in $expected.Keys) {
-            $entries = @($archive.Entries | Where-Object { $_.FullName -ceq $file })
+            $entries = @($archive.Entries | Where-Object { $_.FullName -ceq ('payload/' + $file) })
             if ($entries.Count -ne 1 -or $entries[0].Length -gt 10MB) { throw ('Invalid payload entry: ' + $file) }
             $target = Join-Path $payload $file
             [IO.Compression.ZipFileExtensions]::ExtractToFile($entries[0], $target)
@@ -38,7 +38,7 @@ if ($PayloadZip) {
             }
         }
     } finally { $archive.Dispose() }
-    Copy-Item -LiteralPath (Join-Path $repo 'docs\releases\v1.0.0-SHA256SUMS.txt') -Destination (Join-Path $payload 'SHA256SUMS.txt')
+    Copy-Item -LiteralPath (Join-Path $repo 'docs\releases\v1.0.2-payload-SHA256SUMS.txt') -Destination (Join-Path $payload 'SHA256SUMS.txt')
     Copy-Item -LiteralPath (Join-Path $repo 'fonts\licenses\IBM-Plex-Sans-Arabic-OFL-1.1.txt') -Destination $bundle
 }
 $assets = Get-Content -LiteralPath (Join-Path $repo 'app\AtomicHeartAR.Installer\obj\project.assets.json') -Raw | ConvertFrom-Json

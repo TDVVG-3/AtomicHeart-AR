@@ -9,23 +9,26 @@ public sealed record InstallManifest(int Schema, string Version, PackageFile[] F
 
 public sealed class ModInstaller
 {
-    public const string Version = "1.0.1";
+    public const string Version = "1.0.2";
     public const string ManifestName = "atomic-heart-ar-app-manifest.json";
     public static IReadOnlyList<PackageFile> ReleaseFiles { get; } = Array.AsReadOnly(new[]
     {
-        new PackageFile("zzz_atomicheart-ar_carrier_koKR_p12_P.pak", 4470295, "910c06f2609237ac021dc1d3e2a6af02a05c64a828efdfe497a711bac66860c3"),
+        new PackageFile("zzz_atomicheart-ar_carrier_koKR_p12_P.pak", 4470307, "82c2ea5339d09fa440036c507f7aaa258b458c5599a06db77b9cc7de3843fd2f"),
         new PackageFile("zzz_atomicheart-ar_font_p3_unhinted_P.pak", 1455228, "f4ed50679d8ed7184354f6714f8d43def2fde60f03906d7bf36b7b7c8e663ef4"),
         new PackageFile("zzz_atomicheart-ar_tips_x150_P.pak", 75853, "36de01c37231a8b88ec9fc744c4f663bb8461a56adede9a6a2151d78c7ef7fcc")
     });
+    public static IReadOnlyList<PackageFile> PreviousReleaseFiles { get; } = ReleaseFiles.Select(f => f.Name.Contains("carrier_") ? f with { Size = 4470295, Sha256 = "910c06f2609237ac021dc1d3e2a6af02a05c64a828efdfe497a711bac66860c3" } : f).ToArray();
     private readonly IReadOnlyList<PackageFile> files;
+    private readonly IReadOnlyList<PackageFile> previousFiles;
     private readonly Action<string>? checkpoint;
 
-    public ModInstaller() : this(ReleaseFiles) { }
-    internal ModInstaller(IReadOnlyList<PackageFile> files, Action<string>? checkpoint = null)
+    public ModInstaller() : this(ReleaseFiles, previousFiles: PreviousReleaseFiles) { }
+    internal ModInstaller(IReadOnlyList<PackageFile> files, Action<string>? checkpoint = null, IReadOnlyList<PackageFile>? previousFiles = null)
     {
         this.files = files;
+        this.previousFiles = previousFiles ?? Array.Empty<PackageFile>();
         this.checkpoint = checkpoint;
-        foreach (var file in files) CheckName(file.Name);
+        foreach (var file in files.Concat(this.previousFiles)) CheckName(file.Name);
     }
 
     public static string Hash(string path)
@@ -72,7 +75,7 @@ public sealed class ModInstaller
         PlainPath(path);
         if (!File.Exists(path)) throw new FileNotFoundException("الملف المطلوب غير موجود: " + expected.Name);
         if (new FileInfo(path).Length != expected.Size || !Hash(path).Equals(expected.Sha256, StringComparison.OrdinalIgnoreCase))
-            throw new InvalidDataException("الملف مختلف عن حزمة p12 المعتمدة: " + expected.Name);
+            throw new InvalidDataException("الملف مختلف عن حزمة التعريب المعتمدة: " + expected.Name);
     }
 
     public void VerifyPackage(string packageRoot)
@@ -97,7 +100,7 @@ public sealed class ModInstaller
         {
             if (item is null) throw new InvalidDataException("سجل تثبيت التعريب غير صالح.");
             CheckName(item.Name);
-            var expected = files.FirstOrDefault(f => f.Name == item.Name);
+            var expected = files.Concat(previousFiles).FirstOrDefault(f => f.Name == item.Name && f.Size == item.Size && f.Sha256.Equals(item.Sha256, StringComparison.OrdinalIgnoreCase));
             if (!seen.Add(item.Name) || expected is null || expected.Size != item.Size ||
                 !expected.Sha256.Equals(item.Sha256, StringComparison.OrdinalIgnoreCase))
                 throw new InvalidDataException("سجل التثبيت لا يطابق حزمة التعريب المعتمدة.");
@@ -108,8 +111,8 @@ public sealed class ModInstaller
     public void VerifyInstalled(string gameRoot)
     {
         var mods = ModsPath(gameRoot);
-        _ = ReadManifest(mods);
-        foreach (var file in files) VerifyFile(Path.Combine(mods, file.Name), file);
+        var manifest = ReadManifest(mods);
+        foreach (var file in manifest.Files) VerifyFile(Path.Combine(mods, file.Name), file);
     }
 
     public bool HasManifest(string gameRoot)
@@ -124,6 +127,8 @@ public sealed class ModInstaller
         VerifyPackage(packageRoot);
         if (Path.GetFullPath(packageRoot).Equals(mods, StringComparison.OrdinalIgnoreCase))
             throw new InvalidOperationException("اختر حزمة التعريب من مجلد منفصل عن مجلد التثبيت.");
+        if (Directory.Exists(mods) && Directory.EnumerateFiles(mods, "zzz_atomicheart-ar_carrier*.pak").Any(p => !files.Any(f => f.Name == Path.GetFileName(p))))
+            throw new InvalidOperationException("يوجد إصدار تعريب آخر في مجلد المودات. أزله بأداته قبل تثبيت هذا الإصدار.");
         Directory.CreateDirectory(mods);
         var lockPath = Path.Combine(mods, ".atomic-heart-ar-app.lock");
         PlainPath(lockPath);
@@ -135,11 +140,21 @@ public sealed class ModInstaller
         {
             var destination = Path.Combine(mods, file.Name);
             PlainPath(destination);
-            if (File.Exists(destination)) VerifyFile(destination, file);
+            if (File.Exists(destination))
+            {
+                try { VerifyFile(destination, file); }
+                catch (InvalidDataException)
+                {
+                    var previous = previousFiles.FirstOrDefault(p => p.Name == file.Name);
+                    if (previous is null) throw;
+                    VerifyFile(destination, previous);
+                }
+            }
         }
         var transaction = Path.Combine(mods, ".atomic-heart-ar-" + Guid.NewGuid().ToString("N"));
         Directory.CreateDirectory(transaction);
         var added = new List<string>();
+        var replaced = new List<(string Original, string Saved)>();
         var oldManifest = Path.Combine(transaction, "previous-manifest.json");
         var manifestWritten = false;
         var cleanup = true;
@@ -156,6 +171,12 @@ public sealed class ModInstaller
             foreach (var file in files)
             {
                 var destination = Path.Combine(mods, file.Name);
+                if (File.Exists(destination) && Hash(destination) != file.Sha256)
+                {
+                    var backup = Path.Combine(transaction, "old-" + file.Name);
+                    File.Move(destination, backup);
+                    replaced.Add((destination, backup));
+                }
                 if (!File.Exists(destination))
                 {
                     checkpoint?.Invoke("install:" + file.Name);
@@ -177,6 +198,7 @@ public sealed class ModInstaller
             {
                 if (manifestWritten) File.Delete(manifestPath);
                 foreach (var path in added) File.Delete(path);
+                foreach (var pair in replaced.AsEnumerable().Reverse()) File.Move(pair.Saved, pair.Original);
                 if (File.Exists(oldManifest)) File.Move(oldManifest, manifestPath);
             }
             catch (Exception rollback)
@@ -195,9 +217,9 @@ public sealed class ModInstaller
         var lockPath = Path.Combine(mods, ".atomic-heart-ar-app.lock");
         PlainPath(lockPath);
         using var operationLock = new FileStream(lockPath, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.None, 1, FileOptions.DeleteOnClose);
-        _ = ReadManifest(mods);
+        var installed = ReadManifest(mods);
         // Verify the whole set before moving the first file. A changed file keeps its manifest.
-        foreach (var file in files)
+        foreach (var file in installed.Files)
         {
             var path = Path.Combine(mods, file.Name);
             PlainPath(path);
