@@ -3,7 +3,37 @@
 All notable changes to this project are documented here.
 Format loosely follows Keep a Changelog.
 
-## [1.0.2] - 2026-10-29
+## [1.0.3] - 2026-10-31
+
+### Added
+- `scripts/package_release_1_0_3.ps1`: deterministic payload ZIP packaging with carrier,
+  font, tips and ZIP hash checks.
+- `docs/releases/v1.0.3/README-INSTALL-p12.txt` and `README-INSTALL-p12g.txt`.
+- `docs/releases/v1.0.3.md` release notes in Arabic and English.
+
+### Changed
+- Public localization release is now 1.0.3; `1.0.1` and `1.0.2` are documented as
+  internal builds that were never published.
+- Rebuilt the p12 carrier from the corrected master: 4,470,307 bytes,
+  SHA256 `69475f3548198e23733d833c7e577cf256eed0d875c1bb12f4cac3c2b57c9212`.
+- Rebuilt the p12g carrier with the 1.0.0 timing behavior plus the same corrections:
+  4,516,381 bytes, SHA256 `1cc7963d13a6eda77babf1f3617189d1ec2c5153455d16306f67e9e1c8b77dc9`.
+- Font and tips payloads are unchanged.
+
+### Fixed
+- `scripts/verify_text_fixups.ps1` now understands cell-scoped and label-scoped rules,
+  superseded global rules, and p11f-only timing rules. Result: 124 cell rules applied,
+  3 documented no-ops, PASS.
+- Refreshed gate reports for the final 1.0.3 carriers: trim 0, validator PASS, glyph PASS,
+  537/537 timing markers, 35/35 round-trip, six-variant gate PASS.
+
+### Release status
+- Published as the next public release after `1.0.0`; tag `v1.0.3`.
+- Assets: `AtomicHeart-AR-1.0.3-p12.zip`,
+  `AtomicHeart-AR-1.0.3-p12g-experimental.zip`, `AtomicHeart-AR-1.0.3-source.zip`.
+- In-game rendering and Steam Deck hardware remain untested for this release.
+
+## [1.0.2] - 2026-10-29 (internal build)
 
 ### Added
 - Native Arabic Linux desktop installer using Avalonia, distributed as a self-contained x86_64 AppImage.
@@ -19,10 +49,11 @@ Format loosely follows Keep a Changelog.
 - Deterministic payload packing with a single repak worker.
 
 ### Release status
+- Internal build; never published as a public release.
 - Full packages contain the updated stable p12-based payload. Experimental p12g timing changes are excluded.
 - Publication in the original repository requires write permission. Game rendering and Steam Deck hardware are not revalidated.
 
-## [1.0.1] - 2026-10-28
+## [1.0.1] - 2026-10-28 (internal build)
 
 ### Added
 - Arabic Windows desktop installer with Steam discovery, package verification, installation, verification, and removal.
@@ -31,6 +62,7 @@ Format loosely follows Keep a Changelog.
 - Application-focused README with verified p12 download links and a clear separation of app and localization versions.
 
 ### Release status
+- Internal build; never published as a public release.
 - Source and packaging are prepared; upstream publication requires repository write access.
 - Localization payload remains the approved p12 set from v1.0.0; experimental p12g is excluded.
 

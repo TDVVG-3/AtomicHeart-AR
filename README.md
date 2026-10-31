@@ -10,10 +10,10 @@
 [![Windows x64](https://img.shields.io/badge/Windows-x64-263522?style=for-the-badge&logo=windows&logoColor=EEE9D8)](app/README.md)
 [![Linux AppImage](https://img.shields.io/badge/Linux-AppImage-263522?style=for-the-badge&logo=linux&logoColor=EEE9D8)](app/README.md#linux--appimage)
 [![Installer 1.0.2](https://img.shields.io/badge/Installer-1.0.2-E65043?style=for-the-badge&labelColor=172016)](docs/releases/v1.0.2.md)
-[![Localization p12](https://img.shields.io/badge/Localization-p12-C4CFAF?style=for-the-badge&labelColor=172016)](https://github.com/TDVVG-3/AtomicHeart-AR/releases/tag/v1.0.0)
+[![Localization 1.0.3](https://img.shields.io/badge/Localization-1.0.3-C4CFAF?style=for-the-badge&labelColor=172016)](docs/releases/v1.0.3.md)
 [![Code MIT](https://img.shields.io/badge/Code-MIT-C4CFAF?style=for-the-badge&labelColor=172016)](LICENSE)
 
-**[تنزيل 1.0.2 وحالة النشر](docs/releases/v1.0.2.md)** &nbsp; · &nbsp;
+**[تنزيل 1.0.3 وحالة النشر](docs/releases/v1.0.3.md)** &nbsp; · &nbsp;
 **[دليل التطبيق](app/README.md)** &nbsp; · &nbsp;
 **[ابدأ من هنا](#ابدأ-من-هنا)** &nbsp; · &nbsp;
 **[كل الإصدارات](https://github.com/TDVVG-3/AtomicHeart-AR/releases)**
@@ -61,13 +61,14 @@
 
 | الملف | الاستخدام |
 | --- | --- |
-| **[حزمة p12 المعتمدة](https://github.com/TDVVG-3/AtomicHeart-AR/releases/download/v1.0.0/AtomicHeart-AR-1.0.0-p12.zip)** | التعريب والخط والتلميحات، للتركيب اليدوي الآن |
+| **[حزمة p12 المعتمدة 1.0.3](https://github.com/TDVVG-3/AtomicHeart-AR/releases/download/v1.0.3/AtomicHeart-AR-1.0.3-p12.zip)** | التعريب والخط والتلميحات، للتركيب اليدوي الآن |
 | **[تطبيق 1.0.2](docs/releases/v1.0.2.md)** | Windows ZIP وLinux AppImage، مع حزمة التعريب المصحّحة |
-| **[المصدر](https://github.com/TDVVG-3/AtomicHeart-AR/releases/download/v1.0.0/AtomicHeart-AR-1.0.0-source.zip)** | الكود وقاعدة الترجمة للمطورين |
+| **[المصدر 1.0.3](https://github.com/TDVVG-3/AtomicHeart-AR/releases/download/v1.0.3/AtomicHeart-AR-1.0.3-source.zip)** | الكود وقاعدة الترجمة للمطورين |
+| **[p12g التجريبي 1.0.3](https://github.com/TDVVG-3/AtomicHeart-AR/releases/download/v1.0.3/AtomicHeart-AR-1.0.3-p12g-experimental.zip)** | تعديلات توقيت تجريبية، لمن يريد تجربتها |
 | **[جميع الإصدارات](https://github.com/TDVVG-3/AtomicHeart-AR/releases)** | سجل التنزيلات والمتغيرات وملاحظات كل إصدار |
 
 **Source code (zip)** التلقائي في GitHub لا يثبّت التعريب. للعب، استخدم حزمة p12 أو النسخة الكاملة من التطبيق عند نشرها.
-المتغير **p12g تجريبي** لمعالجة التوقيت، وغير مرفق مع تطبيق 1.0.2 الافتراضي.
+المتغير **p12g تجريبي** لمعالجة التوقيت، وغير مرفق مع تطبيق 1.0.2 الافتراضي. إصدار 1.0.3 هو أول نشر عام بعد 1.0.0؛ والبنيتان 1.0.1 و1.0.2 كانتا داخليتين.
 
 ## ابدأ من هنا
 
@@ -91,7 +92,7 @@ chmod +x AtomicHeart-AR-1.0.2-linux-x86_64.AppImage
 
 ### التركيب اليدوي
 
-1. [نزّل حزمة p12](https://github.com/TDVVG-3/AtomicHeart-AR/releases/download/v1.0.0/AtomicHeart-AR-1.0.0-p12.zip) وفك ضغطها خارج مجلد اللعبة.
+1. [نزّل حزمة p12](https://github.com/TDVVG-3/AtomicHeart-AR/releases/download/v1.0.3/AtomicHeart-AR-1.0.3-p12.zip) وفك ضغطها خارج مجلد اللعبة.
 2. أغلق اللعبة واحتفظ بنسخة احتياطية من مجلد `~mods` إن كان موجودًا.
 3. انسخ ملفات `.pak` الثلاثة فقط إلى المسار التالي، وأنشئ `~mods` عند الحاجة:
 
@@ -105,7 +106,7 @@ chmod +x AtomicHeart-AR-1.0.2-linux-x86_64.AppImage
 إذا استُخدمت سكربتات المشروع القديمة، راجع سجلها `atomic-heart-ar-install-manifest.json`؛
 سجل التطبيق الجديد مستقل واسمه `atomic-heart-ar-app-manifest.json`.
 
-## محتويات حزمة 1.0.2
+## محتويات حزمة 1.0.3
 
 | الوظيفة | الملف | الحجم بالبايت |
 | --- | --- | ---: |
@@ -113,13 +114,13 @@ chmod +x AtomicHeart-AR-1.0.2-linux-x86_64.AppImage
 | الخط v3 | `zzz_atomicheart-ar_font_p3_unhinted_P.pak` | 1,455,228 |
 | التلميحات x150 | `zzz_atomicheart-ar_tips_x150_P.pak` | 75,853 |
 
-تجد بصمات 1.0.2 في [SHA256SUMS](docs/releases/v1.0.2-payload-SHA256SUMS.txt). للتحقق في PowerShell:
+تجد بصمات 1.0.3 في [SHA256SUMS](docs/releases/v1.0.3-SHA256SUMS.txt). للتحقق في PowerShell:
 
 ```powershell
 Get-FileHash -Algorithm SHA256 .\*.pak
 ```
 
-أُعيد بناء حزمة النصوص بإضافة ثمانية تصحيحات، مع فحص القيم بعد إعادة الاستخراج ومطابقة الملفات الـ35 داخل الحزمة. بقي الخط والتلميحات كما هما. اسم ملف النصوص بقي p12 لتسهيل الترقية، لكن بصمته تغيّرت.
+أُعيد بناء حزمة النصوص في 1.0.3 بإضافة ثمانية تصحيحات، مع فحص القيم بعد إعادة الاستخراج ومطابقة الملفات الـ35 داخل الحزمة. بقي الخط والتلميحات كما هما. اسم ملف النصوص بقي p12 لتسهيل الترقية، لكن بصمته تغيّرت.
 
 ## أسئلة سريعة
 
@@ -150,7 +151,7 @@ Get-FileHash -Algorithm SHA256 .\*.pak
 <summary><strong>هل التعريب كامل وخالٍ من المشاكل؟</strong></summary>
 
 توجد 443 حالة غير مترجمة ضمن فئة النسخ، وبعض مشاكل التوقيت والتراكب أو قصّ أربعة أسطر.
-إصدار 1.0.2 يصحّح ثمانية نصوص، ويصلح أدوات تدقيق التوقيت والخطوط. إصلاح قصّ HUD داخل اللعبة غير مثبت، ومتغير التوقيت التجريبي p12g غير مرفق.
+إصدار 1.0.3 يصحّح ثمانية نصوص، ويصلح أدوات تدقيق التوقيت والخطوط. إصلاح قصّ HUD داخل اللعبة غير مثبت، ومتغير التوقيت التجريبي p12g منفصل.
 راجع [المشاكل المعروفة](KNOWN_ISSUES.md) و[دليل اختبار الترجمة النصية](reports/stack_test_guide.md).
 
 </details>

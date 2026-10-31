@@ -1,7 +1,7 @@
 # Subtitle stack audit - H1 / H2 / H3 / H4
 
-Generated: 2026-10-28 14:09:15 +03:00
-Master: `build\variants\atomic-heart-ar_p12g.tsv`
+Generated: 2026-10-31 11:13:10 +03:00
+Master: `C:\AtomicHeart-AR\build\variants\atomic-heart-ar_p12g.tsv`
 Stock tables: 31 | rows: 8853 | unmatched keys: 4790
 
 Mapping note: 4790 of 8853 stock rows could not be joined to a master locres key. H1m, H1k and H4 are stock DataTable checks independent of Arabic. H1t, H2 and H3 are assessed only where a master Arabic cell was found; unmatched rows keep their table name as the scope label.
@@ -141,4 +141,4 @@ Of the four screenshot lines, 0 of 4 have H3 (final singleton plus a following s
 - H2: **not supported** in this scene - no explicit range end reaches the next page start.
 - H3: **not present in this variant** - no scene line remains a final singleton with a following line. All four screenshot lines now carry an explicit 0-end range; compare with the p12 baseline audit for the before state.
 - H4: **not supported** in this scene - no marker or key is reused in another stock DataTable.
-- The visible truncation of the long P-3 line is **not explained by H1-H4**. H3 has been addressed with explicit 0-end ranges, so the remaining truncation is consistent with the bottom subtitle bar running out of vertical space when three wrapped lines are shown; see `reports/p4_subtitle_hide_blueprint.md` and the play-test guide.
+- The visible truncation is not established by this timing audit. Explicit end markers do not verify clipping, and 150 px of bottom padding is not a three-line viewport. Measure the runtime widget bounds and full line lifetime; see reports/subtitle_bottom_bar_p12.md and reports/stack_test_guide.md.

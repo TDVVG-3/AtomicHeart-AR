@@ -1163,3 +1163,59 @@ Consequence:
 DEC-012 is superseded. `git remote -v` may show the approved origin. Pushing to a
 different remote requires explicit user approval. Release assets should contain source
 archives and documentation, not game PAKs or unlicensed tools.
+
+---
+
+## DEC-048 (2026-10-31): 1.0.3 is the next public localization release after 1.0.0
+
+Status: ACTIVE
+
+Decision:
+- `1.0.1` and `1.0.2` were internal builds and are documented as such; no public release
+  or tag was created for them and no Git history is invented.
+- `1.0.3` is the next public release after `v1.0.0`. Its content is the current default
+  `p12` carrier + font `p3_unhinted` + `tips_x150`, including the eight Arabic text
+  corrections that were first assembled for the internal 1.0.2 build.
+- The p12 carrier is rebuilt from the corrected master because the master TSV changed.
+  The shipped carrier is `69475f3548198e23733d833c7e577cf256eed0d875c1bb12f4cac3c2b57c9212`
+  (4,470,307 bytes); the old `910c06f...` carrier is not reused.
+- The experimental p12g carrier keeps the `1.0.0` timing behavior and adds only the same
+  eight corrections. Shipped carrier:
+  `1cc7963d13a6eda77babf1f3617189d1ec2c5153455d16306f67e9e1c8b77dc9` (4,516,381 bytes).
+- Release assets are produced from the `v1.0.3` tag commit:
+  `AtomicHeart-AR-1.0.3-p12.zip`, `AtomicHeart-AR-1.0.3-p12g-experimental.zip`, and
+  `AtomicHeart-AR-1.0.3-source.zip`.
+- The local installed `Paks\~mods` set is not changed by packaging or publication; it is
+  verified byte-identical to the previously installed p12 set.
+
+Consequences:
+- Release notes and README describe 1.0.3 as the first public release after 1.0.0.
+- Publication is refused if trim, validator, glyph gate, fixup verifier, timing audit,
+  carrier round-trip, or the six-variant gate fails.
+- Existing release `0` and release/tag `v1.0.0` remain untouched.
+
+## DEC-049 (2026-10-31): publication is fast-forward only; fixup verifier is scope-aware
+
+Status: ACTIVE
+
+Decision:
+- Publication pushes to `TDVVG-3/AtomicHeart-AR` use the existing Git Credential Manager
+  login and are fast-forward only. Force pushes and history rewrites are forbidden.
+  The final local `master` and `origin/main` must be the same commit.
+- Release assets are built once from the tag commit, hashed, uploaded, downloaded again,
+  and checked against `SHA256SUMS.txt` and the GitHub API digests before the release is
+  accepted.
+- `scripts/verify_text_fixups.ps1` treats rules as scoped data, not as a flat list:
+  - only the last rule for a repeated FIND is enforced as a global rule;
+  - `[cell]` rules are checked against the generated p12 variant cell
+    (`scope|key`), and a cell that is unchanged but differs from the master is a
+    documented no-op;
+  - `[label]` rules are checked against every variant row whose English source is the
+    selector value;
+  - p11f timing-shortening rules are variant-scoped and reported as skipped, not failed.
+  The gate passes with 124 applied cell rules and 3 documented no-ops.
+
+Consequences:
+- A dirty or diverged `master` blocks publication instead of being repaired by force.
+- Fixup verification no longer reports false failures for variant-scoped rules while
+  still failing if a targeted cell changed without the required replacement.

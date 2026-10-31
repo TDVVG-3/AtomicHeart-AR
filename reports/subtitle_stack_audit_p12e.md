@@ -1,6 +1,6 @@
 # Subtitle stack audit - H1 / H2 / H3 / H4
 
-Generated: 2026-10-27 23:38:20 +03:00
+Generated: 2026-10-31 11:06:05 +03:00
 Master: `C:\AtomicHeart-AR\build\variants\atomic-heart-ar_p12e.tsv`
 Stock tables: 31 | rows: 8853 | unmatched keys: 4790
 
@@ -133,7 +133,7 @@ Scene counts: H1m 0 | H1k 0 | H1t 0 | H2 0 | H3 24 | H4 0.
 | VO_CS_01_15_Larisa_17 | 4119 | 0 | True | yes | 1 | 1.985 | 3.0 |
 | VO_CS_01_15_P3_18 | 4343 | 0 | True | yes | 1 | 4.611 | 10.2 |
 
-Of the four screenshot lines, 4 of 4 have H3 (final singleton plus a following scene line). The long P-3 line is markerless and reads at 10.2 Arabic chars/s over 4.611 s.
+Of the four screenshot lines, 4 of 4 have H3 (final singleton plus a following scene line). The long P-3 line is still markerless and reads at 10.2 Arabic chars/s over 4.611 s.
 
 ### Verdict
 
@@ -141,4 +141,4 @@ Of the four screenshot lines, 4 of 4 have H3 (final singleton plus a following s
 - H2: **not supported** in this scene - no explicit range end reaches the next page start.
 - H3: **LIKELY for the stack** - 24 line(s) in the scene have a final singleton page and a following line in the same scene; 4 of the four screenshot lines are in that set. With markerless cells their lifetime is the whole Wwise clip, so overlapping voice events can leave several lines on screen at once.
 - H4: **not supported** in this scene - no marker or key is reused in another stock DataTable.
-- The visible truncation of the long P-3 line is **not explained by H1-H4**. It is consistent with the bottom subtitle bar running out of vertical space when three wrapped lines are shown; the widget evidence is in `reports/p4_subtitle_hide_blueprint.md` and the play-test guide. H3 explains why the three lines are concurrent; it does not by itself truncate text.
+- The visible truncation is not established by this timing audit. Explicit end markers do not verify clipping, and 150 px of bottom padding is not a three-line viewport. Measure the runtime widget bounds and full line lifetime; see reports/subtitle_bottom_bar_p12.md and reports/stack_test_guide.md.

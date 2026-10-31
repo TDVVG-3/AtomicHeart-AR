@@ -1,6 +1,6 @@
 # Reviewer text fixes
 
-Applied: 2026-10-27 23:14:28
+Applied: 2026-10-31 10:40:19
 Rules: `C:\AtomicHeart-AR\localization\working\tm_fixups_p12.tsv`
 Master: `C:\AtomicHeart-AR\build\variants\atomic-heart-ar_p12.tsv`
 Mode: apply

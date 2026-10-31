@@ -1,6 +1,6 @@
 # Translation validation report
 
-Generated: 2026-10-27 23:38:06
+Generated: 2026-10-31 11:05:44
 Validator: scripts/validate_translation.ps1 (PowerShell twin of scripts/validate_translation.py)
 
 RESULT: **PASS**

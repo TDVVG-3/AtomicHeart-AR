@@ -1,0 +1,23 @@
+# AtomicHeart-AR 1.0.3 - SHA256
+
+## Release assets
+
+dd74ab2d01c57fb97cacadc6fe3c8feee63d9426fd24154e336cda2607cb0ad6  AtomicHeart-AR-1.0.3-p12.zip
+071a055bb2928618324846ef3cf12c44f35f31a72b252d2210dec547ab0db6cc  AtomicHeart-AR-1.0.3-p12g-experimental.zip
+
+## Payload files (inside the p12 archive)
+
+69475f3548198e23733d833c7e577cf256eed0d875c1bb12f4cac3c2b57c9212  zzz_atomicheart-ar_carrier_koKR_p12_P.pak
+f4ed50679d8ed7184354f6714f8d43def2fde60f03906d7bf36b7b7c8e663ef4  zzz_atomicheart-ar_font_p3_unhinted_P.pak
+36de01c37231a8b88ec9fc744c4f663bb8461a56adede9a6a2151d78c7ef7fcc  zzz_atomicheart-ar_tips_x150_P.pak
+
+## Payload files (inside the p12g experimental archive)
+
+1cc7963d13a6eda77babf1f3617189d1ec2c5153455d16306f67e9e1c8b77dc9  zzz_atomicheart-ar_carrier_koKR_p12g_P.pak
+f4ed50679d8ed7184354f6714f8d43def2fde60f03906d7bf36b7b7c8e663ef4  zzz_atomicheart-ar_font_p3_unhinted_P.pak
+36de01c37231a8b88ec9fc744c4f663bb8461a56adede9a6a2151d78c7ef7fcc  zzz_atomicheart-ar_tips_x150_P.pak
+
+## Source archive
+
+The source archive hash is added here and in the GitHub release after the tag is
+created, because the archive is produced from the tag commit itself.

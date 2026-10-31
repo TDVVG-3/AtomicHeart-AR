@@ -1,6 +1,6 @@
 # p12 family gate summary
 
-Generated: 2026-10-27 23:42:45 +03:00
+Generated: 2026-10-31 11:10:24 +03:00
 
 | variant | validator | coverage | glyph | stack audit |
 |---|---|---|---|---|

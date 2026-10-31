@@ -1,6 +1,6 @@
 # Subtitle timing audit (Workstream A)
 
-Generated: 2026-10-24 16:25:47
+Generated: 2026-10-31 11:10:44
 
 ## Method (what the markers are)
 

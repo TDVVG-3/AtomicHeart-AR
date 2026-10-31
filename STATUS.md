@@ -1,13 +1,24 @@
 # Status - Atomic Heart Arabic localization
 
-## Installer 1.0.2
+## Localization release 1.0.3 (public)
+
+- First public release after `1.0.0`; builds `1.0.1` and `1.0.2` remain internal and were never published.
+- Stable `p12` carrier rebuilt with eight Arabic corrections: 4,470,307 bytes, SHA256 `69475f3548198e23733d833c7e577cf256eed0d875c1bb12f4cac3c2b57c9212`.
+- Experimental `p12g` carrier keeps the `1.0.0` timing behavior plus the same corrections: 4,516,381 bytes, SHA256 `1cc7963d13a6eda77babf1f3617189d1ec2c5153455d16306f67e9e1c8b77dc9`.
+- Font and tips payloads are unchanged: `f4ed50679d8ed7184354f6714f8d43def2fde60f03906d7bf36b7b7c8e663ef4` and `36de01c37231a8b88ec9fc744c4f663bb8461a56adede9a6a2151d78c7ef7fcc`.
+- Gates: trim 0 changes, validator PASS, glyph PASS, fixup verifier PASS (124 cell rules applied, 3 documented no-ops), timing audit 537/537, carrier round-trip 35/35, `p12_gate_all.ps1` PASS for all six variants.
+- Release assets: `AtomicHeart-AR-1.0.3-p12.zip`, `AtomicHeart-AR-1.0.3-p12g-experimental.zip`, `AtomicHeart-AR-1.0.3-source.zip`.
+- The local installed `Paks\~mods` set was left untouched at the previously verified p12 hashes.
+- See [1.0.3 release notes](docs/releases/v1.0.3.md).
+
+## Installer 1.0.2 (internal build)
 
 - Windows WPF and Linux Avalonia applications share the verified installation engine.
 - Stable payload rebuilt with eight Arabic text corrections; all 35 contained assets round-trip verified.
 - Approved p12 upgrades retain transaction backups; unknown files and conflicting carriers are refused.
 - AppImage includes .NET, translation payload and license notices. Ubuntu 22.04 x86_64 is the CI baseline.
 - Final CI passed: 27 Windows safety checks, 31 Linux safety checks, 18 display-tool regressions, and a packaged AppImage GUI render. Build: [40843554060](https://github.com/exelight7/AtomicHeart-AR/actions/runs/40843554060).
-- See [1.0.2 release notes](docs/releases/v1.0.2.md) for build results and publication status.
+- See [1.0.2 release notes](docs/releases/v1.0.2.md) for build results and historical publication status.
 - Game rendering and Steam Deck hardware testing remain outstanding; experimental p12g is excluded.
 
 ## Windows installer 1.0.1 (historical)
@@ -18,8 +29,8 @@
 - Upstream 1.0.1 publication is pending repository write access. Real game execution and visual Arabic rendering were not tested during app development.
 - Legacy PowerShell translation/build tools keep their separate historical validation status; the desktop app uses its own installer engine.
 
-**As of:** 2026-10-28 15:51:57 +03:00
-**Release:** p12 (`p12 + font v3 + tips_x150`)
+**As of:** 2026-10-31 (local build, gates and publication)
+**Release:** 1.0.3 p12 (`p12 + font v3 + tips_x150`)
 **Game:** Atomic Heart, Steam app `668580`, build `24534183`
 
 ## Current release
@@ -48,6 +59,9 @@ The release default is:
 `Paks\~mods` contains exactly these four files. The game language stays **Korean**; the
 carrier fills the Korean text slot. Install verification is **PASS**: 0 changes outside
 `~mods`, stock paks 19 before / 19 after, `AtomicHeart.exe` unchanged.
+The machine used to build 1.0.3 was intentionally left on the previously verified
+`1.0.0` p12 set: carrier `910c06f2609237ac021dc1d3e2a6af02a05c64a828efdfe497a711bac66860c3`,
+font `f4ed506…`, tips `36de01c…`, manifest `5b17aaf4…`.
 
 ## Gates
 
