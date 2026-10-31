@@ -1,9 +1,51 @@
 # Open-source publication - 2026-10-28
 
-**Generated:** 2026-10-28 18:05 +03:00
+**Generated:** 2026-10-28 18:05 +03:00 (updated 2026-10-31 for 1.0.3)
 **Target:** <https://github.com/TDVVG-3/AtomicHeart-AR>
 
-## Result
+## Release 1.0.3 (2026-10-31)
+
+**PUBLISHED.** `v1.0.3` is the next public localization release after `v1.0.0`.
+Internal builds `1.0.1` and `1.0.2` were never published as public releases.
+
+| item | value |
+| --- | --- |
+| repository | <https://github.com/TDVVG-3/AtomicHeart-AR> |
+| release | <https://github.com/TDVVG-3/AtomicHeart-AR/releases/tag/v1.0.3> |
+| release id | `429808456` |
+| tag | `v1.0.3` (annotated object `4cd769ec2b3dd3131a54614348eb06d7584ab323`) |
+| tag commit | `36984508ce6408afcab7122d14d73fd6a24db624` |
+| main after publication | `29c3407e860b050797867484b4afd3731a8e6f63` |
+| published at | 2026-10-31T08:20:32Z |
+| draft / prerelease | false / false |
+| latest | yes |
+
+### Assets
+
+| asset | bytes | SHA256 (download = GitHub digest) |
+| --- | ---: | --- |
+| `AtomicHeart-AR-1.0.3-p12.zip` | 2,373,935 | `dd74ab2d01c57fb97cacadc6fe3c8feee63d9426fd24154e336cda2607cb0ad6` |
+| `AtomicHeart-AR-1.0.3-p12g-experimental.zip` | 2,377,997 | `071a055bb2928618324846ef3cf12c44f35f31a72b252d2210dec547ab0db6cc` |
+| `AtomicHeart-AR-1.0.3-source.zip` | 30,616,979 | `1b3c34aeb94f4bfe9fd4f8287336dec6fdd797bbdf8254336120e872887029f8` |
+
+The p12 archive contains carrier `69475f3548198e23733d833c7e577cf256eed0d875c1bb12f4cac3c2b57c9212`
+(4,470,307 bytes), font `f4ed50679d8ed7184354f6714f8d43def2fde60f03906d7bf36b7b7c8e663ef4`
+(1,455,228 bytes), and tips `36de01c37231a8b88ec9fc744c4f663bb8461a56adede9a6a2151d78c7ef7fcc`
+(75,853 bytes). The p12g archive differs only in its carrier:
+`1cc7963d13a6eda77babf1f3617189d1ec2c5153455d16306f67e9e1c8b77dc9` (4,516,381 bytes).
+
+### Publication checks
+
+- Fast-forward push `b5c34b7..29c3407 master -> main`: PASS; no force push.
+- Tag push `v1.0.3`: PASS; tag commit verified remotely.
+- Release creation and three asset uploads: PASS.
+- Re-download of every asset: SHA256 equals `SHA256SUMS.txt` and the GitHub API digest: PASS.
+- Arabic release title and Arabic/English body: PASS.
+- Latest status: PASS; release `0` and `v1.0.0` unchanged (`0` still has 0 assets, `v1.0.0` still has 3).
+- Source archive: 1,555 entries, no PAK/EXE/DLL/game-asset/tool-binary paths, includes 1.0.3 docs.
+- Game `Paks\~mods` untouched: carrier `910c06f...`, font `f4ed506...`, tips `36de01c...`, manifest `5b17aaf...`.
+
+## Release 1.0.0 (2026-10-28)
 
 **PUBLISHED.** The source, tag, and p12 Arabic localization release are live on GitHub.
 

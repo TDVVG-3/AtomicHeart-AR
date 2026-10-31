@@ -1,16 +1,93 @@
-# HANDOFF - Atomic Heart Arabic - p12 release
+# HANDOFF - Atomic Heart Arabic localization - 1.0.3 published
 
-**Generated:** 2026-10-28 14:27:39 +03:00
-**State:** release default installed and verified. `p12g`, `p12c`, `p12e`, `p12f`,
-`p12ef`, and all RU-only combinations are built and gated but **NOT INSTALLED**.
-**Write scope:** only the game's `Paks\~mods` was modified. No `.exe`, `.dll`, stock pak,
-Steam, or Denuvo file was touched. Nothing was uploaded.
+**Generated:** 2026-10-31 11:24:54 +03:00
+**State:** `v1.0.3` is published on GitHub as the next public release after `1.0.0`.
+Internal builds `1.0.1` and `1.0.2` were never published.
+**Installed state:** the game's `Paks\~mods` was intentionally **not** changed by this
+release work. It still contains the previously verified p12 set (carrier `910c06f...`).
+**Write scope:** source tree, docs, reports, Git refs, and GitHub release assets only.
+No game file, EXE, DLL, stock PAK, Steam file, Denuvo file, or installed mod was modified.
+No token or password is written anywhere in the repository or this handoff.
 
-## 1. Current installed set (approved default)
+## 1. Publication record
 
-`p12` carrier + font v3 (`p3_unhinted`) + `tips_x150`.
+| item | value |
+| --- | --- |
+| repository | <https://github.com/TDVVG-3/AtomicHeart-AR> |
+| release | <https://github.com/TDVVG-3/AtomicHeart-AR/releases/tag/v1.0.3> |
+| release id | `429808456` |
+| tag | `v1.0.3` (annotated object `4cd769ec2b3dd3131a54614348eb06d7584ab323`) |
+| tag commit | `36984508ce6408afcab7122d14d73fd6a24db624` |
+| main | `git rev-parse HEAD` at handoff commit (fast-forward from `b5c34b7`) |
+| published at | 2026-10-31T08:20:32Z (11:20:32 +03:00) |
+| draft / prerelease | false / false |
+| latest | yes |
+| old release `0` | unchanged, id `426659009`, 0 assets |
+| old release `v1.0.0` | unchanged, id `426807665`, 3 assets |
 
-`Paks\~mods` contains exactly four files:
+The push was fast-forward only: `b5c34b7..29c3407 master -> main`. No force push and no
+history rewrite was used. The tag commit is the source of all three release assets; a
+follow-up main commit records the source ZIP hash, and this handoff is a later commit.
+
+## 2. Release assets (verified after download)
+
+| asset | bytes | SHA256 (GitHub digest matches) |
+| --- | ---: | --- |
+| `AtomicHeart-AR-1.0.3-p12.zip` | 2,373,935 | `dd74ab2d01c57fb97cacadc6fe3c8feee63d9426fd24154e336cda2607cb0ad6` |
+| `AtomicHeart-AR-1.0.3-p12g-experimental.zip` | 2,377,997 | `071a055bb2928618324846ef3cf12c44f35f31a72b252d2210dec547ab0db6cc` |
+| `AtomicHeart-AR-1.0.3-source.zip` | 30,616,979 | `1b3c34aeb94f4bfe9fd4f8287336dec6fdd797bbdf8254336120e872887029f8` |
+
+Each game archive contains `README-INSTALL.txt`, `SHA256SUMS.txt`, and three PAKs.
+Payload hashes:
+
+| payload | bytes | SHA256 |
+| --- | ---: | --- |
+| `zzz_atomicheart-ar_carrier_koKR_p12_P.pak` | 4,470,307 | `69475f3548198e23733d833c7e577cf256eed0d875c1bb12f4cac3c2b57c9212` |
+| `zzz_atomicheart-ar_carrier_koKR_p12g_P.pak` | 4,516,381 | `1cc7963d13a6eda77babf1f3617189d1ec2c5153455d16306f67e9e1c8b77dc9` |
+| `zzz_atomicheart-ar_font_p3_unhinted_P.pak` | 1,455,228 | `f4ed50679d8ed7184354f6714f8d43def2fde60f03906d7bf36b7b7c8e663ef4` |
+| `zzz_atomicheart-ar_tips_x150_P.pak` | 75,853 | `36de01c37231a8b88ec9fc744c4f663bb8461a56adede9a6a2151d78c7ef7fcc` |
+
+The source archive has 1,555 entries, no PAK/EXE/DLL/game-asset/tool-binary paths, and
+includes the 1.0.3 docs and READMEs.
+
+## 3. What changed in 1.0.3
+
+- Eight Arabic text corrections since `1.0.0`: white-weapon naming, two subject-verb
+  fixes, robot plural agreement, `Secateur` and in-sentence item names, wish-tooltip
+  phrasing, and a weakness label.
+- The stable `p12` carrier was rebuilt from the corrected master. Its size changed from
+  4,470,295 to 4,470,307 bytes and its hash from `910c06f...` to `69475f...`.
+- The experimental `p12g` carrier keeps the `1.0.0` timing behavior and adds only the
+  same eight corrections. Size changed from 4,516,369 to 4,516,381 bytes; hash is
+  `1cc7963...`.
+- `scripts/verify_text_fixups.ps1` is now scope-aware: cell rules, label rules,
+  superseded global rules, and p11f-only timing rules are handled separately. Result:
+  124 cell rules applied, 3 documented no-ops, PASS.
+- New deterministic packaging: `scripts/package_release_1_0_3.ps1`.
+- Decisions recorded: `DEC-048` (1.0.3 is the next public release after 1.0.0) and
+  `DEC-049` (fast-forward-only publication and scope-aware fixup verification).
+
+## 4. Gates (all passed)
+
+| gate | result |
+| --- | --- |
+| trailing-whitespace trim | 0 changes |
+| translation validator | PASS, 0 hard errors |
+| glyph gate | PASS, 0 Arabic-introduced missing codepoints |
+| text-fixup verifier | PASS, 124 cell rules applied + 3 documented no-ops |
+| subtitle timing audit | 537/537 marker-identical, 0 defects |
+| carrier round-trip, p12 | 35/35 byte-identical |
+| carrier round-trip, p12g | 35/35 byte-identical |
+| `p12_gate_all.ps1` | PASS for p12, p12g, p12c, p12e, p12f, p12ef |
+| p12g stack audit | H1t 27, H2 0, H3 343 |
+
+Evidence: `reports/p12_gate_all.md`, `reports/subtitle_timing_audit.md`,
+`reports/subtitle_stack_audit_p12.md`, `reports/subtitle_stack_audit_p12g.md`,
+`reports/p12_master.md`, and `reports/carrier_build.md`.
+
+## 5. Current installed set (unchanged)
+
+`Paks\~mods` still contains exactly these four files:
 
 | file | size (bytes) | SHA256 |
 | --- | ---: | --- |
@@ -19,259 +96,100 @@ Steam, or Denuvo file was touched. Nothing was uploaded.
 | `zzz_atomicheart-ar_font_p3_unhinted_P.pak` | 1,455,228 | `f4ed50679d8ed7184354f6714f8d43def2fde60f03906d7bf36b7b7c8e663ef4` |
 | `zzz_atomicheart-ar_tips_x150_P.pak` | 75,853 | `36de01c37231a8b88ec9fc744c4f663bb8461a56adede9a6a2151d78c7ef7fcc` |
 
-Manifest variant string:
+This is the previously verified `1.0.0` p12 set. It was **not** replaced with the new
+1.0.3 carrier. To use 1.0.3 locally, install the new archive or run the switch command
+after copying the new carrier into `build/package/`.
+
+Install target:
 
 ```text
-carrier=zzz_atomicheart-ar_carrier_koKR_p12_P.pak ; font=zzz_atomicheart-ar_font_p3_unhinted_P.pak ; tips=x150
+...\Atomic Heart\AtomicHeart\Content\Paks\~mods
 ```
 
-Install evidence: `reports/install_verification.md` - **PASS**, game-root changes 0,
-Paks-directory changes 0, stock paks 19 before / 19 after, `AtomicHeart.exe` unchanged.
-Snapshot: `build/snapshots/before_p12_tips_x150_20261028_142412.json`.
-Backup of the previous `~mods`: `build/install_backup/p12_tips_x150_20261028_142412`.
+Then select **Korean / الكورية** as the game's text language. English voice audio is
+unchanged.
 
-## 2. Built and gated, but NOT INSTALLED
-
-| carrier pak | size (bytes) | SHA256 | purpose |
-| --- | ---: | --- | --- |
-| `zzz_atomicheart-ar_carrier_koKR_p12g_P.pak` | 4,516,369 | `4109d8fcedc22160d836347fa6ee8e9a96beacbbf174175f8a5652dfa3eaee30` | p12 + H1t offsets + H2 caps + H3 caps/inserts |
-| `zzz_atomicheart-ar_carrier_koKR_p12c_P.pak` | 4,471,621 | `a5dfda33fbf3ab1a8fdd1b45395d34aaf0212042c9f7f02fe3e16d6f6d98411b` | p11c base + p12 changes + H2 cap |
-| `zzz_atomicheart-ar_carrier_koKR_p12e_P.pak` | 4,472,441 | `06a04207e6636b9923e532178184d1a5ead781023d3ba5a43deea446d19b18e9` | p11e base + p12 changes + H2 cap |
-| `zzz_atomicheart-ar_carrier_koKR_p12f_P.pak` | 4,461,287 | `abb6db1075dfb82336495b8c69b2f0d4508caa9d633d269c32d442ad9f994b7d` | p11f base + p12 changes + H2 cap |
-| `zzz_atomicheart-ar_carrier_koKR_p12ef_P.pak` | 4,463,315 | `db4387cc799e38c3fbcbfda5a2df63dbea99e1b5a8cb9e8332c771f2cd54974f` | p11ef base + p12 changes + H2 cap |
-| `zzz_atomicheart-ar_ruonly_p1_P.pak` | 7,998,115 | `beceb894bcaaeac546da8d847af815b42493a971ed45dc8d8b2693332eaa1cc3` | RU-only dialogue add-on; **NOT INSTALLED** |
-
-Rollback carrier:
-
-| carrier pak | size (bytes) | SHA256 |
-| --- | ---: | --- |
-| `zzz_atomicheart-ar_carrier_koKR_p11c_P.pak` | 4,474,004 | `cfb590e87e6e14e17a07e704d7d6065c5392ea98b70cf6702231746d3c4b8815` |
-
-`p12c`, `p12e`, `p12f`, and `p12ef` each changed `17` rows and applied `59` H2 caps;
-their per-scope counts are in `reports/p12c_caps.md`, `reports/p12e_caps.md`,
-`reports/p12f_caps.md`, and `reports/p12ef_caps.md`.
-
-The installed font and tips paks are shared by the `_tips_x150` combinations; a
-`p12g_tips_x150` install uses the `p12g` carrier above plus the same font and tips files.
-The `p12`, `p12g`, `p12c`, `p12e`, `p12f`, `p12ef`, all `_tips_x150` combinations, and all
-`-RuOnly` combinations passed the temp-install and forced-rollback matrix. Only the default
-`p12 + font v3 + tips_x150` is approved for install; the other paks are build-only.
-
-## 3. What p12 changes
-
-### CHANGE 1 - keep original English weapon/item names
-
-p12 starts from the clean canonical master `localization/master/atomic-heart-ar.tsv`, not
-from p11c, p11e, or p11f. The p12 cell rules are in `tm_fixups_p12.tsv`; the same rules
-were appended to `tm_fixups.tsv` for the record, but p12 never applies the older p11f
-rules.
-
-- `458` item NAME rows were marked `keep original name`; `445` had Arabic and `13` were
-  empty. All `458` are `COPY` in the p12 master, so the carrier emits the English name.
-- `125` sentence-like item-name candidates were scanned. `2` body-text rows containing
-  `P-3` were removed from the cell-rule pool; `123` in-sentence rows were changed.
-- Descriptions and tooltips stay translated. In-sentence names use the `[exact]`
-  cell-scoped rules in `localization/working/tm_fixups_p12.tsv`; trailing punctuation is
-  never glued onto a Latin name. A rule is never allowed to turn a translated Arabic
-  sentence into an English-only cell; such candidates are skipped and logged.
-- Ambiguous terms were left unchanged and are listed in
-  `reports/keep_original_questions.md`.
-- `123 of 27,618` rows changed by in-sentence cell rules; `458 of 27,618` rows are COPY
-  names; body-text rows containing `P-3` changed: `0`.
-- Before/after by scope: `reports/p12_master.md`.
-
-### CHANGE 2 - P-3 speaker label
-
-- `1,140 of 27,618` speaker-label rows that rendered `P-3` now render `الرائد` in every
-  scope. Body text was not changed.
-- Body rows containing `P-3` are excluded from all p12 cell rules. Body-P3 changed: `0`.
-- Occurrence report: `reports/p3_name_occurrences.md` - `211` body rows; `100` Nechaev,
-  `29` Major+Nechaev, `126` literal `P-3` (overlapping categories; per-scope table and row
-  list in the report).
-
-## 4. VEGA 9 subtitle-stack bug
-
-### Finding
-
-The screenshot scene is `VO_CS_01_15` (four lines: `Larisa_15`, `Victor_16`,
-`Larisa_17`, `P3_18`). The audit found the four lines were markerless final pages with a
-following scene row: the H3 pattern.
-
-**Map-key source (CONFIRMED):** `WBP_Subtitle` stores each line in a map keyed by the
-`Marker` argument to `ShowSentence(Text, Speaker, Marker)`. `ShowSentence` calls
-`Map_Add(Subtitles, Marker, widget)`, and `HideSentence(Marker)` uses
-`Map_Find` / `Map_Remove`. The key is the subtitle row marker, not the text, so duplicate
-markers collide at the widget map. See `reports/p4_subtitle_hide_blueprint.md`.
-
-| audit | p12 | p12g |
-| --- | ---: | ---: |
-| H1m marker/key collisions | 36 | 36 (stock level, not locres-fixable) |
-| H1k key collisions | 15 | 15 (stock level, not locres-fixable) |
-| H1t duplicate text-marker starts | 72 | 27 |
-| H2 explicit end overlapping next start | 17 | 0 |
-| H3 markerless/final page with following row | 2,953 | 343 |
-| H4 stock en-US/ru-RU key collisions | 3 | 3 (stock level) |
-| screenshot `VO_CS_01_15` H3 | 4/4 | 0/4 |
-
-**Verdict:** H3 matches the screenshot: concurrent lines that never receive an explicit
-end. H1/H2/H4 are not supported by the screenshot evidence. H1m/H1k/H4 are DataTable-level
-stock conditions and cannot be repaired by a locres-only pak. H3 remaining 343 rows have no
-usable clip duration; `p12g` inserted `*0-end*` for 2,422 markerless pages and added 188
-explicit final-page ends.
-
-p12g changed 2,658 rows. It applied `72` H1 duplicate-start offsets; `197` non-monotonic
-H1 tracks were left byte-exact; it applied `59` H2 caps, `188` H3 final-page ends, and
-`2,422` H3 markerless inserts. `343` H3 rows were skipped because no clip duration was
-available. Absolute DataTable row start offsets are not
-available, so H2/H3 uses the voice clip duration plus a 15 chars/s + 1.2 s reading
-allowance rather than a true next-line start. This is the documented `UNKNOWN` limitation.
-
-Reports:
-
-- `reports/subtitle_stack_audit_p12.md` - baseline counts, per-scope table, 30 worst scenes.
-- `reports/subtitle_stack_audit_p12g.md` - post-fix counts; screenshot scene 0/4 H3.
-- `reports/p12g_caps.md` - per-scope H1/H2/H3 change counts.
-- `scripts/subtitle_stack_audit.ps1` - H1-H4 audit, gated into the build chain.
-- `scripts/apply_subtitle_caps.ps1` - H1/H2/H3 repairs.
-
-### Bottom bar
-
-`reports/subtitle_bottom_bar_p12.md` records read-only layout evidence:
-
-- **CONFIRMED:** bottom-anchored, auto-size canvas; `150 px` top/bottom overlay padding;
-  `2150 px` width; `SubtitleSizeScale=0.75`; sentence font `45` (`33.75 px` rendered);
-  speaker font `35` (`26.25 px` rendered); sentence slot bottom padding `100 px`.
-- **LIKELY:** four concurrent lines exceed the `150 px` bottom safe area at the current
-  scale; the bottom-most P-3 line is the one that looks cut.
-- **UNKNOWN:** exact engine clip owner (canvas / SizeBox / overlay / viewport). No bytecode
-  or widget patch was made.
-
-`p12g` reduces concurrency duration but cannot make the bottom bar taller. If the cut
-remains when four lines are visible, the layout arithmetic is the remaining cause.
-
-## 5. Gates and verification
-
-| gate | result |
-| --- | --- |
-| validator - all six p12 variants | **PASS**, 0 hard errors |
-| coverage - all six | **PASS**; 27,175 of 27,618 translated-or-copy; 443 untranslated copy-class; 27,618/27,618 accounted |
-| glyph gate - font v3 | **PASS**; 37 source-inherited missing codepoints; 0 newly required by Arabic |
-| stack audit - all six | **PASS**; H1-H4 report written |
-| carrier round-trip | **35/35** for every p12-family carrier; unpack byte-identical; exact 27,617, newline 1, fail 0 |
-| temp-install matrix | **PASS** for p12 family, `tips_x150`, and `-RuOnly` combinations |
-| forced rollback matrix | **PASS** for every tested row |
-| final install verification | **PASS**; outside `~mods` 0 changes; stock paks 19/19; EXE unchanged |
-
-p12 validator warnings: `296`. p12g warnings: `2,952`, mostly number-multiset changes
-caused by inserted timing markers; both variants have 0 hard errors. Gate summary:
-`reports/p12_gate_all.md`; temp matrix: `reports/variant_test_matrix.md`; install proof:
-`reports/install_verification.md`.
-
-## 6. Exact switch/rollback commands
-
-Run from `C:\AtomicHeart-AR`. Every command snapshots `~mods`, backs it up, installs,
-runs `verify_install.ps1`, and rolls back automatically on failure.
+## 6. Rebuild / repackage 1.0.3
 
 ```powershell
 cd C:\AtomicHeart-AR
 
-# Current release default
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts\switch_variant.ps1 -Variant p12_tips_x150
+# 1. Regenerate the p12 variant from the corrected master
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\make_p12_master.ps1
 
-# p12g (experimental H1/H2/H3 build), with and without tips
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts\switch_variant.ps1 -Variant p12g
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts\switch_variant.ps1 -Variant p12g_tips_x150
+# 2. Rebuild the stable carrier
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\build_carrier_locres_pak.ps1 `
+  -MasterTsV C:\AtomicHeart-AR\build\variants\atomic-heart-ar_p12.tsv `
+  -PakOut C:\AtomicHeart-AR\build\package\zzz_atomicheart-ar_carrier_koKR_p12_103_P.pak `
+  -VariantLabel p12_103
 
-# p12c
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts\switch_variant.ps1 -Variant p12c
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts\switch_variant.ps1 -Variant p12c_tips_x150
+# 3. Rebuild p12g from the 1.0.0 timing variant plus the eight fixes, then the carrier
+#    (see the history in docs/releases/translation-fixes-1.0.2.json)
 
-# p12e
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts\switch_variant.ps1 -Variant p12e
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts\switch_variant.ps1 -Variant p12e_tips_x150
+# 4. Create the two payload ZIPs with hash checks
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\package_release_1_0_3.ps1
 
-# p12ef
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts\switch_variant.ps1 -Variant p12ef
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts\switch_variant.ps1 -Variant p12ef_tips_x150
-
-# p12f (built and gated; not in the required command list)
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts\switch_variant.ps1 -Variant p12f
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts\switch_variant.ps1 -Variant p12f_tips_x150
-
-# Add the RU-only dialogue add-on to any variant
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts\switch_variant.ps1 -Variant p12g -RuOnly
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts\switch_variant.ps1 -Variant p12c -RuOnly
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts\switch_variant.ps1 -Variant p12e -RuOnly
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts\switch_variant.ps1 -Variant p12ef -RuOnly
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts\switch_variant.ps1 -Variant p12g_tips_x150 -RuOnly
-
-# Roll back to the previous known-good delivered set
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts\switch_variant.ps1 -Variant p11c_tips_x150
-
-# Restore the current release default
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts\switch_variant.ps1 -Variant p12_tips_x150
+# 5. Source archive from the tag (tag must already exist)
+git archive --format=zip -o dist\AtomicHeart-AR-1.0.3-source.zip v1.0.3
 ```
 
-`-RuOnly` is supported for every variant in the `switch_variant.ps1` set, including the
-`_tips_x150` names. RU-only remains **NOT INSTALLED** in the current default.
+The carrier builder uses `repak` V11, mount point `../../../`, and
+`RAYON_NUM_THREADS=1` for deterministic output. It unpacks and compares every entry
+before reporting success.
 
-## 7. Play-test guide
+## 7. p12 vs p12g
 
-`reports/stack_test_guide.md` is written for a non-developer tester:
+- **p12** is the stable default and the recommended package.
+- **p12g** is experimental: it keeps the `1.0.0` H1/H2/H3 timing behavior.
+- Never install both carriers in `~mods`; use one only.
+- If p12g shows timing problems, switch back to p12.
 
-- How to reach the VEGA 9 archive scene and recognize the four English lines.
-- Three passes: English baseline; Korean with p12; Korean with p12g.
-- Checklist for concurrent lines, cut line, wrapping, disappearance timing, P-3 label,
-  and English-only text.
-- Copy-paste report template and severity table.
-- Coordinator-only switch commands.
+## 8. Known limitations
 
-## 8. Reports and key files
+- Subtitle timing is tied to the original audio clips; fast dialogue can stack lines.
+- The bottom bar can clip lines when four lines are visible. The exact engine clip owner
+  remains `UNKNOWN`.
+- H1m/H1k/H4 are stock DataTable-level conditions and cannot be repaired by a
+  locres-only PAK.
+- 197 non-monotonic H1 tracks were left byte-exact.
+- 343 H3 rows have no usable clip duration; they remain in p12g.
+- In-game visual rendering and Steam Deck hardware were not retested for 1.0.3.
+- The choice number `1 //` can appear on the left in some menus.
+- Arabic and Cyrillic literals must stay in UTF-8 data files; PowerShell 5.1 scripts must
+  remain ASCII-only (KI-021).
+
+## 9. Key files
 
 | path | contents |
 | --- | --- |
-| `reports/p12_master.md` | CHANGE 1 / CHANGE 2 counts and before/after by scope |
-| `reports/keep_original_questions.md` | ambiguous names left unchanged |
-| `reports/p3_name_occurrences.md` | P-3 body occurrences and per-scope counts |
-| `reports/p12_gate_all.md` | validator / coverage / glyph / audit summary for all six |
-| `reports/p12g_caps.md` | H1/H2/H3 per-scope repairs |
-| `reports/subtitle_stack_audit_p12.md` | baseline H1-H4 and 30 worst scenes |
-| `reports/subtitle_stack_audit_p12g.md` | post-fix H1-H4; screenshot scene 0/4 H3 |
-| `reports/subtitle_bottom_bar_p12.md` | layout evidence and arithmetic |
-| `reports/stack_test_guide.md` | non-developer test guide |
-| `reports/variant_test_matrix.md` | temp-install and forced-rollback matrix |
-| `reports/install_verification.md` | final installed-set proof |
-| `localization/working/tm_fixups_p12.tsv` | 125 cell rules + 1 P-3 label rule |
-| `localization/working/keep_original.tsv` | 458 keep-original NAME rows |
-| `build/variants/atomic-heart-ar_p12.tsv` | p12 master, 27,618 rows |
-| `build/package/` | all p12-family paks, font, tips, RU-only |
+| `docs/releases/v1.0.3.md` | Arabic + English release notes |
+| `docs/releases/v1.0.3-SHA256SUMS.txt` | asset and payload hashes |
+| `docs/releases/v1.0.3/README-INSTALL-p12.txt` | p12 archive README |
+| `docs/releases/v1.0.3/README-INSTALL-p12g.txt` | p12g archive README |
+| `scripts/package_release_1_0_3.ps1` | deterministic 1.0.3 packaging |
+| `scripts/verify_text_fixups.ps1` | scope-aware fixup gate |
+| `reports/p12_gate_all.md` | six-variant gate summary |
+| `reports/open_source_publication.md` | publication record for 1.0.0 and 1.0.3 |
+| `reports/subtitle_timing_audit.md` | 537/537 marker audit |
+| `localization/working/tm_fixups.tsv` | rule source, including current cell/label rules |
+| `docs/releases/translation-fixes-1.0.2.json` | the eight corrections carried into 1.0.3 |
+| `build/verify_release_103/` | downloaded-asset verification copies (ignored) |
 
-The canonical master `localization/master/atomic-heart-ar.tsv` is untouched. `build/` is
-untracked and the working tree is dirty; do not commit unless explicitly requested.
+## 10. Open items / next steps
 
-## 9. Known limitations / open items
+- Optionally install the published p12 1.0.3 carrier locally and play-test the eight
+  corrected strings in game.
+- Retest subtitle stacking and the bottom-bar clip with four visible lines.
+- Steam Deck verification remains outstanding.
+- If a future release changes game text, repeat the full gate chain and use a new tag;
+  never reuse `v1.0.3`.
+- Keep publication fast-forward only; see `DEC-049`.
 
-- H1m (36 marker/key collisions), H1k (15 key collisions), and H4 (3 stock en-US/ru-RU
-  collisions) are DataTable-level stock conditions; a locres-only pak cannot repair them.
-  Only H1t text-marker starts are repaired.
-- 197 non-monotonic H1 tracks were left byte-exact and are documented; they were not
-  reordered.
-- 343 H3 rows remain because no clip duration is available; they are listed in the p12g
-  audit. Absolute DataTable row start offsets are unavailable, so cross-line H2/H3 uses
-  clip/reading caps, not true next-line starts.
-- 4,790 of 8,853 stock rows could not be joined to master locres keys; H1t/H2/H3 were
-  assessed only where matched.
-- p12g warnings (2,952) are mostly number-multiset changes from inserted timing markers;
-  the validator reports 0 hard errors.
-- The bottom-bar cut may persist if four lines are simultaneously visible; p12g reduces
-  the duration but does not change the 150 px bottom layout. `UNKNOWN` exact clip owner.
-- PowerShell 5.1 cannot carry Arabic or Cyrillic literals in `.ps1`; all non-ASCII text must
-  come from UTF-8 data files. Keep that rule for future scripts.
+## 11. STOP
 
-## 10. STOP
+`v1.0.3` is published and verified. The local installed `~mods` set is deliberately
+unchanged. Do not replace, delete, or force-push anything without explicit approval.
 
-This handoff is complete. The release default is installed and verified. All other new
-variants are build-only and **NOT INSTALLED**. Do not install them without explicit
-approval.
-
-Dated copy: `handoff_2026-10-28_p12.md`.
+Dated copy: `handoff_2026-10-31.md` (repository) and
+`C:\Users\abona\Desktop\AtomicHeart-AR_HANDOFF_2026-10-31.md`.
+Desktop shortcut file: `C:\Users\abona\Desktop\HANDOFF` (no extension).
