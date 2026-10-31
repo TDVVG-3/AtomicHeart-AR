@@ -4,6 +4,7 @@
 
 dd74ab2d01c57fb97cacadc6fe3c8feee63d9426fd24154e336cda2607cb0ad6  AtomicHeart-AR-1.0.3-p12.zip
 071a055bb2928618324846ef3cf12c44f35f31a72b252d2210dec547ab0db6cc  AtomicHeart-AR-1.0.3-p12g-experimental.zip
+1b3c34aeb94f4bfe9fd4f8287336dec6fdd797bbdf8254336120e872887029f8  AtomicHeart-AR-1.0.3-source.zip
 
 ## Payload files (inside the p12 archive)
 
@@ -19,5 +20,4 @@ f4ed50679d8ed7184354f6714f8d43def2fde60f03906d7bf36b7b7c8e663ef4  zzz_atomichear
 
 ## Source archive
 
-The source archive hash is added here and in the GitHub release after the tag is
-created, because the archive is produced from the tag commit itself.
+1b3c34aeb94f4bfe9fd4f8287336dec6fdd797bbdf8254336120e872887029f8  AtomicHeart-AR-1.0.3-source.zip
